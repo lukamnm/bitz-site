@@ -34,7 +34,9 @@ function projectText(html) {
   let lead = '', sections = [], cur = null;
   for (let i = 0; i < body.length; i++) {
     const x = body[i];
-    if (/^h[1-6]$/.test(x.tag) || (x.tag === 'p' && x.text.length < 60 && body[i + 1] && body[i + 1].tag !== 'p')) {   // short lone paragraphs act as headings in this theme
+    const isHeading = (/^h[1-6]$/.test(x.tag) && x.text.length <= 70)                        // a long "heading" is a styled closing sentence, not a section title
+      || (x.tag === 'p' && x.text.length < 60 && body[i + 1] && body[i + 1].tag !== 'p');   // short lone paragraphs act as headings in this theme
+    if (isHeading) {
       if (i === 0 && /about|შესახებ/i.test(x.text)) { cur = { h: null, t: [] }; continue; }
       cur = { h: x.text, t: [] }; sections.push(cur); continue;
     }

@@ -9,6 +9,19 @@ const data = await (await fetch('data/projects.json')).json();
 try { await Promise.all([document.fonts.load('500 40px Moncero'), document.fonts.load('400 20px Moncero')]); } catch {}   // labels are baked into textures
 let mode = 'featured';
 const items = () => (mode === 'featured' ? data.filter(p => p.featured) : data);
+// ---------------------------------------------------------------- language: EN / GE (Georgian texts come from the old /ge/ site, per project under i18n.ge)
+let lang = 'en'; try { lang = localStorage.getItem('lang') === 'ge' ? 'ge' : 'en'; } catch {}
+const UI = { en: { profile: 'Profile', featured: 'Featured', full: 'Full', contact: 'Contact', lang: 'GE' },
+             ge: { profile: 'პროფილი', featured: 'რჩეული', full: 'სრული', contact: 'კონტაქტი', lang: 'EN' } };
+const T = p => {                                     // the project's texts in the current language, falling back to English field by field
+  const g = lang === 'ge' ? p.i18n?.ge : null;
+  return { title: g?.title || p.title, blurb: g?.blurb || p.blurb, sections: (g?.sections && g.sections.length) ? g.sections : p.sections };
+};
+function applyLang() {
+  document.documentElement.lang = lang === 'ge' ? 'ka' : 'en';
+  for (const el of document.querySelectorAll('[data-ui]')) el.textContent = UI[lang][el.dataset.ui];
+  const b = document.getElementById('langBtn'); b.textContent = UI[lang].lang; b.setAttribute('lang', lang === 'ge' ? 'en' : 'ka');
+}
 
 // ---------------------------------------------------------------- constants lifted from the reference's shader + config
 const PI = Math.PI;
@@ -327,7 +340,7 @@ function bake(c) {
   x.font = `400 ${tf}px Moncero, Inter, system-ui, sans-serif`;
   x.letterSpacing = `${-0.05 * tf}px`;
   const maxW = cw - 2 * m - 0.09 * cw;
-  let title = c.p.title; while (x.measureText(title).width > maxW && title.length > 4) title = title.slice(0, -2).trimEnd() + '…';
+  let title = T(c.p).title; while (x.measureText(title).width > maxW && title.length > 4) title = title.slice(0, -2).trimEnd() + '…';
   x.fillText(title, m, ch - m);
   x.shadowBlur = 0;                            // the arrow disc is drawn by the shader (it animates on hover)
   const u = c.mesh.material.uniforms;
@@ -660,7 +673,7 @@ function buildStack() {
   const ul = $('#stack'); ul.innerHTML = '';
   items().forEach((p, i) => {
     const li = document.createElement('li');
-    li.innerHTML = `<button class="sc" type="button"><img src="${(p.home && p.home.img) || p.cover}" alt="" loading="lazy" onerror="this.remove()"><span class="nm"><b>${p.title}</b><small>${p.cats.join(', ')}</small></span><i>&rarr;</i></button>`;
+    li.innerHTML = `<button class="sc" type="button"><img src="${(p.home && p.home.img) || p.cover}" alt="" loading="lazy" onerror="this.remove()"><span class="nm"><b>${T(p).title}</b><small>${p.cats.join(', ')}</small></span><i>&rarr;</i></button>`;
     li.firstElementChild.addEventListener('click', e => openProject(i, e.currentTarget.getBoundingClientRect()));
     ul.append(li);
   });
@@ -693,16 +706,17 @@ function targetRect() {
                   : { x: w * 0.033, y: h * 0.0225, width: w * 0.934, height: h * 0.955 };   // 45/18 px at 1366x800, like the reference
 }
 function fill(p) {
-  $('#pTitle').textContent = p.title;
-  $('#pBlurb').textContent = p.blurb;
+  const t = T(p);
+  $('#pTitle').textContent = t.title;
+  $('#pBlurb').textContent = t.blurb;
   $('#pChips').innerHTML = (p.link ? `<li class="lnk"><a href="${p.link}" target="_blank" rel="noopener" aria-label="Open live project">&#8599;</a></li>` : '') +
     [p.year, p.client, ...p.cats].filter(Boolean).map(t => `<li>${t}</li>`).join('');
   spin.classList.add('on');
   hero.onload = () => spin.classList.remove('on');
-  hero.src = p.cover; hero.alt = p.title + ' cover';
+  hero.src = p.cover; hero.alt = t.title + ' cover';
   if (hero.complete) spin.classList.remove('on');
   $('#pBody').innerHTML =
-    p.sections.map(s => `<div class="txt"><h3>${s.h}</h3><p>${s.t}</p></div>`).join('') +
+    t.sections.map(s => `<div class="txt"><h3>${s.h}</h3><p>${s.t}</p></div>`).join('') +
     p.gallery.map(g => `<figure><img src="${g}" alt="" loading="lazy"></figure>`).join('');
   buildLoop();
   pr.scrollTop = 0; panel.scrollTop = 0;
@@ -1139,6 +1153,16 @@ function setMode(m) {
   $('#mA').setAttribute('aria-pressed', m === 'full');
   if (S.mobile) buildStack(); else buildRing();
 }
+// language toggle: relabel the corners, rebake the card titles, refill an open project (its planes rebuild from the new DOM)
+$('#langBtn').addEventListener('click', () => {
+  lang = lang === 'en' ? 'ge' : 'en';
+  try { localStorage.setItem('lang', lang); } catch {}
+  applyLang();
+  if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); return; }
+  for (const c of cards) if (c.img !== undefined) bake(c);
+  if (S.open !== null && S.open >= 0) fill(items()[S.open]);
+});
+applyLang();
 $('#mF').addEventListener('click', () => setMode('featured'));
 $('#mA').addEventListener('click', () => setMode('full'));
 $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
