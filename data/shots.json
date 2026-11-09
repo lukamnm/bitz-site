@@ -1,0 +1,165 @@
+{
+  "groups": [
+    {
+      "title": {
+        "en": "3D and Visualization",
+        "ge": "3D და ვიზუალიზაცია"
+      },
+      "label": {
+        "en": "3D/VFX",
+        "ge": "3D/VFX"
+      },
+      "ring": "assets/shots/Frame-4.png",
+      "items": [
+        {
+          "id": "auto-signs-last-grain",
+          "title": "auto-signs-last-grain",
+          "sound": true,
+          "wp": {
+            "en": 4263,
+            "ge": 3929
+          },
+          "video": {
+            "webm": "assets/video/shots/Auto-Signs-LAST-grain_1.webm"
+          }
+        },
+        {
+          "id": "monowheel-with-sounds",
+          "title": "monowheel-with-sounds",
+          "sound": true,
+          "wp": {
+            "en": 4264,
+            "ge": 3927
+          },
+          "video": {
+            "webm": "assets/video/shots/monowheel-with-sounds.webm",
+            "mp4": "assets/video/shots/monowheel-with-sounds.mp4"
+          }
+        },
+        {
+          "id": "haustique-box",
+          "title": "haustique-box",
+          "sound": true,
+          "wp": {
+            "en": 4265,
+            "ge": 3925
+          },
+          "video": {
+            "webm": "assets/video/shots/Haustique-box.webm"
+          }
+        },
+        {
+          "id": "palipop",
+          "title": "palipop",
+          "sound": true,
+          "wp": {
+            "en": 4291,
+            "ge": 3965
+          },
+          "video": {
+            "webm": "assets/video/shots/palipop.webm"
+          }
+        },
+        {
+          "id": "lap-1080x1350-1",
+          "title": "lap-1080x1350-1",
+          "sound": true,
+          "wp": {
+            "en": 4379,
+            "ge": 3963
+          },
+          "video": {
+            "webm": "assets/video/shots/lap-1080x1350-1.webm"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Brand Identity",
+        "ge": "ვიზუალური იდენტობა"
+      },
+      "label": {
+        "en": "Branding",
+        "ge": "ბრენდინგი"
+      },
+      "ring": "assets/shots/Frame-2.png",
+      "items": [
+        {
+          "id": "logo-reveal",
+          "title": "logo-reveal",
+          "sound": true,
+          "wp": {
+            "en": 4268,
+            "ge": 3921
+          },
+          "video": {
+            "mp4": "assets/video/shots/logo-reveal.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Digital Product",
+        "ge": "პროდუქტის დიზაინი"
+      },
+      "label": {
+        "en": "Product",
+        "ge": "პროდუქტი"
+      },
+      "ring": "assets/shots/Frame-1.png",
+      "items": [
+        {
+          "id": "with-sound",
+          "title": "with-sound",
+          "sound": true,
+          "wp": {
+            "en": 4281,
+            "ge": 3939
+          },
+          "video": {
+            "webm": "assets/video/shots/with-sound.webm"
+          }
+        },
+        {
+          "id": "fastoo-logo-animation",
+          "title": "fastoo-logo-animation",
+          "sound": true,
+          "wp": {
+            "en": 4279,
+            "ge": 3938
+          },
+          "video": {
+            "webm": "assets/video/shots/Fastoo-Logo-Animation.webm"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Motion and Animation",
+        "ge": "ანიმაცია"
+      },
+      "label": {
+        "en": "Motion",
+        "ge": "ანიმაცია"
+      },
+      "ring": "assets/shots/Frame-3.png",
+      "items": [
+        {
+          "id": "minerals",
+          "title": "minerals",
+          "sound": true,
+          "wp": {
+            "en": 4266,
+            "ge": 3923
+          },
+          "video": {
+            "webm": "assets/video/shots/Minerals.webm"
+          }
+        }
+      ]
+    }
+  ]
+}

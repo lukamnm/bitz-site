@@ -1,0 +1,89 @@
+{
+  "slug": "cerebro",
+  "order": 4,
+  "featured": false,
+  "year": "2022",
+  "client": "Cerebro",
+  "cats": [
+    "Branding"
+  ],
+  "link": "https://cerebro.ge/",
+  "title": {
+    "en": "Cerebro",
+    "ge": "სერებრო"
+  },
+  "blurb": {
+    "en": "Logo and visual identity for Cerebro, a digital marketing agency - the human brain blended with the digital world.",
+    "ge": "სერებრო არის ციფრული მარკეტინგის სააგენტო, რომლისთვისაც შეიქმნა ლოგოტიპი და მინიმალური ვიზუალური იდენტობა. სახელწოდებიდან გამომდინარე სიმბოლოში გამოყენებულია ადამიანის ტვინთან მიმსგავსებული გრაფიკული ელემენტი და მეორეს მხრივ ციფრულ სამყაროსთან დაკავშირებული გრაფიკული ელემენტები, რომელიც საერთო ჯამში ჰარმონიულად ერწყმის ერთმანეთს"
+  },
+  "sections": {
+    "en": [
+      {
+        "h": "About the project",
+        "t": "A logo and visual identity that captures the essence of the human brain and blends it with the digital world."
+      },
+      {
+        "h": "Visual identity",
+        "t": "Logo, pattern and typography working together - a mark for pre-defined cases and a pattern built to stand out."
+      },
+      {
+        "h": "Versions of the logo",
+        "t": "A logo versatile enough for horizontal and vertical use, with multiple colour-changing versions for any setting."
+      },
+      {
+        "h": "Colour palette",
+        "t": "An expanded gamut that keeps the current active colour while adding tones, gradations and additional colours."
+      }
+    ],
+    "ge": [
+      {
+        "h": "ვიზუალური იდენტობა",
+        "t": "სერებროსთვის შეიქმნა ძირითადი ლოგო, მინიატურული ვარიანტი, რომელიც გამოიყენება წინასწარ განსაზღვრულ შემთხვევებში. ასევე შეიქმნა პატერნი და შეირჩა ტიპოგრაფია."
+      },
+      {
+        "h": "ლოგოტიპის ვერსიები",
+        "t": "სიმბოლოს ტექსტთან ერთად გამოიყენება, როგორც ვერტიკალურ ასევე ჰორიზონტალურ პოზიციაში. შემუშავდა ლოგოს ფერების ცვლილების ვერსიები."
+      },
+      {
+        "h": "ფერთა გამა",
+        "t": "მოქმედი აქტიური ფერი შენარჩუნდა, თუმცა გამას დაემატა ამ ფერის სხვადასხვა ტონები, გრადაციები და დამატებითი ფერები."
+      }
+    ]
+  },
+  "cover": "assets/img/cerebro.webp",
+  "gallery": [
+    "assets/img/cerebro-1.webp",
+    "assets/img/cerebro-2.webp",
+    "assets/img/cerebro-3.webp",
+    "assets/img/cerebro-4.webp",
+    "assets/img/cerebro-5.webp",
+    "assets/img/cerebro-6.webp",
+    "assets/img/cerebro-7.webp",
+    "assets/img/cerebro-8.webp"
+  ],
+  "home": null,
+  "seo": {
+    "en": {
+      "title": "Cerebro Branding Project | Bitz Portfolio",
+      "description": "Cerebro branding and design case study by Luka, a full-stack designer based in Tbilisi, Georgia.",
+      "image": "https://bitz.ge/wp-content/uploads/2022/05/cer1.jpg"
+    },
+    "ge": {
+      "title": "სერებრო | bitz",
+      "description": "Cerebro არის ციფრული მარკეტინგის სააგენტო, რომლისთვისაც შეიქმნა ლოგოტიპი და მინიმალური ვიზუალური იდენტობა.",
+      "image": null
+    }
+  },
+  "wp": {
+    "en": {
+      "id": 3604,
+      "link": "https://bitz.ge/portfolio/cerebro/",
+      "modified": "2026-08-11T19:26:27"
+    },
+    "ge": {
+      "id": 3604,
+      "link": "https://bitz.ge/ge/portfolio/cerebro/",
+      "modified": "2025-10-31T13:26:43"
+    }
+  }
+}

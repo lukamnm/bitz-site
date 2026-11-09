@@ -1,0 +1,231 @@
+{
+  "slug": "about",
+  "title": {
+    "en": "Short Story About Me",
+    "ge": "ჩემ შესახებ"
+  },
+  "blocks": {
+    "en": [
+      {
+        "tag": "h4",
+        "text": "Check out my resume below"
+      },
+      {
+        "tag": "a",
+        "text": "View CV",
+        "href": "2023/10/resume-en-2026.pdf"
+      },
+      {
+        "tag": "p",
+        "text": "This is the portfolio of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, working under the name Bitz. For 10+ years the work has covered branding, graphic design, 3D, motion, and UI/UX - not as separate freelance gigs, but as one connected skill set applied to real products and real brands. Most design projects break down the moment they cross a discipline line. The brand identity goes to one studio, the product interface to another, the motion or 3D work to a third - and something gets lost at every handoff. Bitz exists to close that gap. As a full-stack designer in Georgia, Luka builds the identity, the interface, and the visual system as one continuous piece of work, so a brand looks and feels the same whether it's on a business card, a product screen, or a 3D render. Luka currently serves as Chief Design Officer at Moncero, where he has built and managed product and visual design teams delivering work across Web3, crypto, and enterprise platforms, including HRMS, HMS, and hospital management systems. In the Web3 space, he led the design of Nordom Gates, a Telegram game that reached more than 6 million users. He is also co-founder of Oasis, a Web3 digital agency, where he works with both small and large crypto companies on branding, design systems, and digital products."
+      },
+      {
+        "tag": "h4",
+        "text": "Adobe Certified Professional"
+      },
+      {
+        "tag": "p",
+        "text": "Luka is also an Adobe Certified Professional (2021). Recent examples of this range include the Credo Bank brand and interface work and the Motorola Transistor Concept , a 3D design exploration."
+      },
+      {
+        "tag": "h1",
+        "text": "Let me give you a quick glimpse"
+      },
+      {
+        "tag": "h1",
+        "text": "into my work and activities"
+      },
+      {
+        "tag": "h5",
+        "text": "What i'm doing?"
+      },
+      {
+        "tag": "p",
+        "text": "The work at Bitz spans five connected areas: Branding - identity systems, logos, and visual language built to hold up across every touchpoint. Graphic design - print, digital, and campaign design that stays on-brand. 3D design - product visualization and 3D assets for brands and platforms that need more than flat graphics. Motion design - animation and motion graphics for product, brand, and campaign work. UI/UX design - interfaces for web and product, from early wireframes to shipped screens."
+      },
+      {
+        "tag": "h5",
+        "text": "Softs"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Photoshop → 💯"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe After Effects → 💯"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Premiere Pro → 💯"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Audition → 💯"
+      },
+      {
+        "tag": "p",
+        "text": "Blender → 👏"
+      },
+      {
+        "tag": "p",
+        "text": "Figma→ 🚀"
+      },
+      {
+        "tag": "p",
+        "text": "HTML → 👌"
+      },
+      {
+        "tag": "p",
+        "text": "CSS → 👌"
+      },
+      {
+        "tag": "p",
+        "text": "AI Tools → 👌"
+      },
+      {
+        "tag": "p",
+        "text": "clients"
+      },
+      {
+        "tag": "h2",
+        "text": "Happy Clients"
+      }
+    ],
+    "ge": [
+      {
+        "tag": "h4",
+        "text": "უცებ წასაკითხი ისტორია"
+      },
+      {
+        "tag": "a",
+        "text": "ნახე CV",
+        "href": "2023/10/resume-ge-2026.pdf"
+      },
+      {
+        "tag": "p",
+        "text": "10+ წლიანი გამოცდილება დიზაინის სფეროში, რომელიც აერთიანებს ვიზუალური დიზაინის, ბრენდინგის, UI/UX დიზაინის და 3D ვიზუალიზაციის კომპეტენციებს."
+      },
+      {
+        "tag": "p",
+        "text": "Moncero-ში, Chief Design Officer-ის რანგში ვქმნიდი და ვმართავდი პროდუქტისა და ვიზუალური დიზაინის გუნდებს და მათთან ერთად ვახორციელებდი პროექტებს, როგორც Web3 და კრიპტო სფეროში, ასევე ვქმნიდით სხვადასხვა სფეროს მენეჯმენტ სისტემებს (HRMS, HMS, ჰოსპიტალური სისტემები)."
+      },
+      {
+        "tag": "p",
+        "text": "Web3-ში შევქმენით Telegram თამაში Nordom Gates, რომელსაც6,000,000-ზე მეტი მომხმარებელი ჰყავდა. ასევე ვარ Web3 ციფრული სააგენტო Oasis-ის თანადამფუძნებელი და ამავე პროექტის ფარგლებში ვმუშაობ სხვადასხვა მცირე და მსხვილ კრიპტო კომპანიებთან, ბრენდინგსა და დიზაინ სისტემებზე."
+      },
+      {
+        "tag": "h4",
+        "text": "Adobe Certified Professional"
+      },
+      {
+        "tag": "p",
+        "text": "2021 წელს, გამოცდების შედეგების მიხედვით, მომენიჭა \"Adobe\"-ს სერტიფიცირებული პროფესიონალის სტატუსი. მეტი სანდოობისთვის ეწვიე ბმულს"
+      },
+      {
+        "tag": "h1",
+        "text": "მოკლედ მოგიყვები ჩემი"
+      },
+      {
+        "tag": "h1",
+        "text": "საქმიანობის შესახებ"
+      },
+      {
+        "tag": "h5",
+        "text": "რას ვაკეთებ?"
+      },
+      {
+        "tag": "p",
+        "text": "ბეჭდური და ციფრული მედიის დიზაინის გარდა ვმუშაობ, UI/UX, Motion და სხვადასხვა მულტიმედია დიზაინის პროექტებზე. ასევე ინტერაქციულ HTML ბანერებსა და მარტივ საუნდ დიზაინზე."
+      },
+      {
+        "tag": "h5",
+        "text": "პროგრამები"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Photoshop | 💯"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Illustrator | 👌"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe XD | 🔥"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe After Effects | 👏"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Premiere Pro | 🚀"
+      },
+      {
+        "tag": "p",
+        "text": "Adobe Audition | 👀"
+      },
+      {
+        "tag": "p",
+        "text": "Fruity Loops Studio | 🤓"
+      },
+      {
+        "tag": "p",
+        "text": "Cinema 4D | 🤬"
+      },
+      {
+        "tag": "p",
+        "text": "კლიენტები"
+      },
+      {
+        "tag": "h2",
+        "text": "კმაყოფილი დამკვეთები"
+      }
+    ]
+  },
+  "images": {
+    "en": [
+      "assets/about/adobe-certified.jpg",
+      "assets/about/aldagi.png",
+      "assets/about/credo-bank.png",
+      "assets/about/e-space.png",
+      "assets/about/Nordom.png",
+      "assets/about/Moncero.png",
+      "assets/about/sno.png",
+      "assets/about/kobi.png",
+      "assets/about/ordify.png",
+      "assets/about/oasis.png",
+      "assets/about/btcordinals.png",
+      "assets/about/backapp.png",
+      "assets/about/artinfo-georgia.png"
+    ],
+    "ge": [
+      "assets/about/adobe-certified.jpg",
+      "assets/about/aldagi.png",
+      "assets/about/credo-bank.png",
+      "assets/about/e-space.png",
+      "assets/about/Nordom.png",
+      "assets/about/Moncero.png",
+      "assets/about/sno.png",
+      "assets/about/kobi.png",
+      "assets/about/ordify.png",
+      "assets/about/oasis.png",
+      "assets/about/btcordinals.png",
+      "assets/about/backapp.png",
+      "assets/about/artinfo-georgia.png"
+    ]
+  },
+  "seo": {
+    "en": {
+      "title": "About Luka - Full-Stack Designer in Tbilisi | Bitz",
+      "description": "Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.",
+      "image": "https://bitz.ge/wp-content/uploads/2023/03/about-me-og.png"
+    },
+    "ge": {
+      "title": "ჩემ შესახებ - ლუკა გაბიძაშვილი, დიზაინერი | Bitz",
+      "description": "ჩემი გამოცდილება და მიდგომები დიზაინში. 10+ წელი პროფესიულ დიზაინში, ბრენდინგი, ანიმაცია, UI/UX და 3D ვიზუალიზაცია.",
+      "image": null
+    }
+  }
+}

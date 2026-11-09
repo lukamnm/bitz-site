@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "cgi-product-renders-vs-photography-packaging",
+    "date": "2026-09-06T22:08:26",
+    "title": {
+      "en": "CGI vs. Photography: Why Packaging Is Going 3D",
+      "ge": null
+    },
+    "excerpt": {
+      "en": "Product photography is losing ground to CGI on packaging launches. The Palipop vintage cola case study shows why - and what actually makes a render look real.",
+      "ge": null
+    },
+    "cover": "assets/stories/cgi-product-renders-vs-photography-packaging.jpg",
+    "categories": [
+      "3D &amp; Product Design",
+      "Branding"
+    ],
+    "hasGe": false
+  },
+  {
+    "slug": "where-ai-actually-belongs-in-a-designer-s-workflow",
+    "date": "2026-08-19T20:38:42",
+    "title": {
+      "en": "Where AI Actually Belongs in a Designer's Workflow",
+      "ge": "AI დიზაინერის სამუშაო პროცესში"
+    },
+    "excerpt": {
+      "en": "Where AI genuinely saves time in a full-stack design workflow, and where it still cannot replace concept, strategy or final craft.",
+      "ge": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას."
+    },
+    "cover": "assets/stories/where-ai-actually-belongs-in-a-designer-s-workflow.jpg",
+    "categories": [
+      "Design Process"
+    ],
+    "hasGe": true
+  },
+  {
+    "slug": "soft-ui-2-0-designing-interfaces-that-feel-human-again",
+    "date": "2026-08-12T19:26:33",
+    "title": {
+      "en": "Soft UI 2.0: Designing Interfaces That Feel Human Again",
+      "ge": "Soft UI 2.0: ადამიანური ინტერფეისი"
+    },
+    "excerpt": {
+      "en": "Flat design is giving way to Soft UI 2.0, tactile, spatial interfaces with depth and motion. Here's how it differs from neumorphism and what it means for your next redesign.",
+      "ge": "ბრტყელი დიზაინი ადგილს უთმობს Soft UI 2.0-ს - ტაქტილურ, სივრცით ინტერფეისებს სიღრმითა და მოძრაობით. აი, როგორ განსხვავდება ის ნეომორფიზმისგან და რას ნიშნავს ეს თქვენი მომდევნო რედიზაინისთვის."
+    },
+    "cover": "assets/stories/soft-ui-2-0-designing-interfaces-that-feel-human-again.jpg",
+    "categories": [
+      "UI/UX"
+    ],
+    "hasGe": true
+  },
+  {
+    "slug": "why-brands-need-a-motion-layer-now-not-just-a-logo",
+    "date": "2026-08-10T16:18:45",
+    "title": {
+      "en": "Why Brands Need a Motion Layer Now, Not Just a Logo",
+      "ge": "რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა"
+    },
+    "excerpt": {
+      "en": "Motion-first branding is no longer optional. Learn why modern brands need to design for movement from day one - and how to do it without breaking budgets.",
+      "ge": "Motion-first ბრენდინგი საჭიროა უკვე დღეს. რატომ სჭირდებათ ბრენდებს მოძრაობისთვის დიზაინი პირველივე დღიდან - და როგორ, დიდი ბიუჯეტის გარეშე."
+    },
+    "cover": "assets/stories/why-brands-need-a-motion-layer-now-not-just-a-logo.jpg",
+    "categories": [
+      "Branding",
+      "Motion Design"
+    ],
+    "hasGe": true
+  }
+]

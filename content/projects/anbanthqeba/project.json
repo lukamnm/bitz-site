@@ -1,0 +1,82 @@
+{
+  "slug": "anbanthqeba",
+  "order": 8,
+  "featured": true,
+  "year": "2021",
+  "client": "Postero",
+  "cats": [
+    "Graphic Design",
+    "Branding"
+  ],
+  "link": null,
+  "title": {
+    "en": "ANBANTKEBA",
+    "ge": "ანბანთქება"
+  },
+  "blurb": {
+    "en": "Posters, photography and logo for Postero, alongside Otar Jishkariani's Anbantkeba series - all three Georgian scripts across 36 compositions.",
+    "ge": "ოთარ ჯიშკარიანის მიერ შექმნილ გრაფიკულ სერიას, „ ანბანთქება-ს “(1985წ.), რომელიც შედგება 36 კომპოზიციისაგან, გარდა მხატვრული ღირებულებისა, დიდი შემეცნებითი მნიშვნელობაც აქვს. ამ ნამუშევრით მკითხველი ეცნობა ქართული დამწერლობის სამივე გრაფიკული სახეობის-ნუსხურის, მრგვლოვანისა და მხედრულის ნიმუშებს."
+  },
+  "sections": {
+    "en": [
+      {
+        "h": "Anbantkeba",
+        "t": "The artistic and cognitive value of the Anbantkeba graphic series, showcasing Nuskhuri, Asomtavruli and Mkhedruli through 36 compositions."
+      },
+      {
+        "h": "Postero",
+        "t": "Postero's digital and printed materials elevated with high-quality photography and poster design."
+      },
+      {
+        "h": "Logo",
+        "t": "The Postero logo was designed and produced."
+      }
+    ],
+    "ge": [
+      {
+        "h": "პროექტის შესახებ",
+        "t": "\"პოსტეროსთვის\" შეიქმნა როგორც ციფრული, ასევე საბეჭდი მასალების დიზაინი. მოეწყო ვიზუალური მასალის ფოტო-გადაღება და მომზადდა პოსტერების მოქაფები."
+      },
+      {
+        "h": "ყოველი საიდუმლო ამას ენასა შინა დამარხულ არს",
+        "t": "იოანე ზოსიმე - ქებაჲ და დიდებაჲ ქართულისა ენისაჲ"
+      }
+    ]
+  },
+  "cover": "assets/img/anbanthqeba.webp",
+  "gallery": [
+    "assets/img/anbanthqeba-1.webp",
+    "assets/img/anbanthqeba-2.webp",
+    "assets/img/anbanthqeba-3.webp",
+    "assets/img/anbanthqeba-4.webp",
+    "assets/img/anbanthqeba-5.webp",
+    "assets/img/anbanthqeba-6.webp"
+  ],
+  "home": {
+    "img": "assets/home/anbanthqeba.jpg"
+  },
+  "seo": {
+    "en": {
+      "title": "ANBANTKEBA - Graphic Design Series | Bitz Portfolio",
+      "description": "Artistic graphic design project featuring Georgian writing styles (Nuskhur, Round, Mkhedruli) with 36 compositions and typographic posters.",
+      "image": "https://bitz.ge/wp-content/uploads/2021/09/carousel-2-2.jpg"
+    },
+    "ge": {
+      "title": "ანბანთქება | bitz",
+      "description": "\" ანბანთქება-ს\" (1985წ.), რომელიც შედგება 36 კომპოიციისაგან, გარდა მხატვრული ღირებულებისა, დიდი შემეცნებითი მნიშვნელობაც აქვს",
+      "image": null
+    }
+  },
+  "wp": {
+    "en": {
+      "id": 3098,
+      "link": "https://bitz.ge/portfolio/anbanthqeba/",
+      "modified": "2026-08-11T19:32:11"
+    },
+    "ge": {
+      "id": 3098,
+      "link": "https://bitz.ge/ge/portfolio/anbanthqeba/",
+      "modified": "2021-09-01T20:37:15"
+    }
+  }
+}

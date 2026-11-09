@@ -1,0 +1,110 @@
+{
+  "slug": "marsleaders",
+  "order": 1,
+  "featured": true,
+  "year": "2025",
+  "client": "Marsleaders",
+  "cats": [
+    "Branding",
+    "Web Design"
+  ],
+  "link": "https://marsleaders.netlify.app/",
+  "title": {
+    "en": "Marsleaders",
+    "ge": "Marsleaders"
+  },
+  "blurb": {
+    "en": "Identity, NFT artwork direction and website for Marsleaders - a virtual world where political figures compete, with a mark that is solid and authoritative yet playful and planetary.",
+    "ge": "Marsleaders ვირტუალური სამყაროა ყველაფერი შესაძლებელია. წარმოიდგინე ადგილი სხვა პლანეტაზე, სადაც შეგიძლიათ აითვისო ახალი საზღვრები და მიიღო შესაძლებლობები, გამოსცადო შენი მეწარმეობის ალღო და შექმნა შენი ვირტუალური პერსონაჟი. მართალია თამაში გამოგონილია, თუმცა მონაწილეობისათვის მიღებული ჯილდოები ნამდვილი. სტიმულს გამომუშავებული NFT-ები მოგცემს."
+  },
+  "sections": {
+    "en": [
+      {
+        "h": "About the project",
+        "t": "Marsleaders is a virtual world where anything is possible - explore new frontiers, test your entrepreneurship and build a virtual existence. The rewards are real: holding NFTs earns incentives redeemed in the real world."
+      },
+      {
+        "h": "Logomark",
+        "t": "Four logo variants for different platforms. The design reflects interactions between political figures, giving the mark a solid, authoritative character, balanced by a planetary element for a more playful, dynamic touch. Patch-like shapes echo the badges on the characters' jackets."
+      },
+      {
+        "h": "Versions of the logo",
+        "t": "The primary logo features a planet within a circle, encircled by the project name and three stars - elements used consistently across every variation."
+      },
+      {
+        "h": "NFT artworks",
+        "t": "Multiple character variations were sketched, refined and generated. Artwork by Xesus Bobomb. Custom animated Discord emoji strengthen the identity."
+      },
+      {
+        "h": "UI/UX design",
+        "t": "A website with clean aesthetics and smooth functionality - thoughtful UI with seamless UX for clarity, flow and consistency."
+      }
+    ],
+    "ge": [
+      {
+        "h": "ლოგომარკი",
+        "t": "არსებობს ლოგოს 4 ვარიანტი და ოთხივე მათგანის გამოყენება დაშვებულია სხვადასხვა პლატფორმებზე და კომუნიკაციაში. ლოგოს კეთების პროცესში გათვალისწინებულია პროექტის შინაარსი, სადაც მოქმედება ხდება პოლიტიკურ ფიგურებს შორის და ლოგოს სოლიდური ხასიათი სწორედ ამას გამოხატავს. მეორეს მხრივ პროექტი არის NFT თამაში და ამიტომ მის სოლიდურ ხასიათში ესთეტიურადაა შერწყმული პლანეტა რომელიც სიმბოლოს უფრო “Playful” აქცევს აღსანიშნავია ლოგოს შეიფები, რომლებიც “patch”-ების ფორმებითაა გამოხატული და მას ხშირად ვიხილავთ პერსონაჟების პიჯაკების მკლავებზე."
+      },
+      {
+        "h": "Versions of the logo",
+        "t": "ლოგოს მთავარი ვერსია არის წრეში მოთავსებული პლანეტა, რომელსაც გარს ერტყმის პროექტის სახელი და 3 ვარსკვლავი, რომელიც ლოგოს ყველა ვერსიაშია გამოყნებეული, ქმნის სოლიდურობის შეგრძნებას და აღიქმება როგორც ბრენდინგის ნაწილი"
+      },
+      {
+        "h": "NFT ნახატები",
+        "t": "გაკეთდა სხვადასხვა პერსონაჟის სკეჩები, დაიხვეწა და დაგენერირდა. ართვორქების ავტორია Xesus Bobomb"
+      },
+      {
+        "h": "იშვიათი ასეტები",
+        "t": "პროექტი მოიცავს სიმბოლოებისა და კომპოზიციების ერთობლიობას ფუტურისტულ სტილში"
+      },
+      {
+        "h": "დისქორდის ემოჯიები",
+        "t": "ბრენდის იდენტობის გასაძლიერებლად შევქმენით დისქორიდის ანიმირებული ემოჯიები"
+      },
+      {
+        "h": "UI/UX დიზაინი",
+        "t": "შეიქმნა ვებ-საიტი რომელიც ძირითადად ორიენტირებული იყო სუფთა ესთეტიკაზე და გამართულ ფუნქიონალზე. მიზანი იყო მიმზიდველი ციფრული სივრცის შექმნა რომელიც ერთდროულად თანამედროვეც იქნებოდა და მომხარებელზე მაქსიმალურად მორგებულიც. თითოეული ელემენტი შექმნილია საერთო გამოცდილების გასაუმჯობესებლად და ამავდროულად ბრენდის იდენტობის მკაფიოდ ასახვის მიზნით."
+      }
+    ]
+  },
+  "cover": "assets/img/marsleaders.webp",
+  "gallery": [
+    "assets/img/marsleaders-1.webp",
+    "assets/img/marsleaders-2.webp",
+    "assets/img/marsleaders-3.webp",
+    "assets/img/marsleaders-4.webp",
+    "assets/img/marsleaders-5.webp",
+    "assets/img/marsleaders-6.webp",
+    "assets/img/marsleaders-7.webp",
+    "assets/img/marsleaders-8.webp"
+  ],
+  "home": {
+    "img": "assets/home/marsleaders.webp",
+    "video": "assets/home/marsleaders.mp4",
+    "webm": "assets/home/marsleaders.webm"
+  },
+  "seo": {
+    "en": {
+      "title": "Marsleaders Branding Project | Bitz Portfolio",
+      "description": "Marsleaders branding and design case study by Luka, a full-stack designer based in Tbilisi, Georgia.",
+      "image": "https://bitz.ge/wp-content/uploads/2025/09/planet.webp"
+    },
+    "ge": {
+      "title": "Marsleaders | bitz",
+      "description": "გაეცანი Marsleaders NFT თამაშის კვლევას. იხილეთ სრული პროექტი - ლოგოს დიზაინი, UI/UX დიზაინი, NFT დიზაინი, Discord ემოჯიები",
+      "image": null
+    }
+  },
+  "wp": {
+    "en": {
+      "id": 3873,
+      "link": "https://bitz.ge/portfolio/marsleaders/",
+      "modified": "2026-08-24T22:40:20"
+    },
+    "ge": {
+      "id": 3864,
+      "link": "https://bitz.ge/ge/portfolio/marsleaders/",
+      "modified": "2026-08-11T15:27:18"
+    }
+  }
+}

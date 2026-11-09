@@ -1,0 +1,125 @@
+{
+  "slug": "contact",
+  "title": {
+    "en": "Contact",
+    "ge": "კონტაქტი"
+  },
+  "blocks": {
+    "en": [
+      {
+        "tag": "h2",
+        "text": "Looking to hire a designer in Tbilisi for your brand, product, or next campaign? You're in the right place."
+      },
+      {
+        "tag": "p",
+        "text": "Email"
+      },
+      {
+        "tag": "a",
+        "text": "chat@bitz.ge",
+        "href": "mailto:chat@bitz.ge"
+      },
+      {
+        "tag": "p",
+        "text": "Phone"
+      },
+      {
+        "tag": "a",
+        "text": "+995 595 38 01 02",
+        "href": "tel:+995 595380102"
+      },
+      {
+        "tag": "p",
+        "text": "Facebook"
+      },
+      {
+        "tag": "a",
+        "text": "Luka Gabidzashvili",
+        "href": "https://www.facebook.com/gabeatzzz/"
+      },
+      {
+        "tag": "p",
+        "text": "Linkedin"
+      },
+      {
+        "tag": "a",
+        "text": "Luka Gabidzashvili",
+        "href": "https://www.linkedin.com/in/bitzzz/"
+      },
+      {
+        "tag": "p",
+        "text": "Bitz is a one-person studio covering branding, graphic design, 3D, motion, and UI/UX - so whether you need a branding agency in Tbilisi to build an identity from scratch, or a freelance UI/UX designer to take an existing product further, it's one point of contact instead of three separate hires. Recent work like the Credo Bank project and the portfolio show the range this covers, from brand identity through to shipped interfaces. Discovery - a short call or message to understand the project, timeline, and budget. Design and iteration - concepts, feedback rounds, and revisions until it's right. Delivery - final files, assets, or a handed-off interface, ready to use. Send a short brief through the form below, or reach out directly by email or phone. This is the fastest way to contact a designer in Georgia who can take a project from brand to bytes. Replies typically come within one business day."
+      },
+      {
+        "tag": "h3",
+        "text": "Drop me a line - I'm always happy to help with any information you need!"
+      }
+    ],
+    "ge": [
+      {
+        "tag": "h2",
+        "text": "დამიკავშირდი ნებისმერი ფორმით."
+      },
+      {
+        "tag": "p",
+        "text": "ელ.ფოსტა"
+      },
+      {
+        "tag": "a",
+        "text": "chat@bitz.ge",
+        "href": "mailto:chat@bitz.ge"
+      },
+      {
+        "tag": "p",
+        "text": "ტელეფონი"
+      },
+      {
+        "tag": "a",
+        "text": "+995 595 38 01 02",
+        "href": "tel:+995 595380102"
+      },
+      {
+        "tag": "p",
+        "text": "Facebook"
+      },
+      {
+        "tag": "a",
+        "text": "Luka Gabidzashvili",
+        "href": "https://www.facebook.com/gabeatzzz/"
+      },
+      {
+        "tag": "p",
+        "text": "Linkedin"
+      },
+      {
+        "tag": "a",
+        "text": "Luka Gabidzashvili",
+        "href": "https://www.linkedin.com/in/bitzzz/"
+      },
+      {
+        "tag": "p",
+        "text": "კონტაქტი"
+      },
+      {
+        "tag": "h3",
+        "text": "ნებისმიერი სახის ინფორმაციის მისაღებად მომწერე"
+      }
+    ]
+  },
+  "images": {
+    "en": [],
+    "ge": []
+  },
+  "seo": {
+    "en": {
+      "title": "Contact Luka - Branding & Design Services | Bitz",
+      "description": "Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.",
+      "image": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png"
+    },
+    "ge": {
+      "title": "კონტაქტი - დამიკავშირდი | Bitz",
+      "description": "დამიკავშირდი თუ გსურს ბრენდინგი, გრაფიკულ დიზაინი, UI/UX ან ანიმაცია. მალევე გიპასუხებთ.",
+      "image": null
+    }
+  }
+}

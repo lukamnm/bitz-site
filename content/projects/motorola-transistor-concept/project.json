@@ -1,0 +1,82 @@
+{
+  "slug": "motorola-transistor-concept",
+  "order": 3,
+  "featured": false,
+  "year": "2023",
+  "client": "Personal project",
+  "cats": [
+    "3D Design"
+  ],
+  "link": null,
+  "title": {
+    "en": "Motorola Transistor Concept",
+    "ge": "მოტოროლას გადამცემი"
+  },
+  "blurb": {
+    "en": "A hobbyist 3D project - the iconic Motorola transistor radio reimagined, from model and materials to lighting and animation.",
+    "ge": "სამოყვარულო ხასიათის პროექტის ფარგლებში, შემუშავდა და დამზადდა Motorola Transistor -ს რეტრო სტილის რადიო მიმღების, გადახალისებული ვერსია. შეიქმნა 3D მოდელი, მატერიალებითა და განათებებით."
+  },
+  "sections": {
+    "en": [
+      {
+        "h": "About the project",
+        "t": "A reimagined retro-style radio receiver inspired by the iconic Motorola Transistor. From the 3D model to the carefully selected materials and lighting, every detail was designed to perfection."
+      },
+      {
+        "h": "Reviving the past",
+        "t": "The project preserves the retro charm of the classic receiver while introducing modern updates - a piece that captures the past and looks at home in the present."
+      },
+      {
+        "h": "Animation",
+        "t": "An animation that highlights every detail and shows how the receiver works."
+      },
+      {
+        "h": "Colour palette",
+        "t": "Multiple colour versions - black, silver, teal, orange and dark."
+      }
+    ],
+    "ge": [
+      {
+        "h": "ძველის ადაპტაცია",
+        "t": "პროექტის კეთებისას მნიშვნელოვანი იყო, რადიომიმღებს არ დაეკარგა რეტრო ხასიათი , თუმცაღა სახეცვლილი ვერსია მიმზიდველი ყოფილიყო თანამედროვეობაშიც."
+      },
+      {
+        "h": "ანიმაცია",
+        "t": "პროდუქტის გასაცოცხლებლად და მუშაობის პრინიციპის აღსაქმელად გაკეთდა მცირე ანიმაცია"
+      }
+    ]
+  },
+  "cover": "assets/img/motorola-transistor-concept.webp",
+  "gallery": [
+    "assets/img/motorola-transistor-concept-1.webp",
+    "assets/img/motorola-transistor-concept-2.webp",
+    "assets/img/motorola-transistor-concept-3.webp",
+    "assets/img/motorola-transistor-concept-4.webp",
+    "assets/img/motorola-transistor-concept-5.webp"
+  ],
+  "home": null,
+  "seo": {
+    "en": {
+      "title": "Motorola Transistor Concept - 3D Design | Bitz Portfolio",
+      "description": "3D design concept reimagining the iconic Motorola Transistor radio with modern materials, lighting, and motion animation.",
+      "image": "https://bitz.ge/wp-content/uploads/2023/01/1.jpg"
+    },
+    "ge": {
+      "title": "მოტოროლას გადამცემი | bitz",
+      "description": "სამოყვარულო ხასიათის პროექტის ფარგლებში, შემუშავდა და დამზადდა Motorola transistor-ის რეტრო სტილის რადიო მიმღების, გადახალისებული ვერსია.",
+      "image": null
+    }
+  },
+  "wp": {
+    "en": {
+      "id": 3703,
+      "link": "https://bitz.ge/portfolio/motorola-transistor-concept/",
+      "modified": "2026-11-08T18:23:57"
+    },
+    "ge": {
+      "id": 3703,
+      "link": "https://bitz.ge/ge/portfolio/motorola-transistor-concept/",
+      "modified": "2025-10-31T13:28:48"
+    }
+  }
+}

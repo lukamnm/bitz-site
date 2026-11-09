@@ -1,0 +1,46 @@
+{
+  "slug": "where-ai-actually-belongs-in-a-designer-s-workflow",
+  "date": "2026-08-19T20:38:42",
+  "modified": "2026-08-19T21:07:13",
+  "title": {
+    "en": "Where AI Actually Belongs in a Designer's Workflow",
+    "ge": "AI დიზაინერის სამუშაო პროცესში"
+  },
+  "excerpt": {
+    "en": "Where AI genuinely saves time in a full-stack design workflow, and where it still cannot replace concept, strategy or final craft.",
+    "ge": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას."
+  },
+  "cover": "assets/stories/where-ai-actually-belongs-in-a-designer-s-workflow.jpg",
+  "categories": [
+    "Design Process"
+  ],
+  "tags": [
+    "ai-in-design",
+    "design-process",
+    "ui-ux",
+    "workflow"
+  ],
+  "seo": {
+    "en": {
+      "title": "Where AI Actually Belongs in a Designer's Workflow",
+      "description": "An honest look at AI in design workflow: where it saves real time, and where concept, strategy and craft still can't be automated.",
+      "image": "https://bitz.ge/wp-content/uploads/2026/08/ai-design-workflow-header.jpg"
+    },
+    "ge": {
+      "title": "AI დიზაინერის სამუშაო პროცესში",
+      "description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
+      "image": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/08/ai-design-workflow-split-sphere-header-ge.jpg"
+    }
+  },
+  "wp": {
+    "en": {
+      "id": 4283,
+      "link": "https://bitz.ge/blog/2026/08/19/where-ai-actually-belongs-in-a-designer-s-workflow/"
+    },
+    "ge": {
+      "id": 3941,
+      "link": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/",
+      "slug": "ai-dizaineris-samushao-protsesshi"
+    }
+  }
+}
