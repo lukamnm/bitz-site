@@ -170,7 +170,7 @@ function stepPost(dt) {
   trailSide = 1 - trailSide;
   const p = postMat.uniforms;
   // reference: u_ballA is PRESENCE (1 while the field holds any ink), not the envelope - the field itself does the fading, so the bump lingers and relaxes smoothly
-  p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 ? 1 - hole.p : 0; p.u_aspect.value.set(w / h, 1);
+  p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 && !story.open ? 1 - hole.p : 0;   // no lens on the shots sheet p.u_aspect.value.set(w / h, 1);
   // the hole follows its disc element (centre and radius), like the reference binding the hole to the overlay's circle
   p.u_hp.value = hole.p; p.u_hs.value = hole.s; p.u_time.value += dt;
   if (hole.p > 0.001 && hole.what === 'swap') { p.u_hc.value.set(0.5, 0.5); p.u_hr.value = 0.62; }   // the swallow: a hole wide enough to cover the whole frame
@@ -1270,9 +1270,10 @@ $('#mS').addEventListener('click', () => setMode('stories'));
 $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
 
 // ---------------------------------------------------------------- shots: the four group rings as bubbles (top centre). A bubble opens a white GL
-// sheet that grows out of the bubble like a project opening; the 4:5 clip plays on it as a video plane (so the cursor effects touch it);
-// a dark-ink HUD on the sheet's bottom band carries segments, group, title and mute; tap left / right, arrows, auto-advance, Escape / X to close
-const story = { open: false, g: 0, i: 0, muted: false, busy: false, sheet: null, plane: null, tex: null, rad: 0 };
+// sheet that grows out of the bubble like a project opening (drawn over everything: no depth test, so it never cuts through the 3D cards).
+// The 4:5 clip is a plain <video> laid on the sheet: native colours, untouched by the cursor lens or the shading (Luka: no extra effect on shots).
+// A dark-ink HUD on the sheet's bottom band carries segments, group, title and mute; tap left / right, arrows, auto-advance, Escape / X to close
+const story = { open: false, g: 0, i: 0, muted: false, busy: false, sheet: null, rad: 0 };
 const storyEl = $('#story'), storyHud = $('#storyHud'), vid = $('#shotVid'), bar = $('#storyBar');
 const STORY = { h: 0.88, inset: 0.024, band: 0.08, aspect: 0.8 };     // of vh: sheet height, side / top inset, bottom band; the clip is 4:5
 {
@@ -1290,37 +1291,22 @@ function storyRects() {
 }
 function storyGL() {
   if (story.sheet || S.mobile) return;
-  story.sheet = new THREE.Mesh(new THREE.PlaneGeometry(1, 1, 48, 12), cardMaterial());
-  const su = story.sheet.material.uniforms; su.uP.value = 0; su.uWhite.value = 1; su.uArrow.value = 0; su.uShade.value = 1;
-  story.sheet.renderOrder = 20; story.sheet.frustumCulled = false; story.sheet.visible = false; scene.add(story.sheet);
-  story.plane = new THREE.Mesh(planeGeo, cardMaterial(true));
-  const pu = story.plane.material.uniforms; pu.uP.value = 0; pu.uShade.value = 0; pu.uArrow.value = 0; pu.uAlpha.value = 0; pu.uHasMap.value = 0;
-  story.tex = new THREE.VideoTexture(vid); story.tex.colorSpace = THREE.SRGBColorSpace; story.tex.minFilter = THREE.LinearFilter;
-  pu.uVid.value = story.tex; pu.uHasVid.value = 1;
-  story.plane.renderOrder = 21; story.plane.frustumCulled = false; story.plane.visible = false; scene.add(story.plane);
+  const mat = cardMaterial(); mat.depthTest = false; mat.depthWrite = false;   // an overlay sheet: never intersects the strip
+  story.sheet = new THREE.Mesh(new THREE.PlaneGeometry(1, 1, 8, 8), mat);
+  const su = mat.uniforms; su.uP.value = 0; su.uWhite.value = 1; su.uArrow.value = 0; su.uShade.value = 0;
+  story.sheet.renderOrder = 30; story.sheet.frustumCulled = false; story.sheet.visible = false; scene.add(story.sheet);
 }
-// the clip's place inside the sheet, as fractions, so it rides along while the sheet grows or shrinks
-function storyFrac() { const { sheet, clip } = storyRects(), ws = worldRect(sheet), wc = worldRect(clip); return { x: (wc.x - ws.x) / ws.sx, y: (wc.y - ws.y) / ws.sy, sx: wc.sx / ws.sx, sy: wc.sy / ws.sy, ws }; }
-function syncStoryPlane(frac) {
-  const m = story.sheet, pu = story.plane.material.uniforms, su = m.material.uniforms, pxw = pxToWorld();
-  story.plane.position.set(m.position.x + frac.x * m.scale.x, m.position.y + frac.y * m.scale.y, 0.002);
-  story.plane.scale.set(frac.sx * m.scale.x, frac.sy * m.scale.y, 1); pu.uAspect.value.set(story.plane.scale.x, story.plane.scale.y);
-  pu.uRadius.value = 0.6 * (innerWidth / 100) * pxw;
-  su.uAspect.value.set(m.scale.x, m.scale.y); su.uRadius.value = story.rad * pxw;
+function syncSheet() { const m = story.sheet, su = m.material.uniforms; su.uAspect.value.set(m.scale.x, m.scale.y); su.uRadius.value = story.rad * pxToWorld(); }
+function placeDom() {                                   // HUD and the clip onto their rects
+  const { sheet, clip } = storyRects();
+  Object.assign(storyHud.style, { left: sheet.x + 'px', top: sheet.y + 'px', width: sheet.width + 'px', height: sheet.height + 'px' });
+  Object.assign(vid.style, { left: clip.x + 'px', top: clip.y + 'px', width: clip.width + 'px', height: clip.height + 'px' });
 }
-function placeStory() {                                 // sheet + clip onto their final rects (end of the open tween, and on resize)
+function placeStory() {                                 // sheet onto its final rect (end of the open tween, and on resize)
   if (!story.sheet || !story.open || story.busy) return;
-  const frac = storyFrac(), { sheet } = storyRects();
-  story.sheet.position.set(frac.ws.x, frac.ws.y, 0); story.sheet.scale.set(frac.ws.sx, frac.ws.sy, 1); syncStoryPlane(frac);
-  storyHud.style.left = sheet.x + 'px'; storyHud.style.top = sheet.y + 'px'; storyHud.style.width = sheet.width + 'px'; storyHud.style.height = sheet.height + 'px';
-  shotCrop();
+  const ws = worldRect(storyRects().sheet);
+  story.sheet.position.set(ws.x, ws.y, 0); story.sheet.scale.set(ws.sx, ws.sy, 1); syncSheet(); placeDom();
 }
-function shotCrop() {                                   // cover-crop the clip into its 4:5 plane
-  if (!story.plane || !vid.videoWidth) return;
-  const pu = story.plane.material.uniforms, ia = vid.videoWidth / vid.videoHeight, ca = STORY.aspect;
-  if (ia > ca) { pu.uVidRepeat.value.set(ca / ia, 1); pu.uVidOffset.value.set((1 - ca / ia) / 2, 0); } else { pu.uVidRepeat.value.set(1, ia / ca); pu.uVidOffset.value.set(0, (1 - ia / ca) / 2); }
-}
-vid.addEventListener('loadedmetadata', shotCrop);
 function showShot(gi, ii, keepTime = false) {
   const G = shotsData.groups, g = G[gi]; if (!g) return;
   if (ii >= g.items.length) { if (gi + 1 < G.length) return showShot(gi + 1, 0); return closeStory(); }   // past the group's last shot: next group, or done
@@ -1347,46 +1333,45 @@ function openStory(gi, fromEl) {
   if (S.hover >= 0) setHover(-1, $('#gl'));
   document.body.classList.add('lock'); storyEl.classList.add('on'); storyEl.removeAttribute('inert'); storyEl.setAttribute('aria-hidden', 'false');
   const D = RM ? 0 : 1, f = (fromEl || document.querySelector(`.bub[data-g="${gi}"]`)).getBoundingClientRect();
-  const wf = worldRect(f), frac = storyFrac(), ws = frac.ws, { sheet } = storyRects();
+  const wf = worldRect(f), ws = worldRect(storyRects().sheet);
   const radEnd = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--r')) || 24;
-  storyHud.style.left = sheet.x + 'px'; storyHud.style.top = sheet.y + 'px'; storyHud.style.width = sheet.width + 'px'; storyHud.style.height = sheet.height + 'px';
-  // the sheet starts as the bubble (a circle: radius = half its size) and grows into place; the clip rides inside it
+  placeDom();
+  // the strip steps back first (dims and fades), then the sheet grows out of the bubble: a circle (radius = half its size) into the card
   story.rad = f.width / 2;
-  story.sheet.position.set(wf.x, wf.y, 0); story.sheet.scale.set(wf.sx, wf.sy, 1); story.sheet.visible = true; story.sheet.material.uniforms.uDim.value = 0;
-  story.plane.visible = true; const pu = story.plane.material.uniforms; pu.uAlpha.value = 0;
-  syncStoryPlane(frac);
+  story.sheet.position.set(wf.x, wf.y, 0); story.sheet.scale.set(wf.sx, wf.sy, 1); story.sheet.visible = true; syncSheet();
+  const su = story.sheet.material.uniforms; su.uAlpha.value = 1; su.uDim.value = 0;
+  gsap.set(vid, { opacity: 0, scale: 0.97 });
   const tl = gsap.timeline({ onComplete: () => { story.busy = false; placeStory(); } });
-  tl.to(story.sheet.position, { x: ws.x, y: ws.y, duration: 0.75 * D, ease: 'expo.out' }, 0)
-    .to(story.sheet.scale, { x: ws.sx, y: ws.sy, duration: 0.75 * D, ease: 'expo.out', onUpdate: () => syncStoryPlane(frac) }, 0)
-    .to(story, { rad: radEnd, duration: 0.75 * D, ease: 'expo.out' }, 0)
-    .to(pu.uAlpha, { value: 1, duration: 0.45 * D }, 0.3 * D)
-    .to(S, { dim: 1, duration: 0.5 * D, ease: 'power2.out' }, 0)
-    .to(grid.material.uniforms.uDimF, { value: 0, duration: 0.5 * D }, 0)
-    .to('.nav', { opacity: 0, duration: 0.4 * D }, 0)
-    .fromTo('#storyClose', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.6 * D, ease: 'back.out(2)' }, 0.45 * D);
+  tl.to(S, { dim: 1, duration: 0.45 * D, ease: 'power2.out' }, 0)
+    .to(grid.material.uniforms.uDimF, { value: 0, duration: 0.45 * D }, 0)
+    .to('.nav', { opacity: 0, duration: 0.35 * D }, 0)
+    .to(story.sheet.position, { x: ws.x, y: ws.y, duration: 0.8 * D, ease: 'expo.out' }, 0.08 * D)
+    .to(story.sheet.scale, { x: ws.sx, y: ws.sy, duration: 0.8 * D, ease: 'expo.out', onUpdate: syncSheet }, 0.08 * D)
+    .to(story, { rad: radEnd, duration: 0.8 * D, ease: 'expo.out' }, 0.08 * D)
+    .to(vid, { opacity: 1, scale: 1, duration: 0.5 * D, ease: 'power2.out' }, 0.5 * D)
+    .fromTo('#storyClose', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.6 * D, ease: 'back.out(2)' }, 0.5 * D);
   showShot(gi, 0);
   if (RM) tl.progress(1);
 }
 function closeStory() {
   if (!story.open || story.busy) return; story.busy = true;
   vid.pause();
-  const D = RM ? 0 : 1, f = bubbleRect(story.g), wf = f ? worldRect(f) : null, frac = storyFrac();
-  const su = story.sheet.material.uniforms, pu = story.plane.material.uniforms;
+  const D = RM ? 0 : 1, f = bubbleRect(story.g), wf = f ? worldRect(f) : null, su = story.sheet.material.uniforms;
   storyEl.classList.remove('on');
   const tl = gsap.timeline({ onComplete: () => {
-    story.open = false; story.busy = false; story.sheet.visible = false; story.plane.visible = false; su.uAlpha.value = 1;
+    story.open = false; story.busy = false; story.sheet.visible = false; su.uAlpha.value = 1;
     storyEl.setAttribute('inert', ''); storyEl.setAttribute('aria-hidden', 'true'); document.body.classList.remove('lock');
     document.querySelectorAll('.bub.on').forEach(b => b.classList.remove('on'));
   } });
   tl.to('#storyClose', { scale: 0, rotation: 90, duration: 0.3 * D, ease: 'power2.in' }, 0)
-    .to(pu.uAlpha, { value: 0, duration: 0.25 * D }, 0);
-  if (wf) tl.to(story.sheet.position, { x: wf.x, y: wf.y, duration: 0.65 * D, ease: 'expo.inOut' }, 0.05 * D)
-            .to(story.sheet.scale, { x: wf.sx, y: wf.sy, duration: 0.65 * D, ease: 'expo.inOut', onUpdate: () => syncStoryPlane(frac) }, 0.05 * D)
-            .to(story, { rad: f.width / 2, duration: 0.65 * D, ease: 'expo.inOut' }, 0.05 * D);
-  else tl.to(su.uAlpha, { value: 0, duration: 0.4 * D }, 0);
-  tl.to(S, { dim: 0, duration: 0.7 * D, ease: 'power2.out' }, 0.15 * D)
-    .to(grid.material.uniforms.uDimF, { value: 1, duration: 0.7 * D }, 0.15 * D)
-    .to('.nav', { opacity: 1, duration: 0.5 * D }, 0.3 * D);
+    .to(vid, { opacity: 0, scale: 0.97, duration: 0.22 * D, ease: 'power2.in' }, 0);
+  if (wf) tl.to(story.sheet.position, { x: wf.x, y: wf.y, duration: 0.65 * D, ease: 'expo.inOut' }, 0.12 * D)
+            .to(story.sheet.scale, { x: wf.sx, y: wf.sy, duration: 0.65 * D, ease: 'expo.inOut', onUpdate: syncSheet }, 0.12 * D)
+            .to(story, { rad: f.width / 2, duration: 0.65 * D, ease: 'expo.inOut' }, 0.12 * D);
+  else tl.to(su.uAlpha, { value: 0, duration: 0.4 * D }, 0.1 * D);
+  tl.to(S, { dim: 0, duration: 0.6 * D, ease: 'power2.out' }, 0.55 * D)        // the strip comes back only once the sheet has gone into the bubble
+    .to(grid.material.uniforms.uDimF, { value: 1, duration: 0.6 * D }, 0.55 * D)
+    .to('.nav', { opacity: 1, duration: 0.5 * D }, 0.6 * D);
   if (RM) tl.progress(1);
 }
 $('#shotPrev').addEventListener('click', () => showShot(story.g, story.i - 1));
