@@ -170,7 +170,9 @@ function stepPost(dt) {
   trailSide = 1 - trailSide;
   const p = postMat.uniforms;
   // reference: u_ballA is PRESENCE (1 while the field holds any ink), not the envelope - the field itself does the fading, so the bump lingers and relaxes smoothly
-  p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 && !story.open ? 1 - hole.p : 0;   // no lens on the shots sheet p.u_aspect.value.set(w / h, 1);
+  p.u_trail.value = trailRT[trailSide].texture;
+  p.u_ballA.value = ball.seen && ball.e > 0.004 && !story.open ? 1 - hole.p : 0;   // no lens on the shots sheet
+  p.u_aspect.value.set(w / h, 1);
   // the hole follows its disc element (centre and radius), like the reference binding the hole to the overlay's circle
   p.u_hp.value = hole.p; p.u_hs.value = hole.s; p.u_time.value += dt;
   if (hole.p > 0.001 && hole.what === 'swap') { p.u_hc.value.set(0.5, 0.5); p.u_hr.value = 0.62; }   // the swallow: a hole wide enough to cover the whole frame
@@ -1243,6 +1245,7 @@ function openHole(on, what = hole.what || 'profile') {
   gsap.to(hole, { p: on ? 1 : 0, duration: (on ? 0.85 : 0.65) * D, ease: on ? 'power3.inOut' : 'power3.in', overwrite: 'auto' });
   gsap.to(hole, { s: on ? 0 : -0.1, duration: (on ? 0.3 : 0.25) * D, ease: 'power2.out', overwrite: 'auto' });
   if (on && hole.from) gsap.to(hole, { m: 1, duration: 0.85 * D, ease: 'power3.inOut', overwrite: 'auto' });
+  gsap.to('#shotsNav', { autoAlpha: on ? 0 : 1, duration: (on ? 0.3 : 0.5) * D, delay: on ? 0 : 0.3 * D, overwrite: 'auto' });   // the bubbles sit where the rim passes
   applyLang();                                        // the active corner label reads "Close"
 }
 UI.en.close = 'Close'; UI.ge.close = 'დახურვა';

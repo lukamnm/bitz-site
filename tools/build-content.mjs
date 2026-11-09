@@ -159,7 +159,7 @@ for (const slug of ['about', 'contact']) {
   const cv = l => about.blocks[l].find(b => b.href && /\.pdf$/i.test(b.href));
   const link = (l, re) => contact.blocks[l].find(b => b.href && re.test(b.href));
   const profile = {
-    lead: { en: sentences(paras('en')[0] || '', 2), ge: [paras('ge')[0] || '', sentences(paras('ge')[1] || '', 1)].filter(Boolean).join(' ') },
+    lead: { en: sentences(paras('en')[0] || '', 2), ge: paras('ge')[0] || '' },   // GE: the first paragraph only (the second made the disc overflow)
     meta: { en: 'Adobe Certified Professional - full-stack designer - Tbilisi', ge: 'Adobe Certified Professional - full-stack დიზაინერი - თბილისი' },   // GE wording to be signed off by Luka
     links: [
       { label: { en: cv('en')?.text || 'View CV', ge: cv('ge')?.text || 'ნახე CV' }, href: { en: 'assets/docs/' + path.basename(cv('en')?.href || 'resume-en-2026.pdf'), ge: 'assets/docs/' + path.basename(cv('ge')?.href || 'resume-ge-2026.pdf') } },
