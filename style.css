@@ -126,6 +126,7 @@ a{color:inherit;text-decoration:none}
 #shotMute[aria-pressed="true"] .off{display:block}
 #shotVid{position:fixed;left:0;top:0;width:0;height:0;object-fit:cover;border-radius:clamp(6px,.6vw,14px);opacity:0;pointer-events:none;z-index:1;background:#000}   /* plain video: native colours, no GL effects */
 .storyHud{z-index:2}
+#storySheet{display:none;position:fixed;left:0;top:0;background:#fff;border-radius:15px;z-index:0;will-change:left,top,width,height}
 #storyClose{position:fixed;top:var(--insY);right:var(--insX);width:clamp(34px,2.6vw,56px);height:clamp(34px,2.6vw,56px);border-radius:50%;border:0;background:#111;color:#fff;cursor:pointer;z-index:3;display:grid;place-items:center;pointer-events:auto}
 
 /* ---------- panel (project detail) */
@@ -216,40 +217,71 @@ body.lock .nav{pointer-events:none}
 /* ---------- mobile: vertical stack replaces the 3D ring */
 #stack{display:none}
 @media (max-width:767px){
-  html,body{overflow:auto}
-  body.lock{overflow:hidden}
+  /* phones, measured on the reference at 390 x 664: a looping card list driven by touch (no page scroll), dark fades under the
+     top and bottom labels, 350 x 205 cards 20 px from the edges and 20 px apart, labels 40 / 25 px from the edges */
+  :root{--insX:max(40px,env(safe-area-inset-left,0px));--insY:max(25px,env(safe-area-inset-top,0px))}
+  html,body{overflow:hidden;overscroll-behavior:none}
   #gl,#tags{display:none}
-  #stack{
-    display:flex;flex-direction:column;gap:14px;list-style:none;
-    padding:72px max(14px,env(safe-area-inset-right,0px)) 84px max(14px,env(safe-area-inset-left,0px));
-  }
-  .sc{
-    position:relative;display:block;width:100%;aspect-ratio:16/10;border:0;padding:0;
-    border-radius:10px;overflow:hidden;background:#111;cursor:pointer;text-align:left;color:#fff;
-  }
-  .sc img{width:100%;height:100%;object-fit:cover;display:block}
-  .sc .nm{position:absolute;left:12px;bottom:10px;font-size:13px;text-shadow:0 1px 10px rgba(0,0,0,.7)}
-  .sc i{
-    position:absolute;right:10px;bottom:10px;width:22px;height:22px;border-radius:50%;
-    background:#fff;color:#000;display:grid;place-items:center;font-style:normal;font-size:12px;
-  }
-  .tl,.tr{top:16px}.bl,.br{bottom:16px}
-  .tl,.bl{left:max(16px,env(safe-area-inset-left,0px))}
-  .tr,.br{right:max(16px,env(safe-area-inset-right,0px))}
-  #panel{grid-template-columns:1fr;overflow-y:auto;overscroll-behavior:contain}
-  .pl{position:static;padding:28px 20px 10px}
-  .pl h1{font-size:26px}
-  .pr{overflow:visible;padding:0 20px 90px}
-  .prc{padding-top:0}
-  .sliver,#ring{display:none}
-  .disc{width:min(86vw,420px);background:#000;border-radius:50%;opacity:0;transition:opacity .5s}   /* no GL lens on mobile: a plain black disc */
+  .bl,.br{bottom:max(25px,env(safe-area-inset-bottom,0px))}
+  #stack{display:block;position:fixed;inset:0;margin:0;padding:0;list-style:none;overflow:hidden;touch-action:none;z-index:1;
+    -webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+  #stack > li{position:absolute;left:20px;right:20px;top:0;will-change:transform}
+  #stack::before,#stack::after{content:"";position:fixed;left:0;right:0;z-index:5;pointer-events:none}
+  #stack::before{top:0;height:130px;background:linear-gradient(#000 0,rgba(0,0,0,.86) 30%,rgba(0,0,0,.45) 62%,rgba(0,0,0,0))}
+  #stack::after{bottom:0;height:120px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.5) 40%,rgba(0,0,0,.88) 72%,#000)}
+  .sc{position:relative;display:block;width:100%;aspect-ratio:350/205;border:0;padding:0;border-radius:20px;overflow:hidden;background:#111;
+    cursor:pointer;text-align:left;color:#fff;-webkit-tap-highlight-color:transparent;transform:translateZ(0)}
+  .sc img{position:absolute;left:0;top:-7%;width:100%;height:114%;object-fit:cover;display:block;will-change:transform}   /* overscan for the parallax */
+  .sc .nm{position:absolute;left:10px;bottom:12px;right:50px;font-size:16px;letter-spacing:-.05em;line-height:1.4;text-shadow:0 1px 14px rgba(0,0,0,.45)}
+  .sc .nm b{font-weight:400;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sc i{position:absolute;right:10px;bottom:11px;width:25px;height:25px;border-radius:50%;background:#000;color:#fff;display:grid;place-items:center;font-style:normal;font-size:11px}
+  .sc:active{transform:scale(.985);transition:transform .2s}
+  /* the stories row (Instagram-like): the shot bubbles ride in the list, above the first card, instead of floating over the cards */
+  #stack > li.srow{display:flex;justify-content:center}
+  #stack #shotsNav{position:static;transform:none;display:flex;gap:18px;padding:4px 0 18px}
+  #stack .bub{width:58px;height:58px}
+  #stack .bub .lbl{display:block;opacity:.62;transform:translate(-50%,8px);font-size:10px;text-transform:uppercase}
+  #stack .bub:hover{transform:none}
+  #stack .bub:active{transform:scale(.94)}
+  /* the opened project (reference: a white sheet 20 / 15 px from the edges, radius 15, 34 px title, images 10 px in and 30 px apart) */
+  #panel{grid-template-columns:1fr;overflow-y:auto;overscroll-behavior:contain;border-radius:15px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  #panel::-webkit-scrollbar{display:none}
+  .pl{position:static;padding:42px 25px 0;gap:22px}
+  .pl h1{font-size:34px;line-height:1.1;letter-spacing:-.05em}
+  .pl p{font-size:14px;line-height:1.4;letter-spacing:-.02em;max-width:none}
+  .chips{gap:4px;font-size:10px;margin-top:8px}
+  .chips li{padding:0 16px;height:28px;display:grid;place-items:center}
+  .chips li.lnk{padding:0}
+  .chips li.lnk a{width:28px;height:28px;min-width:0;min-height:0;font-size:12px}
+  .pr{overflow:visible;padding:40px 10px 80px}
+  .prc,#pBody{gap:30px;padding-top:0}
+  .pr .txt{padding:0 15px;font-size:14px;line-height:1.45}
+  .pr .txt h3{font-size:10px;margin-bottom:8px}
+  #ring{display:none}
+  #close{position:fixed;top:auto;right:35px;bottom:max(30px,calc(env(safe-area-inset-bottom,0px) + 15px));width:40px;height:40px}
+  #close .pill{display:none}
+  /* the neighbouring projects peek out at both sides like the reference's side sheets; a tap moves to them */
+  .sliver{display:block;top:15vh;height:70vh;width:12px;border-radius:0 12px 12px 0;background:#444;z-index:39;transition:opacity .4s}
+  .sliver.next{border-radius:12px 0 0 12px}
+  body:not(.lock) .sliver{opacity:0;pointer-events:none}
+  /* Profile / Contact: no GL lens on phones, a plain black disc */
+  .disc{width:min(86vw,420px);background:#000;border-radius:50%;opacity:0;transition:opacity .5s}
   .disc.on{opacity:1}
-  .tc{top:52px}
-  .nav .bub{width:36px;height:auto}
-  .bub .lbl{display:none}
-  #close{position:fixed;top:auto;bottom:calc(1.5vh + 14px);right:calc(3vw + 14px)}
+  #stack{transition:opacity .5s}
+  body:has(.disc.on) #stack{opacity:.28}   /* the cards step back behind the Profile / Contact circle */
+  /* shots viewer on phones: a white sheet grows out of the bubble (DOM, like the project panel); the 4:5 clip sits in it */
+  #storySheet{display:block}
+  .story{background:rgba(0,0,0,0);transition:background .5s}
+  .story.on{background:rgba(0,0,0,.82)}
+  .storyHud{--band:74px;--inset:10px}
+  .storyRow{font-size:10px;gap:8px}
+  .storyRow img{width:22px;height:22px}
+  #shotTitle{font-size:14px;margin-left:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  #shotMute{width:32px;height:32px;font-size:14px;flex:none}
+  #shotVid{border-radius:8px}
+  #storyClose{top:auto;right:35px;bottom:max(30px,calc(env(safe-area-inset-bottom,0px) + 15px));width:40px;height:40px}
+  #storyClose .pill{display:none}
 }
-
 @media (prefers-reduced-motion:reduce){
   .nav button{transition:none}
 }

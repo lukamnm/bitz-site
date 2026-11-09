@@ -776,18 +776,84 @@ function bindInput(canvas) {
   });
 }
 
-// ---------------------------------------------------------------- mobile stack
+// ---------------------------------------------------------------- phones: a looping card list driven by touch (reference: its mobile list is a
+// WebGL loop with no page scroll). Every item sits at y0 in one long period and is placed at (y0 - scroll) wrapped into that period, so the list
+// never ends; a drag follows the finger 1:1, a flick carries on with momentum and the scroll eases toward its target like the desktop strip.
+// The stories row (shot bubbles) is the first item of the loop, so the bubbles scroll with the cards instead of floating over them.
+const M = { s: 0, sT: 0, v: 0, drag: null, els: [], L: 1, H0: 0, on: false, last: 0, moved: 0 };
+const MGAP = 20, MTOP = 58;                          // gap between items; the list starts under the top labels
 function buildStack() {
-  const ul = $('#stack'); ul.innerHTML = '';
-  items().forEach((p, i) => {
-    const li = document.createElement('li');
-    li.innerHTML = `<button class="sc" type="button"><img src="${(p.home && p.home.img) || p.cover}" alt="" loading="lazy" onerror="this.remove()"><span class="nm"><b>${T(p).title}</b><small>${p.cats.join(', ')}</small></span><i>&rarr;</i></button>`;
-    li.firstElementChild.addEventListener('click', e => openProject(i, e.currentTarget.getBoundingClientRect()));
+  const ul = $('#stack'), nav = $('#shotsNav');
+  nav.remove(); ul.innerHTML = '';
+  const row = document.createElement('li'); row.className = 'srow'; row.append(nav); ul.append(row);
+  const list = items();
+  const card = (p, i) => {
+    const li = document.createElement('li'); li.className = 'mc'; li.dataset.i = i;
+    li.innerHTML = `<button class="sc" type="button"><img src="${(p.home && p.home.img) || p.cover}" alt="" decoding="async" onerror="this.remove()"><span class="nm"><b>${T(p).title}</b></span><i>&rarr;</i></button>`;
+    li.firstElementChild.addEventListener('click', e => { if (M.moved > 8 || S.open !== null || hole.open || story.open) return; openProject(i, e.currentTarget.getBoundingClientRect()); });
     ul.append(li);
-  });
+  };
+  list.forEach(card);
+  layoutStack();
+  for (let k = 0; k < 4 && M.L < innerHeight + 2 * M.H0; k++) { list.forEach(card); layoutStack(); }   // short lists repeat so the loop never shows a hole
+  if (!M.on) { M.on = true; M.last = performance.now(); requestAnimationFrame(stackFrame); bindStack(ul); }
+  stackFrame(performance.now());
   setTimeout(dismissPre, 500);
 }
-const stackRect = i => $('#stack').children[i]?.firstElementChild.getBoundingClientRect();
+function layoutStack() {
+  let y = MTOP, H0 = 0;
+  M.els = [...$('#stack').children].map(li => {
+    const h = li.offsetHeight, e = { li, img: li.querySelector('.sc img'), y0: y, h };
+    y += h + MGAP; H0 = Math.max(H0, h + MGAP); return e;
+  });
+  M.L = Math.max(1, y - MTOP); M.H0 = H0; M.dirty = true;
+}
+function stackFrame(now) {
+  if (!S.mobile) return;
+  const dt = Math.min(0.05, (now - M.last) / 1000 || 0.016); M.last = now;
+  if (!M.drag) {
+    M.sT += M.v * dt; M.v *= Math.exp(-dt * 2.6);                  // momentum after a flick
+    if (Math.abs(M.v) < 2) M.v = 0;
+    M.s += (M.sT - M.s) * (1 - Math.exp(-dt * 11));                 // eased follow, like Lenis
+  }
+  const vh = innerHeight, L = M.L, top = MTOP - M.H0;
+  if (!M.drag && !M.v && Math.abs(M.sT - M.s) < 0.05 && M.drawn === M.s && !M.dirty) { requestAnimationFrame(stackFrame); return; }   // at rest: nothing to redraw
+  M.drawn = M.s; M.dirty = false;
+  for (const e of M.els) {
+    let y = e.y0 - M.s - top; y = ((y % L) + L) % L + top;          // wrap into [top, top + L)
+    e.li.style.transform = `translate3d(0,${y.toFixed(2)}px,0)`;
+    if (e.img) e.img.style.transform = `translate3d(0,${(((y + e.h / 2) - vh / 2) * -0.06).toFixed(2)}px,0)`;   // slow image parallax inside the card
+  }
+  requestAnimationFrame(stackFrame);
+}
+function bindStack(ul) {
+  const locked = () => S.open !== null || hole.open || story.open;
+  ul.addEventListener('pointerdown', e => {
+    if (locked() || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    M.drag = { y: e.clientY, s0: M.s, id: e.pointerId, pts: [[performance.now(), e.clientY]] }; M.v = 0; M.sT = M.s; M.moved = 0;
+  });
+  addEventListener('pointermove', e => {
+    const d = M.drag; if (!d || e.pointerId !== d.id) return;
+    const dy = e.clientY - d.y; M.moved = Math.max(M.moved, Math.abs(dy));
+    M.s = M.sT = d.s0 - dy;
+    d.pts.push([performance.now(), e.clientY]); if (d.pts.length > 6) d.pts.shift();
+  });
+  const end = e => {
+    const d = M.drag; if (!d || e.pointerId !== d.id) return; M.drag = null;
+    const now = performance.now(), pts = d.pts.filter(p => now - p[0] < 110);
+    if (pts.length > 1 && M.moved > 8) { const [t0, y0] = pts[0], [t1, y1] = pts[pts.length - 1]; M.v = -((y1 - y0) / Math.max(16, t1 - t0)) * 1000 * 0.95; }   // px/s
+    setTimeout(() => { M.moved = 0; }, 0);
+  };
+  addEventListener('pointerup', end); addEventListener('pointercancel', end);
+  ul.addEventListener('click', e => { if (M.moved > 8) { e.stopPropagation(); e.preventDefault(); } }, true);   // a drag is not a tap
+  ul.addEventListener('wheel', e => { if (locked()) return; e.preventDefault(); M.sT += e.deltaY; }, { passive: false });
+}
+addEventListener('resize', () => { if (S.mobile && M.on) layoutStack(); });
+// the card on screen nearest the middle (a project can appear twice in a repeated short list)
+const stackRect = i => {
+  const all = [...document.querySelectorAll(`#stack > li.mc[data-i="${i}"] .sc`)].map(b => b.getBoundingClientRect());
+  return all.sort((a, b) => Math.abs(a.y + a.height / 2 - innerHeight / 2) - Math.abs(b.y + b.height / 2 - innerHeight / 2))[0];
+};
 
 // ---------------------------------------------------------------- panel
 const panel = $('#panel'), ghost = $('#ghost'), dimEl = $('#dim'), hero = $('#pHero'), fades = panel.querySelectorAll('.fade');
@@ -811,7 +877,7 @@ function sizeLoop() {
 function setRect(el, r) { el.style.left = r.x + 'px'; el.style.top = r.y + 'px'; el.style.width = r.width + 'px'; el.style.height = r.height + 'px'; }
 function targetRect() {
   const w = innerWidth, h = innerHeight;
-  return S.mobile ? { x: w * 0.03, y: h * 0.015, width: w * 0.94, height: h * 0.97 }
+  return S.mobile ? { x: 20, y: 15, width: w - 40, height: h - 30 }                          // phones: the reference's sheet, 20 / 15 px in
                   : { x: w * 0.033, y: h * 0.0225, width: w * 0.934, height: h * 0.955 };   // 45/18 px at 1366x800, like the reference
 }
 function fill(p) {
@@ -1097,7 +1163,7 @@ async function openProject(i, fromRect) {
     const heroR = hero.getBoundingClientRect();
     panel.style.visibility = ''; setRect(panel, fromRect); panel.style.opacity = 0; gsap.set(fades, { opacity: 0 });
     ghost.src = p.cover; setRect(ghost, fromRect); ghost.style.opacity = 1; dimEl.style.pointerEvents = 'auto';
-    const tl = gsap.timeline({ onComplete: () => { ghost.style.opacity = 0; busy = false; } });
+    const tl = gsap.timeline({ onComplete: () => { ghost.style.opacity = 0; busy = false; if (items().length > 1) slivers.forEach(s => s.classList.add('on')); } });
     tl.to(panel, { left: T.x, top: T.y, width: T.width, height: T.height, opacity: 1, duration: 1.0 * D, ease: 'expo.out' }, 0)
       .to(ghost, { left: heroR.x, top: heroR.y, width: heroR.width, height: heroR.height, duration: 1.0 * D, ease: 'expo.out' }, 0)
       .to(dimEl, { opacity: 0.62, duration: 0.8 * D }, 0)
@@ -1177,7 +1243,16 @@ function closeProject() {
 
 // prev / next while a project is open (the slivers at the edges, or arrow keys)
 function switchProject(dir) {
-  if (busy || S.open === null || S.mobile || !sides.next) return; busy = true;
+  if (S.mobile) {                                     // phones: the content slides out, the next project's slides in (the sheet stays)
+    if (busy || S.open === null || S.open < 0) return; busy = true;
+    const L = items(), N = L.length, ni = (S.open + dir + N) % N, D = RM ? 0 : 1;
+    gsap.timeline({ onComplete: () => { busy = false; } })
+      .to(panel, { opacity: 0, x: -dir * 28, duration: 0.25 * D, ease: 'power2.in' })
+      .add(() => { S.open = ni; syncUrl(false); fill(L[ni]); gsap.set(fades, { opacity: 1 }); })
+      .fromTo(panel, { x: dir * 28 }, { opacity: 1, x: 0, duration: 0.5 * D, ease: 'power3.out' });
+    return;
+  }
+  if (busy || S.open === null || !sides.next) return; busy = true;
   const L = items(), N = L.length, ni = (S.open + dir + N) % N, D = RM ? 0 : 1;
   const T = targetRect(), r = worldRect(T);
   const old = openCard, incoming = dir > 0 ? sides.next : sides.prev, outgoing = dir > 0 ? sides.prev : sides.next;
@@ -1240,7 +1315,8 @@ function bindCloseFx(b) {
     const len = Math.hypot(dx, dy); if (len > rad) { dx *= rad / len; dy *= rad / len; }
     gsap.to(pill, { x: dx, y: dy, duration: 0.25, ease: 'power2.out' });
   });
-  b.addEventListener('pointerenter', () => {
+  b.addEventListener('pointerenter', e => {
+    if (e.pointerType !== 'mouse') return;
     hov?.kill();
     hov = gsap.timeline()
       .to(pill, { scale: 1, duration: d(0.35), ease: 'power2.out' }, 0)
@@ -1248,7 +1324,8 @@ function bindCloseFx(b) {
       .to(m2, { yPercent: 0, duration: d(0.35), ease: 'power2.out' }, d(0.06))
       .to(mk, { scale: 1.12, duration: d(0.35), ease: 'power2.out' }, 0);
   });
-  b.addEventListener('pointerleave', () => {
+  b.addEventListener('pointerleave', e => {
+    if (e.pointerType !== 'mouse') return;
     hov?.kill();
     hov = gsap.timeline()
       .to(pill, { scale: 0, duration: d(0.3), ease: 'power2.out' }, 0)
@@ -1361,7 +1438,7 @@ async function follow(r) {
     if ((r.kind === 'project' || r.kind === 'post') && !same) {
       const i = items().indexOf(r.p);
       if (i >= 0) {
-        if (S.mobile) openProject(i, stackRect(i));
+        if (S.mobile) { const e = M.els.find(x => +x.li.dataset.i === i); if (e) M.s = M.sT = e.y0 - 140; await wait(60); openProject(i, stackRect(i)); }
         else { S.sT = i * S.pitch; await wait(450); openProject(i); }
         await idle();
       }
@@ -1411,6 +1488,13 @@ function markSeen(gi) {
 function shotLabels() { for (const el of document.querySelectorAll('[data-shot-label]')) el.textContent = L(shotsData.groups[+el.dataset.shotLabel].label); }
 // the sheet's target rect in CSS px, centred; the clip rect inside it
 function storyRects() {
+  if (S.mobile) {                                      // phones: the clip nearly full width, the HUD band under it, clear of the close button
+    const inset = 10, band = 74, room = innerHeight - 15 - 85;
+    let cw = innerWidth - 40 - 2 * inset, ch = cw * 1.25;
+    if (ch + inset + band > room) { ch = room - inset - band; cw = ch * 0.8; }
+    const W = cw + 2 * inset, H = ch + inset + band, x = (innerWidth - W) / 2, y = Math.max(15, (innerHeight - 85 - H) / 2 + 8);
+    return { sheet: { x, y, width: W, height: H }, clip: { x: x + inset, y: y + inset, width: cw, height: ch } };
+  }
   const vh = innerHeight, H = STORY.h * vh, inset = STORY.inset * vh, band = STORY.band * vh;
   const vidH = H - inset - band, vidW = vidH * STORY.aspect, W = vidW + 2 * inset;
   const x = (innerWidth - W) / 2, y = (vh - H) / 2;
@@ -1430,6 +1514,7 @@ function placeDom() {                                   // HUD and the clip onto
   Object.assign(vid.style, { left: clip.x + 'px', top: clip.y + 'px', width: clip.width + 'px', height: clip.height + 'px' });
 }
 function placeStory() {                                 // sheet onto its final rect (end of the open tween, and on resize)
+  if (S.mobile) { if (story.open && !story.busy) { setRect($('#storySheet'), storyRects().sheet); placeDom(); } return; }
   if (!story.sheet || !story.open || story.busy) return;
   const ws = worldRect(storyRects().sheet);
   story.sheet.position.set(ws.x, ws.y, 0); story.sheet.scale.set(ws.sx, ws.sy, 1); syncSheet(); placeDom();
@@ -1456,6 +1541,7 @@ function bubbleRect(gi) { return document.querySelector(`.bub[data-g="${gi}"]`)?
 function openStory(gi, fromEl) {
   if (story.busy) return;
   if (story.open) return showShot(gi, 0);
+  if (S.mobile) return openStoryM(gi, fromEl);
   storyGL(); if (!story.sheet) return;
   story.open = true; story.busy = true;
   if (S.hover >= 0) setHover(-1, $('#gl'));
@@ -1481,8 +1567,37 @@ function openStory(gi, fromEl) {
   showShot(gi, 0);
   if (RM) tl.progress(1);
 }
+// phones: a DOM sheet grows out of the bubble (a circle) into the white card, and goes back into it on close
+function openStoryM(gi, fromEl) {
+  story.open = true; story.busy = true;
+  document.body.classList.add('lock'); storyEl.classList.add('on'); storyEl.removeAttribute('inert'); storyEl.setAttribute('aria-hidden', 'false');
+  const D = RM ? 0 : 1, f = (fromEl || document.querySelector(`.bub[data-g="${gi}"]`)).getBoundingClientRect(), { sheet } = storyRects(), sh = $('#storySheet');
+  placeDom(); setRect(sh, f); gsap.set(sh, { borderRadius: f.width / 2, opacity: 1 });
+  gsap.set(vid, { opacity: 0, scale: 0.97 });
+  gsap.timeline({ onComplete: () => { story.busy = false; placeStory(); } })
+    .to(sh, { left: sheet.x, top: sheet.y, width: sheet.width, height: sheet.height, borderRadius: 15, duration: 0.75 * D, ease: 'expo.out' }, 0)
+    .to(vid, { opacity: 1, scale: 1, duration: 0.45 * D, ease: 'power2.out' }, 0.38 * D)
+    .fromTo('#storyClose', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.55 * D, ease: 'back.out(2)' }, 0.45 * D);
+  showShot(gi, 0);
+}
+function closeStoryM() {
+  story.busy = true; vid.pause();
+  const D = RM ? 0 : 1, f = bubbleRect(story.g), sh = $('#storySheet');
+  storyEl.classList.remove('on'); storyEl.style.display = 'block';      // keep the layer up while the sheet travels back
+  const tl = gsap.timeline({ onComplete: () => {
+    story.open = false; story.busy = false; storyEl.style.display = ''; gsap.set(sh, { opacity: 0 });
+    storyEl.setAttribute('inert', ''); storyEl.setAttribute('aria-hidden', 'true'); document.body.classList.remove('lock');
+    document.querySelectorAll('.bub.on').forEach(b => b.classList.remove('on'));
+  } });
+  tl.to('#storyClose', { scale: 0, rotation: 90, duration: 0.3 * D, ease: 'power2.in' }, 0)
+    .to(vid, { opacity: 0, duration: 0.2 * D }, 0);
+  if (f && f.bottom > 0 && f.top < innerHeight) tl.to(sh, { left: f.x, top: f.y, width: f.width, height: f.height, borderRadius: f.width / 2, duration: 0.6 * D, ease: 'expo.inOut' }, 0.08 * D);
+  else tl.to(sh, { opacity: 0, scale: 0.96, duration: 0.35 * D }, 0.08 * D);
+}
 function closeStory() {
-  if (!story.open || story.busy) return; story.busy = true;
+  if (!story.open || story.busy) return;
+  if (S.mobile) return closeStoryM();
+  story.busy = true;
   vid.pause();
   const D = RM ? 0 : 1, f = bubbleRect(story.g), wf = f ? worldRect(f) : null, su = story.sheet.material.uniforms;
   storyEl.classList.remove('on');
