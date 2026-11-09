@@ -93,8 +93,21 @@ for (const en of enS) {
   write(`${dir}/story.json`, sj);
   write(`${dir}/body.en.html`, cleanHtml(en.content.rendered));
   if (ge) write(`${dir}/body.ge.html`, cleanHtml(ge.content.rendered));
-  storyIndex.push({ slug: sj.slug, date: sj.date, title: sj.title, excerpt: sj.excerpt, cover, categories: sj.categories, hasGe: !!ge });
-  console.log(`story ${en.slug}: ge ${ge ? ge.slug : '-'}`);
+  // the body as panel sections: heading + paragraphs (list items become bullet paragraphs); paragraphs before the first heading get no heading
+  const toSections = html => {
+    const out = []; let cur = { h: '', t: [] };
+    for (const m of html.matchAll(/<(h[1-6]|p|li|blockquote)\b[^>]*>([\s\S]*?)<\/\1>/g)) {
+      const tx = text(m[2]); if (!tx) continue;
+      if (/^h/.test(m[1])) { if (cur.t.length) out.push(cur); cur = { h: tx, t: [] }; }
+      else cur.t.push(m[1] === 'li' ? '• ' + tx : tx);
+    }
+    if (cur.t.length) out.push(cur);
+    return out;
+  };
+  const bodyEn = cleanHtml(en.content.rendered), bodyGe = ge ? cleanHtml(ge.content.rendered) : null;
+  storyIndex.push({ slug: sj.slug, date: sj.date, title: sj.title, excerpt: sj.excerpt, cover, categories: sj.categories, hasGe: !!ge,
+    sections: { en: toSections(bodyEn), ge: bodyGe ? toSections(bodyGe) : null }, seo: sj.seo });
+  console.log(`story ${en.slug}: ge ${ge ? ge.slug : '-'}, ${toSections(bodyEn).length} sections`);
 }
 write('data/stories.json', storyIndex);
 
@@ -113,7 +126,8 @@ const groups = SL.en.map((g, gi) => {
     const vid = {};
     if (webm) vid.webm = copyMedia(webm.src, 'assets/video/shots');
     if (mp4 && (!webm || fs.statSync(localOf(mp4.src)).size < 8e6)) vid.mp4 = copyMedia(mp4.src, 'assets/video/shots');   // skip the 13 MB mp4s when a webm exists
-    return { id: b, title: it.title || b, sound: !!it.hasSound, wp: { en: it.postId, ge: geIt?.postId || null }, video: vid };
+    const enShot = read(`${X}/en/shots.json`).find(s => s.id === it.postId), geShot = geIt ? read(`${X}/ge/shots.json`).find(s => s.id === geIt.postId) : null;
+    return { id: b, title: { en: enShot ? ent(enShot.title.rendered) : b, ge: geShot ? ent(geShot.title.rendered) : null }, sound: !!it.hasSound, wp: { en: it.postId, ge: geIt?.postId || null }, video: vid };
   });
   return { title: { en: g.title, ge: geG?.title || null }, label: { en: g.label, ge: geG?.label || null }, ring, items };
 });

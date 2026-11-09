@@ -7,13 +7,20 @@ const MQ = matchMedia('(max-width: 767px)');
 
 const data = await (await fetch('data/projects.json')).json();
 const overlays = await fetch('data/profile.json').then(r => r.json()).catch(() => null);   // Profile / Contact hole content (both languages)
+const shotsData = await fetch('data/shots.json').then(r => r.json()).catch(() => ({ groups: [] }));
+// stories ride the same strip and panel as projects: each one becomes a card (cover + title) whose panel shows the article
+const stories = (await fetch('data/stories.json').then(r => r.json()).catch(() => [])).map(s => ({
+  slug: s.slug, story: true, featured: true, title: s.title.en, blurb: s.excerpt.en, year: s.date.slice(0, 10), client: null, cats: s.categories,
+  cover: s.cover, gallery: [], sections: s.sections.en, home: { img: s.cover }, seo: s.seo?.en,
+  i18n: { ge: s.hasGe ? { title: s.title.ge, blurb: s.excerpt.ge, sections: s.sections.ge } : null },
+}));
 try { await Promise.all([document.fonts.load('500 40px Moncero'), document.fonts.load('400 20px Moncero')]); } catch {}   // labels are baked into textures
 let mode = 'featured';
-const items = () => (mode === 'featured' ? data.filter(p => p.featured) : data);
+const items = () => (mode === 'stories' ? stories : mode === 'featured' ? data.filter(p => p.featured) : data);
 // ---------------------------------------------------------------- language: EN / GE (Georgian texts come from the old /ge/ site, per project under i18n.ge)
 let lang = 'en'; try { lang = localStorage.getItem('lang') === 'ge' ? 'ge' : 'en'; } catch {}
-const UI = { en: { profile: 'Profile', featured: 'Featured', full: 'Full', contact: 'Contact', lang: 'GE' },
-             ge: { profile: 'პროფილი', featured: 'რჩეული', full: 'სრული', contact: 'კონტაქტი', lang: 'EN' } };
+const UI = { en: { profile: 'Profile', featured: 'Featured', full: 'Full', stories: 'Stories', contact: 'Contact', lang: 'GE' },
+             ge: { profile: 'პროფილი', featured: 'რჩეული', full: 'სრული', stories: 'ბლოგი', contact: 'კონტაქტი', lang: 'EN' } };
 const T = p => {                                     // the project's texts in the current language, falling back to English field by field
   const g = lang === 'ge' ? p.i18n?.ge : null;
   return { title: g?.title || p.title, blurb: g?.blurb || p.blurb, sections: (g?.sections && g.sections.length) ? g.sections : p.sections };
@@ -21,7 +28,8 @@ const T = p => {                                     // the project's texts in t
 function applyLang() {
   document.documentElement.lang = lang === 'ge' ? 'ka' : 'en';
   for (const el of document.querySelectorAll('[data-ui]')) el.textContent = (hole.open && hole.what === el.dataset.ui) ? UI[lang].close : UI[lang][el.dataset.ui];
-  if (hole.open) fillDisc(hole.what);
+  if (hole.open && hole.what !== 'shots') fillDisc(hole.what);
+  if (typeof shotLabels === 'function') shotLabels();
   const b = document.getElementById('langBtn'); b.textContent = UI[lang].lang; b.setAttribute('lang', lang === 'ge' ? 'en' : 'ka');
 }
 
@@ -53,8 +61,8 @@ window.__errs = []; addEventListener('error', e => __errs.push(String(e.message)
 const TRAIL = { size: 256, diss: 4, diffuse: 40, rad: 0.04, warp: -0.045, shade: -1.2, edge: [0.22, 0.5], move0: 0.025, moveN: 0.08, follow: 7, fade: 4 };   // the reference's RUNTIME values (syncBall: $0=4 for decay and fade, bB=.04, SB=-.045, MB=-1.2, TB/EB .22/.5); the field decays fast so the bump stays compact under the pointer and reads as a lit lens, not a smear
 let sceneRT, trailRT = [], trailSide = 0, trailMat, trailScene, postMat, postScene, postCam;
 const ball = { tx: 0, ty: 0, sx: 0, sy: 0, e: 0, seen: false };
-const hole = { p: 0, s: -0.1, open: false, what: null };   // Profile / Contact overlay state (reference: p 0..1, squash eases -0.1 -> 0 as it opens)
-const disc = document.getElementById('disc');
+const hole = { p: 0, s: -0.1, m: 1, from: null, open: false, what: null };   // Profile / Contact / Shots overlay state (reference: p 0..1, squash eases -0.1 -> 0 as it opens)
+const disc = document.getElementById('disc'), discShot = document.getElementById('discShot');
 const QUAD_VERT = /* glsl */`varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`;
 const TRAIL_FRAG = /* glsl */`
 precision highp float;
@@ -165,7 +173,15 @@ function stepPost(dt) {
   p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 ? 1 - hole.p : 0; p.u_aspect.value.set(w / h, 1);
   // the hole follows its disc element (centre and radius), like the reference binding the hole to the overlay's circle
   p.u_hp.value = hole.p; p.u_hs.value = hole.s; p.u_time.value += dt;
-  if (hole.p > 0.001) { const r = disc.getBoundingClientRect(); p.u_hc.value.set((r.left + r.width / 2) / w, 1 - (r.top + r.height / 2) / h); p.u_hr.value = r.width / 2 / w; }
+  if (hole.p > 0.001) {
+    const r = disc.getBoundingClientRect(); let cx = r.left + r.width / 2, cy = r.top + r.height / 2, rad = r.width / 2;
+    if (hole.from && hole.m < 1) {                     // growing out of a bubble: centre and radius travel from it to the disc (reference holeFrom / hole.m)
+      const f = hole.from, m = hole.m; cx = f.left + f.width / 2 + (cx - f.left - f.width / 2) * m; cy = f.top + f.height / 2 + (cy - f.top - f.height / 2) * m; rad = f.width / 2 + (rad - f.width / 2) * m;
+    }
+    p.u_hc.value.set(cx / w, 1 - cy / h); p.u_hr.value = rad / w;
+    // the shots player is a DOM circle: keep it exactly inside the GL horizon while the hole grows, travels and closes
+    if (hole.what === 'shots') discShot.style.transform = `translate(${cx - (r.left + r.width / 2)}px, ${cy - (r.top + r.height / 2)}px) scale(${(rad / (r.width / 2)) * hole.p})`;
+  }
 }
 
 // ---------------------------------------------------------------- preloader
@@ -754,7 +770,7 @@ function fill(p) {
   hero.src = p.cover; hero.alt = t.title + ' cover';
   if (hero.complete) spin.classList.remove('on');
   $('#pBody').innerHTML =
-    t.sections.map(s => `<div class="txt"><h3>${s.h}</h3><p>${s.t}</p></div>`).join('') +
+    t.sections.map(s => `<div class="txt">${s.h ? `<h3>${s.h}</h3>` : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}</div>`).join('') +
     p.gallery.map(g => `<figure><img src="${g}" alt="" loading="lazy"></figure>`).join('');
   buildLoop();
   pr.scrollTop = 0; panel.scrollTop = 0;
@@ -1189,6 +1205,7 @@ function setMode(m) {
   if (m === mode || S.open !== null) return; mode = m;
   $('#mF').setAttribute('aria-pressed', m === 'featured');
   $('#mA').setAttribute('aria-pressed', m === 'full');
+  $('#mS').setAttribute('aria-pressed', m === 'stories');
   if (S.mobile) buildStack(); else buildRing();
 }
 // ---------------------------------------------------------------- the hole: Profile and Contact overlays (reference: openHole .85 s in / .65 s out,
@@ -1200,14 +1217,18 @@ function fillDisc(what) {
   $('#discLinks').innerHTML = o.links.map(l => `<li><a href="${L(l.href)}" target="_blank" rel="noopener">${L(l.label)}</a></li>`).join('');
 }
 function openHole(on, what = hole.what || 'profile') {
-  if (on && !overlays) return;
-  if (on && hole.open && hole.what === what) return openHole(false);
-  if (on) { hole.what = what; fillDisc(what); if (S.hover >= 0) setHover(-1, $('#gl')); }
+  if (on && what !== 'shots' && !overlays) return;
+  if (on && hole.open && hole.what === what && what !== 'shots') return openHole(false);
+  if (on) { hole.what = what; if (what !== 'shots') { disc.classList.remove('shots'); fillDisc(what); } if (S.hover >= 0) setHover(-1, $('#gl')); }
+  if (!on) { vid.pause(); document.querySelectorAll('.bub.on').forEach(b => b.classList.remove('on')); }
   hole.open = on;
   disc.toggleAttribute('inert', !on); disc.setAttribute('aria-hidden', String(!on)); disc.classList.toggle('on', on);
   const D = RM ? 0 : 1;
+  if (on && what !== 'shots') hole.from = null;
+  hole.m = on && hole.from ? 0 : 1;                   // m: 0 = centred on the bubble it grows from, 1 = on the disc
   gsap.to(hole, { p: on ? 1 : 0, duration: (on ? 0.85 : 0.65) * D, ease: on ? 'power3.inOut' : 'power3.in', overwrite: 'auto' });
   gsap.to(hole, { s: on ? 0 : -0.1, duration: (on ? 0.3 : 0.25) * D, ease: 'power2.out', overwrite: 'auto' });
+  if (on && hole.from) gsap.to(hole, { m: 1, duration: 0.85 * D, ease: 'power3.inOut', overwrite: 'auto' });
   applyLang();                                        // the active corner label reads "Close"
 }
 UI.en.close = 'Close'; UI.ge.close = 'დახურვა';
@@ -1225,14 +1246,46 @@ $('#langBtn').addEventListener('click', () => {
   try { localStorage.setItem('lang', lang); } catch {}
   applyLang();
   if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); return; }
-  if (hole.open) fillDisc(hole.what);
+  if (hole.open && hole.what !== 'shots') fillDisc(hole.what);
+  if (hole.open && hole.what === 'shots') showShot(shot.g, shot.i);
   for (const c of cards) if (c.img !== undefined) bake(c);
   if (S.open !== null && S.open >= 0) fill(items()[S.open]);
 });
-applyLang();
 $('#mF').addEventListener('click', () => setMode('featured'));
 $('#mA').addEventListener('click', () => setMode('full'));
+$('#mS').addEventListener('click', () => setMode('stories'));
 $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
+
+// ---------------------------------------------------------------- shots: the four group rings as bubbles; a bubble opens the hole as a circular
+// player (grown from the bubble itself) with the group's videos, sound on, prev / next and mute
+const shot = { g: 0, i: 0, muted: false };
+const vid = $('#shotVid');
+{
+  const nav = $('#shotsNav');
+  nav.innerHTML = shotsData.groups.map((g, i) => `<button type="button" class="bub" data-g="${i}"><img src="${g.ring}" alt=""><span data-shot-label="${i}">${g.label.en}</span></button>`).join('');
+  nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null) return; openShots(+b.dataset.g, b); });
+}
+function shotLabels() { for (const el of document.querySelectorAll('[data-shot-label]')) el.textContent = L(shotsData.groups[+el.dataset.shotLabel].label); }
+function showShot(gi, ii) {
+  const g = shotsData.groups[gi]; if (!g) return; shot.g = gi; shot.i = (ii + g.items.length) % g.items.length;
+  const it = g.items[shot.i];
+  vid.innerHTML = ['webm', 'mp4'].filter(k => it.video[k]).map(k => `<source src="${it.video[k]}" type="video/${k}">`).join('');
+  vid.load(); vid.muted = shot.muted;
+  vid.play().catch(() => { vid.muted = true; shot.muted = true; $('#shotMute').setAttribute('aria-pressed', 'true'); vid.play().catch(() => {}); });
+  $('#shotTitle').textContent = `${L(it.title)}  ${shot.i + 1}/${g.items.length}`;
+  document.querySelectorAll('.bub').forEach(b => b.classList.toggle('on', +b.dataset.g === gi));
+}
+function openShots(gi, fromEl) {
+  if (hole.open && hole.what === 'shots' && shot.g === gi) return openHole(false);
+  hole.from = fromEl ? fromEl.getBoundingClientRect() : null;      // the hole grows out of the bubble
+  disc.classList.add('shots');
+  openHole(true, 'shots');
+  showShot(gi, 0);
+}
+$('#shotPrev').addEventListener('click', () => showShot(shot.g, shot.i - 1));
+$('#shotNext').addEventListener('click', () => showShot(shot.g, shot.i + 1));
+$('#shotMute').addEventListener('click', e => { shot.muted = !shot.muted; vid.muted = shot.muted; e.currentTarget.setAttribute('aria-pressed', String(shot.muted)); });
+applyLang();
 
 // ---------------------------------------------------------------- boot
 if (S.mobile) buildStack(); else initGL();

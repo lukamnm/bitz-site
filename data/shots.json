@@ -13,7 +13,10 @@
       "items": [
         {
           "id": "auto-signs-last-grain",
-          "title": "auto-signs-last-grain",
+          "title": {
+            "en": "Auto signs",
+            "ge": "საგზაო ნიშნები"
+          },
           "sound": true,
           "wp": {
             "en": 4263,
@@ -25,7 +28,10 @@
         },
         {
           "id": "monowheel-with-sounds",
-          "title": "monowheel-with-sounds",
+          "title": {
+            "en": "Monowheel",
+            "ge": "მონოციკლი"
+          },
           "sound": true,
           "wp": {
             "en": 4264,
@@ -38,7 +44,10 @@
         },
         {
           "id": "haustique-box",
-          "title": "haustique-box",
+          "title": {
+            "en": "Haustique box",
+            "ge": "Haustique ყუთის"
+          },
           "sound": true,
           "wp": {
             "en": 4265,
@@ -50,7 +59,10 @@
         },
         {
           "id": "palipop",
-          "title": "palipop",
+          "title": {
+            "en": "Palipop - Fizzy Drink",
+            "ge": "Palipop - Fizzy Drink"
+          },
           "sound": true,
           "wp": {
             "en": 4291,
@@ -62,7 +74,10 @@
         },
         {
           "id": "lap-1080x1350-1",
-          "title": "lap-1080x1350-1",
+          "title": {
+            "en": "Lamp",
+            "ge": "Lamp"
+          },
           "sound": true,
           "wp": {
             "en": 4379,
@@ -87,7 +102,10 @@
       "items": [
         {
           "id": "logo-reveal",
-          "title": "logo-reveal",
+          "title": {
+            "en": "Brace",
+            "ge": "Brace"
+          },
           "sound": true,
           "wp": {
             "en": 4268,
@@ -112,7 +130,10 @@
       "items": [
         {
           "id": "with-sound",
-          "title": "with-sound",
+          "title": {
+            "en": "Hero UI interative element",
+            "ge": "Hero - ინტერაქციული ელემენტი"
+          },
           "sound": true,
           "wp": {
             "en": 4281,
@@ -124,7 +145,10 @@
         },
         {
           "id": "fastoo-logo-animation",
-          "title": "fastoo-logo-animation",
+          "title": {
+            "en": "Fastoo logo loader",
+            "ge": "Fastoo - ლოგოს ანიმაცია"
+          },
           "sound": true,
           "wp": {
             "en": 4279,
@@ -149,7 +173,10 @@
       "items": [
         {
           "id": "minerals",
-          "title": "minerals",
+          "title": {
+            "en": "Minerals",
+            "ge": "მინერალები"
+          },
           "sound": true,
           "wp": {
             "en": 4266,
