@@ -850,10 +850,19 @@ function bindStack(ul) {
 }
 addEventListener('resize', () => { if (S.mobile && M.on) layoutStack(); });
 // the card on screen nearest the middle (a project can appear twice in a repeated short list)
-const stackRect = i => {
-  const all = [...document.querySelectorAll(`#stack > li.mc[data-i="${i}"] .sc`)].map(b => b.getBoundingClientRect());
-  return all.sort((a, b) => Math.abs(a.y + a.height / 2 - innerHeight / 2) - Math.abs(b.y + b.height / 2 - innerHeight / 2))[0];
+const stackEl = i => {
+  const mid = b => { const r = b.getBoundingClientRect(); return Math.abs(r.y + r.height / 2 - innerHeight / 2); };
+  return [...document.querySelectorAll(`#stack > li.mc[data-i="${i}"] .sc`)].sort((a, b) => mid(a) - mid(b))[0] || null;
 };
+const stackRect = i => stackEl(i)?.getBoundingClientRect();
+// a copy of a card, fixed on top of everything at rect r, with a white wash layer (opening: the card grows and turns white)
+function liftCard(el, r) {
+  const g = el ? el.cloneNode(true) : document.createElement('div');
+  g.classList.add('sc', 'lift'); g.removeAttribute('type'); g.setAttribute('aria-hidden', 'true'); g.style.visibility = '';
+  g.insertAdjacentHTML('beforeend', '<span class="wash"></span>');
+  setRect(g, r); document.body.append(g);
+  return g;
+}
 
 // ---------------------------------------------------------------- panel
 const panel = $('#panel'), ghost = $('#ghost'), dimEl = $('#dim'), hero = $('#pHero'), fades = panel.querySelectorAll('.fade');
@@ -1157,23 +1166,27 @@ async function openProject(i, fromRect) {
   const D = RM ? 0 : 1;
   document.body.classList.add('lock');
 
-  if (S.mobile) {                                   // DOM shared-element on mobile
-    panel.classList.add('on'); setRect(panel, T); panel.style.visibility = 'hidden';
-    await new Promise(r => requestAnimationFrame(r));
-    const heroR = hero.getBoundingClientRect();
-    panel.style.visibility = ''; setRect(panel, fromRect); panel.style.opacity = 0; gsap.set(fades, { opacity: 0 });
-    ghost.src = p.cover; setRect(ghost, fromRect); ghost.style.opacity = 1; dimEl.style.pointerEvents = 'auto';
-    const tl = gsap.timeline({ onComplete: () => { ghost.style.opacity = 0; busy = false; if (items().length > 1) slivers.forEach(s => s.classList.add('on')); } });
-    tl.to(panel, { left: T.x, top: T.y, width: T.width, height: T.height, opacity: 1, duration: 1.0 * D, ease: 'expo.out' }, 0)
-      .to(ghost, { left: heroR.x, top: heroR.y, width: heroR.width, height: heroR.height, duration: 1.0 * D, ease: 'expo.out' }, 0)
-      .to(dimEl, { opacity: 0.62, duration: 0.8 * D }, 0)
-      .to('.nav', { opacity: 0, duration: 0.4 * D }, 0)
-      .to(fades, { opacity: 1, duration: 0.5 * D, stagger: 0.05 }, 0.45 * D)
-      .fromTo('#close', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.6 * D, ease: 'back.out(2)' }, 0.55 * D);
+  if (S.mobile) {                                   // phones: the card itself lifts out and grows into the sheet (reference)
+    const el = stackEl(i); if (el) el.style.visibility = 'hidden';
+    const g = liftCard(el, fromRect || el?.getBoundingClientRect());
+    panel.classList.add('on'); setRect(panel, T); panel.style.opacity = 0; panel.scrollTop = 0;
+    const parts = [$('#pTitle'), $('#pBlurb'), $('#pChips'), ...$('#pContent').children].filter(Boolean).slice(0, 5);
+    gsap.set(fades, { opacity: 1 }); gsap.set(parts, { opacity: 0, y: 18 });
+    dimEl.style.pointerEvents = 'auto';
+    const tl = gsap.timeline({ onComplete: () => { g.remove(); if (el) el.style.visibility = ''; busy = false; if (items().length > 1) slivers.forEach(s => s.classList.add('on')); } });
+    tl.to(g, { left: T.x, top: T.y, width: T.width, height: T.height, borderRadius: 15, duration: 0.8 * D, ease: 'expo.out' }, 0)
+      .to(g.querySelectorAll('.nm, i'), { opacity: 0, duration: 0.18 * D }, 0)
+      .to(g.querySelector('img'), { scale: 1.08, duration: 0.8 * D, ease: 'expo.out' }, 0)
+      .to(g.querySelector('.wash'), { opacity: 1, duration: 0.42 * D, ease: 'power2.inOut' }, 0.1 * D)       // the image washes to white as it grows
+      .to(dimEl, { opacity: 0.62, duration: 0.6 * D }, 0)
+      .to('.nav', { opacity: 0, duration: 0.3 * D }, 0)
+      .set(panel, { opacity: 1 }, 0.52 * D)
+      .to(g, { opacity: 0, duration: 0.15 * D }, 0.56 * D)
+      .to(parts, { opacity: 1, y: 0, duration: 0.65 * D, ease: 'power3.out', stagger: 0.06 }, 0.5 * D)
+      .fromTo('#close', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.55 * D, ease: 'back.out(2)' }, 0.62 * D);
     if (RM) tl.progress(1);
     return;
   }
-
   // desktop (measured on the reference): the card grows into the white panel (sheet expo.out 0.7 s, white power3.out 0.5 s from 0.13 s);
   // prev/next wash to grey, scale up and park beside it as side sheets; the rest of the strip fades; content shows at ~1.0 s
   const c = cards[i]; openCard = c;
@@ -1210,22 +1223,31 @@ function closeProject() {
   };
   S.open = null; syncUrl(); S.open = i;              // the address goes back to the list as soon as the panel starts closing
 
-  if (S.mobile) {
-    const src = stackRect(i), T = targetRect(), heroR = hero.getBoundingClientRect();
-    const useGhost = heroR.bottom > T.y + 40 && heroR.top < T.y + T.height;
-    if (useGhost) { setRect(ghost, heroR); ghost.style.opacity = 1; }
-    const tl = gsap.timeline({ onComplete: done });
-    tl.to(fades, { opacity: 0, duration: 0.25 * D }, 0)
+  if (S.mobile) {                                   // phones: the sheet turns back into the card (white -> image) and lands in its slot
+    const T = targetRect(), el = stackEl(i), src = el?.getBoundingClientRect();
+    const onScreen = src && src.bottom > 0 && src.top < innerHeight;
+    const parts = [$('#pTitle'), $('#pBlurb'), $('#pChips'), ...$('#pContent').children].filter(Boolean);
+    const tl = gsap.timeline({ onComplete: () => { gsap.set(parts, { clearProps: 'opacity,transform' }); done(); } });
+    tl.to(parts, { opacity: 0, y: -10, duration: 0.2 * D, ease: 'power2.in' }, 0)
       .to('#close', { scale: 0, rotation: 90, duration: 0.3 * D, ease: 'power2.in' }, 0)
-      .to(panel, { left: src.x, top: src.y, width: src.width, height: src.height, opacity: 0, duration: 0.85 * D, ease: 'expo.inOut' }, 0.05 * D)
-      .to(dimEl, { opacity: 0, duration: 0.7 * D }, 0.1 * D)
-      .to('.nav', { opacity: 1, duration: 0.5 * D }, 0.3 * D);
-    if (useGhost) tl.to(ghost, { left: src.x, top: src.y, width: src.width, height: src.height, duration: 0.85 * D, ease: 'expo.inOut' }, 0.05 * D)
-                    .to(ghost, { opacity: 0, duration: 0.25 * D }, 0.7 * D);
+      .to(dimEl, { opacity: 0, duration: 0.7 * D }, 0.15 * D)
+      .to('.nav', { opacity: 1, duration: 0.5 * D }, 0.35 * D);
+    if (onScreen) {
+      const g = liftCard(el, T, true);
+      gsap.set(g, { opacity: 0, borderRadius: 15 }); gsap.set(g.querySelectorAll('.nm, i'), { opacity: 0 }); gsap.set(g.querySelector('.wash'), { opacity: 1 }); gsap.set(g.querySelector('img'), { scale: 1.08 });
+      el.style.visibility = 'hidden';
+      tl.set(g, { opacity: 1 }, 0.2 * D).set(panel, { opacity: 0 }, 0.21 * D)
+        .to(g, { left: src.x, top: src.y, width: src.width, height: src.height, borderRadius: 20, duration: 0.75 * D, ease: 'expo.inOut' }, 0.21 * D)
+        .to(g.querySelector('img'), { scale: 1, duration: 0.75 * D, ease: 'expo.inOut' }, 0.21 * D)
+        .to(g.querySelector('.wash'), { opacity: 0, duration: 0.4 * D, ease: 'power2.inOut' }, 0.45 * D)
+        .to(g.querySelectorAll('.nm, i'), { opacity: 1, duration: 0.25 * D }, 0.8 * D)
+        .add(() => { el.style.visibility = ''; g.remove(); }, 0.98 * D);
+    } else {
+      tl.to(panel, { opacity: 0, y: 30, duration: 0.45 * D, ease: 'power2.in', onComplete: () => gsap.set(panel, { y: 0 }) }, 0.15 * D);
+    }
     if (RM) tl.progress(1);
     return;
   }
-
   stopLenis();
   const c = openCard;
   S.open = -1;                                        // not null yet: input stays locked while the strip comes back
