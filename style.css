@@ -212,9 +212,7 @@ body.lock .nav{pointer-events:none}
   position:fixed;inset:0;background:#000;display:grid;place-items:center;z-index:100;
   font-size:11px;letter-spacing:.3em;text-transform:uppercase;
 }
-#pre b{display:none}   /* the progress number (kept for the loading count) */
-#preLogo{width:clamp(150px,20vw,360px);aspect-ratio:692/511}
-#preLogo svg{display:block}
+#pre b{font-weight:400;opacity:.45;margin-left:1em;font-variant-numeric:tabular-nums}
 
 /* ---------- mobile: vertical stack replaces the 3D ring */
 #stack{display:none}

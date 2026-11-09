@@ -16,30 +16,9 @@
 <script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js"}}</script>
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/lenis.min.js"></script>
-<script src="assets/vendor/lottie_light.min.js"></script>
 </head>
 <body>
-<div id="pre" aria-hidden="true"><div id="preLogo"></div><b>0</b></div>
-<script>
-// the loader: the Bitz logo is hand-written (assets/loader/bitz-write.json, made by tools/loader/build-lottie.mjs) while the site loads.
-// The app calls bitzLoader.exit(go) when it is ready: the writing finishes first if it has not, then the strokes retract and go() fades the screen.
-window.bitzLoader = (() => {
-  let anim = null, phase = 'load', queued = null, seg = { write: [0, 78], erase: [120, 176] };
-  const leave = () => { const go = queued; queued = null; if (anim && phase !== 'fail') { phase = 'erase'; anim.playSegments(seg.erase, true); } go && go(); };
-  try {
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) throw 0;
-    anim = lottie.loadAnimation({ container: document.getElementById('preLogo'), renderer: 'svg', loop: false, autoplay: false, path: 'assets/loader/bitz-write.json' });
-    anim.addEventListener('DOMLoaded', () => {
-      for (const m of anim.animationData.markers || []) if (m.cm === 'write' || m.cm === 'erase') seg[m.cm] = [m.tm, m.tm + m.dr];
-      phase = 'write'; anim.playSegments(seg.write, true);
-    });
-    anim.addEventListener('complete', () => { if (phase === 'write') { phase = 'wrote'; if (queued) leave(); } });
-    anim.addEventListener('data_failed', () => { phase = 'fail'; if (queued) leave(); });
-    setTimeout(() => { if (phase === 'load') { phase = 'fail'; if (queued) leave(); } }, 2500);   // the animation file did not arrive: do not hold the site
-  } catch { phase = 'fail'; }
-  return { exit(go) { queued = go; if (phase === 'wrote' || phase === 'fail') leave(); } };
-})();
-</script>
+<div id="pre" aria-hidden="true">bitz <b>0</b></div>
 
 <canvas id="gl" aria-label="Project carousel"></canvas>
 <div id="tags" aria-hidden="true"></div>
