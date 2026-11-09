@@ -1,9 +1,12 @@
 # bitz admin (Sveltia CMS). Every save is a commit to lukamnm/bitz-site; the deploy workflow rebuilds data/ and uploads the site.
-# Sign in: "Sign In with Token" on the login screen (a GitHub fine-grained token with Contents: read and write on bitz-site).
+# Sign in: "Sign In with GitHub" runs admin/auth.php on Hostnodes (an OAuth helper; its app keys live outside the website,
+# see tools/setup-admin-login.js). "Sign In Using Access Token" still works as a fallback.
 backend:
   name: github
   repo: lukamnm/bitz-site
   branch: main
+  base_url: https://bitz.ge
+  auth_endpoint: preview/bitz/admin/auth.php   # moves to admin/auth.php when the site goes live at the root
   commit_messages:
     create: 'Add {{collection}} "{{slug}}" (admin)'
     update: 'Update {{collection}} "{{slug}}" (admin)'
