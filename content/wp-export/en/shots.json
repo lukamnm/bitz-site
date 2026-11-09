@@ -1,0 +1,677 @@
+[
+ {
+  "id": 4379,
+  "date": "2026-09-14T12:03:40",
+  "date_gmt": "2026-09-14T08:03:40",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&p=4379"
+  },
+  "modified": "2026-09-14T12:03:40",
+  "modified_gmt": "2026-09-14T08:03:40",
+  "slug": "lamp",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4379",
+  "title": {
+   "rendered": "Lamp"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   60
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4379",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4379"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4379"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4291,
+  "date": "2026-08-19T22:10:22",
+  "date_gmt": "2026-08-19T18:10:22",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4291"
+  },
+  "modified": "2026-08-19T22:10:22",
+  "modified_gmt": "2026-08-19T18:10:22",
+  "slug": "palipop-fizzy-drink",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4291",
+  "title": {
+   "rendered": "Palipop &#8211; Fizzy Drink"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   60
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4291",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4291"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4291"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4281,
+  "date": "2026-08-18T23:04:39",
+  "date_gmt": "2026-08-18T19:04:39",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4281"
+  },
+  "modified": "2026-08-18T23:06:59",
+  "modified_gmt": "2026-08-18T19:06:59",
+  "slug": "hero-ui-interative-element",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4281",
+  "title": {
+   "rendered": "Hero UI interative element"
+  },
+  "featured_media": 0,
+  "menu_order": 1,
+  "template": "",
+  "colega_shot_category": [
+   59
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4281",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4281"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4281"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4279,
+  "date": "2026-08-18T21:52:34",
+  "date_gmt": "2026-08-18T17:52:34",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4279"
+  },
+  "modified": "2026-08-18T23:07:24",
+  "modified_gmt": "2026-08-18T19:07:24",
+  "slug": "fastoo-logo-loader",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4279",
+  "title": {
+   "rendered": "Fastoo logo loader"
+  },
+  "featured_media": 0,
+  "menu_order": 2,
+  "template": "",
+  "colega_shot_category": [
+   59
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4279",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4279"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4279"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4268,
+  "date": "2026-08-18T00:12:24",
+  "date_gmt": "2026-08-17T20:12:24",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4268"
+  },
+  "modified": "2026-08-18T00:12:24",
+  "modified_gmt": "2026-08-17T20:12:24",
+  "slug": "brace",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4268",
+  "title": {
+   "rendered": "Brace"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   58
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4268",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4268"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4268"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4266,
+  "date": "2026-08-18T00:11:53",
+  "date_gmt": "2026-08-17T20:11:53",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4266"
+  },
+  "modified": "2026-08-18T21:49:13",
+  "modified_gmt": "2026-08-18T17:49:13",
+  "slug": "minerals",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4266",
+  "title": {
+   "rendered": "Minerals"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   61
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4266",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4266"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4266"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4265,
+  "date": "2026-08-18T00:05:45",
+  "date_gmt": "2026-08-17T20:05:45",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4265"
+  },
+  "modified": "2026-08-18T21:49:01",
+  "modified_gmt": "2026-08-18T17:49:01",
+  "slug": "haustique-box",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4265",
+  "title": {
+   "rendered": "Haustique box"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   60
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4265",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4265"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4265"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4264,
+  "date": "2026-08-18T00:05:16",
+  "date_gmt": "2026-08-17T20:05:16",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4264"
+  },
+  "modified": "2026-08-18T21:48:45",
+  "modified_gmt": "2026-08-18T17:48:45",
+  "slug": "monowheel",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4264",
+  "title": {
+   "rendered": "Monowheel"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   60
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4264",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4264"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4264"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4263,
+  "date": "2026-08-18T00:04:55",
+  "date_gmt": "2026-08-17T20:04:55",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=colega_shot&#038;p=4263"
+  },
+  "modified": "2026-08-18T21:48:32",
+  "modified_gmt": "2026-08-18T17:48:32",
+  "slug": "auto-signs",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/?post_type=colega_shot&p=4263",
+  "title": {
+   "rendered": "Auto signs"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   60
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot/4263",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4263"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_shot_category?post=4263"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ }
+]

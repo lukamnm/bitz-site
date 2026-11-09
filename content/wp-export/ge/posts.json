@@ -1,0 +1,3500 @@
+[
+ {
+  "id": 3941,
+  "date": "2026-08-19T16:38:43",
+  "date_gmt": "2026-08-19T16:38:43",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?p=3941"
+  },
+  "modified": "2026-09-06T18:58:10",
+  "modified_gmt": "2026-09-06T18:58:10",
+  "slug": "ai-dizaineris-samushao-protsesshi",
+  "status": "publish",
+  "type": "post",
+  "link": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/",
+  "title": {
+   "rendered": "AI დიზაინერის სამუშაო პროცესში"
+  },
+  "content": {
+   "rendered": "<p dir=\"ltr\">თითქმის ყველა შეხვედრა კლიენტთან ერთნაირად იწყება: სადღაც ბრიფსა და ბიუჯეტს შორის აუცილებლად ვინმე იკითხავს AI-ზე. ხშირად ეს კითხვა სისწრაფეს ეხება &#8211; ხომ არ გამოვა უფრო სწრაფად და იაფად? ზოგჯერ კი ამის უკან შეშფოთება იმალება &#8211; საერთოდ სჭირდებათ თუ არა დიზაინერი.</p>\n<p dir=\"ltr\">AI ხელსაწყოებს უკვე კარგა ხანია ვიყენებ &#8211; ბრენდინგში, 3D-ში, მოუშენ დიზაინსა და UI/UX-ში. არა საჩვენებელ, არამედ ისეთ პროექტებში, რომლებიც კლიენტამდე საბოლოო სახით მიდის. ამიტომ უბრალოდ გიამბობთ, სად აქვს AI-ს ჩემს პროცესში ადგილი და სად არა.</p>\n<h2 dir=\"ltr\">სად ზოგავს AI დროს სინამდვილეში</h2>\n<p dir=\"ltr\">ყველაზე დიდი დროის მოგება პროექტის იმ შუა მონაკვეთშია, რომელსაც პორტფოლიოში არავინ დებს.</p>\n<p dir=\"ltr\">ყველაზე თვალსაჩინო მაგალითი რეფერენსების მოძიებაა. ადრე პროექტის დასაწყისში მუდბორდის აწყობას მთელ საათებს ვანდომებდი: გაფანტული რისერჩები Pinterest-ზე, ნახევრად მივიწყებული სქრინშოტები Dribbble-იდან. ახლა საკმარისია ვიზუალური მიმართულების რამდენიმე სიტყვით აღწერა და წუთებში მზად მაქვს ამ მიმართულებების ფართო არჩევანი &#8211; გამოსადეგს ვიტოვებ, დანარჩენს ვაგდებ. ის კი არ შეიცვალა თუ რას ვეძებ, შეიცვალა, რამდენად სწრაფად მივდივარ ვარიანტებამდე.</p>\n<p dir=\"ltr\">მეორე მაგალითი ექსპერიმენტებია. როცა ლოგოსთვის ან ლეიაუთისთვის ჯერ კიდევ სამ-ოთხ მიმართულებას შორის ვარჩევ, სწრაფი ვიზუალური ვარიაციები საშუალებას მაძლევს, ბევრი ცუდ იდეას სწრაფად შევხედო და ეს, გულახდილად რომ ვთქვათ, კარგ იდეებამდეც უფრო სწრაფად მიმიყვანს ხოლმე. ეს სკეტჩბუქია და არა საბოლოო რენდერი.</p>\n<p dir=\"ltr\">შემდეგ არის წმინდა შავი საქმე: კლიენტის გამოგზავნილი დაბალი გარჩევადობის ფაილების გაუმჯობესება, ფონების მოცილება, კადრირების შეცვლა ათეულობით სარეკლამო ფორმატისთვის, სწრაფი რეტუში. აქ AI-ს გამოყენებას მინუსი უბრალოდ არ აქვს, ფონის წაშლის ოსტატობით ჯერ არავის არაფერი დაუმტკიცებია.</p>\n<h2 dir=\"ltr\">სად ვერ ჩაანაცვლებს AI ოსტატობას</h2>\n<p dir=\"ltr\">ეს ის ნაწილია, რომელსაც AI-ზე დაწერილი ბლოგების უმეტესობა ტოვებს ხოლმე, ალბათ იმიტომ, რომ ამაზე წერა ნაკლებად ეფექტურია.</p>\n<p dir=\"ltr\">კონცეფცია პრომპტში არ იბადება. ის იბადება ბიზნეს ამოცანების გააზრებიდან. ისეთი რამის გაგებისგან, რაც თავად კლიენტსაც ბოლომდე არ აქვს გააზრებული და მისი ისეთ ვიზუალურ იდეად გარდაქმნისგან, რომელიც აქამდე არავის შეუქმნია. AI-ს მხოლოდ იმის ჩვენება შეუძლია, რაც უკვე არსებობს, ცოტა სხვა ფორმით. ის ვერ გეტყვის, კონკრეტულმა ბრენდმა ისეთი რა უნდა თქვას, რასაც მის კატეგორიაში ჯერ არავინ ამბობს. ეს ისევ ადამიანის მიერ ადამიანური პრობლემის ამოკითხვაა.</p>\n<p dir=\"ltr\">ბრენდის სტრატეგია იგივე ამბავია, ოღონდ უფრო მაღალ საფეხურზე. ლოგო და ვიზუალური სისტემა უბრალოდ სურათები არ არის, ეს გადაწყვეტილებაა იმაზე, როგორ უნდა აღიქმებოდეს კომპანია წლების განმავლობაში და როგორ გაუძლოს ასობით ისეთ გამოყენებას, რომელიც ჯერ არც არსებობს. <a href=\"https://bitz.ge/portfolio/cerebro/\">Cerebro-ს</a> მსგავს პროექტში, სადაც ადამიანის ტვინის იდეა ციფრული მარკეტინგის სააგენტოს მთელ ვიზუალურ ენას უნდა შერწყმოდა, საქმე გენერირებაში არ იყო. საქმე განსჯაში იყო: რომელი ერთი იდეა იმსახურებს, რომ ეს ბიზნესი წარმოადგინოს, და იმუშავებს თუ არა ის ერთდროულად სავიზიტო ბარათზეც, ფავიკონზეც და ბილბორდზეც. ამ გადაწყვეტილებას მთლიანად მე ვიღებ.</p>\n<p dir=\"ltr\">3D და მოუშენ პოლირება კიდევ ერთი ზღვარია, რომელსაც AI, ჩემი გამოცდილებით, ჯერ ვერ გადალახავს. <a href=\"https://bitz.ge/portfolio/motorola-transistor-concept/\">Motorola Transistor Concept-ის</a> მსგავს ნამუშევარში ობიექტს რეალურს ხდიდა მასალები, განათება და ხელით აწყობილი რენდერები. სწორედ მათ მისცეს მას არა უბრალოდ დამაჯერებლობა, არამედ ფიზიკური არსებობის შეგრძნება. ის ბოლო ათი პროცენტი, როცა ნამუშევარი გენერირებულის ნაცვლად გამზადებულად გამოიყურება, ისევ ოსტატობაა: გამეორება, გაწაფული თვალი და იმის ცოდნა, როდის არის საქმე ნამდვილად დასრულებული.</p>\n<p dir=\"ltr\">და ბოლოს, კლიენტთან ურთიერთობა, რომელსაც ვერცერთი ხელსაწყო ვერ იტვირთებს შენს ნაცვლად: ბუნდოვანი უკუკავშირის სწორად ამოკითხვა, იმის გარჩევა, კორექტირების რომელი რაუნდი ეხება ნამდვილად ლოგოს და რომელი იმას, რაც კლიენტს ხმამაღლა ჯერ არ უთქვამს. ეს ურთიერთობა ორივე მხრიდან სრულად ადამიანურია.</p>\n<h2 dir=\"ltr\">რას ცვლის ეს რეალურად</h2>\n<p dir=\"ltr\">რეალური ცვლილება დიზაინერების შემცირება კი არა, დროის სხვაგვარად გადანაწილებაა: ნაკლები დრო განმეორებად, მოსამზადებელ სამუშაოზე და მეტი იმ გადაწყვეტილებებზე, რაც ყოველთვის იყო ნამდვილი სამუშაო: კონცეფცია, სტრატეგია, საბოლოო დახვეწა, საუბარი კლიენტთან. თუ რამე იცვლება, ის არის, რომ რუტინის შემცირება მეტ ადგილს უტოვებს პროექტის იმ ნაწილს, სადაც ოსტატობა ყალიბდება. ისევე, როგორც უკეთესმა ინსტრუმენტებმა შეცვალა მოუშენ დიზაინის სამუშაო ისე, რომ თვალი არავის ჩაუნაცვლებია. ამაზე ვწერდი სტატიაში „რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა უბრლოდ ლოგო“.</p>\n<p dir=\"ltr\">ასე რომ, თუ კლიენტი ხართ და გაინტერესებთ, ნიშნავს თუ არა AI იმას, რომ პროექტი უფრო იაფი ან სწრაფი იქნება &#8211; ზოგჯერ დიახ, იმ ნაწილში, რომელიც ყოველთვის ზედმეტ ხარჯად ითვლებოდა. მაგრამ თუ გაინტერესებთ, ცვლის თუ არა ის იმ გარჯას, რომელშიც სინამდვილეში იხდით ფულს &#8211; არა. ეს ნაწილი დღესაც ისევე უცვლელია, როგორც ყოველთვის.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 3957,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "template": "",
+  "format": "standard",
+  "meta": {
+   "footnotes": ""
+  },
+  "categories": [
+   28
+  ],
+  "tags": [
+   33,
+   23,
+   19,
+   20
+  ],
+  "class_list": [
+   "post-3941",
+   "post",
+   "type-post",
+   "status-publish",
+   "format-standard",
+   "has-post-thumbnail",
+   "hentry",
+   "category-dizainis-protsesi",
+   "tag-ai-dizainshi",
+   "tag-ui-ux",
+   "tag-branding",
+   "tag-modzraobis-dizaini"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>AI დიზაინერის სამუშაო პროცესში</title>\n<meta name=\"description\" content=\"სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"AI დიზაინერის სამუშაო პროცესში\" />\n<meta property=\"og:description\" content=\"სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta property=\"article:published_time\" content=\"2026-08-19T16:38:43+00:00\" />\n<meta property=\"article:modified_time\" content=\"2026-09-06T18:58:10+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/ge/wp-content/uploads/sites/5/2026/08/ai-design-workflow-split-sphere-header-ge.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"403\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n\t<meta name=\"twitter:label2\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data2\" content=\"3 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/\"},\"author\":{\"name\":\"admin\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"headline\":\"AI დიზაინერის სამუშაო პროცესში\",\"datePublished\":\"2026-08-19T16:38:43+00:00\",\"dateModified\":\"2026-09-06T18:58:10+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/\"},\"wordCount\":28,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/ai-design-workflow-header.jpg\",\"keywords\":[\"AI დიზაინში\",\"UI\\/UX\",\"ბრენდინგი\",\"მოძრაობის დიზაინი\"],\"articleSection\":[\"დიზაინის პროცესი\"],\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/\",\"name\":\"AI დიზაინერის სამუშაო პროცესში\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/ai-design-workflow-header.jpg\",\"datePublished\":\"2026-08-19T16:38:43+00:00\",\"dateModified\":\"2026-09-06T18:58:10+00:00\",\"description\":\"სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#primaryimage\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/ai-design-workflow-header.jpg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/ai-design-workflow-header.jpg\",\"width\":1456,\"height\":977,\"caption\":\"სარედაქციო 3D რენდერი სფეროს გამოსახავს, რომელიც გაყოფილია უხეშ, ესკიზებით მონიშნულ ნახევარსა და გლუვ, გაპრიალებულ ნახევარს; ფანქარი ნაკერზეა დადებული - სიმბოლურად გამოხატავს, სად ეხმარება AI დიზაინერის პროცესს და სად ასრულებს საბოლოო ხელით ადამიანი.\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/19\\/ai-dizaineris-samushao-protsesshi\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AI დიზაინერის სამუშაო პროცესში\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"caption\":\"admin\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"],\"url\":\"https:\\/\\/bitz.ge\\/ge\\/author\\/luka_mnm\\/\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "AI დიზაინერის სამუშაო პროცესში",
+   "description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "AI დიზაინერის სამუშაო პროცესში",
+   "og_description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
+   "og_url": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/",
+   "og_site_name": "bitz",
+   "article_published_time": "2026-08-19T16:38:43+00:00",
+   "article_modified_time": "2026-09-06T18:58:10+00:00",
+   "og_image": [
+    {
+     "width": 600,
+     "height": 403,
+     "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/08/ai-design-workflow-split-sphere-header-ge.jpg",
+     "type": "image/jpeg"
+    }
+   ],
+   "author": "admin",
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Written by": "admin",
+    "Est. reading time": "3 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Article",
+      "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#article",
+      "isPartOf": {
+       "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/"
+      },
+      "author": {
+       "name": "admin",
+       "@id": "https://bitz.ge/ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "headline": "AI დიზაინერის სამუშაო პროცესში",
+      "datePublished": "2026-08-19T16:38:43+00:00",
+      "dateModified": "2026-09-06T18:58:10+00:00",
+      "mainEntityOfPage": {
+       "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/"
+      },
+      "wordCount": 28,
+      "commentCount": 0,
+      "publisher": {
+       "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+      },
+      "image": {
+       "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header.jpg",
+      "keywords": [
+       "AI დიზაინში",
+       "UI/UX",
+       "ბრენდინგი",
+       "მოძრაობის დიზაინი"
+      ],
+      "articleSection": [
+       "დიზაინის პროცესი"
+      ],
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "CommentAction",
+        "name": "Comment",
+        "target": [
+         "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#respond"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/",
+      "url": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/",
+      "name": "AI დიზაინერის სამუშაო პროცესში",
+      "isPartOf": {
+       "@id": "https://bitz.ge/ge/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#primaryimage"
+      },
+      "image": {
+       "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header.jpg",
+      "datePublished": "2026-08-19T16:38:43+00:00",
+      "dateModified": "2026-09-06T18:58:10+00:00",
+      "description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "en-US",
+      "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#primaryimage",
+      "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header.jpg",
+      "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header.jpg",
+      "width": 1456,
+      "height": 977,
+      "caption": "სარედაქციო 3D რენდერი სფეროს გამოსახავს, რომელიც გაყოფილია უხეშ, ესკიზებით მონიშნულ ნახევარსა და გლუვ, გაპრიალებულ ნახევარს; ფანქარი ნაკერზეა დადებული - სიმბოლურად გამოხატავს, სად ეხმარება AI დიზაინერის პროცესს და სად ასრულებს საბოლოო ხელით ადამიანი."
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/ge/2026/08/19/ai-dizaineris-samushao-protsesshi/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI დიზაინერის სამუშაო პროცესში"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/ge/#website",
+      "url": "https://bitz.ge/ge/",
+      "name": "Bitz",
+      "description": "bitz",
+      "publisher": {
+       "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+      "name": "ge",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "ge"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+      }
+     },
+     {
+      "@type": "Person",
+      "@id": "https://bitz.ge/ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "url": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "contentUrl": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "caption": "admin"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ],
+      "url": "https://bitz.ge/ge/author/luka_mnm/"
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3941",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/post"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/comments?post=3941"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3941/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3944,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3941/revisions/3944"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media/3957"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3941"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/categories?post=3941"
+    },
+    {
+     "taxonomy": "post_tag",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/tags?post=3941"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "id": 3957,
+     "date": "2026-09-06T18:57:56",
+     "slug": "ai-design-workflow-header",
+     "type": "attachment",
+     "link": "https://bitz.ge/ge/ai-design-workflow-header/",
+     "title": {
+      "rendered": "რედაქციული 3D რენდერი: გაყოფილი სფერო &#8211; ესკიზი და გაპრიალებული"
+     },
+     "author": 1,
+     "featured_media": 0,
+     "caption": {
+      "rendered": ""
+     },
+     "alt_text": "სარედაქციო 3D რენდერი სფეროს გამოსახავს, რომელიც გაყოფილია უხეშ, ესკიზებით მონიშნულ ნახევარსა და გლუვ, გაპრიალებულ ნახევარს; ფანქარი ნაკერზეა დადებული - სიმბოლურად გამოხატავს, სად ეხმარება AI დიზაინერის პროცესს და სად ასრულებს საბოლოო ხელით ადამიანი.",
+     "media_type": "image",
+     "mime_type": "image/jpeg",
+     "media_details": {
+      "width": 1456,
+      "height": 977,
+      "file": "2026/09/ai-design-workflow-header.jpg",
+      "filesize": 99972,
+      "sizes": {
+       "medium": {
+        "file": "ai-design-workflow-header-300x201.jpg",
+        "width": 300,
+        "height": 201,
+        "filesize": 7098,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header-300x201.jpg"
+       },
+       "large": {
+        "file": "ai-design-workflow-header-1024x687.jpg",
+        "width": 1024,
+        "height": 687,
+        "filesize": 47836,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header-1024x687.jpg"
+       },
+       "thumbnail": {
+        "file": "ai-design-workflow-header-150x150.jpg",
+        "width": 150,
+        "height": 150,
+        "filesize": 4475,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header-150x150.jpg"
+       },
+       "medium_large": {
+        "file": "ai-design-workflow-header-768x515.jpg",
+        "width": 768,
+        "height": 515,
+        "filesize": 30136,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header-768x515.jpg"
+       },
+       "full": {
+        "file": "ai-design-workflow-header.jpg",
+        "width": 1456,
+        "height": 977,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header.jpg"
+       }
+      },
+      "image_meta": {
+       "aperture": "0",
+       "credit": "",
+       "camera": "",
+       "caption": "",
+       "created_timestamp": "0",
+       "copyright": "",
+       "focal_length": "0",
+       "iso": "0",
+       "shutter_speed": "0",
+       "title": "",
+       "orientation": "0",
+       "keywords": [],
+       "alt": ""
+      }
+     },
+     "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/ai-design-workflow-header.jpg",
+     "_links": {
+      "self": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/media/3957",
+        "targetHints": {
+         "allow": [
+          "GET"
+         ]
+        }
+       }
+      ],
+      "collection": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/media"
+       }
+      ],
+      "about": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/types/attachment"
+       }
+      ],
+      "author": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/users/1"
+       }
+      ],
+      "replies": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/comments?post=3957"
+       }
+      ]
+     }
+    }
+   ],
+   "wp:term": [
+    [
+     {
+      "id": 28,
+      "link": "https://bitz.ge/ge/category/dizainis-protsesi/",
+      "name": "დიზაინის პროცესი",
+      "slug": "dizainis-protsesi",
+      "taxonomy": "category",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>დიზაინის პროცესი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/category/dizainis-protsesi/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"დიზაინის პროცესი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/category/dizainis-protsesi/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/dizainis-protsesi\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/dizainis-protsesi\\/\",\"name\":\"დიზაინის პროცესი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/dizainis-protsesi\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/dizainis-protsesi\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"დიზაინის პროცესი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "დიზაინის პროცესი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/category/dizainis-protsesi/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "დიზაინის პროცესი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/category/dizainis-protsesi/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/category/dizainis-protsesi/",
+          "url": "https://bitz.ge/ge/category/dizainis-protsesi/",
+          "name": "დიზაინის პროცესი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/category/dizainis-protsesi/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/category/dizainis-protsesi/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "დიზაინის პროცესი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories/28",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/category"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?categories=28"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "id": 33,
+      "link": "https://bitz.ge/ge/tag/ai-dizainshi/",
+      "name": "AI დიზაინში",
+      "slug": "ai-dizainshi",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>AI დიზაინში Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/ai-dizainshi/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"AI დიზაინში Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/ai-dizainshi/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ai-dizainshi\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ai-dizainshi\\/\",\"name\":\"AI დიზაინში Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ai-dizainshi\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ai-dizainshi\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AI დიზაინში\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "AI დიზაინში Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/ai-dizainshi/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "AI დიზაინში Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/ai-dizainshi/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/ai-dizainshi/",
+          "url": "https://bitz.ge/ge/tag/ai-dizainshi/",
+          "name": "AI დიზაინში Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/ai-dizainshi/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/ai-dizainshi/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI დიზაინში"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/33",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=33"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 23,
+      "link": "https://bitz.ge/ge/tag/ui-ux/",
+      "name": "UI/UX",
+      "slug": "ui-ux",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>UI/UX Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/ui-ux/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"UI/UX Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/ui-ux/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/\",\"name\":\"UI\\/UX Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"UI\\/UX\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "UI/UX Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/ui-ux/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "UI/UX Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/ui-ux/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/ui-ux/",
+          "url": "https://bitz.ge/ge/tag/ui-ux/",
+          "name": "UI/UX Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/ui-ux/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/ui-ux/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "UI/UX"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/23",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=23"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 19,
+      "link": "https://bitz.ge/ge/tag/branding/",
+      "name": "ბრენდინგი",
+      "slug": "branding",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>ბრენდინგი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/branding/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"ბრენდინგი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/branding/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/\",\"name\":\"ბრენდინგი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ბრენდინგი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "ბრენდინგი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/branding/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "ბრენდინგი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/branding/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/branding/",
+          "url": "https://bitz.ge/ge/tag/branding/",
+          "name": "ბრენდინგი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/branding/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/branding/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ბრენდინგი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/19",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=19"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 20,
+      "link": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+      "name": "მოძრაობის დიზაინი",
+      "slug": "modzraobis-dizaini",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>მოძრაობის დიზაინი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/modzraobis-dizaini/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"მოძრაობის დიზაინი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/modzraobis-dizaini/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/\",\"name\":\"მოძრაობის დიზაინი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"მოძრაობის დიზაინი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "მოძრაობის დიზაინი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "მოძრაობის დიზაინი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+          "url": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+          "name": "მოძრაობის დიზაინი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/modzraobis-dizaini/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/modzraobis-dizaini/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "მოძრაობის დიზაინი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/20",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=20"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ },
+ {
+  "id": 3892,
+  "date": "2026-08-13T13:38:48",
+  "date_gmt": "2026-08-13T13:38:48",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?p=3892"
+  },
+  "modified": "2026-09-06T19:53:47",
+  "modified_gmt": "2026-09-06T19:53:47",
+  "slug": "soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs",
+  "status": "publish",
+  "type": "post",
+  "link": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/",
+  "title": {
+   "rendered": "Soft UI 2.0: ადამიანური ინტერფეისი"
+  },
+  "content": {
+   "rendered": "<h2>ბრტყელი დიზაინი იმარჯვებს</h2>\n<p>უკვე ათი წელია, თითქმის ყველა პროდუქტის ინტერფეისი ერთ ვიზუალურ ენაზე „ლაპარაკობს&#8221;: თხელი ბორდერები, ერთ ტონში შერჩეული ფერები, ჩრდილების გარეშე.  მთელი აქცენტი კი ტიპოგრაფიაზეა გადატანილი. მიდგომა სუფთაცაა და სწრაფად ასაწყობიც, მაგრამ ბოლო დროს თითქოს ღირებულება დაკარგა. ეკრანები აღარ იგრძნობა ხელშესახებად, უბრალოდ სქროლავ და მორჩა.</p>\n<p>სწორედ ამან მოიტანა 2026 წელს Soft UI-ის დაბრუნება. დიზაინის გუნდები ისევ ცდილობენ, ინტერფეისს სიღრმე და სითბო დაუბრუნონ, ოღონდ ამჯერად ბევრად უფრო გააზრებულად და დახვეწილად, ვიდრე ეს პირველ ჯერზე გამოვიდა. თუ წელს რედიზაინს გეგმავთ, ეს ის მიმართულებაა, რომელიც ჯერ თავად უნდა შეისწავლოთ, სანამ ვინმეს დავალებას გადასცემთ.</p>\n<h2>რას ნიშნავს Soft UI 2.0 სინამდვილეში</h2>\n<p>Soft UI 2.0 არის დაბრუნება ისეთ ინტერფეისებთან, რომლებიც ისე გამოიყურება და მუშაობს, თითქოს ფიზიკურ სივრცეში არსებობდეს, ოღონდ skeuomorphism-ის ტყავის ტექსტურებისა და ყველაფერზე დადებული ჩრდილების გარეშე. ლეიერებს მსუბუქი სიმაღლე უჩნდებათ. ღილაკს აქვს Default და Pressed მდგომარეობები, რომელიც მართლა დაჭერილს ჰგავს. ბარათები ფენებად აღიქმება და არა უბრალოდ ერთმანეთზე დაწყობილ ბლოკებად. მოძრაობას აქვს წონა: ელემენტები ისე ჩნდება და ქრება, როგორც ფიზიკური მასის მქონე ობიექტი მოიქცეოდა.</p>\n<p>„2.0&#8243; აქ შემთხვევითი არაა. ეს რამდენიმე წლის წინანდელი ნეომორფიზმის უბრალო დაბრუნება არ არის. ეს იმ დროის შეცდომებზე ნასწავლი, ბევრად უფრო დისციპლინირებული და ხელმისაწვდომი ვერსიაა.</p>\n<h2>რით განსხვავდება 2019 წლის ნეომორფიზმისგან</h2>\n<p>ნეომორფიზმის რბილი, ამობურცული, ერთ ფერში გაკეთებული სტილი, რომელიც რამდენიმე წლის წინ დიზაინერებში მოდაში იყო, Dribbble-ის სქრინშოტებზე ეფექტურად გამოიყურებოდა, რეალურ პროდუქტში კი ინგრეოდა. ღილაკი და ფონი თითქმის ერთ ტონში იყო, კონტრასტი იკარგებოდა და გამოყენებადობის ნებისმიერი აუდიტი მაშინვე წითელ ხაზს უსვამდა. ინტერაქტიულ ელემენტს დეკორაციისგან ვეღარ არჩევდი. ეს იყო სქრინშოტისთვის შექმნილი სტილი და არა რეალური გამოყენებისთვის.</p>\n<p>Soft UI 2.0 ინარჩუნებს იმავე ტაქტილურ ენას, მაგრამ ასწორებს იმას, რამაც წინა ვერსია ჩააგდო. კონტრასტი უკვე სავალდებულოა. ფერი ისევ საქმეს აკეთებს: მშვიდი, დაბალი ინტენსივობის ტონები ერთი მკაფიო აქცენტით და არა ყველაფერი ერთ ტონში ჩაძირული. სიღრმე იერარქიისა და ინტერაქციულობის საჩვენებლად გამოიყენება და არა უბრალოდ სილამაზისთვის. ეს სტილი ნეომორფიზმისგან სითბოს სესხულობს, ბრტყელი დიზაინისგან კი იმ დისციპლინას, რომლისთვისაც თავის დროზე შეაქეს.</p>\n<h2>რატომ რბილდება ინტერფეისი ისევ</h2>\n<p>ამას ერთდროულად რამოდენიმე ფაქტორი განაპირობებს. AI-ით დაგენერირებულმა განლაგებებმა და შაბლონურმა საიტ-ბილდერებმა სუფთა ბრტყელი მინიმალიზმი უსახური გახადა. ის იმ ხელსაწყოების იერსახედ იქცა, რომლებზეც დიზაინერს ხელი არ დაუდია. ამიტომ ხელით ნაკეთები სიღრმე და ტექსტურა ისევ ხარისხის ნიშნად იკითხება. სივრცითმა და შერეული რეალობის ინტერფეისებმა ყურსასმენების ოპერაციული სისტემებიდან მობილურის შუშისებრ ფენოვან პანელებამდე გამჭვირვალობა, სიმაღლე და მასალები ყოველდღიური UI ლექსიკის ნაწილად აქცია და სიახლედ აღარ აღიქმება. მოძრაობაც გაიაფდა: GPU-ზე აჩქარებული CSS, მომწიფებული ანიმაციის ბიბლიოთეკები და სწრაფი მოწყობილობები ნიშნავს, რომ მიკროინტერაქციები, რომლებიც ადრე წარმადობის რისკი იყო, დღეს უპრობლემოდ ეშვება.</p>\n<p>არის ნდობის ფაქტორიც. ფინტექი, ჯანდაცვა და სხვა მაღალი პასუხისმგებლობის პროდუქტები შეგნებულად მიდიან უფრო რბილი, ტაქტილური მიმართულებით, რადგან ის უფრო ადამიანურად აღიქმება, ვიდრე ცივი ბრტყელი ინტერფეისი &#8211; სწორედ მაშინ, როცა მომხმარებელი სულ უფრო ეჭვით უყურებს ყველაფერს, რაც ავტომატიზებულს ან შაბლონურს ჰგავს.</p>\n<h2>როგორ გამოიყურება ეს პრაქტიკაში</h2>\n<p>რამდენიმე კონკრეტული ნიშანი, რაზეც ყურადღება უნდა გაამახვილოთ და დიზაინერსაც მოსთხოვოთ:</p>\n<p>რბილი, მიმართულების მქონე ჩრდილები ბრტყელი drop shadow-ის ნაცვლად &#8211; ისე, თითქოს სინათლე მთელ ინტერფეისში ერთი წერტილიდან მოდიოდეს. ნახევრად გამჭვირვალე ზედაპირები, რომლებიც სიღრმეს გაგრძნობინებს მძიმე სკევომორფული ტექსტურების გარეშე. გააზრებულად გამოყენებული მომრგვალებული გეომეტრია. არა უბრალოდ ყველგან დამრგვალებული კუთხეები, არამედ ფორმები, რომლებიც რეალურ შეხების წერტილებს იმეორებს. თავშეკავებული, მშვიდი ფერთა სისტემა ერთი თამამი აქცენტით და არა ბრტყელი ბლოკების ცისარტყელა. შეხებაზე მიბმული მიკროინტერაქციები: ღილაკი, რომელიც თაჩზე შესამჩნევად იკუმშება; გადამრთველი, რომელიც ეასინგით სრიალებს და არა ნახტომით; ბარათი, რომელიც hover-ზე ოდნავ მაღლა იწევს. და გულუხვი შიდა padding, რომელიც ელემენტებს სუნთქვის საშუალებას აძლევს კიდიდან კიდემდე გაჭედილი ბლოკების ნაცვლად.</p>\n<p>ეს ეფექტების გადაჭარბებას სულაც არ ნიშნავს. საუკეთესო მაგალითები ზომიერებით გამოირჩევა &#8211; ერთი-ორი კარგად გაკეთებული დეტალი სჯობს ხუთ ნახევრად გაკეთებულს.</p>\n<h2>რას ნიშნავს ეს, თუ რედიზაინს განიხილავთ</h2>\n<p>ცდუნება დიდია, ეს უბრალო ვიზუალურ განახლებად აღვიქვათ: დავამატოთ ჩრდილები, დავამრგვალოთ კუთხეები და გავუშვათ. სინამდვილეში საქმე ბევრად მეტია. Soft UI-ის სისტემას სჭირდება ერთხელ განსაზღვრული და ყველგან თანმიმდევრულად გამოყენებული სიმაღლის ტოკენები და არა ეკრანიდან ეკრანზე თვალის ზომით დადებული ჩრდილები. სჭირდება კონტრასტის რეალური შემოწმება &#8211; ზუსტად ის ხაფანგი, რომელშიც ნეომორფიზმი გაება &#8211; ამიტომ გამოყენებადობის ტესტირება პროცესის ნაწილი უნდა იყოს და არა ბოლოს მოსაფიქრებელი დეტალი. სჭირდება მოუშენის ბიუჯეტი: წინასწარ გადაწყვეტა, რომელი ინტერაქცია ანიმირდება და რომელი დარჩება სტატიკური, რომ ინტერფეისი მეტად ცოცხალი იყოს.</p>\n<p>კრედო ბანკის SMART Deposit-ის კალკულატორზე მუშაობისას სწორედ ეს სიცხადე იყო მიზანი: ფინანსური ინსტრუმენტი, რომელიც ხელმისაწვდომი და ნაბიჯ-ნაბიჯ სამართავი იქნებოდა და არა დამაშინებელი. იგივე ინსტინქტი დგას დღეს Soft UI 2.0-ის უკანაც &#8211; ინტერფეისები, რომლებსაც ხელით ეხები და არა მხოლოდ თვალით კითხულობ.</p>\n<p>ღირს ამ თემის დაკავშირება იმასთანაც, თუ როგორ მოძრაობს ინტერფეისი და არა მხოლოდ როგორ გამოიყურება სტატიკურად. ამაზე ვრცლად დავწერე პოსტში „რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა უბრლოდ ლოგო&#8221; &#8211; იგივე ლოგიკა ინტერფეისის დონეზეც მუშაობს: სიღრმე და მოძრაობა ერთად უნდა დაიგეგმოს და არა ბოლოს ცალ-ცალკე მიეკეროს.</p>\n<p>თუ წელს რედიზაინზე ფიქრობთ, დიზაინერისთვის დასასმელი კითხვა არაა „ჩრდილებს ხომ ვერ დაამატებ&#8221;. კითხვები ასეთია: აქვს თუ არა სისტემას სიმაღლისა და მოძრაობის განსაზღვრული წესები; შემოწმდა თუ არა კონტრასტი წესიერად; და ემსახურება თუ არა ეს სირბილე გამოყენებადობას თუ მხოლოდ ესთეტიკას. თუ ამას სწორად გააკეთებთ, Soft UI 2.0 ტრენდი აღარ იქნება &#8211; უბრალოდ კარგი, ადამიანური ინტერფეისის დიზაინი გახდება.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>ბრტყელი დიზაინი ადგილს უთმობს Soft UI 2.0-ს &#8211; ტაქტილურ, სივრცით ინტერფეისებს სიღრმითა და მოძრაობით. აი, როგორ განსხვავდება ის ნეომორფიზმისგან და რას ნიშნავს ეს თქვენი მომდევნო რედიზაინისთვის.</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 3958,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "template": "",
+  "format": "standard",
+  "meta": {
+   "footnotes": ""
+  },
+  "categories": [
+   25
+  ],
+  "tags": [
+   23,
+   22
+  ],
+  "class_list": [
+   "post-3892",
+   "post",
+   "type-post",
+   "status-publish",
+   "format-standard",
+   "has-post-thumbnail",
+   "hentry",
+   "category-ui-ux",
+   "tag-ui-ux",
+   "tag-dizainis-trendebi"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz</title>\n<meta name=\"description\" content=\"Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz\" />\n<meta property=\"og:description\" content=\"Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta property=\"article:published_time\" content=\"2026-08-13T13:38:48+00:00\" />\n<meta property=\"article:modified_time\" content=\"2026-09-06T19:53:47+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1000\" />\n\t<meta property=\"og:image:height\" content=\"671\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n\t<meta name=\"twitter:label2\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data2\" content=\"4 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/\"},\"author\":{\"name\":\"admin\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"headline\":\"Soft UI 2.0: ადამიანური ინტერფეისი\",\"datePublished\":\"2026-08-13T13:38:48+00:00\",\"dateModified\":\"2026-09-06T19:53:47+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/\"},\"wordCount\":43,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/soft-ui-2.0-glass-keycap-clean.jpg\",\"keywords\":[\"UI\\/UX\",\"დიზაინის ტრენდები\"],\"articleSection\":[\"UI\\/UX\"],\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/\",\"name\":\"Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/soft-ui-2.0-glass-keycap-clean.jpg\",\"datePublished\":\"2026-08-13T13:38:48+00:00\",\"dateModified\":\"2026-09-06T19:53:47+00:00\",\"description\":\"Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI\\/UX დიზაინის მომავლისთვის.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#primaryimage\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/soft-ui-2.0-glass-keycap-clean.jpg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/soft-ui-2.0-glass-keycap-clean.jpg\",\"width\":1000,\"height\":671,\"caption\":\"ერთი მინის კლავიატურის ღილაკის ფოტორეალისტურად გამოსახული, სავსებით გამჭვირვალე რბილი შუქის რეფრაქციით, მუქ ანტრაციტისფერ ფონზე\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/13\\/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Soft UI 2.0: ადამიანური ინტერფეისი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"caption\":\"admin\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"],\"url\":\"https:\\/\\/bitz.ge\\/ge\\/author\\/luka_mnm\\/\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz",
+   "description": "Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz",
+   "og_description": "Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.",
+   "og_url": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/",
+   "og_site_name": "bitz",
+   "article_published_time": "2026-08-13T13:38:48+00:00",
+   "article_modified_time": "2026-09-06T19:53:47+00:00",
+   "og_image": [
+    {
+     "width": 1000,
+     "height": 671,
+     "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+     "type": "image/jpeg"
+    }
+   ],
+   "author": "admin",
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Written by": "admin",
+    "Est. reading time": "4 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Article",
+      "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#article",
+      "isPartOf": {
+       "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/"
+      },
+      "author": {
+       "name": "admin",
+       "@id": "https://bitz.ge/ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "headline": "Soft UI 2.0: ადამიანური ინტერფეისი",
+      "datePublished": "2026-08-13T13:38:48+00:00",
+      "dateModified": "2026-09-06T19:53:47+00:00",
+      "mainEntityOfPage": {
+       "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/"
+      },
+      "wordCount": 43,
+      "commentCount": 0,
+      "publisher": {
+       "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+      },
+      "image": {
+       "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+      "keywords": [
+       "UI/UX",
+       "დიზაინის ტრენდები"
+      ],
+      "articleSection": [
+       "UI/UX"
+      ],
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "CommentAction",
+        "name": "Comment",
+        "target": [
+         "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#respond"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/",
+      "url": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/",
+      "name": "Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/ge/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#primaryimage"
+      },
+      "image": {
+       "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+      "datePublished": "2026-08-13T13:38:48+00:00",
+      "dateModified": "2026-09-06T19:53:47+00:00",
+      "description": "Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "en-US",
+      "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#primaryimage",
+      "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+      "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+      "width": 1000,
+      "height": 671,
+      "caption": "ერთი მინის კლავიატურის ღილაკის ფოტორეალისტურად გამოსახული, სავსებით გამჭვირვალე რბილი შუქის რეფრაქციით, მუქ ანტრაციტისფერ ფონზე"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Soft UI 2.0: ადამიანური ინტერფეისი"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/ge/#website",
+      "url": "https://bitz.ge/ge/",
+      "name": "Bitz",
+      "description": "bitz",
+      "publisher": {
+       "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+      "name": "ge",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "ge"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+      }
+     },
+     {
+      "@type": "Person",
+      "@id": "https://bitz.ge/ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "url": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "contentUrl": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "caption": "admin"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ],
+      "url": "https://bitz.ge/ge/author/luka_mnm/"
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3892",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/post"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/comments?post=3892"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 7,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3892/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3960,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3892/revisions/3960"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media/3958"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3892"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/categories?post=3892"
+    },
+    {
+     "taxonomy": "post_tag",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/tags?post=3892"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "id": 3958,
+     "date": "2026-09-06T18:57:59",
+     "slug": "soft-ui-2-0-glass-keycap-clean",
+     "type": "attachment",
+     "link": "https://bitz.ge/ge/soft-ui-2-0-glass-keycap-clean/",
+     "title": {
+      "rendered": "Soft UI 2.0 &#8211; header (glass keycap)"
+     },
+     "author": 1,
+     "featured_media": 0,
+     "caption": {
+      "rendered": ""
+     },
+     "alt_text": "ერთი მინის კლავიატურის ღილაკის ფოტორეალისტურად გამოსახული, სავსებით გამჭვირვალე რბილი შუქის რეფრაქციით, მუქ ანტრაციტისფერ ფონზე",
+     "media_type": "image",
+     "mime_type": "image/jpeg",
+     "media_details": {
+      "width": 1000,
+      "height": 671,
+      "file": "2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+      "filesize": 14931,
+      "sizes": {
+       "medium": {
+        "file": "soft-ui-2.0-glass-keycap-clean-300x201.jpg",
+        "width": 300,
+        "height": 201,
+        "filesize": 5455,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean-300x201.jpg"
+       },
+       "thumbnail": {
+        "file": "soft-ui-2.0-glass-keycap-clean-150x150.jpg",
+        "width": 150,
+        "height": 150,
+        "filesize": 3537,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean-150x150.jpg"
+       },
+       "medium_large": {
+        "file": "soft-ui-2.0-glass-keycap-clean-768x515.jpg",
+        "width": 768,
+        "height": 515,
+        "filesize": 20136,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean-768x515.jpg"
+       },
+       "full": {
+        "file": "soft-ui-2.0-glass-keycap-clean.jpg",
+        "width": 1000,
+        "height": 671,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg"
+       }
+      },
+      "image_meta": {
+       "aperture": "0",
+       "credit": "",
+       "camera": "",
+       "caption": "",
+       "created_timestamp": "0",
+       "copyright": "",
+       "focal_length": "0",
+       "iso": "0",
+       "shutter_speed": "0",
+       "title": "",
+       "orientation": "0",
+       "keywords": [],
+       "alt": ""
+      }
+     },
+     "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg",
+     "_links": {
+      "self": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/media/3958",
+        "targetHints": {
+         "allow": [
+          "GET"
+         ]
+        }
+       }
+      ],
+      "collection": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/media"
+       }
+      ],
+      "about": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/types/attachment"
+       }
+      ],
+      "author": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/users/1"
+       }
+      ],
+      "replies": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/comments?post=3958"
+       }
+      ]
+     }
+    }
+   ],
+   "wp:term": [
+    [
+     {
+      "id": 25,
+      "link": "https://bitz.ge/ge/category/ui-ux/",
+      "name": "UI/UX",
+      "slug": "ui-ux",
+      "taxonomy": "category",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>UI/UX Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/category/ui-ux/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"UI/UX Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/category/ui-ux/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/ui-ux\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/ui-ux\\/\",\"name\":\"UI\\/UX Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/ui-ux\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/ui-ux\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"UI\\/UX\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "UI/UX Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/category/ui-ux/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "UI/UX Archives | bitz",
+       "og_url": "https://bitz.ge/ge/category/ui-ux/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/category/ui-ux/",
+          "url": "https://bitz.ge/ge/category/ui-ux/",
+          "name": "UI/UX Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/category/ui-ux/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/category/ui-ux/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "UI/UX"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories/25",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/category"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?categories=25"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "id": 23,
+      "link": "https://bitz.ge/ge/tag/ui-ux/",
+      "name": "UI/UX",
+      "slug": "ui-ux",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>UI/UX Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/ui-ux/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"UI/UX Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/ui-ux/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/\",\"name\":\"UI\\/UX Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"UI\\/UX\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "UI/UX Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/ui-ux/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "UI/UX Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/ui-ux/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/ui-ux/",
+          "url": "https://bitz.ge/ge/tag/ui-ux/",
+          "name": "UI/UX Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/ui-ux/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/ui-ux/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "UI/UX"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/23",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=23"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 22,
+      "link": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+      "name": "დიზაინის ტრენდები",
+      "slug": "dizainis-trendebi",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>დიზაინის ტრენდები Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/dizainis-trendebi/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"დიზაინის ტრენდები Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/dizainis-trendebi/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/\",\"name\":\"დიზაინის ტრენდები Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"დიზაინის ტრენდები\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "დიზაინის ტრენდები Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "დიზაინის ტრენდები Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+          "url": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+          "name": "დიზაინის ტრენდები Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/dizainis-trendebi/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/dizainis-trendebi/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "დიზაინის ტრენდები"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/22",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=22"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ },
+ {
+  "id": 3882,
+  "date": "2026-08-10T12:19:59",
+  "date_gmt": "2026-08-10T12:19:59",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/"
+  },
+  "modified": "2026-09-06T19:53:49",
+  "modified_gmt": "2026-09-06T19:53:49",
+  "slug": "ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo",
+  "status": "publish",
+  "type": "post",
+  "link": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/",
+  "title": {
+   "rendered": "რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა"
+  },
+  "content": {
+   "rendered": "<p>დღემდე ბრენდის იდენტობების უმეტესობა ისევე იქმნება, როგორც ათი წლის წინ: ლოგო, ფერთა პალიტრა, შრიფტები და დიდი PDF ფაილი გამოყენების წესებით. ანიმაციები ემატება მოგვიანებით (თუ საერთოდ ემატება) მაშინ, როცა კლიენტი მოიკითხავს &#8220;შეგვიძლია ლოგოს ანიმაციის გაკეთება აპლიკაციის გახნისას?&#8221; და ამ მომენტში ვხვდებით რომ, სიმბოლო არასდროს ყოფილა გათვლილი ანიმირებისთვის.</p>\n<p>2026 წლელს ეს ყველაფერი პირიქით ხდება. ბრენდებს ვხედავთ ტელეფონის ეკრანებზე, აპლიკაციებში, პროდუქტის UI-ში, სოც მედია ფიდებზე, სადაც ყველაფერი მოძრაობს. მე ვმუშაობ ბრენდინგზე, მოძრაობასა და UI/UX-ზე ერთდროულად, და მტკივნეული წერტილი, რომელსაც ყველაზე ხშირად ვხვდები, სტატიკაზე ორიენტირებული ბრენდის სისტემაა, რომელიც არასდროს ყოფილა შექმნილი ანიმირებისთვის.</p>\n<h2>რას ნიშნავს მოძრავ გრაფიკაზე ორიენტირებული ბრენდინგი</h2>\n<p>ეს არ ნიშნავს ხუთწამიან ანიმირებულ ლოგოს. ეს ნიშნავს სისტემას, რომელშიც განსაზღვრულია: როგორ იშლება და იკუმშება ნიშანი, რომელი ელემენტები მოძრაობენ დამოუკიდებლად, დროისა და <em>easing-ების </em>ხასიათი (მკვეთრი თუ რბილი), და აქვს თუ არა ფერთა პალიტრას განსაზღვრული hover-ები და გადასვლები.</p>\n<h2>რატომ არის რთული ანიმაციის მოგვიანებით გაკეთება</h2>\n<p>როცა ანიმაციაზე კეთების პროცესშივე არ არის ნაფიქრი, ყოველ გასაანიმირებელ დეტალზე ცალკე საფიქრია. სიმბოლო, რომლის ფორმები არასდროს ყოფილა აგებული სუფთა საბრუნი წერტილებით, ან არათანაბრად გამოიყურება, ან სრულ გადაკეთებას საჭიროებს.</p>\n<h2>იდენტობის ანიმირება დიდი ბიუჯეტის გარეშე</h2>\n<p>ააგეთ ლოგო მოდულური ნაწილებისგან. გამოიყენეთ ტიპოგრაფია რომელიც მარტივად აიტანს მცირე ანიმირებას. აირჩიეთ ფერთა პალეტი განსაზღვრული როლებით (წამყვანი, დამხმარე, მოქმედების ფერი). გაწერეთ ორი-სამი წინადადება, რომელიც ბრენდის ანიმაციას აღწერს. საკმარისია, რომ იდენტობის ფაზა დასრულდეს ანიმაციის ლოგიკის მოკლე დოკუმენტით.</p>\n<h2>პროდუქტში და არა მხოლოდ მარკეტინგში</h2>\n<p>თუ სიმბოლოს მოძრაობაზე ნამუშევარია და აქვს განსაზღვრული ხასიათი, ეს ხასიათი უნდა ჩანდეს UI-შიც &#8211; ღილაკის ჰოვერებში, მოდალებში, ლოადერში. <a href=\"https://bitz.ge/ge/portfolio/brace/\">BRACE</a>-ის შემთხვევაში, სწორედ ამ თანმიმდევრულობამ გახადა სისტემა გააზრებული. <a href=\"https://bitz.ge/ge/portfolio/royalpixels/\">RoyalPixels</a>-ის შემთხვევაში ბრენდის ენერგიას თანაბრად უნდა გაეძლო მარკეტინგულ ასეტებშიც და პროდუქტშიც.</p>\n<p>დავსვათ სამი კითხვა იდენტობის შექმნის ეტაპზე:  როგორ მოძრაობს? რა რჩება უძრავი? რა ხასიათი აქვს მოძრაობას? ბრენდი, რომელიც მხოლოდ უძრავად ყოფნისთვისაა შექმნილი, ძალიან გაუჭირდება კონკურენტუნარიანი იყოს 2026 წელს.</p>\n<p>მოძრაობა და მოძრაობა&#8230;</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Motion-first ბრენდინგი საჭიროა უკვე დღეს. რატომ სჭირდებათ ბრენდებს მოძრაობისთვის დიზაინი პირველივე დღიდან &#8211; და როგორ, დიდი ბიუჯეტის გარეშე.</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 3959,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "template": "",
+  "format": "standard",
+  "meta": {
+   "footnotes": ""
+  },
+  "categories": [
+   24,
+   26
+  ],
+  "tags": [
+   23,
+   19,
+   21,
+   22,
+   20
+  ],
+  "class_list": [
+   "post-3882",
+   "post",
+   "type-post",
+   "status-publish",
+   "format-standard",
+   "has-post-thumbnail",
+   "hentry",
+   "category-branding",
+   "category-modzraobis-dizaini",
+   "tag-ui-ux",
+   "tag-branding",
+   "tag-brendis-identoba",
+   "tag-dizainis-trendebi",
+   "tag-modzraobis-dizaini"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz</title>\n<meta name=\"description\" content=\"Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz\" />\n<meta property=\"og:description\" content=\"Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta property=\"article:published_time\" content=\"2026-08-10T12:19:59+00:00\" />\n<meta property=\"article:modified_time\" content=\"2026-09-06T19:53:49+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg\" />\n\t<meta property=\"og:image:width\" content=\"640\" />\n\t<meta property=\"og:image:height\" content=\"440\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n\t<meta name=\"twitter:label2\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data2\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/\"},\"author\":{\"name\":\"admin\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"headline\":\"რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა\",\"datePublished\":\"2026-08-10T12:19:59+00:00\",\"dateModified\":\"2026-09-06T19:53:49+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/\"},\"wordCount\":11,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/motion-blog-header-fixed.jpg\",\"keywords\":[\"UI\\/UX\",\"ბრენდინგი\",\"ბრენდის იდენტობა\",\"დიზაინის ტრენდები\",\"მოძრაობის დიზაინი\"],\"articleSection\":[\"ბრენდინგი\",\"მოძრაობის დიზაინი\"],\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/\",\"name\":\"Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/motion-blog-header-fixed.jpg\",\"datePublished\":\"2026-08-10T12:19:59+00:00\",\"dateModified\":\"2026-09-06T19:53:49+00:00\",\"description\":\"Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#primaryimage\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/motion-blog-header-fixed.jpg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2026\\/09\\/motion-blog-header-fixed.jpg\",\"width\":640,\"height\":440,\"caption\":\"შავ-თეთრი ფოტოსურათი ბილიარდის ბურთებით რიგში, უახლოესი ბურთი ფოკუსშია და მოძრაობის დროს იშლება უკანა ნაწილში - სიმბოლურად გამოხატავს ბრენდის მოძრაობის დიზაინს.\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/2026\\/08\\/10\\/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g\",\"caption\":\"admin\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"],\"url\":\"https:\\/\\/bitz.ge\\/ge\\/author\\/luka_mnm\\/\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz",
+   "description": "Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz",
+   "og_description": "Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო",
+   "og_url": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/",
+   "og_site_name": "bitz",
+   "article_published_time": "2026-08-10T12:19:59+00:00",
+   "article_modified_time": "2026-09-06T19:53:49+00:00",
+   "og_image": [
+    {
+     "width": 640,
+     "height": 440,
+     "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg",
+     "type": "image/jpeg"
+    }
+   ],
+   "author": "admin",
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Written by": "admin",
+    "Est. reading time": "2 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Article",
+      "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#article",
+      "isPartOf": {
+       "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/"
+      },
+      "author": {
+       "name": "admin",
+       "@id": "https://bitz.ge/ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "headline": "რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა",
+      "datePublished": "2026-08-10T12:19:59+00:00",
+      "dateModified": "2026-09-06T19:53:49+00:00",
+      "mainEntityOfPage": {
+       "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/"
+      },
+      "wordCount": 11,
+      "commentCount": 0,
+      "publisher": {
+       "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+      },
+      "image": {
+       "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg",
+      "keywords": [
+       "UI/UX",
+       "ბრენდინგი",
+       "ბრენდის იდენტობა",
+       "დიზაინის ტრენდები",
+       "მოძრაობის დიზაინი"
+      ],
+      "articleSection": [
+       "ბრენდინგი",
+       "მოძრაობის დიზაინი"
+      ],
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "CommentAction",
+        "name": "Comment",
+        "target": [
+         "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#respond"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/",
+      "url": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/",
+      "name": "Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/ge/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#primaryimage"
+      },
+      "image": {
+       "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg",
+      "datePublished": "2026-08-10T12:19:59+00:00",
+      "dateModified": "2026-09-06T19:53:49+00:00",
+      "description": "Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "en-US",
+      "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#primaryimage",
+      "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg",
+      "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg",
+      "width": 640,
+      "height": 440,
+      "caption": "შავ-თეთრი ფოტოსურათი ბილიარდის ბურთებით რიგში, უახლოესი ბურთი ფოკუსშია და მოძრაობის დროს იშლება უკანა ნაწილში - სიმბოლურად გამოხატავს ბრენდის მოძრაობის დიზაინს."
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/ge/#website",
+      "url": "https://bitz.ge/ge/",
+      "name": "Bitz",
+      "description": "bitz",
+      "publisher": {
+       "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+      "name": "ge",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "ge"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+      }
+     },
+     {
+      "@type": "Person",
+      "@id": "https://bitz.ge/ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "url": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "contentUrl": "https://secure.gravatar.com/avatar/34b1ab2b539fb9495ad48d40ae3b4036109a5177a4e8363dcd72cdeb6b300fbb?s=96&d=mm&r=g",
+       "caption": "admin"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ],
+      "url": "https://bitz.ge/ge/author/luka_mnm/"
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3882",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/post"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/comments?post=3882"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3882/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3961,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/posts/3882/revisions/3961"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media/3959"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3882"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/categories?post=3882"
+    },
+    {
+     "taxonomy": "post_tag",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/tags?post=3882"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "id": 3959,
+     "date": "2026-09-06T18:58:05",
+     "slug": "motion-blog-header-fixed",
+     "type": "attachment",
+     "link": "https://bitz.ge/ge/motion-blog-header-fixed/",
+     "title": {
+      "rendered": "Why Brands Need a Motion Layer Now &#8211; header (fixed)"
+     },
+     "author": 1,
+     "featured_media": 0,
+     "caption": {
+      "rendered": ""
+     },
+     "alt_text": "შავ-თეთრი ფოტოსურათი ბილიარდის ბურთებით რიგში, უახლოესი ბურთი ფოკუსშია და მოძრაობის დროს იშლება უკანა ნაწილში - სიმბოლურად გამოხატავს ბრენდის მოძრაობის დიზაინს.",
+     "media_type": "image",
+     "mime_type": "image/jpeg",
+     "media_details": {
+      "width": 640,
+      "height": 440,
+      "file": "2026/09/motion-blog-header-fixed.jpg",
+      "filesize": 6532,
+      "sizes": {
+       "medium": {
+        "file": "motion-blog-header-fixed-300x206.jpg",
+        "width": 300,
+        "height": 206,
+        "filesize": 4892,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed-300x206.jpg"
+       },
+       "thumbnail": {
+        "file": "motion-blog-header-fixed-150x150.jpg",
+        "width": 150,
+        "height": 150,
+        "filesize": 2784,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed-150x150.jpg"
+       },
+       "full": {
+        "file": "motion-blog-header-fixed.jpg",
+        "width": 640,
+        "height": 440,
+        "mime_type": "image/jpeg",
+        "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg"
+       }
+      },
+      "image_meta": {
+       "aperture": "0",
+       "credit": "",
+       "camera": "",
+       "caption": "",
+       "created_timestamp": "0",
+       "copyright": "",
+       "focal_length": "0",
+       "iso": "0",
+       "shutter_speed": "0",
+       "title": "",
+       "orientation": "0",
+       "keywords": [],
+       "alt": ""
+      }
+     },
+     "source_url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg",
+     "_links": {
+      "self": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/media/3959",
+        "targetHints": {
+         "allow": [
+          "GET"
+         ]
+        }
+       }
+      ],
+      "collection": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/media"
+       }
+      ],
+      "about": [
+       {
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/types/attachment"
+       }
+      ],
+      "author": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/users/1"
+       }
+      ],
+      "replies": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/ge/wp-json/wp/v2/comments?post=3959"
+       }
+      ]
+     }
+    }
+   ],
+   "wp:term": [
+    [
+     {
+      "id": 24,
+      "link": "https://bitz.ge/ge/category/branding/",
+      "name": "ბრენდინგი",
+      "slug": "branding",
+      "taxonomy": "category",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>ბრენდინგი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/category/branding/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"ბრენდინგი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/category/branding/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/branding\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/branding\\/\",\"name\":\"ბრენდინგი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/branding\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/branding\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ბრენდინგი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "ბრენდინგი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/category/branding/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "ბრენდინგი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/category/branding/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/category/branding/",
+          "url": "https://bitz.ge/ge/category/branding/",
+          "name": "ბრენდინგი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/category/branding/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/category/branding/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ბრენდინგი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories/24",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/category"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?categories=24"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 26,
+      "link": "https://bitz.ge/ge/category/modzraobis-dizaini/",
+      "name": "მოძრაობის დიზაინი",
+      "slug": "modzraobis-dizaini",
+      "taxonomy": "category",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>მოძრაობის დიზაინი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/category/modzraobis-dizaini/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"მოძრაობის დიზაინი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/category/modzraobis-dizaini/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/modzraobis-dizaini\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/modzraobis-dizaini\\/\",\"name\":\"მოძრაობის დიზაინი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/modzraobis-dizaini\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/category\\/modzraobis-dizaini\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"მოძრაობის დიზაინი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "მოძრაობის დიზაინი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/category/modzraobis-dizaini/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "მოძრაობის დიზაინი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/category/modzraobis-dizaini/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/category/modzraobis-dizaini/",
+          "url": "https://bitz.ge/ge/category/modzraobis-dizaini/",
+          "name": "მოძრაობის დიზაინი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/category/modzraobis-dizaini/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/category/modzraobis-dizaini/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "მოძრაობის დიზაინი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories/26",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/categories"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/category"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?categories=26"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "id": 23,
+      "link": "https://bitz.ge/ge/tag/ui-ux/",
+      "name": "UI/UX",
+      "slug": "ui-ux",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>UI/UX Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/ui-ux/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"UI/UX Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/ui-ux/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/\",\"name\":\"UI\\/UX Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/ui-ux\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"UI\\/UX\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "UI/UX Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/ui-ux/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "UI/UX Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/ui-ux/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/ui-ux/",
+          "url": "https://bitz.ge/ge/tag/ui-ux/",
+          "name": "UI/UX Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/ui-ux/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/ui-ux/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "UI/UX"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/23",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=23"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 19,
+      "link": "https://bitz.ge/ge/tag/branding/",
+      "name": "ბრენდინგი",
+      "slug": "branding",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>ბრენდინგი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/branding/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"ბრენდინგი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/branding/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/\",\"name\":\"ბრენდინგი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/branding\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ბრენდინგი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "ბრენდინგი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/branding/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "ბრენდინგი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/branding/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/branding/",
+          "url": "https://bitz.ge/ge/tag/branding/",
+          "name": "ბრენდინგი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/branding/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/branding/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ბრენდინგი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/19",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=19"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 21,
+      "link": "https://bitz.ge/ge/tag/brendis-identoba/",
+      "name": "ბრენდის იდენტობა",
+      "slug": "brendis-identoba",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>ბრენდის იდენტობა Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/brendis-identoba/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"ბრენდის იდენტობა Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/brendis-identoba/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/brendis-identoba\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/brendis-identoba\\/\",\"name\":\"ბრენდის იდენტობა Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/brendis-identoba\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/brendis-identoba\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ბრენდის იდენტობა\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "ბრენდის იდენტობა Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/brendis-identoba/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "ბრენდის იდენტობა Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/brendis-identoba/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/brendis-identoba/",
+          "url": "https://bitz.ge/ge/tag/brendis-identoba/",
+          "name": "ბრენდის იდენტობა Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/brendis-identoba/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/brendis-identoba/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ბრენდის იდენტობა"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/21",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=21"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 22,
+      "link": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+      "name": "დიზაინის ტრენდები",
+      "slug": "dizainis-trendebi",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>დიზაინის ტრენდები Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/dizainis-trendebi/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"დიზაინის ტრენდები Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/dizainis-trendebi/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/\",\"name\":\"დიზაინის ტრენდები Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/dizainis-trendebi\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"დიზაინის ტრენდები\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "დიზაინის ტრენდები Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "დიზაინის ტრენდები Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+          "url": "https://bitz.ge/ge/tag/dizainis-trendebi/",
+          "name": "დიზაინის ტრენდები Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/dizainis-trendebi/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/dizainis-trendebi/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "დიზაინის ტრენდები"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/22",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=22"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     },
+     {
+      "id": 20,
+      "link": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+      "name": "მოძრაობის დიზაინი",
+      "slug": "modzraobis-dizaini",
+      "taxonomy": "post_tag",
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>მოძრაობის დიზაინი Archives | bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/ge/tag/modzraobis-dizaini/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"მოძრაობის დიზაინი Archives | bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/ge/tag/modzraobis-dizaini/\" />\n<meta property=\"og:site_name\" content=\"bitz\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/\",\"name\":\"მოძრაობის დიზაინი Archives | bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/tag\\/modzraobis-dizaini\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"მოძრაობის დიზაინი\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/\",\"name\":\"Bitz\",\"description\":\"bitz\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/#\\/schema\\/person\\/79d200f0dcd342f2abe3aced84aafc7f\",\"name\":\"ge\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"url\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\",\"width\":1,\"height\":1,\"caption\":\"ge\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/ge\\/wp-content\\/uploads\\/sites\\/5\\/2025\\/08\\/logo-black.svg\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+       "title": "მოძრაობის დიზაინი Archives | bitz",
+       "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+       },
+       "canonical": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+       "og_locale": "en_US",
+       "og_type": "article",
+       "og_title": "მოძრაობის დიზაინი Archives | bitz",
+       "og_url": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+       "og_site_name": "bitz",
+       "twitter_card": "summary_large_image",
+       "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+         {
+          "@type": "CollectionPage",
+          "@id": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+          "url": "https://bitz.ge/ge/tag/modzraobis-dizaini/",
+          "name": "მოძრაობის დიზაინი Archives | bitz",
+          "isPartOf": {
+           "@id": "https://bitz.ge/ge/#website"
+          },
+          "breadcrumb": {
+           "@id": "https://bitz.ge/ge/tag/modzraobis-dizaini/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": "BreadcrumbList",
+          "@id": "https://bitz.ge/ge/tag/modzraobis-dizaini/#breadcrumb",
+          "itemListElement": [
+           {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bitz.ge/ge/"
+           },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "მოძრაობის დიზაინი"
+           }
+          ]
+         },
+         {
+          "@type": "WebSite",
+          "@id": "https://bitz.ge/ge/#website",
+          "url": "https://bitz.ge/ge/",
+          "name": "Bitz",
+          "description": "bitz",
+          "publisher": {
+           "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f"
+          },
+          "potentialAction": [
+           {
+            "@type": "SearchAction",
+            "target": {
+             "@type": "EntryPoint",
+             "urlTemplate": "https://bitz.ge/ge/?s={search_term_string}"
+            },
+            "query-input": {
+             "@type": "PropertyValueSpecification",
+             "valueRequired": true,
+             "valueName": "search_term_string"
+            }
+           }
+          ],
+          "inLanguage": "en-US"
+         },
+         {
+          "@type": [
+           "Person",
+           "Organization"
+          ],
+          "@id": "https://bitz.ge/ge/#/schema/person/79d200f0dcd342f2abe3aced84aafc7f",
+          "name": "ge",
+          "image": {
+           "@type": "ImageObject",
+           "inLanguage": "en-US",
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "url": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "contentUrl": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg",
+           "width": 1,
+           "height": 1,
+           "caption": "ge"
+          },
+          "logo": {
+           "@id": "https://bitz.ge/ge/wp-content/uploads/sites/5/2025/08/logo-black.svg"
+          }
+         }
+        ]
+       }
+      },
+      "_links": {
+       "self": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags/20",
+         "targetHints": {
+          "allow": [
+           "GET"
+          ]
+         }
+        }
+       ],
+       "collection": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/tags"
+        }
+       ],
+       "about": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/taxonomies/post_tag"
+        }
+       ],
+       "wp:post_type": [
+        {
+         "href": "https://bitz.ge/ge/wp-json/wp/v2/posts?tags=20"
+        }
+       ],
+       "curies": [
+        {
+         "name": "wp",
+         "href": "https://api.w.org/{rel}",
+         "templated": true
+        }
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ }
+]

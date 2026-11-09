@@ -1,0 +1,677 @@
+[
+ {
+  "id": 3965,
+  "date": "2026-09-14T08:03:43",
+  "date_gmt": "2026-09-14T08:03:43",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3965"
+  },
+  "modified": "2026-09-14T08:03:43",
+  "modified_gmt": "2026-09-14T08:03:43",
+  "slug": "palipop-fizzy-drink",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3965",
+  "title": {
+   "rendered": "Palipop &#8211; Fizzy Drink"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   29
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3965",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3965"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3965"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3963,
+  "date": "2026-09-14T08:03:43",
+  "date_gmt": "2026-09-14T08:03:43",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3963"
+  },
+  "modified": "2026-09-14T08:03:43",
+  "modified_gmt": "2026-09-14T08:03:43",
+  "slug": "lamp",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3963",
+  "title": {
+   "rendered": "Lamp"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   29
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3963",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3963"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3963"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3939,
+  "date": "2026-08-19T05:58:13",
+  "date_gmt": "2026-08-19T05:58:13",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3939"
+  },
+  "modified": "2026-08-19T05:58:13",
+  "modified_gmt": "2026-08-19T05:58:13",
+  "slug": "hero-interaqtsiuli-elementi",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3939",
+  "title": {
+   "rendered": "Hero &#8211; ინტერაქციული ელემენტი"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   32
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3939",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3939"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3939"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3938,
+  "date": "2026-08-19T05:58:13",
+  "date_gmt": "2026-08-19T05:58:13",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3938"
+  },
+  "modified": "2026-08-19T05:58:13",
+  "modified_gmt": "2026-08-19T05:58:13",
+  "slug": "fastoo-logos-animatsia",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3938",
+  "title": {
+   "rendered": "Fastoo &#8211; ლოგოს ანიმაცია"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   32
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3938",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3938"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3938"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3929,
+  "date": "2026-08-18T12:53:22",
+  "date_gmt": "2026-08-18T12:53:22",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3929"
+  },
+  "modified": "2026-08-18T12:53:22",
+  "modified_gmt": "2026-08-18T12:53:22",
+  "slug": "sagzao-nishnebi",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3929",
+  "title": {
+   "rendered": "საგზაო ნიშნები"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   29
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3929",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3929"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3929"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3927,
+  "date": "2026-08-18T12:53:20",
+  "date_gmt": "2026-08-18T12:53:20",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3927"
+  },
+  "modified": "2026-08-18T12:53:20",
+  "modified_gmt": "2026-08-18T12:53:20",
+  "slug": "monotsikli",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3927",
+  "title": {
+   "rendered": "მონოციკლი"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   29
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3927",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3927"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3927"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3925,
+  "date": "2026-08-18T12:53:15",
+  "date_gmt": "2026-08-18T12:53:15",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3925"
+  },
+  "modified": "2026-08-18T12:53:15",
+  "modified_gmt": "2026-08-18T12:53:15",
+  "slug": "haustique-qhuthis",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3925",
+  "title": {
+   "rendered": "Haustique ყუთის"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   29
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3925",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3925"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3925"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3923,
+  "date": "2026-08-18T12:53:09",
+  "date_gmt": "2026-08-18T12:53:09",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3923"
+  },
+  "modified": "2026-08-18T12:53:09",
+  "modified_gmt": "2026-08-18T12:53:09",
+  "slug": "mineralebi",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3923",
+  "title": {
+   "rendered": "მინერალები"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   31
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3923",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3923"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3923"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3921,
+  "date": "2026-08-18T12:53:08",
+  "date_gmt": "2026-08-18T12:53:08",
+  "guid": {
+   "rendered": "https://bitz.ge/ge/?post_type=colega_shot&p=3921"
+  },
+  "modified": "2026-08-18T12:53:08",
+  "modified_gmt": "2026-08-18T12:53:08",
+  "slug": "brace",
+  "status": "publish",
+  "type": "colega_shot",
+  "link": "https://bitz.ge/ge/?post_type=colega_shot&p=3921",
+  "title": {
+   "rendered": "Brace"
+  },
+  "featured_media": 0,
+  "menu_order": 0,
+  "template": "",
+  "colega_shot_category": [
+   30
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot/3921",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/types/colega_shot"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/media?parent=3921"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "colega_shot_category",
+     "embeddable": true,
+     "href": "https://bitz.ge/ge/wp-json/wp/v2/colega_shot_category?post=3921"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "wp:term": [
+    {
+     "code": "rest_forbidden_context",
+     "message": "Sorry, you are not allowed to view terms for this post.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ }
+]

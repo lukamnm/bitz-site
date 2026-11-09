@@ -1,0 +1,2546 @@
+[
+ {
+  "id": 4382,
+  "date": "2026-09-26T21:10:08",
+  "date_gmt": "2026-09-26T17:10:08",
+  "guid": {
+   "rendered": "https://bitz.ge/derci-labs/privacy/"
+  },
+  "modified": "2026-09-26T21:10:08",
+  "modified_gmt": "2026-09-26T17:10:08",
+  "slug": "privacy",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/derci-labs/privacy/",
+  "title": {
+   "rendered": "Privacy Policy"
+  },
+  "content": {
+   "rendered": "<h1>Derci Labs &#8211; Privacy Policy</h1>\n<p><em>Last updated: September 26, 2026</em></p>\n<p>Derci Labs does not collect, store, or share any personal data from TikTok users.</p>\n<p>The only data processed is the operator&#8217;s own TikTok OAuth access token, stored locally on the operator&#8217;s computer and used exclusively to upload the operator&#8217;s own videos. It is never transmitted to any third party other than TikTok.</p>\n<p>No cookies, analytics, or tracking are used.</p>\n<p>To request deletion of any data, contact chat@bitz.ge.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Derci Labs &#8211; Privacy Policy Last updated: September 26, 2026 Derci Labs does not collect, store, or share any personal data from TikTok users. The only data processed is the operator&#8217;s own TikTok OAuth access token, stored locally on the operator&#8217;s computer and used exclusively to upload the operator&#8217;s own videos. It is never transmitted [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 4380,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "",
+   "_yoast_wpseo_metadesc": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-4382",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Privacy Policy | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/derci-labs/privacy/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Privacy Policy | Bitz\" />\n<meta property=\"og:description\" content=\"Derci Labs &#8211; Privacy Policy Last updated: September 26, 2026 Derci Labs does not collect, store, or share any personal data from TikTok users. The only data processed is the operator&#8217;s own TikTok OAuth access token, stored locally on the operator&#8217;s computer and used exclusively to upload the operator&#8217;s own videos. It is never transmitted [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/derci-labs/privacy/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/privacy\\/\",\"url\":\"https:\\/\\/bitz.ge\\/derci-labs\\/privacy\\/\",\"name\":\"Privacy Policy | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2026-09-26T17:10:08+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/privacy\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/derci-labs\\/privacy\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/privacy\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Derci Labs\",\"item\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Privacy Policy\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Privacy Policy | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/derci-labs/privacy/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Privacy Policy | Bitz",
+   "og_description": "Derci Labs &#8211; Privacy Policy Last updated: September 26, 2026 Derci Labs does not collect, store, or share any personal data from TikTok users. The only data processed is the operator&#8217;s own TikTok OAuth access token, stored locally on the operator&#8217;s computer and used exclusively to upload the operator&#8217;s own videos. It is never transmitted [&hellip;]",
+   "og_url": "https://bitz.ge/derci-labs/privacy/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/derci-labs/privacy/",
+      "url": "https://bitz.ge/derci-labs/privacy/",
+      "name": "Privacy Policy | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2026-09-26T17:10:08+00:00",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/derci-labs/privacy/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/derci-labs/privacy/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/derci-labs/privacy/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Derci Labs",
+        "item": "https://bitz.ge/derci-labs/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Privacy Policy"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4382",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=4382"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 0,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4382/revisions"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4380"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4382"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ],
+   "up": [
+    {
+     "id": 4380,
+     "date": "2026-09-26T21:10:00",
+     "slug": "derci-labs",
+     "type": "page",
+     "link": "https://bitz.ge/derci-labs/",
+     "title": {
+      "rendered": "Derci Labs"
+     },
+     "excerpt": {
+      "rendered": "<p>Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.</p>\n",
+      "protected": false
+     },
+     "author": 1,
+     "featured_media": 0,
+     "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Derci Labs | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/derci-labs/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Derci Labs | Bitz\" />\n<meta property=\"og:description\" content=\"Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/derci-labs/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\",\"url\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\",\"name\":\"Derci Labs | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2026-09-26T17:10:00+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/derci-labs\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Derci Labs\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+     "yoast_head_json": {
+      "title": "Derci Labs | Bitz",
+      "robots": {
+       "index": "index",
+       "follow": "follow",
+       "max-snippet": "max-snippet:-1",
+       "max-image-preview": "max-image-preview:large",
+       "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://bitz.ge/derci-labs/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Derci Labs | Bitz",
+      "og_description": "Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.",
+      "og_url": "https://bitz.ge/derci-labs/",
+      "og_site_name": "Bitz",
+      "og_image": [
+       {
+        "width": 1200,
+        "height": 630,
+        "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+        "type": "image/png"
+       }
+      ],
+      "twitter_card": "summary_large_image",
+      "schema": {
+       "@context": "https://schema.org",
+       "@graph": [
+        {
+         "@type": "WebPage",
+         "@id": "https://bitz.ge/derci-labs/",
+         "url": "https://bitz.ge/derci-labs/",
+         "name": "Derci Labs | Bitz",
+         "isPartOf": {
+          "@id": "https://bitz.ge/#website"
+         },
+         "datePublished": "2026-09-26T17:10:00+00:00",
+         "breadcrumb": {
+          "@id": "https://bitz.ge/derci-labs/#breadcrumb"
+         },
+         "inLanguage": "en-US",
+         "potentialAction": [
+          {
+           "@type": "ReadAction",
+           "target": [
+            "https://bitz.ge/derci-labs/"
+           ]
+          }
+         ]
+        },
+        {
+         "@type": "BreadcrumbList",
+         "@id": "https://bitz.ge/derci-labs/#breadcrumb",
+         "itemListElement": [
+          {
+           "@type": "ListItem",
+           "position": 1,
+           "name": "Home",
+           "item": "https://bitz.ge/"
+          },
+          {
+           "@type": "ListItem",
+           "position": 2,
+           "name": "Derci Labs"
+          }
+         ]
+        },
+        {
+         "@type": "WebSite",
+         "@id": "https://bitz.ge/#website",
+         "url": "https://bitz.ge/",
+         "name": "bitz",
+         "description": "Portfolio",
+         "publisher": {
+          "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+         },
+         "potentialAction": [
+          {
+           "@type": "SearchAction",
+           "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+           },
+           "query-input": {
+            "@type": "PropertyValueSpecification",
+            "valueRequired": true,
+            "valueName": "search_term_string"
+           }
+          }
+         ],
+         "inLanguage": "en-US"
+        },
+        {
+         "@type": [
+          "Person",
+          "Organization"
+         ],
+         "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+         "name": "admin",
+         "image": {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+          "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+          "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+          "width": 1,
+          "height": 1,
+          "caption": "admin"
+         },
+         "logo": {
+          "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+         },
+         "sameAs": [
+          "https://bitz.ge"
+         ]
+        }
+       ]
+      }
+     },
+     "_links": {
+      "self": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/pages/4380",
+        "targetHints": {
+         "allow": [
+          "GET"
+         ]
+        }
+       }
+      ],
+      "collection": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/pages"
+       }
+      ],
+      "about": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+       }
+      ],
+      "author": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+       }
+      ],
+      "replies": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/wp-json/wp/v2/comments?post=4380"
+       }
+      ],
+      "version-history": [
+       {
+        "count": 0,
+        "href": "https://bitz.ge/wp-json/wp/v2/pages/4380/revisions"
+       }
+      ],
+      "wp:attachment": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4380"
+       }
+      ],
+      "curies": [
+       {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4381,
+  "date": "2026-09-26T21:10:06",
+  "date_gmt": "2026-09-26T17:10:06",
+  "guid": {
+   "rendered": "https://bitz.ge/derci-labs/terms/"
+  },
+  "modified": "2026-09-26T21:10:06",
+  "modified_gmt": "2026-09-26T17:10:06",
+  "slug": "terms",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/derci-labs/terms/",
+  "title": {
+   "rendered": "Terms of Service"
+  },
+  "content": {
+   "rendered": "<h1>Derci Labs &#8211; Terms of Service</h1>\n<p><em>Last updated: September 26, 2026</em></p>\n<p>Derci Labs is a personal tool operated by Luka Gabidzashvili (Tbilisi, Georgia) for publishing original short-form video content to the operator&#8217;s own TikTok account.</p>\n<ol>\n<li><strong>Use.</strong> The tool is used solely by its operator. It is not offered to the public and no accounts are created for third parties.</li>\n<li><strong>Content.</strong> All videos and captions uploaded through the tool are original content created by the operator. AI-generated content is labeled as such.</li>\n<li><strong>Third-party services.</strong> The tool uses the TikTok Content Posting API under TikTok&#8217;s Developer Terms. Use of TikTok is governed by TikTok&#8217;s own Terms of Service.</li>\n<li><strong>Liability.</strong> The tool is provided as is, without warranty of any kind.</li>\n<li><strong>Contact.</strong> chat@bitz.ge</li>\n</ol>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Derci Labs &#8211; Terms of Service Last updated: September 26, 2026 Derci Labs is a personal tool operated by Luka Gabidzashvili (Tbilisi, Georgia) for publishing original short-form video content to the operator&#8217;s own TikTok account. Use. The tool is used solely by its operator. It is not offered to the public and no accounts are [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 4380,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "",
+   "_yoast_wpseo_metadesc": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-4381",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Terms of Service | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/derci-labs/terms/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Terms of Service | Bitz\" />\n<meta property=\"og:description\" content=\"Derci Labs &#8211; Terms of Service Last updated: September 26, 2026 Derci Labs is a personal tool operated by Luka Gabidzashvili (Tbilisi, Georgia) for publishing original short-form video content to the operator&#8217;s own TikTok account. Use. The tool is used solely by its operator. It is not offered to the public and no accounts are [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/derci-labs/terms/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/terms\\/\",\"url\":\"https:\\/\\/bitz.ge\\/derci-labs\\/terms\\/\",\"name\":\"Terms of Service | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2026-09-26T17:10:06+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/terms\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/derci-labs\\/terms\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/terms\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Derci Labs\",\"item\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Terms of Service\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Terms of Service | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/derci-labs/terms/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Terms of Service | Bitz",
+   "og_description": "Derci Labs &#8211; Terms of Service Last updated: September 26, 2026 Derci Labs is a personal tool operated by Luka Gabidzashvili (Tbilisi, Georgia) for publishing original short-form video content to the operator&#8217;s own TikTok account. Use. The tool is used solely by its operator. It is not offered to the public and no accounts are [&hellip;]",
+   "og_url": "https://bitz.ge/derci-labs/terms/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Est. reading time": "1 minute"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/derci-labs/terms/",
+      "url": "https://bitz.ge/derci-labs/terms/",
+      "name": "Terms of Service | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2026-09-26T17:10:06+00:00",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/derci-labs/terms/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/derci-labs/terms/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/derci-labs/terms/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Derci Labs",
+        "item": "https://bitz.ge/derci-labs/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Terms of Service"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4381",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=4381"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 0,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4381/revisions"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4380"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4381"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ],
+   "up": [
+    {
+     "id": 4380,
+     "date": "2026-09-26T21:10:00",
+     "slug": "derci-labs",
+     "type": "page",
+     "link": "https://bitz.ge/derci-labs/",
+     "title": {
+      "rendered": "Derci Labs"
+     },
+     "excerpt": {
+      "rendered": "<p>Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.</p>\n",
+      "protected": false
+     },
+     "author": 1,
+     "featured_media": 0,
+     "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Derci Labs | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/derci-labs/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Derci Labs | Bitz\" />\n<meta property=\"og:description\" content=\"Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/derci-labs/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\",\"url\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\",\"name\":\"Derci Labs | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2026-09-26T17:10:00+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/derci-labs\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Derci Labs\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+     "yoast_head_json": {
+      "title": "Derci Labs | Bitz",
+      "robots": {
+       "index": "index",
+       "follow": "follow",
+       "max-snippet": "max-snippet:-1",
+       "max-image-preview": "max-image-preview:large",
+       "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://bitz.ge/derci-labs/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Derci Labs | Bitz",
+      "og_description": "Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.",
+      "og_url": "https://bitz.ge/derci-labs/",
+      "og_site_name": "Bitz",
+      "og_image": [
+       {
+        "width": 1200,
+        "height": 630,
+        "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+        "type": "image/png"
+       }
+      ],
+      "twitter_card": "summary_large_image",
+      "schema": {
+       "@context": "https://schema.org",
+       "@graph": [
+        {
+         "@type": "WebPage",
+         "@id": "https://bitz.ge/derci-labs/",
+         "url": "https://bitz.ge/derci-labs/",
+         "name": "Derci Labs | Bitz",
+         "isPartOf": {
+          "@id": "https://bitz.ge/#website"
+         },
+         "datePublished": "2026-09-26T17:10:00+00:00",
+         "breadcrumb": {
+          "@id": "https://bitz.ge/derci-labs/#breadcrumb"
+         },
+         "inLanguage": "en-US",
+         "potentialAction": [
+          {
+           "@type": "ReadAction",
+           "target": [
+            "https://bitz.ge/derci-labs/"
+           ]
+          }
+         ]
+        },
+        {
+         "@type": "BreadcrumbList",
+         "@id": "https://bitz.ge/derci-labs/#breadcrumb",
+         "itemListElement": [
+          {
+           "@type": "ListItem",
+           "position": 1,
+           "name": "Home",
+           "item": "https://bitz.ge/"
+          },
+          {
+           "@type": "ListItem",
+           "position": 2,
+           "name": "Derci Labs"
+          }
+         ]
+        },
+        {
+         "@type": "WebSite",
+         "@id": "https://bitz.ge/#website",
+         "url": "https://bitz.ge/",
+         "name": "bitz",
+         "description": "Portfolio",
+         "publisher": {
+          "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+         },
+         "potentialAction": [
+          {
+           "@type": "SearchAction",
+           "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+           },
+           "query-input": {
+            "@type": "PropertyValueSpecification",
+            "valueRequired": true,
+            "valueName": "search_term_string"
+           }
+          }
+         ],
+         "inLanguage": "en-US"
+        },
+        {
+         "@type": [
+          "Person",
+          "Organization"
+         ],
+         "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+         "name": "admin",
+         "image": {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+          "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+          "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+          "width": 1,
+          "height": 1,
+          "caption": "admin"
+         },
+         "logo": {
+          "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+         },
+         "sameAs": [
+          "https://bitz.ge"
+         ]
+        }
+       ]
+      }
+     },
+     "_links": {
+      "self": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/pages/4380",
+        "targetHints": {
+         "allow": [
+          "GET"
+         ]
+        }
+       }
+      ],
+      "collection": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/pages"
+       }
+      ],
+      "about": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+       }
+      ],
+      "author": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+       }
+      ],
+      "replies": [
+       {
+        "embeddable": true,
+        "href": "https://bitz.ge/wp-json/wp/v2/comments?post=4380"
+       }
+      ],
+      "version-history": [
+       {
+        "count": 0,
+        "href": "https://bitz.ge/wp-json/wp/v2/pages/4380/revisions"
+       }
+      ],
+      "wp:attachment": [
+       {
+        "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4380"
+       }
+      ],
+      "curies": [
+       {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4380,
+  "date": "2026-09-26T21:10:00",
+  "date_gmt": "2026-09-26T17:10:00",
+  "guid": {
+   "rendered": "https://bitz.ge/derci-labs/"
+  },
+  "modified": "2026-09-26T21:10:00",
+  "modified_gmt": "2026-09-26T17:10:00",
+  "slug": "derci-labs",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/derci-labs/",
+  "title": {
+   "rendered": "Derci Labs"
+  },
+  "content": {
+   "rendered": "<p>Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "",
+   "_yoast_wpseo_metadesc": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-4380",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Derci Labs | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/derci-labs/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Derci Labs | Bitz\" />\n<meta property=\"og:description\" content=\"Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/derci-labs/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\",\"url\":\"https:\\/\\/bitz.ge\\/derci-labs\\/\",\"name\":\"Derci Labs | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2026-09-26T17:10:00+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/derci-labs\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/derci-labs\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Derci Labs\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Derci Labs | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/derci-labs/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Derci Labs | Bitz",
+   "og_description": "Derci Labs is a personal tool operated by Luka Gabidzashvili for publishing original short-form video content.",
+   "og_url": "https://bitz.ge/derci-labs/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/derci-labs/",
+      "url": "https://bitz.ge/derci-labs/",
+      "name": "Derci Labs | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2026-09-26T17:10:00+00:00",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/derci-labs/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/derci-labs/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/derci-labs/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Derci Labs"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4380",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=4380"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 0,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4380/revisions"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4380"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 4098,
+  "date": "2023-10-13T11:53:11",
+  "date_gmt": "2023-10-13T11:53:11",
+  "guid": {
+   "rendered": "https://bitz.ge/?post_type=wp-story-box&#038;p=3879"
+  },
+  "modified": "2026-08-19T21:26:25",
+  "modified_gmt": "2026-08-19T17:26:25",
+  "slug": "cookie-policy",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/cookie-policy/",
+  "title": {
+   "rendered": "Cookie Policy (EU)"
+  },
+  "content": {
+   "rendered": "<p><em>Last updated: August 12, 2026</em></p>\n<h2>What This Policy Covers</h2>\n<p>This Cookie Policy explains how Bitz.ge (&#8220;we,&#8221; &#8220;us,&#8221; or &#8220;the site&#8221;), the portfolio website of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, uses cookies and similar tracking technologies when you visit this website. It explains what these technologies are, why we use them, and the choices you have.</p>\n<p>This policy should be read alongside our Privacy Policy, which explains in more detail how we handle personal data.</p>\n<h2>What Are Cookies</h2>\n<p>Cookies are small text files placed on your device (computer, tablet, or mobile) when you visit a website. They are widely used to make websites work, work more efficiently, and to provide information to the site owner. Similar technologies include local storage and pixels, and this policy covers those as well.</p>\n<p>Cookies can be &#8220;session&#8221; cookies, which are deleted when you close your browser, or &#8220;persistent&#8221; cookies, which remain on your device for a set period or until you delete them. They can also be &#8220;first-party&#8221; cookies (set by this site) or &#8220;third-party&#8221; cookies (set by another service we use, such as an analytics or embed provider).</p>\n<h2>Why We Use Cookies</h2>\n<p>We use cookies to keep the site functioning properly, to remember your cookie consent choices, to understand how visitors use the site so we can improve it, and, where applicable, to support embedded content from third-party platforms (such as social media posts or videos shown on portfolio pages).</p>\n<h2>Categories of Cookies We Use</h2>\n<p><strong>Necessary / Functional Cookies</strong></p>\n<p>These cookies are essential for the website to operate correctly. They include cookies that remember your cookie consent preferences (set by our consent management tool) and cookies needed for core functionality such as submitting the contact form. These cookies do not require your consent because the site cannot function properly without them, but we still disclose them here for transparency.</p>\n<p><strong>Analytics Cookies</strong></p>\n<p>We use Google Analytics to understand how visitors interact with the site &#8211; for example, which pages are visited, how long visitors stay, and which country or device they are using. This helps us improve the site&#8217;s content and performance. These cookies collect information in an aggregated, and where possible anonymized, form. Analytics cookies are only set after you give consent through our cookie banner.</p>\n<p><strong>Marketing and Social Media Cookies</strong></p>\n<p>Some pages on this site may include embedded content from third-party platforms, such as social media posts, video players, or design showcases (for example from Behance, Instagram, LinkedIn, or Vimeo). These providers may set their own cookies when their content is displayed, which can be used to track your activity across other websites you visit. We do not control these cookies directly &#8211; they are governed by the third party&#8217;s own privacy and cookie policies. These cookies, where present, are only activated after you give consent.</p>\n<h2>How We Manage Your Consent</h2>\n<p>When you first visit Bitz.ge, a cookie consent banner appears asking you to accept or decline non-essential cookies (analytics, marketing, and embedded content). This banner is powered by a GDPR-compliant consent management platform that records your choice and ensures cookies outside the &#8220;necessary&#8221; category are only placed after you have given explicit consent, in line with EU GDPR and ePrivacy requirements.</p>\n<p>You can change your mind at any time. Most consent banners of this kind include a small tab or icon (usually in a corner of the screen) that lets you reopen your cookie preferences and update or withdraw your consent whenever you like.</p>\n<h2>How to Manage or Withdraw Consent</h2>\n<p>You have several ways to control cookies on this site:</p>\n<p>Use the cookie preferences panel available via the consent banner (or its reopening icon) to accept, decline, or customize cookie categories at any time.</p>\n<p>Adjust your browser settings to block or delete cookies. Most browsers let you see what cookies are stored and delete them individually or entirely &#8211; check your browser&#8217;s help section for instructions, as the steps vary between Chrome, Firefox, Safari, and Edge.</p>\n<p>Opt out of Google Analytics specifically using the Google Analytics Opt-out Browser Add-on, available from Google.</p>\n<p>Please note that blocking or deleting necessary cookies may affect how parts of this website function.</p>\n<h2>Changes to This Policy</h2>\n<p>We may update this Cookie Policy from time to time to reflect changes in the cookies we use or for legal, operational, or regulatory reasons. Any changes will be posted on this page with an updated revision date.</p>\n<h2>Contact Us</h2>\n<p>If you have any questions about this Cookie Policy or how we use cookies, please contact us through our contact page.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Last updated: August 12, 2026 What This Policy Covers This Cookie Policy explains how Bitz.ge (&#8220;we,&#8221; &#8220;us,&#8221; or &#8220;the site&#8221;), the portfolio website of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, uses cookies and similar tracking technologies when you visit this website. It explains what these technologies are, why we use them, and [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "Cookie Policy | Bitz",
+   "_yoast_wpseo_metadesc": "How Bitz.ge uses cookies and similar technologies.",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-4098",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Cookie Policy | Bitz</title>\n<meta name=\"description\" content=\"How Bitz.ge uses cookies and similar technologies.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/cookie-policy/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Cookie Policy | Bitz\" />\n<meta property=\"og:description\" content=\"How Bitz.ge uses cookies and similar technologies.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/cookie-policy/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"article:modified_time\" content=\"2026-08-19T17:26:25+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/cookie-policy\\/\",\"url\":\"https:\\/\\/bitz.ge\\/cookie-policy\\/\",\"name\":\"Cookie Policy | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2023-10-13T11:53:11+00:00\",\"dateModified\":\"2026-08-19T17:26:25+00:00\",\"description\":\"How Bitz.ge uses cookies and similar technologies.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/cookie-policy\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/cookie-policy\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/cookie-policy\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Cookie Policy (EU)\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Cookie Policy | Bitz",
+   "description": "How Bitz.ge uses cookies and similar technologies.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/cookie-policy/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Cookie Policy | Bitz",
+   "og_description": "How Bitz.ge uses cookies and similar technologies.",
+   "og_url": "https://bitz.ge/cookie-policy/",
+   "og_site_name": "Bitz",
+   "article_modified_time": "2026-08-19T17:26:25+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Est. reading time": "4 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/cookie-policy/",
+      "url": "https://bitz.ge/cookie-policy/",
+      "name": "Cookie Policy | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2023-10-13T11:53:11+00:00",
+      "dateModified": "2026-08-19T17:26:25+00:00",
+      "description": "How Bitz.ge uses cookies and similar technologies.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/cookie-policy/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/cookie-policy/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/cookie-policy/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cookie Policy (EU)"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4098",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=4098"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 4,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4098/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4288,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/4098/revisions/4288"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=4098"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "date": "2021-08-10T16:05:48",
+  "date_gmt": "2021-08-10T16:05:48",
+  "guid": {
+   "rendered": "https://bitz.ge/?page_id=3"
+  },
+  "modified": "2026-08-19T21:26:27",
+  "modified_gmt": "2026-08-19T17:26:27",
+  "slug": "privacy-policy",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/privacy-policy/",
+  "title": {
+   "rendered": "Privacy Policy"
+  },
+  "content": {
+   "rendered": "<p><em>Last updated: August 12, 2026</em></p>\n<h2>Introduction</h2>\n<p>This Privacy Policy explains how Bitz.ge, the portfolio website of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, collects, uses, and protects your personal data when you visit this website or get in touch with us. We serve clients across the EU and internationally and this policy complies with the EU GDPR. For cookie-specific detail, see our Cookie Policy at bitz.ge/cookie-policy.</p>\n<h2>Who We Are</h2>\n<p>Bitz.ge is operated by Luka Gabidzashvili, a freelance full-stack designer working in branding, graphic design, 3D, motion, and UI/UX. For any privacy-related question, reach us at chat@bitz.ge.</p>\n<h2>What Personal Data We Collect</h2>\n<p><strong>Contact form submissions</strong> &#8211; name, email, and message content when you use the contact form.</p>\n<p><strong>Analytics data</strong> &#8211; Google Analytics collects aggregate data on page views, time on site, general location, device/browser type, and referral source. Not used to identify you personally, and only runs after you consent via the cookie banner.</p>\n<p><strong>Cookies</strong> &#8211; see our Cookie Policy for full detail.</p>\n<p>We do not run e-commerce, do not process payment details, and do not offer visitor accounts or logins.</p>\n<h2>Why We Process Your Data</h2>\n<p><strong>Consent</strong> &#8211; for analytics cookies, activated only after you accept via the cookie banner.</p>\n<p><strong>Legitimate interest</strong> &#8211; for responding to contact form inquiries.</p>\n<p><strong>Contract / pre-contractual steps</strong> &#8211; if your inquiry relates to a potential design project, to discuss and prepare a work agreement.</p>\n<h2>How Long We Keep Your Data</h2>\n<p>We keep contact form messages and analytics data for as long as reasonably necessary to respond to inquiries, maintain any resulting business relationship, and meet reasonable record-keeping needs, after which it is deleted or anonymized. Analytics data also follows Google Analytics&#8217; own standard retention settings.</p>\n<h2>Who We Share Your Data With</h2>\n<p>We do not sell your personal data. We share limited data with service providers who act as processors on our behalf: our hosting provider (stores site and form data), Google Analytics (processes anonymized/aggregated analytics data, may transfer data outside the EU under its own GDPR safeguards), our contact form service, and our email provider. We may also disclose data where required by law.</p>\n<h2>International Data Transfers</h2>\n<p>Because some providers (such as Google) operate globally, your data may be processed outside the EEA. Where this happens, we rely on the provider&#8217;s own GDPR-compliant safeguards such as Standard Contractual Clauses.</p>\n<h2>Your Rights Under GDPR</h2>\n<p>You have the right to: access your data, request correction, request erasure, restrict processing, object to processing (including analytics), request data portability, withdraw consent at any time via the cookie preferences panel, and complain to a supervisory authority (in Georgia, the Personal Data Protection Service; in the EU, your national authority). To exercise any of these, contact chat@bitz.ge.</p>\n<h2>Cookies</h2>\n<p>This site uses cookies, including analytics cookies that only activate after consent. Full detail is in our Cookie Policy at bitz.ge/cookie-policy.</p>\n<h2>Data Security</h2>\n<p>We take reasonable technical and organizational measures to protect your data, including relying on reputable hosting and service providers, though no method of transmission is 100 percent secure.</p>\n<h2>Children&#8217;s Privacy</h2>\n<p>This site is not directed at children and we do not knowingly collect data from them.</p>\n<h2>Changes to This Policy</h2>\n<p>We may update this policy from time to time. Changes will be posted here with an updated revision date.</p>\n<h2>Contact Us</h2>\n<p>Questions about this policy or your data &#8211; contact us at chat@bitz.ge.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Last updated: August 12, 2026 Introduction This Privacy Policy explains how Bitz.ge, the portfolio website of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, collects, uses, and protects your personal data when you visit this website or get in touch with us. We serve clients across the EU and internationally and this policy complies [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "open",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "",
+   "_yoast_wpseo_metadesc": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-3",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Privacy Policy | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/privacy-policy/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Privacy Policy | Bitz\" />\n<meta property=\"og:description\" content=\"Last updated: August 12, 2026 Introduction This Privacy Policy explains how Bitz.ge, the portfolio website of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, collects, uses, and protects your personal data when you visit this website or get in touch with us. We serve clients across the EU and internationally and this policy complies [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/privacy-policy/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"article:modified_time\" content=\"2026-08-19T17:26:27+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"3 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/privacy-policy\\/\",\"url\":\"https:\\/\\/bitz.ge\\/privacy-policy\\/\",\"name\":\"Privacy Policy | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2021-08-10T16:05:48+00:00\",\"dateModified\":\"2026-08-19T17:26:27+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/privacy-policy\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/privacy-policy\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/privacy-policy\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Privacy Policy\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Privacy Policy | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/privacy-policy/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Privacy Policy | Bitz",
+   "og_description": "Last updated: August 12, 2026 Introduction This Privacy Policy explains how Bitz.ge, the portfolio website of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, collects, uses, and protects your personal data when you visit this website or get in touch with us. We serve clients across the EU and internationally and this policy complies [&hellip;]",
+   "og_url": "https://bitz.ge/privacy-policy/",
+   "og_site_name": "Bitz",
+   "article_modified_time": "2026-08-19T17:26:27+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Est. reading time": "3 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/privacy-policy/",
+      "url": "https://bitz.ge/privacy-policy/",
+      "name": "Privacy Policy | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2021-08-10T16:05:48+00:00",
+      "dateModified": "2026-08-19T17:26:27+00:00",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/privacy-policy/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/privacy-policy/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/privacy-policy/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/3",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=3"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/3/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4290,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/3/revisions/4290"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=3"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 46,
+  "date": "2020-06-11T13:04:32",
+  "date_gmt": "2020-06-11T13:04:32",
+  "guid": {
+   "rendered": "http://clapat.ro/themes/colega-wordpress/?page_id=46"
+  },
+  "modified": "2026-08-11T19:32:01",
+  "modified_gmt": "2026-08-11T15:32:01",
+  "slug": "stories",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/stories/",
+  "title": {
+   "rendered": "Blog"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "blog-page.php",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "Design Insights & Creative Process | bitz Blog",
+   "_yoast_wpseo_metadesc": "Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-46",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Design Insights &amp; Creative Process | bitz Blog</title>\n<meta name=\"description\" content=\"Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/stories/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Design Insights &amp; Creative Process | bitz Blog\" />\n<meta property=\"og:description\" content=\"Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/stories/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"article:modified_time\" content=\"2026-08-11T15:32:01+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":[\"WebPage\",\"CollectionPage\"],\"@id\":\"https:\\/\\/bitz.ge\\/stories\\/\",\"url\":\"https:\\/\\/bitz.ge\\/stories\\/\",\"name\":\"Design Insights & Creative Process | bitz Blog\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2020-06-11T13:04:32+00:00\",\"dateModified\":\"2026-08-11T15:32:01+00:00\",\"description\":\"Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/stories\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/stories\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Design Insights & Creative Process | bitz Blog",
+   "description": "Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/stories/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Design Insights & Creative Process | bitz Blog",
+   "og_description": "Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.",
+   "og_url": "https://bitz.ge/stories/",
+   "og_site_name": "Bitz",
+   "article_modified_time": "2026-08-11T15:32:01+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "WebPage",
+       "CollectionPage"
+      ],
+      "@id": "https://bitz.ge/stories/",
+      "url": "https://bitz.ge/stories/",
+      "name": "Design Insights & Creative Process | bitz Blog",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2020-06-11T13:04:32+00:00",
+      "dateModified": "2026-08-11T15:32:01+00:00",
+      "description": "Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/stories/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/stories/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/46",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=46"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 1,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/46/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4228,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/46/revisions/4228"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=46"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 41,
+  "date": "2020-06-11T12:59:33",
+  "date_gmt": "2020-06-11T12:59:33",
+  "guid": {
+   "rendered": "http://clapat.ro/themes/colega-wordpress/?page_id=41"
+  },
+  "modified": "2026-08-13T21:20:08",
+  "modified_gmt": "2026-08-13T17:20:08",
+  "slug": "contact",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/contact/",
+  "title": {
+   "rendered": "Contact"
+  },
+  "content": {
+   "rendered": "\n<div class=\"wp-block-colega-gutenberg-container row_padding_bottom\" style=\"background-color:transparent;text-align:left\">\n<h2 class=\"wp-block-heading has-mask\" id=\"h-i-m-always-ready-to-connect-reach-out-to-me-on-any-platform-that-suits-you-best\">Looking to hire a designer in Tbilisi for your brand, product, or next campaign? You&#8217;re in the right place.</h2>\n\n\n\n<div style=\"height:50px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container one_half\" style=\"background-color:transparent;text-align:left\">\n<p class=\"has-animation wp-block-paragraph\"><strong>Email</strong></p>\n\n\n\n<a href=\"mailto:chat@bitz.ge\" target=\"_blank\" rel=\"noopener\">chat@bitz.ge</a>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container one_half last\" style=\"background-color:transparent;text-align:left\">\n<p class=\"has-animation wp-block-paragraph\"><strong>Phone</strong></p>\n\n\n\n<a href=\"tel:+995 595380102\" target=\"_blank\" rel=\"noopener\">+995 595 38 01 02</a>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container one_half\" style=\"background-color:transparent;text-align:left\">\n<p class=\"has-animation wp-block-paragraph\"><strong>Facebook</strong></p>\n\n\n\n<a href=\"https://www.facebook.com/gabeatzzz/\" target=\"_blank\" rel=\"noopener\">Luka Gabidzashvili</a>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container one_half last\" style=\"background-color:transparent;text-align:left\">\n<p class=\"has-animation wp-block-paragraph\"><strong>Linkedin</strong></p>\n\n\n\n<a href=\"https://www.linkedin.com/in/bitzzz/\" target=\"_blank\" rel=\"noopener\">Luka Gabidzashvili</a>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container full row_padding_top row_padding_bottom change-header-color white-section\" style=\"background-color:#ffffff;text-align:left\">\n<div class=\"wp-block-colega-gutenberg-container medium change-header-color\" style=\"background-color:#ffffff;text-align:left\">\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-animation wp-block-paragraph\">Bitz is a one-person studio covering branding, graphic design, 3D, motion, and UI/UX &#8211; so whether you need a branding agency in Tbilisi to build an identity from scratch, or a freelance UI/UX designer to take an existing product further, it&#8217;s one point of contact instead of three separate hires. Recent work like the <a href=\"https://bitz.ge/portfolio/kredo-banki/\">Credo Bank</a> project and the <a href=\"https://bitz.ge/\">portfolio</a> show the range this covers, from brand identity through to shipped interfaces.<br><br>Discovery &#8211; a short call or message to understand the project, timeline, and budget. Design and iteration &#8211; concepts, feedback rounds, and revisions until it&#8217;s right. Delivery &#8211; final files, assets, or a handed-off interface, ready to use.<br><br>Send a short brief through the form below, or reach out directly by email or phone. This is the fastest way to contact a designer in Georgia who can take a project from brand to bytes. Replies typically come within one business day.</p>\n\n\n\n<h3 class=\"wp-block-heading has-mask has-text-color\" id=\"h-drop-me-a-line-i-m-always-happy-to-help-with-any-information-you-need\" style=\"color:#000000\">Drop me a line &#8211; I&#8217;m always happy to help with any information you need!</h3>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\"></div>\n</div>\n\n\n\n<div style=\"height:50px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p class=\"wp-block-paragraph\">\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f3833-o1\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"3833\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p> <ul></ul></div>\n<form action=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1&#038;_embed=1&#038;context=view#wpcf7-f3833-o1\" method=\"post\" class=\"wpcf7-form init\" aria-label=\"Contact form\" novalidate=\"novalidate\" data-status=\"init\">\n<fieldset class=\"hidden-fields-container\"><input type=\"hidden\" name=\"_wpcf7\" value=\"3833\" /><input type=\"hidden\" name=\"_wpcf7_version\" value=\"6.1.7\" /><input type=\"hidden\" name=\"_wpcf7_locale\" value=\"en_US\" /><input type=\"hidden\" name=\"_wpcf7_unit_tag\" value=\"wpcf7-f3833-o1\" /><input type=\"hidden\" name=\"_wpcf7_container_post\" value=\"0\" /><input type=\"hidden\" name=\"_wpcf7_posted_data_hash\" value=\"\" />\n</fieldset>\n<div id=\"contact-formular\" class=\"bigger-form disable-drag\">\n\t<div class=\"name-box has-animation\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Name\" value=\"\" type=\"text\" name=\"your-name\" /></span>\n\t\t</p>\n\t</div>\n\t<div class=\"email-box has-animation\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"E-mail\" value=\"\" type=\"email\" name=\"your-email\" /></span>\n\t\t</p>\n\t</div>\n\t<div class=\"message-box has-animation\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" maxlength=\"2000\" class=\"wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Message\" name=\"your-message\"></textarea></span>\n\t\t</p>\n\t</div>\n<hr />\n\t<div class=\"button-box has-animation\" data-delay=\"100\">\n\t\t<div class=\"clapat-button-wrap circle parallax-wrap bigger\">\n\t\t\t<div class=\"clapat-button parallax-element\">\n\t\t\t\t<div class=\"button-border outline parallax-element-second\">\n\t\t\t\t\t<p><input class=\"wpcf7-form-control wpcf7-submit has-spinner\" type=\"submit\" value=\"Submit\" />\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n</form>\n</div>\n</div>\n</div>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "Looking to hire a designer in Tbilisi for your brand, product, or next campaign? You're in the right place. Email chat@bitz.ge Phone +995 595 38 01 02 Facebook Luka Gabidzashvili Linkedin Luka Gabidzashvili Bitz is a one-person studio covering branding, graphic design, 3D, motion, and UI/UX - so whether you need a branding agency in [...]",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "",
+   "_yoast_wpseo_title": "Contact Luka - Branding & Design Services | Bitz",
+   "_yoast_wpseo_metadesc": "Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-41",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Contact Luka - Branding &amp; Design Services | Bitz</title>\n<meta name=\"description\" content=\"Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/contact/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Contact Luka - Branding &amp; Design Services | Bitz\" />\n<meta property=\"og:description\" content=\"Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/contact/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"article:modified_time\" content=\"2026-08-13T17:20:08+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/contact\\/\",\"url\":\"https:\\/\\/bitz.ge\\/contact\\/\",\"name\":\"Contact Luka - Branding & Design Services | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2020-06-11T12:59:33+00:00\",\"dateModified\":\"2026-08-13T17:20:08+00:00\",\"description\":\"Get in touch with Luka for branding, graphic design, 3D, motion, and UI\\/UX design projects in Tbilisi, Georgia.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/contact\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/contact\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/contact\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Contact Luka - Branding & Design Services | Bitz",
+   "description": "Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/contact/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Contact Luka - Branding & Design Services | Bitz",
+   "og_description": "Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.",
+   "og_url": "https://bitz.ge/contact/",
+   "og_site_name": "Bitz",
+   "article_modified_time": "2026-08-13T17:20:08+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Est. reading time": "1 minute"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/contact/",
+      "url": "https://bitz.ge/contact/",
+      "name": "Contact Luka - Branding & Design Services | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2020-06-11T12:59:33+00:00",
+      "dateModified": "2026-08-13T17:20:08+00:00",
+      "description": "Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/contact/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/contact/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/contact/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/41",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=41"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 55,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/41/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4251,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/41/revisions/4251"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=41"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 37,
+  "date": "2020-06-10T12:23:57",
+  "date_gmt": "2020-06-10T12:23:57",
+  "guid": {
+   "rendered": "http://clapat.ro/themes/colega-wordpress/?page_id=37"
+  },
+  "modified": "2026-09-03T23:57:43",
+  "modified_gmt": "2026-09-03T19:57:43",
+  "slug": "about",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/about/",
+  "title": {
+   "rendered": "Short Story About Me"
+  },
+  "content": {
+   "rendered": "\n<div class=\"wp-block-colega-gutenberg-container row_padding_bottom\" style=\"background-color:transparent;text-align:left\">\n<div class=\"wp-block-colega-gutenberg-container one_third\" style=\"background-color:transparent;text-align:left\">\n<h4 id=\"h-check-out-my-resume-below\" class=\"wp-block-heading has-mask\">Check out my resume below</h4>\n\n\n\n<div class=\"button-box has-animation\" data-delay=\"100\"><div class=\"clapat-button-wrap parallax-wrap hide-ball\"><a class=\"clapat-button parallax-element\" href=\"https://bitz.ge/wp-content/uploads/2023/10/resume-en-2026.pdf\" target=\"_blank\"><div class=\"button-border parallax-element-second rounded\"><span data-hover=\"Download\">View CV</span></div></a></div></div>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container two_third last\" style=\"background-color:transparent;text-align:left\">\n<p class=\"wp-block-paragraph\">This is the portfolio of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, working under the name Bitz. For 10+ years the work has covered branding, graphic design, 3D, motion, and UI/UX &#8211; not as separate freelance gigs, but as one connected skill set applied to real products and real brands.<br><br>Most design projects break down the moment they cross a discipline line. The brand identity goes to one studio, the product interface to another, the motion or 3D work to a third &#8211; and something gets lost at every handoff. Bitz exists to close that gap. As a full-stack designer in Georgia, Luka builds the identity, the interface, and the visual system as one continuous piece of work, so a brand looks and feels the same whether it&#8217;s on a business card, a product screen, or a 3D render.<br><br>Luka currently serves as Chief Design Officer at Moncero, where he has built and managed product and visual design teams delivering work across Web3, crypto, and enterprise platforms, including HRMS, HMS, and hospital management systems. In the Web3 space, he led the design of Nordom Gates, a Telegram game that reached more than 6 million users. He is also co-founder of Oasis, a Web3 digital agency, where he works with both small and large crypto companies on branding, design systems, and digital products.</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container full\" style=\"background-color:transparent;text-align:left\">\n<div class=\"wp-block-colega-gutenberg-container large\" style=\"background-color:transparent;text-align:left\">\n<div class=\"wp-block-colega-gutenberg-half-background-container row-half-color half-dark-section undefined first\" data-bgcolor=\"#141414\">\n<p class=\"wp-block-paragraph\"></p>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-half-background-container row-half-color half-white-section undefined second change-header-color\" data-bgcolor=\"#ffffff\">\n<p class=\"wp-block-paragraph\"></p>\n</div>\n\n\n\n<figure class=\"wp-block-image size-full has-parallax has-animation has-scale-vertical\"><img loading=\"lazy\" decoding=\"async\" width=\"1920\" height=\"1260\" src=\"https://bitz.ge/wp-content/uploads/2021/12/adobe-certified.jpg\" alt=\"\" class=\"wp-image-3364\" srcset=\"https://bitz.ge/wp-content/uploads/2021/12/adobe-certified.jpg 1920w, https://bitz.ge/wp-content/uploads/2021/12/adobe-certified-300x197.jpg 300w, https://bitz.ge/wp-content/uploads/2021/12/adobe-certified-1024x672.jpg 1024w, https://bitz.ge/wp-content/uploads/2021/12/adobe-certified-768x504.jpg 768w, https://bitz.ge/wp-content/uploads/2021/12/adobe-certified-1536x1008.jpg 1536w\" sizes=\"(max-width: 1920px) 100vw, 1920px\" /></figure>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container full change-header-color\" style=\"background-color:#ffffff;text-align:left\">\n<div class=\"wp-block-colega-gutenberg-container medium\" style=\"background-color:#ffffff;text-align:left\">\n<div style=\"height:80px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\"></div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<h4 id=\"h-adobe-certified-professional\" class=\"wp-block-heading has-mask has-text-color\" style=\"color:#000000\">Adobe Certified Professional</h4>\n\n\n\n<p class=\"has-animation wp-block-paragraph\">Luka is also an Adobe Certified Professional (2021). Recent examples of this range include the <a href=\"https://bitz.ge/portfolio/kredo-banki/\">Credo Bank</a> brand and interface work and the <a href=\"https://bitz.ge/portfolio/motorola-transistor-concept/\">Motorola Transistor Concept</a>, a 3D design exploration.</p>\n</div>\n</div>\n\n\n\n<div style=\"height:40px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container full row_padding_bottom change-header-color\" style=\"background-color:#ffffff;text-align:left\">\n<div class=\"content-marquee-wrapper\"><div class=\"content-marquee\" data-text=\"㋛ USER EXPERIENCE ✱ USER INTERFACE ✱ GRAPHIC DESIGN ✱ MOTION DESIGN ✱ MULTIMEDIA DESIGN\">㋛ USER EXPERIENCE ✱ USER INTERFACE ✱ GRAPHIC DESIGN ✱ MOTION DESIGN ✱ MULTIMEDIA DESIGN</div></div>\n</div>\n\n\n\n<div class=\"wp-block-colega-gutenberg-container\" style=\"background-color:transparent;text-align:left\">\n<div style=\"height:140px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<hr class=\"white-line has-animation\">\n\n\n\n<div style=\"height:140px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<h1 id=\"h-let-me-give-you-a-quick-glimpse\" class=\"wp-block-heading has-mask\">Let me give you a quick glimpse</h1>\n\n\n\n<h1 id=\"h-into-my-work-and-activities\" class=\"wp-block-heading has-mask\">into my work and activities</h1>\n\n\n\n<div style=\"height:50px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\"></div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<h5 id=\"h-what-i-m-doing\" class=\"wp-block-heading has-mask\">What i&#8217;m doing?</h5>\n\n\n\n<hr class=\"white-line has-animation\"><br><br>\n\n\n\n<p class=\"has-animation wp-block-paragraph\">The work at Bitz spans five connected areas: Branding &#8211; identity systems, logos, and visual language built to hold up across every touchpoint. Graphic design &#8211; print, digital, and campaign design that stays on-brand. 3D design &#8211; product visualization and 3D assets for brands and platforms that need more than flat graphics. Motion design &#8211; animation and motion graphics for product, brand, and campaign work. UI/UX design &#8211; interfaces for web and product, from early wireframes to shipped screens.</p>\n\n\n\n<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\"></div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<h5 id=\"h-softs\" class=\"wp-block-heading has-mask\">Softs</h5>\n\n\n\n<hr class=\"white-line has-animation\"><br><br>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-animation wp-block-paragraph\">Adobe Photoshop → 💯</p>\n\n\n\n<p class=\"wp-block-paragraph\">Adobe After Effects → 💯</p>\n\n\n\n<p class=\"wp-block-paragraph\">Adobe Premiere Pro → 💯</p>\n\n\n\n<p class=\"wp-block-paragraph\">Adobe Audition → 💯</p>\n\n\n\n<p class=\"wp-block-paragraph\">Blender → 👏</p>\n\n\n\n<p class=\"wp-block-paragraph\">Figma→ 🚀</p>\n\n\n\n<p class=\"wp-block-paragraph\">HTML → 👌</p>\n\n\n\n<p class=\"wp-block-paragraph\">CSS → 👌</p>\n\n\n\n<p class=\"wp-block-paragraph\">AI Tools → 👌</p>\n</div>\n</div>\n\n\n\n<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-animation wp-block-paragraph\">clients</p>\n\n\n\n<h2 id=\"h-happy-clients\" class=\"wp-block-heading has-mask\">Happy Clients</h2>\n\n\n\n<div style=\"height:50px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\"></div>\n</div>\n\n\n\n<ul class=\"wp-block-colega-gutenberg-clients clients-table\">\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/aldagi.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/credo-bank.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/e-space.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/Nordom.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/Moncero.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/sno.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/kobi.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/ordify.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/oasis.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/btcordinals.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/backapp.png\" alt=\"client image\" /></li>\n\n\n\n<li class=\"link\"><img decoding=\"async\" src=\"https://bitz.ge/wp-content/uploads/2025/09/artinfo-georgia.png\" alt=\"client image\" /></li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n</div>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "Check out my resume below View CV This is the portfolio of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, working under the name Bitz. For 10+ years the work has covered branding, graphic design, 3D, motion, and UI/UX - not as separate freelance gigs, but as one connected skill set applied to real [...]",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "_yoast_wpseo_focuskw": "About me",
+   "_yoast_wpseo_title": "About Luka - Full-Stack Designer in Tbilisi | Bitz",
+   "_yoast_wpseo_metadesc": "Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-37",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>About Luka - Full-Stack Designer in Tbilisi | Bitz</title>\n<meta name=\"description\" content=\"Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/about/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"About Luka - Full-Stack Designer in Tbilisi | Bitz\" />\n<meta property=\"og:description\" content=\"Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/about/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"article:modified_time\" content=\"2026-09-03T19:57:43+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/about-me-og.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/about-me-og.png\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/about\\/\",\"url\":\"https:\\/\\/bitz.ge\\/about\\/\",\"name\":\"About Luka - Full-Stack Designer in Tbilisi | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/bitz.ge\\/about\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/bitz.ge\\/about\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2021\\/12\\/adobe-certified.jpg\",\"datePublished\":\"2020-06-10T12:23:57+00:00\",\"dateModified\":\"2026-09-03T19:57:43+00:00\",\"description\":\"Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI\\/UX.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/about\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/about\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/about\\/#primaryimage\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2021\\/12\\/adobe-certified.jpg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2021\\/12\\/adobe-certified.jpg\",\"width\":1920,\"height\":1260},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/about\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Short Story About Me\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "About Luka - Full-Stack Designer in Tbilisi | Bitz",
+   "description": "Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/about/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "About Luka - Full-Stack Designer in Tbilisi | Bitz",
+   "og_description": "Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.",
+   "og_url": "https://bitz.ge/about/",
+   "og_site_name": "Bitz",
+   "article_modified_time": "2026-09-03T19:57:43+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/about-me-og.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_image": "https://bitz.ge/wp-content/uploads/2023/03/about-me-og.png",
+   "twitter_misc": {
+    "Est. reading time": "2 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/about/",
+      "url": "https://bitz.ge/about/",
+      "name": "About Luka - Full-Stack Designer in Tbilisi | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://bitz.ge/about/#primaryimage"
+      },
+      "image": {
+       "@id": "https://bitz.ge/about/#primaryimage"
+      },
+      "thumbnailUrl": "https://bitz.ge/wp-content/uploads/2021/12/adobe-certified.jpg",
+      "datePublished": "2020-06-10T12:23:57+00:00",
+      "dateModified": "2026-09-03T19:57:43+00:00",
+      "description": "Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/about/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/about/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "en-US",
+      "@id": "https://bitz.ge/about/#primaryimage",
+      "url": "https://bitz.ge/wp-content/uploads/2021/12/adobe-certified.jpg",
+      "contentUrl": "https://bitz.ge/wp-content/uploads/2021/12/adobe-certified.jpg",
+      "width": 1920,
+      "height": 1260
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/about/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Short Story About Me"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/37",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=37"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 100,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/37/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4365,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/37/revisions/4365"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=37"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": 9,
+  "date": "2020-06-10T12:00:37",
+  "date_gmt": "2020-06-10T12:00:37",
+  "guid": {
+   "rendered": "http://clapat.ro/themes/colega-wordpress/?page_id=9"
+  },
+  "modified": "2026-08-11T19:31:59",
+  "modified_gmt": "2026-08-11T15:31:59",
+  "slug": "innovative-digital-design-solutions",
+  "status": "publish",
+  "type": "page",
+  "link": "https://bitz.ge/",
+  "title": {
+   "rendered": "Portfolio"
+  },
+  "content": {
+   "rendered": "\n<p class=\"wp-block-paragraph\">Welcome to Bitz, a full-stack graphic design brand that specializes in providing innovative digital design solutions tailored to each client&#8217;s unique needs. Our portfolio showcases a diverse range of projects, from logos and web design to motion graphics and branding, that demonstrate our passion for creativity and attention to detail.</p>\n\n\n\n<p class=\"wp-block-paragraph\">At Bitz, we believe that effective design is more than just creating something visually pleasing. It&#8217;s about understanding the unique challenges of each project and developing customized solutions that meet our clients&#8217; goals. Whether you&#8217;re a small business looking to build your brand, or a larger organization seeking to revamp your digital presence, our team of experienced designers has the skills and expertise to bring your vision to life.</p>\n\n\n\n<p class=\"wp-block-paragraph\">One of the core values of our brand is innovation. We stay up to date with the latest design trends and techniques, and constantly strive to push boundaries and create unique solutions. Our designers are skilled in a variety of digital design tools and software, allowing us to tackle projects of any size and complexity.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But innovation is only part of what sets us apart. We also pride ourselves on precision and attention to detail. From the selection of color schemes and typography to the arrangement of elements on a web page, every design decision is carefully considered to ensure the final product is visually stunning and user-friendly.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Our portfolio showcases some of our most successful projects, including branding for local businesses, website design for e-commerce companies, and motion graphics for social media campaigns. Each project is unique and tailored to the specific needs of our clients, but all share our signature Bitz style of innovative design solutions.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We&#8217;re passionate about collaborating with clients to create digital designs that reflect their brand and vision. We take pride in delivering high-quality work on time and within budget, and we&#8217;re committed to ensuring our clients are completely satisfied with the final product.</p>\n\n\n\n<p class=\"wp-block-paragraph\">If you&#8217;re looking for a full-stack graphic design brand that values innovation, precision, and collaboration, you&#8217;ve come to the right place. Explore our portfolio and contact us to see how Bitz can transform your digital presence with innovative design solutions.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Welcome to Bitz, a full-stack graphic design brand that specializes in providing innovative digital design solutions tailored to each client&#8217;s unique needs. Our portfolio showcases a diverse range of projects, from logos and web design to motion graphics and branding, that demonstrate our passion for creativity and attention to detail. At Bitz, we believe that [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "carousel-page.php",
+  "meta": {
+   "_yoast_wpseo_focuskw": "Innovative Digital Design Solutions",
+   "_yoast_wpseo_title": "Luka Gabidzashvili - Branding & Graphic Design | Bitz",
+   "_yoast_wpseo_metadesc": "Transform your brand with innovative digital design solutions. Explore Bitz's portfolio for logos, web design, motion graphics, and more.",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-9",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Luka Gabidzashvili - Branding &amp; Graphic Design | Bitz</title>\n<meta name=\"description\" content=\"Transform your brand with innovative digital design solutions. Explore Bitz&#039;s portfolio for logos, web design, motion graphics, and more.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Luka Gabidzashvili - Branding &amp; Graphic Design | Bitz\" />\n<meta property=\"og:description\" content=\"Innovative digital design solutions to transform your digital presence - Bitz.\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"article:modified_time\" content=\"2026-08-11T15:31:59+00:00\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/bitz.ge\\/\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"Luka Gabidzashvili - Branding & Graphic Design | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"datePublished\":\"2020-06-10T12:00:37+00:00\",\"dateModified\":\"2026-08-11T15:31:59+00:00\",\"description\":\"Transform your brand with innovative digital design solutions. Explore Bitz's portfolio for logos, web design, motion graphics, and more.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/bitz.ge\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Portfolio\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Luka Gabidzashvili - Branding & Graphic Design | Bitz",
+   "description": "Transform your brand with innovative digital design solutions. Explore Bitz's portfolio for logos, web design, motion graphics, and more.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Luka Gabidzashvili - Branding & Graphic Design | Bitz",
+   "og_description": "Innovative digital design solutions to transform your digital presence - Bitz.",
+   "og_url": "https://bitz.ge/",
+   "og_site_name": "Bitz",
+   "article_modified_time": "2026-08-11T15:31:59+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Est. reading time": "2 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://bitz.ge/",
+      "url": "https://bitz.ge/",
+      "name": "Luka Gabidzashvili - Branding & Graphic Design | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "datePublished": "2020-06-10T12:00:37+00:00",
+      "dateModified": "2026-08-11T15:31:59+00:00",
+      "description": "Transform your brand with innovative digital design solutions. Explore Bitz's portfolio for logos, web design, motion graphics, and more.",
+      "breadcrumb": {
+       "@id": "https://bitz.ge/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://bitz.ge/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Portfolio"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/9",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/users/1"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://bitz.ge/wp-json/wp/v2/comments?post=9"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 4,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/9/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3844,
+     "href": "https://bitz.ge/wp-json/wp/v2/pages/9/revisions/3844"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/media?parent=9"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  },
+  "_embedded": {
+   "author": [
+    {
+     "code": "rest_user_cannot_view",
+     "message": "Sorry, you are not allowed to access user data without authentication.",
+     "data": {
+      "status": 401
+     }
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,30 @@
+{
+  "exported": "2026-11-09T12:49:44.110Z",
+  "en": {
+    "pages": 9,
+    "posts": 4,
+    "portfolio": 10,
+    "shots": 9,
+    "categories": 7,
+    "tags": 12,
+    "portfolio_category": 5,
+    "media": 296
+  },
+  "ge": {
+    "pages": 5,
+    "posts": 3,
+    "portfolio": 10,
+    "shots": 9,
+    "categories": 7,
+    "tags": 10,
+    "portfolio_category": 9,
+    "media": 53
+  },
+  "media": {
+    "referenced": 2099,
+    "downloaded": 357,
+    "skipped": 121,
+    "failed": 457,
+    "mb": 197
+  }
+}

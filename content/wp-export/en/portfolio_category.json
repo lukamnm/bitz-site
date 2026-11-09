@@ -1,0 +1,777 @@
+[
+ {
+  "id": 25,
+  "count": 3,
+  "description": "",
+  "link": "https://bitz.ge/blog/portfolio_category/3d-design/",
+  "name": "3D Design",
+  "slug": "3d-design",
+  "taxonomy": "portfolio_category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>3D Design | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/blog/portfolio_category/3d-design/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"3D Design | Bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/blog/portfolio_category/3d-design/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/3d-design\\/\",\"url\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/3d-design\\/\",\"name\":\"3D Design | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/3d-design\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/3d-design\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"3D Design\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "3D Design | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/blog/portfolio_category/3d-design/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "3D Design | Bitz",
+   "og_url": "https://bitz.ge/blog/portfolio_category/3d-design/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://bitz.ge/blog/portfolio_category/3d-design/",
+      "url": "https://bitz.ge/blog/portfolio_category/3d-design/",
+      "name": "3D Design | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://bitz.ge/blog/portfolio_category/3d-design/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/blog/portfolio_category/3d-design/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "3D Design"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category/25",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/taxonomies/portfolio_category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_portfolio?portfolio_category=25"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 18,
+  "count": 6,
+  "description": "",
+  "link": "https://bitz.ge/blog/portfolio_category/branding/",
+  "name": "Branding",
+  "slug": "branding",
+  "taxonomy": "portfolio_category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Branding | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/blog/portfolio_category/branding/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Branding | Bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/blog/portfolio_category/branding/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/branding\\/\",\"url\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/branding\\/\",\"name\":\"Branding | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/branding\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/branding\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Branding\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Branding | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/blog/portfolio_category/branding/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Branding | Bitz",
+   "og_url": "https://bitz.ge/blog/portfolio_category/branding/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://bitz.ge/blog/portfolio_category/branding/",
+      "url": "https://bitz.ge/blog/portfolio_category/branding/",
+      "name": "Branding | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://bitz.ge/blog/portfolio_category/branding/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/blog/portfolio_category/branding/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Branding"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category/18",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/taxonomies/portfolio_category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_portfolio?portfolio_category=18"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 19,
+  "count": 8,
+  "description": "",
+  "link": "https://bitz.ge/blog/portfolio_category/graphic-design/",
+  "name": "Graphic Design",
+  "slug": "graphic-design",
+  "taxonomy": "portfolio_category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Graphic Design | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/blog/portfolio_category/graphic-design/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Graphic Design | Bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/blog/portfolio_category/graphic-design/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/graphic-design\\/\",\"url\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/graphic-design\\/\",\"name\":\"Graphic Design | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/graphic-design\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/graphic-design\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graphic Design\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Graphic Design | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/blog/portfolio_category/graphic-design/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Graphic Design | Bitz",
+   "og_url": "https://bitz.ge/blog/portfolio_category/graphic-design/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://bitz.ge/blog/portfolio_category/graphic-design/",
+      "url": "https://bitz.ge/blog/portfolio_category/graphic-design/",
+      "name": "Graphic Design | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://bitz.ge/blog/portfolio_category/graphic-design/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/blog/portfolio_category/graphic-design/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Graphic Design"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category/19",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/taxonomies/portfolio_category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_portfolio?portfolio_category=19"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "count": 5,
+  "description": "",
+  "link": "https://bitz.ge/blog/portfolio_category/video/",
+  "name": "Motion Graphic",
+  "slug": "video",
+  "taxonomy": "portfolio_category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Motion Graphic | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/blog/portfolio_category/video/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Motion Graphic | Bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/blog/portfolio_category/video/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/video\\/\",\"url\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/video\\/\",\"name\":\"Motion Graphic | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/video\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/video\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Motion Graphic\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Motion Graphic | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/blog/portfolio_category/video/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Motion Graphic | Bitz",
+   "og_url": "https://bitz.ge/blog/portfolio_category/video/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://bitz.ge/blog/portfolio_category/video/",
+      "url": "https://bitz.ge/blog/portfolio_category/video/",
+      "name": "Motion Graphic | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://bitz.ge/blog/portfolio_category/video/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/blog/portfolio_category/video/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Motion Graphic"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category/21",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/taxonomies/portfolio_category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_portfolio?portfolio_category=21"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 22,
+  "count": 3,
+  "description": "",
+  "link": "https://bitz.ge/blog/portfolio_category/web-design/",
+  "name": "Web Design",
+  "slug": "web-design",
+  "taxonomy": "portfolio_category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Web Design | Bitz</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://bitz.ge/blog/portfolio_category/web-design/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Web Design | Bitz\" />\n<meta property=\"og:url\" content=\"https://bitz.ge/blog/portfolio_category/web-design/\" />\n<meta property=\"og:site_name\" content=\"Bitz\" />\n<meta property=\"og:image\" content=\"https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"630\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/web-design\\/\",\"url\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/web-design\\/\",\"name\":\"Web Design | Bitz\",\"isPartOf\":{\"@id\":\"https:\\/\\/bitz.ge\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/web-design\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/bitz.ge\\/blog\\/portfolio_category\\/web-design\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/bitz.ge\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Web Design\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/bitz.ge\\/#website\",\"url\":\"https:\\/\\/bitz.ge\\/\",\"name\":\"bitz\",\"description\":\"Portfolio\",\"publisher\":{\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/bitz.ge\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":[\"Person\",\"Organization\"],\"@id\":\"https:\\/\\/bitz.ge\\/#\\/schema\\/person\\/1e2470d69b12808b00d9113f3b8cda26\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"url\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"contentUrl\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\",\"width\":1,\"height\":1,\"caption\":\"admin\"},\"logo\":{\"@id\":\"https:\\/\\/bitz.ge\\/wp-content\\/uploads\\/2023\\/03\\/bitz-logo-black-1.svg\"},\"sameAs\":[\"https:\\/\\/bitz.ge\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Web Design | Bitz",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://bitz.ge/blog/portfolio_category/web-design/",
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Web Design | Bitz",
+   "og_url": "https://bitz.ge/blog/portfolio_category/web-design/",
+   "og_site_name": "Bitz",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 630,
+     "url": "https://bitz.ge/wp-content/uploads/2023/03/OGIMG.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://bitz.ge/blog/portfolio_category/web-design/",
+      "url": "https://bitz.ge/blog/portfolio_category/web-design/",
+      "name": "Web Design | Bitz",
+      "isPartOf": {
+       "@id": "https://bitz.ge/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://bitz.ge/blog/portfolio_category/web-design/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://bitz.ge/blog/portfolio_category/web-design/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitz.ge/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Web Design"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://bitz.ge/#website",
+      "url": "https://bitz.ge/",
+      "name": "bitz",
+      "description": "Portfolio",
+      "publisher": {
+       "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://bitz.ge/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": [
+       "Person",
+       "Organization"
+      ],
+      "@id": "https://bitz.ge/#/schema/person/1e2470d69b12808b00d9113f3b8cda26",
+      "name": "admin",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "url": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "contentUrl": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg",
+       "width": 1,
+       "height": 1,
+       "caption": "admin"
+      },
+      "logo": {
+       "@id": "https://bitz.ge/wp-content/uploads/2023/03/bitz-logo-black-1.svg"
+      },
+      "sameAs": [
+       "https://bitz.ge"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category/22",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/portfolio_category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/taxonomies/portfolio_category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://bitz.ge/wp-json/wp/v2/colega_portfolio?portfolio_category=22"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]
