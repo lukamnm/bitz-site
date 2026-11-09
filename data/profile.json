@@ -21,6 +21,16 @@
    },
    {
     "label": {
+     "en": "Instagram",
+     "ge": "Instagram"
+    },
+    "href": {
+     "en": "https://www.instagram.com/bitz.studio/",
+     "ge": "https://www.instagram.com/bitz.studio/"
+    }
+   },
+   {
+    "label": {
      "en": "LinkedIn",
      "ge": "LinkedIn"
     },
@@ -79,6 +89,16 @@
     "href": {
      "en": "tel:+995 595380102",
      "ge": "tel:+995 595380102"
+    }
+   },
+   {
+    "label": {
+     "en": "Instagram",
+     "ge": "Instagram"
+    },
+    "href": {
+     "en": "https://www.instagram.com/bitz.studio/",
+     "ge": "https://www.instagram.com/bitz.studio/"
     }
    },
    {

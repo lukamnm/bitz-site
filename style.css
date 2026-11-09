@@ -268,16 +268,19 @@ body.lock .nav{pointer-events:none}
   .sliver.next{border-radius:12px 0 0 12px}
   body:not(.lock) .sliver{opacity:0;pointer-events:none}
   /* Profile / Contact: no GL lens on phones, a plain black disc */
-  /* Profile / Contact on phones: the dark backdrop and black circle Luka preferred, now nearly the full screen width; the text column is
-     sized so the whole block (text, meta line, links) sits inside the round shape: (w/2)^2 + (h/2)^2 <= r^2 */
-  .disc{width:96vw;max-width:460px;background:#000;border-radius:50%;opacity:0;transition:opacity .5s}
+  /* Profile / Contact on phones (reference): the glass lens of the desktop, drawn by #mlens over a snapshot of the list; the circle is a bit
+     wider than the screen, so the rim runs off both sides. The text column is fitted inside the round shape by app.js fitDisc() */
+  .disc{width:104vw;max-width:none;background:transparent;border-radius:50%;opacity:0;transition:opacity .5s}
   .disc.on{opacity:1}
   .discIn{width:68%;gap:16px}
   .discIn p{font-size:14px;line-height:1.42;letter-spacing:-.02em}   /* app.js fitDisc() steps it down on small screens */
   .discIn .meta,.discIn .links{font-size:10px}
   .discIn .links{gap:8px 16px}
+  #mlens{position:fixed;inset:0;width:100%;height:100%;z-index:15;visibility:hidden;pointer-events:none}
+  /* no WebGL: the plain black circle over dimmed cards */
+  body.nolens .disc{width:96vw;max-width:460px;background:#000}
   #stack{transition:opacity .5s}
-  body:has(.disc.on) #stack{opacity:.28}   /* the cards step back behind the circle */
+  body.nolens:has(.disc.on) #stack{opacity:.28}
   /* shots viewer on phones: a white sheet grows out of the bubble (DOM, like the project panel); the 4:5 clip sits in it */
   #storySheet{display:block}
   .story{background:rgba(0,0,0,0);transition:background .5s}

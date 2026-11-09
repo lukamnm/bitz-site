@@ -1414,11 +1414,107 @@ function fitDisc() {
   let fs = parseFloat(getComputedStyle(lead).fontSize);
   while (inn.scrollHeight > hMax && fs > 11) { fs -= 0.5; lead.style.fontSize = fs + 'px'; }
 }
-addEventListener('resize', () => { if (S.mobile && hole.open) fitDisc(); });
+addEventListener('resize', () => { if (S.mobile && hole.open) { fitDisc(); if (ML.r) { ML.r.setSize(innerWidth, innerHeight, false); mlensSnap(); } } });
+
+// ---------------------------------------------------------------- phones: the Profile / Contact lens (reference: the same glass hole as desktop).
+// The phone list is DOM, so when the circle opens the list is drawn once into a canvas (it cannot move while the circle is open), and a small
+// WebGL layer runs the desktop post shader (POST_FRAG: black inside, the rim drags, splits and slowly turns the picture) over that snapshot.
+const ML = { r: null, mat: null, scene: null, cam: null, tex: null, cvs: null, snap: null, run: false, last: 0 };
+function mlensInit() {
+  if (ML.r !== null) return !!ML.r;
+  try {
+    const cvs = document.createElement('canvas'); cvs.id = 'mlens'; cvs.setAttribute('aria-hidden', 'true'); document.body.append(cvs);
+    const r = new THREE.WebGLRenderer({ canvas: cvs, antialias: false, alpha: false, powerPreference: 'high-performance' });
+    r.setPixelRatio(Math.min(devicePixelRatio, 2)); r.setSize(innerWidth, innerHeight, false);
+    ML.snap = document.createElement('canvas');
+    ML.tex = new THREE.CanvasTexture(ML.snap); ML.tex.colorSpace = THREE.SRGBColorSpace; ML.tex.minFilter = THREE.LinearFilter; ML.tex.generateMipmaps = false;
+    const none = new THREE.DataTexture(new Uint8Array([0, 0, 0, 255]), 1, 1); none.needsUpdate = true;
+    ML.mat = new THREE.ShaderMaterial({ vertexShader: QUAD_VERT, fragmentShader: POST_FRAG, depthTest: false, depthWrite: false, uniforms: {
+      u_scene: { value: ML.tex }, u_trail: { value: none }, u_trailTexel: { value: new THREE.Vector2(1, 1) }, u_ballEdge: { value: new THREE.Vector2(0.2, 0.5) },
+      u_aspect: { value: new THREE.Vector2(1, 1) }, u_ballA: { value: 0 }, u_ballWarp: { value: 0 }, u_ballShade: { value: 0 },
+      u_hp: { value: 0 }, u_hr: { value: 0.5 }, u_hs: { value: -0.1 }, u_hc: { value: new THREE.Vector2(0.5, 0.5) }, u_time: { value: 0 } } });
+    ML.scene = new THREE.Scene(); ML.scene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), ML.mat));
+    ML.cam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+    ML.r = r; ML.cvs = cvs;
+  } catch { ML.r = false; document.body.classList.add('nolens'); }   // no WebGL: the plain black circle over dimmed cards
+  return !!ML.r;
+}
+const rrect = (x, l, t, w, h, r) => { x.beginPath(); x.moveTo(l + r, t); x.arcTo(l + w, t, l + w, t + h, r); x.arcTo(l + w, t + h, l, t + h, r); x.arcTo(l, t + h, l, t, r); x.arcTo(l, t, l + w, t, r); x.closePath(); };
+function drawCover(x, im, r) {                         // object-fit: cover into rect r
+  const nw = im.naturalWidth, nh = im.naturalHeight; if (!nw || !nh) return;
+  const k = Math.max(r.width / nw, r.height / nh), sw = r.width / k, sh = r.height / k;
+  x.drawImage(im, (nw - sw) / 2, (nh - sh) / 2, sw, sh, r.x, r.y, r.width, r.height);
+}
+function drawText(x, el, align = 'left') {
+  const r = el.getBoundingClientRect(), cs = getComputedStyle(el);
+  x.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+  try { x.letterSpacing = cs.letterSpacing === 'normal' ? '0px' : cs.letterSpacing; } catch {}
+  x.textBaseline = 'middle'; x.textAlign = align;
+  const t = cs.textTransform === 'uppercase' ? el.textContent.toUpperCase() : el.textContent;
+  x.fillText(t, align === 'center' ? r.x + r.width / 2 : r.x, r.y + r.height / 2);
+  x.textAlign = 'left';
+}
+function mlensSnap() {
+  const dpr = Math.min(devicePixelRatio, 2), W = innerWidth, H = innerHeight, c = ML.snap;
+  c.width = Math.round(W * dpr); c.height = Math.round(H * dpr);
+  const x = c.getContext('2d'); x.setTransform(dpr, 0, 0, dpr, 0, 0);
+  x.fillStyle = '#000'; x.fillRect(0, 0, W, H);
+  for (const li of $('#stack').children) {
+    const R = li.getBoundingClientRect(); if (R.bottom < 0 || R.top > H) continue;
+    if (li.classList.contains('srow')) {               // the stories row: round previews, rims, labels
+      for (const b of li.querySelectorAll('.bub')) {
+        const br = b.getBoundingClientRect(), f = b.querySelector('.face'), fr = f.getBoundingClientRect(), im = f.querySelector('img');
+        x.save(); x.beginPath(); x.arc(fr.x + fr.width / 2, fr.y + fr.height / 2, fr.width / 2, 0, Math.PI * 2); x.clip();
+        x.fillStyle = '#111'; x.fill();
+        if (im && im.complete) { x.globalAlpha = b.classList.contains('seen') ? 0.75 : 1; drawCover(x, im, fr); }
+        x.restore();
+        x.strokeStyle = b.classList.contains('seen') ? 'rgba(255,255,255,.28)' : '#fff'; x.lineWidth = 1.5;
+        x.beginPath(); x.arc(br.x + br.width / 2, br.y + br.height / 2, br.width / 2 * 0.97, 0, Math.PI * 2); x.stroke();
+        const lb = b.querySelector('.lbl'); if (lb) { x.globalAlpha = 0.62; x.fillStyle = '#fff'; drawText(x, lb, 'center'); x.globalAlpha = 1; }
+      }
+      continue;
+    }
+    const sc = li.querySelector('.sc'); if (!sc) continue;
+    const cr = sc.getBoundingClientRect();
+    x.save(); rrect(x, cr.x, cr.y, cr.width, cr.height, 20); x.clip();
+    x.fillStyle = '#111'; x.fillRect(cr.x, cr.y, cr.width, cr.height);
+    const im = sc.querySelector('img'); if (im && im.complete) drawCover(x, im, im.getBoundingClientRect());
+    const t = sc.querySelector('.nm b');
+    if (t) { x.fillStyle = '#fff'; x.shadowColor = 'rgba(0,0,0,.45)'; x.shadowBlur = 14; drawText(x, t); x.shadowBlur = 0; }
+    const a = sc.querySelector('i');
+    if (a) { const ar = a.getBoundingClientRect(); x.fillStyle = '#000'; x.beginPath(); x.arc(ar.x + ar.width / 2, ar.y + ar.height / 2, ar.width / 2, 0, Math.PI * 2); x.fill(); x.fillStyle = '#fff'; drawText(x, a, 'center'); }
+    x.restore();
+  }
+  const top = x.createLinearGradient(0, 0, 0, 130);     // the list's fades (#stack::before / ::after)
+  [[0, 1], [0.3, 0.86], [0.62, 0.45], [1, 0]].forEach(([o, al]) => top.addColorStop(o, 'rgba(0,0,0,' + al + ')'));
+  x.fillStyle = top; x.fillRect(0, 0, W, 130);
+  const bot = x.createLinearGradient(0, H - 120, 0, H);
+  [[0, 0], [0.4, 0.5], [0.72, 0.88], [1, 1]].forEach(([o, al]) => bot.addColorStop(o, 'rgba(0,0,0,' + al + ')'));
+  x.fillStyle = bot; x.fillRect(0, H - 120, W, 120);
+  ML.tex.needsUpdate = true;
+}
+function mlensFrame(now) {
+  if (!ML.run) return;
+  const dt = Math.min(0.05, (now - ML.last) / 1000 || 0.016); ML.last = now;
+  const u = ML.mat.uniforms, w = innerWidth, h = innerHeight, r = disc.getBoundingClientRect();
+  u.u_aspect.value.set(w / h, 1); u.u_hp.value = hole.p; u.u_hs.value = hole.s; u.u_time.value += dt;
+  u.u_hc.value.set((r.left + r.width / 2) / w, 1 - (r.top + r.height / 2) / h); u.u_hr.value = r.width / 2 / w;
+  ML.r.render(ML.scene, ML.cam);
+  if (!hole.open && hole.p < 0.002) { ML.run = false; ML.cvs.style.visibility = 'hidden'; document.body.classList.remove('mlens'); return; }   // closed: the live list again
+  requestAnimationFrame(mlensFrame);
+}
+function mlens() {
+  if (!mlensInit()) return;
+  ML.r.setSize(innerWidth, innerHeight, false);
+  mlensSnap();
+  ML.cvs.style.visibility = 'visible'; document.body.classList.add('mlens');
+  if (!ML.run) { ML.run = true; ML.last = performance.now(); requestAnimationFrame(mlensFrame); }
+}
 function openHole(on, what = hole.what || 'profile') {
   if (on && !overlays) return;
   if (on && hole.open && hole.what === what) return openHole(false);
   if (on) { hole.what = what; fillDisc(what); if (S.hover >= 0) setHover(-1, $('#gl')); }
+  if (on && S.mobile) mlens();                          // phones: the same glass lens as desktop, over a snapshot of the list
   hole.open = on;
   disc.toggleAttribute('inert', !on); disc.setAttribute('aria-hidden', String(!on)); disc.classList.toggle('on', on);
   const D = RM ? 0 : 1;
@@ -1445,7 +1541,7 @@ function setLang(L) {
   lang = L;
   try { localStorage.setItem('lang', lang); } catch {}
   applyLang();
-  if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); return; }
+  if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); if (hole.open && ML.run) { stackFrame(performance.now()); mlensSnap(); } return; }
   if (hole.open) fillDisc(hole.what);
   if (story.open) showShot(story.g, story.i, true);
   for (const c of cards) if (c.img !== undefined) bake(c);
