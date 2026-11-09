@@ -1,0 +1,36 @@
+{
+  "en": {
+    "title": "Digital Product",
+    "label": "Product",
+    "order": 2,
+    "ring": "/assets/shots/Frame-1.png",
+    "items": [
+      {
+        "title": "Hero UI interative element",
+        "webm": "/assets/video/shots/with-sound.webm",
+        "sound": true
+      },
+      {
+        "title": "Fastoo logo loader",
+        "webm": "/assets/video/shots/Fastoo-Logo-Animation.webm",
+        "sound": true
+      }
+    ]
+  },
+  "ka": {
+    "title": "პროდუქტის დიზაინი",
+    "label": "პროდუქტი",
+    "items": [
+      {
+        "title": "Hero - ინტერაქციული ელემენტი",
+        "webm": "/assets/video/shots/with-sound.webm",
+        "sound": true
+      },
+      {
+        "title": "Fastoo - ლოგოს ანიმაცია",
+        "webm": "/assets/video/shots/Fastoo-Logo-Animation.webm",
+        "sound": true
+      }
+    ]
+  }
+}

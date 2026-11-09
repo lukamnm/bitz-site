@@ -1,0 +1,205 @@
+# bitz admin (Sveltia CMS). Every save is a commit to lukamnm/bitz-site; the deploy workflow rebuilds data/ and uploads the site.
+# Sign in: "Sign In with Token" on the login screen (a GitHub fine-grained token with Contents: read and write on bitz-site).
+backend:
+  name: github
+  repo: lukamnm/bitz-site
+  branch: main
+  commit_messages:
+    create: 'Add {{collection}} "{{slug}}" (admin)'
+    update: 'Update {{collection}} "{{slug}}" (admin)'
+    delete: 'Delete {{collection}} "{{slug}}" (admin)'
+    uploadMedia: 'Upload "{{path}}" (admin)'
+    deleteMedia: 'Delete "{{path}}" (admin)'
+
+app_title: bitz admin
+site_url: https://bitz.ge/preview/bitz/
+display_url: https://bitz.ge/preview/bitz/
+
+media_folder: /assets/uploads
+public_folder: /assets/uploads
+
+# both languages in one file per entry: { "en": {...}, "ka": {...} }; English is the default, Georgian fields sit beside it
+i18n:
+  structure: single_file
+  locales: [en, ka]
+  default_locale: en
+
+collections:
+  # ------------------------------------------------------------------ projects
+  - name: projects
+    label: Projects
+    label_singular: Project
+    description: Every project in the portfolio. "Show on the home strip" decides which ones the home page shows; "Order" sets their position.
+    folder: content/projects
+    path: '{{slug}}/project'
+    extension: json
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    slug: '{{title}}'
+    identifier_field: title
+    summary: '{{order}}. {{title}} ({{year}})'
+    sortable_fields: [order, title, year]
+    view_groups:
+      - { label: On the home strip, field: featured }
+    media_folder: /assets/img
+    public_folder: /assets/img
+    fields:
+      - { name: title, label: Title, widget: string, i18n: true }
+      - { name: featured, label: Show on the home strip, widget: boolean, default: true }
+      - { name: order, label: Order, widget: number, value_type: int, default: 50, hint: 'Lower numbers come first.' }
+      - { name: year, label: Year, widget: string }
+      - { name: client, label: Client, widget: string, required: false }
+      - { name: cats, label: Categories, widget: list, required: false, hint: 'Shown as chips, e.g. Branding, 3D Design, Video.' }
+      - { name: link, label: Live project link, widget: string, required: false, hint: 'Optional. Adds the arrow chip that opens the live site.' }
+      - { name: blurb, label: Short description, widget: text, i18n: true }
+      - name: sections
+        label: Sections
+        label_singular: Section
+        widget: list
+        i18n: true
+        required: false
+        summary: '{{h}}'
+        fields:
+          - { name: h, label: Heading, widget: string, required: false }
+          - { name: t, label: Text, widget: text }
+      - { name: cover, label: Cover (first image of the project page), widget: image }
+      - name: gallery
+        label: Gallery
+        label_singular: Image
+        widget: list
+        required: false
+        field: { name: image, label: Image, widget: image }
+      - name: home
+        label: Home strip card
+        widget: object
+        required: false
+        collapsed: true
+        hint: 'What the card on the home strip shows. Without it the cover is used.'
+        fields:
+          - { name: img, label: Card image (also the video poster), widget: image, required: false, media_folder: /assets/home, public_folder: /assets/home }
+          - { name: video, label: Card video loop (mp4), widget: file, required: false, media_folder: /assets/home, public_folder: /assets/home }
+          - { name: webm, label: Card video loop (webm), widget: file, required: false, media_folder: /assets/home, public_folder: /assets/home }
+      - name: seo
+        label: Search and sharing
+        widget: object
+        i18n: true
+        required: false
+        collapsed: true
+        fields:
+          - { name: title, label: Search title, widget: string, i18n: true, required: false }
+          - { name: description, label: Search description, widget: text, i18n: true, required: false }
+          - { name: image, label: Share image URL, widget: string, required: false }
+
+  # ------------------------------------------------------------------ blog
+  - name: blog
+    label: Blog
+    label_singular: Post
+    folder: content/blog
+    path: '{{slug}}/post'
+    extension: json
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    slug: '{{title}}'
+    identifier_field: title
+    summary: '{{title}}'
+    sortable_fields: [date, title]
+    media_folder: /assets/stories
+    public_folder: /assets/stories
+    fields:
+      - { name: title, label: Title, widget: string, i18n: true }
+      - { name: date, label: Date, widget: datetime }
+      - { name: cover, label: Cover image, widget: image }
+      - { name: categories, label: Categories, widget: list, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: excerpt, label: Excerpt (the short text under the title), widget: text, i18n: true }
+      - { name: body, label: Article, widget: markdown, i18n: true, hint: 'Headings (##) start the sections of the article panel.' }
+      - name: seo
+        label: Search and sharing
+        widget: object
+        i18n: true
+        required: false
+        collapsed: true
+        fields:
+          - { name: title, label: Search title, widget: string, i18n: true, required: false }
+          - { name: description, label: Search description, widget: text, i18n: true, required: false }
+          - { name: image, label: Share image URL, widget: string, required: false }
+
+  # ------------------------------------------------------------------ shots (the bubbles at the top of the home page)
+  - name: shots
+    label: Shots
+    label_singular: Shot group
+    description: Each group is one bubble at the top of the home page. Its clips play in order (4:5 videos).
+    folder: content/shots
+    extension: json
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    slug: '{{title}}'
+    identifier_field: title
+    summary: '{{order}}. {{title}}'
+    sortable_fields: [order, title]
+    media_folder: /assets/video/shots
+    public_folder: /assets/video/shots
+    fields:
+      - { name: title, label: Group name, widget: string, i18n: true }
+      - { name: label, label: Short label (shown under the bubble), widget: string, i18n: true }
+      - { name: order, label: Order, widget: number, value_type: int, default: 50 }
+      - { name: ring, label: Bubble image (square), widget: image, media_folder: /assets/shots, public_folder: /assets/shots }
+      - name: items
+        label: Clips
+        label_singular: Clip
+        widget: list
+        i18n: duplicate
+        summary: '{{title}}'
+        fields:
+          - { name: title, label: Title, widget: string, i18n: true }
+          - { name: webm, label: Video (webm), widget: file, required: false }
+          - { name: mp4, label: Video (mp4), widget: file, required: false, hint: 'At least one of the two videos. webm is smaller; mp4 plays everywhere.' }
+          - { name: sound, label: Has sound, widget: boolean, default: true }
+
+  # ------------------------------------------------------------------ the Profile and Contact circles
+  - name: pages
+    label: Profile and Contact
+    i18n: true
+    files:
+      - name: profile
+        label: Profile
+        file: content/pages/profile.json
+        format: json
+        i18n: true
+        media_folder: /assets/docs
+        public_folder: /assets/docs
+        fields:
+          - { name: lead, label: Text, widget: text, i18n: true }
+          - { name: meta, label: Small line under the text, widget: string, i18n: true, required: false }
+          - name: links
+            label: Links
+            label_singular: Link
+            widget: list
+            i18n: true
+            summary: '{{label}}'
+            fields:
+              - { name: label, label: Label, widget: string, i18n: true }
+              - { name: href, label: 'Link (https://..., mailto:..., tel:... or a file like /assets/docs/resume.pdf)', widget: string, i18n: true }
+      - name: contact
+        label: Contact
+        file: content/pages/contact.json
+        format: json
+        i18n: true
+        fields:
+          - { name: lead, label: Text, widget: text, i18n: true }
+          - { name: meta, label: Small line under the text, widget: string, i18n: true, required: false }
+          - name: links
+            label: Links
+            label_singular: Link
+            widget: list
+            i18n: true
+            summary: '{{label}}'
+            fields:
+              - { name: label, label: Label, widget: string, i18n: true }
+              - { name: href, label: 'Link (https://..., mailto:..., tel:...)', widget: string, i18n: true }

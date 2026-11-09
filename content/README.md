@@ -1,20 +1,27 @@
 # Content
 
-Everything the site shows lives here as plain files. Both languages sit side by side in each file (`en`, `ge`).
-Georgian text goes live only after Luka has signed it off.
+Everything the site shows lives here as plain JSON files, edited in the admin at `/admin` (Sveltia CMS) or by hand.
+Each file holds both languages side by side: `en` (default) and `ka` (Georgian). Fields that are the same in both
+languages (year, images, order...) live only under `en`.
 
 ```
 content/
-  projects/<slug>/project.json   title, blurb, sections, year, client, cats, link, cover, gallery, home media, seo (en + ge)
-  stories/<slug>/story.json      title, excerpt, date, cover, categories, tags, seo (en + ge)
-  stories/<slug>/body.en.html    the article body (clean HTML: p, h2-h4, ul/ol, a, strong, em, img)
-  stories/<slug>/body.ge.html    the Georgian body, when it exists
-  shots/shots.json               the shot bubbles: 4 groups, each with a ring image and its videos
-  pages/about.json, contact.json the About and Contact texts as ordered blocks (en + ge) + the cleaned HTML next to them
-  wp-export/                     the raw WordPress export this was generated from (media/ is not in git)
+  projects/<slug>/project.json   one project: title, short description, sections, chips, cover, gallery, home-strip card, search texts
+  blog/<slug>/post.json          one blog post: title, date, cover, excerpt, the article as Markdown (## headings start sections), search texts
+  shots/<group>.json             one shot group = one bubble at the top of the home page: name, label, bubble image, its 4:5 clips
+  pages/profile.json             the text and links in the Profile circle
+  pages/contact.json             the text and links in the Contact circle
+  wp-export/                     the raw WordPress export this all came from (media/ is not in git); history only
 ```
 
-Media: images under `assets/` (committed). Videos under `assets/video/` (not in git, deployed from the working folder).
+Media paths are written site-absolute (`/assets/img/x.webp`) so the admin can preview them; the build makes them relative.
 
-`data/*.json` are generated for the app by `node tools/build-content.mjs` from this folder. Edit the content files, not `data/`.
-Preview deploy: `node tools/deploy.js preview` uploads to https://bitz.ge/preview/bitz/ (never the live site).
+## How a change reaches the site
+
+1. Save in the admin (or commit by hand / by Gocha). Every save is a commit to `lukamnm/bitz-site`, branch `main`.
+2. The `Deploy preview` GitHub workflow runs `node tools/stage.js`: `tools/build.mjs` turns these files into `data/*.json`,
+   the site is copied and every asset reference gets a content-hash stamp (bitz.ge is cached by Cloudflare for 4 hours).
+3. The workflow uploads to https://bitz.ge/preview/bitz/ over FTP (needs the `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD` repository secrets).
+   From the laptop, `node tools/deploy.js preview` does the same through WinSCP.
+
+Going live on bitz.ge itself is a separate, explicit step. Georgian text goes live only after Luka has signed it off.

@@ -1,9 +1,9 @@
 const http = require('http'), fs = require('fs'), path = require('path');
 const DIR = __dirname;
-const TYPES = { '.html':'text/html', '.mp4':'video/mp4', '.webm':'video/webm','.js':'application/javascript','.css':'text/css','.webp':'image/webp','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.json':'application/json','.woff2':'font/woff2' };
+const TYPES = { '.html':'text/html', '.mp4':'video/mp4', '.webm':'video/webm','.js':'application/javascript','.css':'text/css','.webp':'image/webp','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.json':'application/json','.woff2':'font/woff2','.yml':'text/yaml','.pdf':'application/pdf' };
 http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0]);
-  if (p === '/') p = '/index.html';
+  if (p.endsWith('/')) p += 'index.html';
   const fp = path.join(DIR, p);
   if (!fp.startsWith(DIR) || !fs.existsSync(fp)) { res.writeHead(404); return res.end('nf'); }
   const stat = fs.statSync(fp);

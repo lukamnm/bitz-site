@@ -1,24 +1,16 @@
 {
-  "slug": "lisi-drive",
-  "order": 5,
-  "featured": false,
-  "year": "2022",
-  "client": "Lisi Drive",
-  "cats": [
-    "Branding",
-    "3D Design"
-  ],
-  "link": null,
-  "title": {
-    "en": "Lisi Drive",
-    "ge": "ლისი დრაივი"
-  },
-  "blurb": {
-    "en": "Signage, exterior and packaging design for the Lisi Drive development - from lightbox signposts to 3D day and night facade renders.",
-    "ge": "\"ლისი დრაივი\" არის ავტოსამრეცხაო და Take away კაფე, ლისის ტბის მიმდებარე ტერიტორიაზე. ლისი დრაივისთვის შეიქმნა ლოგო, მარტივი ვიზუალური იდენტობა და ექსტერიერის დიზაინი, რომელიც მოიცავდა, როგორც შენობის ნაწილის ასევე სარეკლამო აბრების რენდერების დამზადებას."
-  },
-  "sections": {
-    "en": [
+  "en": {
+    "title": "Lisi Drive",
+    "featured": false,
+    "order": 5,
+    "year": "2022",
+    "client": "Lisi Drive",
+    "cats": [
+      "Branding",
+      "3D Design"
+    ],
+    "blurb": "Signage, exterior and packaging design for the Lisi Drive development - from lightbox signposts to 3D day and night facade renders.",
+    "sections": [
       {
         "h": "Signpost",
         "t": "Sign design developed with lightbox blocks, logo and arrow rendering."
@@ -32,7 +24,25 @@
         "t": "Lisi Drive packaging designs with a unique and eye-catching appeal."
       }
     ],
-    "ge": [
+    "cover": "/assets/img/lisi-drive.webp",
+    "gallery": [
+      "/assets/img/lisi-drive-1.webp",
+      "/assets/img/lisi-drive-2.webp",
+      "/assets/img/lisi-drive-3.webp",
+      "/assets/img/lisi-drive-4.webp",
+      "/assets/img/lisi-drive-5.webp",
+      "/assets/img/lisi-drive-6.webp"
+    ],
+    "seo": {
+      "title": "Lisi Drive - Branding & Graphic Design | Bitz Portfolio",
+      "description": "Complete branding project including logo design, signpost, exterior design, and packaging mockups for Lisi Drive.",
+      "image": "https://bitz.ge/wp-content/uploads/2022/01/lisi-drivelast.jpg"
+    }
+  },
+  "ka": {
+    "title": "ლისი დრაივი",
+    "blurb": "\"ლისი დრაივი\" არის ავტოსამრეცხაო და Take away კაფე, ლისის ტბის მიმდებარე ტერიტორიაზე. ლისი დრაივისთვის შეიქმნა ლოგო, მარტივი ვიზუალური იდენტობა და ექსტერიერის დიზაინი, რომელიც მოიცავდა, როგორც შენობის ნაწილის ასევე სარეკლამო აბრების რენდერების დამზადებას.",
+    "sections": [
       {
         "h": "მანიშნებელი აბრა",
         "t": "შემუშავდა მანიშნებელი აბრის დიზაინი და აეწყო რენდერი, რომელიც შედგება რამოდენიმე ლაითბოქსის ბლოკის, ლოგოსა და ისრისგან"
@@ -41,31 +51,13 @@
         "h": "ექსტერიერის დიზაინი",
         "t": "შენობის ფასადი შელამაზდა სხვადასხვა დეკორაციით, შუშაბანდი გაფორმდა სტიკერებით პროდუქტების შესახებ და დამზადდა 3D რენდერი, დღის და ღამის ხედებით."
       }
-    ]
-  },
-  "cover": "assets/img/lisi-drive.webp",
-  "gallery": [
-    "assets/img/lisi-drive-1.webp",
-    "assets/img/lisi-drive-2.webp",
-    "assets/img/lisi-drive-3.webp",
-    "assets/img/lisi-drive-4.webp",
-    "assets/img/lisi-drive-5.webp",
-    "assets/img/lisi-drive-6.webp"
-  ],
-  "home": null,
-  "seo": {
-    "en": {
-      "title": "Lisi Drive - Branding & Graphic Design | Bitz Portfolio",
-      "description": "Complete branding project including logo design, signpost, exterior design, and packaging mockups for Lisi Drive.",
-      "image": "https://bitz.ge/wp-content/uploads/2022/01/lisi-drivelast.jpg"
-    },
-    "ge": {
+    ],
+    "seo": {
       "title": "ლისი დრაივი - კაფე-სამრეცხაო ლისის ტბაზე",
-      "description": "\"Lisi Drive\" არის ავტოსამრეცხაო და კაფე, ლისის ტბის მიმდებარე ტერიტორიაზე. მათთვის შეიქმა ლოგო და ექსტერიერის დიზაინი.",
-      "image": null
+      "description": "\"Lisi Drive\" არის ავტოსამრეცხაო და კაფე, ლისის ტბის მიმდებარე ტერიტორიაზე. მათთვის შეიქმა ლოგო და ექსტერიერის დიზაინი."
     }
   },
-  "wp": {
+  "_wp": {
     "en": {
       "id": 3516,
       "link": "https://bitz.ge/portfolio/lisi-drive/",

@@ -16,26 +16,9 @@ const [mode, name = 'bitz'] = process.argv.slice(2);
 if (mode !== 'preview') { console.error('usage: node tools/deploy.js preview [name]'); process.exit(1); }
 if (!/^[a-z0-9-]{1,40}$/.test(name)) { console.error('preview name: lowercase letters, digits, hyphens'); process.exit(1); }
 const remote = `/public_html/preview/${name}`;
-const exclude = ['server.js', 'tools/', 'content/', '.git/', '.gitattributes', '.gitignore', '*.md', 'node_modules/'];
-const mask = `|${exclude.join(';')}`;
 if (/\s|"/.test(SITE)) { console.error('the site folder path must not contain spaces or quotes (WinSCP argument quoting)'); process.exit(1); }
-// Build step: copy the site to a temp folder and stamp every referenced script, style, data and vendor file with ?v=<content hash>.
-// bitz.ge sits behind Cloudflare (4 h edge cache for static files), so without this a deploy keeps serving the previous app.js.
-const crypto = require('crypto'), os = require('os');
-const BUILD = path.join(os.tmpdir(), 'bitz-site-build');
-fs.rmSync(BUILD, { recursive: true, force: true });
-const skip = p => { const rel = path.relative(SITE, p).replace(/\\/g, '/'); return exclude.some(x => x.endsWith('/') ? rel === x.slice(0, -1) || rel.startsWith(x) : (x.startsWith('*') ? rel.endsWith(x.slice(1)) : rel === x)); };
-fs.cpSync(SITE, BUILD, { recursive: true, filter: p => p === SITE || !skip(p) });
-const hashOf = rel => { const f = path.join(BUILD, rel); return fs.existsSync(f) ? crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8) : null; };
-const stamp = (file, re) => {
-  const f = path.join(BUILD, file); if (!fs.existsSync(f)) return;
-  let s = fs.readFileSync(f, 'utf8'), n = 0;
-  s = s.replace(re, (m, rel) => { const h = hashOf(rel); if (!h) return m; n++; return m.replace(rel, `${rel}?v=${h}`); });
-  fs.writeFileSync(f, s); console.log(`stamped ${n} references in ${file}`);
-};
-stamp('app.js', /(?<=['"(])((?:\.\/)?(?:assets\/vendor\/[\w.-]+\.js|data\/[\w-]+\.json))(?=['")?])/g);
-stamp('style.css', /(?<=url\()((?:assets\/fonts\/[\w.-]+\.woff2))(?=\))/g);
-stamp('index.html', /(?<=["'])((?:\.\/)?(?:app\.js|style\.css|assets\/img\/logo\.svg|assets\/vendor\/[\w.-]+\.js))(?=["'])/g);   // app.js last: its own hash includes the stamped data paths; also the import map and vendor scripts
+// build + copy + cache-busting stamps (see tools/stage.js)
+const BUILD = require('./stage.js').stage(path.join(require('os').tmpdir(), 'bitz-site-build'));
 const start = Date.now();
 // no quotes anywhere in these commands: node's Windows argument quoting would escape them and WinSCP would see broken paths
 let out;

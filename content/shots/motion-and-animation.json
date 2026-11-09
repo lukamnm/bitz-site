@@ -1,0 +1,26 @@
+{
+  "en": {
+    "title": "Motion and Animation",
+    "label": "Motion",
+    "order": 3,
+    "ring": "/assets/shots/Frame-3.png",
+    "items": [
+      {
+        "title": "Minerals",
+        "webm": "/assets/video/shots/Minerals.webm",
+        "sound": true
+      }
+    ]
+  },
+  "ka": {
+    "title": "ანიმაცია",
+    "label": "ანიმაცია",
+    "items": [
+      {
+        "title": "მინერალები",
+        "webm": "/assets/video/shots/Minerals.webm",
+        "sound": true
+      }
+    ]
+  }
+}

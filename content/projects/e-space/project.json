@@ -1,24 +1,16 @@
 {
-  "slug": "e-space",
-  "order": 9,
-  "featured": true,
-  "year": "2021",
-  "client": "E-Space",
-  "cats": [
-    "Video",
-    "Web Design"
-  ],
-  "link": null,
-  "title": {
-    "en": "E-Space",
-    "ge": "ი-სფეისი"
-  },
-  "blurb": {
-    "en": "Powering electric mobility - explainer videos, web design and visuals promoting E-Space's charging network and app for retail and corporate clients.",
-    "ge": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო მანქანების პოპულარიზაციას და ანვითარებს ელექტრო მანქანების დამტენების ქსელს . ი-სფეისისთვის შეიქმნა გრაფიკული ვიდეო რგოლები საცალო და კორპორატიული კლიენტებისთვის, დამზადდა ვებ-დიზაინი, პოსტერები და სხვადასხვა ვიზუალური მასალა."
-  },
-  "sections": {
-    "en": [
+  "en": {
+    "title": "E-Space",
+    "featured": true,
+    "order": 9,
+    "year": "2021",
+    "client": "E-Space",
+    "cats": [
+      "Video",
+      "Web Design"
+    ],
+    "blurb": "Powering electric mobility - explainer videos, web design and visuals promoting E-Space's charging network and app for retail and corporate clients.",
+    "sections": [
       {
         "h": "App launch video",
         "t": "A simple video instruction showing how to charge an electric car through the new E-Space app."
@@ -32,7 +24,29 @@
         "t": "Client E-Space. Visuals Bitz and stock. Animation Bitz. Target audience retail customers."
       }
     ],
-    "ge": [
+    "cover": "/assets/img/e-space.webp",
+    "gallery": [
+      "/assets/img/e-space-1.webp",
+      "/assets/img/e-space-2.webp",
+      "/assets/img/e-space-3.webp",
+      "/assets/img/e-space-4.webp",
+      "/assets/img/e-space-5.webp"
+    ],
+    "home": {
+      "img": "/assets/home/e-space.png",
+      "video": "/assets/home/e-space.mp4",
+      "webm": "/assets/home/e-space.webm"
+    },
+    "seo": {
+      "title": "E-Space - Motion Graphics & Video Animation | Bitz Portfolio",
+      "description": "Motion graphics and animation videos for E-Space electric vehicle charging network - app tutorials and promotional content.",
+      "image": "https://bitz.ge/wp-content/uploads/2021/09/espace-hero.png"
+    }
+  },
+  "ka": {
+    "title": "ი-სფეისი",
+    "blurb": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო მანქანების პოპულარიზაციას და ანვითარებს ელექტრო მანქანების დამტენების ქსელს . ი-სფეისისთვის შეიქმნა გრაფიკული ვიდეო რგოლები საცალო და კორპორატიული კლიენტებისთვის, დამზადდა ვებ-დიზაინი, პოსტერები და სხვადასხვა ვიზუალური მასალა.",
+    "sections": [
       {
         "h": "სკრიპტი",
         "t": "ახალი აპლიკაციის შექმნის შემდეგ, საჭირო გახდა \"ი-სფეისის\" კლიენტებისთვის ინფორმაციის მიწოდება აპის გაშვების შესახებ და მარტივი ვიდეო ინსტრუქციის ჩვენება, თუ როგორ ხდება აპლიკაციის მეშვეობით ელექტრო მანქანის დამუხტვა."
@@ -41,34 +55,13 @@
         "h": "სკრიპტი",
         "t": "გრაფიკული ვიდეოს ამოცანაა, ბიზნეს კლიენტებს გააცნოს ინფორმაცია, ახალი ბიზნეს მოდულის შესახებ, რისი დახმარებითაც მათ შეუძლიათ მიიღონ შემოსავალი, ელექტრო მობილების დამტენებისგან."
       }
-    ]
-  },
-  "cover": "assets/img/e-space.webp",
-  "gallery": [
-    "assets/img/e-space-1.webp",
-    "assets/img/e-space-2.webp",
-    "assets/img/e-space-3.webp",
-    "assets/img/e-space-4.webp",
-    "assets/img/e-space-5.webp"
-  ],
-  "home": {
-    "img": "assets/home/e-space.png",
-    "video": "assets/home/e-space.mp4",
-    "webm": "assets/home/e-space.webm"
-  },
-  "seo": {
-    "en": {
-      "title": "E-Space - Motion Graphics & Video Animation | Bitz Portfolio",
-      "description": "Motion graphics and animation videos for E-Space electric vehicle charging network - app tutorials and promotional content.",
-      "image": "https://bitz.ge/wp-content/uploads/2021/09/espace-hero.png"
-    },
-    "ge": {
+    ],
+    "seo": {
       "title": "ი-სფეისი | bitz",
-      "description": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო ავტომობილების პოპულარიზაციას და ანვითარებს მანქანების დამტენების ქსელს.",
-      "image": null
+      "description": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო ავტომობილების პოპულარიზაციას და ანვითარებს მანქანების დამტენების ქსელს."
     }
   },
-  "wp": {
+  "_wp": {
     "en": {
       "id": 3170,
       "link": "https://bitz.ge/portfolio/e-space/",

@@ -1,0 +1,26 @@
+{
+  "en": {
+    "title": "Brand Identity",
+    "label": "Branding",
+    "order": 1,
+    "ring": "/assets/shots/Frame-2.png",
+    "items": [
+      {
+        "title": "Brace",
+        "mp4": "/assets/video/shots/logo-reveal.mp4",
+        "sound": true
+      }
+    ]
+  },
+  "ka": {
+    "title": "ვიზუალური იდენტობა",
+    "label": "ბრენდინგი",
+    "items": [
+      {
+        "title": "Brace",
+        "mp4": "/assets/video/shots/logo-reveal.mp4",
+        "sound": true
+      }
+    ]
+  }
+}

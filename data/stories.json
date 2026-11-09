@@ -1,415 +1,415 @@
 [
-  {
-    "slug": "cgi-product-renders-vs-photography-packaging",
-    "date": "2026-09-06T22:08:26",
-    "title": {
-      "en": "CGI vs. Photography: Why Packaging Is Going 3D",
-      "ge": null
-    },
-    "excerpt": {
-      "en": "Product photography is losing ground to CGI on packaging launches. The Palipop vintage cola case study shows why - and what actually makes a render look real.",
-      "ge": null
-    },
-    "cover": "assets/stories/cgi-product-renders-vs-photography-packaging.jpg",
-    "categories": [
-      "3D &amp; Product Design",
-      "Branding"
-    ],
-    "hasGe": false,
-    "sections": {
-      "en": [
-        {
-          "h": "The Photo Shoot Is No Longer the Default",
-          "t": [
-            "For decades, a packaging launch meant the same sequence: sculpt or print a prototype, book a studio, set up lighting, shoot, retouch, repeat for every flavor variant and every angle the marketing deck needs. That sequence is quietly disappearing. In 2026, more packaging brands are launching with a fully computer-generated hero shot instead of a camera anywhere in the process.",
-            "This isn't a gimmick or a budget shortcut dressed up as innovation. 3D product rendering for packaging has gotten good enough, and fast enough, that for a huge share of launches it is simply the better tool. At Bitz we build both the brand identity and the CGI product visualization in-house, and the Palipop vintage cola project is a clean example of why clients are choosing this route."
-          ]
-        },
-        {
-          "h": "Why Packaging Brands Are Switching to CGI",
-          "t": [
-            "A few practical reasons keep coming up in client conversations, and they hold up under scrutiny:",
-            "No physical prototype before launch. A can, bottle, or carton exists as a 3D model long before it exists as tooling. That means the packaging design, the label, and the marketing visuals can all be finished and approved before a single physical unit is produced - useful for a startup brand that needs the visuals to sell the concept before the production run is even ordered.",
-            "Full control over lighting and environment. A studio shoot is a negotiation with physics - reflections, condensation, dust, the limits of the lights you own. A render is a negotiation with nothing. Every highlight on a label, every reflection on aluminum or glass, is placed on purpose rather than fought for.",
-            "Faster iteration. Want the can on a black background instead of a shelf? Want to test three label colorways before the client picks one? In photography that is three shoots. In CGI it is three renders from the same file, often turned around same day.",
-            "Lower real cost per asset. Once the 3D model and materials exist, generating new angles, new backgrounds, or new seasonal variants costs a fraction of a reshoot - no studio rental, no reprinted samples, no travel."
-          ]
-        },
-        {
-          "h": "Case Study: Palipop, a Vintage Cola Can Built Entirely in CGI",
-          "t": [
-            "Palipop is a vintage-styled cola brand Bitz handled start to finish - branding and the 3D product visualization both, under one roof. The brief called for a can that reads as nostalgic and confident without leaning on cliché soda-brand tropes, and a hero visual polished enough to sit next to any photographed competitor on a shelf.",
-            "The identity centers on a bold red script logo - loose, hand-lettered energy that carries the \"vintage\" read on its own, before any packaging or color choice reinforces it. Around that wordmark, the label stays deliberately quiet: a swirl graphic does the visual heavy lifting instead of competing text or extra ornamentation, so the script stays the clear focal point.",
-            "The can itself lives on a black canvas. That choice does two things at once: it lets the red script and the label breathe with no background noise competing for attention, and it gives the CGI render room to do what CGI does best - controlled, dramatic lighting. The render was built specifically to look like it is already sitting under shelf lighting, with highlights on the aluminum placed the way they would fall in a real retail environment. Nothing about the final image reads as \"generated\" - that is the point of doing the CGI work properly rather than rushing it.",
-            "Every decision, from the wordmark down to the specular highlight on the can's rim, came out of one connected process instead of a handoff between a branding studio and a separate photography team. That is the practical advantage of doing identity and product rendering under one roof: the render is built to serve the brand decisions, not bolted on after the fact.",
-            "The Palipop can render - the full identity and CGI work were completed at Bitz."
-          ]
-        },
-        {
-          "h": "The Craft Details That Actually Sell the Illusion",
-          "t": [
-            "The gap between a CGI render that looks fake and one that looks like a photograph almost never comes down to the 3D model itself - modern software makes accurate geometry the easy part. It comes down to a handful of craft details:",
-            "Material accuracy matters more than model accuracy. Aluminum needs the right balance of reflection and roughness, or it reads as plastic. Getting that balance right is what makes a shelf-lit render believable at a glance rather than under scrutiny.",
-            "Lighting has to have a reason to exist. Random lights placed to \"make it look nice\" is what gives CGI its uncanny quality. Lighting that mimics an actual shelf, a studio softbox, or a specific time of day reads as real because it behaves the way light actually behaves.",
-            "Backgrounds should support the product, not distract from it. Palipop's black canvas is a good example - a background chosen because it serves the render's lighting and the logo's contrast, not because it was the default option."
-          ]
-        },
-        {
-          "h": "Is 3D Product Rendering Right for Your Next Packaging Launch?",
-          "t": [
-            "CGI product visualization is not a universal replacement for photography - a brand that depends on showing texture a render can't yet convincingly fake, or one that wants to feature real people using a real product, still has good reasons to shoot. But for packaging specifically - cans, bottles, cartons, boxes, anything that is essentially a controlled, repeatable object - 3D product rendering for packaging is now the more flexible, more cost-efficient, and often more polished option, especially before a product physically exists.",
-            "If you're weighing the two approaches for an upcoming launch, look at how much iteration you'll realistically need, how far ahead of production your visuals have to be ready, and whether your packaging design has strong enough materials and lighting cues to reward the extra CGI craft. Those three questions usually make the decision for you.",
-            "Bitz builds both branding and 3D product visualization in-house - see more of that combined process in the Brace EV charger identity and render work or the Motorola Transistor concept render ."
-          ]
-        }
-      ],
-      "ge": null
-    },
-    "seo": {
-      "en": {
-        "title": "3D Product Rendering for Packaging: CGI vs. Photography",
-        "description": "Why packaging brands now choose 3D product rendering for packaging over photo shoots - the Palipop cola case study on CGI, lighting, and cost.",
-        "image": "https://bitz.ge/wp-content/uploads/2023/10/cgi-vs-photography-hero.jpg"
-      },
-      "ge": null
-    }
+ {
+  "slug": "cgi-product-renders-vs-photography-packaging",
+  "date": "2026-09-06T22:08:26",
+  "title": {
+   "en": "CGI vs. Photography: Why Packaging Is Going 3D",
+   "ge": null
   },
-  {
-    "slug": "where-ai-actually-belongs-in-a-designer-s-workflow",
-    "date": "2026-08-19T20:38:42",
-    "title": {
-      "en": "Where AI Actually Belongs in a Designer's Workflow",
-      "ge": "AI დიზაინერის სამუშაო პროცესში"
-    },
-    "excerpt": {
-      "en": "Where AI genuinely saves time in a full-stack design workflow, and where it still cannot replace concept, strategy or final craft.",
-      "ge": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას."
-    },
-    "cover": "assets/stories/where-ai-actually-belongs-in-a-designer-s-workflow.jpg",
-    "categories": [
-      "Design Process"
-    ],
-    "hasGe": true,
-    "sections": {
-      "en": [
-        {
-          "h": "",
-          "t": [
-            "Every client meeting starts the same way now. Somewhere between the brief and the budget, someone asks about AI. Usually it is phrased as a question about speed - can it get done faster now, can it get done cheaper. Sometimes it is phrased as a worry - is a designer still needed at all.",
-            "I have been using AI tools inside my actual production work for a while now, across branding, 3D, motion and UI. Not as a demo, as part of shipping real projects. So instead of another hype post or another doom post, here is where AI in design workflow genuinely earns its place for me, and where it flatly does not."
-          ]
-        },
-        {
-          "h": "Where AI in a design workflow actually saves time",
-          "t": [
-            "The honest wins are in the unglamorous middle of a project, not the parts anyone puts in a portfolio.",
-            "Reference gathering is the clearest one. Early on a project I used to spend an hour building a moodboard from scattered Pinterest searches and half-remembered Dribbble shots. Now I can describe a direction in words and get a wide spread of visual starting points back in minutes, then pick what is actually useful and throw the rest away. It has not changed what I am looking for, it has changed how fast I get to look at options.",
-            "Rough exploration is the second one. When I am still deciding between three or four directions for a mark or a layout, generating quick visual variations lets me see more bad ideas faster, which is honestly how you get to the good idea faster too. This is a sketchbook, not a final render.",
-            "Then there is the pure production grunt work: upscaling a low-res asset a client sends over, cleaning up backgrounds, batch-resizing crops for a dozen ad formats, quick retouching passes. This is the AI use case with zero downside. Nobody's craft was ever proven in a background eraser."
-          ]
-        },
-        {
-          "h": "Where it does not replace craft",
-          "t": [
-            "This is the part that gets left out of most AI-in-design content, because it is less exciting to write about.",
-            "Concept development does not come from a prompt. It comes from understanding a business that a client has not fully articulated even to themselves yet, and translating that into a visual idea nobody has quite made before. AI tools can show you what already exists, remixed. They cannot tell you what a specific brand needs to say that no other brand in its category is saying. That is still a human read on a human problem.",
-            "Brand strategy is the same story at a higher level. A logo or identity system is not just an image, it is a decision about how a company wants to be perceived for years, defended across a hundred future applications nobody has designed yet. Something like Cerebro , where the mark had to fuse the idea of a human brain with a digital marketing agency's whole visual language, was not a generation problem. It was a judgment problem: what single idea earns the right to represent this business, and will it still hold up on a business card, a favicon and a billboard at once. That call is still entirely mine to make.",
-            "Final 3D and motion polish is another wall AI has not gotten past, in my experience. On a piece like the Motorola Transistor Concept , the work that actually made it feel real was in materials, lighting and render passes tuned by hand until the object felt physically present instead of merely plausible. That last ten percent, the part where something goes from looking generated to looking made, is still craft, iteration and a trained eye for when it is actually done.",
-            "And then there is client taste, which no tool manages for you. Reading a vague piece of feedback correctly, knowing which round of revisions is really about the logo and which is really about something the client has not said out loud yet, that relationship is still fully human on both ends."
-          ]
-        },
-        {
-          "h": "What this actually changes about the job",
-          "t": [
-            "The realistic shift is not fewer designers, it is a different ratio of hours. Less time on the repetitive setup work, more time on the decisions that were always the actual job: the concept, the strategy, the final polish, the client conversation. If anything, cutting the grunt work down means there is more room to spend on the parts of a project that build genuine craft, the same way better tooling changed motion work without replacing the eye behind it - something I got into more in Why Brands Need a Motion Layer Now, Not Just a Logo .",
-            "So if you are a client wondering whether AI means a project should cost less or move faster: sometimes, on the parts that were always overhead. If you are wondering whether it replaces the judgment you are actually paying for, no. That part still has to be earned the old way."
-          ]
-        }
-      ],
-      "ge": [
-        {
-          "h": "",
-          "t": [
-            "თითქმის ყველა შეხვედრა კლიენტთან ერთნაირად იწყება: სადღაც ბრიფსა და ბიუჯეტს შორის აუცილებლად ვინმე იკითხავს AI-ზე. ხშირად ეს კითხვა სისწრაფეს ეხება - ხომ არ გამოვა უფრო სწრაფად და იაფად? ზოგჯერ კი ამის უკან შეშფოთება იმალება - საერთოდ სჭირდებათ თუ არა დიზაინერი.",
-            "AI ხელსაწყოებს უკვე კარგა ხანია ვიყენებ - ბრენდინგში, 3D-ში, მოუშენ დიზაინსა და UI/UX-ში. არა საჩვენებელ, არამედ ისეთ პროექტებში, რომლებიც კლიენტამდე საბოლოო სახით მიდის. ამიტომ უბრალოდ გიამბობთ, სად აქვს AI-ს ჩემს პროცესში ადგილი და სად არა."
-          ]
-        },
-        {
-          "h": "სად ზოგავს AI დროს სინამდვილეში",
-          "t": [
-            "ყველაზე დიდი დროის მოგება პროექტის იმ შუა მონაკვეთშია, რომელსაც პორტფოლიოში არავინ დებს.",
-            "ყველაზე თვალსაჩინო მაგალითი რეფერენსების მოძიებაა. ადრე პროექტის დასაწყისში მუდბორდის აწყობას მთელ საათებს ვანდომებდი: გაფანტული რისერჩები Pinterest-ზე, ნახევრად მივიწყებული სქრინშოტები Dribbble-იდან. ახლა საკმარისია ვიზუალური მიმართულების რამდენიმე სიტყვით აღწერა და წუთებში მზად მაქვს ამ მიმართულებების ფართო არჩევანი - გამოსადეგს ვიტოვებ, დანარჩენს ვაგდებ. ის კი არ შეიცვალა თუ რას ვეძებ, შეიცვალა, რამდენად სწრაფად მივდივარ ვარიანტებამდე.",
-            "მეორე მაგალითი ექსპერიმენტებია. როცა ლოგოსთვის ან ლეიაუთისთვის ჯერ კიდევ სამ-ოთხ მიმართულებას შორის ვარჩევ, სწრაფი ვიზუალური ვარიაციები საშუალებას მაძლევს, ბევრი ცუდ იდეას სწრაფად შევხედო და ეს, გულახდილად რომ ვთქვათ, კარგ იდეებამდეც უფრო სწრაფად მიმიყვანს ხოლმე. ეს სკეტჩბუქია და არა საბოლოო რენდერი.",
-            "შემდეგ არის წმინდა შავი საქმე: კლიენტის გამოგზავნილი დაბალი გარჩევადობის ფაილების გაუმჯობესება, ფონების მოცილება, კადრირების შეცვლა ათეულობით სარეკლამო ფორმატისთვის, სწრაფი რეტუში. აქ AI-ს გამოყენებას მინუსი უბრალოდ არ აქვს, ფონის წაშლის ოსტატობით ჯერ არავის არაფერი დაუმტკიცებია."
-          ]
-        },
-        {
-          "h": "სად ვერ ჩაანაცვლებს AI ოსტატობას",
-          "t": [
-            "ეს ის ნაწილია, რომელსაც AI-ზე დაწერილი ბლოგების უმეტესობა ტოვებს ხოლმე, ალბათ იმიტომ, რომ ამაზე წერა ნაკლებად ეფექტურია.",
-            "კონცეფცია პრომპტში არ იბადება. ის იბადება ბიზნეს ამოცანების გააზრებიდან. ისეთი რამის გაგებისგან, რაც თავად კლიენტსაც ბოლომდე არ აქვს გააზრებული და მისი ისეთ ვიზუალურ იდეად გარდაქმნისგან, რომელიც აქამდე არავის შეუქმნია. AI-ს მხოლოდ იმის ჩვენება შეუძლია, რაც უკვე არსებობს, ცოტა სხვა ფორმით. ის ვერ გეტყვის, კონკრეტულმა ბრენდმა ისეთი რა უნდა თქვას, რასაც მის კატეგორიაში ჯერ არავინ ამბობს. ეს ისევ ადამიანის მიერ ადამიანური პრობლემის ამოკითხვაა.",
-            "ბრენდის სტრატეგია იგივე ამბავია, ოღონდ უფრო მაღალ საფეხურზე. ლოგო და ვიზუალური სისტემა უბრალოდ სურათები არ არის, ეს გადაწყვეტილებაა იმაზე, როგორ უნდა აღიქმებოდეს კომპანია წლების განმავლობაში და როგორ გაუძლოს ასობით ისეთ გამოყენებას, რომელიც ჯერ არც არსებობს. Cerebro-ს მსგავს პროექტში, სადაც ადამიანის ტვინის იდეა ციფრული მარკეტინგის სააგენტოს მთელ ვიზუალურ ენას უნდა შერწყმოდა, საქმე გენერირებაში არ იყო. საქმე განსჯაში იყო: რომელი ერთი იდეა იმსახურებს, რომ ეს ბიზნესი წარმოადგინოს, და იმუშავებს თუ არა ის ერთდროულად სავიზიტო ბარათზეც, ფავიკონზეც და ბილბორდზეც. ამ გადაწყვეტილებას მთლიანად მე ვიღებ.",
-            "3D და მოუშენ პოლირება კიდევ ერთი ზღვარია, რომელსაც AI, ჩემი გამოცდილებით, ჯერ ვერ გადალახავს. Motorola Transistor Concept-ის მსგავს ნამუშევარში ობიექტს რეალურს ხდიდა მასალები, განათება და ხელით აწყობილი რენდერები. სწორედ მათ მისცეს მას არა უბრალოდ დამაჯერებლობა, არამედ ფიზიკური არსებობის შეგრძნება. ის ბოლო ათი პროცენტი, როცა ნამუშევარი გენერირებულის ნაცვლად გამზადებულად გამოიყურება, ისევ ოსტატობაა: გამეორება, გაწაფული თვალი და იმის ცოდნა, როდის არის საქმე ნამდვილად დასრულებული.",
-            "და ბოლოს, კლიენტთან ურთიერთობა, რომელსაც ვერცერთი ხელსაწყო ვერ იტვირთებს შენს ნაცვლად: ბუნდოვანი უკუკავშირის სწორად ამოკითხვა, იმის გარჩევა, კორექტირების რომელი რაუნდი ეხება ნამდვილად ლოგოს და რომელი იმას, რაც კლიენტს ხმამაღლა ჯერ არ უთქვამს. ეს ურთიერთობა ორივე მხრიდან სრულად ადამიანურია."
-          ]
-        },
-        {
-          "h": "რას ცვლის ეს რეალურად",
-          "t": [
-            "რეალური ცვლილება დიზაინერების შემცირება კი არა, დროის სხვაგვარად გადანაწილებაა: ნაკლები დრო განმეორებად, მოსამზადებელ სამუშაოზე და მეტი იმ გადაწყვეტილებებზე, რაც ყოველთვის იყო ნამდვილი სამუშაო: კონცეფცია, სტრატეგია, საბოლოო დახვეწა, საუბარი კლიენტთან. თუ რამე იცვლება, ის არის, რომ რუტინის შემცირება მეტ ადგილს უტოვებს პროექტის იმ ნაწილს, სადაც ოსტატობა ყალიბდება. ისევე, როგორც უკეთესმა ინსტრუმენტებმა შეცვალა მოუშენ დიზაინის სამუშაო ისე, რომ თვალი არავის ჩაუნაცვლებია. ამაზე ვწერდი სტატიაში „რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა უბრლოდ ლოგო“.",
-            "ასე რომ, თუ კლიენტი ხართ და გაინტერესებთ, ნიშნავს თუ არა AI იმას, რომ პროექტი უფრო იაფი ან სწრაფი იქნება - ზოგჯერ დიახ, იმ ნაწილში, რომელიც ყოველთვის ზედმეტ ხარჯად ითვლებოდა. მაგრამ თუ გაინტერესებთ, ცვლის თუ არა ის იმ გარჯას, რომელშიც სინამდვილეში იხდით ფულს - არა. ეს ნაწილი დღესაც ისევე უცვლელია, როგორც ყოველთვის."
-          ]
-        }
-      ]
-    },
-    "seo": {
-      "en": {
-        "title": "Where AI Actually Belongs in a Designer's Workflow",
-        "description": "An honest look at AI in design workflow: where it saves real time, and where concept, strategy and craft still can't be automated.",
-        "image": "https://bitz.ge/wp-content/uploads/2026/08/ai-design-workflow-header.jpg"
-      },
-      "ge": {
-        "title": "AI დიზაინერის სამუშაო პროცესში",
-        "description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
-        "image": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/08/ai-design-workflow-split-sphere-header-ge.jpg"
-      }
-    }
+  "excerpt": {
+   "en": "Product photography is losing ground to CGI on packaging launches. The Palipop vintage cola case study shows why - and what actually makes a render look real.",
+   "ge": null
   },
-  {
-    "slug": "soft-ui-2-0-designing-interfaces-that-feel-human-again",
-    "date": "2026-08-12T19:26:33",
-    "title": {
-      "en": "Soft UI 2.0: Designing Interfaces That Feel Human Again",
-      "ge": "Soft UI 2.0: ადამიანური ინტერფეისი"
+  "cover": "assets/stories/cgi-product-renders-vs-photography-packaging.jpg",
+  "categories": [
+   "3D &amp; Product Design",
+   "Branding"
+  ],
+  "hasGe": false,
+  "sections": {
+   "en": [
+    {
+     "h": "The Photo Shoot Is No Longer the Default",
+     "t": [
+      "For decades, a packaging launch meant the same sequence: sculpt or print a prototype, book a studio, set up lighting, shoot, retouch, repeat for every flavor variant and every angle the marketing deck needs. That sequence is quietly disappearing. In 2026, more packaging brands are launching with a fully computer-generated hero shot instead of a camera anywhere in the process.",
+      "This isn't a gimmick or a budget shortcut dressed up as innovation. 3D product rendering for packaging has gotten good enough, and fast enough, that for a huge share of launches it is simply the better tool. At Bitz we build both the brand identity and the CGI product visualization in-house, and the Palipop vintage cola project is a clean example of why clients are choosing this route."
+     ]
     },
-    "excerpt": {
-      "en": "Flat design is giving way to Soft UI 2.0, tactile, spatial interfaces with depth and motion. Here's how it differs from neumorphism and what it means for your next redesign.",
-      "ge": "ბრტყელი დიზაინი ადგილს უთმობს Soft UI 2.0-ს - ტაქტილურ, სივრცით ინტერფეისებს სიღრმითა და მოძრაობით. აი, როგორ განსხვავდება ის ნეომორფიზმისგან და რას ნიშნავს ეს თქვენი მომდევნო რედიზაინისთვის."
+    {
+     "h": "Why Packaging Brands Are Switching to CGI",
+     "t": [
+      "A few practical reasons keep coming up in client conversations, and they hold up under scrutiny:",
+      "No physical prototype before launch. A can, bottle, or carton exists as a 3D model long before it exists as tooling. That means the packaging design, the label, and the marketing visuals can all be finished and approved before a single physical unit is produced - useful for a startup brand that needs the visuals to sell the concept before the production run is even ordered.",
+      "Full control over lighting and environment. A studio shoot is a negotiation with physics - reflections, condensation, dust, the limits of the lights you own. A render is a negotiation with nothing. Every highlight on a label, every reflection on aluminum or glass, is placed on purpose rather than fought for.",
+      "Faster iteration. Want the can on a black background instead of a shelf? Want to test three label colorways before the client picks one? In photography that is three shoots. In CGI it is three renders from the same file, often turned around same day.",
+      "Lower real cost per asset. Once the 3D model and materials exist, generating new angles, new backgrounds, or new seasonal variants costs a fraction of a reshoot - no studio rental, no reprinted samples, no travel."
+     ]
     },
-    "cover": "assets/stories/soft-ui-2-0-designing-interfaces-that-feel-human-again.jpg",
-    "categories": [
-      "UI/UX"
-    ],
-    "hasGe": true,
-    "sections": {
-      "en": [
-        {
-          "h": "",
-          "t": [
-            "Flat design won. For a decade almost every product interface flattened itself into the same vocabulary: hard edges, solid fills, zero shadow, type doing all the work. It was clean, it was fast to build, and after ten years it started feeling cold. Screens stopped feeling like things you touch and started feeling like things you scroll past.",
-            "That's the gap a new wave of soft UI design trends is filling in 2026. Design teams are bringing back depth, tactility and warmth, this time built on better foundations than the first attempt at it. If you're evaluating a UI/UX redesign this year, this is the shift worth understanding before you brief anyone."
-          ]
-        },
-        {
-          "h": "What Soft UI 2.0 actually means",
-          "t": [
-            "Soft UI 2.0 is a return to interfaces that look and behave like they occupy physical space, without going back to skeuomorphism's leather textures and drop shadows on everything. Surfaces get gentle elevation. Buttons have a resting state and a pressed state that actually looks pressed. Cards feel layered instead of stacked flat on top of each other. Motion carries weight, easing in and out the way an object would if it had mass.",
-            "The \"2.0\" matters because this isn't the neumorphism moment from a few years ago come back around. It's a more disciplined, more accessible version built with what got learned in between."
-          ]
-        },
-        {
-          "h": "How it differs from 2019-era neumorphism",
-          "t": [
-            "Neumorphism, the soft-extruded, same-color-on-same-color style that spread across design communities a few years back, looked striking in a Dribbble shot and fell apart in production. Buttons and backgrounds shared nearly identical tones, so contrast ratios collapsed and accessibility audits flagged it immediately. Interactive elements were hard to distinguish from decoration. It was a style built for screenshots, not for actual use.",
-            "Soft UI 2.0 keeps the tactile shadow language but fixes the part that broke it. Contrast is treated as non-negotiable, not optional. Color does real work again, muted palettes with a clear accent rather than one tone bleeding into itself. Depth is used to signal hierarchy and interactivity, not just to look nice. It borrows the warmth of neumorphism and pairs it with the accessibility discipline flat design was originally praised for."
-          ]
-        },
-        {
-          "h": "Why interfaces are softening again",
-          "t": [
-            "A few forces are pushing this at once. AI-generated layouts and templated site builders have made pure flat minimalism feel generic, it's now the default look of tools nobody designed by hand, which makes hand-crafted depth and texture read as a signal of quality again. Spatial and mixed-reality interfaces, from headset OS design to layered glass panels in mobile operating systems, have normalized translucency, elevation and materials as part of everyday UI vocabulary, not a novelty. And motion has gotten cheap: GPU-accelerated CSS, mature animation libraries and faster devices mean micro-interactions that used to be a performance risk are now trivial to ship well.",
-            "There's also a trust angle. Fintech, healthcare and other high-stakes products are leaning softer and more tactile specifically because it reads as calmer and more human than a stark flat interface, at a moment when users are more skeptical of anything that feels automated or templated."
-          ]
-        },
-        {
-          "h": "What it actually looks like in practice",
-          "t": [
-            "A few concrete signals to watch for, and to brief a designer on:",
-            "Soft, directional shadows instead of flat drop shadows, light appears to come from one consistent place across the whole interface. Layered, semi-translucent surfaces that suggest depth without heavy skeuomorphic texture. Rounded geometry used with intent, not just rounded corners everywhere, but forms that echo real touch targets. Restrained, muted color systems with one confident accent rather than a rainbow of flat blocks. Micro-interactions tied to actual input, a button that visibly compresses on tap, a toggle that eases rather than snaps, a card that lifts slightly on hover. And generous internal padding that gives elements room to breathe instead of edge-to-edge flat blocks.",
-            "None of this is about piling on effects. The best examples use restraint, one or two of these signals done well beats five done half-heartedly."
-          ]
-        },
-        {
-          "h": "What this means if you're considering a redesign",
-          "t": [
-            "The temptation is to treat this as a visual reskin, add some shadows, round some corners, ship it. That undersells what actually needs to happen. A soft UI system needs elevation tokens defined once and applied consistently, not shadows eyeballed screen by screen. It needs contrast checked properly, this is exactly the trap neumorphism fell into, so accessibility testing has to be part of the process, not an afterthought. And it needs a motion budget, deciding upfront which interactions get animated and which stay instant, so the interface feels alive without feeling slow.",
-            "Working through the Credo Bank SMART Deposit calculator , the goal was exactly this kind of tactile clarity, a financial tool that felt approachable and easy to manipulate step by step rather than intimidating. That's the same instinct driving Soft UI 2.0 now: interfaces that feel like something you can trust your hands with, not just read.",
-            "It's also worth pairing this conversation with how the interface moves, not just how it looks sitting still. I wrote more about that connection in why brands need a motion layer now , the same logic applies at the interface level: depth and motion have to be designed together, not bolted on separately.",
-            "If you're weighing a redesign this year, the questions worth asking a designer aren't \"can you add some shadows.\" They're: does this system have defined elevation and motion rules, has contrast been checked properly, and does the softness serve usability or just aesthetics. Get those right and Soft UI 2.0 stops being a trend and starts being just good, humane interface design."
-          ]
-        }
-      ],
-      "ge": [
-        {
-          "h": "ბრტყელი დიზაინი იმარჯვებს",
-          "t": [
-            "უკვე ათი წელია, თითქმის ყველა პროდუქტის ინტერფეისი ერთ ვიზუალურ ენაზე „ლაპარაკობს\": თხელი ბორდერები, ერთ ტონში შერჩეული ფერები, ჩრდილების გარეშე. მთელი აქცენტი კი ტიპოგრაფიაზეა გადატანილი. მიდგომა სუფთაცაა და სწრაფად ასაწყობიც, მაგრამ ბოლო დროს თითქოს ღირებულება დაკარგა. ეკრანები აღარ იგრძნობა ხელშესახებად, უბრალოდ სქროლავ და მორჩა.",
-            "სწორედ ამან მოიტანა 2026 წელს Soft UI-ის დაბრუნება. დიზაინის გუნდები ისევ ცდილობენ, ინტერფეისს სიღრმე და სითბო დაუბრუნონ, ოღონდ ამჯერად ბევრად უფრო გააზრებულად და დახვეწილად, ვიდრე ეს პირველ ჯერზე გამოვიდა. თუ წელს რედიზაინს გეგმავთ, ეს ის მიმართულებაა, რომელიც ჯერ თავად უნდა შეისწავლოთ, სანამ ვინმეს დავალებას გადასცემთ."
-          ]
-        },
-        {
-          "h": "რას ნიშნავს Soft UI 2.0 სინამდვილეში",
-          "t": [
-            "Soft UI 2.0 არის დაბრუნება ისეთ ინტერფეისებთან, რომლებიც ისე გამოიყურება და მუშაობს, თითქოს ფიზიკურ სივრცეში არსებობდეს, ოღონდ skeuomorphism-ის ტყავის ტექსტურებისა და ყველაფერზე დადებული ჩრდილების გარეშე. ლეიერებს მსუბუქი სიმაღლე უჩნდებათ. ღილაკს აქვს Default და Pressed მდგომარეობები, რომელიც მართლა დაჭერილს ჰგავს. ბარათები ფენებად აღიქმება და არა უბრალოდ ერთმანეთზე დაწყობილ ბლოკებად. მოძრაობას აქვს წონა: ელემენტები ისე ჩნდება და ქრება, როგორც ფიზიკური მასის მქონე ობიექტი მოიქცეოდა.",
-            "„2.0&#8243; აქ შემთხვევითი არაა. ეს რამდენიმე წლის წინანდელი ნეომორფიზმის უბრალო დაბრუნება არ არის. ეს იმ დროის შეცდომებზე ნასწავლი, ბევრად უფრო დისციპლინირებული და ხელმისაწვდომი ვერსიაა."
-          ]
-        },
-        {
-          "h": "რით განსხვავდება 2019 წლის ნეომორფიზმისგან",
-          "t": [
-            "ნეომორფიზმის რბილი, ამობურცული, ერთ ფერში გაკეთებული სტილი, რომელიც რამდენიმე წლის წინ დიზაინერებში მოდაში იყო, Dribbble-ის სქრინშოტებზე ეფექტურად გამოიყურებოდა, რეალურ პროდუქტში კი ინგრეოდა. ღილაკი და ფონი თითქმის ერთ ტონში იყო, კონტრასტი იკარგებოდა და გამოყენებადობის ნებისმიერი აუდიტი მაშინვე წითელ ხაზს უსვამდა. ინტერაქტიულ ელემენტს დეკორაციისგან ვეღარ არჩევდი. ეს იყო სქრინშოტისთვის შექმნილი სტილი და არა რეალური გამოყენებისთვის.",
-            "Soft UI 2.0 ინარჩუნებს იმავე ტაქტილურ ენას, მაგრამ ასწორებს იმას, რამაც წინა ვერსია ჩააგდო. კონტრასტი უკვე სავალდებულოა. ფერი ისევ საქმეს აკეთებს: მშვიდი, დაბალი ინტენსივობის ტონები ერთი მკაფიო აქცენტით და არა ყველაფერი ერთ ტონში ჩაძირული. სიღრმე იერარქიისა და ინტერაქციულობის საჩვენებლად გამოიყენება და არა უბრალოდ სილამაზისთვის. ეს სტილი ნეომორფიზმისგან სითბოს სესხულობს, ბრტყელი დიზაინისგან კი იმ დისციპლინას, რომლისთვისაც თავის დროზე შეაქეს."
-          ]
-        },
-        {
-          "h": "რატომ რბილდება ინტერფეისი ისევ",
-          "t": [
-            "ამას ერთდროულად რამოდენიმე ფაქტორი განაპირობებს. AI-ით დაგენერირებულმა განლაგებებმა და შაბლონურმა საიტ-ბილდერებმა სუფთა ბრტყელი მინიმალიზმი უსახური გახადა. ის იმ ხელსაწყოების იერსახედ იქცა, რომლებზეც დიზაინერს ხელი არ დაუდია. ამიტომ ხელით ნაკეთები სიღრმე და ტექსტურა ისევ ხარისხის ნიშნად იკითხება. სივრცითმა და შერეული რეალობის ინტერფეისებმა ყურსასმენების ოპერაციული სისტემებიდან მობილურის შუშისებრ ფენოვან პანელებამდე გამჭვირვალობა, სიმაღლე და მასალები ყოველდღიური UI ლექსიკის ნაწილად აქცია და სიახლედ აღარ აღიქმება. მოძრაობაც გაიაფდა: GPU-ზე აჩქარებული CSS, მომწიფებული ანიმაციის ბიბლიოთეკები და სწრაფი მოწყობილობები ნიშნავს, რომ მიკროინტერაქციები, რომლებიც ადრე წარმადობის რისკი იყო, დღეს უპრობლემოდ ეშვება.",
-            "არის ნდობის ფაქტორიც. ფინტექი, ჯანდაცვა და სხვა მაღალი პასუხისმგებლობის პროდუქტები შეგნებულად მიდიან უფრო რბილი, ტაქტილური მიმართულებით, რადგან ის უფრო ადამიანურად აღიქმება, ვიდრე ცივი ბრტყელი ინტერფეისი - სწორედ მაშინ, როცა მომხმარებელი სულ უფრო ეჭვით უყურებს ყველაფერს, რაც ავტომატიზებულს ან შაბლონურს ჰგავს."
-          ]
-        },
-        {
-          "h": "როგორ გამოიყურება ეს პრაქტიკაში",
-          "t": [
-            "რამდენიმე კონკრეტული ნიშანი, რაზეც ყურადღება უნდა გაამახვილოთ და დიზაინერსაც მოსთხოვოთ:",
-            "რბილი, მიმართულების მქონე ჩრდილები ბრტყელი drop shadow-ის ნაცვლად - ისე, თითქოს სინათლე მთელ ინტერფეისში ერთი წერტილიდან მოდიოდეს. ნახევრად გამჭვირვალე ზედაპირები, რომლებიც სიღრმეს გაგრძნობინებს მძიმე სკევომორფული ტექსტურების გარეშე. გააზრებულად გამოყენებული მომრგვალებული გეომეტრია. არა უბრალოდ ყველგან დამრგვალებული კუთხეები, არამედ ფორმები, რომლებიც რეალურ შეხების წერტილებს იმეორებს. თავშეკავებული, მშვიდი ფერთა სისტემა ერთი თამამი აქცენტით და არა ბრტყელი ბლოკების ცისარტყელა. შეხებაზე მიბმული მიკროინტერაქციები: ღილაკი, რომელიც თაჩზე შესამჩნევად იკუმშება; გადამრთველი, რომელიც ეასინგით სრიალებს და არა ნახტომით; ბარათი, რომელიც hover-ზე ოდნავ მაღლა იწევს. და გულუხვი შიდა padding, რომელიც ელემენტებს სუნთქვის საშუალებას აძლევს კიდიდან კიდემდე გაჭედილი ბლოკების ნაცვლად.",
-            "ეს ეფექტების გადაჭარბებას სულაც არ ნიშნავს. საუკეთესო მაგალითები ზომიერებით გამოირჩევა - ერთი-ორი კარგად გაკეთებული დეტალი სჯობს ხუთ ნახევრად გაკეთებულს."
-          ]
-        },
-        {
-          "h": "რას ნიშნავს ეს, თუ რედიზაინს განიხილავთ",
-          "t": [
-            "ცდუნება დიდია, ეს უბრალო ვიზუალურ განახლებად აღვიქვათ: დავამატოთ ჩრდილები, დავამრგვალოთ კუთხეები და გავუშვათ. სინამდვილეში საქმე ბევრად მეტია. Soft UI-ის სისტემას სჭირდება ერთხელ განსაზღვრული და ყველგან თანმიმდევრულად გამოყენებული სიმაღლის ტოკენები და არა ეკრანიდან ეკრანზე თვალის ზომით დადებული ჩრდილები. სჭირდება კონტრასტის რეალური შემოწმება - ზუსტად ის ხაფანგი, რომელშიც ნეომორფიზმი გაება - ამიტომ გამოყენებადობის ტესტირება პროცესის ნაწილი უნდა იყოს და არა ბოლოს მოსაფიქრებელი დეტალი. სჭირდება მოუშენის ბიუჯეტი: წინასწარ გადაწყვეტა, რომელი ინტერაქცია ანიმირდება და რომელი დარჩება სტატიკური, რომ ინტერფეისი მეტად ცოცხალი იყოს.",
-            "კრედო ბანკის SMART Deposit-ის კალკულატორზე მუშაობისას სწორედ ეს სიცხადე იყო მიზანი: ფინანსური ინსტრუმენტი, რომელიც ხელმისაწვდომი და ნაბიჯ-ნაბიჯ სამართავი იქნებოდა და არა დამაშინებელი. იგივე ინსტინქტი დგას დღეს Soft UI 2.0-ის უკანაც - ინტერფეისები, რომლებსაც ხელით ეხები და არა მხოლოდ თვალით კითხულობ.",
-            "ღირს ამ თემის დაკავშირება იმასთანაც, თუ როგორ მოძრაობს ინტერფეისი და არა მხოლოდ როგორ გამოიყურება სტატიკურად. ამაზე ვრცლად დავწერე პოსტში „რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა უბრლოდ ლოგო\" - იგივე ლოგიკა ინტერფეისის დონეზეც მუშაობს: სიღრმე და მოძრაობა ერთად უნდა დაიგეგმოს და არა ბოლოს ცალ-ცალკე მიეკეროს.",
-            "თუ წელს რედიზაინზე ფიქრობთ, დიზაინერისთვის დასასმელი კითხვა არაა „ჩრდილებს ხომ ვერ დაამატებ\". კითხვები ასეთია: აქვს თუ არა სისტემას სიმაღლისა და მოძრაობის განსაზღვრული წესები; შემოწმდა თუ არა კონტრასტი წესიერად; და ემსახურება თუ არა ეს სირბილე გამოყენებადობას თუ მხოლოდ ესთეტიკას. თუ ამას სწორად გააკეთებთ, Soft UI 2.0 ტრენდი აღარ იქნება - უბრალოდ კარგი, ადამიანური ინტერფეისის დიზაინი გახდება."
-          ]
-        }
-      ]
+    {
+     "h": "Case Study: Palipop, a Vintage Cola Can Built Entirely in CGI",
+     "t": [
+      "Palipop is a vintage-styled cola brand Bitz handled start to finish - branding and the 3D product visualization both, under one roof. The brief called for a can that reads as nostalgic and confident without leaning on cliché soda-brand tropes, and a hero visual polished enough to sit next to any photographed competitor on a shelf.",
+      "The identity centers on a bold red script logo - loose, hand-lettered energy that carries the \"vintage\" read on its own, before any packaging or color choice reinforces it. Around that wordmark, the label stays deliberately quiet: a swirl graphic does the visual heavy lifting instead of competing text or extra ornamentation, so the script stays the clear focal point.",
+      "The can itself lives on a black canvas. That choice does two things at once: it lets the red script and the label breathe with no background noise competing for attention, and it gives the CGI render room to do what CGI does best - controlled, dramatic lighting. The render was built specifically to look like it is already sitting under shelf lighting, with highlights on the aluminum placed the way they would fall in a real retail environment. Nothing about the final image reads as \"generated\" - that is the point of doing the CGI work properly rather than rushing it.",
+      "Every decision, from the wordmark down to the specular highlight on the can's rim, came out of one connected process instead of a handoff between a branding studio and a separate photography team. That is the practical advantage of doing identity and product rendering under one roof: the render is built to serve the brand decisions, not bolted on after the fact.",
+      "The Palipop can render - the full identity and CGI work were completed at Bitz."
+     ]
     },
-    "seo": {
-      "en": {
-        "title": "Soft UI 2.0: Designing Interfaces That Feel Human Again | Bitz",
-        "description": "Soft UI design trends are replacing flat minimalism with tactile, human interfaces. What it means for your next UI/UX redesign.",
-        "image": "https://bitz.ge/wp-content/uploads/2023/10/soft-ui-2.0-header.jpg"
-      },
-      "ge": {
-        "title": "Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz",
-        "description": "Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.",
-        "image": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/soft-ui-2.0-glass-keycap-clean.jpg"
-      }
+    {
+     "h": "The Craft Details That Actually Sell the Illusion",
+     "t": [
+      "The gap between a CGI render that looks fake and one that looks like a photograph almost never comes down to the 3D model itself - modern software makes accurate geometry the easy part. It comes down to a handful of craft details:",
+      "Material accuracy matters more than model accuracy. Aluminum needs the right balance of reflection and roughness, or it reads as plastic. Getting that balance right is what makes a shelf-lit render believable at a glance rather than under scrutiny.",
+      "Lighting has to have a reason to exist. Random lights placed to \"make it look nice\" is what gives CGI its uncanny quality. Lighting that mimics an actual shelf, a studio softbox, or a specific time of day reads as real because it behaves the way light actually behaves.",
+      "Backgrounds should support the product, not distract from it. Palipop's black canvas is a good example - a background chosen because it serves the render's lighting and the logo's contrast, not because it was the default option."
+     ]
+    },
+    {
+     "h": "Is 3D Product Rendering Right for Your Next Packaging Launch?",
+     "t": [
+      "CGI product visualization is not a universal replacement for photography - a brand that depends on showing texture a render can't yet convincingly fake, or one that wants to feature real people using a real product, still has good reasons to shoot. But for packaging specifically - cans, bottles, cartons, boxes, anything that is essentially a controlled, repeatable object - 3D product rendering for packaging is now the more flexible, more cost-efficient, and often more polished option, especially before a product physically exists.",
+      "If you're weighing the two approaches for an upcoming launch, look at how much iteration you'll realistically need, how far ahead of production your visuals have to be ready, and whether your packaging design has strong enough materials and lighting cues to reward the extra CGI craft. Those three questions usually make the decision for you.",
+      "Bitz builds both branding and 3D product visualization in-house - see more of that combined process in the Brace EV charger identity and render work or the Motorola Transistor concept render."
+     ]
     }
+   ],
+   "ge": null
   },
-  {
-    "slug": "why-brands-need-a-motion-layer-now-not-just-a-logo",
-    "date": "2026-08-10T16:18:45",
-    "title": {
-      "en": "Why Brands Need a Motion Layer Now, Not Just a Logo",
-      "ge": "რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა"
-    },
-    "excerpt": {
-      "en": "Motion-first branding is no longer optional. Learn why modern brands need to design for movement from day one - and how to do it without breaking budgets.",
-      "ge": "Motion-first ბრენდინგი საჭიროა უკვე დღეს. რატომ სჭირდებათ ბრენდებს მოძრაობისთვის დიზაინი პირველივე დღიდან - და როგორ, დიდი ბიუჯეტის გარეშე."
-    },
-    "cover": "assets/stories/why-brands-need-a-motion-layer-now-not-just-a-logo.jpg",
-    "categories": [
-      "Branding",
-      "Motion Design"
-    ],
-    "hasGe": true,
-    "sections": {
-      "en": [
-        {
-          "h": "",
-          "t": [
-            "Most brand identities still ship the same way they did a decade ago: a logo file, a color palette, a type pairing, and a PDF of usage rules. Motion gets added later, if at all, usually when someone on the client side asks \"can we animate the logo for the app splash screen\" or \"can this work as a reel intro.\" By then the mark was never built to move, and someone is stuck faking it.",
-            "That order is backwards for 2026. Brands don't live on printed letterhead anymore, they live on phone screens, app interfaces, product UI, social feeds and kinetic signage, all of which move by default. A brand system that only accounts for the static case is already behind before the client's first Instagram story goes live. I work across branding, motion and UI/UX, and the friction point I run into most often isn't a lack of animation skill, it's a static-first brand system that was never designed to survive contact with movement."
-          ]
-        },
-        {
-          "h": "What motion-first branding actually means",
-          "t": [
-            "Motion-first doesn't mean every brand needs a five-second animated logo intro. It means the system underneath the logo, the type and the color palette is built with rules for how those elements behave when they move, not just how they look when they sit still.",
-            "Concretely, that's things like: how does the mark break apart and reassemble, does it have a resting state and an active state, which elements are allowed to move independently versus which always move together, what's the default easing and timing personality (snappy and confident versus slow and calm), and does the color palette have states for hover, transition and emphasis, not just a fixed hex list. None of this requires heavy production. It requires the decisions to be made once, at the system level, instead of improvised project by project."
-          ]
-        },
-        {
-          "h": "Why bolting on motion later gets expensive",
-          "t": [
-            "When motion isn't part of the original brief, every animated touchpoint becomes a one-off negotiation. The social team interprets the logo one way, the app developer implements it another way, and six months in nobody can say what the brand actually looks like in motion because nobody wrote it down.",
-            "I've seen this play out on real projects: a mark that looks clean static but has letterforms or shapes that were never built with clean pivot points, so any attempt to animate it looks janky or needs a full rebuild. That rebuild costs more than it would have cost to think about motion up front, and it usually happens under deadline pressure, which makes the result worse, not better. The fix isn't more animation budget later, it's five extra questions asked during the identity phase."
-          ]
-        },
-        {
-          "h": "Building motion-readiness in without a big budget",
-          "t": [
-            "This is the part most relevant to smaller clients and studios who can't hand every project to a dedicated motion team. Motion-readiness is mostly about structure, not spectacle.",
-            "A few things that cost almost nothing extra at the identity stage: build logo marks from separable, modular parts instead of one fused shape, so pieces can shift independently later without a redraw. Design typography with enough weight and spacing contrast that it still reads clearly at reduced-motion speeds, since accessibility guidelines increasingly expect a calm fallback state. Pick a color system with defined relationships (which color leads, which supports, which signals action) rather than a flat swatch list, so transitions have a logical direction instead of an arbitrary one. And write down two or three motion adjectives for the brand, the same way you'd write down brand voice adjectives, so anyone animating it later, including a client's in-house team, has something to check against.",
-            "None of this needs a big budget or a dedicated motion designer on day one. It needs the identity phase to end with a short motion logic document alongside the usual brand guidelines, even if it's two pages."
-          ]
-        },
-        {
-          "h": "Where this shows up in the product, not just the marketing",
-          "t": [
-            "The brands that get this right treat motion as one language spoken consistently across marketing and product. If a brand's motion personality is confident and snappy in its animated logo, that same timing and easing should show up in the UI, in how a button responds, how a modal appears, how a loading state behaves. Most companies keep these as two disconnected disciplines, run by two different teams with two different vocabularies, and the seams show.",
-            "On projects like BRACE , keeping the brand's visual logic consistent from identity through to interface was what made the whole system feel considered rather than assembled from parts. The same thinking applies to more motion-forward work like RoyalPixels , where the brand's energy had to hold up whether it was sitting on a business card or animating inside a product."
-          ]
-        },
-        {
-          "h": "Start with the questions, not the software",
-          "t": [
-            "None of this requires a client with a big budget or a designer with a big motion reel. It requires asking, during the identity phase and not after: how does this move, what stays still, and what's the personality of that movement. Answer those three questions while the brand system is still being built, and the animation work that follows gets faster, cheaper and more consistent, whether it's produced in-house, by an agency, or by whoever inherits the brand file three years from now.",
-            "A brand that was only ever designed to sit still is already out of step with how people actually encounter brands in 2026. The fix starts at the identity stage, not in the animation software."
-          ]
-        }
-      ],
-      "ge": [
-        {
-          "h": "",
-          "t": [
-            "დღემდე ბრენდის იდენტობების უმეტესობა ისევე იქმნება, როგორც ათი წლის წინ: ლოგო, ფერთა პალიტრა, შრიფტები და დიდი PDF ფაილი გამოყენების წესებით. ანიმაციები ემატება მოგვიანებით (თუ საერთოდ ემატება) მაშინ, როცა კლიენტი მოიკითხავს \"შეგვიძლია ლოგოს ანიმაციის გაკეთება აპლიკაციის გახნისას?\" და ამ მომენტში ვხვდებით რომ, სიმბოლო არასდროს ყოფილა გათვლილი ანიმირებისთვის.",
-            "2026 წლელს ეს ყველაფერი პირიქით ხდება. ბრენდებს ვხედავთ ტელეფონის ეკრანებზე, აპლიკაციებში, პროდუქტის UI-ში, სოც მედია ფიდებზე, სადაც ყველაფერი მოძრაობს. მე ვმუშაობ ბრენდინგზე, მოძრაობასა და UI/UX-ზე ერთდროულად, და მტკივნეული წერტილი, რომელსაც ყველაზე ხშირად ვხვდები, სტატიკაზე ორიენტირებული ბრენდის სისტემაა, რომელიც არასდროს ყოფილა შექმნილი ანიმირებისთვის."
-          ]
-        },
-        {
-          "h": "რას ნიშნავს მოძრავ გრაფიკაზე ორიენტირებული ბრენდინგი",
-          "t": [
-            "ეს არ ნიშნავს ხუთწამიან ანიმირებულ ლოგოს. ეს ნიშნავს სისტემას, რომელშიც განსაზღვრულია: როგორ იშლება და იკუმშება ნიშანი, რომელი ელემენტები მოძრაობენ დამოუკიდებლად, დროისა და easing-ების ხასიათი (მკვეთრი თუ რბილი), და აქვს თუ არა ფერთა პალიტრას განსაზღვრული hover-ები და გადასვლები."
-          ]
-        },
-        {
-          "h": "რატომ არის რთული ანიმაციის მოგვიანებით გაკეთება",
-          "t": [
-            "როცა ანიმაციაზე კეთების პროცესშივე არ არის ნაფიქრი, ყოველ გასაანიმირებელ დეტალზე ცალკე საფიქრია. სიმბოლო, რომლის ფორმები არასდროს ყოფილა აგებული სუფთა საბრუნი წერტილებით, ან არათანაბრად გამოიყურება, ან სრულ გადაკეთებას საჭიროებს."
-          ]
-        },
-        {
-          "h": "იდენტობის ანიმირება დიდი ბიუჯეტის გარეშე",
-          "t": [
-            "ააგეთ ლოგო მოდულური ნაწილებისგან. გამოიყენეთ ტიპოგრაფია რომელიც მარტივად აიტანს მცირე ანიმირებას. აირჩიეთ ფერთა პალეტი განსაზღვრული როლებით (წამყვანი, დამხმარე, მოქმედების ფერი). გაწერეთ ორი-სამი წინადადება, რომელიც ბრენდის ანიმაციას აღწერს. საკმარისია, რომ იდენტობის ფაზა დასრულდეს ანიმაციის ლოგიკის მოკლე დოკუმენტით."
-          ]
-        },
-        {
-          "h": "პროდუქტში და არა მხოლოდ მარკეტინგში",
-          "t": [
-            "თუ სიმბოლოს მოძრაობაზე ნამუშევარია და აქვს განსაზღვრული ხასიათი, ეს ხასიათი უნდა ჩანდეს UI-შიც - ღილაკის ჰოვერებში, მოდალებში, ლოადერში. BRACE -ის შემთხვევაში, სწორედ ამ თანმიმდევრულობამ გახადა სისტემა გააზრებული. RoyalPixels -ის შემთხვევაში ბრენდის ენერგიას თანაბრად უნდა გაეძლო მარკეტინგულ ასეტებშიც და პროდუქტშიც.",
-            "დავსვათ სამი კითხვა იდენტობის შექმნის ეტაპზე: როგორ მოძრაობს? რა რჩება უძრავი? რა ხასიათი აქვს მოძრაობას? ბრენდი, რომელიც მხოლოდ უძრავად ყოფნისთვისაა შექმნილი, ძალიან გაუჭირდება კონკურენტუნარიანი იყოს 2026 წელს.",
-            "მოძრაობა და მოძრაობა&#8230;"
-          ]
-        }
-      ]
-    },
-    "seo": {
-      "en": {
-        "title": "Why Brands Need a Motion Layer Now, Not Just a Logo | Bitz",
-        "description": "Motion-first branding is no longer optional. Learn why modern brands need to design for movement from day one - and how to do it without breaking budgets.",
-        "image": "https://bitz.ge/wp-content/uploads/2023/10/motion-blog-header-fixed.jpg"
-      },
-      "ge": {
-        "title": "Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz",
-        "description": "Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო",
-        "image": "https://bitz.ge/ge/wp-content/uploads/sites/5/2026/09/motion-blog-header-fixed.jpg"
-      }
-    }
+  "seo": {
+   "en": {
+    "title": "3D Product Rendering for Packaging: CGI vs. Photography",
+    "description": "Why packaging brands now choose 3D product rendering for packaging over photo shoots - the Palipop cola case study on CGI, lighting, and cost.",
+    "image": "https://bitz.ge/wp-content/uploads/2023/10/cgi-vs-photography-hero.jpg"
+   },
+   "ge": null
   }
+ },
+ {
+  "slug": "where-ai-actually-belongs-in-a-designer-s-workflow",
+  "date": "2026-08-19T20:38:42",
+  "title": {
+   "en": "Where AI Actually Belongs in a Designer's Workflow",
+   "ge": "AI დიზაინერის სამუშაო პროცესში"
+  },
+  "excerpt": {
+   "en": "Where AI genuinely saves time in a full-stack design workflow, and where it still cannot replace concept, strategy or final craft.",
+   "ge": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას."
+  },
+  "cover": "assets/stories/where-ai-actually-belongs-in-a-designer-s-workflow.jpg",
+  "categories": [
+   "Design Process"
+  ],
+  "hasGe": true,
+  "sections": {
+   "en": [
+    {
+     "h": "",
+     "t": [
+      "Every client meeting starts the same way now. Somewhere between the brief and the budget, someone asks about AI. Usually it is phrased as a question about speed - can it get done faster now, can it get done cheaper. Sometimes it is phrased as a worry - is a designer still needed at all.",
+      "I have been using AI tools inside my actual production work for a while now, across branding, 3D, motion and UI. Not as a demo, as part of shipping real projects. So instead of another hype post or another doom post, here is where AI in design workflow genuinely earns its place for me, and where it flatly does not."
+     ]
+    },
+    {
+     "h": "Where AI in a design workflow actually saves time",
+     "t": [
+      "The honest wins are in the unglamorous middle of a project, not the parts anyone puts in a portfolio.",
+      "Reference gathering is the clearest one. Early on a project I used to spend an hour building a moodboard from scattered Pinterest searches and half-remembered Dribbble shots. Now I can describe a direction in words and get a wide spread of visual starting points back in minutes, then pick what is actually useful and throw the rest away. It has not changed what I am looking for, it has changed how fast I get to look at options.",
+      "Rough exploration is the second one. When I am still deciding between three or four directions for a mark or a layout, generating quick visual variations lets me see more bad ideas faster, which is honestly how you get to the good idea faster too. This is a sketchbook, not a final render.",
+      "Then there is the pure production grunt work: upscaling a low-res asset a client sends over, cleaning up backgrounds, batch-resizing crops for a dozen ad formats, quick retouching passes. This is the AI use case with zero downside. Nobody's craft was ever proven in a background eraser."
+     ]
+    },
+    {
+     "h": "Where it does not replace craft",
+     "t": [
+      "This is the part that gets left out of most AI-in-design content, because it is less exciting to write about.",
+      "Concept development does not come from a prompt. It comes from understanding a business that a client has not fully articulated even to themselves yet, and translating that into a visual idea nobody has quite made before. AI tools can show you what already exists, remixed. They cannot tell you what a specific brand needs to say that no other brand in its category is saying. That is still a human read on a human problem.",
+      "Brand strategy is the same story at a higher level. A logo or identity system is not just an image, it is a decision about how a company wants to be perceived for years, defended across a hundred future applications nobody has designed yet. Something like Cerebro, where the mark had to fuse the idea of a human brain with a digital marketing agency's whole visual language, was not a generation problem. It was a judgment problem: what single idea earns the right to represent this business, and will it still hold up on a business card, a favicon and a billboard at once. That call is still entirely mine to make.",
+      "Final 3D and motion polish is another wall AI has not gotten past, in my experience. On a piece like the Motorola Transistor Concept, the work that actually made it feel real was in materials, lighting and render passes tuned by hand until the object felt physically present instead of merely plausible. That last ten percent, the part where something goes from looking generated to looking made, is still craft, iteration and a trained eye for when it is actually done.",
+      "And then there is client taste, which no tool manages for you. Reading a vague piece of feedback correctly, knowing which round of revisions is really about the logo and which is really about something the client has not said out loud yet, that relationship is still fully human on both ends."
+     ]
+    },
+    {
+     "h": "What this actually changes about the job",
+     "t": [
+      "The realistic shift is not fewer designers, it is a different ratio of hours. Less time on the repetitive setup work, more time on the decisions that were always the actual job: the concept, the strategy, the final polish, the client conversation. If anything, cutting the grunt work down means there is more room to spend on the parts of a project that build genuine craft, the same way better tooling changed motion work without replacing the eye behind it - something I got into more in Why Brands Need a Motion Layer Now, Not Just a Logo.",
+      "So if you are a client wondering whether AI means a project should cost less or move faster: sometimes, on the parts that were always overhead. If you are wondering whether it replaces the judgment you are actually paying for, no. That part still has to be earned the old way."
+     ]
+    }
+   ],
+   "ge": [
+    {
+     "h": "",
+     "t": [
+      "თითქმის ყველა შეხვედრა კლიენტთან ერთნაირად იწყება: სადღაც ბრიფსა და ბიუჯეტს შორის აუცილებლად ვინმე იკითხავს AI-ზე. ხშირად ეს კითხვა სისწრაფეს ეხება - ხომ არ გამოვა უფრო სწრაფად და იაფად? ზოგჯერ კი ამის უკან შეშფოთება იმალება - საერთოდ სჭირდებათ თუ არა დიზაინერი.",
+      "AI ხელსაწყოებს უკვე კარგა ხანია ვიყენებ - ბრენდინგში, 3D-ში, მოუშენ დიზაინსა და UI/UX-ში. არა საჩვენებელ, არამედ ისეთ პროექტებში, რომლებიც კლიენტამდე საბოლოო სახით მიდის. ამიტომ უბრალოდ გიამბობთ, სად აქვს AI-ს ჩემს პროცესში ადგილი და სად არა."
+     ]
+    },
+    {
+     "h": "სად ზოგავს AI დროს სინამდვილეში",
+     "t": [
+      "ყველაზე დიდი დროის მოგება პროექტის იმ შუა მონაკვეთშია, რომელსაც პორტფოლიოში არავინ დებს.",
+      "ყველაზე თვალსაჩინო მაგალითი რეფერენსების მოძიებაა. ადრე პროექტის დასაწყისში მუდბორდის აწყობას მთელ საათებს ვანდომებდი: გაფანტული რისერჩები Pinterest-ზე, ნახევრად მივიწყებული სქრინშოტები Dribbble-იდან. ახლა საკმარისია ვიზუალური მიმართულების რამდენიმე სიტყვით აღწერა და წუთებში მზად მაქვს ამ მიმართულებების ფართო არჩევანი - გამოსადეგს ვიტოვებ, დანარჩენს ვაგდებ. ის კი არ შეიცვალა თუ რას ვეძებ, შეიცვალა, რამდენად სწრაფად მივდივარ ვარიანტებამდე.",
+      "მეორე მაგალითი ექსპერიმენტებია. როცა ლოგოსთვის ან ლეიაუთისთვის ჯერ კიდევ სამ-ოთხ მიმართულებას შორის ვარჩევ, სწრაფი ვიზუალური ვარიაციები საშუალებას მაძლევს, ბევრი ცუდ იდეას სწრაფად შევხედო და ეს, გულახდილად რომ ვთქვათ, კარგ იდეებამდეც უფრო სწრაფად მიმიყვანს ხოლმე. ეს სკეტჩბუქია და არა საბოლოო რენდერი.",
+      "შემდეგ არის წმინდა შავი საქმე: კლიენტის გამოგზავნილი დაბალი გარჩევადობის ფაილების გაუმჯობესება, ფონების მოცილება, კადრირების შეცვლა ათეულობით სარეკლამო ფორმატისთვის, სწრაფი რეტუში. აქ AI-ს გამოყენებას მინუსი უბრალოდ არ აქვს, ფონის წაშლის ოსტატობით ჯერ არავის არაფერი დაუმტკიცებია."
+     ]
+    },
+    {
+     "h": "სად ვერ ჩაანაცვლებს AI ოსტატობას",
+     "t": [
+      "ეს ის ნაწილია, რომელსაც AI-ზე დაწერილი ბლოგების უმეტესობა ტოვებს ხოლმე, ალბათ იმიტომ, რომ ამაზე წერა ნაკლებად ეფექტურია.",
+      "კონცეფცია პრომპტში არ იბადება. ის იბადება ბიზნეს ამოცანების გააზრებიდან. ისეთი რამის გაგებისგან, რაც თავად კლიენტსაც ბოლომდე არ აქვს გააზრებული და მისი ისეთ ვიზუალურ იდეად გარდაქმნისგან, რომელიც აქამდე არავის შეუქმნია. AI-ს მხოლოდ იმის ჩვენება შეუძლია, რაც უკვე არსებობს, ცოტა სხვა ფორმით. ის ვერ გეტყვის, კონკრეტულმა ბრენდმა ისეთი რა უნდა თქვას, რასაც მის კატეგორიაში ჯერ არავინ ამბობს. ეს ისევ ადამიანის მიერ ადამიანური პრობლემის ამოკითხვაა.",
+      "ბრენდის სტრატეგია იგივე ამბავია, ოღონდ უფრო მაღალ საფეხურზე. ლოგო და ვიზუალური სისტემა უბრალოდ სურათები არ არის, ეს გადაწყვეტილებაა იმაზე, როგორ უნდა აღიქმებოდეს კომპანია წლების განმავლობაში და როგორ გაუძლოს ასობით ისეთ გამოყენებას, რომელიც ჯერ არც არსებობს. Cerebro-ს მსგავს პროექტში, სადაც ადამიანის ტვინის იდეა ციფრული მარკეტინგის სააგენტოს მთელ ვიზუალურ ენას უნდა შერწყმოდა, საქმე გენერირებაში არ იყო. საქმე განსჯაში იყო: რომელი ერთი იდეა იმსახურებს, რომ ეს ბიზნესი წარმოადგინოს, და იმუშავებს თუ არა ის ერთდროულად სავიზიტო ბარათზეც, ფავიკონზეც და ბილბორდზეც. ამ გადაწყვეტილებას მთლიანად მე ვიღებ.",
+      "3D და მოუშენ პოლირება კიდევ ერთი ზღვარია, რომელსაც AI, ჩემი გამოცდილებით, ჯერ ვერ გადალახავს. Motorola Transistor Concept-ის მსგავს ნამუშევარში ობიექტს რეალურს ხდიდა მასალები, განათება და ხელით აწყობილი რენდერები. სწორედ მათ მისცეს მას არა უბრალოდ დამაჯერებლობა, არამედ ფიზიკური არსებობის შეგრძნება. ის ბოლო ათი პროცენტი, როცა ნამუშევარი გენერირებულის ნაცვლად გამზადებულად გამოიყურება, ისევ ოსტატობაა: გამეორება, გაწაფული თვალი და იმის ცოდნა, როდის არის საქმე ნამდვილად დასრულებული.",
+      "და ბოლოს, კლიენტთან ურთიერთობა, რომელსაც ვერცერთი ხელსაწყო ვერ იტვირთებს შენს ნაცვლად: ბუნდოვანი უკუკავშირის სწორად ამოკითხვა, იმის გარჩევა, კორექტირების რომელი რაუნდი ეხება ნამდვილად ლოგოს და რომელი იმას, რაც კლიენტს ხმამაღლა ჯერ არ უთქვამს. ეს ურთიერთობა ორივე მხრიდან სრულად ადამიანურია."
+     ]
+    },
+    {
+     "h": "რას ცვლის ეს რეალურად",
+     "t": [
+      "რეალური ცვლილება დიზაინერების შემცირება კი არა, დროის სხვაგვარად გადანაწილებაა: ნაკლები დრო განმეორებად, მოსამზადებელ სამუშაოზე და მეტი იმ გადაწყვეტილებებზე, რაც ყოველთვის იყო ნამდვილი სამუშაო: კონცეფცია, სტრატეგია, საბოლოო დახვეწა, საუბარი კლიენტთან. თუ რამე იცვლება, ის არის, რომ რუტინის შემცირება მეტ ადგილს უტოვებს პროექტის იმ ნაწილს, სადაც ოსტატობა ყალიბდება. ისევე, როგორც უკეთესმა ინსტრუმენტებმა შეცვალა მოუშენ დიზაინის სამუშაო ისე, რომ თვალი არავის ჩაუნაცვლებია. ამაზე ვწერდი სტატიაში „რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა უბრლოდ ლოგო“.",
+      "ასე რომ, თუ კლიენტი ხართ და გაინტერესებთ, ნიშნავს თუ არა AI იმას, რომ პროექტი უფრო იაფი ან სწრაფი იქნება - ზოგჯერ დიახ, იმ ნაწილში, რომელიც ყოველთვის ზედმეტ ხარჯად ითვლებოდა. მაგრამ თუ გაინტერესებთ, ცვლის თუ არა ის იმ გარჯას, რომელშიც სინამდვილეში იხდით ფულს - არა. ეს ნაწილი დღესაც ისევე უცვლელია, როგორც ყოველთვის."
+     ]
+    }
+   ]
+  },
+  "seo": {
+   "en": {
+    "title": "Where AI Actually Belongs in a Designer's Workflow",
+    "description": "An honest look at AI in design workflow: where it saves real time, and where concept, strategy and craft still can't be automated.",
+    "image": "https://bitz.ge/wp-content/uploads/2026/08/ai-design-workflow-header.jpg"
+   },
+   "ge": {
+    "title": "AI დიზაინერის სამუშაო პროცესში",
+    "description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
+    "image": null
+   }
+  }
+ },
+ {
+  "slug": "soft-ui-2-0-designing-interfaces-that-feel-human-again",
+  "date": "2026-08-12T19:26:33",
+  "title": {
+   "en": "Soft UI 2.0: Designing Interfaces That Feel Human Again",
+   "ge": "Soft UI 2.0: ადამიანური ინტერფეისი"
+  },
+  "excerpt": {
+   "en": "Flat design is giving way to Soft UI 2.0, tactile, spatial interfaces with depth and motion. Here's how it differs from neumorphism and what it means for your next redesign.",
+   "ge": "ბრტყელი დიზაინი ადგილს უთმობს Soft UI 2.0-ს - ტაქტილურ, სივრცით ინტერფეისებს სიღრმითა და მოძრაობით. აი, როგორ განსხვავდება ის ნეომორფიზმისგან და რას ნიშნავს ეს თქვენი მომდევნო რედიზაინისთვის."
+  },
+  "cover": "assets/stories/soft-ui-2-0-designing-interfaces-that-feel-human-again.jpg",
+  "categories": [
+   "UI/UX"
+  ],
+  "hasGe": true,
+  "sections": {
+   "en": [
+    {
+     "h": "",
+     "t": [
+      "Flat design won. For a decade almost every product interface flattened itself into the same vocabulary: hard edges, solid fills, zero shadow, type doing all the work. It was clean, it was fast to build, and after ten years it started feeling cold. Screens stopped feeling like things you touch and started feeling like things you scroll past.",
+      "That's the gap a new wave of soft UI design trends is filling in 2026. Design teams are bringing back depth, tactility and warmth, this time built on better foundations than the first attempt at it. If you're evaluating a UI/UX redesign this year, this is the shift worth understanding before you brief anyone."
+     ]
+    },
+    {
+     "h": "What Soft UI 2.0 actually means",
+     "t": [
+      "Soft UI 2.0 is a return to interfaces that look and behave like they occupy physical space, without going back to skeuomorphism's leather textures and drop shadows on everything. Surfaces get gentle elevation. Buttons have a resting state and a pressed state that actually looks pressed. Cards feel layered instead of stacked flat on top of each other. Motion carries weight, easing in and out the way an object would if it had mass.",
+      "The \"2.0\" matters because this isn't the neumorphism moment from a few years ago come back around. It's a more disciplined, more accessible version built with what got learned in between."
+     ]
+    },
+    {
+     "h": "How it differs from 2019-era neumorphism",
+     "t": [
+      "Neumorphism, the soft-extruded, same-color-on-same-color style that spread across design communities a few years back, looked striking in a Dribbble shot and fell apart in production. Buttons and backgrounds shared nearly identical tones, so contrast ratios collapsed and accessibility audits flagged it immediately. Interactive elements were hard to distinguish from decoration. It was a style built for screenshots, not for actual use.",
+      "Soft UI 2.0 keeps the tactile shadow language but fixes the part that broke it. Contrast is treated as non-negotiable, not optional. Color does real work again, muted palettes with a clear accent rather than one tone bleeding into itself. Depth is used to signal hierarchy and interactivity, not just to look nice. It borrows the warmth of neumorphism and pairs it with the accessibility discipline flat design was originally praised for."
+     ]
+    },
+    {
+     "h": "Why interfaces are softening again",
+     "t": [
+      "A few forces are pushing this at once. AI-generated layouts and templated site builders have made pure flat minimalism feel generic, it's now the default look of tools nobody designed by hand, which makes hand-crafted depth and texture read as a signal of quality again. Spatial and mixed-reality interfaces, from headset OS design to layered glass panels in mobile operating systems, have normalized translucency, elevation and materials as part of everyday UI vocabulary, not a novelty. And motion has gotten cheap: GPU-accelerated CSS, mature animation libraries and faster devices mean micro-interactions that used to be a performance risk are now trivial to ship well.",
+      "There's also a trust angle. Fintech, healthcare and other high-stakes products are leaning softer and more tactile specifically because it reads as calmer and more human than a stark flat interface, at a moment when users are more skeptical of anything that feels automated or templated."
+     ]
+    },
+    {
+     "h": "What it actually looks like in practice",
+     "t": [
+      "A few concrete signals to watch for, and to brief a designer on:",
+      "Soft, directional shadows instead of flat drop shadows, light appears to come from one consistent place across the whole interface. Layered, semi-translucent surfaces that suggest depth without heavy skeuomorphic texture. Rounded geometry used with intent, not just rounded corners everywhere, but forms that echo real touch targets. Restrained, muted color systems with one confident accent rather than a rainbow of flat blocks. Micro-interactions tied to actual input, a button that visibly compresses on tap, a toggle that eases rather than snaps, a card that lifts slightly on hover. And generous internal padding that gives elements room to breathe instead of edge-to-edge flat blocks.",
+      "None of this is about piling on effects. The best examples use restraint, one or two of these signals done well beats five done half-heartedly."
+     ]
+    },
+    {
+     "h": "What this means if you're considering a redesign",
+     "t": [
+      "The temptation is to treat this as a visual reskin, add some shadows, round some corners, ship it. That undersells what actually needs to happen. A soft UI system needs elevation tokens defined once and applied consistently, not shadows eyeballed screen by screen. It needs contrast checked properly, this is exactly the trap neumorphism fell into, so accessibility testing has to be part of the process, not an afterthought. And it needs a motion budget, deciding upfront which interactions get animated and which stay instant, so the interface feels alive without feeling slow.",
+      "Working through the Credo Bank SMART Deposit calculator, the goal was exactly this kind of tactile clarity, a financial tool that felt approachable and easy to manipulate step by step rather than intimidating. That's the same instinct driving Soft UI 2.0 now: interfaces that feel like something you can trust your hands with, not just read.",
+      "It's also worth pairing this conversation with how the interface moves, not just how it looks sitting still. I wrote more about that connection in why brands need a motion layer now, the same logic applies at the interface level: depth and motion have to be designed together, not bolted on separately.",
+      "If you're weighing a redesign this year, the questions worth asking a designer aren't \"can you add some shadows.\" They're: does this system have defined elevation and motion rules, has contrast been checked properly, and does the softness serve usability or just aesthetics. Get those right and Soft UI 2.0 stops being a trend and starts being just good, humane interface design."
+     ]
+    }
+   ],
+   "ge": [
+    {
+     "h": "ბრტყელი დიზაინი იმარჯვებს",
+     "t": [
+      "უკვე ათი წელია, თითქმის ყველა პროდუქტის ინტერფეისი ერთ ვიზუალურ ენაზე „ლაპარაკობს\": თხელი ბორდერები, ერთ ტონში შერჩეული ფერები, ჩრდილების გარეშე.  მთელი აქცენტი კი ტიპოგრაფიაზეა გადატანილი. მიდგომა სუფთაცაა და სწრაფად ასაწყობიც, მაგრამ ბოლო დროს თითქოს ღირებულება დაკარგა. ეკრანები აღარ იგრძნობა ხელშესახებად, უბრალოდ სქროლავ და მორჩა.",
+      "სწორედ ამან მოიტანა 2026 წელს Soft UI-ის დაბრუნება. დიზაინის გუნდები ისევ ცდილობენ, ინტერფეისს სიღრმე და სითბო დაუბრუნონ, ოღონდ ამჯერად ბევრად უფრო გააზრებულად და დახვეწილად, ვიდრე ეს პირველ ჯერზე გამოვიდა. თუ წელს რედიზაინს გეგმავთ, ეს ის მიმართულებაა, რომელიც ჯერ თავად უნდა შეისწავლოთ, სანამ ვინმეს დავალებას გადასცემთ."
+     ]
+    },
+    {
+     "h": "რას ნიშნავს Soft UI 2.0 სინამდვილეში",
+     "t": [
+      "Soft UI 2.0 არის დაბრუნება ისეთ ინტერფეისებთან, რომლებიც ისე გამოიყურება და მუშაობს, თითქოს ფიზიკურ სივრცეში არსებობდეს, ოღონდ skeuomorphism-ის ტყავის ტექსტურებისა და ყველაფერზე დადებული ჩრდილების გარეშე. ლეიერებს მსუბუქი სიმაღლე უჩნდებათ. ღილაკს აქვს Default და Pressed მდგომარეობები, რომელიც მართლა დაჭერილს ჰგავს. ბარათები ფენებად აღიქმება და არა უბრალოდ ერთმანეთზე დაწყობილ ბლოკებად. მოძრაობას აქვს წონა: ელემენტები ისე ჩნდება და ქრება, როგორც ფიზიკური მასის მქონე ობიექტი მოიქცეოდა.",
+      "„2.0&#8243; აქ შემთხვევითი არაა. ეს რამდენიმე წლის წინანდელი ნეომორფიზმის უბრალო დაბრუნება არ არის. ეს იმ დროის შეცდომებზე ნასწავლი, ბევრად უფრო დისციპლინირებული და ხელმისაწვდომი ვერსიაა."
+     ]
+    },
+    {
+     "h": "რით განსხვავდება 2019 წლის ნეომორფიზმისგან",
+     "t": [
+      "ნეომორფიზმის რბილი, ამობურცული, ერთ ფერში გაკეთებული სტილი, რომელიც რამდენიმე წლის წინ დიზაინერებში მოდაში იყო, Dribbble-ის სქრინშოტებზე ეფექტურად გამოიყურებოდა, რეალურ პროდუქტში კი ინგრეოდა. ღილაკი და ფონი თითქმის ერთ ტონში იყო, კონტრასტი იკარგებოდა და გამოყენებადობის ნებისმიერი აუდიტი მაშინვე წითელ ხაზს უსვამდა. ინტერაქტიულ ელემენტს დეკორაციისგან ვეღარ არჩევდი. ეს იყო სქრინშოტისთვის შექმნილი სტილი და არა რეალური გამოყენებისთვის.",
+      "Soft UI 2.0 ინარჩუნებს იმავე ტაქტილურ ენას, მაგრამ ასწორებს იმას, რამაც წინა ვერსია ჩააგდო. კონტრასტი უკვე სავალდებულოა. ფერი ისევ საქმეს აკეთებს: მშვიდი, დაბალი ინტენსივობის ტონები ერთი მკაფიო აქცენტით და არა ყველაფერი ერთ ტონში ჩაძირული. სიღრმე იერარქიისა და ინტერაქციულობის საჩვენებლად გამოიყენება და არა უბრალოდ სილამაზისთვის. ეს სტილი ნეომორფიზმისგან სითბოს სესხულობს, ბრტყელი დიზაინისგან კი იმ დისციპლინას, რომლისთვისაც თავის დროზე შეაქეს."
+     ]
+    },
+    {
+     "h": "რატომ რბილდება ინტერფეისი ისევ",
+     "t": [
+      "ამას ერთდროულად რამოდენიმე ფაქტორი განაპირობებს. AI-ით დაგენერირებულმა განლაგებებმა და შაბლონურმა საიტ-ბილდერებმა სუფთა ბრტყელი მინიმალიზმი უსახური გახადა. ის იმ ხელსაწყოების იერსახედ იქცა, რომლებზეც დიზაინერს ხელი არ დაუდია. ამიტომ ხელით ნაკეთები სიღრმე და ტექსტურა ისევ ხარისხის ნიშნად იკითხება. სივრცითმა და შერეული რეალობის ინტერფეისებმა ყურსასმენების ოპერაციული სისტემებიდან მობილურის შუშისებრ ფენოვან პანელებამდე გამჭვირვალობა, სიმაღლე და მასალები ყოველდღიური UI ლექსიკის ნაწილად აქცია და სიახლედ აღარ აღიქმება. მოძრაობაც გაიაფდა: GPU-ზე აჩქარებული CSS, მომწიფებული ანიმაციის ბიბლიოთეკები და სწრაფი მოწყობილობები ნიშნავს, რომ მიკროინტერაქციები, რომლებიც ადრე წარმადობის რისკი იყო, დღეს უპრობლემოდ ეშვება.",
+      "არის ნდობის ფაქტორიც. ფინტექი, ჯანდაცვა და სხვა მაღალი პასუხისმგებლობის პროდუქტები შეგნებულად მიდიან უფრო რბილი, ტაქტილური მიმართულებით, რადგან ის უფრო ადამიანურად აღიქმება, ვიდრე ცივი ბრტყელი ინტერფეისი - სწორედ მაშინ, როცა მომხმარებელი სულ უფრო ეჭვით უყურებს ყველაფერს, რაც ავტომატიზებულს ან შაბლონურს ჰგავს."
+     ]
+    },
+    {
+     "h": "როგორ გამოიყურება ეს პრაქტიკაში",
+     "t": [
+      "რამდენიმე კონკრეტული ნიშანი, რაზეც ყურადღება უნდა გაამახვილოთ და დიზაინერსაც მოსთხოვოთ:",
+      "რბილი, მიმართულების მქონე ჩრდილები ბრტყელი drop shadow-ის ნაცვლად - ისე, თითქოს სინათლე მთელ ინტერფეისში ერთი წერტილიდან მოდიოდეს. ნახევრად გამჭვირვალე ზედაპირები, რომლებიც სიღრმეს გაგრძნობინებს მძიმე სკევომორფული ტექსტურების გარეშე. გააზრებულად გამოყენებული მომრგვალებული გეომეტრია. არა უბრალოდ ყველგან დამრგვალებული კუთხეები, არამედ ფორმები, რომლებიც რეალურ შეხების წერტილებს იმეორებს. თავშეკავებული, მშვიდი ფერთა სისტემა ერთი თამამი აქცენტით და არა ბრტყელი ბლოკების ცისარტყელა. შეხებაზე მიბმული მიკროინტერაქციები: ღილაკი, რომელიც თაჩზე შესამჩნევად იკუმშება; გადამრთველი, რომელიც ეასინგით სრიალებს და არა ნახტომით; ბარათი, რომელიც hover-ზე ოდნავ მაღლა იწევს. და გულუხვი შიდა padding, რომელიც ელემენტებს სუნთქვის საშუალებას აძლევს კიდიდან კიდემდე გაჭედილი ბლოკების ნაცვლად.",
+      "ეს ეფექტების გადაჭარბებას სულაც არ ნიშნავს. საუკეთესო მაგალითები ზომიერებით გამოირჩევა - ერთი-ორი კარგად გაკეთებული დეტალი სჯობს ხუთ ნახევრად გაკეთებულს."
+     ]
+    },
+    {
+     "h": "რას ნიშნავს ეს, თუ რედიზაინს განიხილავთ",
+     "t": [
+      "ცდუნება დიდია, ეს უბრალო ვიზუალურ განახლებად აღვიქვათ: დავამატოთ ჩრდილები, დავამრგვალოთ კუთხეები და გავუშვათ. სინამდვილეში საქმე ბევრად მეტია. Soft UI-ის სისტემას სჭირდება ერთხელ განსაზღვრული და ყველგან თანმიმდევრულად გამოყენებული სიმაღლის ტოკენები და არა ეკრანიდან ეკრანზე თვალის ზომით დადებული ჩრდილები. სჭირდება კონტრასტის რეალური შემოწმება - ზუსტად ის ხაფანგი, რომელშიც ნეომორფიზმი გაება - ამიტომ გამოყენებადობის ტესტირება პროცესის ნაწილი უნდა იყოს და არა ბოლოს მოსაფიქრებელი დეტალი. სჭირდება მოუშენის ბიუჯეტი: წინასწარ გადაწყვეტა, რომელი ინტერაქცია ანიმირდება და რომელი დარჩება სტატიკური, რომ ინტერფეისი მეტად ცოცხალი იყოს.",
+      "კრედო ბანკის SMART Deposit-ის კალკულატორზე მუშაობისას სწორედ ეს სიცხადე იყო მიზანი: ფინანსური ინსტრუმენტი, რომელიც ხელმისაწვდომი და ნაბიჯ-ნაბიჯ სამართავი იქნებოდა და არა დამაშინებელი. იგივე ინსტინქტი დგას დღეს Soft UI 2.0-ის უკანაც - ინტერფეისები, რომლებსაც ხელით ეხები და არა მხოლოდ თვალით კითხულობ.",
+      "ღირს ამ თემის დაკავშირება იმასთანაც, თუ როგორ მოძრაობს ინტერფეისი და არა მხოლოდ როგორ გამოიყურება სტატიკურად. ამაზე ვრცლად დავწერე პოსტში „რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა უბრლოდ ლოგო\" - იგივე ლოგიკა ინტერფეისის დონეზეც მუშაობს: სიღრმე და მოძრაობა ერთად უნდა დაიგეგმოს და არა ბოლოს ცალ-ცალკე მიეკეროს.",
+      "თუ წელს რედიზაინზე ფიქრობთ, დიზაინერისთვის დასასმელი კითხვა არაა „ჩრდილებს ხომ ვერ დაამატებ\". კითხვები ასეთია: აქვს თუ არა სისტემას სიმაღლისა და მოძრაობის განსაზღვრული წესები; შემოწმდა თუ არა კონტრასტი წესიერად; და ემსახურება თუ არა ეს სირბილე გამოყენებადობას თუ მხოლოდ ესთეტიკას. თუ ამას სწორად გააკეთებთ, Soft UI 2.0 ტრენდი აღარ იქნება - უბრალოდ კარგი, ადამიანური ინტერფეისის დიზაინი გახდება."
+     ]
+    }
+   ]
+  },
+  "seo": {
+   "en": {
+    "title": "Soft UI 2.0: Designing Interfaces That Feel Human Again | Bitz",
+    "description": "Soft UI design trends are replacing flat minimalism with tactile, human interfaces. What it means for your next UI/UX redesign.",
+    "image": "https://bitz.ge/wp-content/uploads/2023/10/soft-ui-2.0-header.jpg"
+   },
+   "ge": {
+    "title": "Soft UI 2.0 - ინტერფეისი, რომელიც თავს ადამიანად გაგრძნობინებს | Bitz",
+    "description": "Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.",
+    "image": null
+   }
+  }
+ },
+ {
+  "slug": "why-brands-need-a-motion-layer-now-not-just-a-logo",
+  "date": "2026-08-10T16:18:45",
+  "title": {
+   "en": "Why Brands Need a Motion Layer Now, Not Just a Logo",
+   "ge": "რატომ სჭირდებათ ბრენდებს მოძრავი იდენტობა"
+  },
+  "excerpt": {
+   "en": "Motion-first branding is no longer optional. Learn why modern brands need to design for movement from day one - and how to do it without breaking budgets.",
+   "ge": "Motion-first ბრენდინგი საჭიროა უკვე დღეს. რატომ სჭირდებათ ბრენდებს მოძრაობისთვის დიზაინი პირველივე დღიდან - და როგორ, დიდი ბიუჯეტის გარეშე."
+  },
+  "cover": "assets/stories/why-brands-need-a-motion-layer-now-not-just-a-logo.jpg",
+  "categories": [
+   "Branding",
+   "Motion Design"
+  ],
+  "hasGe": true,
+  "sections": {
+   "en": [
+    {
+     "h": "",
+     "t": [
+      "Most brand identities still ship the same way they did a decade ago: a logo file, a color palette, a type pairing, and a PDF of usage rules. Motion gets added later, if at all, usually when someone on the client side asks \"can we animate the logo for the app splash screen\" or \"can this work as a reel intro.\" By then the mark was never built to move, and someone is stuck faking it.",
+      "That order is backwards for 2026. Brands don't live on printed letterhead anymore, they live on phone screens, app interfaces, product UI, social feeds and kinetic signage, all of which move by default. A brand system that only accounts for the static case is already behind before the client's first Instagram story goes live. I work across branding, motion and UI/UX, and the friction point I run into most often isn't a lack of animation skill, it's a static-first brand system that was never designed to survive contact with movement."
+     ]
+    },
+    {
+     "h": "What motion-first branding actually means",
+     "t": [
+      "Motion-first doesn't mean every brand needs a five-second animated logo intro. It means the system underneath the logo, the type and the color palette is built with rules for how those elements behave when they move, not just how they look when they sit still.",
+      "Concretely, that's things like: how does the mark break apart and reassemble, does it have a resting state and an active state, which elements are allowed to move independently versus which always move together, what's the default easing and timing personality (snappy and confident versus slow and calm), and does the color palette have states for hover, transition and emphasis, not just a fixed hex list. None of this requires heavy production. It requires the decisions to be made once, at the system level, instead of improvised project by project."
+     ]
+    },
+    {
+     "h": "Why bolting on motion later gets expensive",
+     "t": [
+      "When motion isn't part of the original brief, every animated touchpoint becomes a one-off negotiation. The social team interprets the logo one way, the app developer implements it another way, and six months in nobody can say what the brand actually looks like in motion because nobody wrote it down.",
+      "I've seen this play out on real projects: a mark that looks clean static but has letterforms or shapes that were never built with clean pivot points, so any attempt to animate it looks janky or needs a full rebuild. That rebuild costs more than it would have cost to think about motion up front, and it usually happens under deadline pressure, which makes the result worse, not better. The fix isn't more animation budget later, it's five extra questions asked during the identity phase."
+     ]
+    },
+    {
+     "h": "Building motion-readiness in without a big budget",
+     "t": [
+      "This is the part most relevant to smaller clients and studios who can't hand every project to a dedicated motion team. Motion-readiness is mostly about structure, not spectacle.",
+      "A few things that cost almost nothing extra at the identity stage: build logo marks from separable, modular parts instead of one fused shape, so pieces can shift independently later without a redraw. Design typography with enough weight and spacing contrast that it still reads clearly at reduced-motion speeds, since accessibility guidelines increasingly expect a calm fallback state. Pick a color system with defined relationships (which color leads, which supports, which signals action) rather than a flat swatch list, so transitions have a logical direction instead of an arbitrary one. And write down two or three motion adjectives for the brand, the same way you'd write down brand voice adjectives, so anyone animating it later, including a client's in-house team, has something to check against.",
+      "None of this needs a big budget or a dedicated motion designer on day one. It needs the identity phase to end with a short motion logic document alongside the usual brand guidelines, even if it's two pages."
+     ]
+    },
+    {
+     "h": "Where this shows up in the product, not just the marketing",
+     "t": [
+      "The brands that get this right treat motion as one language spoken consistently across marketing and product. If a brand's motion personality is confident and snappy in its animated logo, that same timing and easing should show up in the UI, in how a button responds, how a modal appears, how a loading state behaves. Most companies keep these as two disconnected disciplines, run by two different teams with two different vocabularies, and the seams show.",
+      "On projects like BRACE, keeping the brand's visual logic consistent from identity through to interface was what made the whole system feel considered rather than assembled from parts. The same thinking applies to more motion-forward work like RoyalPixels, where the brand's energy had to hold up whether it was sitting on a business card or animating inside a product."
+     ]
+    },
+    {
+     "h": "Start with the questions, not the software",
+     "t": [
+      "None of this requires a client with a big budget or a designer with a big motion reel. It requires asking, during the identity phase and not after: how does this move, what stays still, and what's the personality of that movement. Answer those three questions while the brand system is still being built, and the animation work that follows gets faster, cheaper and more consistent, whether it's produced in-house, by an agency, or by whoever inherits the brand file three years from now.",
+      "A brand that was only ever designed to sit still is already out of step with how people actually encounter brands in 2026. The fix starts at the identity stage, not in the animation software."
+     ]
+    }
+   ],
+   "ge": [
+    {
+     "h": "",
+     "t": [
+      "დღემდე ბრენდის იდენტობების უმეტესობა ისევე იქმნება, როგორც ათი წლის წინ: ლოგო, ფერთა პალიტრა, შრიფტები და დიდი PDF ფაილი გამოყენების წესებით. ანიმაციები ემატება მოგვიანებით (თუ საერთოდ ემატება) მაშინ, როცა კლიენტი მოიკითხავს \"შეგვიძლია ლოგოს ანიმაციის გაკეთება აპლიკაციის გახნისას?\" და ამ მომენტში ვხვდებით რომ, სიმბოლო არასდროს ყოფილა გათვლილი ანიმირებისთვის.",
+      "2026 წლელს ეს ყველაფერი პირიქით ხდება. ბრენდებს ვხედავთ ტელეფონის ეკრანებზე, აპლიკაციებში, პროდუქტის UI-ში, სოც მედია ფიდებზე, სადაც ყველაფერი მოძრაობს. მე ვმუშაობ ბრენდინგზე, მოძრაობასა და UI/UX-ზე ერთდროულად, და მტკივნეული წერტილი, რომელსაც ყველაზე ხშირად ვხვდები, სტატიკაზე ორიენტირებული ბრენდის სისტემაა, რომელიც არასდროს ყოფილა შექმნილი ანიმირებისთვის."
+     ]
+    },
+    {
+     "h": "რას ნიშნავს მოძრავ გრაფიკაზე ორიენტირებული ბრენდინგი",
+     "t": [
+      "ეს არ ნიშნავს ხუთწამიან ანიმირებულ ლოგოს. ეს ნიშნავს სისტემას, რომელშიც განსაზღვრულია: როგორ იშლება და იკუმშება ნიშანი, რომელი ელემენტები მოძრაობენ დამოუკიდებლად, დროისა და easing-ების ხასიათი (მკვეთრი თუ რბილი), და აქვს თუ არა ფერთა პალიტრას განსაზღვრული hover-ები და გადასვლები."
+     ]
+    },
+    {
+     "h": "რატომ არის რთული ანიმაციის მოგვიანებით გაკეთება",
+     "t": [
+      "როცა ანიმაციაზე კეთების პროცესშივე არ არის ნაფიქრი, ყოველ გასაანიმირებელ დეტალზე ცალკე საფიქრია. სიმბოლო, რომლის ფორმები არასდროს ყოფილა აგებული სუფთა საბრუნი წერტილებით, ან არათანაბრად გამოიყურება, ან სრულ გადაკეთებას საჭიროებს."
+     ]
+    },
+    {
+     "h": "იდენტობის ანიმირება დიდი ბიუჯეტის გარეშე",
+     "t": [
+      "ააგეთ ლოგო მოდულური ნაწილებისგან. გამოიყენეთ ტიპოგრაფია რომელიც მარტივად აიტანს მცირე ანიმირებას. აირჩიეთ ფერთა პალეტი განსაზღვრული როლებით (წამყვანი, დამხმარე, მოქმედების ფერი). გაწერეთ ორი-სამი წინადადება, რომელიც ბრენდის ანიმაციას აღწერს. საკმარისია, რომ იდენტობის ფაზა დასრულდეს ანიმაციის ლოგიკის მოკლე დოკუმენტით."
+     ]
+    },
+    {
+     "h": "პროდუქტში და არა მხოლოდ მარკეტინგში",
+     "t": [
+      "თუ სიმბოლოს მოძრაობაზე ნამუშევარია და აქვს განსაზღვრული ხასიათი, ეს ხასიათი უნდა ჩანდეს UI-შიც - ღილაკის ჰოვერებში, მოდალებში, ლოადერში. BRACE-ის შემთხვევაში, სწორედ ამ თანმიმდევრულობამ გახადა სისტემა გააზრებული. RoyalPixels-ის შემთხვევაში ბრენდის ენერგიას თანაბრად უნდა გაეძლო მარკეტინგულ ასეტებშიც და პროდუქტშიც.",
+      "დავსვათ სამი კითხვა იდენტობის შექმნის ეტაპზე:  როგორ მოძრაობს? რა რჩება უძრავი? რა ხასიათი აქვს მოძრაობას? ბრენდი, რომელიც მხოლოდ უძრავად ყოფნისთვისაა შექმნილი, ძალიან გაუჭირდება კონკურენტუნარიანი იყოს 2026 წელს.",
+      "მოძრაობა და მოძრაობა&#8230;"
+     ]
+    }
+   ]
+  },
+  "seo": {
+   "en": {
+    "title": "Why Brands Need a Motion Layer Now, Not Just a Logo | Bitz",
+    "description": "Motion-first branding is no longer optional. Learn why modern brands need to design for movement from day one - and how to do it without breaking budgets.",
+    "image": "https://bitz.ge/wp-content/uploads/2023/10/motion-blog-header-fixed.jpg"
+   },
+   "ge": {
+    "title": "Motion-First ბრენდინგი - რატომ არის საჭირო? | Bitz",
+    "description": "Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო",
+    "image": null
+   }
+  }
+ }
 ]

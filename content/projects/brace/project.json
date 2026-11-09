@@ -1,25 +1,18 @@
 {
-  "slug": "brace",
-  "order": 2,
-  "featured": true,
-  "year": "2025",
-  "client": "BRACE",
-  "cats": [
-    "Branding",
-    "3D Design",
-    "Video"
-  ],
-  "link": "https://www.behance.net/gallery/216700333/BRACE",
-  "title": {
-    "en": "BRACE",
-    "ge": "ბრეისი"
-  },
-  "blurb": {
-    "en": "Complete branding for BRACE, an EV charging brand - identity, 3D, motion and print that give form to energy, movement and cleaner roads ahead.",
-    "ge": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით. ტრადიციული ავტომობილებისგან განსხვავებით ელექტრომობილები, ელემენტზე მუშაობენ და დასამხუტად ესაჭიროებათ ელექტროენერგია. სწორედ ამიტომ არის მნიშვნელოვანი ელექტრო დასამუხტი სადგურების სიმრავლე."
-  },
-  "sections": {
-    "en": [
+  "en": {
+    "title": "BRACE",
+    "featured": true,
+    "order": 2,
+    "year": "2025",
+    "client": "BRACE",
+    "cats": [
+      "Branding",
+      "3D Design",
+      "Video"
+    ],
+    "link": "https://www.behance.net/gallery/216700333/BRACE",
+    "blurb": "Complete branding for BRACE, an EV charging brand - identity, 3D, motion and print that give form to energy, movement and cleaner roads ahead.",
+    "sections": [
       {
         "h": "About the project",
         "t": "An EV charger is crucial infrastructure for the growing number of electric vehicle owners worldwide. We crafted every aspect of the branding to reflect the brand's mission - advancing EV charging, driving innovation and bracing for a greener future."
@@ -37,7 +30,31 @@
         "t": "Client BRACE. Director Luka Gabidzashvili. 3D artist Giorgi Berianidze. Graphic designers DAVE and Mariam Ninoshvili."
       }
     ],
-    "ge": [
+    "cover": "/assets/img/brace.webp",
+    "gallery": [
+      "/assets/img/brace-1.webp",
+      "/assets/img/brace-2.webp",
+      "/assets/img/brace-3.webp",
+      "/assets/img/brace-4.webp",
+      "/assets/img/brace-5.webp",
+      "/assets/img/brace-6.webp",
+      "/assets/img/brace-7.webp",
+      "/assets/img/brace-8.webp",
+      "/assets/img/brace-9.webp"
+    ],
+    "home": {
+      "img": "/assets/home/brace.webp"
+    },
+    "seo": {
+      "title": "BRACE - EV Charger Branding & 3D Design | Bitz Portfolio",
+      "description": "Complete branding project for BRACE electric vehicle charger - design system, 3D animations, and visual identity development.",
+      "image": "https://bitz.ge/wp-content/uploads/2025/08/brace-a4.jpg"
+    }
+  },
+  "ka": {
+    "title": "ბრეისი",
+    "blurb": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით. ტრადიციული ავტომობილებისგან განსხვავებით ელექტრომობილები, ელემენტზე მუშაობენ და დასამხუტად ესაჭიროებათ ელექტროენერგია. სწორედ ამიტომ არის მნიშვნელოვანი ელექტრო დასამუხტი სადგურების სიმრავლე.",
+    "sections": [
       {
         "h": "პროექტის შესახებ",
         "t": "პროექტის ფარგლებში, ბრენდინგის ყველა ასპექტს ისე მივუდექით, რომ მკაფიოდ ასახავდეს ბრენდის არსს და მისიას - ელექტრომობილების დამუხტვის ხელშეწყობას, ინოვაციების წახალისებას და უფრო მწვანე, ეკოლოგიურად სუფთა მომავალს. ვიზუალური იდენტობის თანამედროვე ელემენტები ხაზს უსვამს ბრეისის პოზიციონირებას - ტრანსპორტირების თანამედროვე გადაწყვეტას."
@@ -54,36 +71,13 @@
         "h": "დიზაინს მიღმა",
         "t": "ბრეისის დიზაინზე მუშაობა, იდენტობის ჩამოყალიბებაზე მეტი იყო - ეს იყო ენერგიის, მოძრაობის და ეკოლოგიის შერწყმა."
       }
-    ]
-  },
-  "cover": "assets/img/brace.webp",
-  "gallery": [
-    "assets/img/brace-1.webp",
-    "assets/img/brace-2.webp",
-    "assets/img/brace-3.webp",
-    "assets/img/brace-4.webp",
-    "assets/img/brace-5.webp",
-    "assets/img/brace-6.webp",
-    "assets/img/brace-7.webp",
-    "assets/img/brace-8.webp",
-    "assets/img/brace-9.webp"
-  ],
-  "home": {
-    "img": "assets/home/brace.webp"
-  },
-  "seo": {
-    "en": {
-      "title": "BRACE - EV Charger Branding & 3D Design | Bitz Portfolio",
-      "description": "Complete branding project for BRACE electric vehicle charger - design system, 3D animations, and visual identity development.",
-      "image": "https://bitz.ge/wp-content/uploads/2025/08/brace-a4.jpg"
-    },
-    "ge": {
+    ],
+    "seo": {
       "title": "ბრეისი | bitz",
-      "description": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით.",
-      "image": "http://bitz.ge/ge/wp-content/uploads/sites/5/2025/09/brace-a4.jpg"
+      "description": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით."
     }
   },
-  "wp": {
+  "_wp": {
     "en": {
       "id": 3904,
       "link": "https://bitz.ge/portfolio/brace/",

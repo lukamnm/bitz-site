@@ -1,0 +1,68 @@
+{
+  "en": {
+    "title": "3D and Visualization",
+    "label": "3D/VFX",
+    "order": 0,
+    "ring": "/assets/shots/Frame-4.png",
+    "items": [
+      {
+        "title": "Auto signs",
+        "webm": "/assets/video/shots/Auto-Signs-LAST-grain_1.webm",
+        "sound": true
+      },
+      {
+        "title": "Monowheel",
+        "webm": "/assets/video/shots/monowheel-with-sounds.webm",
+        "mp4": "/assets/video/shots/monowheel-with-sounds.mp4",
+        "sound": true
+      },
+      {
+        "title": "Haustique box",
+        "webm": "/assets/video/shots/Haustique-box.webm",
+        "sound": true
+      },
+      {
+        "title": "Palipop - Fizzy Drink",
+        "webm": "/assets/video/shots/palipop.webm",
+        "sound": true
+      },
+      {
+        "title": "Lamp",
+        "webm": "/assets/video/shots/lap-1080x1350-1.webm",
+        "sound": true
+      }
+    ]
+  },
+  "ka": {
+    "title": "3D და ვიზუალიზაცია",
+    "label": "3D/VFX",
+    "items": [
+      {
+        "title": "საგზაო ნიშნები",
+        "webm": "/assets/video/shots/Auto-Signs-LAST-grain_1.webm",
+        "sound": true
+      },
+      {
+        "title": "მონოციკლი",
+        "webm": "/assets/video/shots/monowheel-with-sounds.webm",
+        "mp4": "/assets/video/shots/monowheel-with-sounds.mp4",
+        "sound": true
+      },
+      {
+        "title": "Haustique ყუთის",
+        "webm": "/assets/video/shots/Haustique-box.webm",
+        "sound": true
+      },
+      {
+        "title": "Palipop - Fizzy Drink",
+        "webm": "/assets/video/shots/palipop.webm",
+        "sound": true
+      },
+      {
+        "title": "Lamp",
+        "webm": "/assets/video/shots/lap-1080x1350-1.webm",
+        "sound": true
+      }
+    ]
+  }
+}

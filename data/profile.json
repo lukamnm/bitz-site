@@ -1,85 +1,106 @@
 {
-  "profile": {
-    "lead": {
-      "en": "This is the portfolio of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, working under the name Bitz. For 10+ years the work has covered branding, graphic design, 3D, motion, and UI/UX - not as separate freelance gigs, but as one connected skill set applied to real products and real brands.",
-      "ge": "10+ წლიანი გამოცდილება დიზაინის სფეროში, რომელიც აერთიანებს ვიზუალური დიზაინის, ბრენდინგის, UI/UX დიზაინის და 3D ვიზუალიზაციის კომპეტენციებს."
-    },
-    "meta": {
-      "en": "Adobe Certified Professional - full-stack designer - Tbilisi",
-      "ge": "Adobe Certified Professional - full-stack დიზაინერი - თბილისი"
-    },
-    "links": [
-      {
-        "label": {
-          "en": "View CV",
-          "ge": "ნახე CV"
-        },
-        "href": {
-          "en": "assets/docs/resume-en-2026.pdf",
-          "ge": "assets/docs/resume-ge-2026.pdf"
-        }
-      },
-      {
-        "label": {
-          "en": "LinkedIn",
-          "ge": "LinkedIn"
-        },
-        "href": "https://www.linkedin.com/in/bitzzz/"
-      },
-      {
-        "label": {
-          "en": "Facebook",
-          "ge": "Facebook"
-        },
-        "href": "https://www.facebook.com/gabeatzzz/"
-      },
-      {
-        "label": {
-          "en": "Email",
-          "ge": "ელ.ფოსტა"
-        },
-        "href": "mailto:chat@bitz.ge"
-      }
-    ]
+ "profile": {
+  "lead": {
+   "en": "This is the portfolio of Luka Gabidzashvili, a full-stack designer based in Tbilisi, Georgia, working under the name Bitz. For 10+ years the work has covered branding, graphic design, 3D, motion, and UI/UX - not as separate freelance gigs, but as one connected skill set applied to real products and real brands.",
+   "ge": "10+ წლიანი გამოცდილება დიზაინის სფეროში, რომელიც აერთიანებს ვიზუალური დიზაინის, ბრენდინგის, UI/UX დიზაინის და 3D ვიზუალიზაციის კომპეტენციებს."
   },
-  "contact": {
-    "lead": {
-      "en": "Looking to hire a designer in Tbilisi for your brand, product, or next campaign? You're in the right place.",
-      "ge": "დამიკავშირდი ნებისმერი ფორმით."
+  "meta": {
+   "en": "Adobe Certified Professional - full-stack designer - Tbilisi",
+   "ge": "Adobe Certified Professional - full-stack დიზაინერი - თბილისი"
+  },
+  "links": [
+   {
+    "label": {
+     "en": "View CV",
+     "ge": "ნახე CV"
     },
-    "meta": {
-      "en": "chat@bitz.ge - +995 595 38 01 02",
-      "ge": "chat@bitz.ge - +995 595 38 01 02"
+    "href": {
+     "en": "assets/docs/resume-en-2026.pdf",
+     "ge": "assets/docs/resume-ge-2026.pdf"
+    }
+   },
+   {
+    "label": {
+     "en": "LinkedIn",
+     "ge": "LinkedIn"
     },
-    "links": [
-      {
-        "label": {
-          "en": "Email",
-          "ge": "ელ.ფოსტა"
-        },
-        "href": "mailto:chat@bitz.ge"
-      },
-      {
-        "label": {
-          "en": "Call",
-          "ge": "დარეკვა"
-        },
-        "href": "tel:+995 595380102"
-      },
-      {
-        "label": {
-          "en": "LinkedIn",
-          "ge": "LinkedIn"
-        },
-        "href": "https://www.linkedin.com/in/bitzzz/"
-      },
-      {
-        "label": {
-          "en": "Facebook",
-          "ge": "Facebook"
-        },
-        "href": "https://www.facebook.com/gabeatzzz/"
-      }
-    ]
-  }
+    "href": {
+     "en": "https://www.linkedin.com/in/bitzzz/",
+     "ge": "https://www.linkedin.com/in/bitzzz/"
+    }
+   },
+   {
+    "label": {
+     "en": "Facebook",
+     "ge": "Facebook"
+    },
+    "href": {
+     "en": "https://www.facebook.com/gabeatzzz/",
+     "ge": "https://www.facebook.com/gabeatzzz/"
+    }
+   },
+   {
+    "label": {
+     "en": "Email",
+     "ge": "ელ.ფოსტა"
+    },
+    "href": {
+     "en": "mailto:chat@bitz.ge",
+     "ge": "mailto:chat@bitz.ge"
+    }
+   }
+  ]
+ },
+ "contact": {
+  "lead": {
+   "en": "Looking to hire a designer in Tbilisi for your brand, product, or next campaign? You're in the right place.",
+   "ge": "დამიკავშირდი ნებისმერი ფორმით."
+  },
+  "meta": {
+   "en": "chat@bitz.ge - +995 595 38 01 02",
+   "ge": "chat@bitz.ge - +995 595 38 01 02"
+  },
+  "links": [
+   {
+    "label": {
+     "en": "Email",
+     "ge": "ელ.ფოსტა"
+    },
+    "href": {
+     "en": "mailto:chat@bitz.ge",
+     "ge": "mailto:chat@bitz.ge"
+    }
+   },
+   {
+    "label": {
+     "en": "Call",
+     "ge": "დარეკვა"
+    },
+    "href": {
+     "en": "tel:+995 595380102",
+     "ge": "tel:+995 595380102"
+    }
+   },
+   {
+    "label": {
+     "en": "LinkedIn",
+     "ge": "LinkedIn"
+    },
+    "href": {
+     "en": "https://www.linkedin.com/in/bitzzz/",
+     "ge": "https://www.linkedin.com/in/bitzzz/"
+    }
+   },
+   {
+    "label": {
+     "en": "Facebook",
+     "ge": "Facebook"
+    },
+    "href": {
+     "en": "https://www.facebook.com/gabeatzzz/",
+     "ge": "https://www.facebook.com/gabeatzzz/"
+    }
+   }
+  ]
+ }
 }
