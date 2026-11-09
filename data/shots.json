@@ -9,7 +9,10 @@
     "en": "3D/VFX",
     "ge": "3D/VFX"
    },
-   "ring": "assets/shots/Frame-4.png",
+   "bubble": {
+    "img": "assets/shots/auto/3d0f9f33be.webp",
+    "loop": "assets/shots/auto/3d0f9f33be.mp4"
+   },
    "items": [
     {
      "id": "auto-signs-last-grain_1",
@@ -78,7 +81,10 @@
     "en": "Branding",
     "ge": "ბრენდინგი"
    },
-   "ring": "assets/shots/Frame-2.png",
+   "bubble": {
+    "img": "assets/shots/auto/b7ce49ddd7.webp",
+    "loop": "assets/shots/auto/b7ce49ddd7.mp4"
+   },
    "items": [
     {
      "id": "logo-reveal",
@@ -102,7 +108,10 @@
     "en": "Product",
     "ge": "პროდუქტი"
    },
-   "ring": "assets/shots/Frame-1.png",
+   "bubble": {
+    "img": "assets/shots/auto/832a4bf5f4.webp",
+    "loop": "assets/shots/auto/832a4bf5f4.mp4"
+   },
    "items": [
     {
      "id": "with-sound",
@@ -137,7 +146,10 @@
     "en": "Motion",
     "ge": "ანიმაცია"
    },
-   "ring": "assets/shots/Frame-3.png",
+   "bubble": {
+    "img": "assets/shots/auto/fe38210d33.webp",
+    "loop": "assets/shots/auto/fe38210d33.mp4"
+   },
    "items": [
     {
      "id": "minerals",

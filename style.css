@@ -59,7 +59,7 @@ a{color:inherit;text-decoration:none}
 /* hovers as measured on the reference: labels dim to 60% in 300 ms; the inactive toggle rests at 50% and rises to 100% in 500 ms */
 .nav a,.nav button{transition:opacity .3s ease-out;position:relative}
 .nav a::before,.nav button::before{content:"";position:absolute;inset:-1vw}   /* generous hit area, like the reference's before:-inset-15 */
-.nav a:hover,.nav button[aria-pressed="true"]:hover,.nav button:not([aria-pressed]):hover{opacity:.6}
+.nav a:hover,.nav button[aria-pressed="true"]:hover,.nav button:not([aria-pressed]):not(.bub):hover{opacity:.6}
 .nav button[aria-pressed="false"]{opacity:.5;transition-duration:.5s}
 .nav button[aria-pressed="false"]:hover{opacity:1}
 .nav .sl{opacity:.5}
@@ -81,11 +81,23 @@ a{color:inherit;text-decoration:none}
 .discIn .links a:hover{opacity:.6}
 /* shot bubbles: the four group rings, top centre (the live site's header row) */
 .tc{top:calc(var(--insY) - 1vw);left:50%;transform:translateX(-50%);gap:1.2vw}
-.bub{position:relative;width:clamp(36px,2.9vw,64px);height:clamp(36px,2.9vw,64px);border-radius:50%;padding:0;border:0;background:#000;cursor:pointer;transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
-.bub img{width:100%;height:100%;border-radius:50%;display:block;object-fit:cover}
-.bub span{position:absolute;left:50%;top:100%;transform:translate(-50%,.4vw);white-space:nowrap;opacity:0;transition:opacity .3s,transform .4s;pointer-events:none}
+/* a bubble = a thin rim + a gap + the round preview (still, and a silent loop on hover); bright rim = clips not watched yet, dim = seen */
+.nav .bub{position:relative;width:clamp(40px,3.2vw,72px);aspect-ratio:1;border-radius:50%;padding:0;border:0;background:none;color:inherit;cursor:pointer;
+  transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.bub .rim{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);overflow:visible;pointer-events:none}
+.bub .rim circle{fill:none;stroke:#fff;stroke-width:1.5px;vector-effect:non-scaling-stroke;stroke-dasharray:100;stroke-dashoffset:0;transition:stroke .6s ease-out,stroke-width .3s}
+.bub.seen .rim circle{stroke:rgba(255,255,255,.28)}
+.bub .face{position:absolute;inset:13%;border-radius:50%;overflow:hidden;background:#111;isolation:isolate}
+.bub .face img,.bub .face video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .35s ease-out}
+.bub .face video{opacity:0}
+.bub.live .face video{opacity:1}
+.bub:hover .face img,.bub:hover .face video{transform:scale(1.08)}
+.bub.seen .face img{opacity:.75}
+.bub.seen:hover .face img{opacity:1}
+.bub .lbl{position:absolute;left:50%;top:100%;transform:translate(-50%,.4vw);white-space:nowrap;opacity:0;transition:opacity .3s,transform .4s;pointer-events:none}
 .bub:hover{transform:translateY(-.26vw)}
-.bub:hover span{opacity:1;transform:translate(-50%,.13vw)}
+.bub:hover .rim circle{stroke-width:2px}
+.bub:hover .lbl{opacity:1;transform:translate(-50%,.13vw)}
 .bub.on{transform:scale(.9);opacity:.6}
 
 /* ---------- shots viewer HUD (the sheet and the video are GL): dark ink on the sheet's white bottom band */
@@ -229,8 +241,8 @@ body.lock .nav{pointer-events:none}
   .disc{width:min(86vw,420px);background:#000;border-radius:50%;opacity:0;transition:opacity .5s}   /* no GL lens on mobile: a plain black disc */
   .disc.on{opacity:1}
   .tc{top:52px}
-  .bub{width:36px;height:36px}
-  .bub span{display:none}
+  .nav .bub{width:36px;height:auto}
+  .bub .lbl{display:none}
   #close{position:fixed;top:auto;bottom:calc(1.5vh + 14px);right:calc(3vw + 14px)}
 }
 

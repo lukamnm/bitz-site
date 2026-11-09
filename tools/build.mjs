@@ -8,6 +8,7 @@
 // usage: node tools/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { bubbleFor, firstClip } from './bubbles.mjs';
 
 const read = f => JSON.parse(fs.readFileSync(f, 'utf8'));
 const write = (f, v) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(v, null, 1) + '\n'); };
@@ -77,7 +78,10 @@ for (const file of fs.existsSync('content/shots') ? fs.readdirSync('content/shot
     video: pick({ webm: rel(it.webm), mp4: rel(it.mp4) }, ['webm', 'mp4']),
   }));
   if (!items.length) continue;
-  groups.push({ order: has(en.order) ? +en.order : 999, title: { en: en.title || '', ge: ka.title || null }, label: { en: en.label || en.title || '', ge: ka.label || null }, ring: rel(en.ring), items });
+  // bubble: the still + hover loop made from the first clip by tools/bubbles.mjs; a "Bubble image" set in the admin replaces the still
+  const b = bubbleFor(firstClip(en)), made = b && fs.existsSync(b.img) && fs.existsSync(b.loop);
+  const bubble = pick({ img: rel(en.ring) || (made ? b.img : null), loop: made ? b.loop : null }, ['img', 'loop']);
+  groups.push({ order: has(en.order) ? +en.order : 999, title: { en: en.title || '', ge: ka.title || null }, label: { en: en.label || en.title || '', ge: ka.label || null }, bubble, items });
 }
 groups.sort((a, b) => a.order - b.order);
 write('data/shots.json', { groups: groups.map(({ order, ...g }) => g) });

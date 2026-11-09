@@ -8,7 +8,9 @@ languages (year, images, order...) live only under `en`.
 content/
   projects/<slug>/project.json   one project: title, short description, sections, chips, cover, gallery, home-strip card, search texts
   blog/<slug>/post.json          one blog post: title, date, cover, excerpt, the article as Markdown (## headings start sections), search texts
-  shots/<group>.json             one shot group = one bubble at the top of the home page: name, label, bubble image, its 4:5 clips
+  shots/<group>.json             one shot group = one bubble at the top of the home page: name, label, its 4:5 clips
+                                 (the bubble's still + hover loop are made from the FIRST clip by tools/bubbles.mjs into
+                                 assets/shots/auto/; an optional "Bubble image" replaces the still)
   pages/profile.json             the text and links in the Profile circle
   pages/contact.json             the text and links in the Contact circle
   wp-export/                     the raw WordPress export this all came from (media/ is not in git); history only

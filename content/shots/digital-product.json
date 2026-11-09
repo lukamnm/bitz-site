@@ -3,7 +3,6 @@
     "title": "Digital Product",
     "label": "Product",
     "order": 2,
-    "ring": "/assets/shots/Frame-1.png",
     "items": [
       {
         "title": "Hero UI interative element",

@@ -152,9 +152,10 @@ collections:
       - { name: title, label: Group name, widget: string, i18n: true }
       - { name: label, label: Short label (shown under the bubble), widget: string, i18n: true }
       - { name: order, label: Order, widget: number, value_type: int, default: 50 }
-      - { name: ring, label: Bubble image (square), widget: image, media_folder: /assets/shots, public_folder: /assets/shots }
+      - { name: ring, label: Bubble image (optional), widget: image, required: false, media_folder: /assets/shots, public_folder: /assets/shots, hint: 'Leave empty: the bubble shows a frame of the first clip and plays it on hover, made automatically on publish. Set a square image only to replace that frame.' }
       - name: items
         label: Clips
+        hint: 'The first clip is the one the bubble previews. Drag a clip to the top to change it.'
         label_singular: Clip
         widget: list
         i18n: duplicate

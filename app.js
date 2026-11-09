@@ -1279,10 +1279,35 @@ $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== n
 const story = { open: false, g: 0, i: 0, muted: false, busy: false, sheet: null, rad: 0 };
 const storyEl = $('#story'), storyHud = $('#storyHud'), vid = $('#shotVid'), bar = $('#storyBar');
 const STORY = { h: 0.88, inset: 0.024, band: 0.08, aspect: 0.8 };     // of vh: sheet height, side / top inset, bottom band; the clip is 4:5
+// Bubbles (Instagram-like): a still from the group's first clip inside a thin rim; the rim is bright while the group has clips this
+// browser has not watched and dims once they are seen (a new clip makes it bright again); hovering plays a 3 s silent loop of the clip.
+const SEEN_KEY = 'bitz.shots.seen';
+const shotSig = g => g.items.map(it => it.id).join('|');
+const seenMap = () => { try { return JSON.parse(localStorage.getItem(SEEN_KEY)) || {}; } catch { return {}; } };
+function markSeen(gi) {
+  const g = shotsData.groups[gi]; if (!g) return;
+  const m = seenMap(); if (m[g.title.en] === shotSig(g)) return;
+  m[g.title.en] = shotSig(g); try { localStorage.setItem(SEEN_KEY, JSON.stringify(m)); } catch {}
+  document.querySelector(`.bub[data-g="${gi}"]`)?.classList.add('seen');
+}
 {
-  const nav = $('#shotsNav');
-  nav.innerHTML = shotsData.groups.map((g, i) => `<button type="button" class="bub" data-g="${i}"><img src="${g.ring}" alt=""><span data-shot-label="${i}">${g.label.en}</span></button>`).join('');
+  const nav = $('#shotsNav'), seen = seenMap();
+  nav.innerHTML = shotsData.groups.map((g, i) => `<button type="button" class="bub${seen[g.title.en] === shotSig(g) ? ' seen' : ''}" data-g="${i}">`
+    + `<svg class="rim" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48.5" pathLength="100"/></svg>`
+    + `<span class="face">${g.bubble?.img ? `<img src="${g.bubble.img}" alt="">` : ''}${g.bubble?.loop ? `<video muted loop playsinline preload="none" data-src="${g.bubble.loop}"></video>` : ''}</span>`
+    + `<span class="lbl" data-shot-label="${i}">${g.label.en}</span></button>`).join('');
   nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null || hole.open || swapping) return; openStory(+b.dataset.g, b); });
+  for (const b of nav.querySelectorAll('.bub')) {
+    const v = b.querySelector('video'); if (!v) continue;
+    b.addEventListener('pointerenter', e => {
+      if (e.pointerType !== 'mouse' || RM) return;
+      if (!v.src) v.src = v.dataset.src;
+      v.currentTime = 0; v.play().then(() => b.classList.add('live')).catch(() => {});
+    });
+    b.addEventListener('pointerleave', () => { b.classList.remove('live'); setTimeout(() => { if (!b.classList.contains('live')) v.pause(); }, 400); });
+  }
+  // the rims draw in one after another once the page is up
+  if (!RM) gsap.fromTo('.bub .rim circle', { strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 1.1, ease: 'power3.inOut', stagger: 0.12, delay: 0.6 });
 }
 function shotLabels() { for (const el of document.querySelectorAll('[data-shot-label]')) el.textContent = L(shotsData.groups[+el.dataset.shotLabel].label); }
 // the sheet's target rect in CSS px, centred; the clip rect inside it
@@ -1321,7 +1346,8 @@ function showShot(gi, ii, keepTime = false) {
     vid.load(); vid.muted = story.muted;
     vid.play().catch(() => { vid.muted = true; story.muted = true; $('#shotMute').setAttribute('aria-pressed', 'true'); vid.play().catch(() => {}); });
   }
-  $('#shotTitle').textContent = L(it.title); $('#storyGroup').textContent = L(g.label); $('#storyRing').src = g.ring;
+  $('#shotTitle').textContent = L(it.title); $('#storyGroup').textContent = L(g.label); $('#storyRing').src = g.bubble?.img || '';
+  markSeen(gi);
   bar.innerHTML = g.items.map((_, k) => `<i style="--p:${k < ii ? 1 : 0}"></i>`).join('');
   document.querySelectorAll('.bub').forEach(b => b.classList.toggle('on', +b.dataset.g === gi));
 }
