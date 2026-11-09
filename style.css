@@ -1,0 +1,180 @@
+@font-face{font-family:Moncero;src:url(assets/fonts/Moncero-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Moncero;src:url(assets/fonts/Moncero-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:Moncero;src:url(assets/fonts/Moncero-Black.woff2) format("woff2");font-weight:900;font-display:swap}
+:root{
+  --bg:#000; --fg:#fff; --mut:#8a8a8a;
+  --panel:#fff; --ink:#0a0a0a; --ink2:#5a5a5a; --line:#e6e6e6; --chip:#f2f2f2;
+  --r:24px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--fg)}
+body{
+  font-family:Moncero,Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;font-size:14px;overflow:hidden;
+}
+button{font:inherit}
+a{color:inherit;text-decoration:none}
+
+/* ---------- canvas + projected labels */
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+#gl.grab{cursor:grabbing}
+#gl.pt{cursor:pointer}
+#tags{position:fixed;inset:0;pointer-events:none;z-index:5}
+.tag{
+  position:absolute;left:0;top:0;display:flex;justify-content:space-between;align-items:center;
+  padding:0;font-size:12.5px;white-space:nowrap;will-change:transform,opacity;opacity:0;
+  text-shadow:0 1px 12px rgba(0,0,0,.75);
+}
+.tag{overflow:hidden}
+.tag span{display:flex;flex-direction:column;gap:3px;line-height:1.1;min-width:0;padding-right:10px}
+.tag b{font-weight:500;font-size:clamp(15px,1.5vw,24px);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tag small{font-size:11px;opacity:.7;letter-spacing:.02em}
+.tag i{
+  font-style:normal;width:28px;height:28px;border-radius:50%;background:#fff;color:#000;
+  display:grid;place-items:center;font-size:14px;flex:none;text-shadow:none;align-self:flex-end;
+}
+.sc .nm{display:flex;flex-direction:column;gap:2px}
+.sc .nm b{font-weight:500;font-size:15px}
+.sc .nm small{font-size:11px;opacity:.7}
+
+/* ---------- corner nav */
+.nav{
+  position:fixed;z-index:20;display:flex;gap:14px;align-items:center;
+  font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;   /* reference: 10.23 px at 1534 wide = .6667vw, no tracking */
+}
+/* reference insets: 82 px from the sides and 41 px from top/bottom at 1534x703, 102/51 at 1918x880 = 5.33vw / 5.83vh */
+.tl{top:5.83vh;left:5.33vw}.tr{top:5.83vh;right:5.33vw}.bl{bottom:5.83vh;left:5.33vw}.br{bottom:5.83vh;right:5.33vw}
+.bl{gap:.45em}                                    /* "Featured / Full" sits tight around its slash, like the reference */
+.logo img{display:block;height:24px;width:auto;filter:invert(1);margin-top:-5px}   /* its centre on the label line (24 px mark vs 14 px text) */
+.nav button{
+  color:inherit;background:none;border:0;letter-spacing:inherit;text-transform:inherit;
+  cursor:pointer;padding:0;
+}
+/* hovers as measured on the reference: labels dim to 60% in 300 ms; the inactive toggle rests at 50% and rises to 100% in 500 ms */
+.nav a,.nav button{transition:opacity .3s ease-out;position:relative}
+.nav a::before,.nav button::before{content:"";position:absolute;inset:-15px}   /* generous hit area, like the reference's before:-inset-15 */
+.nav a:hover,.nav button[aria-pressed="true"]:hover{opacity:.6}
+.nav button[aria-pressed="false"]{opacity:.5;transition-duration:.5s}
+.nav button[aria-pressed="false"]:hover{opacity:1}
+.nav .sl{opacity:.5}
+
+/* ---------- panel (project detail) */
+#dim{position:fixed;inset:0;background:#000;opacity:0;pointer-events:none;z-index:30}
+#ghost{position:fixed;left:0;top:0;object-fit:cover;border-radius:var(--r);opacity:0;pointer-events:none;z-index:50}
+#panel{
+  position:fixed;left:0;top:0;display:none;grid-template-columns:41.5% 1fr;
+  background:var(--panel);color:var(--ink);border-radius:var(--r);overflow:hidden;z-index:40;
+  will-change:left,top,width,height;color-scheme:light;
+}
+#panel.on{display:grid}
+.fade{opacity:0}
+.pl{
+  padding:48px 36px 40px;display:flex;flex-direction:column;gap:22px;
+  align-self:start;position:sticky;top:0;min-width:0;
+}
+.pl h1{font-size:clamp(28px,3vw,58px);font-weight:400;letter-spacing:-.05em;line-height:1.15;text-wrap:balance}   /* reference: 3vw, -0.05em */
+.pl p{font-size:clamp(14px,1.0667vw,20px);line-height:1.4;letter-spacing:-.035em;color:var(--ink);max-width:40ch}   /* reference: 1.0667vw */
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;align-items:center}
+.chips li{border:0;background:var(--chip);border-radius:999px;padding:8px 14px;color:var(--ink)}
+.chips li.lnk{padding:0;background:#111}
+.chips li.lnk a{display:grid;place-items:center;width:30px;height:30px;color:#fff;font-size:12px;text-decoration:none}
+.pr{
+  overflow-y:auto;padding:0 11% 0 0;             /* right margin keeps the X clear of the images (reference: ~40 px gap); vertical space lives in .prc so the loop period is exact */
+  overscroll-behavior:contain;scrollbar-width:none;min-width:0;
+}
+.pr::-webkit-scrollbar{display:none}
+.prc{display:flex;flex-direction:column;gap:4vw;padding-top:40px}     /* reference inner page: ~75 px of white between images at 1918 wide */
+.prc > *{flex:none}
+#pBody{display:flex;flex-direction:column;gap:4vw}   /* the same white gap between every image and text block (they were touching inside the body) */
+#pBody > *{flex:none}
+.pr figure{
+  margin:0;border-radius:0;overflow:hidden;background:#eee;      /* natural image height, no crop (like the current bitz.ge galleries) */
+  opacity:0;transform:translateY(28px) scale(1.03);
+  transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1.2s cubic-bezier(.2,.7,.2,1);
+}
+.pr figure.in{opacity:1;transform:none}
+.pr figure{position:relative}
+/* desktop: the panel is drawn in WebGL (white card + image and text planes) so the cursor trail touches all of it;
+   the DOM stays for layout, scrolling and hit areas but is invisible */
+#panel.gl{background:transparent}
+#panel.gl .pr figure{background:transparent}
+#panel.gl .pr figure img,#panel.gl .pl,#panel.gl .pr .txt{visibility:hidden}
+#panel.gl .pl .lnk a{visibility:visible;opacity:0}   /* the live-project link stays clickable */
+.pr figure img{will-change:transform;transform-origin:50% 50%}
+/* bottom-left ring (reference): scroll progress of the looping gallery; while the hero loads it spins instead */
+#ring{position:absolute;left:30px;bottom:26px;width:20px;height:20px;overflow:visible;z-index:2}
+#ring circle{fill:none;stroke-width:2.2}
+#ring .trk{stroke:#ddd}
+#ring .arc,#ring .gho{stroke:#111;stroke-linecap:round;stroke-dasharray:100.53;stroke-dashoffset:100.53;transform:rotate(-90deg);transform-origin:50% 50%}
+#ring .gho{opacity:0}
+#ring.on .arc{stroke-dasharray:24 100.53;stroke-dashoffset:0;animation:spin 1s linear infinite}
+@keyframes spin{from{transform:rotate(-90deg)}to{transform:rotate(270deg)}}
+.dup{display:flex;flex-direction:column;gap:4vw;overflow:hidden;flex:none;margin-top:max(0px,40px - 4vw)}   /* the loop's second copy: one viewport tall, so the scroll range is exactly one period */
+.dup > *{flex:none}   /* the fixed height must clip the copy, not squeeze it */
+.sliver{   /* invisible hit areas over the GL side sheets */
+  position:fixed;top:11vh;height:78vh;width:34px;border:0;padding:0;background:transparent;cursor:pointer;z-index:35;
+  opacity:0;pointer-events:none;
+}
+.sliver.prev{left:0}
+.sliver.next{right:0}
+.sliver.on{opacity:1;pointer-events:auto}
+.pr img{display:block;width:100%;height:auto;max-width:100%}
+.pr .txt{padding:22px 0 8px;max-width:60ch;font-size:clamp(13px,.9333vw,18px);line-height:1.4;letter-spacing:-.02em;color:var(--ink2)}   /* reference body: .9333vw */
+.pr .txt h3{font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin-bottom:8px;font-weight:500}
+#close{
+  position:absolute;top:22px;right:24px;width:40px;height:40px;border-radius:50%;border:0;
+  background:#111;color:#fff;cursor:pointer;z-index:2;font-size:20px;line-height:1;display:grid;place-items:center;
+}
+#close{overflow:hidden}
+#close .pill{position:absolute;inset:-50%;border-radius:50%;background:#f4f4f4;transform:scale(0);pointer-events:none}   /* 2x disc: covers the button from any pointer position */
+#close::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1.5px #111;opacity:0;transition:opacity .3s;pointer-events:none}
+#close:hover::after{opacity:1}
+#close .mk{position:relative;display:grid;place-items:center;width:100%;height:100%;mix-blend-mode:difference;color:#fff;pointer-events:none}
+#close .mk i{grid-area:1/1;display:block;width:12px;height:12px;position:relative;will-change:transform}   /* drawn cross: two bars, dead centre (a glyph sits off its box) */
+#close .mk i::before,#close .mk i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
+#close .mk i::after{transform:translate(-50%,-50%) rotate(-45deg)}
+body.lock .nav{pointer-events:none}
+
+/* ---------- preloader */
+#pre{
+  position:fixed;inset:0;background:#000;display:grid;place-items:center;z-index:100;
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+}
+#pre b{font-weight:400;opacity:.45;margin-left:1em;font-variant-numeric:tabular-nums}
+
+/* ---------- mobile: vertical stack replaces the 3D ring */
+#stack{display:none}
+@media (max-width:767px){
+  html,body{overflow:auto}
+  body.lock{overflow:hidden}
+  #gl,#tags{display:none}
+  #stack{
+    display:flex;flex-direction:column;gap:14px;list-style:none;
+    padding:72px max(14px,env(safe-area-inset-right,0px)) 84px max(14px,env(safe-area-inset-left,0px));
+  }
+  .sc{
+    position:relative;display:block;width:100%;aspect-ratio:16/10;border:0;padding:0;
+    border-radius:10px;overflow:hidden;background:#111;cursor:pointer;text-align:left;color:#fff;
+  }
+  .sc img{width:100%;height:100%;object-fit:cover;display:block}
+  .sc .nm{position:absolute;left:12px;bottom:10px;font-size:13px;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+  .sc i{
+    position:absolute;right:10px;bottom:10px;width:22px;height:22px;border-radius:50%;
+    background:#fff;color:#000;display:grid;place-items:center;font-style:normal;font-size:12px;
+  }
+  .tl,.tr{top:16px}.bl,.br{bottom:16px}
+  .tl,.bl{left:max(16px,env(safe-area-inset-left,0px))}
+  .tr,.br{right:max(16px,env(safe-area-inset-right,0px))}
+  #panel{grid-template-columns:1fr;overflow-y:auto;overscroll-behavior:contain}
+  .pl{position:static;padding:28px 20px 10px}
+  .pl h1{font-size:26px}
+  .pr{overflow:visible;padding:0 20px 90px}
+  .prc{padding-top:0}
+  .sliver,#ring{display:none}
+  #close{position:fixed;top:auto;bottom:calc(1.5vh + 14px);right:calc(3vw + 14px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .nav button{transition:none}
+}

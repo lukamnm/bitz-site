@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>bitz - Luka Gabidzashvili</title>
+<meta name="description" content="bitz - design portfolio of Luka Gabidzashvili. Branding, 3D, video and web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js"}}</script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+</head>
+<body>
+<div id="pre" aria-hidden="true">bitz <b>0</b></div>
+
+<canvas id="gl" aria-label="Project carousel"></canvas>
+<div id="tags" aria-hidden="true"></div>
+<ul id="stack"></ul>
+
+<nav class="nav tl"><a href="#" id="home" class="logo" aria-label="bitz - home"><img src="assets/img/logo.svg" alt="bitz"></a></nav>
+<nav class="nav tr"><a href="#profile">Profile</a><a href="#ge" lang="ka">GE</a></nav>
+<nav class="nav bl">
+  <button id="mF" aria-pressed="true">Featured</button><span class="sl">/</span><button id="mA" aria-pressed="false">Full</button>
+</nav>
+<nav class="nav br"><a href="#contact">Contact</a></nav>
+
+<div id="dim"></div>
+<img id="ghost" alt="">
+
+<button class="sliver prev" id="prevP" aria-label="Previous project"></button>
+<button class="sliver next" id="nextP" aria-label="Next project"></button>
+<section id="panel" role="dialog" aria-modal="true" aria-labelledby="pTitle">
+  <button id="close" aria-label="Close project"><span class="pill"></span><span class="mk"><i></i><i></i></span></button>
+  <svg id="ring" viewBox="0 0 36 36" aria-hidden="true"><circle class="trk" cx="18" cy="18" r="16"/><circle class="gho" cx="18" cy="18" r="16"/><circle class="arc" cx="18" cy="18" r="16"/></svg>
+  <div class="pl fade">
+    <h1 id="pTitle"></h1>
+    <p id="pBlurb"></p>
+    <ul class="chips" id="pChips"></ul>
+  </div>
+  <div class="pr fade" id="pScroll">
+    <div class="prc" id="pContent">
+      <figure class="in"><img id="pHero" alt=""></figure>
+      <div id="pBody"></div>
+    </div>
+  </div>
+</section>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
