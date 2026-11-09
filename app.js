@@ -243,10 +243,13 @@ function progress() {
 }
 function dismissPre() {
   if (preDone) return; preDone = true;
-  if (RM) $('#pre').style.display = 'none';
-  else gsap.to('#pre', { opacity: 0, duration: 0.6, delay: 0.15, ease: 'power2.out', onComplete: () => ($('#pre').style.display = 'none') });
-  if (!S.mobile) intro();
-  if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
+  const go = () => {                                   // the loader's letters are retracting: the black screen lifts with them and the strip slides in
+    if (RM) $('#pre').style.display = 'none';
+    else gsap.to('#pre', { opacity: 0, duration: 0.85, delay: 0.25, ease: 'power2.inOut', onComplete: () => ($('#pre').style.display = 'none') });
+    if (!S.mobile) intro();
+    if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
+  };
+  if (window.bitzLoader) bitzLoader.exit(go); else go();
 }
 setTimeout(dismissPre, 4000);
 

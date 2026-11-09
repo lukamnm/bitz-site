@@ -29,7 +29,7 @@ function stage(outDir) {
   };
   stamp('app.js', /(?<=['"(])((?:\.\/)?(?:assets\/vendor\/[\w.-]+\.js|data\/[\w-]+\.json))(?=['")?])/g);
   stamp('style.css', /(?<=url\()((?:assets\/fonts\/[\w.-]+\.woff2))(?=\))/g);
-  stamp('index.html', /(?<=["'])((?:\.\/)?(?:app\.js|style\.css|assets\/img\/logo\.svg|assets\/vendor\/[\w.-]+\.js))(?=["'])/g);   // app.js last: its hash includes the stamped data paths
+  stamp('index.html', /(?<=["'])((?:\.\/)?(?:app\.js|style\.css|assets\/img\/logo\.svg|assets\/vendor\/[\w.-]+\.js|assets\/loader\/[\w.-]+\.json))(?=["'])/g);   // + the loader animation   // app.js last: its hash includes the stamped data paths
   // a real page per address (same stamped index.html, each with its own head and readable text), sitemap, robots, 404, .htaccess
   execFileSync(process.execPath, [path.join(__dirname, 'pages.mjs'), outDir], { cwd: SITE, stdio: 'inherit' });
   return outDir;
