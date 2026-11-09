@@ -137,4 +137,34 @@ for (const slug of ['about', 'contact']) {
   write(`content/pages/${slug}.json`, out);
   console.log(`page ${slug}: en ${out.blocks.en?.length || 0} blocks, ge ${out.blocks.ge?.length || 0} blocks, images ${out.images.en?.length || 0}`);
 }
+// ---------------------------------------------------------------- profile + contact overlays (the holes), from the About and Contact pages
+{
+  const about = read('content/pages/about.json'), contact = read('content/pages/contact.json');
+  const sentences = (s, n) => (s.match(/[^.!?]+[.!?]+(\s|$)/g) || [s]).slice(0, n).join('').trim();
+  const paras = l => about.blocks[l].filter(b => b.tag === 'p' && b.text.length > 120).map(b => b.text);
+  const cv = l => about.blocks[l].find(b => b.href && /\.pdf$/i.test(b.href));
+  const link = (l, re) => contact.blocks[l].find(b => b.href && re.test(b.href));
+  const profile = {
+    lead: { en: sentences(paras('en')[0] || '', 2), ge: [paras('ge')[0] || '', sentences(paras('ge')[1] || '', 1)].filter(Boolean).join(' ') },
+    meta: { en: 'Adobe Certified Professional - full-stack designer - Tbilisi', ge: 'Adobe Certified Professional - full-stack დიზაინერი - თბილისი' },   // GE wording to be signed off by Luka
+    links: [
+      { label: { en: cv('en')?.text || 'View CV', ge: cv('ge')?.text || 'ნახე CV' }, href: { en: 'assets/docs/' + path.basename(cv('en')?.href || 'resume-en-2026.pdf'), ge: 'assets/docs/' + path.basename(cv('ge')?.href || 'resume-ge-2026.pdf') } },
+      { label: { en: 'LinkedIn', ge: 'LinkedIn' }, href: link('en', /linkedin/)?.href },
+      { label: { en: 'Facebook', ge: 'Facebook' }, href: link('en', /facebook/)?.href },
+      { label: { en: 'Email', ge: contact.blocks.ge.find(b => b.text === 'ელ.ფოსტა')?.text || 'Email' }, href: link('en', /^mailto:/)?.href },
+    ].filter(l => l.href),
+  };
+  const contactO = {
+    lead: { en: contact.blocks.en[0]?.text || '', ge: contact.blocks.ge[0]?.text || '' },
+    meta: { en: link('en', /^mailto:/)?.text + ' - ' + (link('en', /^tel:/)?.text || ''), ge: link('ge', /^mailto:/)?.text + ' - ' + (link('ge', /^tel:/)?.text || '') },
+    links: [
+      { label: { en: 'Email', ge: 'ელ.ფოსტა' }, href: link('en', /^mailto:/)?.href },
+      { label: { en: 'Call', ge: 'დარეკვა' }, href: link('en', /^tel:/)?.href },
+      { label: { en: 'LinkedIn', ge: 'LinkedIn' }, href: link('en', /linkedin/)?.href },
+      { label: { en: 'Facebook', ge: 'Facebook' }, href: link('en', /facebook/)?.href },
+    ].filter(l => l.href),
+  };
+  write('data/profile.json', { profile, contact: contactO });
+  console.log('profile lead en', profile.lead.en.length, 'chars, ge', profile.lead.ge.length, 'chars;', profile.links.length, 'links');
+}
 console.log('done');

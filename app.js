@@ -6,6 +6,7 @@ const RM = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSear
 const MQ = matchMedia('(max-width: 767px)');
 
 const data = await (await fetch('data/projects.json')).json();
+const overlays = await fetch('data/profile.json').then(r => r.json()).catch(() => null);   // Profile / Contact hole content (both languages)
 try { await Promise.all([document.fonts.load('500 40px Moncero'), document.fonts.load('400 20px Moncero')]); } catch {}   // labels are baked into textures
 let mode = 'featured';
 const items = () => (mode === 'featured' ? data.filter(p => p.featured) : data);
@@ -19,7 +20,8 @@ const T = p => {                                     // the project's texts in t
 };
 function applyLang() {
   document.documentElement.lang = lang === 'ge' ? 'ka' : 'en';
-  for (const el of document.querySelectorAll('[data-ui]')) el.textContent = UI[lang][el.dataset.ui];
+  for (const el of document.querySelectorAll('[data-ui]')) el.textContent = (hole.open && hole.what === el.dataset.ui) ? UI[lang].close : UI[lang][el.dataset.ui];
+  if (hole.open) fillDisc(hole.what);
   const b = document.getElementById('langBtn'); b.textContent = UI[lang].lang; b.setAttribute('lang', lang === 'ge' ? 'en' : 'ka');
 }
 
@@ -51,6 +53,8 @@ window.__errs = []; addEventListener('error', e => __errs.push(String(e.message)
 const TRAIL = { size: 256, diss: 4, diffuse: 40, rad: 0.04, warp: -0.045, shade: -1.2, edge: [0.22, 0.5], move0: 0.025, moveN: 0.08, follow: 7, fade: 4 };   // the reference's RUNTIME values (syncBall: $0=4 for decay and fade, bB=.04, SB=-.045, MB=-1.2, TB/EB .22/.5); the field decays fast so the bump stays compact under the pointer and reads as a lit lens, not a smear
 let sceneRT, trailRT = [], trailSide = 0, trailMat, trailScene, postMat, postScene, postCam;
 const ball = { tx: 0, ty: 0, sx: 0, sy: 0, e: 0, seen: false };
+const hole = { p: 0, s: -0.1, open: false, what: null };   // Profile / Contact overlay state (reference: p 0..1, squash eases -0.1 -> 0 as it opens)
+const disc = document.getElementById('disc');
 const QUAD_VERT = /* glsl */`varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`;
 const TRAIL_FRAG = /* glsl */`
 precision highp float;
@@ -68,9 +72,38 @@ void main(){
 const POST_FRAG = /* glsl */`
 precision highp float;
 uniform sampler2D u_scene, u_trail; uniform vec2 u_trailTexel, u_ballEdge, u_aspect; uniform float u_ballA, u_ballWarp, u_ballShade;
+uniform float u_hp, u_hr, u_hs, u_time; uniform vec2 u_hc;   // the hole (Profile / Contact overlay): progress, radius as a share of width, squash, centre in uv
 varying vec2 vUv;
+// the hole, modelled on the reference: a disc that is black inside, and a lens around its rim that drags the page toward the horizon,
+// splits the colour channels slightly and slowly rotates ("frame dragging"), with soft lobes while it opens and a faint breath at rest
+const float H_LENS = 1.5, H_REACH = 0.16, H_ORBIT = 0.3, H_WAVE = 0.05, H_ABERR = 0.004, H_BREATH = 0.015;
+vec2 hRot(vec2 v, float a) { float c = cos(a), s = sin(a); return vec2(c * v.x - s * v.y, s * v.x + c * v.y); }
+vec4 hGrab(vec2 dir, float rad) {
+  vec2 sq = vec2(1.0 + u_hs, 1.0 - u_hs);
+  vec2 uv = (dir * rad * u_aspect.x) / (sq * u_aspect) + u_hc;
+  if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) return vec4(0.0, 0.0, 0.0, 1.0);
+  return texture2D(u_scene, uv);
+}
+float hPull(float t, float e, float fall) { return fall * (e * e) / max(t, 0.001); }
 void main(){
   vec4 page = texture2D(u_scene, vUv);
+  if (u_hp > 0.001) {
+    vec2 sq = vec2(1.0 + u_hs, 1.0 - u_hs);
+    vec2 q = (vUv - u_hc) * u_aspect * sq;
+    float t = length(q) / u_aspect.x;
+    vec2 dir = length(q) > 0.00001 ? normalize(q) : vec2(1.0, 0.0);
+    float ang = atan(q.y, q.x);
+    float n = (sin(ang * 3.0 + u_time * 0.7) * 0.6 + sin(ang * 5.0 - u_time * 0.45) * 0.4) * H_WAVE * sin(3.14159265 * clamp(u_hp, 0.0, 1.0));
+    float r = u_hp * u_hr * (1.0 + H_BREATH * sin(u_time * 1.6)) + n;
+    float e = r * H_LENS;
+    float fall = 1.0 - smoothstep(r, r + H_REACH, t);
+    float draw = hPull(t, e, fall);
+    vec2 sdir = hRot(dir, draw * H_ORBIT * min(u_time, 15.0));
+    float split = e * H_ABERR;
+    vec3 lensed = vec3(hGrab(sdir, t - hPull(t, e + split, fall)).r, hGrab(sdir, t - draw).g, hGrab(sdir, t - hPull(t, e - split, fall)).b);
+    float inside = 1.0 - smoothstep(r - 0.0015, r + 0.0015, t);
+    page = vec4(mix(lensed, vec3(0.0), inside), 1.0);
+  }
   if (u_ballA > 0.001) {
     vec2 e = u_trailTexel * 2.0;                                // slightly wider slope taps than the reference's 1.5: the same bump, a softer-edged ring
     vec2 g = vec2(texture2D(u_trail, vUv + vec2(e.x, 0.0)).r - texture2D(u_trail, vUv - vec2(e.x, 0.0)).r,
@@ -105,7 +138,8 @@ function initPost() {
   postMat = new THREE.ShaderMaterial({ vertexShader: QUAD_VERT, fragmentShader: POST_FRAG, depthTest: false, depthWrite: false, uniforms: {
     u_scene: { value: sceneRT.texture }, u_trail: { value: trailRT[0].texture }, u_trailTexel: { value: new THREE.Vector2(1 / TRAIL.size, 1 / TRAIL.size) },
     u_ballEdge: { value: new THREE.Vector2(TRAIL.edge[0], TRAIL.edge[1]) }, u_aspect: { value: new THREE.Vector2(1, 1) },
-    u_ballA: { value: 0 }, u_ballWarp: { value: TRAIL.warp }, u_ballShade: { value: TRAIL.shade } } });
+    u_ballA: { value: 0 }, u_ballWarp: { value: TRAIL.warp }, u_ballShade: { value: TRAIL.shade },
+    u_hp: { value: 0 }, u_hr: { value: 0.11 }, u_hs: { value: -0.1 }, u_hc: { value: new THREE.Vector2(0.5, 0.5) }, u_time: { value: 0 } } });
   postScene = new THREE.Scene(); postScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), postMat));
   addEventListener('pointermove', e => { ball.tx = e.clientX; ball.ty = e.clientY; if (!ball.seen) { ball.sx = e.clientX; ball.sy = e.clientY; ball.seen = true; } });
 }
@@ -128,7 +162,10 @@ function stepPost(dt) {
   trailSide = 1 - trailSide;
   const p = postMat.uniforms;
   // reference: u_ballA is PRESENCE (1 while the field holds any ink), not the envelope - the field itself does the fading, so the bump lingers and relaxes smoothly
-  p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 ? 1 : 0; p.u_aspect.value.set(w / h, 1);
+  p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 ? 1 - hole.p : 0; p.u_aspect.value.set(w / h, 1);
+  // the hole follows its disc element (centre and radius), like the reference binding the hole to the overlay's circle
+  p.u_hp.value = hole.p; p.u_hs.value = hole.s; p.u_time.value += dt;
+  if (hole.p > 0.001) { const r = disc.getBoundingClientRect(); p.u_hc.value.set((r.left + r.width / 2) / w, 1 - (r.top + r.height / 2) / h); p.u_hr.value = r.width / 2 / w; }
 }
 
 // ---------------------------------------------------------------- preloader
@@ -634,7 +671,7 @@ function bindInput(canvas) {
     wheelAcc = 0;
   }, { passive: false });
   canvas.addEventListener('pointerdown', e => {
-    if (S.open !== null) return;
+    if (S.open !== null || hole.open) return;
     S.drag = { x: e.clientX, s: S.sT, lx: e.clientX, v: 0, t: performance.now() };
     S.moved = 0;
     canvas.setPointerCapture(e.pointerId);
@@ -648,7 +685,7 @@ function bindInput(canvas) {
       const pxs = Math.abs(e.clientX - S.drag.lx) / dtp;
       S.vd += (Math.tanh(pxs / 1900) - S.vd) * 0.4;
       S.drag.v = e.clientX - S.drag.lx; S.drag.lx = e.clientX; S.drag.t = now;
-    } else if (S.open === null) setHover(pick(e), canvas);
+    } else if (S.open === null && !hole.open) setHover(pick(e), canvas);
   });
   const up = e => {
     if (!S.drag) return;
@@ -660,6 +697,7 @@ function bindInput(canvas) {
   canvas.addEventListener('pointercancel', up);
   canvas.addEventListener('pointerleave', () => { if (!S.drag) setHover(-1, canvas); });
   addEventListener('keydown', e => {
+    if (e.key === 'Escape' && hole.open) return openHole(false);
     if (e.key === 'Escape' && S.open !== null) return closeProject();
     if (S.open !== null) { if (e.key === 'ArrowRight') switchProject(1); if (e.key === 'ArrowLeft') switchProject(-1); return; }
     if (e.key === 'ArrowRight') { S.sT += S.pitch; S.vk = Math.min(0.5, S.vk + 0.14); }
@@ -1153,12 +1191,41 @@ function setMode(m) {
   $('#mA').setAttribute('aria-pressed', m === 'full');
   if (S.mobile) buildStack(); else buildRing();
 }
+// ---------------------------------------------------------------- the hole: Profile and Contact overlays (reference: openHole .85 s in / .65 s out,
+// squash -0.1 -> 0 in .3 s; the disc element gives the lens its centre and radius; the text rises once the hole is open)
+const L = v => (v && typeof v === 'object' && !Array.isArray(v)) ? (v[lang] || v.en) : v;
+function fillDisc(what) {
+  const o = overlays?.[what]; if (!o) return;
+  $('#discLead').textContent = L(o.lead); $('#discMeta').textContent = L(o.meta);
+  $('#discLinks').innerHTML = o.links.map(l => `<li><a href="${L(l.href)}" target="_blank" rel="noopener">${L(l.label)}</a></li>`).join('');
+}
+function openHole(on, what = hole.what || 'profile') {
+  if (on && !overlays) return;
+  if (on && hole.open && hole.what === what) return openHole(false);
+  if (on) { hole.what = what; fillDisc(what); if (S.hover >= 0) setHover(-1, $('#gl')); }
+  hole.open = on;
+  disc.toggleAttribute('inert', !on); disc.setAttribute('aria-hidden', String(!on)); disc.classList.toggle('on', on);
+  const D = RM ? 0 : 1;
+  gsap.to(hole, { p: on ? 1 : 0, duration: (on ? 0.85 : 0.65) * D, ease: on ? 'power3.inOut' : 'power3.in', overwrite: 'auto' });
+  gsap.to(hole, { s: on ? 0 : -0.1, duration: (on ? 0.3 : 0.25) * D, ease: 'power2.out', overwrite: 'auto' });
+  applyLang();                                        // the active corner label reads "Close"
+}
+UI.en.close = 'Close'; UI.ge.close = 'დახურვა';
+for (const [sel, what] of [['a[href="#profile"]', 'profile'], ['a[href="#contact"]', 'contact']]) {
+  $(sel).addEventListener('click', e => { e.preventDefault(); if (S.open !== null) return; openHole(!(hole.open && hole.what === what), what); });
+}
+addEventListener('click', e => {                     // a click outside the disc closes it (links and the corner labels keep working)
+  if (!hole.open || e.target.closest('.nav, .disc a')) return;
+  const r = disc.getBoundingClientRect(); if (Math.hypot(e.clientX - (r.left + r.width / 2), e.clientY - (r.top + r.height / 2)) <= r.width / 2) return;
+  openHole(false);
+});
 // language toggle: relabel the corners, rebake the card titles, refill an open project (its planes rebuild from the new DOM)
 $('#langBtn').addEventListener('click', () => {
   lang = lang === 'en' ? 'ge' : 'en';
   try { localStorage.setItem('lang', lang); } catch {}
   applyLang();
   if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); return; }
+  if (hole.open) fillDisc(hole.what);
   for (const c of cards) if (c.img !== undefined) bake(c);
   if (S.open !== null && S.open >= 0) fill(items()[S.open]);
 });
