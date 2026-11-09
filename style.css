@@ -225,7 +225,7 @@ body.lock .nav{pointer-events:none}
   #gl,#tags{display:none}
   .bl,.br{bottom:max(25px,env(safe-area-inset-bottom,0px))}
   #stack{display:block;position:fixed;inset:0;margin:0;padding:0;list-style:none;overflow:hidden;touch-action:none;z-index:1;
-    -webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+    -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;perspective:800px;perspective-origin:50% 50%}
   #stack > li{position:absolute;left:20px;right:20px;top:0;will-change:transform}
   #stack::before,#stack::after{content:"";position:fixed;left:0;right:0;z-index:5;pointer-events:none}
   #stack::before{top:0;height:130px;background:linear-gradient(#000 0,rgba(0,0,0,.86) 30%,rgba(0,0,0,.45) 62%,rgba(0,0,0,0))}
@@ -268,10 +268,17 @@ body.lock .nav{pointer-events:none}
   .sliver.next{border-radius:12px 0 0 12px}
   body:not(.lock) .sliver{opacity:0;pointer-events:none}
   /* Profile / Contact: no GL lens on phones, a plain black disc */
-  .disc{width:min(86vw,420px);background:#000;border-radius:50%;opacity:0;transition:opacity .5s}
-  .disc.on{opacity:1}
+  /* reference on phones: the circle is wider than the screen (its sides run off both edges) and the text gets almost the full width */
+  .disc{width:122vw;max-width:none;background:#000;border-radius:50%;opacity:0;transform:translate(-50%,-50%) scale(.92);
+    transition:opacity .45s ease-out,transform .7s cubic-bezier(.2,.8,.2,1);
+    box-shadow:0 0 0 1.5px rgba(255,255,255,.75),0 0 0 4px rgba(255,255,255,.08),0 0 38px rgba(255,255,255,.16),inset 0 0 46px rgba(255,255,255,.07)}   /* a thin bright rim in place of the desktop lens */
+  .disc.on{opacity:1;transform:translate(-50%,-50%)}
+  .discIn{width:86vw;gap:22px}
+  .discIn p{font-size:15px;line-height:1.4;letter-spacing:-.02em}
+  .discIn .meta,.discIn .links{font-size:10px}
+  .discIn .links{gap:10px 20px}
   #stack{transition:opacity .5s}
-  body:has(.disc.on) #stack{opacity:.28}   /* the cards step back behind the Profile / Contact circle */
+  body:has(.disc.on) #stack{opacity:.6}
   /* shots viewer on phones: a white sheet grows out of the bubble (DOM, like the project panel); the 4:5 clip sits in it */
   #storySheet{display:block}
   .story{background:rgba(0,0,0,0);transition:background .5s}

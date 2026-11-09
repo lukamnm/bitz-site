@@ -780,7 +780,10 @@ function bindInput(canvas) {
 // WebGL loop with no page scroll). Every item sits at y0 in one long period and is placed at (y0 - scroll) wrapped into that period, so the list
 // never ends; a drag follows the finger 1:1, a flick carries on with momentum and the scroll eases toward its target like the desktop strip.
 // The stories row (shot bubbles) is the first item of the loop, so the bubbles scroll with the cards instead of floating over them.
-const M = { s: 0, sT: 0, v: 0, drag: null, els: [], L: 1, H0: 0, on: false, last: 0, moved: 0 };
+const M = { s: 0, sT: 0, v: 0, drag: null, els: [], L: 1, H0: 0, on: false, last: 0, moved: 0, prevS: 0, amt: 0 };
+// the scroll bulge (reference, measured mid-swipe at 390 x 664): while the list moves fast it bows toward the viewer in the middle of the
+// screen - middle cards grow ~12 % (wider than the screen), cards near the top and bottom lean away into trapezoids - and it eases back flat
+const BULGE = { z: 95, speed: 1000, rise: 12, fall: 3.5 };      // max push toward the viewer (px, at an 800 px perspective), speed scale (px/s), ease rates
 const MGAP = 20, MTOP = 58;                          // gap between items; the list starts under the top labels
 function buildStack() {
   const ul = $('#stack'), nav = $('#shotsNav');
@@ -817,11 +820,20 @@ function stackFrame(now) {
     M.s += (M.sT - M.s) * (1 - Math.exp(-dt * 11));                 // eased follow, like Lenis
   }
   const vh = innerHeight, L = M.L, top = MTOP - M.H0;
-  if (!M.drag && !M.v && Math.abs(M.sT - M.s) < 0.05 && M.drawn === M.s && !M.dirty) { requestAnimationFrame(stackFrame); return; }   // at rest: nothing to redraw
+  const raw = Math.abs(M.s - M.prevS) / dt; M.prevS = M.s;
+  M.spd = Math.max(raw, (M.spd || 0) * Math.exp(-dt * 5));            // peak-hold: frames without a touch event between two moves do not read as a stop
+  const want = RM ? 0 : 1 - Math.exp(-M.spd / BULGE.speed);
+  M.amt += (want - M.amt) * (1 - Math.exp(-dt * (want > M.amt ? BULGE.rise : BULGE.fall)));
+  if (M.amt < 0.002 && want < 0.002) M.amt = 0;
+  if (!M.drag && !M.v && Math.abs(M.sT - M.s) < 0.05 && M.drawn === M.s && !M.amt && !M.dirty) { requestAnimationFrame(stackFrame); return; }   // at rest: nothing to redraw
   M.drawn = M.s; M.dirty = false;
+  const Z = BULGE.z * M.amt;
   for (const e of M.els) {
     let y = e.y0 - M.s - top; y = ((y % L) + L) % L + top;          // wrap into [top, top + L)
-    e.li.style.transform = `translate3d(0,${y.toFixed(2)}px,0)`;
+    const u = (y + e.h / 2 - vh / 2) / vh;                          // card centre: -0.5 at the top edge of the screen, +0.5 at the bottom
+    const z = Z * Math.cos(Math.PI * Math.max(-0.5, Math.min(0.5, u)));
+    const tilt = Math.abs(u) < 0.5 ? Math.atan(-Z * Math.PI / vh * Math.sin(Math.PI * u)) * 180 / Math.PI : 0;   // follow the curve: top edge away near the top, bottom edge away near the bottom
+    e.li.style.transform = Z ? `translate3d(0,${y.toFixed(2)}px,${z.toFixed(2)}px) rotateX(${tilt.toFixed(3)}deg)` : `translate3d(0,${y.toFixed(2)}px,0)`;
     if (e.img) e.img.style.transform = `translate3d(0,${(((y + e.h / 2) - vh / 2) * -0.06).toFixed(2)}px,0)`;   // slow image parallax inside the card
   }
   requestAnimationFrame(stackFrame);
@@ -830,18 +842,22 @@ function bindStack(ul) {
   const locked = () => S.open !== null || hole.open || story.open;
   ul.addEventListener('pointerdown', e => {
     if (locked() || (e.pointerType === 'mouse' && e.button !== 0)) return;
-    M.drag = { y: e.clientY, s0: M.s, id: e.pointerId, pts: [[performance.now(), e.clientY]] }; M.v = 0; M.sT = M.s; M.moved = 0;
+    M.drag = { y: e.clientY, s0: M.s, id: e.pointerId, pts: [[e.timeStamp, e.clientY]] }; M.v = 0; M.sT = M.s; M.moved = 0;
   });
   addEventListener('pointermove', e => {
     const d = M.drag; if (!d || e.pointerId !== d.id) return;
     const dy = e.clientY - d.y; M.moved = Math.max(M.moved, Math.abs(dy));
     M.s = M.sT = d.s0 - dy;
-    d.pts.push([performance.now(), e.clientY]); if (d.pts.length > 6) d.pts.shift();
+    d.pts.push([e.timeStamp, e.clientY]); if (d.pts.length > 6) d.pts.shift();   // the events' own times: a busy frame does not make a flick look like a stop
   });
   const end = e => {
     const d = M.drag; if (!d || e.pointerId !== d.id) return; M.drag = null;
-    const now = performance.now(), pts = d.pts.filter(p => now - p[0] < 110);
-    if (pts.length > 1 && M.moved > 8) { const [t0, y0] = pts[0], [t1, y1] = pts[pts.length - 1]; M.v = -((y1 - y0) / Math.max(16, t1 - t0)) * 1000 * 0.95; }   // px/s
+    // flick speed from the finger's last ~120 ms of movement, if it was still moving when it lifted (a held, then lifted finger does not glide)
+    const last = d.pts[d.pts.length - 1];
+    if (M.moved > 8 && d.pts.length > 1 && e.timeStamp - last[0] < 100) {
+      let first = d.pts.find(p => last[0] - p[0] < 120); if (first === last) first = d.pts[d.pts.length - 2];
+      M.v = -((last[1] - first[1]) / Math.max(16, last[0] - first[0])) * 1000 * 0.95;   // px/s
+    }
     setTimeout(() => { M.moved = 0; }, 0);
   };
   addEventListener('pointerup', end); addEventListener('pointercancel', end);
@@ -1428,12 +1444,9 @@ function setLang(L) {
 $('#langBtn').addEventListener('click', () => { setLang(lang === 'en' ? 'ge' : 'en'); syncUrl(false); });
 $('#mF').addEventListener('click', () => setMode('featured'));
 $('#mS').addEventListener('click', () => setMode('stories'));
-$('#home').addEventListener('click', e => {             // the logo: back to the featured strip from anywhere
+$('#home').addEventListener('click', e => {             // the logo reloads the site on its home page (in the current language)
   e.preventDefault();
-  if (story.open) return closeStory();
-  if (S.open !== null) return closeProject();
-  if (hole.open) return openHole(false);
-  setMode('featured');
+  location.assign(new URL(pre() || './', document.baseURI).href);
 });
 
 // the address the current state stands for, and following an address (first load, back / forward)
