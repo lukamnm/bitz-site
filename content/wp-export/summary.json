@@ -1,5 +1,5 @@
 {
-  "exported": "2026-11-09T12:49:44.110Z",
+  "exported": "2026-11-09T12:52:36.829Z",
   "en": {
     "pages": 9,
     "posts": 4,
@@ -21,10 +21,10 @@
     "media": 53
   },
   "media": {
-    "referenced": 2099,
-    "downloaded": 357,
-    "skipped": 121,
-    "failed": 457,
-    "mb": 197
+    "referenced": 1610,
+    "downloaded": 0,
+    "skipped": 442,
+    "failed": 4,
+    "mb": 0
   }
 }
