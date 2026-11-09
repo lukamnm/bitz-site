@@ -74,30 +74,39 @@ a{color:inherit;text-decoration:none}
 .discIn .links a{transition:opacity .3s ease-out;position:relative}
 .discIn .links a::before{content:"";position:absolute;inset:-12px}
 .discIn .links a:hover{opacity:.6}
-/* shots inside the hole: the video fills the disc, a small HUD sits along its lower edge */
-#discShot{position:absolute;inset:4%;border-radius:50%;overflow:hidden;display:none;background:#000;transform-origin:50% 50%;will-change:transform}
-.disc.shots #discShot{display:block}
-.disc.shots .discIn{display:none}
-#discShot video{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .4s}
-.disc.on #discShot video{opacity:1}
-.shotHud{opacity:0;transition:opacity .4s}
-.disc.on .shotHud{opacity:1;transition-delay:.6s}
-.shotHud{
-  position:absolute;left:0;right:0;bottom:9%;display:flex;justify-content:center;align-items:center;gap:22px;
-  font-size:clamp(10px,.6667vw,13px);text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6);
-}
-.shotHud button{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:6px;transition:opacity .3s;pointer-events:none}
-.disc.on .shotHud button{pointer-events:auto}
-.shotHud button:hover{opacity:.6}
-.shotHud button[aria-pressed="true"]{opacity:.45}
-/* shot bubbles: the four group rings, bottom centre (the live site's header row, in our world) */
-.bc{bottom:5.83vh;left:50%;transform:translateX(-50%);gap:18px}
+/* shot bubbles: the four group rings, top centre (the live site's header row) */
+.tc{top:calc(5.83vh - 15px);left:50%;transform:translateX(-50%);gap:18px}
 .bub{position:relative;width:44px;height:44px;border-radius:50%;padding:0;border:0;background:#000;cursor:pointer;transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
 .bub img{width:100%;height:100%;border-radius:50%;display:block;object-fit:cover}
 .bub span{position:absolute;left:50%;top:100%;transform:translate(-50%,6px);white-space:nowrap;opacity:0;transition:opacity .3s,transform .4s;pointer-events:none}
 .bub:hover{transform:translateY(-4px)}
 .bub:hover span{opacity:1;transform:translate(-50%,2px)}
 .bub.on{transform:scale(.9);opacity:.6}
+
+/* ---------- shots viewer: stories-style vertical card, our palette */
+.story{position:fixed;inset:0;z-index:45;display:none;place-items:center}
+.story.on{display:grid}
+.storyCard{
+  position:relative;height:min(92vh,calc(92vw*16/9));aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;background:#000;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);transform-origin:50% 50%;will-change:transform,border-radius;
+}
+.storyCard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.storyCard::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.45),transparent 22%,transparent 72%,rgba(0,0,0,.5));pointer-events:none}
+.storyBar{position:absolute;left:12px;right:12px;top:12px;display:flex;gap:5px;z-index:2}
+.storyBar i{flex:1;height:2px;border-radius:2px;background:rgba(255,255,255,.3);overflow:hidden;position:relative}
+.storyBar i::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:left;transform:scaleX(var(--p,0))}
+.storyHead{position:absolute;left:14px;top:24px;display:flex;align-items:center;gap:10px;z-index:2;font-size:clamp(10px,.6667vw,13px);text-transform:uppercase;color:#fff}
+.storyHead img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:1.5px solid rgba(255,255,255,.7)}
+.storyFoot{position:absolute;left:18px;right:14px;bottom:18px;display:flex;justify-content:space-between;align-items:center;z-index:2;color:#fff;font-size:clamp(13px,.9333vw,18px);letter-spacing:-.02em}
+.storyFoot button{background:rgba(255,255,255,.14);border:0;color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:15px;backdrop-filter:blur(6px);transition:background .3s}
+.storyFoot button:hover{background:rgba(255,255,255,.3)}
+.storyFoot button .off{display:none}
+.storyFoot button[aria-pressed="true"] .on{display:none}
+.storyFoot button[aria-pressed="true"] .off{display:block}
+.storyTap{position:absolute;top:0;bottom:0;width:38%;background:none;border:0;padding:0;cursor:pointer;z-index:1}
+.storyTap.prev{left:0}.storyTap.next{right:0;width:62%}
+#storyClose{position:fixed;top:22px;right:24px;width:40px;height:40px;border-radius:50%;border:0;background:#111;color:#fff;cursor:pointer;z-index:3;display:grid;place-items:center}
+body.lock .story .xbtn{pointer-events:auto}
 
 /* ---------- panel (project detail) */
 #dim{position:fixed;inset:0;background:#000;opacity:0;pointer-events:none;z-index:30}
@@ -163,18 +172,18 @@ a{color:inherit;text-decoration:none}
 .pr .txt{padding:22px 0 8px;max-width:60ch;font-size:clamp(13px,.9333vw,18px);line-height:1.4;letter-spacing:-.02em;color:var(--ink2)}   /* reference body: .9333vw */
 .pr .txt h3{font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin-bottom:8px;font-weight:500}
 .pr .txt p + p{margin-top:.8em}   /* articles: several paragraphs per section */
-#close{
+#close,.xbtn{
   position:absolute;top:22px;right:24px;width:40px;height:40px;border-radius:50%;border:0;
   background:#111;color:#fff;cursor:pointer;z-index:2;font-size:20px;line-height:1;display:grid;place-items:center;
 }
-#close{overflow:hidden}
-#close .pill{position:absolute;inset:-50%;border-radius:50%;background:#f4f4f4;transform:scale(0);pointer-events:none}   /* 2x disc: covers the button from any pointer position */
-#close::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1.5px #111;opacity:0;transition:opacity .3s;pointer-events:none}
-#close:hover::after{opacity:1}
-#close .mk{position:relative;display:grid;place-items:center;width:100%;height:100%;mix-blend-mode:difference;color:#fff;pointer-events:none}
-#close .mk i{grid-area:1/1;display:block;width:12px;height:12px;position:relative;will-change:transform}   /* drawn cross: two bars, dead centre (a glyph sits off its box) */
-#close .mk i::before,#close .mk i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
-#close .mk i::after{transform:translate(-50%,-50%) rotate(-45deg)}
+#close,.xbtn{overflow:hidden}
+#close .pill,.xbtn .pill{position:absolute;inset:-50%;border-radius:50%;background:#f4f4f4;transform:scale(0);pointer-events:none}   /* 2x disc: covers the button from any pointer position */
+#close::after,.xbtn::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1.5px #111;opacity:0;transition:opacity .3s;pointer-events:none}
+#close:hover::after,.xbtn:hover::after{opacity:1}
+#close .mk,.xbtn .mk{position:relative;display:grid;place-items:center;width:100%;height:100%;mix-blend-mode:difference;color:#fff;pointer-events:none}
+#close .mk i,.xbtn .mk i{grid-area:1/1;display:block;width:12px;height:12px;position:relative;will-change:transform}   /* drawn cross: two bars, dead centre (a glyph sits off its box) */
+#close .mk i::before,#close .mk i::after,.xbtn .mk i::before,.xbtn .mk i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
+#close .mk i::after,.xbtn .mk i::after{transform:translate(-50%,-50%) rotate(-45deg)}
 body.lock .nav{pointer-events:none}
 
 /* ---------- preloader */
@@ -215,7 +224,7 @@ body.lock .nav{pointer-events:none}
   .sliver,#ring{display:none}
   .disc{width:min(86vw,420px);background:#000;border-radius:50%;opacity:0;transition:opacity .5s}   /* no GL lens on mobile: a plain black disc */
   .disc.on{opacity:1}
-  .bc{bottom:calc(16px + 40px)}
+  .tc{top:52px}
   .bub{width:36px;height:36px}
   .bub span{display:none}
   #close{position:fixed;top:auto;bottom:calc(1.5vh + 14px);right:calc(3vw + 14px)}

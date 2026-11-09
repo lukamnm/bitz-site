@@ -28,7 +28,7 @@ const T = p => {                                     // the project's texts in t
 function applyLang() {
   document.documentElement.lang = lang === 'ge' ? 'ka' : 'en';
   for (const el of document.querySelectorAll('[data-ui]')) el.textContent = (hole.open && hole.what === el.dataset.ui) ? UI[lang].close : UI[lang][el.dataset.ui];
-  if (hole.open && hole.what !== 'shots') fillDisc(hole.what);
+  if (hole.open) fillDisc(hole.what);
   if (typeof shotLabels === 'function') shotLabels();
   const b = document.getElementById('langBtn'); b.textContent = UI[lang].lang; b.setAttribute('lang', lang === 'ge' ? 'en' : 'ka');
 }
@@ -62,7 +62,7 @@ const TRAIL = { size: 256, diss: 4, diffuse: 40, rad: 0.04, warp: -0.045, shade:
 let sceneRT, trailRT = [], trailSide = 0, trailMat, trailScene, postMat, postScene, postCam;
 const ball = { tx: 0, ty: 0, sx: 0, sy: 0, e: 0, seen: false };
 const hole = { p: 0, s: -0.1, m: 1, from: null, open: false, what: null };   // Profile / Contact / Shots overlay state (reference: p 0..1, squash eases -0.1 -> 0 as it opens)
-const disc = document.getElementById('disc'), discShot = document.getElementById('discShot');
+const disc = document.getElementById('disc');
 const QUAD_VERT = /* glsl */`varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`;
 const TRAIL_FRAG = /* glsl */`
 precision highp float;
@@ -179,8 +179,6 @@ function stepPost(dt) {
       const f = hole.from, m = hole.m; cx = f.left + f.width / 2 + (cx - f.left - f.width / 2) * m; cy = f.top + f.height / 2 + (cy - f.top - f.height / 2) * m; rad = f.width / 2 + (rad - f.width / 2) * m;
     }
     p.u_hc.value.set(cx / w, 1 - cy / h); p.u_hr.value = rad / w;
-    // the shots player is a DOM circle: keep it exactly inside the GL horizon while the hole grows, travels and closes
-    if (hole.what === 'shots') discShot.style.transform = `translate(${cx - (r.left + r.width / 2)}px, ${cy - (r.top + r.height / 2)}px) scale(${(rad / (r.width / 2)) * hole.p})`;
   }
 }
 
@@ -713,6 +711,7 @@ function bindInput(canvas) {
   canvas.addEventListener('pointercancel', up);
   canvas.addEventListener('pointerleave', () => { if (!S.drag) setHover(-1, canvas); });
   addEventListener('keydown', e => {
+    if (story.open) { if (e.key === 'Escape') closeStory(); if (e.key === 'ArrowRight') showShot(story.g, story.i + 1); if (e.key === 'ArrowLeft') showShot(story.g, story.i - 1); return; }
     if (e.key === 'Escape' && hole.open) return openHole(false);
     if (e.key === 'Escape' && S.open !== null) return closeProject();
     if (S.open !== null) { if (e.key === 'ArrowRight') switchProject(1); if (e.key === 'ArrowLeft') switchProject(-1); return; }
@@ -1171,8 +1170,8 @@ $('#nextP').addEventListener('click', () => switchProject(1));
 
 // ---------------------------------------------------------------- close button, measured on the reference: a light pill grows from the centre
 // in ~350 ms (eased out) while the mark slides out and a new one slides in ~60 ms behind; everything returns in ~300 ms
-{
-  const b = $('#close'), pill = b.querySelector('.pill'), mk = b.querySelector('.mk'), [m1, m2] = mk.querySelectorAll('i');
+function bindCloseFx(b) {
+  const pill = b.querySelector('.pill'), mk = b.querySelector('.mk'), [m1, m2] = mk.querySelectorAll('i');
   gsap.set(m2, { yPercent: 260 });                  // parked outside the 40 px button (the mark is 12 px tall, the button clips)
   let hov = null;
   const d = (v) => (RM ? 0 : v);
@@ -1199,6 +1198,7 @@ $('#nextP').addEventListener('click', () => switchProject(1));
       .to(mk, { scale: 1, duration: d(0.3), ease: 'power2.out' }, 0);
   });
 }
+bindCloseFx($('#close')); bindCloseFx($('#storyClose'));
 
 // ---------------------------------------------------------------- mode toggle
 function setMode(m) {
@@ -1217,15 +1217,13 @@ function fillDisc(what) {
   $('#discLinks').innerHTML = o.links.map(l => `<li><a href="${L(l.href)}" target="_blank" rel="noopener">${L(l.label)}</a></li>`).join('');
 }
 function openHole(on, what = hole.what || 'profile') {
-  if (on && what !== 'shots' && !overlays) return;
-  if (on && hole.open && hole.what === what && what !== 'shots') return openHole(false);
-  if (on) { hole.what = what; if (what !== 'shots') { disc.classList.remove('shots'); fillDisc(what); } if (S.hover >= 0) setHover(-1, $('#gl')); }
-  if (!on) { vid.pause(); document.querySelectorAll('.bub.on').forEach(b => b.classList.remove('on')); }
+  if (on && !overlays) return;
+  if (on && hole.open && hole.what === what) return openHole(false);
+  if (on) { hole.what = what; fillDisc(what); if (S.hover >= 0) setHover(-1, $('#gl')); }
   hole.open = on;
   disc.toggleAttribute('inert', !on); disc.setAttribute('aria-hidden', String(!on)); disc.classList.toggle('on', on);
   const D = RM ? 0 : 1;
-  if (on && what !== 'shots') hole.from = null;
-  hole.m = on && hole.from ? 0 : 1;                   // m: 0 = centred on the bubble it grows from, 1 = on the disc
+  hole.from = null; hole.m = 1;                        // (m / from: kept for a hole that grows out of another element)
   gsap.to(hole, { p: on ? 1 : 0, duration: (on ? 0.85 : 0.65) * D, ease: on ? 'power3.inOut' : 'power3.in', overwrite: 'auto' });
   gsap.to(hole, { s: on ? 0 : -0.1, duration: (on ? 0.3 : 0.25) * D, ease: 'power2.out', overwrite: 'auto' });
   if (on && hole.from) gsap.to(hole, { m: 1, duration: 0.85 * D, ease: 'power3.inOut', overwrite: 'auto' });
@@ -1246,8 +1244,8 @@ $('#langBtn').addEventListener('click', () => {
   try { localStorage.setItem('lang', lang); } catch {}
   applyLang();
   if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); return; }
-  if (hole.open && hole.what !== 'shots') fillDisc(hole.what);
-  if (hole.open && hole.what === 'shots') showShot(shot.g, shot.i);
+  if (hole.open) fillDisc(hole.what);
+  if (story.open) showShot(story.g, story.i, true);
   for (const c of cards) if (c.img !== undefined) bake(c);
   if (S.open !== null && S.open >= 0) fill(items()[S.open]);
 });
@@ -1256,35 +1254,70 @@ $('#mA').addEventListener('click', () => setMode('full'));
 $('#mS').addEventListener('click', () => setMode('stories'));
 $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
 
-// ---------------------------------------------------------------- shots: the four group rings as bubbles; a bubble opens the hole as a circular
-// player (grown from the bubble itself) with the group's videos, sound on, prev / next and mute
-const shot = { g: 0, i: 0, muted: false };
-const vid = $('#shotVid');
+// ---------------------------------------------------------------- shots: the four group rings as bubbles (top centre); a bubble opens a stories-style
+// vertical 9:16 card that grows out of the bubble: segments on top, tap left / right, auto-advance through the group and on into the next, sound on
+const story = { open: false, g: 0, i: 0, muted: false, busy: false };
+const storyEl = $('#story'), storyCard = $('#storyCard'), vid = $('#shotVid'), bar = $('#storyBar');
 {
   const nav = $('#shotsNav');
   nav.innerHTML = shotsData.groups.map((g, i) => `<button type="button" class="bub" data-g="${i}"><img src="${g.ring}" alt=""><span data-shot-label="${i}">${g.label.en}</span></button>`).join('');
-  nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null) return; openShots(+b.dataset.g, b); });
+  nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null || hole.open) return; openStory(+b.dataset.g, b); });
 }
 function shotLabels() { for (const el of document.querySelectorAll('[data-shot-label]')) el.textContent = L(shotsData.groups[+el.dataset.shotLabel].label); }
-function showShot(gi, ii) {
-  const g = shotsData.groups[gi]; if (!g) return; shot.g = gi; shot.i = (ii + g.items.length) % g.items.length;
-  const it = g.items[shot.i];
-  vid.innerHTML = ['webm', 'mp4'].filter(k => it.video[k]).map(k => `<source src="${it.video[k]}" type="video/${k}">`).join('');
-  vid.load(); vid.muted = shot.muted;
-  vid.play().catch(() => { vid.muted = true; shot.muted = true; $('#shotMute').setAttribute('aria-pressed', 'true'); vid.play().catch(() => {}); });
-  $('#shotTitle').textContent = `${L(it.title)}  ${shot.i + 1}/${g.items.length}`;
+function showShot(gi, ii, keepTime = false) {
+  const G = shotsData.groups, g = G[gi]; if (!g) return;
+  if (ii >= g.items.length) { if (gi + 1 < G.length) return showShot(gi + 1, 0); return closeStory(); }   // past the group's last shot: next group, or done
+  if (ii < 0) { if (gi > 0) return showShot(gi - 1, G[gi - 1].items.length - 1); ii = 0; }
+  const same = story.g === gi && story.i === ii && keepTime;
+  story.g = gi; story.i = ii; const it = g.items[ii];
+  if (!same) {
+    vid.innerHTML = ['webm', 'mp4'].filter(k => it.video[k]).map(k => `<source src="${it.video[k]}" type="video/${k}">`).join('');
+    vid.load(); vid.muted = story.muted;
+    vid.play().catch(() => { vid.muted = true; story.muted = true; $('#shotMute').setAttribute('aria-pressed', 'true'); vid.play().catch(() => {}); });
+  }
+  $('#shotTitle').textContent = L(it.title); $('#storyGroup').textContent = L(g.label); $('#storyRing').src = g.ring;
+  bar.innerHTML = g.items.map((_, k) => `<i style="--p:${k < ii ? 1 : 0}"></i>`).join('');
   document.querySelectorAll('.bub').forEach(b => b.classList.toggle('on', +b.dataset.g === gi));
 }
-function openShots(gi, fromEl) {
-  if (hole.open && hole.what === 'shots' && shot.g === gi) return openHole(false);
-  hole.from = fromEl ? fromEl.getBoundingClientRect() : null;      // the hole grows out of the bubble
-  disc.classList.add('shots');
-  openHole(true, 'shots');
+vid.addEventListener('timeupdate', () => { const seg = bar.children[story.i]; if (seg && vid.duration) seg.style.setProperty('--p', (vid.currentTime / vid.duration).toFixed(3)); });
+vid.addEventListener('ended', () => { if (story.open) showShot(story.g, story.i + 1); });
+function bubbleRect(gi) { return document.querySelector(`.bub[data-g="${gi}"]`)?.getBoundingClientRect(); }
+function openStory(gi, fromEl) {
+  if (story.busy) return;
+  if (story.open) return showShot(gi, 0);
+  story.open = true; story.busy = true;
+  document.body.classList.add('lock'); storyEl.classList.add('on'); storyEl.removeAttribute('inert'); storyEl.setAttribute('aria-hidden', 'false');
+  dimEl.style.pointerEvents = 'auto';
+  const D = RM ? 0 : 1, f = (fromEl || document.querySelector(`.bub[data-g="${gi}"]`)).getBoundingClientRect(), r = storyCard.getBoundingClientRect();
+  const tl = gsap.timeline({ onComplete: () => { story.busy = false; } });
+  tl.fromTo(storyCard, { x: f.left + f.width / 2 - (r.left + r.width / 2), y: f.top + f.height / 2 - (r.top + r.height / 2), scaleX: f.width / r.width, scaleY: f.height / r.height, borderRadius: '50%' },
+            { x: 0, y: 0, scaleX: 1, scaleY: 1, borderRadius: 'var(--r)', duration: 0.8 * D, ease: 'expo.out' }, 0)
+    .to(dimEl, { opacity: 0.62, duration: 0.6 * D }, 0)
+    .to('.nav', { opacity: 0, duration: 0.4 * D }, 0)
+    .fromTo('#storyClose', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.6 * D, ease: 'back.out(2)' }, 0.4 * D);
   showShot(gi, 0);
+  if (RM) tl.progress(1);
 }
-$('#shotPrev').addEventListener('click', () => showShot(shot.g, shot.i - 1));
-$('#shotNext').addEventListener('click', () => showShot(shot.g, shot.i + 1));
-$('#shotMute').addEventListener('click', e => { shot.muted = !shot.muted; vid.muted = shot.muted; e.currentTarget.setAttribute('aria-pressed', String(shot.muted)); });
+function closeStory() {
+  if (!story.open || story.busy) return; story.busy = true;
+  vid.pause();
+  const D = RM ? 0 : 1, f = bubbleRect(story.g), r = storyCard.getBoundingClientRect();
+  const tl = gsap.timeline({ onComplete: () => {
+    story.open = false; story.busy = false; storyEl.classList.remove('on'); storyEl.setAttribute('inert', ''); storyEl.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lock'); dimEl.style.pointerEvents = 'none'; gsap.set(storyCard, { clearProps: 'all' });
+    document.querySelectorAll('.bub.on').forEach(b => b.classList.remove('on'));
+  } });
+  tl.to('#storyClose', { scale: 0, rotation: 90, duration: 0.3 * D, ease: 'power2.in' }, 0)
+    .to(storyCard, f ? { x: f.left + f.width / 2 - (r.left + r.width / 2 - gsap.getProperty(storyCard, 'x')), y: f.top + f.height / 2 - (r.top + r.height / 2 - gsap.getProperty(storyCard, 'y')), scaleX: f.width / (r.width / gsap.getProperty(storyCard, 'scaleX')), scaleY: f.height / (r.height / gsap.getProperty(storyCard, 'scaleY')), borderRadius: '50%', duration: 0.7 * D, ease: 'expo.inOut' } : { opacity: 0, duration: 0.4 * D }, 0)
+    .to(dimEl, { opacity: 0, duration: 0.6 * D }, 0.1 * D)
+    .to('.nav', { opacity: 1, duration: 0.5 * D }, 0.3 * D);
+  if (RM) tl.progress(1);
+}
+$('#shotPrev').addEventListener('click', () => showShot(story.g, story.i - 1));
+$('#shotNext').addEventListener('click', () => showShot(story.g, story.i + 1));
+$('#shotMute').addEventListener('click', e => { story.muted = !story.muted; vid.muted = story.muted; e.currentTarget.setAttribute('aria-pressed', String(story.muted)); });
+$('#storyClose').addEventListener('click', closeStory);
+dimEl.addEventListener('click', () => { if (story.open) closeStory(); });
 applyLang();
 
 // ---------------------------------------------------------------- boot

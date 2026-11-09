@@ -25,25 +25,29 @@
 <nav class="nav bl">
   <button id="mF" aria-pressed="true" data-ui="featured">Featured</button><span class="sl">/</span><button id="mA" aria-pressed="false" data-ui="full">Full</button><span class="sl">/</span><button id="mS" aria-pressed="false" data-ui="stories">Stories</button>
 </nav>
-<nav class="nav bc" id="shotsNav" aria-label="Shots"></nav>
+<nav class="nav tc" id="shotsNav" aria-label="Shots"></nav>
 <nav class="nav br"><a href="#contact" data-ui="contact">Contact</a></nav>
 
-<!-- the hole overlay (Profile / Contact / Shots): a centred disc; the lens is drawn by the post pass around this element -->
+<!-- the hole overlay (Profile / Contact): a centred disc; the lens is drawn by the post pass around this element -->
 <div id="disc" class="disc" inert aria-hidden="true">
   <div class="discIn">
     <p id="discLead"></p>
     <p class="meta" id="discMeta"></p>
     <ul class="links" id="discLinks"></ul>
   </div>
-  <div id="discShot">
-    <video id="shotVid" playsinline loop></video>
-    <div class="shotHud">
-      <button type="button" id="shotPrev" aria-label="Previous shot">&larr;</button>
-      <span id="shotTitle"></span>
-      <button type="button" id="shotMute" aria-label="Sound">&#9834;</button>
-      <button type="button" id="shotNext" aria-label="Next shot">&rarr;</button>
-    </div>
+</div>
+
+<!-- shots viewer: a vertical 9:16 card (the shots are phone-format clips), stories-style: segments on top, tap left / right, auto-advance -->
+<div id="story" class="story" inert aria-hidden="true" role="dialog" aria-label="Shots">
+  <div class="storyCard" id="storyCard">
+    <div class="storyBar" id="storyBar"></div>
+    <div class="storyHead"><img id="storyRing" alt=""><span id="storyGroup"></span></div>
+    <video id="shotVid" playsinline></video>
+    <div class="storyFoot"><span id="shotTitle"></span><button type="button" id="shotMute" aria-label="Sound" aria-pressed="false"><i class="on">&#9834;</i><i class="off">&#9834;&#824;</i></button></div>
+    <button type="button" class="storyTap prev" id="shotPrev" aria-label="Previous shot"></button>
+    <button type="button" class="storyTap next" id="shotNext" aria-label="Next shot"></button>
   </div>
+  <button id="storyClose" class="xbtn" aria-label="Close shots"><span class="pill"></span><span class="mk"><i></i><i></i></span></button>
 </div>
 
 <div id="dim"></div>
