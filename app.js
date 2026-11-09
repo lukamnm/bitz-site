@@ -11,14 +11,61 @@ const shotsData = await fetch('data/shots.json').then(r => r.json()).catch(() =>
 // stories ride the same strip and panel as projects: each one becomes a card (cover + title) whose panel shows the article
 const stories = (await fetch('data/stories.json').then(r => r.json()).catch(() => [])).map(s => ({
   slug: s.slug, story: true, featured: true, title: s.title.en, blurb: s.excerpt.en, year: s.date.slice(0, 10), client: null, cats: s.categories,
-  cover: s.cover, gallery: [], sections: s.sections.en, home: { img: s.cover }, seo: s.seo?.en,
-  i18n: { ge: s.hasGe ? { title: s.title.ge, blurb: s.excerpt.ge, sections: s.sections.ge } : null },
+  cover: s.cover, gallery: [], sections: s.sections.en, home: { img: s.cover }, seo: s.seo?.en, seoAll: s.seo, url: s.url,
+  i18n: { ge: s.hasGe ? { title: s.title.ge, blurb: s.excerpt.ge, sections: s.sections.ge, seo: s.seo?.ge } : null },
 }));
+const site = await fetch('data/site.json').then(r => r.json()).catch(() => null);   // search texts of home, blog list, Profile, Contact
 try { await Promise.all([document.fonts.load('500 40px Moncero'), document.fonts.load('400 20px Moncero')]); } catch {}   // labels are baked into textures
 let mode = 'featured';
-const items = () => (mode === 'stories' ? stories : mode === 'featured' ? data.filter(p => p.featured) : data);
+const extra = new Set();          // a project that is not on the strip joins it for the visit when someone arrives on its address
+const items = () => (mode === 'stories' ? stories : mode === 'featured' ? data.filter(p => p.featured || extra.has(p.slug)) : data);
+
+// ---------------------------------------------------------------- addresses: every project, post and page has its own (tools/pages.mjs writes
+// a real page for each, matching the old WordPress URLs). The app reads the address on load and on back / forward, and writes it as you move.
+const BASE_PATH = new URL(document.baseURI).pathname;               // "/preview/bitz/" on the preview, "/" when live
+const here = () => { const p = decodeURI(location.pathname); return p.startsWith(BASE_PATH) ? p.slice(BASE_PATH.length) : ''; };
+function parseRoute(path) {
+  let p = path.replace(/^\/+/, ''); if (p && !p.endsWith('/')) p += '/';
+  const ge = p === 'ge/' || p.startsWith('ge/');
+  const pr = data.find(x => x.url && (x.url.en === p || x.url.ge === p));
+  if (pr) return { kind: 'project', p: pr, lang: pr.url.ge === p ? 'ge' : 'en' };
+  const st = stories.find(x => x.url && (x.url.en === p || x.url.ge === p));
+  if (st) return { kind: 'post', p: st, lang: st.url.ge === p ? 'ge' : 'en' };
+  const rest = ge ? p.slice(3) : p, L = ge ? 'ge' : 'en';
+  if (rest === 'stories/') return { kind: 'blog', lang: L };
+  if (rest === 'about/') return { kind: 'about', lang: L };
+  if (rest === 'contact/') return { kind: 'contact', lang: L };
+  return { kind: 'home', lang: L, unknown: rest !== '' };
+}
+const route0 = parseRoute(here());
+const pre = () => (lang === 'ge' ? 'ge/' : '');
+function urlFor(r) {
+  if (r.kind === 'project' || r.kind === 'post') return (lang === 'ge' && r.p.url.ge) || r.p.url.en;
+  return pre() + ({ blog: 'stories/', about: 'about/', contact: 'contact/' }[r.kind] || '');
+}
+function headFor(r) {
+  const k = lang === 'ge' ? 'ge' : 'en';
+  if (r.kind === 'project' || r.kind === 'post') {
+    const s = (k === 'ge' && r.p.i18n?.ge?.seo?.title ? r.p.i18n.ge.seo : null) || r.p.seo || {}, t = T(r.p);
+    return { title: s.title || `${t.title} | bitz`, description: s.description || t.blurb || '' };
+  }
+  const key = { blog: 'blog', about: 'about', contact: 'contact' }[r.kind] || 'home', pg = site?.pages?.[key];
+  return (pg && (pg[k] || pg.en)) || { title: document.title, description: '' };
+}
+let routing = false;                        // true while the app follows an address (back / forward), so it does not write one back
+function syncUrl(push = true) {
+  if (routing) return;
+  const r = currentRoute(), u = urlFor(r);
+  if (u !== here()) history[push ? 'pushState' : 'replaceState'](null, '', BASE_PATH + u);
+  setHead(r);
+}
+function setHead(r) {
+  const h = headFor(r); document.title = h.title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', h.description);
+}
 // ---------------------------------------------------------------- language: EN / GE (Georgian texts come from the old /ge/ site, per project under i18n.ge)
-let lang = 'en'; try { lang = localStorage.getItem('lang') === 'ge' ? 'ge' : 'en'; } catch {}
+// the address decides (/ge/... is Georgian); the remembered choice no longer overrides a page someone linked to
+let lang = route0.lang === 'ge' ? 'ge' : 'en';
 const UI = { en: { profile: 'Profile', featured: 'Featured', stories: 'Blog', contact: 'Contact', lang: 'GE' },
              ge: { profile: 'პროფილი', featured: 'რჩეული', stories: 'ბლოგი', contact: 'კონტაქტი', lang: 'EN' } };
 const T = p => {                                     // the project's texts in the current language, falling back to English field by field
@@ -31,6 +78,9 @@ function applyLang() {
   if (hole.open) fillDisc(hole.what);
   if (typeof shotLabels === 'function') shotLabels();
   const b = document.getElementById('langBtn'); b.textContent = UI[lang].lang; b.setAttribute('lang', lang === 'ge' ? 'en' : 'ka');
+  $('#home').setAttribute('href', pre() || './');                    // the corner links are real addresses in the current language
+  $('a[data-ui="profile"]').setAttribute('href', pre() + 'about/');
+  $('a[data-ui="contact"]').setAttribute('href', pre() + 'contact/');
 }
 
 // ---------------------------------------------------------------- constants lifted from the reference's shader + config
@@ -196,6 +246,7 @@ function dismissPre() {
   if (RM) $('#pre').style.display = 'none';
   else gsap.to('#pre', { opacity: 0, duration: 0.6, delay: 0.15, ease: 'power2.out', onComplete: () => ($('#pre').style.display = 'none') });
   if (!S.mobile) intro();
+  if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
 }
 setTimeout(dismissPre, 4000);
 
@@ -579,7 +630,7 @@ function buildRing() {
 
 function intro() {
   if (RM) return;
-  S.s = 1.2 * S.pitch; S.sT = 0; S.vel = 0;        // the strip slides in through the spring
+  S.s = S.sT + 1.2 * S.pitch; S.vel = 0;           // the strip slides in through the spring (onto the card an address asked for, else the first)
   gsap.from(camera.position, { z: CAMZ + 2.5, duration: 1.8, ease: 'expo.out' });
 }
 
@@ -1034,6 +1085,7 @@ async function openProject(i, fromRect) {
   if (busy || S.open !== null) return; busy = true;
   const p = items()[i];
   S.open = i;
+  syncUrl();
   fill(p);
   const T = targetRect();
   const D = RM ? 0 : 1;
@@ -1090,6 +1142,7 @@ function closeProject() {
     if (openCard) { restoreCard(openCard); openCard = null; }
     S.open = null; busy = false;
   };
+  S.open = null; syncUrl(); S.open = i;              // the address goes back to the list as soon as the panel starts closing
 
   if (S.mobile) {
     const src = stackRect(i), T = targetRect(), heroR = hero.getBoundingClientRect();
@@ -1150,6 +1203,7 @@ function switchProject(dir) {
   }
   sides = dir > 0 ? { prev: old, next: fresh } : { prev: fresh, next: old };
   openCard = incoming; S.open = ni;
+  syncUrl(false);                                     // prev / next replaces the address (back still returns to the list)
   // the old content rides out on the old sheet and fades; the new content is built now and enters with the reference's stagger
   disposeGhosts();
   ghosts = pplanes; pplanes = [];
@@ -1215,6 +1269,7 @@ function setMode(m) {
     $('#mF').setAttribute('aria-pressed', m === 'featured');
     $('#mS').setAttribute('aria-pressed', m === 'stories');
     if (S.mobile) buildStack(); else buildRing();
+    syncUrl();
   };
   if (S.mobile || RM || hole.open) return apply();
   swapping = true;
@@ -1247,9 +1302,10 @@ function openHole(on, what = hole.what || 'profile') {
   if (on && hole.from) gsap.to(hole, { m: 1, duration: 0.85 * D, ease: 'power3.inOut', overwrite: 'auto' });
   gsap.to('#shotsNav', { autoAlpha: on ? 0 : 1, duration: (on ? 0.3 : 0.5) * D, delay: on ? 0 : 0.3 * D, overwrite: 'auto' });   // the bubbles sit where the rim passes
   applyLang();                                        // the active corner label reads "Close"
+  syncUrl();                                          // /about/ and /contact/ while open
 }
 UI.en.close = 'Close'; UI.ge.close = 'დახურვა';
-for (const [sel, what] of [['a[href="#profile"]', 'profile'], ['a[href="#contact"]', 'contact']]) {
+for (const [sel, what] of [['a[data-ui="profile"]', 'profile'], ['a[data-ui="contact"]', 'contact']]) {
   $(sel).addEventListener('click', e => { e.preventDefault(); if (S.open !== null) return; openHole(!(hole.open && hole.what === what), what); });
 }
 addEventListener('click', e => {                     // a click outside the disc closes it (links and the corner labels keep working)
@@ -1258,8 +1314,9 @@ addEventListener('click', e => {                     // a click outside the disc
   openHole(false);
 });
 // language toggle: relabel the corners, rebake the card titles, refill an open project (its planes rebuild from the new DOM)
-$('#langBtn').addEventListener('click', () => {
-  lang = lang === 'en' ? 'ge' : 'en';
+function setLang(L) {
+  if (L === lang) return;
+  lang = L;
   try { localStorage.setItem('lang', lang); } catch {}
   applyLang();
   if (S.mobile) { buildStack(); if (S.open !== null) fill(items()[S.open]); return; }
@@ -1267,10 +1324,52 @@ $('#langBtn').addEventListener('click', () => {
   if (story.open) showShot(story.g, story.i, true);
   for (const c of cards) if (c.img !== undefined) bake(c);
   if (S.open !== null && S.open >= 0) fill(items()[S.open]);
-});
+}
+// the switch moves to the same page in the other language (/portfolio/brace/ <-> /ge/portfolio/brace/); a post without a translation keeps its address
+$('#langBtn').addEventListener('click', () => { setLang(lang === 'en' ? 'ge' : 'en'); syncUrl(false); });
 $('#mF').addEventListener('click', () => setMode('featured'));
 $('#mS').addEventListener('click', () => setMode('stories'));
-$('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
+$('#home').addEventListener('click', e => {             // the logo: back to the featured strip from anywhere
+  e.preventDefault();
+  if (story.open) return closeStory();
+  if (S.open !== null) return closeProject();
+  if (hole.open) return openHole(false);
+  setMode('featured');
+});
+
+// the address the current state stands for, and following an address (first load, back / forward)
+function currentRoute() {
+  if (S.open !== null && S.open >= 0) { const p = items()[S.open]; if (p) return { kind: p.story ? 'post' : 'project', p }; }
+  if (hole.open && (hole.what === 'profile' || hole.what === 'contact')) return { kind: hole.what === 'profile' ? 'about' : 'contact' };
+  return { kind: mode === 'stories' ? 'blog' : 'home' };
+}
+const idle = () => new Promise(res => { const t = () => (busy || swapping || story.busy || gsap.isTweening(hole) ? requestAnimationFrame(t) : res()); t(); });
+const wait = ms => new Promise(r => setTimeout(r, RM ? 0 : ms));
+async function follow(r) {
+  routing = true;
+  try {
+    if (r.lang && r.lang !== lang) setLang(r.lang);
+    await idle();
+    if (story.open) { closeStory(); await idle(); }
+    const same = (S.open !== null && S.open >= 0 && (r.kind === 'project' || r.kind === 'post') && items()[S.open] === r.p);
+    if (S.open !== null && !same) { closeProject(); await idle(); }
+    const holeWant = r.kind === 'about' ? 'profile' : r.kind === 'contact' ? 'contact' : null;
+    if (hole.open && hole.what !== holeWant) { openHole(false); await idle(); }
+    const m = r.kind === 'blog' || r.kind === 'post' ? 'stories' : r.kind === 'about' || r.kind === 'contact' ? mode : 'featured';
+    if (r.kind === 'project' && !r.p.featured && !extra.has(r.p.slug)) { extra.add(r.p.slug); if (m === mode) { if (S.mobile) buildStack(); else buildRing(); } }
+    if (m !== mode) { setMode(m); await idle(); }
+    if ((r.kind === 'project' || r.kind === 'post') && !same) {
+      const i = items().indexOf(r.p);
+      if (i >= 0) {
+        if (S.mobile) openProject(i, stackRect(i));
+        else { S.sT = i * S.pitch; await wait(450); openProject(i); }
+        await idle();
+      }
+    }
+    if (holeWant && !(hole.open && hole.what === holeWant)) openHole(true, holeWant);
+  } finally { routing = false; setHead(currentRoute()); }
+}
+addEventListener('popstate', () => follow(parseRoute(here())));
 
 // ---------------------------------------------------------------- shots: the four group rings as bubbles (top centre). A bubble opens a white GL
 // sheet that grows out of the bubble like a project opening (drawn over everything: no depth test, so it never cuts through the 3D cards).
@@ -1410,5 +1509,10 @@ $('#storyClose').addEventListener('click', closeStory);
 applyLang();
 
 // ---------------------------------------------------------------- boot
+// the address may ask for the blog, a post, a project (one not on the strip joins it), Profile or Contact
+if (route0.kind === 'blog' || route0.kind === 'post') { mode = 'stories'; $('#mF').setAttribute('aria-pressed', 'false'); $('#mS').setAttribute('aria-pressed', 'true'); }
+if (route0.kind === 'project' && !route0.p.featured) extra.add(route0.p.slug);
 if (S.mobile) buildStack(); else initGL();
+if (route0.kind === 'project' || route0.kind === 'post') { const i = items().indexOf(route0.p); if (i >= 0 && !S.mobile) S.s = S.sT = i * S.pitch; }
+if (!route0.unknown) setHead(route0);
 MQ.addEventListener('change', () => location.reload());

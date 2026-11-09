@@ -49,6 +49,10 @@
    "description": "Brand identity for Exobiopharma - logo, color system and typography for a biopharmaceutical company.",
    "image": "https://bitz.ge/wp-content/uploads/2026/08/logo-usage.webp"
   },
+  "url": {
+   "en": "portfolio/exobiopharma/",
+   "ge": "ge/portfolio/exobiopharma/"
+  },
   "i18n": {
    "ge": {
     "title": "Exobiopharma",
@@ -133,6 +137,10 @@
    "title": "Marsleaders Branding Project | Bitz Portfolio",
    "description": "Marsleaders branding and design case study by Luka, a full-stack designer based in Tbilisi, Georgia.",
    "image": "https://bitz.ge/wp-content/uploads/2025/09/planet.webp"
+  },
+  "url": {
+   "en": "portfolio/marsleaders/",
+   "ge": "ge/portfolio/marsleaders/"
   },
   "i18n": {
    "ge": {
@@ -223,6 +231,10 @@
    "description": "Complete branding project for BRACE electric vehicle charger - design system, 3D animations, and visual identity development.",
    "image": "https://bitz.ge/wp-content/uploads/2025/08/brace-a4.jpg"
   },
+  "url": {
+   "en": "portfolio/brace/",
+   "ge": "ge/portfolio/brace/"
+  },
   "i18n": {
    "ge": {
     "title": "ბრეისი",
@@ -296,6 +308,10 @@
    "description": "3D design concept reimagining the iconic Motorola Transistor radio with modern materials, lighting, and motion animation.",
    "image": "https://bitz.ge/wp-content/uploads/2023/01/1.jpg"
   },
+  "url": {
+   "en": "portfolio/motorola-transistor-concept/",
+   "ge": "ge/portfolio/motorola-transistor-concept/"
+  },
   "i18n": {
    "ge": {
     "title": "მოტოროლას გადამცემი",
@@ -364,6 +380,10 @@
    "description": "Cerebro branding and design case study by Luka, a full-stack designer based in Tbilisi, Georgia.",
    "image": "https://bitz.ge/wp-content/uploads/2022/05/cer1.jpg"
   },
+  "url": {
+   "en": "portfolio/cerebro/",
+   "ge": "ge/portfolio/cerebro/"
+  },
   "i18n": {
    "ge": {
     "title": "სერებრო",
@@ -431,6 +451,10 @@
    "description": "Complete branding project including logo design, signpost, exterior design, and packaging mockups for Lisi Drive.",
    "image": "https://bitz.ge/wp-content/uploads/2022/01/lisi-drivelast.jpg"
   },
+  "url": {
+   "en": "portfolio/lisi-drive/",
+   "ge": "ge/portfolio/lisi-drive/"
+  },
   "i18n": {
    "ge": {
     "title": "ლისი დრაივი",
@@ -492,6 +516,10 @@
    "title": "Credo Bank - UI/UX Design | Bitz Portfolio",
    "description": "UI/UX design for Credo Bank's SMART Deposit calculator - intuitive 3-step interface with data table and animations.",
    "image": "https://bitz.ge/wp-content/uploads/2021/11/Credo-mobile-pic.jpg"
+  },
+  "url": {
+   "en": "portfolio/kredo-banki/",
+   "ge": "ge/portfolio/kredo-banki/"
   },
   "i18n": {
    "ge": {
@@ -560,6 +588,10 @@
    "title": "RoyalPixels - Motion Graphics Transitions | Bitz Portfolio",
    "description": "Glitch transition templates for After Effects and Premiere Pro - neo futuristic design with HUD elements and motion assets.",
    "image": "https://bitz.ge/wp-content/uploads/2021/10/Royal1-1.jpg"
+  },
+  "url": {
+   "en": "portfolio/royalpixels/",
+   "ge": "ge/portfolio/royalpixels/"
   },
   "i18n": {
    "ge": {
@@ -634,6 +666,10 @@
    "description": "Artistic graphic design project featuring Georgian writing styles (Nuskhur, Round, Mkhedruli) with 36 compositions and typographic posters.",
    "image": "https://bitz.ge/wp-content/uploads/2021/09/carousel-2-2.jpg"
   },
+  "url": {
+   "en": "portfolio/anbanthqeba/",
+   "ge": "ge/portfolio/anbanthqeba/"
+  },
   "i18n": {
    "ge": {
     "title": "ანბანთქება",
@@ -703,6 +739,10 @@
    "title": "E-Space - Motion Graphics & Video Animation | Bitz Portfolio",
    "description": "Motion graphics and animation videos for E-Space electric vehicle charging network - app tutorials and promotional content.",
    "image": "https://bitz.ge/wp-content/uploads/2021/09/espace-hero.png"
+  },
+  "url": {
+   "en": "portfolio/e-space/",
+   "ge": "ge/portfolio/e-space/"
   },
   "i18n": {
    "ge": {

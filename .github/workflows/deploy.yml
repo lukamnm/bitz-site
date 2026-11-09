@@ -58,12 +58,16 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq lftp
           # size-based mirror for the media (checkout times are always new), never deleting anything on the server;
           # the entry files are then re-sent unconditionally, since a changed hash stamp keeps their size the same
+          # every page (one per address), the sitemap, robots and .htaccess are re-sent too: a new asset stamp keeps a page's size the same
+          R=/public_html/preview/bitz
+          PAGES=$(cd _site && find . -type f \( -name '*.html' -o -name '.htaccess' -o -name 'sitemap.xml' -o -name 'robots.txt' \) | sed 's#^\./##' \
+            | while read -r f; do d=$(dirname "$f"); echo "mkdir -p -f $R/$d; put -O $R/$d _site/$f;"; done)
           lftp -u "$FTP_USER","$FTP_PASSWORD" "$FTP_HOST" -e "
             set ftp:ssl-allow no; set net:max-retries 3; set net:timeout 30;
-            mkdir -p -f /public_html/preview/bitz;
-            mirror --reverse --ignore-time --parallel=4 --verbose=1 _site /public_html/preview/bitz;
-            cd /public_html/preview/bitz;
-            put -O . _site/index.html; put -O . _site/app.js; put -O . _site/style.css;
-            mirror --reverse --parallel=4 _site/data /public_html/preview/bitz/data;
+            mkdir -p -f $R;
+            mirror --reverse --ignore-time --parallel=4 --verbose=1 _site $R;
+            put -O $R _site/app.js; put -O $R _site/style.css;
+            mirror --reverse --parallel=4 _site/data $R/data;
+            $PAGES
             quit"
           echo "Published: https://bitz.ge/preview/bitz/"

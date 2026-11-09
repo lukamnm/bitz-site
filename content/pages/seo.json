@@ -1,0 +1,38 @@
+{
+  "en": {
+    "home": {
+      "title": "Luka Gabidzashvili - Branding & Graphic Design | Bitz",
+      "description": "Transform your brand with innovative digital design solutions. Explore Bitz's portfolio for logos, web design, motion graphics, and more."
+    },
+    "blog": {
+      "title": "Design Insights & Creative Process | bitz Blog",
+      "description": "Behind-the-scenes design thinking on branding, motion, and visual identity from designer Luka Gabidzashvili."
+    },
+    "about": {
+      "title": "About Luka - Full-Stack Designer in Tbilisi | Bitz",
+      "description": "Learn about Luka, a full-stack designer in Tbilisi specializing in branding, graphic design, 3D, motion, and UI/UX."
+    },
+    "contact": {
+      "title": "Contact Luka - Branding & Design Services | Bitz",
+      "description": "Get in touch with Luka for branding, graphic design, 3D, motion, and UI/UX design projects in Tbilisi, Georgia."
+    }
+  },
+  "ka": {
+    "home": {
+      "title": "ლუკა გაბიძაშვილი - გრაფიკული დიზაინერი, ბრენდინგი, 3D, UI/UX | Bitz",
+      "description": "10+ წლიანი გამოცდილება ბრენდინგში, UI/UX დიზაინში, ანიმაციაში და 3D ვიზუალიზაციაში. თანამედროვე დიზაინი."
+    },
+    "blog": {
+      "title": "ბლოგი - დიზაინის ტრენდები და ტექნიკები | Bitz",
+      "description": "ბლოგები დიზაინის ტრენდებზე, ბრენდინგზე, UI/UX-სა და ანიმაციაზე."
+    },
+    "about": {
+      "title": "ჩემ შესახებ - ლუკა გაბიძაშვილი, დიზაინერი | Bitz",
+      "description": "ჩემი გამოცდილება და მიდგომები დიზაინში. 10+ წელი პროფესიულ დიზაინში, ბრენდინგი, ანიმაცია, UI/UX და 3D ვიზუალიზაცია."
+    },
+    "contact": {
+      "title": "კონტაქტი - დამიკავშირდი | Bitz",
+      "description": "დამიკავშირდი თუ გსურს ბრენდინგი, გრაფიკულ დიზაინი, UI/UX ან ანიმაცია. მალევე გიპასუხებთ."
+    }
+  }
+}

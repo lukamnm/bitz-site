@@ -35,6 +35,9 @@ function sections(markdown) {
   return out.filter(s => s.t.length);
 }
 const seo = s => (s ? { title: s.title || '', description: s.description || '', image: s.image || null } : null);
+// page addresses, relative to the site root, always with a trailing slash ("portfolio/brace/"); an address set in the admin wins
+const addr = u => (has(u) ? String(u).trim().replace(/^https?:\/\/[^/]+\//, '').replace(/^\/+/, '').replace(/\/*$/, '/') : null);
+const ymd = d => String(d || '').slice(0, 10).replace(/-/g, '/');
 
 // ---------------------------------------------------------------- projects
 const projects = [];
@@ -48,6 +51,7 @@ for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/p
     cats: en.cats || [], link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: (en.gallery || []).map(rel), sections: sec(en.sections),
     home: en.home && (en.home.img || en.home.video) ? pick({ img: rel(en.home.img), video: rel(en.home.video), webm: rel(en.home.webm) }, ['img', 'video', 'webm']) : null,
     seo: seo(en.seo),
+    url: { en: addr(en.url) || `portfolio/${slug}/`, ge: ka.title ? addr(ka.url) || `ge/portfolio/${slug}/` : null },
     i18n: { ge: { title: ka.title || null, blurb: ka.blurb || null, sections: kaSec.length ? kaSec : null, seo: seo(ka.seo) } },
   });
 }
@@ -64,6 +68,7 @@ for (const slug of fs.existsSync('content/blog') ? fs.readdirSync('content/blog'
     slug, date: en.date || '', title: { en: en.title || slug, ge: kaOk ? ka.title || null : null }, excerpt: { en: en.excerpt || '', ge: kaOk ? ka.excerpt || null : null },
     cover: rel(en.cover), categories: en.categories || [], hasGe: kaOk, sections: { en: sections(en.body), ge: kaOk ? sections(ka.body) : null },
     seo: { en: seo(en.seo), ge: kaOk ? seo(ka.seo) : null },
+    url: { en: addr(en.url) || `blog/${ymd(en.date)}/${slug}/`, ge: kaOk ? addr(ka.url) || `ge/${ymd(en.date)}/${slug}/` : null },
   });
 }
 stories.sort((a, b) => String(b.date).localeCompare(String(a.date)));
@@ -96,5 +101,12 @@ const overlay = key => {
   };
 };
 write('data/profile.json', { profile: overlay('profile'), contact: overlay('contact') });
+
+// ---------------------------------------------------------------- search texts of the site's own pages (home, blog list, Profile, Contact)
+{
+  const f = 'content/pages/seo.json', { en = {}, ka = {} } = fs.existsSync(f) ? read(f) : {};
+  const both = k => ({ en: seo(en[k]) || { title: '', description: '' }, ge: seo(ka[k]) || null });
+  write('data/site.json', { pages: { home: both('home'), blog: both('blog'), about: both('about'), contact: both('contact') } });
+}
 
 console.log(`built: ${projects.length} projects (${projects.filter(p => p.featured).length} on the strip), ${stories.length} blog posts, ${groups.length} shot groups (${groups.reduce((n, g) => n + g.items.length, 0)} clips), profile + contact`);

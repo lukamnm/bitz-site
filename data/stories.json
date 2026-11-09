@@ -72,6 +72,10 @@
     "image": "https://bitz.ge/wp-content/uploads/2023/10/cgi-vs-photography-hero.jpg"
    },
    "ge": null
+  },
+  "url": {
+   "en": "blog/2026/09/06/cgi-product-renders-vs-photography-packaging/",
+   "ge": null
   }
  },
  {
@@ -173,6 +177,10 @@
     "description": "სად ზოგავს AI ნამდვილად დროს დიზაინის სრულ პროცესში და სად ვერ ცვლის კონცეფციას, სტრატეგიასა და საბოლოო ოსტატობას.",
     "image": null
    }
+  },
+  "url": {
+   "en": "blog/2026/08/19/where-ai-actually-belongs-in-a-designer-s-workflow/",
+   "ge": "ge/2026/08/19/ai-dizaineris-samushao-protsesshi/"
   }
  },
  {
@@ -298,6 +306,10 @@
     "description": "Soft UI 2.0 ტრენდი: რატომ უნდა იყოს ინტერფეისი უფრო ადამიანური. რას ნიშნავს ეს UI/UX დიზაინის მომავლისთვის.",
     "image": null
    }
+  },
+  "url": {
+   "en": "blog/2026/08/12/soft-ui-2-0-designing-interfaces-that-feel-human-again/",
+   "ge": "ge/2026/08/13/soft-ui-2-0-interpeisebi-romlebic-adamianurad-grdznoben-tavs/"
   }
  },
  {
@@ -410,6 +422,10 @@
     "description": "Motion-first ბრენდინგი დღეს უკვე აუცილებელია. რატომ სჭირდებათ ბრენდებს, მოძრავი იდენტობა და არა მხოლოდ უბრლოდ ლოგო",
     "image": null
    }
+  },
+  "url": {
+   "en": "blog/2026/08/10/why-brands-need-a-motion-layer-now-not-just-a-logo/",
+   "ge": "ge/2026/08/10/ratom-stchirdeba-brendebs-modzraobis-phena-akhlave-da-ara-mkholod-logo/"
   }
  }
 ]

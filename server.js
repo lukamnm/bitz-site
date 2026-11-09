@@ -4,7 +4,9 @@ const TYPES = { '.html':'text/html', '.mp4':'video/mp4', '.webm':'video/webm','.
 http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0]);
   if (p.endsWith('/')) p += 'index.html';
-  const fp = path.join(DIR, p);
+  let fp = path.join(DIR, p);
+  // page addresses (/portfolio/brace/, /ge/stories/ ...) are real folders only in the staged build; here the app serves them all
+  if (!fs.existsSync(fp) && p.endsWith('/index.html') && !p.startsWith('/admin/')) fp = path.join(DIR, 'index.html');
   if (!fp.startsWith(DIR) || !fs.existsSync(fp)) { res.writeHead(404); return res.end('nf'); }
   const stat = fs.statSync(fp);
   const type = TYPES[path.extname(fp)] || 'application/octet-stream';

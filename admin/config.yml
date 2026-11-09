@@ -119,6 +119,7 @@ collections:
       - { name: categories, label: Categories, widget: list, required: false }
       - { name: tags, label: Tags, widget: list, required: false }
       - { name: excerpt, label: Excerpt (the short text under the title), widget: text, i18n: true }
+      - { name: url, label: Page address, widget: string, i18n: true, required: false, hint: 'Leave empty for an automatic address: blog/yyyy/mm/dd/<name>/ in English, ge/yyyy/mm/dd/<name>/ in Georgian. Existing posts keep their old bitz.ge addresses.' }
       - { name: body, label: Article, widget: markdown, i18n: true, hint: 'Headings (##) start the sections of the article panel.' }
       - name: seo
         label: Search and sharing
@@ -190,6 +191,41 @@ collections:
             fields:
               - { name: label, label: Label, widget: string, i18n: true }
               - { name: href, label: 'Link (https://..., mailto:..., tel:... or a file like /assets/docs/resume.pdf)', widget: string, i18n: true }
+      - name: seo
+        label: Search texts of the main pages
+        file: content/pages/seo.json
+        format: json
+        i18n: true
+        description: What Google and link previews show for the home page, the blog list, Profile and Contact. Projects and posts have their own in "Search and sharing".
+        fields:
+          - name: home
+            label: Home page
+            widget: object
+            i18n: true
+            fields:
+              - { name: title, label: Search title, widget: string, i18n: true }
+              - { name: description, label: Search description, widget: text, i18n: true }
+          - name: blog
+            label: Blog list
+            widget: object
+            i18n: true
+            fields:
+              - { name: title, label: Search title, widget: string, i18n: true }
+              - { name: description, label: Search description, widget: text, i18n: true }
+          - name: about
+            label: Profile
+            widget: object
+            i18n: true
+            fields:
+              - { name: title, label: Search title, widget: string, i18n: true }
+              - { name: description, label: Search description, widget: text, i18n: true }
+          - name: contact
+            label: Contact
+            widget: object
+            i18n: true
+            fields:
+              - { name: title, label: Search title, widget: string, i18n: true }
+              - { name: description, label: Search description, widget: text, i18n: true }
       - name: contact
         label: Contact
         file: content/pages/contact.json

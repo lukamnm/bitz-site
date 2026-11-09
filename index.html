@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<base href="/">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!--seo-->
 <title>bitz - Luka Gabidzashvili</title>
 <meta name="description" content="bitz - design portfolio of Luka Gabidzashvili. Branding, 3D, video and web.">
+<!--/seo-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<noscript><style>body{overflow:auto}#pre,#gl,.nav,#panel,#ring{display:none}.doc{position:static;width:auto;height:auto;overflow:visible;clip:auto;clip-path:none;white-space:normal;max-width:68ch;margin:0 auto;padding:48px 20px;line-height:1.6}.doc a{text-decoration:underline}.doc ul{padding-left:1.2em}.doc h1{font-size:28px;margin-bottom:16px}.doc h2{font-size:18px;margin:28px 0 8px}.doc p{margin:0 0 12px}</style></noscript>
 <script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js"}}</script>
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/lenis.min.js"></script>
@@ -20,13 +24,13 @@
 <div id="tags" aria-hidden="true"></div>
 <ul id="stack"></ul>
 
-<nav class="nav tl"><a href="#" id="home" class="logo" aria-label="bitz - home"><img src="assets/img/logo.svg" alt="bitz"></a></nav>
-<nav class="nav tr"><a href="#profile" data-ui="profile">Profile</a><button id="langBtn" type="button" lang="ka" aria-label="Switch language">GE</button></nav>
+<nav class="nav tl"><a href="./" id="home" class="logo" aria-label="bitz - home"><img src="assets/img/logo.svg" alt="bitz"></a></nav>
+<nav class="nav tr"><a href="about/" data-ui="profile">Profile</a><button id="langBtn" type="button" lang="ka" aria-label="Switch language">GE</button></nav>
 <nav class="nav bl">
   <button id="mF" aria-pressed="true" data-ui="featured">Featured</button><span class="sl">/</span><button id="mS" aria-pressed="false" data-ui="stories">Blog</button>
 </nav>
 <nav class="nav tc" id="shotsNav" aria-label="Shots"></nav>
-<nav class="nav br"><a href="#contact" data-ui="contact">Contact</a></nav>
+<nav class="nav br"><a href="contact/" data-ui="contact">Contact</a></nav>
 
 <!-- the hole overlay (Profile / Contact): a centred disc; the lens is drawn by the post pass around this element -->
 <div id="disc" class="disc" inert aria-hidden="true">
@@ -72,6 +76,9 @@
     </div>
   </div>
 </section>
+
+<!-- the readable version of this page (each address gets its own, see tools/pages.mjs): for search engines, link previews and screen readers -->
+<main id="doc" class="doc"><!--doc--><!--/doc--></main>
 
 <script type="module" src="app.js"></script>
 </body>

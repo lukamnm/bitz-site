@@ -13,10 +13,19 @@ content/
                                  assets/shots/auto/; an optional "Bubble image" replaces the still)
   pages/profile.json             the text and links in the Profile circle
   pages/contact.json             the text and links in the Contact circle
+  pages/seo.json                 search title + description of the home page, the blog list, Profile and Contact
   wp-export/                     the raw WordPress export this all came from (media/ is not in git); history only
 ```
 
 Media paths are written site-absolute (`/assets/img/x.webp`) so the admin can preview them; the build makes them relative.
+
+## Addresses
+
+Every project, post and page has its own address, the same as on the old WordPress site, in both languages:
+`portfolio/<name>/` and `ge/portfolio/<name>/`, `blog/yyyy/mm/dd/<name>/` and `ge/yyyy/mm/dd/<name>/` (a post's "Page address" can
+override it), `stories/`, `about/`, `contact/` and their `ge/` twins. `tools/pages.mjs` writes a real page for each one (own title,
+description, share image, hreflang, JSON-LD and a readable text version) plus `sitemap.xml`. The preview is marked noindex; going live
+flips that in `tools/site.mjs` (BITZ_BASE, BITZ_INDEX).
 
 ## How a change reaches the site
 
