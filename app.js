@@ -1403,7 +1403,18 @@ function fillDisc(what) {
   const o = overlays?.[what]; if (!o) return;
   $('#discLead').textContent = L(o.lead); $('#discMeta').textContent = L(o.meta);
   $('#discLinks').innerHTML = o.links.map(l => `<li><a href="${L(l.href)}" target="_blank" rel="noopener">${L(l.label)}</a></li>`).join('');
+  if (S.mobile) fitDisc();
 }
+// phones: shrink the circle's text until the whole block (text, meta, links) fits inside the round shape: (w/2)^2 + (h/2)^2 <= r^2
+function fitDisc() {
+  const inn = $('.discIn'), lead = $('#discLead');
+  lead.style.fontSize = '';
+  const r = disc.getBoundingClientRect().width / 2, w = inn.getBoundingClientRect().width / 2;
+  const hMax = 2 * Math.sqrt(Math.max(0, r * r - w * w)) - 12;
+  let fs = parseFloat(getComputedStyle(lead).fontSize);
+  while (inn.scrollHeight > hMax && fs > 11) { fs -= 0.5; lead.style.fontSize = fs + 'px'; }
+}
+addEventListener('resize', () => { if (S.mobile && hole.open) fitDisc(); });
 function openHole(on, what = hole.what || 'profile') {
   if (on && !overlays) return;
   if (on && hole.open && hole.what === what) return openHole(false);
