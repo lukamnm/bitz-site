@@ -314,7 +314,7 @@ void main(){
   if (uHasMap > 0.5) { vec4 t = pillSample(vUv, vUv * uAspect); col = t.rgb; ta = t.a; }
   if (uHasVid > 0.5) {                                        // video under the baked label overlay
     vec3 vc = texture2D(uVid, vUv * uVidRepeat + uVidOffset).rgb;
-    col = mix(vc, col, ta); ta = 1.0;
+    col = mix(vc, col, uHasMap > 0.5 ? ta : 0.0); ta = 1.0;   // with a baked label on top the label's alpha mixes; a bare video plane shows the video
   }
   // reference shading: far side darkens toward near-black, then the sheet is lit from the upper left (static sheen)
   col = mix(col, vec3(0.005), uShade * 0.8 * vD * vD);      // 0.059 sRGB -> linear; squared (reference spread 1): the near cards keep their true colours, the far side still hazes
@@ -543,6 +543,7 @@ function layout() {
   }
   rebakeAll();
   sizeLoop();
+  if (typeof placeStory === 'function') placeStory();
   clearTimeout(planeT); planeT = setTimeout(() => { if (pplanes.length) buildPanelPlanes(); }, 150);   // text rasters depend on the layout
   // floor extent (reference: lip toward the camera, run x H toward the back, wide x W sideways)
   const run = FLOOR.run * S.Hh;
@@ -670,7 +671,7 @@ function setHover(i, canvas) {
 function bindInput(canvas) {
   let wheelAcc = 0, wheelT = 0;
   addEventListener('wheel', e => {                 // anywhere on the home page, not only over the canvas (the corner labels sit on top)
-    if (S.open !== null) return;
+    if (S.open !== null || story.open) return;
     e.preventDefault();
     // one mouse notch = half a card (the reference does a full card; Luka wanted two notches per card). Notch deltas differ by
     // mouse and OS (100 or 150 px here), so a notch is counted as an event, and trackpad crumbs accumulate to the same 40 px gate
@@ -686,7 +687,7 @@ function bindInput(canvas) {
     wheelAcc = 0;
   }, { passive: false });
   canvas.addEventListener('pointerdown', e => {
-    if (S.open !== null || hole.open) return;
+    if (S.open !== null || hole.open || story.open) return;
     S.drag = { x: e.clientX, s: S.sT, lx: e.clientX, v: 0, t: performance.now() };
     S.moved = 0;
     canvas.setPointerCapture(e.pointerId);
@@ -700,7 +701,7 @@ function bindInput(canvas) {
       const pxs = Math.abs(e.clientX - S.drag.lx) / dtp;
       S.vd += (Math.tanh(pxs / 1900) - S.vd) * 0.4;
       S.drag.v = e.clientX - S.drag.lx; S.drag.lx = e.clientX; S.drag.t = now;
-    } else if (S.open === null && !hole.open) setHover(pick(e), canvas);
+    } else if (S.open === null && !hole.open && !story.open) setHover(pick(e), canvas);
   });
   const up = e => {
     if (!S.drag) return;
@@ -1268,16 +1269,58 @@ $('#mF').addEventListener('click', () => setMode('featured'));
 $('#mS').addEventListener('click', () => setMode('stories'));
 $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
 
-// ---------------------------------------------------------------- shots: the four group rings as bubbles (top centre); a bubble opens a stories-style
-// vertical 9:16 card that grows out of the bubble: segments on top, tap left / right, auto-advance through the group and on into the next, sound on
-const story = { open: false, g: 0, i: 0, muted: false, busy: false };
-const storyEl = $('#story'), storyCard = $('#storyCard'), vid = $('#shotVid'), bar = $('#storyBar');
+// ---------------------------------------------------------------- shots: the four group rings as bubbles (top centre). A bubble opens a white GL
+// sheet that grows out of the bubble like a project opening; the 4:5 clip plays on it as a video plane (so the cursor effects touch it);
+// a dark-ink HUD on the sheet's bottom band carries segments, group, title and mute; tap left / right, arrows, auto-advance, Escape / X to close
+const story = { open: false, g: 0, i: 0, muted: false, busy: false, sheet: null, plane: null, tex: null, rad: 0 };
+const storyEl = $('#story'), storyHud = $('#storyHud'), vid = $('#shotVid'), bar = $('#storyBar');
+const STORY = { h: 0.88, inset: 0.024, band: 0.08, aspect: 0.8 };     // of vh: sheet height, side / top inset, bottom band; the clip is 4:5
 {
   const nav = $('#shotsNav');
   nav.innerHTML = shotsData.groups.map((g, i) => `<button type="button" class="bub" data-g="${i}"><img src="${g.ring}" alt=""><span data-shot-label="${i}">${g.label.en}</span></button>`).join('');
-  nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null || hole.open) return; openStory(+b.dataset.g, b); });
+  nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null || hole.open || swapping) return; openStory(+b.dataset.g, b); });
 }
 function shotLabels() { for (const el of document.querySelectorAll('[data-shot-label]')) el.textContent = L(shotsData.groups[+el.dataset.shotLabel].label); }
+// the sheet's target rect in CSS px, centred; the clip rect inside it
+function storyRects() {
+  const vh = innerHeight, H = STORY.h * vh, inset = STORY.inset * vh, band = STORY.band * vh;
+  const vidH = H - inset - band, vidW = vidH * STORY.aspect, W = vidW + 2 * inset;
+  const x = (innerWidth - W) / 2, y = (vh - H) / 2;
+  return { sheet: { x, y, width: W, height: H }, clip: { x: x + inset, y: y + inset, width: vidW, height: vidH } };
+}
+function storyGL() {
+  if (story.sheet || S.mobile) return;
+  story.sheet = new THREE.Mesh(new THREE.PlaneGeometry(1, 1, 48, 12), cardMaterial());
+  const su = story.sheet.material.uniforms; su.uP.value = 0; su.uWhite.value = 1; su.uArrow.value = 0; su.uShade.value = 1;
+  story.sheet.renderOrder = 20; story.sheet.frustumCulled = false; story.sheet.visible = false; scene.add(story.sheet);
+  story.plane = new THREE.Mesh(planeGeo, cardMaterial(true));
+  const pu = story.plane.material.uniforms; pu.uP.value = 0; pu.uShade.value = 0; pu.uArrow.value = 0; pu.uAlpha.value = 0; pu.uHasMap.value = 0;
+  story.tex = new THREE.VideoTexture(vid); story.tex.colorSpace = THREE.SRGBColorSpace; story.tex.minFilter = THREE.LinearFilter;
+  pu.uVid.value = story.tex; pu.uHasVid.value = 1;
+  story.plane.renderOrder = 21; story.plane.frustumCulled = false; story.plane.visible = false; scene.add(story.plane);
+}
+// the clip's place inside the sheet, as fractions, so it rides along while the sheet grows or shrinks
+function storyFrac() { const { sheet, clip } = storyRects(), ws = worldRect(sheet), wc = worldRect(clip); return { x: (wc.x - ws.x) / ws.sx, y: (wc.y - ws.y) / ws.sy, sx: wc.sx / ws.sx, sy: wc.sy / ws.sy, ws }; }
+function syncStoryPlane(frac) {
+  const m = story.sheet, pu = story.plane.material.uniforms, su = m.material.uniforms, pxw = pxToWorld();
+  story.plane.position.set(m.position.x + frac.x * m.scale.x, m.position.y + frac.y * m.scale.y, 0.002);
+  story.plane.scale.set(frac.sx * m.scale.x, frac.sy * m.scale.y, 1); pu.uAspect.value.set(story.plane.scale.x, story.plane.scale.y);
+  pu.uRadius.value = 0.6 * (innerWidth / 100) * pxw;
+  su.uAspect.value.set(m.scale.x, m.scale.y); su.uRadius.value = story.rad * pxw;
+}
+function placeStory() {                                 // sheet + clip onto their final rects (end of the open tween, and on resize)
+  if (!story.sheet || !story.open || story.busy) return;
+  const frac = storyFrac(), { sheet } = storyRects();
+  story.sheet.position.set(frac.ws.x, frac.ws.y, 0); story.sheet.scale.set(frac.ws.sx, frac.ws.sy, 1); syncStoryPlane(frac);
+  storyHud.style.left = sheet.x + 'px'; storyHud.style.top = sheet.y + 'px'; storyHud.style.width = sheet.width + 'px'; storyHud.style.height = sheet.height + 'px';
+  shotCrop();
+}
+function shotCrop() {                                   // cover-crop the clip into its 4:5 plane
+  if (!story.plane || !vid.videoWidth) return;
+  const pu = story.plane.material.uniforms, ia = vid.videoWidth / vid.videoHeight, ca = STORY.aspect;
+  if (ia > ca) { pu.uVidRepeat.value.set(ca / ia, 1); pu.uVidOffset.value.set((1 - ca / ia) / 2, 0); } else { pu.uVidRepeat.value.set(1, ia / ca); pu.uVidOffset.value.set(0, (1 - ia / ca) / 2); }
+}
+vid.addEventListener('loadedmetadata', shotCrop);
 function showShot(gi, ii, keepTime = false) {
   const G = shotsData.groups, g = G[gi]; if (!g) return;
   if (ii >= g.items.length) { if (gi + 1 < G.length) return showShot(gi + 1, 0); return closeStory(); }   // past the group's last shot: next group, or done
@@ -1299,31 +1342,50 @@ function bubbleRect(gi) { return document.querySelector(`.bub[data-g="${gi}"]`)?
 function openStory(gi, fromEl) {
   if (story.busy) return;
   if (story.open) return showShot(gi, 0);
+  storyGL(); if (!story.sheet) return;
   story.open = true; story.busy = true;
+  if (S.hover >= 0) setHover(-1, $('#gl'));
   document.body.classList.add('lock'); storyEl.classList.add('on'); storyEl.removeAttribute('inert'); storyEl.setAttribute('aria-hidden', 'false');
-  dimEl.style.pointerEvents = 'auto';
-  const D = RM ? 0 : 1, f = (fromEl || document.querySelector(`.bub[data-g="${gi}"]`)).getBoundingClientRect(), r = storyCard.getBoundingClientRect();
-  const tl = gsap.timeline({ onComplete: () => { story.busy = false; } });
-  tl.fromTo(storyCard, { x: f.left + f.width / 2 - (r.left + r.width / 2), y: f.top + f.height / 2 - (r.top + r.height / 2), scaleX: f.width / r.width, scaleY: f.height / r.height, borderRadius: '50%' },
-            { x: 0, y: 0, scaleX: 1, scaleY: 1, borderRadius: 'var(--r)', duration: 0.8 * D, ease: 'expo.out' }, 0)
-    .to(dimEl, { opacity: 0.62, duration: 0.6 * D }, 0)
+  const D = RM ? 0 : 1, f = (fromEl || document.querySelector(`.bub[data-g="${gi}"]`)).getBoundingClientRect();
+  const wf = worldRect(f), frac = storyFrac(), ws = frac.ws, { sheet } = storyRects();
+  const radEnd = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--r')) || 24;
+  storyHud.style.left = sheet.x + 'px'; storyHud.style.top = sheet.y + 'px'; storyHud.style.width = sheet.width + 'px'; storyHud.style.height = sheet.height + 'px';
+  // the sheet starts as the bubble (a circle: radius = half its size) and grows into place; the clip rides inside it
+  story.rad = f.width / 2;
+  story.sheet.position.set(wf.x, wf.y, 0); story.sheet.scale.set(wf.sx, wf.sy, 1); story.sheet.visible = true; story.sheet.material.uniforms.uDim.value = 0;
+  story.plane.visible = true; const pu = story.plane.material.uniforms; pu.uAlpha.value = 0;
+  syncStoryPlane(frac);
+  const tl = gsap.timeline({ onComplete: () => { story.busy = false; placeStory(); } });
+  tl.to(story.sheet.position, { x: ws.x, y: ws.y, duration: 0.75 * D, ease: 'expo.out' }, 0)
+    .to(story.sheet.scale, { x: ws.sx, y: ws.sy, duration: 0.75 * D, ease: 'expo.out', onUpdate: () => syncStoryPlane(frac) }, 0)
+    .to(story, { rad: radEnd, duration: 0.75 * D, ease: 'expo.out' }, 0)
+    .to(pu.uAlpha, { value: 1, duration: 0.45 * D }, 0.3 * D)
+    .to(S, { dim: 1, duration: 0.5 * D, ease: 'power2.out' }, 0)
+    .to(grid.material.uniforms.uDimF, { value: 0, duration: 0.5 * D }, 0)
     .to('.nav', { opacity: 0, duration: 0.4 * D }, 0)
-    .fromTo('#storyClose', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.6 * D, ease: 'back.out(2)' }, 0.4 * D);
+    .fromTo('#storyClose', { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.6 * D, ease: 'back.out(2)' }, 0.45 * D);
   showShot(gi, 0);
   if (RM) tl.progress(1);
 }
 function closeStory() {
   if (!story.open || story.busy) return; story.busy = true;
   vid.pause();
-  const D = RM ? 0 : 1, f = bubbleRect(story.g), r = storyCard.getBoundingClientRect();
+  const D = RM ? 0 : 1, f = bubbleRect(story.g), wf = f ? worldRect(f) : null, frac = storyFrac();
+  const su = story.sheet.material.uniforms, pu = story.plane.material.uniforms;
+  storyEl.classList.remove('on');
   const tl = gsap.timeline({ onComplete: () => {
-    story.open = false; story.busy = false; storyEl.classList.remove('on'); storyEl.setAttribute('inert', ''); storyEl.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('lock'); dimEl.style.pointerEvents = 'none'; gsap.set(storyCard, { clearProps: 'all' });
+    story.open = false; story.busy = false; story.sheet.visible = false; story.plane.visible = false; su.uAlpha.value = 1;
+    storyEl.setAttribute('inert', ''); storyEl.setAttribute('aria-hidden', 'true'); document.body.classList.remove('lock');
     document.querySelectorAll('.bub.on').forEach(b => b.classList.remove('on'));
   } });
   tl.to('#storyClose', { scale: 0, rotation: 90, duration: 0.3 * D, ease: 'power2.in' }, 0)
-    .to(storyCard, f ? { x: f.left + f.width / 2 - (r.left + r.width / 2 - gsap.getProperty(storyCard, 'x')), y: f.top + f.height / 2 - (r.top + r.height / 2 - gsap.getProperty(storyCard, 'y')), scaleX: f.width / (r.width / gsap.getProperty(storyCard, 'scaleX')), scaleY: f.height / (r.height / gsap.getProperty(storyCard, 'scaleY')), borderRadius: '50%', duration: 0.7 * D, ease: 'expo.inOut' } : { opacity: 0, duration: 0.4 * D }, 0)
-    .to(dimEl, { opacity: 0, duration: 0.6 * D }, 0.1 * D)
+    .to(pu.uAlpha, { value: 0, duration: 0.25 * D }, 0);
+  if (wf) tl.to(story.sheet.position, { x: wf.x, y: wf.y, duration: 0.65 * D, ease: 'expo.inOut' }, 0.05 * D)
+            .to(story.sheet.scale, { x: wf.sx, y: wf.sy, duration: 0.65 * D, ease: 'expo.inOut', onUpdate: () => syncStoryPlane(frac) }, 0.05 * D)
+            .to(story, { rad: f.width / 2, duration: 0.65 * D, ease: 'expo.inOut' }, 0.05 * D);
+  else tl.to(su.uAlpha, { value: 0, duration: 0.4 * D }, 0);
+  tl.to(S, { dim: 0, duration: 0.7 * D, ease: 'power2.out' }, 0.15 * D)
+    .to(grid.material.uniforms.uDimF, { value: 1, duration: 0.7 * D }, 0.15 * D)
     .to('.nav', { opacity: 1, duration: 0.5 * D }, 0.3 * D);
   if (RM) tl.progress(1);
 }
@@ -1331,7 +1393,6 @@ $('#shotPrev').addEventListener('click', () => showShot(story.g, story.i - 1));
 $('#shotNext').addEventListener('click', () => showShot(story.g, story.i + 1));
 $('#shotMute').addEventListener('click', e => { story.muted = !story.muted; vid.muted = story.muted; e.currentTarget.setAttribute('aria-pressed', String(story.muted)); });
 $('#storyClose').addEventListener('click', closeStory);
-dimEl.addEventListener('click', () => { if (story.open) closeStory(); });
 applyLang();
 
 // ---------------------------------------------------------------- boot

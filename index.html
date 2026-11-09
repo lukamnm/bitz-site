@@ -37,16 +37,18 @@
   </div>
 </div>
 
-<!-- shots viewer: a vertical 9:16 card (the shots are phone-format clips), stories-style: segments on top, tap left / right, auto-advance -->
+<!-- shots viewer: a white GL sheet grows out of the bubble (like a project opening); the 4:5 clip plays on it as a video plane;
+     this DOM layer is only the HUD (segments, group, title, mute, tap zones) laid over the sheet's bottom band -->
 <div id="story" class="story" inert aria-hidden="true" role="dialog" aria-label="Shots">
-  <div class="storyCard" id="storyCard">
-    <div class="storyBar" id="storyBar"></div>
-    <div class="storyHead"><img id="storyRing" alt=""><span id="storyGroup"></span></div>
-    <video id="shotVid" playsinline></video>
-    <div class="storyFoot"><span id="shotTitle"></span><button type="button" id="shotMute" aria-label="Sound" aria-pressed="false"><i class="on">&#9834;</i><i class="off">&#9834;&#824;</i></button></div>
+  <div class="storyHud" id="storyHud">
     <button type="button" class="storyTap prev" id="shotPrev" aria-label="Previous shot"></button>
     <button type="button" class="storyTap next" id="shotNext" aria-label="Next shot"></button>
+    <div class="storyBand">
+      <div class="storyBar" id="storyBar"></div>
+      <div class="storyRow"><img id="storyRing" alt=""><span id="storyGroup"></span><span id="shotTitle"></span><button type="button" id="shotMute" aria-label="Sound" aria-pressed="false"><i class="on">&#9834;</i><i class="off">&#9834;&#824;</i></button></div>
+    </div>
   </div>
+  <video id="shotVid" playsinline crossorigin="anonymous"></video>
   <button id="storyClose" class="xbtn" aria-label="Close shots"><span class="pill"></span><span class="mk"><i></i><i></i></span></button>
 </div>
 
