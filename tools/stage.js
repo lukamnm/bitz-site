@@ -6,13 +6,20 @@ const { execFileSync } = require('child_process');
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 
 const SITE = path.resolve(__dirname, '..');
-const EXCLUDE = ['server.js', 'tools/', 'content/', '.git/', '.github/', '.gitattributes', '.gitignore', '*.md', 'node_modules/'];
+const EXCLUDE = ['server.js', 'tools/', 'content/', '.git/', '.github/', '.gitattributes', '.gitignore', '*.md', 'node_modules/', '_site/'];
 
 function stage(outDir) {
   execFileSync(process.execPath, [path.join(__dirname, 'build.mjs')], { cwd: SITE, stdio: 'inherit' });
+  outDir = path.resolve(outDir);
   fs.rmSync(outDir, { recursive: true, force: true });
   const skip = p => { const rel = path.relative(SITE, p).replace(/\\/g, '/'); return EXCLUDE.some(x => x.endsWith('/') ? rel === x.slice(0, -1) || rel.startsWith(x) : (x.startsWith('*') ? rel.endsWith(x.slice(1)) : rel === x)); };
-  fs.cpSync(SITE, outDir, { recursive: true, filter: p => p === SITE || !skip(p) });
+  // copy entry by entry so the output folder may sit inside the site (the GitHub workflow builds into ./_site)
+  fs.mkdirSync(outDir, { recursive: true });
+  for (const name of fs.readdirSync(SITE)) {
+    const src = path.join(SITE, name);
+    if (src === outDir || skip(src)) continue;
+    fs.cpSync(src, path.join(outDir, name), { recursive: true, filter: p => !skip(p) });
+  }
   const hashOf = rel => { const f = path.join(outDir, rel); return fs.existsSync(f) ? crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8) : null; };
   const stamp = (file, re) => {
     const f = path.join(outDir, file); if (!fs.existsSync(f)) return;
