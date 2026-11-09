@@ -4,7 +4,8 @@
 :root{
   --bg:#000; --fg:#fff; --mut:#8a8a8a;
   --panel:#fff; --ink:#0a0a0a; --ink2:#5a5a5a; --line:#e6e6e6; --chip:#f2f2f2;
-  --r:24px;
+  --r:clamp(16px,1.56vw,36px);   /* corner radius scales with the viewport, like the reference (24 px at 1534 wide) */
+  --insX:min(5.33vw,160px); --insY:min(2.67vw,80px);   /* reference nav insets: 68/34 at 1280, 102/51 at 1920, 137/68 at 2560, capped 160/80 */
   color-scheme:dark;
 }
 *{box-sizing:border-box;margin:0}
@@ -40,20 +41,20 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- corner nav */
 .nav{
-  position:fixed;z-index:20;display:flex;gap:14px;align-items:center;
-  font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;   /* reference: 10.23 px at 1534 wide = .6667vw, no tracking */
+  position:fixed;z-index:20;display:flex;gap:.9vw;align-items:center;
+  font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;   /* reference: .6667vw, 8.5 px at 1280 ... 20 px cap from 3000 wide */
 }
 /* reference insets: 82 px from the sides and 41 px from top/bottom at 1534x703, 102/51 at 1918x880 = 5.33vw / 5.83vh */
-.tl{top:5.83vh;left:5.33vw}.tr{top:5.83vh;right:5.33vw}.bl{bottom:5.83vh;left:5.33vw}.br{bottom:5.83vh;right:5.33vw}
+.tl{top:var(--insY);left:var(--insX)}.tr{top:var(--insY);right:var(--insX)}.bl{bottom:var(--insY);left:var(--insX)}.br{bottom:var(--insY);right:var(--insX)}
 .bl{gap:.45em}                                    /* "Featured / Full" sits tight around its slash, like the reference */
-.logo img{display:block;height:24px;width:auto;filter:invert(1);margin-top:-5px}   /* its centre on the label line (24 px mark vs 14 px text) */
+.logo img{display:block;height:clamp(18px,1.56vw,34px);width:auto;filter:invert(1);margin-top:-.3vw}   /* its centre on the label line (24 px mark vs 14 px text) */
 .nav button{
   color:inherit;background:none;border:0;letter-spacing:inherit;text-transform:inherit;
   cursor:pointer;padding:0;
 }
 /* hovers as measured on the reference: labels dim to 60% in 300 ms; the inactive toggle rests at 50% and rises to 100% in 500 ms */
 .nav a,.nav button{transition:opacity .3s ease-out;position:relative}
-.nav a::before,.nav button::before{content:"";position:absolute;inset:-15px}   /* generous hit area, like the reference's before:-inset-15 */
+.nav a::before,.nav button::before{content:"";position:absolute;inset:-1vw}   /* generous hit area, like the reference's before:-inset-15 */
 .nav a:hover,.nav button[aria-pressed="true"]:hover,.nav button:not([aria-pressed]):hover{opacity:.6}
 .nav button[aria-pressed="false"]{opacity:.5;transition-duration:.5s}
 .nav button[aria-pressed="false"]:hover{opacity:1}
@@ -68,19 +69,19 @@ a{color:inherit;text-decoration:none}
 .disc.on .discIn{opacity:1;transform:none;transition-delay:.35s}
 .disc.on{pointer-events:none}
 .disc.on .links a{pointer-events:auto}
-.discIn p{font-size:clamp(14px,1.0667vw,20px);line-height:1.4;letter-spacing:-.035em;text-wrap:balance}
-.discIn .meta{font-size:clamp(10px,.6667vw,13px);text-transform:uppercase;letter-spacing:0;color:#fff;opacity:.8}
-.discIn .links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;list-style:none;padding:0;font-size:clamp(10px,.6667vw,13px);text-transform:uppercase}
+.discIn p{font-size:clamp(14px,1.0667vw,32px);line-height:1.4;letter-spacing:-.035em;text-wrap:balance}
+.discIn .meta{font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;letter-spacing:0;color:#fff;opacity:.8}
+.discIn .links{display:flex;flex-wrap:wrap;justify-content:center;gap:.65vw 1.7vw;list-style:none;padding:0;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase}
 .discIn .links a{transition:opacity .3s ease-out;position:relative}
 .discIn .links a::before{content:"";position:absolute;inset:-12px}
 .discIn .links a:hover{opacity:.6}
 /* shot bubbles: the four group rings, top centre (the live site's header row) */
-.tc{top:calc(5.83vh - 15px);left:50%;transform:translateX(-50%);gap:18px}
-.bub{position:relative;width:44px;height:44px;border-radius:50%;padding:0;border:0;background:#000;cursor:pointer;transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.tc{top:calc(var(--insY) - 1vw);left:50%;transform:translateX(-50%);gap:1.2vw}
+.bub{position:relative;width:clamp(36px,2.9vw,64px);height:clamp(36px,2.9vw,64px);border-radius:50%;padding:0;border:0;background:#000;cursor:pointer;transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
 .bub img{width:100%;height:100%;border-radius:50%;display:block;object-fit:cover}
-.bub span{position:absolute;left:50%;top:100%;transform:translate(-50%,6px);white-space:nowrap;opacity:0;transition:opacity .3s,transform .4s;pointer-events:none}
-.bub:hover{transform:translateY(-4px)}
-.bub:hover span{opacity:1;transform:translate(-50%,2px)}
+.bub span{position:absolute;left:50%;top:100%;transform:translate(-50%,.4vw);white-space:nowrap;opacity:0;transition:opacity .3s,transform .4s;pointer-events:none}
+.bub:hover{transform:translateY(-.26vw)}
+.bub:hover span{opacity:1;transform:translate(-50%,.13vw)}
 .bub.on{transform:scale(.9);opacity:.6}
 
 /* ---------- shots viewer: stories-style vertical card, our palette */
@@ -105,7 +106,7 @@ a{color:inherit;text-decoration:none}
 .storyFoot button[aria-pressed="true"] .off{display:block}
 .storyTap{position:absolute;top:0;bottom:0;width:38%;background:none;border:0;padding:0;cursor:pointer;z-index:1}
 .storyTap.prev{left:0}.storyTap.next{right:0;width:62%}
-#storyClose{position:fixed;top:22px;right:24px;width:40px;height:40px;border-radius:50%;border:0;background:#111;color:#fff;cursor:pointer;z-index:3;display:grid;place-items:center}
+#storyClose{position:fixed;top:var(--insY);right:var(--insX);width:clamp(34px,2.6vw,56px);height:clamp(34px,2.6vw,56px);border-radius:50%;border:0;background:#111;color:#fff;cursor:pointer;z-index:3;display:grid;place-items:center}
 body.lock .story .xbtn{pointer-events:auto}
 
 /* ---------- panel (project detail) */
@@ -119,21 +120,21 @@ body.lock .story .xbtn{pointer-events:auto}
 #panel.on{display:grid}
 .fade{opacity:0}
 .pl{
-  padding:48px 36px 40px;display:flex;flex-direction:column;gap:22px;
+  padding:3.1vw 2.35vw 2.6vw;display:flex;flex-direction:column;gap:1.45vw;
   align-self:start;position:sticky;top:0;min-width:0;
 }
-.pl h1{font-size:clamp(28px,3vw,58px);font-weight:400;letter-spacing:-.05em;line-height:1.15;text-wrap:balance}   /* reference: 3vw, -0.05em */
-.pl p{font-size:clamp(14px,1.0667vw,20px);line-height:1.4;letter-spacing:-.035em;color:var(--ink);max-width:40ch}   /* reference: 1.0667vw */
-.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;align-items:center}
-.chips li{border:0;background:var(--chip);border-radius:999px;padding:8px 14px;color:var(--ink)}
+.pl h1{font-size:clamp(28px,3vw,90px);font-weight:400;letter-spacing:-.05em;line-height:1.15;text-wrap:balance}   /* reference: 3vw, -0.05em */
+.pl p{font-size:clamp(14px,1.0667vw,32px);line-height:1.4;letter-spacing:-.035em;color:var(--ink);max-width:40ch}   /* reference: 1.0667vw */
+.chips{display:flex;flex-wrap:wrap;gap:.52vw;list-style:none;padding:0;font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;align-items:center}
+.chips li{border:0;background:var(--chip);border-radius:999px;padding:.52vw .9vw;color:var(--ink)}
 .chips li.lnk{padding:0;background:#111}
-.chips li.lnk a{display:grid;place-items:center;width:30px;height:30px;color:#fff;font-size:12px;text-decoration:none}
+.chips li.lnk a{display:grid;place-items:center;width:1.95vw;height:1.95vw;min-width:28px;min-height:28px;color:#fff;font-size:clamp(11px,.78vw,22px);text-decoration:none}
 .pr{
   overflow-y:auto;padding:0 11% 0 0;             /* right margin keeps the X clear of the images (reference: ~40 px gap); vertical space lives in .prc so the loop period is exact */
   overscroll-behavior:contain;scrollbar-width:none;min-width:0;
 }
 .pr::-webkit-scrollbar{display:none}
-.prc{display:flex;flex-direction:column;gap:4vw;padding-top:40px}     /* reference inner page: ~75 px of white between images at 1918 wide */
+.prc{display:flex;flex-direction:column;gap:4vw;padding-top:2.6vw}     /* reference inner page: ~75 px of white between images at 1918 wide */
 .prc > *{flex:none}
 #pBody{display:flex;flex-direction:column;gap:4vw}   /* the same white gap between every image and text block (they were touching inside the body) */
 #pBody > *{flex:none}
@@ -152,7 +153,7 @@ body.lock .story .xbtn{pointer-events:auto}
 #panel.gl .pl .lnk a{visibility:visible;opacity:0}   /* the live-project link stays clickable */
 .pr figure img{will-change:transform;transform-origin:50% 50%}
 /* bottom-left ring (reference): scroll progress of the looping gallery; while the hero loads it spins instead */
-#ring{position:absolute;left:30px;bottom:26px;width:20px;height:20px;overflow:visible;z-index:2}
+#ring{position:absolute;left:1.95vw;bottom:1.7vw;width:clamp(16px,1.3vw,28px);height:clamp(16px,1.3vw,28px);overflow:visible;z-index:2}
 #ring circle{fill:none;stroke-width:2.2}
 #ring .trk{stroke:#ddd}
 #ring .arc,#ring .gho{stroke:#111;stroke-linecap:round;stroke-dasharray:100.53;stroke-dashoffset:100.53;transform:rotate(-90deg);transform-origin:50% 50%}
@@ -169,11 +170,11 @@ body.lock .story .xbtn{pointer-events:auto}
 .sliver.next{right:0}
 .sliver.on{opacity:1;pointer-events:auto}
 .pr img{display:block;width:100%;height:auto;max-width:100%}
-.pr .txt{padding:22px 0 8px;max-width:60ch;font-size:clamp(13px,.9333vw,18px);line-height:1.4;letter-spacing:-.02em;color:var(--ink2)}   /* reference body: .9333vw */
-.pr .txt h3{font-size:clamp(10px,.6667vw,13px);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin-bottom:8px;font-weight:500}
+.pr .txt{padding:1.45vw 0 .5vw;max-width:60ch;font-size:clamp(13px,.9333vw,28px);line-height:1.4;letter-spacing:-.02em;color:var(--ink2)}   /* reference body: .9333vw */
+.pr .txt h3{font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin-bottom:.5vw;font-weight:500}
 .pr .txt p + p{margin-top:.8em}   /* articles: several paragraphs per section */
 #close,.xbtn{
-  position:absolute;top:22px;right:24px;width:40px;height:40px;border-radius:50%;border:0;
+  position:absolute;top:1.45vw;right:1.56vw;width:clamp(34px,2.6vw,56px);height:clamp(34px,2.6vw,56px);border-radius:50%;border:0;
   background:#111;color:#fff;cursor:pointer;z-index:2;font-size:20px;line-height:1;display:grid;place-items:center;
 }
 #close,.xbtn{overflow:hidden}
@@ -181,8 +182,8 @@ body.lock .story .xbtn{pointer-events:auto}
 #close::after,.xbtn::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1.5px #111;opacity:0;transition:opacity .3s;pointer-events:none}
 #close:hover::after,.xbtn:hover::after{opacity:1}
 #close .mk,.xbtn .mk{position:relative;display:grid;place-items:center;width:100%;height:100%;mix-blend-mode:difference;color:#fff;pointer-events:none}
-#close .mk i,.xbtn .mk i{grid-area:1/1;display:block;width:12px;height:12px;position:relative;will-change:transform}   /* drawn cross: two bars, dead centre (a glyph sits off its box) */
-#close .mk i::before,#close .mk i::after,.xbtn .mk i::before,.xbtn .mk i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
+#close .mk i,.xbtn .mk i{grid-area:1/1;display:block;width:30%;height:30%;position:relative;will-change:transform}   /* drawn cross: two bars, dead centre (a glyph sits off its box) */
+#close .mk i::before,#close .mk i::after,.xbtn .mk i::before,.xbtn .mk i::after{content:"";position:absolute;left:50%;top:50%;width:100%;height:1.5px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
 #close .mk i::after,.xbtn .mk i::after{transform:translate(-50%,-50%) rotate(-45deg)}
 body.lock .nav{pointer-events:none}
 

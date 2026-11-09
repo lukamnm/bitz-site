@@ -19,8 +19,8 @@ let mode = 'featured';
 const items = () => (mode === 'stories' ? stories : mode === 'featured' ? data.filter(p => p.featured) : data);
 // ---------------------------------------------------------------- language: EN / GE (Georgian texts come from the old /ge/ site, per project under i18n.ge)
 let lang = 'en'; try { lang = localStorage.getItem('lang') === 'ge' ? 'ge' : 'en'; } catch {}
-const UI = { en: { profile: 'Profile', featured: 'Featured', full: 'Full', stories: 'Stories', contact: 'Contact', lang: 'GE' },
-             ge: { profile: 'პროფილი', featured: 'რჩეული', full: 'სრული', stories: 'ბლოგი', contact: 'კონტაქტი', lang: 'EN' } };
+const UI = { en: { profile: 'Profile', featured: 'Featured', stories: 'Blog', contact: 'Contact', lang: 'GE' },
+             ge: { profile: 'პროფილი', featured: 'რჩეული', stories: 'ბლოგი', contact: 'კონტაქტი', lang: 'EN' } };
 const T = p => {                                     // the project's texts in the current language, falling back to English field by field
   const g = lang === 'ge' ? p.i18n?.ge : null;
   return { title: g?.title || p.title, blurb: g?.blurb || p.blurb, sections: (g?.sections && g.sections.length) ? g.sections : p.sections };
@@ -37,7 +37,7 @@ function applyLang() {
 const PI = Math.PI;
 const SHEET = { BANK: -0.16, DIAG: 0.03, REAR_Y: 0.035, REAR_Z: 0.07, VTWIST: 0.5, SHIFT: -0.2, TAIL: 1.0, DEPTH: 0.16, DEPTH_V: 0.5, SPAN: 1.15, DOOR: -0.12, DENT: 0.1, VEL_NORM: 2800 };   // velocity terms halved after "too much distortion when scrolling, chaotic"   // depth eased from 0.2: the centre-left bulged too far toward the viewer   // SPAN and the velocity response fitted to the reference's runtime trace
 const FLOOR = { drop: 0.06, run: 6, wide: 4, cell: 0.23, cellX: 0.23, grid: 0.012, lip: 0.2, refl: 0.1, reflGap: 0.07, reflSpread: 0.35, reflLight: 0.6 };   // measured against the reference at 1914x882: line peak ~20 sRGB (ours was ~43), cells ~1.1x wider, almost no reflection
-const CARD = { wvh: 0.76, hvh: 0.435, maxvw: 0.46, gapPx: 12 };   // measured live at 1918x880: the reference card is 690 x 442 px on screen = its DOM box (0.76vh x 0.435vh); the earlier "1.2x taller" reading was wrong
+const CARD = { wvh: 0.76, hvh: 0.435, maxvw: 0.46, gapVh: 0.0125 };   // measured live at 1918x880: the reference card is 690 x 442 px on screen = its DOM box (0.76vh x 0.435vh); the gap scales too (9 px at 720, 21 px at 2160)
 const FOV = 50, CAMZ = 2.68 / Math.tan((FOV / 2) * Math.PI / 180);   // lens matched to the reference (fov ~50 derived from its frustum numbers)
 
 // ---------------------------------------------------------------- state
@@ -173,7 +173,8 @@ function stepPost(dt) {
   p.u_trail.value = trailRT[trailSide].texture; p.u_ballA.value = ball.seen && ball.e > 0.004 ? 1 - hole.p : 0; p.u_aspect.value.set(w / h, 1);
   // the hole follows its disc element (centre and radius), like the reference binding the hole to the overlay's circle
   p.u_hp.value = hole.p; p.u_hs.value = hole.s; p.u_time.value += dt;
-  if (hole.p > 0.001) {
+  if (hole.p > 0.001 && hole.what === 'swap') { p.u_hc.value.set(0.5, 0.5); p.u_hr.value = 0.62; }   // the swallow: a hole wide enough to cover the whole frame
+  else if (hole.p > 0.001) {
     const r = disc.getBoundingClientRect(); let cx = r.left + r.width / 2, cy = r.top + r.height / 2, rad = r.width / 2;
     if (hole.from && hole.m < 1) {                     // growing out of a bubble: centre and radius travel from it to the disc (reference holeFrom / hole.m)
       const f = hole.from, m = hole.m; cx = f.left + f.width / 2 + (cx - f.left - f.width / 2) * m; cy = f.top + f.height / 2 + (cy - f.top - f.height / 2) * m; rad = f.width / 2 + (rad - f.width / 2) * m;
@@ -528,7 +529,7 @@ function layout() {
   S.Wh = S.Hh * camera.aspect;
   const pxw = (2 * S.Wh) / w;
   S.W = Math.min(CARD.wvh * h, CARD.maxvw * w) * pxw; S.H = CARD.hvh * 2 * S.Hh;
-  S.pitch = S.W + CARD.gapPx * pxw;
+  S.pitch = S.W + CARD.gapVh * h * pxw;
   S.L = S.N * S.pitch;
   S.D = S.Wh * SHEET.DEPTH;
   S.floorY = -S.H / 2 - FLOOR.drop * S.Hh;
@@ -750,7 +751,8 @@ function buildLoop() {
 }
 function sizeLoop() {
   const dup = prc.querySelector('.dup'); if (!dup) return;
-  dup.style.height = Math.max(0, pr.clientHeight - 40) + 'px';   // 40 = .prc padding-top: total scroll range = one period + one viewport
+  const padTop = parseFloat(getComputedStyle(prc).paddingTop) || 0;
+  dup.style.height = Math.max(0, pr.clientHeight - padTop) + 'px';   // minus .prc padding-top: total scroll range = one period + one viewport
 }
 function setRect(el, r) { el.style.left = r.x + 'px'; el.style.top = r.y + 'px'; el.style.width = r.width + 'px'; el.style.height = r.height + 'px'; }
 function targetRect() {
@@ -1000,7 +1002,7 @@ function restoreCard(c) {
 const slotX = c => { let x = c.i * S.pitch - S.s; return ((x + S.L / 2) % S.L + S.L) % S.L - S.L / 2; };
 function sideCards(i) { const L = cards.length; return L < 3 ? {} : { prev: cards[(i - 1 + L) % L], next: cards[(i + 1) % L] }; }
 function sidePose(r, dir) {                  // a side sheet sits beside the panel with a 23 px gap, 81% of its size
-  const gap = 23 * pxToWorld();
+  const gap = 0.0327 * innerHeight * pxToWorld();   // 23 px at 703 tall, scaling with the viewport like the reference's gaps
   return { x: dir * (r.sx / 2 + SIDE_SCALE * r.sx / 2 + gap), y: r.y, sx: SIDE_SCALE * r.sx, sy: SIDE_SCALE * r.sy };
 }
 // tween a card to a pose on the panel row (position, size, sheet off, white wash, dim)
@@ -1200,13 +1202,26 @@ function bindCloseFx(b) {
 }
 bindCloseFx($('#close')); bindCloseFx($('#storyClose'));
 
-// ---------------------------------------------------------------- mode toggle
+// ---------------------------------------------------------------- mode toggle: Featured <-> Blog. The hole swallows the strip (the reference's
+// Featured / Full switch opens the hole over the centre card), the strip is rebuilt while the frame is dark, and the hole lets go again
+let swapping = false;
 function setMode(m) {
-  if (m === mode || S.open !== null) return; mode = m;
-  $('#mF').setAttribute('aria-pressed', m === 'featured');
-  $('#mA').setAttribute('aria-pressed', m === 'full');
-  $('#mS').setAttribute('aria-pressed', m === 'stories');
-  if (S.mobile) buildStack(); else buildRing();
+  if (m === mode || S.open !== null || swapping || (typeof story !== 'undefined' && story.open)) return;
+  const apply = () => {
+    mode = m;
+    $('#mF').setAttribute('aria-pressed', m === 'featured');
+    $('#mS').setAttribute('aria-pressed', m === 'stories');
+    if (S.mobile) buildStack(); else buildRing();
+  };
+  if (S.mobile || RM || hole.open) return apply();
+  swapping = true;
+  hole.what = 'swap'; hole.from = null; hole.m = 1;
+  gsap.timeline({ onComplete: () => { swapping = false; hole.what = null; } })
+    .to(hole, { p: 1, duration: 0.7, ease: 'power3.in' }, 0)
+    .to(hole, { s: 0.06, duration: 0.4, ease: 'power2.out' }, 0)
+    .add(apply, 0.72)
+    .to(hole, { p: 0, duration: 0.8, ease: 'power3.out' }, 0.85)
+    .to(hole, { s: -0.1, duration: 0.5, ease: 'power2.out' }, 0.85);
 }
 // ---------------------------------------------------------------- the hole: Profile and Contact overlays (reference: openHole .85 s in / .65 s out,
 // squash -0.1 -> 0 in .3 s; the disc element gives the lens its centre and radius; the text rises once the hole is open)
@@ -1250,7 +1265,6 @@ $('#langBtn').addEventListener('click', () => {
   if (S.open !== null && S.open >= 0) fill(items()[S.open]);
 });
 $('#mF').addEventListener('click', () => setMode('featured'));
-$('#mA').addEventListener('click', () => setMode('full'));
 $('#mS').addEventListener('click', () => setMode('stories'));
 $('#home').addEventListener('click', e => { e.preventDefault(); if (S.open !== null) closeProject(); });
 
