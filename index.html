@@ -18,39 +18,56 @@
 <script src="assets/vendor/lenis.min.js"></script>
 </head>
 <body class="preload">
-<div id="pre" aria-hidden="true"><div id="preLogo"></div></div>
+<div id="pre" aria-hidden="true"><div id="preLogo"></div><div id="preBar"><b>0%</b><i></i></div></div>
 <script src="assets/vendor/lottie_light.min.js"></script>
 <script>
-// the loader: Luka's After Effects write-on of the logo (assets/loader/bitz-loader.json) plays once, holds until the page is ready, then
-// flies onto the header logo (FLIP) while the page comes in. app.js calls bitzLoader.exit(go) when everything is loaded.
+// the loader: Luka's After Effects write-on of the logo (assets/loader/bitz-loader.json) plays once while the counter at the bottom climbs,
+// holds at 100 % until the page is ready, then the logo flies onto the header logo (FLIP). Desktop: the flight happens over the black and
+// only once it has landed does the black lift and the strip slide in. Phone: the black lifts during the flight (Luka liked that one).
+// app.js reports loading with bitzLoader.progress(0..1) and calls bitzLoader.exit(go) when everything is ready.
 window.bitzLoader = (() => {
   const LOGO = { x: 106, y: 52, w: 600, h: 444, W: 762, H: 553 };   // where the logo sits inside the animation frame
   const HOLD = 250, MAX_WAIT = 6000;
-  const pre = document.getElementById('pre'), el = document.getElementById('preLogo');
+  const pre = document.getElementById('pre'), el = document.getElementById('preLogo'), bar = document.getElementById('preBar'), num = bar.querySelector('b'), line = bar.querySelector('i');
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('rm');
+  const PHONE = matchMedia('(max-width: 767px)').matches;
   const wait = ms => new Promise(r => setTimeout(r, ms));
-  let anim = null, resolveWritten;
-  const written = new Promise(r => { resolveWritten = r; setTimeout(r, MAX_WAIT); });   // the write-on always finishes first (or we stop waiting)
+  let anim = null, failed = false, wrote = false, resolveWritten, real = PHONE ? 1 : 0, shown = 0, done = false;   // the phone has no asset count: its counter follows the hand
+  const written = new Promise(r => { resolveWritten = () => { wrote = true; r(); }; setTimeout(resolveWritten, MAX_WAIT); });   // the write-on always finishes first (or we stop waiting)
   fetch('assets/loader/bitz-loader.json').then(r => r.json()).then(data => {
     anim = lottie.loadAnimation({ container: el, renderer: 'svg', loop: false, autoplay: false, animationData: data });
     anim.addEventListener('DOMLoaded', () => {
       if (RM) { anim.goToAndStop(anim.totalFrames - 1, true); resolveWritten(); return; }
       anim.addEventListener('complete', resolveWritten); anim.goToAndPlay(0, true);
     });
-  }).catch(() => { anim = null; resolveWritten(); });
-  const hide = () => { document.body.classList.remove('preload'); pre.style.display = 'none'; };
+  }).catch(() => { anim = null; failed = true; resolveWritten(); });
+  // the counter never runs ahead of the page's real loading nor of the writing hand, and eases toward the lower of the two
+  const show = v => { shown = v; num.textContent = Math.round(v * 100) + '%'; line.style.setProperty('--p', v.toFixed(4)); };
+  (function tick() {
+    if (done) return;
+    const hand = wrote || failed ? 1 : anim ? Math.min(1, anim.currentFrame / (anim.totalFrames - 1)) : 0;
+    const target = Math.min(real, hand), next = target - shown < 0.002 ? target : shown + (target - shown) * 0.12;
+    if (next !== shown) show(next);
+    requestAnimationFrame(tick);
+  })();
+  const hide = () => { done = true; document.body.classList.remove('preload'); pre.style.display = 'none'; };
+  const onEnd = (node, fn) => { const h = e => { if (e.target !== node) return; node.removeEventListener('transitionend', h); fn(); }; node.addEventListener('transitionend', h); };   // transitionend bubbles: only this node's own
   async function exit(go) {
-    await written; await wait(HOLD);
+    real = 1; await written;
+    if (RM) { show(1); go(); hide(); return; }
+    await Promise.race([new Promise(r => { const f = () => shown >= 0.995 ? r() : requestAnimationFrame(f); f(); }), wait(1500)]);   // let the counter reach 100
+    show(1); await wait(HOLD);
+    bar.classList.add('off');
     const img = document.querySelector('#home img');
-    if (!anim || RM || !img) { go(); if (RM) hide(); else { pre.classList.add('fade'); pre.addEventListener('transitionend', hide, { once: true }); } return; }
+    if (!anim || !img) { go(); pre.classList.add('fade'); onEnd(pre, hide); return; }   // no animation (fetch failed): plain fade
     const c = el.getBoundingClientRect(), n = img.getBoundingClientRect();   // FLIP: the loader logo lands exactly on the header logo
     const s = n.width / (c.width * LOGO.w / LOGO.W);
     const tx = n.left - (c.left + c.width * LOGO.x / LOGO.W * s), ty = n.top - (c.top + c.height * LOGO.y / LOGO.H * s);
-    pre.classList.add('out'); go();
-    el.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
-    el.addEventListener('transitionend', hide, { once: true });
+    el.classList.add('fly'); el.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
+    if (PHONE) { pre.classList.add('out'); go(); onEnd(el, hide); }
+    else onEnd(el, () => { pre.classList.add('out'); go(); onEnd(pre, hide); });   // landed: now the black lifts and the strip slides in
   }
-  return { exit };
+  return { exit, progress: x => { real = Math.max(real, Math.min(1, x)); } };
 })();
 </script>
 

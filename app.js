@@ -237,7 +237,7 @@ function stepPost(dt) {
 
 // ---------------------------------------------------------------- preloader
 let loaded = 0, total = 0, preDone = false;
-function progress() { if (loaded >= total && !preDone) dismissPre(); }
+function progress() { if (window.bitzLoader) bitzLoader.progress(total ? loaded / total : 0); if (loaded >= total && !preDone) dismissPre(); }
 function dismissPre() {
   if (preDone) return; preDone = true;
   const go = () => {                                   // the loader's logo flies to the header: the black lifts with it and the strip slides in
