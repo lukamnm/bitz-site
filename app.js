@@ -237,19 +237,15 @@ function stepPost(dt) {
 
 // ---------------------------------------------------------------- preloader
 let loaded = 0, total = 0, preDone = false;
-function progress() {
-  $('#pre b').textContent = total ? Math.round((loaded / total) * 100) : 0;
-  if (loaded >= total && !preDone) dismissPre();
-}
+function progress() { if (loaded >= total && !preDone) dismissPre(); }
 function dismissPre() {
   if (preDone) return; preDone = true;
-  const go = () => {                                   // the loader's letters are retracting: the black screen lifts with them and the strip slides in
-    if (RM) $('#pre').style.display = 'none';
-    else gsap.to('#pre', { opacity: 0, duration: 0.85, delay: 0.25, ease: 'power2.inOut', onComplete: () => ($('#pre').style.display = 'none') });
+  const go = () => {                                   // the loader's logo flies to the header: the black lifts with it and the strip slides in
     if (!S.mobile) intro();
     if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
   };
-  if (window.bitzLoader) bitzLoader.exit(go); else go();
+  if (window.bitzLoader) bitzLoader.exit(go);          // index.html: plays the write-on, waits for it, then hands over
+  else { go(); if (RM) $('#pre').style.display = 'none'; else gsap.to('#pre', { opacity: 0, duration: 0.85, delay: 0.25, ease: 'power2.inOut', onComplete: () => ($('#pre').style.display = 'none') }); }
 }
 setTimeout(dismissPre, 4000);
 

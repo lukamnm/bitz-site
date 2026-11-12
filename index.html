@@ -17,8 +17,42 @@
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/lenis.min.js"></script>
 </head>
-<body>
-<div id="pre" aria-hidden="true">bitz <b>0</b></div>
+<body class="preload">
+<div id="pre" aria-hidden="true"><div id="preLogo"></div></div>
+<script src="assets/vendor/lottie_light.min.js"></script>
+<script>
+// the loader: Luka's After Effects write-on of the logo (assets/loader/bitz-loader.json) plays once, holds until the page is ready, then
+// flies onto the header logo (FLIP) while the page comes in. app.js calls bitzLoader.exit(go) when everything is loaded.
+window.bitzLoader = (() => {
+  const LOGO = { x: 106, y: 52, w: 600, h: 444, W: 762, H: 553 };   // where the logo sits inside the animation frame
+  const HOLD = 250, MAX_WAIT = 6000;
+  const pre = document.getElementById('pre'), el = document.getElementById('preLogo');
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('rm');
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  let anim = null, resolveWritten;
+  const written = new Promise(r => { resolveWritten = r; setTimeout(r, MAX_WAIT); });   // the write-on always finishes first (or we stop waiting)
+  fetch('assets/loader/bitz-loader.json').then(r => r.json()).then(data => {
+    anim = lottie.loadAnimation({ container: el, renderer: 'svg', loop: false, autoplay: false, animationData: data });
+    anim.addEventListener('DOMLoaded', () => {
+      if (RM) { anim.goToAndStop(anim.totalFrames - 1, true); resolveWritten(); return; }
+      anim.addEventListener('complete', resolveWritten); anim.goToAndPlay(0, true);
+    });
+  }).catch(() => { anim = null; resolveWritten(); });
+  const hide = () => { document.body.classList.remove('preload'); pre.style.display = 'none'; };
+  async function exit(go) {
+    await written; await wait(HOLD);
+    const img = document.querySelector('#home img');
+    if (!anim || RM || !img) { go(); if (RM) hide(); else { pre.classList.add('fade'); pre.addEventListener('transitionend', hide, { once: true }); } return; }
+    const c = el.getBoundingClientRect(), n = img.getBoundingClientRect();   // FLIP: the loader logo lands exactly on the header logo
+    const s = n.width / (c.width * LOGO.w / LOGO.W);
+    const tx = n.left - (c.left + c.width * LOGO.x / LOGO.W * s), ty = n.top - (c.top + c.height * LOGO.y / LOGO.H * s);
+    pre.classList.add('out'); go();
+    el.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
+    el.addEventListener('transitionend', hide, { once: true });
+  }
+  return { exit };
+})();
+</script>
 
 <canvas id="gl" aria-label="Project carousel"></canvas>
 <div id="tags" aria-hidden="true"></div>
