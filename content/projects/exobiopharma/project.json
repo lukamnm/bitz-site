@@ -33,11 +33,13 @@
     "gallery": [
       {
         "type": "video",
-        "webm": "/assets/video/projects/exobiopharma-video-loop.webm"
+        "webm": "/assets/video/projects/exobiopharma-video-loop.webm",
+        "video": "/assets/video/projects/exobiopharma-video-loop.mp4"
       },
       {
         "type": "video",
-        "webm": "/assets/video/projects/exobiopharma-logo-grid-animation.webm"
+        "webm": "/assets/video/projects/exobiopharma-logo-grid-animation.webm",
+        "video": "/assets/video/projects/exobiopharma-logo-grid-animation.mp4"
       },
       {
         "type": "image",

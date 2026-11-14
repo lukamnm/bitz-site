@@ -28,7 +28,8 @@
     "gallery": [
       {
         "type": "video",
-        "webm": "/assets/video/projects/e-space-espace-fhd-en.webm"
+        "webm": "/assets/video/projects/e-space-espace-fhd-en.webm",
+        "video": "/assets/video/projects/e-space-espace-fhd-en.mp4"
       },
       {
         "type": "image",
@@ -44,7 +45,8 @@
       },
       {
         "type": "video",
-        "webm": "/assets/video/projects/e-space-espace-cor-fhd-en.webm"
+        "webm": "/assets/video/projects/e-space-espace-cor-fhd-en.webm",
+        "video": "/assets/video/projects/e-space-espace-cor-fhd-en.mp4"
       },
       {
         "type": "image",
