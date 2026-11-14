@@ -40,6 +40,10 @@ const addr = u => (has(u) ? String(u).trim().replace(/^https?:\/\/[^/]+\//, '').
 const ymd = d => String(d || '').slice(0, 10).replace(/-/g, '/');
 
 // ---------------------------------------------------------------- projects
+// a gallery item is an image (a plain path) or a video { video, webm, poster }; the poster defaults to the frame tools/galleryvideo.mjs makes
+const vidPoster = v => v ? v.replace(/.(mp4|webm)$/i, '.webp') : null;
+const gal = list => (list || []).map(g => typeof g === 'string' ? rel(g) : g.type === 'video' || g.video || g.webm
+  ? pick({ video: rel(g.video), webm: rel(g.webm), poster: rel(g.poster) || vidPoster(rel(g.video) || rel(g.webm)) }, ['video', 'webm', 'poster']) : rel(g.image)).filter(Boolean);
 const projects = [];
 for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/projects') : []) {
   const f = `content/projects/${slug}/project.json`; if (!fs.existsSync(f)) continue;
@@ -48,7 +52,7 @@ for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/p
   const kaSec = sec(ka.sections);
   projects.push({
     slug, order: has(en.order) ? +en.order : 999, title: en.title || slug, featured: en.featured !== false, year: en.year || '', client: en.client || '',
-    cats: en.cats || [], link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: (en.gallery || []).map(rel), sections: sec(en.sections),
+    cats: en.cats || [], link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: gal(en.gallery), sections: sec(en.sections),
     home: en.home && (en.home.img || en.home.video) ? pick({ img: rel(en.home.img), video: rel(en.home.video), webm: rel(en.home.webm) }, ['img', 'video', 'webm']) : null,
     seo: seo(en.seo),
     url: { en: addr(en.url) || `portfolio/${slug}/`, ge: ka.title ? addr(ka.url) || `ge/portfolio/${slug}/` : null },

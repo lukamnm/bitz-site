@@ -70,10 +70,25 @@ collections:
       - { name: cover, label: Cover (first image of the project page), widget: image }
       - name: gallery
         label: Gallery
-        label_singular: Image
+        label_singular: Item
         widget: list
         required: false
-        field: { name: image, label: Image, widget: image }
+        hint: 'Images and videos in the order they appear on the project page. Videos play muted in a loop; the poster is made automatically on deploy when left empty.'
+        types:
+          - name: image
+            label: Image
+            widget: object
+            summary: '{{image}}'
+            fields:
+              - { name: image, label: Image, widget: image }
+          - name: video
+            label: Video
+            widget: object
+            summary: '{{video}}{{webm}}'
+            fields:
+              - { name: video, label: Video (mp4), widget: file, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects, hint: 'mp4 (H.264) plays everywhere. Keep it under 10 MB.' }
+              - { name: webm, label: Video (webm), widget: file, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects, hint: 'Optional smaller copy; an mp4 is made from it on deploy if there is none.' }
+              - { name: poster, label: Poster (first frame), widget: image, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects }
       - name: home
         label: Home strip card
         widget: object

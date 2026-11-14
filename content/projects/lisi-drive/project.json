@@ -26,12 +26,54 @@
     ],
     "cover": "/assets/img/lisi-drive.webp",
     "gallery": [
-      "/assets/img/lisi-drive-1.webp",
-      "/assets/img/lisi-drive-2.webp",
-      "/assets/img/lisi-drive-3.webp",
-      "/assets/img/lisi-drive-4.webp",
-      "/assets/img/lisi-drive-5.webp",
-      "/assets/img/lisi-drive-6.webp"
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-6.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-10.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/lisi-drive-12.webp"
+      }
     ],
     "seo": {
       "title": "Lisi Drive - Branding & Graphic Design | Bitz Portfolio",

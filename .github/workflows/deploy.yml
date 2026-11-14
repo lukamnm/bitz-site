@@ -42,6 +42,21 @@ jobs:
             git push -q origin HEAD:main || echo "::warning::could not push the new bubble previews (main moved on); this deploy still includes them and the next run commits them"
           fi
 
+      # gallery videos added in the admin (or imported) get their poster frame, an mp4 when only a webm was uploaded, and big mp4s
+      # are brought down to web size once; the results are committed back like the bubble previews
+      - name: Gallery videos
+        run: |
+          if node tools/galleryvideo.mjs --check --slim; then exit 0; fi
+          which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+          node tools/galleryvideo.mjs --slim
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/video/projects content/projects
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Gallery videos: posters and web copies (automatic)"
+            git push -q origin HEAD:main || echo "::warning::could not push the gallery video files (main moved on); this deploy still includes them and the next run commits them"
+          fi
+
       - name: Build and stage
         run: node tools/stage.js _site
 

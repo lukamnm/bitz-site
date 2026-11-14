@@ -26,9 +26,22 @@
     ],
     "cover": "/assets/img/kredo-banki.webp",
     "gallery": [
-      "/assets/img/kredo-banki-1.webp",
-      "/assets/img/kredo-banki-2.webp",
-      "/assets/img/kredo-banki-3.webp"
+      {
+        "type": "image",
+        "image": "/assets/img/kredo-banki-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/kredo-banki-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/kredo-banki-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/kredo-banki-4.webp"
+      }
     ],
     "home": {
       "img": "/assets/home/kredo-banki.jpg"

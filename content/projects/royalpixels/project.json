@@ -27,11 +27,54 @@
     ],
     "cover": "/assets/img/royalpixels.webp",
     "gallery": [
-      "/assets/img/royalpixels-1.webp",
-      "/assets/img/royalpixels-2.webp",
-      "/assets/img/royalpixels-3.webp",
-      "/assets/img/royalpixels-4.webp",
-      "/assets/img/royalpixels-5.webp"
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-6.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-10.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/royalpixels-12.webp"
+      }
     ],
     "home": {
       "img": "/assets/home/royalpixels.jpg"

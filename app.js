@@ -97,7 +97,7 @@ const S = {
   open: null, hover: -1, drag: null, moved: 0, dim: 0, mobile: MQ.matches,
 };
 const cards = []; // { i, x, mesh, tag, p, bb }
-let openCard = null, lenis = null, io = null;
+let openCard = null, lenis = null, io = null, vio = null;
 const held = new Set();                      // cards driven by a timeline (the open one and the two side sheets), not by the strip
 let sides = {};
 const SIDE_SCALE = 0.81, SIDE_DIM = 0.55;    // measured: side sheets are ~81% of the panel, washed white, mid grey against black
@@ -889,7 +889,7 @@ function buildLoop() {
   if (S.mobile) return;
   const dup = document.createElement('div'); dup.className = 'dup';
   const hf = hero.closest('figure').cloneNode(true); hf.querySelector('img').removeAttribute('id'); hf.classList.add('in');
-  dup.append(hf, ...[...$('#pBody').children].map(n => { const c = n.cloneNode(true); if (c.tagName === 'FIGURE') c.classList.add('in'); return c; }));
+  dup.append(hf, ...[...$('#pBody').children].map(n => { const c = n.cloneNode(true); if (c.tagName === 'FIGURE') c.classList.add('in'); c.querySelectorAll('video').forEach(v => { v.innerHTML = ''; }); return c; }));
   prc.appendChild(dup);
   sizeLoop();
 }
@@ -916,7 +916,8 @@ function fill(p) {
   if (hero.complete) spin.classList.remove('on');
   $('#pBody').innerHTML =
     t.sections.map(s => `<div class="txt">${s.h ? `<h3>${s.h}</h3>` : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}</div>`).join('') +
-    p.gallery.map(g => `<figure><img src="${g}" alt="" loading="lazy"></figure>`).join('');
+    p.gallery.map(g => typeof g === 'string' ? `<figure><img src="${g}" alt="" loading="lazy"></figure>`
+      : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video></figure>`).join('');
   buildLoop();
   pr.scrollTop = 0; panel.scrollTop = 0;
   if (lenis) lenis.scrollTo(0, { immediate: true });
@@ -924,6 +925,9 @@ function fill(p) {
   io?.disconnect();
   io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { root: S.mobile ? panel : pr, rootMargin: '0px 0px -8% 0px' });
   $('#pBody').querySelectorAll('figure').forEach(f => (RM ? f.classList.add('in') : io.observe(f)));
+  vio?.disconnect();
+  vio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) en.target.play().catch(() => {}); else en.target.pause(); }), { root: S.mobile ? panel : pr, rootMargin: '40% 0px' });
+  $('#pBody').querySelectorAll('video').forEach(v => vio.observe(v));
   if (panel.classList.contains('on')) buildPanelPlanes();      // needs the panel laid out; openProject builds after it sizes the panel
 }
 
@@ -944,12 +948,24 @@ function panelPlane(el, fader, clip, radius, group) {
 function buildPanelPlanes() {
   disposePanelPlanes();
   if (S.mobile || !renderer || !panel.classList.contains('on')) return;
-  for (const img of prc.querySelectorAll('figure img')) {
-    const p = panelPlane(img, img.closest('figure'), true, 0, 'img');   // square corners, like the reference's inner pages
-    new THREE.TextureLoader().load(img.getAttribute('src'), tex => {
-      tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
-      p.mesh.material.uniforms.uMap.value = tex; p.mesh.material.uniforms.uHasMap.value = 1; p.img = tex.image;
-    });
+  const vidSubs = [];   // per video (in #pBody order): the planes that show it, the original's and its copy's in the loop
+  for (const el of prc.querySelectorAll('figure img, figure video')) {
+    const p = panelPlane(el, el.closest('figure'), true, 0, 'img');   // square corners, like the reference's inner pages
+    const apply = (tex, size) => { p.mesh.material.uniforms.uMap.value = tex; p.mesh.material.uniforms.uHasMap.value = 1; p.img = size; };
+    if (el.tagName === 'IMG') {
+      new THREE.TextureLoader().load(el.getAttribute('src'), tex => { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); apply(tex, tex.image); });
+      continue;
+    }
+    const i = [...el.closest('#pBody, .dup').querySelectorAll('video')].indexOf(el);
+    if (el.closest('.dup')) { vidSubs[i]?.push(apply); continue; }
+    const subs = vidSubs[i] = [apply], vsize = () => ({ width: el.videoWidth, height: el.videoHeight });
+    if (el.__vt) { subs.forEach(f => f(el.__vt, vsize())); continue; }            // rebuilt (resize) while already playing
+    const poster = el.getAttribute('poster');
+    if (poster) new THREE.TextureLoader().load(poster, tex => { tex.colorSpace = THREE.SRGBColorSpace; if (!el.__vt) subs.forEach(f => f(tex, tex.image)); });
+    el.addEventListener('playing', () => {
+      const vt = new THREE.VideoTexture(el); vt.colorSpace = THREE.SRGBColorSpace; vt.minFilter = THREE.LinearFilter; el.__vt = vt;
+      subs.forEach(f => f(vt, vsize()));
+    }, { once: true });
   }
   // the text column is three planes (title, blurb, chips) so they can enter one after another, as the reference's do
   const groups = [[$('#pTitle'), 'title'], [$('#pBlurb'), 'blurb'], [$('#pChips'), 'chips'], ...[...prc.querySelectorAll('.txt')].map(el => [el, 'txt'])];

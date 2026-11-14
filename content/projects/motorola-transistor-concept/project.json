@@ -29,11 +29,34 @@
     ],
     "cover": "/assets/img/motorola-transistor-concept.webp",
     "gallery": [
-      "/assets/img/motorola-transistor-concept-1.webp",
-      "/assets/img/motorola-transistor-concept-2.webp",
-      "/assets/img/motorola-transistor-concept-3.webp",
-      "/assets/img/motorola-transistor-concept-4.webp",
-      "/assets/img/motorola-transistor-concept-5.webp"
+      {
+        "type": "image",
+        "image": "/assets/img/motorola-transistor-concept-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/motorola-transistor-concept-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/motorola-transistor-concept-3.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/motorola-transistor-concept-motorola.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/motorola-transistor-concept-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/motorola-transistor-concept-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/motorola-transistor-concept-6.webp"
+      }
     ],
     "seo": {
       "title": "Motorola Transistor Concept - 3D Design | Bitz Portfolio",

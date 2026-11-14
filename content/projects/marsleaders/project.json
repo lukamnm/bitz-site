@@ -35,14 +35,130 @@
     ],
     "cover": "/assets/img/marsleaders.webp",
     "gallery": [
-      "/assets/img/marsleaders-1.webp",
-      "/assets/img/marsleaders-2.webp",
-      "/assets/img/marsleaders-3.webp",
-      "/assets/img/marsleaders-4.webp",
-      "/assets/img/marsleaders-5.webp",
-      "/assets/img/marsleaders-6.webp",
-      "/assets/img/marsleaders-7.webp",
-      "/assets/img/marsleaders-8.webp"
+      {
+        "type": "video",
+        "video": "/assets/video/projects/marsleaders-marsleaders-unrevealed.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-5.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/marsleaders-marsleaders-main-logo-grid.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-6.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/marsleaders-marsleaders-color-palete.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-10.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-12.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-13.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-14.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-15.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-16.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-17.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-18.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-19.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-20.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-21.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-22.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-23.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-24.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-25.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-26.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-27.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/marsleaders-web-showcase.mp4"
+      }
     ],
     "home": {
       "img": "/assets/home/marsleaders.webp",

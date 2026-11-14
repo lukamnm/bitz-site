@@ -14,6 +14,14 @@
   "blurb": "A visual identity that carries a biopharmaceutical brand from the lab bench to the shelf - wordmark, palette and type system built to stay scientific without going sterile.",
   "cover": "assets/img/exobiopharma.webp",
   "gallery": [
+   {
+    "webm": "assets/video/projects/exobiopharma-video-loop.webm",
+    "poster": "assets/video/projects/exobiopharma-video-loop.webp"
+   },
+   {
+    "webm": "assets/video/projects/exobiopharma-logo-grid-animation.webm",
+    "poster": "assets/video/projects/exobiopharma-logo-grid-animation.webp"
+   },
    "assets/img/exobiopharma-1.webp",
    "assets/img/exobiopharma-2.webp",
    "assets/img/exobiopharma-3.webp",
@@ -21,7 +29,13 @@
    "assets/img/exobiopharma-5.webp",
    "assets/img/exobiopharma-6.webp",
    "assets/img/exobiopharma-7.webp",
-   "assets/img/exobiopharma-8.webp"
+   "assets/img/exobiopharma-8.webp",
+   "assets/img/exobiopharma-9.webp",
+   "assets/img/exobiopharma-10.webp",
+   "assets/img/exobiopharma-11.webp",
+   "assets/img/exobiopharma-12.webp",
+   "assets/img/exobiopharma-13.webp",
+   "assets/img/exobiopharma-14.webp"
   ],
   "sections": [
    {
@@ -97,14 +111,49 @@
   "blurb": "Identity, NFT artwork direction and website for Marsleaders - a virtual world where political figures compete, with a mark that is solid and authoritative yet playful and planetary.",
   "cover": "assets/img/marsleaders.webp",
   "gallery": [
+   {
+    "video": "assets/video/projects/marsleaders-marsleaders-unrevealed.mp4",
+    "poster": "assets/video/projects/marsleaders-marsleaders-unrevealed.webp"
+   },
    "assets/img/marsleaders-1.webp",
    "assets/img/marsleaders-2.webp",
    "assets/img/marsleaders-3.webp",
    "assets/img/marsleaders-4.webp",
    "assets/img/marsleaders-5.webp",
+   {
+    "video": "assets/video/projects/marsleaders-marsleaders-main-logo-grid.mp4",
+    "poster": "assets/video/projects/marsleaders-marsleaders-main-logo-grid.webp"
+   },
    "assets/img/marsleaders-6.webp",
+   {
+    "video": "assets/video/projects/marsleaders-marsleaders-color-palete.mp4",
+    "poster": "assets/video/projects/marsleaders-marsleaders-color-palete.webp"
+   },
    "assets/img/marsleaders-7.webp",
-   "assets/img/marsleaders-8.webp"
+   "assets/img/marsleaders-8.webp",
+   "assets/img/marsleaders-9.webp",
+   "assets/img/marsleaders-10.webp",
+   "assets/img/marsleaders-11.webp",
+   "assets/img/marsleaders-12.webp",
+   "assets/img/marsleaders-13.webp",
+   "assets/img/marsleaders-14.webp",
+   "assets/img/marsleaders-15.webp",
+   "assets/img/marsleaders-16.webp",
+   "assets/img/marsleaders-17.webp",
+   "assets/img/marsleaders-18.webp",
+   "assets/img/marsleaders-19.webp",
+   "assets/img/marsleaders-20.webp",
+   "assets/img/marsleaders-21.webp",
+   "assets/img/marsleaders-22.webp",
+   "assets/img/marsleaders-23.webp",
+   "assets/img/marsleaders-24.webp",
+   "assets/img/marsleaders-25.webp",
+   "assets/img/marsleaders-26.webp",
+   "assets/img/marsleaders-27.webp",
+   {
+    "video": "assets/video/projects/marsleaders-web-showcase.mp4",
+    "poster": "assets/video/projects/marsleaders-web-showcase.webp"
+   }
   ],
   "sections": [
    {
@@ -195,15 +244,38 @@
   "blurb": "Complete branding for BRACE, an EV charging brand - identity, 3D, motion and print that give form to energy, movement and cleaner roads ahead.",
   "cover": "assets/img/brace.webp",
   "gallery": [
+   {
+    "video": "assets/video/projects/brace-brace.mp4",
+    "poster": "assets/video/projects/brace-brace.webp"
+   },
    "assets/img/brace-1.webp",
    "assets/img/brace-2.webp",
    "assets/img/brace-3.webp",
+   {
+    "video": "assets/video/projects/brace-logo-video.mp4",
+    "poster": "assets/video/projects/brace-logo-video.webp"
+   },
    "assets/img/brace-4.webp",
    "assets/img/brace-5.webp",
    "assets/img/brace-6.webp",
    "assets/img/brace-7.webp",
    "assets/img/brace-8.webp",
-   "assets/img/brace-9.webp"
+   "assets/img/brace-9.webp",
+   "assets/img/brace-10.webp",
+   {
+    "video": "assets/video/projects/brace-hoodie.mp4",
+    "poster": "assets/video/projects/brace-hoodie.webp"
+   },
+   "assets/img/brace-11.webp",
+   "assets/img/brace-12.webp",
+   "assets/img/brace-13.webp",
+   "assets/img/brace-14.webp",
+   {
+    "video": "assets/video/projects/brace-brace-car-2.mp4",
+    "poster": "assets/video/projects/brace-brace-car-2.webp"
+   },
+   "assets/img/brace-15.webp",
+   "assets/img/brace-16.webp"
   ],
   "sections": [
    {
@@ -281,8 +353,13 @@
    "assets/img/motorola-transistor-concept-1.webp",
    "assets/img/motorola-transistor-concept-2.webp",
    "assets/img/motorola-transistor-concept-3.webp",
+   {
+    "video": "assets/video/projects/motorola-transistor-concept-motorola.mp4",
+    "poster": "assets/video/projects/motorola-transistor-concept-motorola.webp"
+   },
    "assets/img/motorola-transistor-concept-4.webp",
-   "assets/img/motorola-transistor-concept-5.webp"
+   "assets/img/motorola-transistor-concept-5.webp",
+   "assets/img/motorola-transistor-concept-6.webp"
   ],
   "sections": [
    {
@@ -353,8 +430,17 @@
    "assets/img/cerebro-4.webp",
    "assets/img/cerebro-5.webp",
    "assets/img/cerebro-6.webp",
+   {
+    "video": "assets/video/projects/cerebro-cerebro-animation.mp4",
+    "poster": "assets/video/projects/cerebro-cerebro-animation.webp"
+   },
    "assets/img/cerebro-7.webp",
-   "assets/img/cerebro-8.webp"
+   "assets/img/cerebro-8.webp",
+   "assets/img/cerebro-9.webp",
+   "assets/img/cerebro-10.webp",
+   "assets/img/cerebro-11.webp",
+   "assets/img/cerebro-12.webp",
+   "assets/img/cerebro-13.webp"
   ],
   "sections": [
    {
@@ -429,7 +515,13 @@
    "assets/img/lisi-drive-3.webp",
    "assets/img/lisi-drive-4.webp",
    "assets/img/lisi-drive-5.webp",
-   "assets/img/lisi-drive-6.webp"
+   "assets/img/lisi-drive-6.webp",
+   "assets/img/lisi-drive-7.webp",
+   "assets/img/lisi-drive-8.webp",
+   "assets/img/lisi-drive-9.webp",
+   "assets/img/lisi-drive-10.webp",
+   "assets/img/lisi-drive-11.webp",
+   "assets/img/lisi-drive-12.webp"
   ],
   "sections": [
    {
@@ -493,7 +585,8 @@
   "gallery": [
    "assets/img/kredo-banki-1.webp",
    "assets/img/kredo-banki-2.webp",
-   "assets/img/kredo-banki-3.webp"
+   "assets/img/kredo-banki-3.webp",
+   "assets/img/kredo-banki-4.webp"
   ],
   "sections": [
    {
@@ -565,7 +658,14 @@
    "assets/img/royalpixels-2.webp",
    "assets/img/royalpixels-3.webp",
    "assets/img/royalpixels-4.webp",
-   "assets/img/royalpixels-5.webp"
+   "assets/img/royalpixels-5.webp",
+   "assets/img/royalpixels-6.webp",
+   "assets/img/royalpixels-7.webp",
+   "assets/img/royalpixels-8.webp",
+   "assets/img/royalpixels-9.webp",
+   "assets/img/royalpixels-10.webp",
+   "assets/img/royalpixels-11.webp",
+   "assets/img/royalpixels-12.webp"
   ],
   "sections": [
    {
@@ -642,7 +742,13 @@
    "assets/img/anbanthqeba-3.webp",
    "assets/img/anbanthqeba-4.webp",
    "assets/img/anbanthqeba-5.webp",
-   "assets/img/anbanthqeba-6.webp"
+   "assets/img/anbanthqeba-6.webp",
+   "assets/img/anbanthqeba-7.webp",
+   "assets/img/anbanthqeba-8.webp",
+   "assets/img/anbanthqeba-9.webp",
+   "assets/img/anbanthqeba-10.webp",
+   "assets/img/anbanthqeba-11.webp",
+   "assets/img/anbanthqeba-12.webp"
   ],
   "sections": [
    {
@@ -710,11 +816,20 @@
   "blurb": "Powering electric mobility - explainer videos, web design and visuals promoting E-Space's charging network and app for retail and corporate clients.",
   "cover": "assets/img/e-space.webp",
   "gallery": [
+   {
+    "webm": "assets/video/projects/e-space-espace-fhd-en.webm",
+    "poster": "assets/video/projects/e-space-espace-fhd-en.webp"
+   },
    "assets/img/e-space-1.webp",
    "assets/img/e-space-2.webp",
    "assets/img/e-space-3.webp",
+   {
+    "webm": "assets/video/projects/e-space-espace-cor-fhd-en.webm",
+    "poster": "assets/video/projects/e-space-espace-cor-fhd-en.webp"
+   },
    "assets/img/e-space-4.webp",
-   "assets/img/e-space-5.webp"
+   "assets/img/e-space-5.webp",
+   "assets/img/e-space-6.webp"
   ],
   "sections": [
    {

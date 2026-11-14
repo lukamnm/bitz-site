@@ -30,14 +30,62 @@
     ],
     "cover": "/assets/img/cerebro.webp",
     "gallery": [
-      "/assets/img/cerebro-1.webp",
-      "/assets/img/cerebro-2.webp",
-      "/assets/img/cerebro-3.webp",
-      "/assets/img/cerebro-4.webp",
-      "/assets/img/cerebro-5.webp",
-      "/assets/img/cerebro-6.webp",
-      "/assets/img/cerebro-7.webp",
-      "/assets/img/cerebro-8.webp"
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-6.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/cerebro-cerebro-animation.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-10.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-12.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/cerebro-13.webp"
+      }
     ],
     "seo": {
       "title": "Cerebro Branding Project | Bitz Portfolio",

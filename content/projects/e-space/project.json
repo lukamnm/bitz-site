@@ -26,11 +26,38 @@
     ],
     "cover": "/assets/img/e-space.webp",
     "gallery": [
-      "/assets/img/e-space-1.webp",
-      "/assets/img/e-space-2.webp",
-      "/assets/img/e-space-3.webp",
-      "/assets/img/e-space-4.webp",
-      "/assets/img/e-space-5.webp"
+      {
+        "type": "video",
+        "webm": "/assets/video/projects/e-space-espace-fhd-en.webm"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/e-space-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/e-space-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/e-space-3.webp"
+      },
+      {
+        "type": "video",
+        "webm": "/assets/video/projects/e-space-espace-cor-fhd-en.webm"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/e-space-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/e-space-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/e-space-6.webp"
+      }
     ],
     "home": {
       "img": "/assets/home/e-space.png",

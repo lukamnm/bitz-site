@@ -32,15 +32,86 @@
     ],
     "cover": "/assets/img/brace.webp",
     "gallery": [
-      "/assets/img/brace-1.webp",
-      "/assets/img/brace-2.webp",
-      "/assets/img/brace-3.webp",
-      "/assets/img/brace-4.webp",
-      "/assets/img/brace-5.webp",
-      "/assets/img/brace-6.webp",
-      "/assets/img/brace-7.webp",
-      "/assets/img/brace-8.webp",
-      "/assets/img/brace-9.webp"
+      {
+        "type": "video",
+        "video": "/assets/video/projects/brace-brace.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-3.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/brace-logo-video.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-6.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-10.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/brace-hoodie.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-12.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-13.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-14.webp"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/brace-brace-car-2.mp4"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-15.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/brace-16.webp"
+      }
     ],
     "home": {
       "img": "/assets/home/brace.webp"

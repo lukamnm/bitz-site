@@ -31,14 +31,70 @@
     ],
     "cover": "/assets/img/exobiopharma.webp",
     "gallery": [
-      "/assets/img/exobiopharma-1.webp",
-      "/assets/img/exobiopharma-2.webp",
-      "/assets/img/exobiopharma-3.webp",
-      "/assets/img/exobiopharma-4.webp",
-      "/assets/img/exobiopharma-5.webp",
-      "/assets/img/exobiopharma-6.webp",
-      "/assets/img/exobiopharma-7.webp",
-      "/assets/img/exobiopharma-8.webp"
+      {
+        "type": "video",
+        "webm": "/assets/video/projects/exobiopharma-video-loop.webm"
+      },
+      {
+        "type": "video",
+        "webm": "/assets/video/projects/exobiopharma-logo-grid-animation.webm"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-6.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-10.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-12.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-13.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-14.webp"
+      }
     ],
     "home": {
       "img": "/assets/home/exobiopharma.webp"
