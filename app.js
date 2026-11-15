@@ -309,17 +309,20 @@ precision highp float;
 #include <common>
 #include <dithering_pars_fragment>
 uniform sampler2D uMap, uVid; uniform vec2 uRepeat, uOffset, uAspect, uClipY, uVidRepeat, uVidOffset; uniform float uHasVid;
-uniform float uWhite, uDim, uRadius, uHasMap, uShade, uHover, uWh, uD, uT, uP, uAlpha, uArrow;
+uniform float uWhite, uDim, uRadius, uHasMap, uShade, uHover, uWh, uD, uT, uP, uAlpha, uArrow, uMapVid, uVidDec;
 uniform vec4 uPillBox[2];    // hovered chips (two slots so one can fade out while the next fades in): centre xy, half-size zw, plane units
 uniform vec4 uPillDisc[2];   // disc centre xy (follows the pointer), z: radius that covers the chip, w: the chip's corner radius
 uniform vec2 uPillA[2];      // x: hover 0..1, y: 1 on text chips (lens + channel split), 0 on the round link disc
 varying vec2 vUv; varying float vD; varying float vWx; varying float vBank; varying vec3 vP;
 const float SHIFT = -0.2, TAIL = 1.0;
 const float PILL_LENS = 0.08, PILL_SPLIT = 3.0;   // reference: label lens 0.33 x 1.6 (ours is gentler: the chip shape itself does not swell), channels apart at the lens centre
+// video frames arrive sRGB-encoded in a linear texture (three never gives a VideoTexture an sRGB internal format): decode them to linear light
+vec4 vdec(vec4 t) { return vec4(mix(pow(t.rgb * 0.9478672986 + vec3(0.0521327014), vec3(2.4)), t.rgb * 0.0773993808, vec3(lessThanEqual(t.rgb, vec3(0.04045)))), t.a); }
+vec4 mapS(vec2 uv) { vec4 t = texture2D(uMap, uv); return uMapVid > 0.5 ? vdec(t) : t; }
 // chip hover, as the reference's pills: a disc grows from the pointer and inverts the chip (light fill -> near black, ink -> white),
 // the label is magnified under the pointer's lens and its colour channels come apart along x, fading to nothing at the lens rim
 vec4 pillSample(vec2 uv, vec2 px) {
-  vec4 t = texture2D(uMap, uv * uRepeat + uOffset);
+  vec4 t = mapS(uv * uRepeat + uOffset);
   float fwu = fwidth(vUv.x), aa = max(fwidth(px.x), 1e-5);   // derivatives BEFORE any divergent branch (undefined after one, zero on D3D)
   for (int i = 0; i < 2; i++) {
     float A = uPillA[i].x; if (A < 0.0001) continue;
@@ -335,9 +338,9 @@ vec4 pillSample(vec2 uv, vec2 px) {
     float lens = uPillA[i].y * A;
     vec2 luv = uv - (rel / uAspect) * PILL_LENS * lens * k * k;                 // magnify: pull the sample toward the lens centre
     float split = kd * PILL_SPLIT * lens * fwu;
-    vec4 c0 = texture2D(uMap, luv * uRepeat + uOffset);
-    float r = texture2D(uMap, (luv + vec2(split, 0.0)) * uRepeat + uOffset).r;
-    float bl = texture2D(uMap, (luv - vec2(split, 0.0)) * uRepeat + uOffset).b;
+    vec4 c0 = mapS(luv * uRepeat + uOffset);
+    float r = mapS((luv + vec2(split, 0.0)) * uRepeat + uOffset).r;
+    float bl = mapS((luv - vec2(split, 0.0)) * uRepeat + uOffset).b;
     vec3 c = vec3(r, c0.g, bl);
     float m = 1.0 - smoothstep(-aa, aa, length(rel) - mix(-0.04 * Rd, Rd, A));   // the disc: from nothing to past the far corner
     vec3 inv = clamp(vec3(0.8926) - c, 0.0, 1.0);                                // #f2f2f2 <-> #111 and #0a0a0a <-> white, in linear light
@@ -365,7 +368,7 @@ void main(){
   float ta = 1.0;                                             // texture alpha: text planes are transparent canvases
   if (uHasMap > 0.5) { vec4 t = pillSample(vUv, vUv * uAspect); col = t.rgb; ta = t.a; }
   if (uHasVid > 0.5) {                                        // video under the baked label overlay
-    vec3 vc = texture2D(uVid, vUv * uVidRepeat + uVidOffset).rgb;
+    vec4 vs = texture2D(uVid, vUv * uVidRepeat + uVidOffset); vec3 vc = uVidDec > 0.5 ? vdec(vs).rgb : vs.rgb;
     col = mix(vc, col, uHasMap > 0.5 ? ta : 0.0); ta = 1.0;   // with a baked label on top the label's alpha mixes; a bare video plane shows the video
   }
   // reference shading: far side darkens toward near-black, then the sheet is lit from the upper left (static sheen)
@@ -412,7 +415,7 @@ function cardMaterial(transparent = false) {
       uVid: { value: null }, uHasVid: { value: 0 }, uVidRepeat: { value: new THREE.Vector2(1, 1) }, uVidOffset: { value: new THREE.Vector2() },
       uAspect: { value: new THREE.Vector2(1, 1) }, uRadius: { value: 0.1 },
       uWh: { value: 1 }, uD: { value: 0 }, uT: { value: SHEET.SPAN }, uV: { value: 0 }, uP: { value: 1 }, uLeanA: { value: 0 }, uDiag: { value: SHEET.DIAG },
-      uHover: { value: 0 }, uDentH: { value: 0 }, uShade: { value: 1 }, uWhite: { value: 0 }, uDim: { value: 0 },
+      uHover: { value: 0 }, uDentH: { value: 0 }, uShade: { value: 1 }, uWhite: { value: 0 }, uDim: { value: 0 }, uMapVid: { value: 0 }, uVidDec: { value: 0 },
       uBulgeA: { value: 0 }, uBulgeH: { value: 0 },
       uPillBox: { value: [new THREE.Vector4(), new THREE.Vector4()] }, uPillDisc: { value: [new THREE.Vector4(), new THREE.Vector4()] },
       uPillA: { value: [new THREE.Vector2(), new THREE.Vector2()] },
@@ -476,7 +479,7 @@ function setVideoCover(c, poster) {
   }
   v.addEventListener('playing', () => {
     const vt = new THREE.VideoTexture(v); vt.colorSpace = THREE.SRGBColorSpace; vt.minFilter = THREE.LinearFilter;
-    u.uVid.value = vt; c.vidW = v.videoWidth; c.vidH = v.videoHeight; setVidCrop(c); pt.dispose();
+    u.uVid.value = vt; u.uVidDec.value = 1; c.vidW = v.videoWidth; c.vidH = v.videoHeight; setVidCrop(c); pt.dispose();
   }, { once: true });
   c.video = v;
   v.play().catch(() => {});
@@ -951,7 +954,7 @@ function buildPanelPlanes() {
   const vidSubs = [];   // per video (in #pBody order): the planes that show it, the original's and its copy's in the loop
   for (const el of prc.querySelectorAll('figure img, figure video')) {
     const p = panelPlane(el, el.closest('figure'), true, 0, 'img');   // square corners, like the reference's inner pages
-    const apply = (tex, size) => { p.mesh.material.uniforms.uMap.value = tex; p.mesh.material.uniforms.uHasMap.value = 1; p.img = size; };
+    const apply = (tex, size) => { const u = p.mesh.material.uniforms; u.uMap.value = tex; u.uHasMap.value = 1; u.uMapVid.value = tex.isVideoTexture ? 1 : 0; p.img = size; };
     if (el.tagName === 'IMG') {
       new THREE.TextureLoader().load(el.getAttribute('src'), tex => { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); apply(tex, tex.image); });
       continue;
