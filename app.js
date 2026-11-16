@@ -242,7 +242,7 @@ function progress() { if (window.bitzLoader) bitzLoader.progress(total ? loaded 
 function dismissPre() {
   if (preDone) return; preDone = true;
   const go = () => {                                   // the loader's logo flies to the header: the black lifts with it and the strip slides in
-    if (!S.mobile) intro();
+    if (!S.mobile) intro(window.bitzLoader?.style || 'fly');
     if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
   };
   if (window.bitzLoader) bitzLoader.exit(go);          // index.html: plays the write-on, waits for it, then hands over
@@ -635,8 +635,11 @@ function buildRing() {
   placeCards();
 }
 
-function intro() {
+function intro(style = 'fly') {
   if (RM) return;
+  if (style === 'zoom') { gsap.from(camera.position, { z: CAMZ + 7, duration: 1.7, ease: 'expo.out' }); return; }                        // straight ahead, out of the depth behind the logo
+  if (style === 'lift') { S.s = S.sT + 0.5 * S.pitch; S.vel = 0; gsap.from(camera.position, { y: S.Hh * 0.9, z: CAMZ + 0.6, duration: 1.1, ease: 'expo.out' }); return; }   // the strip rises with the curtain's edge (camera starts high, the scene low)
+  if (style === 'split') { S.s = S.sT + 0.8 * S.pitch; S.vel = 0; gsap.from(camera.position, { z: CAMZ + 2, duration: 1.5, ease: 'expo.out' }); return; }   // revealed from the middle, settling in
   S.s = S.sT + 1.2 * S.pitch; S.vel = 0;           // the strip slides in through the spring (onto the card an address asked for, else the first)
   gsap.from(camera.position, { z: CAMZ + 2.5, duration: 1.8, ease: 'expo.out' });
 }

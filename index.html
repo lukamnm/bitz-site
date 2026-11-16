@@ -35,6 +35,11 @@ window.bitzLoader = (() => {
   const pre = document.getElementById('pre'), el = document.getElementById('preLogo'), bar = document.getElementById('preBar'), num = bar.querySelector('b'), line = bar.querySelector('i');
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('rm');
   const PHONE = matchMedia('(max-width: 767px)').matches;
+  // how the loader hands over to the site (desktop): fly = the logo flies to the header over the black, then the black lifts and the strip slides in;
+  // lift = the black rises like a curtain while the logo flies, the strip comes up with the curtain's edge; split = the black parts top and bottom
+  // from the middle while the logo flies; zoom = the view passes through the growing logo and the strip comes from the depth, the header logo fades in
+  const STYLES = ['fly', 'lift', 'split', 'zoom'], DEFAULT_STYLE = 'fly', q = new URLSearchParams(location.search).get('loader');
+  const STYLE = PHONE ? 'fly' : STYLES.includes(q) ? q : DEFAULT_STYLE;
   const wait = ms => new Promise(r => setTimeout(r, ms));
   let anim = null, failed = false, wrote = false, resolveWritten, real = PHONE ? 1 : 0, shown = 0, done = false;   // the phone has no asset count: its counter follows the hand
   const written = new Promise(r => { resolveWritten = () => { wrote = true; r(); }; setTimeout(resolveWritten, MAX_WAIT); });   // the write-on always finishes first (or we stop waiting)
@@ -54,7 +59,9 @@ window.bitzLoader = (() => {
     if (next !== shown) show(next);
     requestAnimationFrame(tick);
   })();
-  const hide = () => { done = true; document.body.classList.remove('preload'); pre.style.display = 'none'; };
+  const hide = () => { done = true; document.body.classList.remove('preload'); pre.style.display = 'none'; el.remove(); };
+  // the logo leaves the loader's sheet before the exit so the black can lift, part or fade behind it while it flies
+  const detach = () => { const r = el.getBoundingClientRect(); document.body.appendChild(el); Object.assign(el.style, { position: 'fixed', left: r.left + 'px', top: r.top + 'px', width: r.width + 'px', height: r.height + 'px', zIndex: 101 }); void el.offsetWidth; };   // flush: re-inserted, it needs a settled style before the transform transitions
   const onEnd = (node, fn) => { const h = e => { if (e.target !== node) return; node.removeEventListener('transitionend', h); fn(); }; node.addEventListener('transitionend', h); };   // transitionend bubbles: only this node's own
   async function exit(go) {
     real = 1; await written;
@@ -67,11 +74,18 @@ window.bitzLoader = (() => {
     const c = el.getBoundingClientRect(), n = img.getBoundingClientRect();   // FLIP: the loader logo lands exactly on the header logo
     const s = n.width / (c.width * LOGO.w / LOGO.W);
     const tx = n.left - (c.left + c.width * LOGO.x / LOGO.W * s), ty = n.top - (c.top + c.height * LOGO.y / LOGO.H * s);
+    detach();
+    if (STYLE === 'zoom') {   // through the logo: it grows past the viewer and fades, the black fades with it, the strip arrives from the depth
+      document.body.classList.add('logoFade');
+      el.classList.add('zoom'); el.style.transform = 'scale(7)';
+      pre.classList.add('zoom'); go(); onEnd(el, hide); return;
+    }
     el.classList.add('fly'); el.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
     if (PHONE) { pre.classList.add('out'); go(); onEnd(el, hide); }
-    else onEnd(el, () => { pre.classList.add('out'); go(); onEnd(pre, hide); });   // landed: now the black lifts and the strip slides in
+    else if (STYLE === 'fly') onEnd(el, () => { pre.classList.add('out'); go(); onEnd(pre, hide); });   // landed: now the black lifts and the strip slides in
+    else { pre.classList.add(STYLE); go(); onEnd(el, () => document.body.classList.remove('preload')); onEnd(pre, hide); }   // lift / split: the black moves while the logo flies
   }
-  return { exit, progress: x => { real = Math.max(real, Math.min(1, x)); } };
+  return { exit, progress: x => { real = Math.max(real, Math.min(1, x)); }, style: STYLE };
 })();
 </script>
 
