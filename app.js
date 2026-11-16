@@ -299,7 +299,9 @@ void main(){
   if (uBulgeH > 0.001) {                                                         // open panel: scroll speed bows the sheet toward / away from the viewer
     float tb = clamp(w.y / uBulgeH, -1.0, 1.0);                                  // (reference bulge(): zero at the frustum top and bottom, full at mid-height)
     w.z += uBulgeA * (1.0 - tb * tb);
-    w.z += uBulgeOwn * (1.0 - qq.y * qq.y);                                      // gallery images: each bows on its own as well (reference), its top and bottom staying on the sheet
+    // gallery images: each bows on its own as well (reference), but sideways in the sheet's plane: its long edges curve out (down) or in (up)
+    // by as much as perspective would move them, while the image itself stays on the sheet (in depth it would sink behind the white or poke past its edge)
+    w.x += qq.x * 0.5 * uAspect.x * (uBulgeOwn / max(cameraPosition.z - uBulgeOwn, 0.1)) * (1.0 - qq.y * qq.y);
   }
   vD = clamp((uD - z) / max(2.0 * uD, 0.001), 0.0, 1.0) * P;   // depth shade from the wave only (the dome banded into rings on dark cards)
   vWx = wx; vBank = a; vP = w.xyz;                                             // the fragment shader rebuilds the normal per pixel (no banding)
@@ -1124,7 +1126,7 @@ window.__pills = pills; window.__pplanes = () => pplanes; window.__bulge = () =>
 // panel scroll: Lenis on the gallery column, but it listens on the whole panel, so the wheel works over the text column too (like the reference)
 let bulge = 0, lastScroll = 0;
 const IMG_BULGE = 1;   // measured on the reference mid-scroll: image edges bow exactly as much as the sheet's (the trace's larger value belongs elsewhere)
-const IMG_OWN = 1;     // and each gallery image bows on its own as well, the same depth at its own middle (Luka, 2026-11-17: the reference's images bend while scrolling)
+const IMG_OWN = 2;     // and each gallery image bends on its own as well (Luka, 2026-11-17: the reference's images bend while scrolling): its edges curve by about as much as the sheet's
 const IMG_BLEED = 0.75;   // px: gallery planes overlap their neighbours by a hairline, so touching images never show a seam
 function startLenis() {
   if (S.mobile || RM || !window.Lenis) return;
