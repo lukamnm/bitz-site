@@ -10,7 +10,9 @@ const { execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const WINSCP = 'C:\\Users\\luka_\\AppData\\Local\\Programs\\WinSCP\\WinSCP.com';
+// WinSCP.com: $WINSCP if set, else the per-user install under %LOCALAPPDATA% (works on the laptop and the main PC)
+const WINSCP = process.env.WINSCP || path.join(process.env.LOCALAPPDATA || '', 'Programs', 'WinSCP', 'WinSCP.com');
+if (!fs.existsSync(WINSCP)) { console.error('WinSCP.com not found at ' + WINSCP + ' - install WinSCP or set the WINSCP environment variable to its full path'); process.exit(1); }
 const SITE = path.resolve(__dirname, '..');
 const [mode, name = 'bitz'] = process.argv.slice(2);
 if (mode !== 'preview') { console.error('usage: node tools/deploy.js preview [name]'); process.exit(1); }
