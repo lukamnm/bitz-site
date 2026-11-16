@@ -258,3 +258,17 @@ collections:
             fields:
               - { name: label, label: Label, widget: string, i18n: true }
               - { name: href, label: 'Link (https://..., mailto:..., tel:...)', widget: string, i18n: true }
+          - name: form
+            label: Form
+            widget: object
+            i18n: true
+            hint: 'The message form inside the Contact circle. Messages go to chat@bitz.ge (set in contact.php).'
+            fields:
+              - { name: name, label: Name field, widget: string, i18n: true }
+              - { name: email, label: Email field, widget: string, i18n: true }
+              - { name: message, label: Message field, widget: string, i18n: true }
+              - { name: send, label: Send button, widget: string, i18n: true }
+              - { name: fill, label: 'Note: something is missing', widget: string, i18n: true }
+              - { name: sending, label: 'Note: sending', widget: string, i18n: true }
+              - { name: sent, label: 'Note: sent', widget: string, i18n: true }
+              - { name: error, label: 'Note: could not send', widget: string, i18n: true }

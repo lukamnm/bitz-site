@@ -91,6 +91,13 @@ window.bitzLoader = (() => {
 <div id="disc" class="disc" inert aria-hidden="true">
   <div class="discIn">
     <p id="discLead"></p>
+    <form id="cform" class="cf" hidden novalidate>
+      <div class="row"><input name="name" autocomplete="name" required><input name="email" type="email" autocomplete="email" required></div>
+      <textarea name="message" rows="3" required></textarea>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit"></button>
+      <p class="note" aria-live="polite"></p>
+    </form>
     <p class="meta" id="discMeta"></p>
     <ul class="links" id="discLinks"></ul>
   </div>

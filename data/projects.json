@@ -15,10 +15,12 @@
   "cover": "assets/img/exobiopharma.webp",
   "gallery": [
    {
+    "video": "assets/video/projects/exobiopharma-video-loop.mp4",
     "webm": "assets/video/projects/exobiopharma-video-loop.webm",
     "poster": "assets/video/projects/exobiopharma-video-loop.webp"
    },
    {
+    "video": "assets/video/projects/exobiopharma-logo-grid-animation.mp4",
     "webm": "assets/video/projects/exobiopharma-logo-grid-animation.webm",
     "poster": "assets/video/projects/exobiopharma-logo-grid-animation.webp"
    },
@@ -817,6 +819,7 @@
   "cover": "assets/img/e-space.webp",
   "gallery": [
    {
+    "video": "assets/video/projects/e-space-espace-fhd-en.mp4",
     "webm": "assets/video/projects/e-space-espace-fhd-en.webm",
     "poster": "assets/video/projects/e-space-espace-fhd-en.webp"
    },
@@ -824,6 +827,7 @@
    "assets/img/e-space-2.webp",
    "assets/img/e-space-3.webp",
    {
+    "video": "assets/video/projects/e-space-espace-cor-fhd-en.mp4",
     "webm": "assets/video/projects/e-space-espace-cor-fhd-en.webm",
     "poster": "assets/video/projects/e-space-espace-cor-fhd-en.webp"
    },

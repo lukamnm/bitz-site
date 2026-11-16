@@ -23,7 +23,17 @@
         "label": "Facebook",
         "href": "https://www.facebook.com/gabeatzzz/"
       }
-    ]
+    ],
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Tell me about your project",
+      "send": "Send",
+      "fill": "Please fill in your name, email and message.",
+      "sending": "Sending",
+      "sent": "Thanks! I will get back to you within a business day.",
+      "error": "Could not send. Email me directly at chat@bitz.ge."
+    }
   },
   "ka": {
     "lead": "დამიკავშირდი ნებისმერი ფორმით.",
@@ -49,6 +59,16 @@
         "label": "Facebook",
         "href": "https://www.facebook.com/gabeatzzz/"
       }
-    ]
+    ],
+    "form": {
+      "name": "სახელი",
+      "email": "ელ.ფოსტა",
+      "message": "მომიყევი შენი პროექტის შესახებ",
+      "send": "გაგზავნა",
+      "fill": "გთხოვ შეავსე სახელი, ელ.ფოსტა და შეტყობინება.",
+      "sending": "იგზავნება",
+      "sent": "მადლობა! ერთ სამუშაო დღეში დაგიკავშირდები.",
+      "error": "ვერ გაიგზავნა. მომწერე პირდაპირ chat@bitz.ge-ზე."
+    }
   }
 }

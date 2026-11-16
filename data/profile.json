@@ -121,6 +121,40 @@
      "ge": "https://www.facebook.com/gabeatzzz/"
     }
    }
-  ]
+  ],
+  "form": {
+   "name": {
+    "en": "Name",
+    "ge": "სახელი"
+   },
+   "email": {
+    "en": "Email",
+    "ge": "ელ.ფოსტა"
+   },
+   "message": {
+    "en": "Tell me about your project",
+    "ge": "მომიყევი შენი პროექტის შესახებ"
+   },
+   "send": {
+    "en": "Send",
+    "ge": "გაგზავნა"
+   },
+   "fill": {
+    "en": "Please fill in your name, email and message.",
+    "ge": "გთხოვ შეავსე სახელი, ელ.ფოსტა და შეტყობინება."
+   },
+   "sending": {
+    "en": "Sending",
+    "ge": "იგზავნება"
+   },
+   "sent": {
+    "en": "Thanks! I will get back to you within a business day.",
+    "ge": "მადლობა! ერთ სამუშაო დღეში დაგიკავშირდები."
+   },
+   "error": {
+    "en": "Could not send. Email me directly at chat@bitz.ge.",
+    "ge": "ვერ გაიგზავნა. მომწერე პირდაპირ chat@bitz.ge-ზე."
+   }
+  }
  }
 }

@@ -102,6 +102,7 @@ const overlay = key => {
   return {
     lead: { en: en.lead || '', ge: ka.lead || null }, meta: { en: en.meta || '', ge: ka.meta || null },
     links: (en.links || []).map((l, k) => ({ label: { en: l.label, ge: ka.links?.[k]?.label || null }, href: { en: rel(l.href), ge: rel(ka.links?.[k]?.href || l.href) } })),
+    ...(en.form ? { form: Object.fromEntries(Object.keys(en.form).map(k => [k, { en: en.form[k] || '', ge: ka.form?.[k] || null }])) } : {}),
   };
 };
 write('data/profile.json', { profile: overlay('profile'), contact: overlay('contact') });
