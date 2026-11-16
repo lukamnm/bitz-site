@@ -173,7 +173,9 @@ a{color:inherit;text-decoration:none}
 .pr::-webkit-scrollbar{display:none}
 .prc{display:flex;flex-direction:column;gap:4vw;padding-top:2.6vw}     /* reference inner page: ~75 px of white between images at 1918 wide */
 .prc > *{flex:none}
-#pBody{display:flex;flex-direction:column;gap:4vw}   /* the same white gap between every image and text block (they were touching inside the body) */
+#pBody{display:flex;flex-direction:column;gap:0}   /* Behance-style gallery (Luka): the images touch; the white stays around the text blocks only */
+#pBody > .txt,.dup > .txt{margin-bottom:4vw}
+.dup > figure:first-child{margin-bottom:4vw}   /* the hero copy in the loop, then the text */
 #pBody > *{flex:none}
 .pr figure{
   margin:0;border-radius:0;overflow:hidden;background:#eee;      /* natural image height, no crop (like the current bitz.ge galleries) */
@@ -197,7 +199,7 @@ a{color:inherit;text-decoration:none}
 #ring .gho{opacity:0}
 #ring.on .arc{stroke-dasharray:24 100.53;stroke-dashoffset:0;animation:spin 1s linear infinite}
 @keyframes spin{from{transform:rotate(-90deg)}to{transform:rotate(270deg)}}
-.dup{display:flex;flex-direction:column;gap:4vw;overflow:hidden;flex:none;margin-top:max(0px,40px - 4vw)}   /* the loop's second copy: one viewport tall, so the scroll range is exactly one period */
+.dup{display:flex;flex-direction:column;gap:0;overflow:hidden;flex:none;margin-top:max(0px,40px - 4vw)}   /* the loop's second copy: one viewport tall, so the scroll range is exactly one period */
 .dup > *{flex:none}   /* the fixed height must clip the copy, not squeeze it */
 .sliver{   /* invisible hit areas over the GL side sheets */
   position:fixed;top:11vh;height:78vh;width:34px;border:0;padding:0;background:transparent;cursor:pointer;z-index:35;
@@ -283,7 +285,8 @@ body.preload .logo img{visibility:hidden}                   /* the header logo a
   .chips li.lnk{padding:0}
   .chips li.lnk a{width:28px;height:28px;min-width:0;min-height:0;font-size:12px}
   .pr{overflow:visible;padding:40px 10px 80px}
-  .prc,#pBody{gap:30px;padding-top:0}
+  .prc{gap:30px;padding-top:0}
+  #pBody > .txt,.dup > .txt,.dup > figure:first-child{margin-bottom:30px}
   .pr .txt{padding:0 15px;font-size:14px;line-height:1.45}
   .pr .txt h3{font-size:10px;margin-bottom:8px}
   .pr .txt h2{font-size:22px;margin-bottom:10px}
