@@ -1,126 +1,113 @@
 {
-  "en": {
-    "title": "RoyalPixels",
-    "featured": true,
-    "order": 7,
-    "year": "2021",
-    "client": "RoyalPixels",
-    "cats": [
-      "Video",
-      "Graphic Design"
-    ],
-    "link": "https://videohive.net/item/glitch-transitions/32520300",
-    "blurb": "Ten static designs turned into animated Glitch Transitions for RoyalPixels - video effect templates for After Effects and Premiere Pro.",
-    "sections": [
-      {
-        "h": "Users",
-        "t": "Beginner-friendly and professional motion designer-friendly video transitions."
-      },
-      {
-        "h": "Style",
-        "t": "NEO-futuristic style with viewfinders, HUD UI and tech vectors."
-      },
-      {
-        "h": "Symbols and assets",
-        "t": "A set of symbols and compositions in diverse futuristic styles."
-      }
-    ],
-    "cover": "/assets/img/royalpixels.webp",
-    "gallery": [
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-1.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-2.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-3.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-4.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-5.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-6.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-7.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-8.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-9.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-10.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-11.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/royalpixels-12.webp"
-      }
-    ],
-    "home": {
-      "img": "/assets/home/royalpixels.jpg"
-    },
-    "seo": {
-      "title": "RoyalPixels - Motion Graphics Transitions | Bitz Portfolio",
-      "description": "Glitch transition templates for After Effects and Premiere Pro - neo futuristic design with HUD elements and motion assets.",
-      "image": "https://bitz.ge/wp-content/uploads/2021/10/Royal1-1.jpg"
-    }
+ "en": {
+  "title": "RoyalPixels",
+  "featured": true,
+  "order": 7,
+  "year": "2021",
+  "client": "RoyalPixels",
+  "cats": [
+   "Video",
+   "Graphic Design"
+  ],
+  "link": "https://videohive.net/item/glitch-transitions/32520300",
+  "blurb": "Ten static designs turned into animated Glitch Transitions for RoyalPixels - video effect templates for After Effects and Premiere Pro.",
+  "about": "RoyalPixels asked for ten static designs turned into animated Glitch Transitions - video effect templates for After Effects and Premiere Pro, built for beginners and professional motion designers alike. The style is neo-futuristic: viewfinders, HUD interfaces and tech vectors, with a set of symbols and compositions in diverse futuristic styles. The pack is on [VideoHive](https://videohive.net/item/glitch-transitions/32520300).",
+  "cover": "/assets/img/royalpixels.webp",
+  "gallery": [
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-1.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-2.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-3.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-4.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-5.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-6.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-7.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-8.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-9.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-10.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-11.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/royalpixels-12.webp"
+   }
+  ],
+  "home": {
+   "img": "/assets/home/royalpixels.jpg"
   },
-  "ka": {
-    "title": "RoyalPixels",
-    "blurb": "ROYALPIXELS ამზადებს ვიდეო ეფექტების და გადასვლების (Video Transitions) შაბლონებს. მოცემული პროექტის ფარგლებში შეიქმნა, 10 სტატიკური დიზაინი, რომელიც შემდეგში ანიმირდა და აეწყო \"Glitch Transitions\" ნაკრები.",
-    "sections": [
-      {
-        "h": "მომხმარებლები",
-        "t": "ვიდეო გადასვლები შექმნილია დამწყები და პროფესიონალი, მოძრავი გრაფიკის დიზაინერებისთვის"
-      },
-      {
-        "h": "პროგრამები",
-        "t": "პროექტს აქვს After effects და Premiere Pro პროგრამების მხარდაჭერა. მისი შეძენა შეუძლია ნებისმერ მსურველს მოცემულ ბმულზე"
-      },
-      {
-        "h": "სტილი",
-        "t": "დიზაინებში გამოყენებულია NEO ფუტურისტული სტილი. დამატებით ფაილებში Viewfinders, Hud ui და tech სტილის ვექტორები"
-      },
-      {
-        "h": "სიმბოლოები და ასეტები",
-        "t": "პროექტის ფარგლებში შეიქმნა, სიმბოლოების ნაკრები და სხვადასხვა ფუტურისტული სტილის კომპოზიციები"
-      }
-    ],
-    "seo": {
-      "title": "RoyalPixels | bitz",
-      "description": "ROYALPIXELS ამზადებს ვიდეო ეფექტების და გადასვლების (Video Transitions) შაბლონებს. მათთვის შეიქმნა ტრანზიშენების ელემენტები."
-    }
-  },
-  "_wp": {
-    "en": {
-      "id": 3207,
-      "link": "https://bitz.ge/portfolio/royalpixels/",
-      "modified": "2026-08-11T19:32:09"
-    },
-    "ge": {
-      "id": 3207,
-      "link": "https://bitz.ge/ge/portfolio/royalpixels/",
-      "modified": "2021-10-01T13:47:41"
-    }
+  "seo": {
+   "title": "RoyalPixels - Motion Graphics Transitions | Bitz Portfolio",
+   "description": "Glitch transition templates for After Effects and Premiere Pro - neo futuristic design with HUD elements and motion assets.",
+   "image": "https://bitz.ge/wp-content/uploads/2021/10/Royal1-1.jpg"
   }
+ },
+ "ka": {
+  "title": "RoyalPixels",
+  "blurb": "ROYALPIXELS ამზადებს ვიდეო ეფექტების და გადასვლების (Video Transitions) შაბლონებს. მოცემული პროექტის ფარგლებში შეიქმნა, 10 სტატიკური დიზაინი, რომელიც შემდეგში ანიმირდა და აეწყო \"Glitch Transitions\" ნაკრები.",
+  "sections": [
+   {
+    "h": "მომხმარებლები",
+    "t": "ვიდეო გადასვლები შექმნილია დამწყები და პროფესიონალი, მოძრავი გრაფიკის დიზაინერებისთვის"
+   },
+   {
+    "h": "პროგრამები",
+    "t": "პროექტს აქვს After effects და Premiere Pro პროგრამების მხარდაჭერა. მისი შეძენა შეუძლია ნებისმერ მსურველს მოცემულ ბმულზე"
+   },
+   {
+    "h": "სტილი",
+    "t": "დიზაინებში გამოყენებულია NEO ფუტურისტული სტილი. დამატებით ფაილებში Viewfinders, Hud ui და tech სტილის ვექტორები"
+   },
+   {
+    "h": "სიმბოლოები და ასეტები",
+    "t": "პროექტის ფარგლებში შეიქმნა, სიმბოლოების ნაკრები და სხვადასხვა ფუტურისტული სტილის კომპოზიციები"
+   }
+  ],
+  "seo": {
+   "title": "RoyalPixels | bitz",
+   "description": "ROYALPIXELS ამზადებს ვიდეო ეფექტების და გადასვლების (Video Transitions) შაბლონებს. მათთვის შეიქმნა ტრანზიშენების ელემენტები."
+  }
+ },
+ "_wp": {
+  "en": {
+   "id": 3207,
+   "link": "https://bitz.ge/portfolio/royalpixels/",
+   "modified": "2026-08-11T19:32:09"
+  },
+  "ge": {
+   "id": 3207,
+   "link": "https://bitz.ge/ge/portfolio/royalpixels/",
+   "modified": "2021-10-01T13:47:41"
+  }
+ }
 }

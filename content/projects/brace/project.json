@@ -1,163 +1,163 @@
 {
-  "en": {
-    "title": "BRACE",
-    "featured": true,
-    "order": 2,
-    "year": "2025",
-    "client": "BRACE",
-    "cats": [
-      "Branding",
-      "3D Design",
-      "Video"
-    ],
-    "link": "https://www.behance.net/gallery/216700333/BRACE",
-    "blurb": "Complete branding for BRACE, an EV charging brand - identity, 3D, motion and print that give form to energy, movement and cleaner roads ahead.",
-    "sections": [
-      {
-        "h": "About the project",
-        "t": "An EV charger is crucial infrastructure for the growing number of electric vehicle owners worldwide. We crafted every aspect of the branding to reflect the brand's mission - advancing EV charging, driving innovation and bracing for a greener future."
-      },
-      {
-        "h": "Design system",
-        "t": "A clear breakdown of the colours, typography, logotype and logo architecture that shape the identity."
-      },
-      {
-        "h": "Design assets",
-        "t": "Supporting materials developed throughout the process - social posts, cards, stationery, apparel and environmental applications."
-      },
-      {
-        "h": "Credits",
-        "t": "Client BRACE. Director Luka Gabidzashvili. 3D artist Giorgi Berianidze. Graphic designers DAVE and Mariam Ninoshvili."
-      }
-    ],
-    "cover": "/assets/img/brace.webp",
-    "gallery": [
-      {
-        "type": "video",
-        "video": "/assets/video/projects/brace-brace.mp4"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-1.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-2.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-3.webp"
-      },
-      {
-        "type": "video",
-        "video": "/assets/video/projects/brace-logo-video.mp4"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-4.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-5.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-6.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-7.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-8.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-9.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-10.webp"
-      },
-      {
-        "type": "video",
-        "video": "/assets/video/projects/brace-hoodie.mp4"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-11.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-12.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-13.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-14.webp"
-      },
-      {
-        "type": "video",
-        "video": "/assets/video/projects/brace-brace-car-2.mp4"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-15.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/brace-16.webp"
-      }
-    ],
-    "home": {
-      "img": "/assets/home/brace.webp"
-    },
-    "seo": {
-      "title": "BRACE - EV Charger Branding & 3D Design | Bitz Portfolio",
-      "description": "Complete branding project for BRACE electric vehicle charger - design system, 3D animations, and visual identity development.",
-      "image": "https://bitz.ge/wp-content/uploads/2025/08/brace-a4.jpg"
-    }
+ "en": {
+  "title": "BRACE",
+  "featured": true,
+  "order": 2,
+  "year": "2025",
+  "client": "BRACE",
+  "cats": [
+   "Branding",
+   "3D Design",
+   "Video"
+  ],
+  "link": "https://www.behance.net/gallery/216700333/BRACE",
+  "blurb": "Complete branding for BRACE, an EV charging brand - identity, 3D, motion and print that give form to energy, movement and cleaner roads ahead.",
+  "about": "BRACE makes EV chargers, the infrastructure a growing number of electric vehicle owners depend on to keep their cars ready for the road. Bitz crafted the complete brand - identity, 3D, motion and print - to reflect its mission: advancing EV charging, driving innovation and bracing for a greener future.\n\nThe design system sets out the colours, typography, logotype and logo architecture, and the assets carry it everywhere the brand lives - social posts, cards, stationery, apparel and environmental applications. The full case study is on [Behance](https://www.behance.net/gallery/216700333/BRACE).",
+  "credits": [
+   {
+    "role": "3D artist",
+    "name": "Giorgi Berianidze",
+    "link": ""
+   },
+   {
+    "role": "Graphic design",
+    "name": "DAVE",
+    "link": ""
+   },
+   {
+    "role": "Graphic design",
+    "name": "Mariam Ninoshvili",
+    "link": ""
+   }
+  ],
+  "cover": "/assets/img/brace.webp",
+  "gallery": [
+   {
+    "type": "video",
+    "video": "/assets/video/projects/brace-brace.mp4"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-1.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-2.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-3.webp"
+   },
+   {
+    "type": "video",
+    "video": "/assets/video/projects/brace-logo-video.mp4"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-4.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-5.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-6.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-7.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-8.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-9.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-10.webp"
+   },
+   {
+    "type": "video",
+    "video": "/assets/video/projects/brace-hoodie.mp4"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-11.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-12.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-13.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-14.webp"
+   },
+   {
+    "type": "video",
+    "video": "/assets/video/projects/brace-brace-car-2.mp4"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-15.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/brace-16.webp"
+   }
+  ],
+  "home": {
+   "img": "/assets/home/brace.webp"
   },
-  "ka": {
-    "title": "ბრეისი",
-    "blurb": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით. ტრადიციული ავტომობილებისგან განსხვავებით ელექტრომობილები, ელემენტზე მუშაობენ და დასამხუტად ესაჭიროებათ ელექტროენერგია. სწორედ ამიტომ არის მნიშვნელოვანი ელექტრო დასამუხტი სადგურების სიმრავლე.",
-    "sections": [
-      {
-        "h": "პროექტის შესახებ",
-        "t": "პროექტის ფარგლებში, ბრენდინგის ყველა ასპექტს ისე მივუდექით, რომ მკაფიოდ ასახავდეს ბრენდის არსს და მისიას - ელექტრომობილების დამუხტვის ხელშეწყობას, ინოვაციების წახალისებას და უფრო მწვანე, ეკოლოგიურად სუფთა მომავალს. ვიზუალური იდენტობის თანამედროვე ელემენტები ხაზს უსვამს ბრეისის პოზიციონირებას - ტრანსპორტირების თანამედროვე გადაწყვეტას."
-      },
-      {
-        "h": "დიზაინ სისტემა",
-        "t": "ქვემოთ მოცემულია ფერების, ტიპოგრაფიის და ლოგოს არქიტექუტის ჩამონათვალი, რომლებიც აყალიბებენ ბრენდის იდენტობას."
-      },
-      {
-        "h": "პოსტები სოციალურ მედიაში",
-        "t": "პოსტების ნიმუშები, რომლებიც შექმნილია სოც-მედიისთვის."
-      },
-      {
-        "h": "დიზაინს მიღმა",
-        "t": "ბრეისის დიზაინზე მუშაობა, იდენტობის ჩამოყალიბებაზე მეტი იყო - ეს იყო ენერგიის, მოძრაობის და ეკოლოგიის შერწყმა."
-      }
-    ],
-    "seo": {
-      "title": "ბრეისი | bitz",
-      "description": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით."
-    }
-  },
-  "_wp": {
-    "en": {
-      "id": 3904,
-      "link": "https://bitz.ge/portfolio/brace/",
-      "modified": "2026-08-11T19:32:13"
-    },
-    "ge": {
-      "id": 3796,
-      "link": "https://bitz.ge/ge/portfolio/brace/",
-      "modified": "2025-10-31T13:28:25"
-    }
+  "seo": {
+   "title": "BRACE - EV Charger Branding & 3D Design | Bitz Portfolio",
+   "description": "Complete branding project for BRACE electric vehicle charger - design system, 3D animations, and visual identity development.",
+   "image": "https://bitz.ge/wp-content/uploads/2025/08/brace-a4.jpg"
   }
+ },
+ "ka": {
+  "title": "ბრეისი",
+  "blurb": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით. ტრადიციული ავტომობილებისგან განსხვავებით ელექტრომობილები, ელემენტზე მუშაობენ და დასამხუტად ესაჭიროებათ ელექტროენერგია. სწორედ ამიტომ არის მნიშვნელოვანი ელექტრო დასამუხტი სადგურების სიმრავლე.",
+  "sections": [
+   {
+    "h": "პროექტის შესახებ",
+    "t": "პროექტის ფარგლებში, ბრენდინგის ყველა ასპექტს ისე მივუდექით, რომ მკაფიოდ ასახავდეს ბრენდის არსს და მისიას - ელექტრომობილების დამუხტვის ხელშეწყობას, ინოვაციების წახალისებას და უფრო მწვანე, ეკოლოგიურად სუფთა მომავალს. ვიზუალური იდენტობის თანამედროვე ელემენტები ხაზს უსვამს ბრეისის პოზიციონირებას - ტრანსპორტირების თანამედროვე გადაწყვეტას."
+   },
+   {
+    "h": "დიზაინ სისტემა",
+    "t": "ქვემოთ მოცემულია ფერების, ტიპოგრაფიის და ლოგოს არქიტექუტის ჩამონათვალი, რომლებიც აყალიბებენ ბრენდის იდენტობას."
+   },
+   {
+    "h": "პოსტები სოციალურ მედიაში",
+    "t": "პოსტების ნიმუშები, რომლებიც შექმნილია სოც-მედიისთვის."
+   },
+   {
+    "h": "დიზაინს მიღმა",
+    "t": "ბრეისის დიზაინზე მუშაობა, იდენტობის ჩამოყალიბებაზე მეტი იყო - ეს იყო ენერგიის, მოძრაობის და ეკოლოგიის შერწყმა."
+   }
+  ],
+  "seo": {
+   "title": "ბრეისი | bitz",
+   "description": "მსოფლიოს მასშტაბით ელექტრომობილების (EV) სატენების ინფრასტრუქტურის მოწყობა უმნიშვნელოვანესია, ელექტრომობილების პოპულარიზაციის მიზნით."
+  }
+ },
+ "_wp": {
+  "en": {
+   "id": 3904,
+   "link": "https://bitz.ge/portfolio/brace/",
+   "modified": "2026-08-11T19:32:13"
+  },
+  "ge": {
+   "id": 3796,
+   "link": "https://bitz.ge/ge/portfolio/brace/",
+   "modified": "2025-10-31T13:28:25"
+  }
+ }
 }

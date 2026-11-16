@@ -34,6 +34,11 @@ function sections(markdown) {
   flush(); if (cur.t.length) out.push(cur);
   return out.filter(s => s.t.length);
 }
+// the project's "About" text: paragraphs separated by blank lines, links written [text](https://...) -> escaped HTML paragraphs with real <a> links
+const escH = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const rich = text => String(text || '').split(/\r?\n\s*\r?\n/).map(p => p.replace(/\s*\r?\n\s*/g, ' ').trim()).filter(Boolean).map(p =>
+  escH(p.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\\([\[\]()*_])/g, '$1'))
+    .replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, (m, t, u) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`));
 const seo = s => (s ? { title: s.title || '', description: s.description || '', image: s.image || null } : null);
 // page addresses, relative to the site root, always with a trailing slash ("portfolio/brace/"); an address set in the admin wins
 const addr = u => (has(u) ? String(u).trim().replace(/^https?:\/\/[^/]+\//, '').replace(/^\/+/, '').replace(/\/*$/, '/') : null);
@@ -49,10 +54,14 @@ for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/p
   const f = `content/projects/${slug}/project.json`; if (!fs.existsSync(f)) continue;
   const { en = {}, ka = {} } = read(f);
   const sec = list => (list || []).filter(s => has(s.t)).map(s => ({ h: s.h || '', t: s.t }));
-  const kaSec = sec(ka.sections);
+  // one "About the project" block at the top (Luka, 2026-11-17); the older per-section texts still work as a fallback
+  const ABOUT = { en: 'About the project', ka: 'პროექტის შესახებ' };
+  const about = (o, L) => (has(o.about) ? [{ h: ABOUT[L], t: rich(o.about), rich: true }] : sec(o.sections));
+  const kaSec = about(ka, 'ka');
+  const credits = (en.credits || []).filter(c => has(c.name)).map((c, k) => ({ role: { en: c.role || '', ge: ka.credits?.[k]?.role || null }, name: c.name, link: has(c.link) ? c.link : null }));
   projects.push({
     slug, order: has(en.order) ? +en.order : 999, title: en.title || slug, featured: en.featured !== false, year: en.year || '', client: en.client || '',
-    cats: en.cats || [], link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: gal(en.gallery), sections: sec(en.sections),
+    cats: en.cats || [], link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: gal(en.gallery), sections: about(en, 'en'), credits,
     home: en.home && (en.home.img || en.home.video) ? pick({ img: rel(en.home.img), video: rel(en.home.video), webm: rel(en.home.webm) }, ['img', 'video', 'webm']) : null,
     seo: seo(en.seo),
     url: { en: addr(en.url) || `portfolio/${slug}/`, ge: ka.title ? addr(ka.url) || `ge/portfolio/${slug}/` : null },

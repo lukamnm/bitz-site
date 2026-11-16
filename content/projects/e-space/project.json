@@ -1,106 +1,93 @@
 {
-  "en": {
-    "title": "E-Space",
-    "featured": true,
-    "order": 9,
-    "year": "2021",
-    "client": "E-Space",
-    "cats": [
-      "Video",
-      "Web Design"
-    ],
-    "blurb": "Powering electric mobility - explainer videos, web design and visuals promoting E-Space's charging network and app for retail and corporate clients.",
-    "sections": [
-      {
-        "h": "App launch video",
-        "t": "A simple video instruction showing how to charge an electric car through the new E-Space app."
-      },
-      {
-        "h": "Business module video",
-        "t": "A guide to making money with chargers - a graphic video for the new business module."
-      },
-      {
-        "h": "Credits",
-        "t": "Client E-Space. Visuals Bitz and stock. Animation Bitz. Target audience retail customers."
-      }
-    ],
-    "cover": "/assets/img/e-space.webp",
-    "gallery": [
-      {
-        "type": "video",
-        "webm": "/assets/video/projects/e-space-espace-fhd-en.webm",
-        "video": "/assets/video/projects/e-space-espace-fhd-en.mp4"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/e-space-1.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/e-space-2.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/e-space-3.webp"
-      },
-      {
-        "type": "video",
-        "webm": "/assets/video/projects/e-space-espace-cor-fhd-en.webm",
-        "video": "/assets/video/projects/e-space-espace-cor-fhd-en.mp4"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/e-space-4.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/e-space-5.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/e-space-6.webp"
-      }
-    ],
-    "home": {
-      "img": "/assets/home/e-space.png",
-      "video": "/assets/home/e-space.mp4",
-      "webm": "/assets/home/e-space.webm"
-    },
-    "seo": {
-      "title": "E-Space - Motion Graphics & Video Animation | Bitz Portfolio",
-      "description": "Motion graphics and animation videos for E-Space electric vehicle charging network - app tutorials and promotional content.",
-      "image": "https://bitz.ge/wp-content/uploads/2021/09/espace-hero.png"
-    },
-    "link": "https://www.facebook.com/espace.ge/"
+ "en": {
+  "title": "E-Space",
+  "featured": true,
+  "order": 9,
+  "year": "2021",
+  "client": "E-Space",
+  "cats": [
+   "Video",
+   "Web Design"
+  ],
+  "blurb": "Powering electric mobility - explainer videos, web design and visuals promoting E-Space's charging network and app for retail and corporate clients.",
+  "about": "E-Space powers electric mobility in Georgia with a charging network and an app for retail and corporate clients, and Bitz promotes it with explainer videos, web design, posters and other visuals. For the app launch a simple video instruction shows how to charge an electric car through the app; a second graphic video guides businesses through the new business module and how to earn from chargers. Visuals by Bitz with stock footage, animation by Bitz. Follow E-Space on [Facebook](https://www.facebook.com/espace.ge/).",
+  "cover": "/assets/img/e-space.webp",
+  "gallery": [
+   {
+    "type": "video",
+    "webm": "/assets/video/projects/e-space-espace-fhd-en.webm",
+    "video": "/assets/video/projects/e-space-espace-fhd-en.mp4"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/e-space-1.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/e-space-2.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/e-space-3.webp"
+   },
+   {
+    "type": "video",
+    "webm": "/assets/video/projects/e-space-espace-cor-fhd-en.webm",
+    "video": "/assets/video/projects/e-space-espace-cor-fhd-en.mp4"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/e-space-4.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/e-space-5.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/e-space-6.webp"
+   }
+  ],
+  "home": {
+   "img": "/assets/home/e-space.png",
+   "video": "/assets/home/e-space.mp4",
+   "webm": "/assets/home/e-space.webm"
   },
-  "ka": {
-    "title": "ი-სფეისი",
-    "blurb": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო მანქანების პოპულარიზაციას და ანვითარებს ელექტრო მანქანების დამტენების ქსელს . ი-სფეისისთვის შეიქმნა გრაფიკული ვიდეო რგოლები საცალო და კორპორატიული კლიენტებისთვის, დამზადდა ვებ-დიზაინი, პოსტერები და სხვადასხვა ვიზუალური მასალა.",
-    "sections": [
-      {
-        "h": "სკრიპტი",
-        "t": "ახალი აპლიკაციის შექმნის შემდეგ, საჭირო გახდა \"ი-სფეისის\" კლიენტებისთვის ინფორმაციის მიწოდება აპის გაშვების შესახებ და მარტივი ვიდეო ინსტრუქციის ჩვენება, თუ როგორ ხდება აპლიკაციის მეშვეობით ელექტრო მანქანის დამუხტვა."
-      },
-      {
-        "h": "სკრიპტი",
-        "t": "გრაფიკული ვიდეოს ამოცანაა, ბიზნეს კლიენტებს გააცნოს ინფორმაცია, ახალი ბიზნეს მოდულის შესახებ, რისი დახმარებითაც მათ შეუძლიათ მიიღონ შემოსავალი, ელექტრო მობილების დამტენებისგან."
-      }
-    ],
-    "seo": {
-      "title": "ი-სფეისი | bitz",
-      "description": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო ავტომობილების პოპულარიზაციას და ანვითარებს მანქანების დამტენების ქსელს."
-    }
+  "seo": {
+   "title": "E-Space - Motion Graphics & Video Animation | Bitz Portfolio",
+   "description": "Motion graphics and animation videos for E-Space electric vehicle charging network - app tutorials and promotional content.",
+   "image": "https://bitz.ge/wp-content/uploads/2021/09/espace-hero.png"
   },
-  "_wp": {
-    "en": {
-      "id": 3170,
-      "link": "https://bitz.ge/portfolio/e-space/",
-      "modified": "2026-08-19T21:26:28"
-    },
-    "ge": {
-      "id": 3170,
-      "link": "https://bitz.ge/ge/portfolio/e-space/",
-      "modified": "2025-10-31T14:51:21"
-    }
+  "link": "https://www.facebook.com/espace.ge/"
+ },
+ "ka": {
+  "title": "ი-სფეისი",
+  "blurb": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო მანქანების პოპულარიზაციას და ანვითარებს ელექტრო მანქანების დამტენების ქსელს . ი-სფეისისთვის შეიქმნა გრაფიკული ვიდეო რგოლები საცალო და კორპორატიული კლიენტებისთვის, დამზადდა ვებ-დიზაინი, პოსტერები და სხვადასხვა ვიზუალური მასალა.",
+  "sections": [
+   {
+    "h": "სკრიპტი",
+    "t": "ახალი აპლიკაციის შექმნის შემდეგ, საჭირო გახდა \"ი-სფეისის\" კლიენტებისთვის ინფორმაციის მიწოდება აპის გაშვების შესახებ და მარტივი ვიდეო ინსტრუქციის ჩვენება, თუ როგორ ხდება აპლიკაციის მეშვეობით ელექტრო მანქანის დამუხტვა."
+   },
+   {
+    "h": "სკრიპტი",
+    "t": "გრაფიკული ვიდეოს ამოცანაა, ბიზნეს კლიენტებს გააცნოს ინფორმაცია, ახალი ბიზნეს მოდულის შესახებ, რისი დახმარებითაც მათ შეუძლიათ მიიღონ შემოსავალი, ელექტრო მობილების დამტენებისგან."
+   }
+  ],
+  "seo": {
+   "title": "ი-სფეისი | bitz",
+   "description": "\"ი-სფეისი\" არის კომპანია რომელიც ხელს უწყობს ელექტრო ავტომობილების პოპულარიზაციას და ანვითარებს მანქანების დამტენების ქსელს."
   }
+ },
+ "_wp": {
+  "en": {
+   "id": 3170,
+   "link": "https://bitz.ge/portfolio/e-space/",
+   "modified": "2026-08-19T21:26:28"
+  },
+  "ge": {
+   "id": 3170,
+   "link": "https://bitz.ge/ge/portfolio/e-space/",
+   "modified": "2025-10-31T14:51:21"
+  }
+ }
 }

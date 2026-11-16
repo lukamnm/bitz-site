@@ -63,7 +63,8 @@ function siteNav(L, pg) {
 }
 // a section's text is one string (projects) or a list of paragraphs (blog posts; "• " marks a list item)
 const paras = list => (list || []).map(s => (s.h ? `<h2>${esc(s.h)}</h2>` : '')
-  + (Array.isArray(s.t) ? s.t : String(s.t || '').split(/\n+/)).filter(Boolean).map(t => `<p>${esc(t)}</p>`).join('')).join('');
+  + (Array.isArray(s.t) ? s.t : String(s.t || '').split(/\n+/)).filter(Boolean).map(t => `<p>${s.rich ? t : esc(t)}</p>`).join('')).join('');   // rich: build.mjs already escaped it and set the links
+const creditsOf = (p, L) => (p.credits || []).length ? `<ul>${p.credits.map(c => `<li>${esc((L === 'ka' && c.role.ge) || c.role.en)}: ${c.link ? a(c.link, c.name) : esc(c.name)}</li>`).join('')}</ul>` : '';
 const P = (p, L) => { const g = L === 'ka' ? p.i18n?.ge : null; return { title: g?.title || p.title, blurb: g?.blurb || p.blurb, sections: g?.sections?.length ? g.sections : p.sections, seo: (L === 'ka' ? g?.seo : null) || p.seo || {} }; };
 const Sx = (s, L) => { const k = L === 'ka' && s.hasGe ? 'ge' : 'en'; return { title: s.title[k], excerpt: s.excerpt[k], sections: s.sections[k] || s.sections.en, seo: s.seo?.[k] || s.seo?.en || {} }; };
 const sitePage = (key, L) => (L === 'ka' ? site.pages[key].ge : null) || site.pages[key].en;
@@ -106,7 +107,7 @@ for (const L of ['en', 'ka']) {
         image: [p.cover, ...(p.gallery || [])].filter(Boolean).slice(0, 12).map(abs), dateCreated: p.year || undefined, keywords: (p.cats || []).join(', ') || undefined,
         creator: { '@id': people['@id'] }, ...(p.client ? { sourceOrganization: { '@type': 'Organization', name: p.client } } : {}), ...(p.link ? { sameAs: p.link } : {}) },
         { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: w.home, item: abs(pre(L)) }, { '@type': 'ListItem', position: 2, name: t.title, item: abs(u) }] }],
-      doc: `<article><h1>${esc(t.title)}</h1><p>${esc(t.blurb)}</p>${meta ? `<ul>${meta}</ul>` : ''}${paras(t.sections)}${p.link ? `<p>${a(p.link, w.live)}</p>` : ''}</article>`
+      doc: `<article><h1>${esc(t.title)}</h1><p>${esc(t.blurb)}</p>${meta ? `<ul>${meta}</ul>` : ''}${paras(t.sections)}${creditsOf(p, L)}${p.link ? `<p>${a(p.link, w.live)}</p>` : ''}</article>`
         + `<nav aria-label="${w.more}"><h2>${w.more}</h2><ul>${projects.filter(x => x !== p && (L === 'en' || x.url.ge)).map(x => `<li>${a(L === 'ka' ? x.url.ge : x.url.en, P(x, L).title)}</li>`).join('')}</ul></nav>` });
   }
   // blog posts

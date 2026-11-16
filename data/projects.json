@@ -42,21 +42,14 @@
   "sections": [
    {
     "h": "About the project",
-    "t": "Exobiopharma came to Bitz for a visual identity that could carry a biopharmaceutical brand from the lab bench to the shelf. The brief called for a system that reads as scientific and trustworthy without slipping into the sterile, interchangeable language so much of the pharma category defaults to."
-   },
-   {
-    "h": "Design system",
-    "t": "A bold, all-caps wordmark set in Poppins Bold, paired with a palette that swings between clinical blue and higher-energy accent tones - science and confidence in the same breath. Every touchpoint, from logo construction to packaging and app icon, holds up at pharmacy-shelf scale and screen scale."
-   },
-   {
-    "h": "Typography",
-    "t": "Poppins Bold in uppercase carries every headline and the wordmark itself. Poppins Regular handles body copy, keeping longer scientific and regulatory text easy to read at any size."
-   },
-   {
-    "h": "Beyond design",
-    "t": "Designing Exobiopharma meant giving a science-led brand a face it could trust - clear enough for a pharmacy shelf, credible enough for a clinical setting."
+    "t": [
+     "Exobiopharma came to Bitz for a visual identity that could carry a biopharmaceutical brand from the lab bench to the pharmacy shelf. The brief asked for a system that reads as scientific and trustworthy without slipping into the sterile, interchangeable look so much of the pharma category defaults to.",
+     "The identity is built around a bold, all-caps wordmark set in Poppins Bold, paired with a palette that moves between clinical blue and higher-energy accent tones. Poppins Regular carries the longer scientific and regulatory copy. Logo construction, packaging and the app icon were worked through together, so the brand holds up at shelf scale and on a screen."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": {
    "img": "assets/home/exobiopharma.webp"
   },
@@ -160,23 +153,21 @@
   "sections": [
    {
     "h": "About the project",
-    "t": "Marsleaders is a virtual world where anything is possible - explore new frontiers, test your entrepreneurship and build a virtual existence. The rewards are real: holding NFTs earns incentives redeemed in the real world."
-   },
+    "t": [
+     "Marsleaders is a virtual world where political figures compete for new frontiers - a fictional game with real rewards, since holding its NFTs earns incentives redeemed on Earth. Bitz built the identity, directed the NFT artwork and designed and developed the <a href=\"https://marsleaders.netlify.app/\" target=\"_blank\" rel=\"noopener\">Marsleaders website</a>.",
+     "The mark balances two characters: a solid, authoritative logo for a world run by politicians, softened by a planetary element and patch-like shapes borrowed from the badges on the characters' jackets. Four logo variants cover every platform, all sharing the planet in a circle, the name and three stars. The character variations were sketched, refined and generated together with illustrator Xesus Bobomb, and a set of animated Discord emoji carries the identity into the community."
+    ],
+    "rich": true
+   }
+  ],
+  "credits": [
    {
-    "h": "Logomark",
-    "t": "Four logo variants for different platforms. The design reflects interactions between political figures, giving the mark a solid, authoritative character, balanced by a planetary element for a more playful, dynamic touch. Patch-like shapes echo the badges on the characters' jackets."
-   },
-   {
-    "h": "Versions of the logo",
-    "t": "The primary logo features a planet within a circle, encircled by the project name and three stars - elements used consistently across every variation."
-   },
-   {
-    "h": "NFT artworks",
-    "t": "Multiple character variations were sketched, refined and generated. Artwork by Xesus Bobomb. Custom animated Discord emoji strengthen the identity."
-   },
-   {
-    "h": "UI/UX design",
-    "t": "A website with clean aesthetics and smooth functionality - thoughtful UI with seamless UX for clarity, flow and consistency."
+    "role": {
+     "en": "NFT artwork",
+     "ge": null
+    },
+    "name": "Xesus Bobomb",
+    "link": null
    }
   ],
   "home": {
@@ -282,19 +273,37 @@
   "sections": [
    {
     "h": "About the project",
-    "t": "An EV charger is crucial infrastructure for the growing number of electric vehicle owners worldwide. We crafted every aspect of the branding to reflect the brand's mission - advancing EV charging, driving innovation and bracing for a greener future."
+    "t": [
+     "BRACE makes EV chargers, the infrastructure a growing number of electric vehicle owners depend on to keep their cars ready for the road. Bitz crafted the complete brand - identity, 3D, motion and print - to reflect its mission: advancing EV charging, driving innovation and bracing for a greener future.",
+     "The design system sets out the colours, typography, logotype and logo architecture, and the assets carry it everywhere the brand lives - social posts, cards, stationery, apparel and environmental applications. The full case study is on <a href=\"https://www.behance.net/gallery/216700333/BRACE\" target=\"_blank\" rel=\"noopener\">Behance</a>."
+    ],
+    "rich": true
+   }
+  ],
+  "credits": [
+   {
+    "role": {
+     "en": "3D artist",
+     "ge": null
+    },
+    "name": "Giorgi Berianidze",
+    "link": null
    },
    {
-    "h": "Design system",
-    "t": "A clear breakdown of the colours, typography, logotype and logo architecture that shape the identity."
+    "role": {
+     "en": "Graphic design",
+     "ge": null
+    },
+    "name": "DAVE",
+    "link": null
    },
    {
-    "h": "Design assets",
-    "t": "Supporting materials developed throughout the process - social posts, cards, stationery, apparel and environmental applications."
-   },
-   {
-    "h": "Credits",
-    "t": "Client BRACE. Director Luka Gabidzashvili. 3D artist Giorgi Berianidze. Graphic designers DAVE and Mariam Ninoshvili."
+    "role": {
+     "en": "Graphic design",
+     "ge": null
+    },
+    "name": "Mariam Ninoshvili",
+    "link": null
    }
   ],
   "home": {
@@ -366,21 +375,14 @@
   "sections": [
    {
     "h": "About the project",
-    "t": "A reimagined retro-style radio receiver inspired by the iconic Motorola Transistor. From the 3D model to the carefully selected materials and lighting, every detail was designed to perfection."
-   },
-   {
-    "h": "Reviving the past",
-    "t": "The project preserves the retro charm of the classic receiver while introducing modern updates - a piece that captures the past and looks at home in the present."
-   },
-   {
-    "h": "Animation",
-    "t": "An animation that highlights every detail and shows how the receiver works."
-   },
-   {
-    "h": "Colour palette",
-    "t": "Multiple colour versions - black, silver, teal, orange and dark."
+    "t": [
+     "A personal 3D project: the iconic Motorola transistor radio reimagined, from the model and carefully chosen materials to lighting and animation. The piece keeps the retro charm of the classic receiver and adds modern updates, so it captures the past while looking at home in the present.",
+     "An animation walks around every detail and shows how the receiver works, and the model comes in several colour versions - black, silver, teal, orange and dark."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": null,
   "seo": {
    "title": "Motorola Transistor Concept - 3D Design | Bitz Portfolio",
@@ -447,21 +449,14 @@
   "sections": [
    {
     "h": "About the project",
-    "t": "A logo and visual identity that captures the essence of the human brain and blends it with the digital world."
-   },
-   {
-    "h": "Visual identity",
-    "t": "Logo, pattern and typography working together - a mark for pre-defined cases and a pattern built to stand out."
-   },
-   {
-    "h": "Versions of the logo",
-    "t": "A logo versatile enough for horizontal and vertical use, with multiple colour-changing versions for any setting."
-   },
-   {
-    "h": "Colour palette",
-    "t": "An expanded gamut that keeps the current active colour while adding tones, gradations and additional colours."
+    "t": [
+     "Cerebro is a digital marketing agency, and its identity blends the human brain with the digital world. Bitz designed the logo and the visual system around it - a mark for pre-defined cases, a pattern built to stand out and typography that ties every element together. See it in use at <a href=\"https://cerebro.ge/\" target=\"_blank\" rel=\"noopener\">cerebro.ge</a>.",
+     "The logo works horizontally and vertically, with colour-changing versions for any background, and the palette extends the brand's active colour with tones, gradations and additional colours."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": null,
   "seo": {
    "title": "Cerebro Branding Project | Bitz Portfolio",
@@ -527,18 +522,14 @@
   ],
   "sections": [
    {
-    "h": "Signpost",
-    "t": "Sign design developed with lightbox blocks, logo and arrow rendering."
-   },
-   {
-    "h": "Exterior design",
-    "t": "Beautified facade with decorations and glass band stickers; 3D rendering with day and night views."
-   },
-   {
-    "h": "Packaging design",
-    "t": "Lisi Drive packaging designs with a unique and eye-catching appeal."
+    "h": "About the project",
+    "t": [
+     "Lisi Drive is a takeaway in Tbilisi, and Bitz designed the way it looks from the road: signage, exterior and packaging. The signposts are built from lightbox blocks with the logo and arrow, the facade was beautified with decorations and glass band stickers and rendered in 3D for day and night views, and the packaging followed with the same bold, eye-catching look. Follow Lisi Drive on <a href=\"https://www.facebook.com/lisidrivetakeaway/\" target=\"_blank\" rel=\"noopener\">Facebook</a>."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": null,
   "seo": {
    "title": "Lisi Drive - Branding & Graphic Design | Bitz Portfolio",
@@ -592,18 +583,15 @@
   ],
   "sections": [
    {
-    "h": "Calculator",
-    "t": "Intuitive 3-step SMART Deposit calculator for the Credo Bank website, enabling users to easily input and calculate deposit amounts."
-   },
-   {
-    "h": "Table tab",
-    "t": "A customisable 3-step design with an adjustable table for the desired deposit amount."
-   },
-   {
-    "h": "App and landing page",
-    "t": "Redesigned Credo Bank's Internet Banking login for individuals and legal entities, in shapes and colours that follow the bank's brand guidelines."
+    "h": "About the project",
+    "t": [
+     "Credo Bank needed a calculator for its Decreasing SMART Deposit: a 3-step flow for desktop and mobile where users enter an amount, adjust the table and see their result instantly. Bitz designed the UI/UX, from the intuitive step sequence to the customisable table. The calculator is live on <a href=\"https://credobank.ge/products/%e1%83%99%e1%83%9a%e1%83%94%e1%83%91%e1%83%90%e1%83%93%e1%83%98-smart-%e1%83%90%e1%83%9c%e1%83%90%e1%83%91%e1%83%90%e1%83%a0%e1%83%98/\" target=\"_blank\" rel=\"noopener\">credobank.ge</a>.",
+     "The work continued with the bank's Internet Banking login for individuals and legal entities, redesigned in the shapes and colours of Credo Bank's brand guidelines."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": {
    "img": "assets/home/kredo-banki.jpg"
   },
@@ -671,18 +659,14 @@
   ],
   "sections": [
    {
-    "h": "Users",
-    "t": "Beginner-friendly and professional motion designer-friendly video transitions."
-   },
-   {
-    "h": "Style",
-    "t": "NEO-futuristic style with viewfinders, HUD UI and tech vectors."
-   },
-   {
-    "h": "Symbols and assets",
-    "t": "A set of symbols and compositions in diverse futuristic styles."
+    "h": "About the project",
+    "t": [
+     "RoyalPixels asked for ten static designs turned into animated Glitch Transitions - video effect templates for After Effects and Premiere Pro, built for beginners and professional motion designers alike. The style is neo-futuristic: viewfinders, HUD interfaces and tech vectors, with a set of symbols and compositions in diverse futuristic styles. The pack is on <a href=\"https://videohive.net/item/glitch-transitions/32520300\" target=\"_blank\" rel=\"noopener\">VideoHive</a>."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": {
    "img": "assets/home/royalpixels.jpg"
   },
@@ -754,16 +738,22 @@
   ],
   "sections": [
    {
-    "h": "Anbantkeba",
-    "t": "The artistic and cognitive value of the Anbantkeba graphic series, showcasing Nuskhuri, Asomtavruli and Mkhedruli through 36 compositions."
-   },
+    "h": "About the project",
+    "t": [
+     "Postero sells typographic posters in Georgia, among them the Anbantkeba series by Otar Jishkariani (1929-1995), the Honoured Artist who refined the outlines of the Georgian alphabet. The series shows all three Georgian scripts - Asomtavruli, Nuskhuri and Mkhedruli - across 36 compositions.",
+     "Bitz designed and produced the Postero logo, photographed the posters and designed Postero's digital and printed materials. Find the posters on <a href=\"https://www.facebook.com/postero.georgia\" target=\"_blank\" rel=\"noopener\">Postero's Facebook page</a>."
+    ],
+    "rich": true
+   }
+  ],
+  "credits": [
    {
-    "h": "Postero",
-    "t": "Postero's digital and printed materials elevated with high-quality photography and poster design."
-   },
-   {
-    "h": "Logo",
-    "t": "The Postero logo was designed and produced."
+    "role": {
+     "en": "Anbantkeba graphic series",
+     "ge": null
+    },
+    "name": "Otar Jishkariani",
+    "link": "https://art.gov.ge/en/portfolio/jishkariani-otar/"
    }
   ],
   "home": {
@@ -837,18 +827,14 @@
   ],
   "sections": [
    {
-    "h": "App launch video",
-    "t": "A simple video instruction showing how to charge an electric car through the new E-Space app."
-   },
-   {
-    "h": "Business module video",
-    "t": "A guide to making money with chargers - a graphic video for the new business module."
-   },
-   {
-    "h": "Credits",
-    "t": "Client E-Space. Visuals Bitz and stock. Animation Bitz. Target audience retail customers."
+    "h": "About the project",
+    "t": [
+     "E-Space powers electric mobility in Georgia with a charging network and an app for retail and corporate clients, and Bitz promotes it with explainer videos, web design, posters and other visuals. For the app launch a simple video instruction shows how to charge an electric car through the app; a second graphic video guides businesses through the new business module and how to earn from chargers. Visuals by Bitz with stock footage, animation by Bitz. Follow E-Space on <a href=\"https://www.facebook.com/espace.ge/\" target=\"_blank\" rel=\"noopener\">Facebook</a>."
+    ],
+    "rich": true
    }
   ],
+  "credits": [],
   "home": {
    "img": "assets/home/e-space.png",
    "video": "assets/home/e-space.mp4",

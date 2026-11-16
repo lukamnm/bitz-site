@@ -269,7 +269,7 @@ function sheetPoint(wx, ly, out) {
 
 // ---------------------------------------------------------------- card shader: strip wave, bank, velocity twist + rear-up, hover dome, depth shade, rounded corners, white crossfade
 const VERT = /* glsl */`
-uniform float uWh, uD, uT, uV, uP, uLeanA, uHover, uDentH, uDiag, uBulgeA, uBulgeH;
+uniform float uWh, uD, uT, uV, uP, uLeanA, uHover, uDentH, uDiag, uBulgeA, uBulgeH, uBulgeOwn;
 uniform vec2 uAspect;
 varying vec2 vUv; varying float vD; varying float vWx; varying float vBank; varying vec3 vP;
 const float PI = 3.14159265;
@@ -299,6 +299,7 @@ void main(){
   if (uBulgeH > 0.001) {                                                         // open panel: scroll speed bows the sheet toward / away from the viewer
     float tb = clamp(w.y / uBulgeH, -1.0, 1.0);                                  // (reference bulge(): zero at the frustum top and bottom, full at mid-height)
     w.z += uBulgeA * (1.0 - tb * tb);
+    w.z += uBulgeOwn * (1.0 - qq.y * qq.y);                                      // gallery images: each bows on its own as well (reference), its top and bottom staying on the sheet
   }
   vD = clamp((uD - z) / max(2.0 * uD, 0.001), 0.0, 1.0) * P;   // depth shade from the wave only (the dome banded into rings on dark cards)
   vWx = wx; vBank = a; vP = w.xyz;                                             // the fragment shader rebuilds the normal per pixel (no banding)
@@ -417,7 +418,7 @@ function cardMaterial(transparent = false) {
       uAspect: { value: new THREE.Vector2(1, 1) }, uRadius: { value: 0.1 },
       uWh: { value: 1 }, uD: { value: 0 }, uT: { value: SHEET.SPAN }, uV: { value: 0 }, uP: { value: 1 }, uLeanA: { value: 0 }, uDiag: { value: SHEET.DIAG },
       uHover: { value: 0 }, uDentH: { value: 0 }, uShade: { value: 1 }, uWhite: { value: 0 }, uDim: { value: 0 }, uMapVid: { value: 0 }, uVidDec: { value: 0 },
-      uBulgeA: { value: 0 }, uBulgeH: { value: 0 },
+      uBulgeA: { value: 0 }, uBulgeH: { value: 0 }, uBulgeOwn: { value: 0 },
       uPillBox: { value: [new THREE.Vector4(), new THREE.Vector4()] }, uPillDisc: { value: [new THREE.Vector4(), new THREE.Vector4()] },
       uPillA: { value: [new THREE.Vector2(), new THREE.Vector2()] },
     },
@@ -919,8 +920,10 @@ function fill(p) {
   hero.onload = () => spin.classList.remove('on');
   hero.src = p.cover; hero.alt = t.title + ' cover';
   if (hero.complete) spin.classList.remove('on');
+  // the collaborators (role + name, the name a link where there is one) sit at the end of the About block
+  const cred = (p.credits || []).length ? `<ul class="cred">${p.credits.map(c => `<li><span>${(lang === 'ge' && c.role.ge) || c.role.en}</span>${c.link ? `<a href="${c.link}" target="_blank" rel="noopener">${c.name}</a>` : `<b>${c.name}</b>`}</li>`).join('')}</ul>` : '';
   $('#pBody').innerHTML =
-    t.sections.map(s => `<div class="txt">${s.h ? (p.story ? `<h2>${s.h}</h2>` : `<h3>${s.h}</h3>`) : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}</div>`).join('') +
+    t.sections.map((s, k) => `<div class="txt">${s.h ? (p.story ? `<h2>${s.h}</h2>` : `<h3>${s.h}</h3>`) : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}${k === 0 ? cred : ''}</div>`).join('') +
     p.gallery.map(g => typeof g === 'string' ? `<figure><img src="${g}" alt="" loading="lazy"></figure>`
       : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video></figure>`).join('');
   fillAsk(p);
@@ -1023,6 +1026,14 @@ function rasterBlock(el) {
       const rr = range.getClientRects()[0]; if (!rr) continue;
       x.fillText(up ? m[0].toUpperCase() : m[0], rr.left - R.left, rr.top - R.top + ascent);
     }
+    if (/underline/.test(cs.textDecorationLine) || n.parentElement.closest('a')) {   // links: one underline per line box, where the DOM would draw it
+      const fs = parseFloat(cs.fontSize), off = parseFloat(cs.textUnderlineOffset) || fs * 0.16, th = Math.max(1, parseFloat(cs.textDecorationThickness) || 1);
+      x.fillStyle = (cs.textDecorationColor && cs.textDecorationColor !== 'currentcolor') ? cs.textDecorationColor : cs.color;
+      range.setStart(n, 0); range.setEnd(n, s.length);
+      const seen = new Set();
+      for (const lr of range.getClientRects()) { const key = Math.round(lr.top) + ':' + Math.round(lr.left); if (seen.has(key) || lr.width < 1) continue; seen.add(key);
+        x.fillRect(lr.left - R.left, lr.top - R.top + ascent + off, lr.width, th); }
+    }
   }
   return c;
 }
@@ -1040,8 +1051,9 @@ function syncPanelPlanes() {
   const pOp = op(panel), prOp = op(pr), plOp = op(panel.querySelector('.pl')), pxw = pxToWorld();
   const R = worldRect(targetRect());                                    // the panel pose, which a riding sheet deviates from
   for (const p of ghosts.length ? [...pplanes, ...ghosts] : pplanes) {
-    const r = p.frozen || p.el.getBoundingClientRect(), u = p.mesh.material.uniforms;
-    if (r.width < 2 || u.uHasMap.value < 0.5 || p.k <= 0.001 || (p.clip && (r.bottom < prR.top - 2 || r.top > prR.bottom + 2))) { p.mesh.visible = false; continue; }
+    const r0 = p.frozen || p.el.getBoundingClientRect(), u = p.mesh.material.uniforms;
+    if (r0.width < 2 || u.uHasMap.value < 0.5 || p.k <= 0.001 || (p.clip && (r0.bottom < prR.top - 2 || r0.top > prR.bottom + 2))) { p.mesh.visible = false; continue; }
+    const r = p.img && !p.frozen ? { x: r0.x, y: r0.y - IMG_BLEED, width: r0.width, height: r0.height + 2 * IMG_BLEED, top: r0.top - IMG_BLEED, bottom: r0.bottom + IMG_BLEED, left: r0.left, right: r0.right } : r0;
     const w = worldRect(r);
     let k = 1, dx = 0, dy = 0, dim = 0;
     if (p.ride) {                                                        // carried by a sheet that is sliding / scaling toward or away from the panel pose
@@ -1050,7 +1062,7 @@ function syncPanelPlanes() {
     p.mesh.position.set(R.x + dx + (w.x - R.x) * k, R.y + dy + (w.y - R.y) * k + p.rise * pxw, 0.002);
     p.mesh.scale.set(w.sx * k, w.sy * k, 1);
     u.uAspect.value.set(w.sx * k, w.sy * k); u.uRadius.value = p.radius * pxw * k; u.uDim.value = dim;
-    u.uBulgeA.value = bulge * (p.img ? IMG_BULGE : 1); u.uBulgeH.value = S.Hh;
+    u.uBulgeA.value = bulge * (p.img ? IMG_BULGE : 1); u.uBulgeH.value = S.Hh; u.uBulgeOwn.value = p.img && p.clip ? bulge * IMG_OWN : 0;
     if (p.isPl && !p.frozen) syncPills(r, w, u);
     if (p.clip) u.uClipY.value.set(R.y + dy + (yBot - R.y) * k, R.y + dy + (yTop - R.y) * k);
     u.uAlpha.value = (p.frozen ? p.fop : p.fader ? op(p.fader) : 1) * (p.clip ? prOp : plOp) * pOp * p.k;
@@ -1112,6 +1124,8 @@ window.__pills = pills; window.__pplanes = () => pplanes; window.__bulge = () =>
 // panel scroll: Lenis on the gallery column, but it listens on the whole panel, so the wheel works over the text column too (like the reference)
 let bulge = 0, lastScroll = 0;
 const IMG_BULGE = 1;   // measured on the reference mid-scroll: image edges bow exactly as much as the sheet's (the trace's larger value belongs elsewhere)
+const IMG_OWN = 1;     // and each gallery image bows on its own as well, the same depth at its own middle (Luka, 2026-11-17: the reference's images bend while scrolling)
+const IMG_BLEED = 0.75;   // px: gallery planes overlap their neighbours by a hairline, so touching images never show a seam
 function startLenis() {
   if (S.mobile || RM || !window.Lenis) return;
   lenis = new Lenis({ wrapper: pr, content: prc, eventsTarget: panel, lerp: 0.1, smoothWheel: true, infinite: !!prc.querySelector('.dup'),

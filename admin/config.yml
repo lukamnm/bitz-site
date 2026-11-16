@@ -57,16 +57,19 @@ collections:
       - { name: cats, label: Categories, widget: list, required: false, hint: 'Shown as chips, e.g. Branding, 3D Design, Video.' }
       - { name: link, label: Live project link, widget: string, required: false, hint: 'Optional. Adds the arrow chip that opens the live site.' }
       - { name: blurb, label: Short description, widget: text, i18n: true }
-      - name: sections
-        label: Sections
-        label_singular: Section
+      - { name: about, label: About the project, widget: text, i18n: true, required: false, hint: 'The one text at the top of the project page. A blank line starts a new paragraph. A link is written [text](https://...) and shows underlined.' }
+      - name: credits
+        label: Collaborators
+        label_singular: Collaborator
         widget: list
         i18n: true
         required: false
-        summary: '{{h}}'
+        summary: '{{role}}: {{name}}'
+        hint: 'Only for projects made with others. The name becomes a link when a link is given.'
         fields:
-          - { name: h, label: Heading, widget: string, required: false }
-          - { name: t, label: Text, widget: text }
+          - { name: role, label: Role, widget: string, i18n: true }
+          - { name: name, label: Name, widget: string, i18n: duplicate }
+          - { name: link, label: Link, widget: string, required: false, i18n: duplicate }
       - { name: cover, label: Cover (first image of the project page), widget: image }
       - name: gallery
         label: Gallery

@@ -1,90 +1,77 @@
 {
-  "en": {
-    "title": "Credo Bank",
-    "featured": true,
-    "order": 6,
-    "year": "2021",
-    "client": "Credo Bank",
-    "cats": [
-      "Web Design",
-      "UI/UX"
-    ],
-    "blurb": "UI/UX for Credo Bank's Decreasing SMART Deposit calculator - a 3-step flow for desktop and mobile that lets users customise and see their result instantly.",
-    "sections": [
-      {
-        "h": "Calculator",
-        "t": "Intuitive 3-step SMART Deposit calculator for the Credo Bank website, enabling users to easily input and calculate deposit amounts."
-      },
-      {
-        "h": "Table tab",
-        "t": "A customisable 3-step design with an adjustable table for the desired deposit amount."
-      },
-      {
-        "h": "App and landing page",
-        "t": "Redesigned Credo Bank's Internet Banking login for individuals and legal entities, in shapes and colours that follow the bank's brand guidelines."
-      }
-    ],
-    "cover": "/assets/img/kredo-banki.webp",
-    "gallery": [
-      {
-        "type": "image",
-        "image": "/assets/img/kredo-banki-1.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/kredo-banki-2.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/kredo-banki-3.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/kredo-banki-4.webp"
-      }
-    ],
-    "home": {
-      "img": "/assets/home/kredo-banki.jpg"
-    },
-    "seo": {
-      "title": "Credo Bank - UI/UX Design | Bitz Portfolio",
-      "description": "UI/UX design for Credo Bank's SMART Deposit calculator - intuitive 3-step interface with data table and animations.",
-      "image": "https://bitz.ge/wp-content/uploads/2021/11/Credo-mobile-pic.jpg"
-    },
-    "link": "https://credobank.ge/products/%e1%83%99%e1%83%9a%e1%83%94%e1%83%91%e1%83%90%e1%83%93%e1%83%98-smart-%e1%83%90%e1%83%9c%e1%83%90%e1%83%91%e1%83%90%e1%83%a0%e1%83%98/"
+ "en": {
+  "title": "Credo Bank",
+  "featured": true,
+  "order": 6,
+  "year": "2021",
+  "client": "Credo Bank",
+  "cats": [
+   "Web Design",
+   "UI/UX"
+  ],
+  "blurb": "UI/UX for Credo Bank's Decreasing SMART Deposit calculator - a 3-step flow for desktop and mobile that lets users customise and see their result instantly.",
+  "about": "Credo Bank needed a calculator for its Decreasing SMART Deposit: a 3-step flow for desktop and mobile where users enter an amount, adjust the table and see their result instantly. Bitz designed the UI/UX, from the intuitive step sequence to the customisable table. The calculator is live on [credobank.ge](https://credobank.ge/products/%e1%83%99%e1%83%9a%e1%83%94%e1%83%91%e1%83%90%e1%83%93%e1%83%98-smart-%e1%83%90%e1%83%9c%e1%83%90%e1%83%91%e1%83%90%e1%83%a0%e1%83%98/).\n\nThe work continued with the bank's Internet Banking login for individuals and legal entities, redesigned in the shapes and colours of Credo Bank's brand guidelines.",
+  "cover": "/assets/img/kredo-banki.webp",
+  "gallery": [
+   {
+    "type": "image",
+    "image": "/assets/img/kredo-banki-1.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/kredo-banki-2.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/kredo-banki-3.webp"
+   },
+   {
+    "type": "image",
+    "image": "/assets/img/kredo-banki-4.webp"
+   }
+  ],
+  "home": {
+   "img": "/assets/home/kredo-banki.jpg"
   },
-  "ka": {
-    "title": "კრედო ბანკი",
-    "blurb": "კრედო ბანკის ვებ-გვერდზე განსათავსებლად, შემუშავდა \"კ ლებადი SMART ანაბრისთვის \" კალკულატორის UI/UX დიზაინი. მომხმარებლისთვის მარტივი უნდა ყოფილიყო, კალკულატორში ცვლილებების შეტანა, საკუთარ თავზე მორგება და შედეგის ნახვა",
-    "sections": [
-      {
-        "h": "კალკულატორი",
-        "t": "შეიქმნა 3 ნაბიჯში გასავლელი კალკულატორი. ყოველ ნაბიჯზე მომხმარებელი უთითებს იმ ინფორმაციას, რომელიც კალკულატორს დასჭირდება თანხის გამოსათვლელად"
-      },
-      {
-        "h": "ცხრილის ჩანართი",
-        "t": "ბოლო ეტაპზე, მომხმარებელი ხედავს ცხრილს, სადაც თავად შეუძლია სასურველი თანხის მითითება და ანაბრის საკუთარ თავზე მორგება დახატულია დიზაინის დესტკოპ და მობაილ ვერსია. გამოყენებული ელემენტების ფორმები და ფერები შეესაბამება კრედო ბანკის გაიდლაინებს."
-      },
-      {
-        "h": "აპლიკაცია და ლენდინგ ფეიჯი",
-        "t": "ვებ-გვერდზე ასევე შეიცვალა კრედო-ს ინტერნეტბანკში შესვლის ღილაკი , ფიზიკური და იურიდიული პირებისთვის."
-      }
-    ],
-    "seo": {
-      "title": "კრედო ბანკი | bitz",
-      "description": "კრედო ბანკისთვის შექმნილი სმარტ-ანაბრის, კალკულატორის, UX დიზაინი. ინტერნეტბანკში შესასვლელი ღილაკების რედიზაინი."
-    }
+  "seo": {
+   "title": "Credo Bank - UI/UX Design | Bitz Portfolio",
+   "description": "UI/UX design for Credo Bank's SMART Deposit calculator - intuitive 3-step interface with data table and animations.",
+   "image": "https://bitz.ge/wp-content/uploads/2021/11/Credo-mobile-pic.jpg"
   },
-  "_wp": {
-    "en": {
-      "id": 3274,
-      "link": "https://bitz.ge/portfolio/kredo-banki/",
-      "modified": "2026-08-11T19:32:08"
-    },
-    "ge": {
-      "id": 3274,
-      "link": "https://bitz.ge/ge/portfolio/kredo-banki/",
-      "modified": "2025-09-24T11:00:47"
-    }
+  "link": "https://credobank.ge/products/%e1%83%99%e1%83%9a%e1%83%94%e1%83%91%e1%83%90%e1%83%93%e1%83%98-smart-%e1%83%90%e1%83%9c%e1%83%90%e1%83%91%e1%83%90%e1%83%a0%e1%83%98/"
+ },
+ "ka": {
+  "title": "კრედო ბანკი",
+  "blurb": "კრედო ბანკის ვებ-გვერდზე განსათავსებლად, შემუშავდა \"კ ლებადი SMART ანაბრისთვის \" კალკულატორის UI/UX დიზაინი. მომხმარებლისთვის მარტივი უნდა ყოფილიყო, კალკულატორში ცვლილებების შეტანა, საკუთარ თავზე მორგება და შედეგის ნახვა",
+  "sections": [
+   {
+    "h": "კალკულატორი",
+    "t": "შეიქმნა 3 ნაბიჯში გასავლელი კალკულატორი. ყოველ ნაბიჯზე მომხმარებელი უთითებს იმ ინფორმაციას, რომელიც კალკულატორს დასჭირდება თანხის გამოსათვლელად"
+   },
+   {
+    "h": "ცხრილის ჩანართი",
+    "t": "ბოლო ეტაპზე, მომხმარებელი ხედავს ცხრილს, სადაც თავად შეუძლია სასურველი თანხის მითითება და ანაბრის საკუთარ თავზე მორგება დახატულია დიზაინის დესტკოპ და მობაილ ვერსია. გამოყენებული ელემენტების ფორმები და ფერები შეესაბამება კრედო ბანკის გაიდლაინებს."
+   },
+   {
+    "h": "აპლიკაცია და ლენდინგ ფეიჯი",
+    "t": "ვებ-გვერდზე ასევე შეიცვალა კრედო-ს ინტერნეტბანკში შესვლის ღილაკი , ფიზიკური და იურიდიული პირებისთვის."
+   }
+  ],
+  "seo": {
+   "title": "კრედო ბანკი | bitz",
+   "description": "კრედო ბანკისთვის შექმნილი სმარტ-ანაბრის, კალკულატორის, UX დიზაინი. ინტერნეტბანკში შესასვლელი ღილაკების რედიზაინი."
   }
+ },
+ "_wp": {
+  "en": {
+   "id": 3274,
+   "link": "https://bitz.ge/portfolio/kredo-banki/",
+   "modified": "2026-08-11T19:32:08"
+  },
+  "ge": {
+   "id": 3274,
+   "link": "https://bitz.ge/ge/portfolio/kredo-banki/",
+   "modified": "2025-09-24T11:00:47"
+  }
+ }
 }
