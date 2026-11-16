@@ -950,6 +950,7 @@ const planeGeo = new THREE.PlaneGeometry(1, 1, 1, 24);   // vertical segments: t
 const op = el => parseFloat(getComputedStyle(el).opacity) || 0;
 function panelPlane(el, fader, clip, radius, group) {
   const mat = cardMaterial(true), u = mat.uniforms;
+  mat.depthWrite = false;   // the planes overlap by a hairline and bow together: with depth writes the later one could lose by a rounding hair while scrolling and leave a light seam
   u.uP.value = 0; u.uShade.value = 0; u.uArrow.value = 0; u.uAlpha.value = 0;
   const mesh = new THREE.Mesh(planeGeo, mat); mesh.renderOrder = 12; mesh.frustumCulled = false; mesh.visible = false;
   scene.add(mesh);
