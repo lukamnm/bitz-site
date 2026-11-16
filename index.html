@@ -26,8 +26,9 @@
 <script src="assets/vendor/lottie_light.min.js"></script>
 <script>
 // the loader: Luka's After Effects write-on of the logo (assets/loader/bitz-loader.json) plays once while the counter at the bottom climbs,
-// holds at 100 % until the page is ready, then the logo flies onto the header logo (FLIP). Desktop: the flight happens over the black and
-// only once it has landed does the black lift and the strip slide in. Phone: the black lifts during the flight (Luka liked that one).
+// holds at 100 % until the page is ready, then hands over. Desktop (Luka's pick, 2026-11-17): "zoom", the view passes through the growing logo,
+// the black fades and the strip arrives from the depth; the other styles stay selectable with ?loader= for comparison. Phone: the logo flies onto
+// the header logo (FLIP) while the black lifts (Luka liked that one).
 // app.js reports loading with bitzLoader.progress(0..1) and calls bitzLoader.exit(go) when everything is ready.
 window.bitzLoader = (() => {
   const LOGO = { x: 106, y: 52, w: 600, h: 444, W: 762, H: 553 };   // where the logo sits inside the animation frame
@@ -38,7 +39,7 @@ window.bitzLoader = (() => {
   // how the loader hands over to the site (desktop): fly = the logo flies to the header over the black, then the black lifts and the strip slides in;
   // lift = the black rises like a curtain while the logo flies, the strip comes up with the curtain's edge; split = the black parts top and bottom
   // from the middle while the logo flies; zoom = the view passes through the growing logo and the strip comes from the depth, the header logo fades in
-  const STYLES = ['fly', 'lift', 'split', 'zoom'], DEFAULT_STYLE = 'fly', q = new URLSearchParams(location.search).get('loader');
+  const STYLES = ['fly', 'lift', 'split', 'zoom'], DEFAULT_STYLE = 'zoom', q = new URLSearchParams(location.search).get('loader');
   const STYLE = PHONE ? 'fly' : STYLES.includes(q) ? q : DEFAULT_STYLE;
   const wait = ms => new Promise(r => setTimeout(r, ms));
   let anim = null, failed = false, wrote = false, resolveWritten, real = PHONE ? 1 : 0, shown = 0, done = false;   // the phone has no asset count: its counter follows the hand
