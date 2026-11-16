@@ -83,22 +83,23 @@ a{color:inherit;text-decoration:none}
 .discIn .links a{transition:opacity .3s ease-out;position:relative}
 .discIn .links a::before{content:"";position:absolute;inset:-12px}
 .discIn .links a:hover{opacity:.6}
-/* the contact form inside the circle: hairline fields, a white pill to send; the circle is a little wider to hold it */
-.disc.form{width:clamp(360px,42vw,1300px)}
-.cf{display:flex;flex-direction:column;gap:.7vw;width:100%;text-align:left}
-.cf .row{display:flex;gap:1vw}
-.cf input,.cf textarea{flex:1;width:100%;min-width:0;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);border-radius:0;color:#fff;font:inherit;font-size:clamp(12px,.85vw,24px);letter-spacing:-.02em;padding:.35em 0;outline:none;resize:none;transition:border-color .3s}
-.cf input:focus,.cf textarea:focus{border-bottom-color:#fff}
-.cf ::placeholder{color:rgba(255,255,255,.5);opacity:1}
-.cf textarea{min-height:3.4em;line-height:1.35}
+/* the contact block at the end of a project: set like a text section, hairline fields, a dark pill to send */
+.ask{max-width:60ch;padding:1.45vw 0 .5vw;font-size:clamp(13px,.9333vw,28px);line-height:1.4;letter-spacing:-.02em;color:var(--ink2)}
+.ask h3{font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;color:var(--ink);margin:0 0 .5vw;font-weight:500}
+.ask p{margin:0 0 1.4vw}
+.cf{display:flex;flex-direction:column;gap:.9vw;width:100%;text-align:left}
+.cf .row{display:flex;gap:1.6vw}
+.cf input,.cf textarea{flex:1;width:100%;min-width:0;background:transparent;border:0;border-bottom:1px solid rgba(0,0,0,.25);border-radius:0;color:var(--ink);font:inherit;letter-spacing:-.02em;padding:.4em 0;outline:none;resize:none;transition:border-color .3s}
+.cf input:focus,.cf textarea:focus{border-bottom-color:#000}
+.cf ::placeholder{color:rgba(0,0,0,.45);opacity:1}
+.cf textarea{min-height:4em;line-height:1.4}
 .cf .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.cf button{align-self:center;margin-top:.3vw;background:#fff;color:#000;border:0;border-radius:999px;padding:.7em 1.8em;font:inherit;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on;cursor:pointer;transition:opacity .3s}
+.cf button{align-self:flex-start;margin-top:.4vw;background:#111;color:#fff;border:0;border-radius:999px;padding:.8em 2em;font:inherit;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on;cursor:pointer;transition:opacity .3s}
 .cf button:hover{opacity:.7}
 .cf button:disabled{opacity:.5;cursor:default}
-.discIn .cf .note{font-size:clamp(10px,.6667vw,20px);line-height:1.4;letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;text-align:center;opacity:.8;min-height:1.4em;margin:0}
-.discIn .cf .note:empty{display:none}
+.cf .note{font-size:clamp(10px,.6667vw,20px);line-height:1.4;letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;color:var(--ink);margin:0;min-height:1.4em}
+.cf .note:empty{display:none}
 .cf.sent .row,.cf.sent textarea,.cf.sent button{display:none}
-.disc.on .cf,.disc.on .cf *{pointer-events:auto}
 /* shot bubbles: the four group rings, top centre (the live site's header row) */
 .tc{top:calc(var(--insY) - 1vw);left:50%;transform:translateX(-50%);gap:1.2vw}
 /* a bubble = a thin rim + a gap + the round preview (still, and a silent loop on hover); bright rim = clips not watched yet, dim = seen */
@@ -303,14 +304,15 @@ body.preload .logo img{visibility:hidden}                   /* the header logo a
   .discIn p{font-size:14px;line-height:1.42;letter-spacing:-.02em}   /* app.js fitDisc() steps it down on small screens */
   .discIn .meta,.discIn .links{font-size:10px}
   .discIn .links{gap:8px 16px}
-  .disc.form .meta{display:none}   /* the email and phone are in the links; the room goes to the form */
-  .disc.form .discIn{gap:12px}
-  .cf{gap:8px}
-  .cf .row{gap:12px}
-  .cf input,.cf textarea{font-size:13px}
-  .cf textarea{min-height:2.8em}
-  .cf button{font-size:10px;padding:8px 18px;margin-top:0}
-  .discIn .cf .note{font-size:10px}
+  .ask{padding:0 15px;font-size:14px;line-height:1.45}
+  .ask h3{font-size:10px;margin-bottom:8px}
+  .ask p{margin-bottom:14px}
+  .cf{gap:12px}
+  .cf .row{gap:14px}
+  .cf input,.cf textarea{font-size:16px}   /* 16 px: iOS does not zoom into the field */
+  .cf textarea{min-height:3.6em}
+  .cf button{font-size:10px;padding:10px 20px;margin-top:2px}
+  .cf .note{font-size:10px}
   #mlens{position:fixed;inset:0;width:100%;height:100%;z-index:15;visibility:hidden;pointer-events:none}
   /* no WebGL: the plain black circle over dimmed cards */
   body.nolens .disc{width:96vw;max-width:460px;background:#000}

@@ -262,8 +262,10 @@ collections:
             label: Form
             widget: object
             i18n: true
-            hint: 'The message form inside the Contact circle. Messages go to chat@bitz.ge (set in contact.php).'
+            hint: 'The message form at the end of every project page. Messages go to chat@bitz.ge (set in contact.php).'
             fields:
+              - { name: title, label: Title above the form, widget: string, i18n: true }
+              - { name: text, label: Line under the title, widget: string, i18n: true }
               - { name: name, label: Name field, widget: string, i18n: true }
               - { name: email, label: Email field, widget: string, i18n: true }
               - { name: message, label: Message field, widget: string, i18n: true }

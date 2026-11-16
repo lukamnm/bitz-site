@@ -769,7 +769,8 @@ function bindInput(canvas) {
   canvas.addEventListener('pointerleave', () => { if (!S.drag) setHover(-1, canvas); });
   addEventListener('keydown', e => {
     if (story.open) { if (e.key === 'Escape') closeStory(); if (e.key === 'ArrowRight') showShot(story.g, story.i + 1); if (e.key === 'ArrowLeft') showShot(story.g, story.i - 1); return; }
-    if (e.key === 'Escape' && hole.open) { if (e.target.matches?.('input, textarea')) return e.target.blur(); return openHole(false); }   // typing: Escape only leaves the field
+    if (e.target.matches?.('input, textarea')) { if (e.key === 'Escape') e.target.blur(); return; }   // typing in the form: Escape leaves the field, arrows stay in the text
+    if (e.key === 'Escape' && hole.open) return openHole(false);
     if (e.key === 'Escape' && S.open !== null) return closeProject();
     if (S.open !== null) { if (e.key === 'ArrowRight') switchProject(1); if (e.key === 'ArrowLeft') switchProject(-1); return; }
     if (e.key === 'ArrowRight') { S.sT += S.pitch; S.vk = Math.min(0.5, S.vk + 0.14); }
@@ -921,6 +922,7 @@ function fill(p) {
     t.sections.map(s => `<div class="txt">${s.h ? (p.story ? `<h2>${s.h}</h2>` : `<h3>${s.h}</h3>`) : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}</div>`).join('') +
     p.gallery.map(g => typeof g === 'string' ? `<figure><img src="${g}" alt="" loading="lazy"></figure>`
       : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video></figure>`).join('');
+  fillAsk(p);
   buildLoop();
   pr.scrollTop = 0; panel.scrollTop = 0;
   if (lenis) lenis.scrollTo(0, { immediate: true });
@@ -1421,24 +1423,26 @@ function fillDisc(what) {
   const o = overlays?.[what]; if (!o) return;
   $('#discLead').textContent = L(o.lead); $('#discMeta').textContent = L(o.meta);
   $('#discLinks').innerHTML = o.links.map(l => `<li><a href="${L(l.href)}" target="_blank" rel="noopener">${L(l.label)}</a></li>`).join('');
-  fillForm(what === 'contact' ? o.form : null);
   if (S.mobile) fitDisc();
 }
-// the contact form: its texts follow the language, a fresh form each time the circle opens, the message stays through a language switch
-const cform = $('#cform'), cnote = cform.querySelector('.note'), cbtn = cform.querySelector('button');
-let cfTexts = null;
-function fillForm(t) {
-  cfTexts = t; disc.classList.toggle('form', !!t); cform.hidden = !t;
+// the contact form at the end of a project page: texts from Contact > Form in the current language; a fresh form per project,
+// what was typed survives a language switch; posted to contact.php on the host (the dev server answers it locally)
+const ask = $('#ask'), cform = $('#cform'), cnote = cform.querySelector('.note'), cbtn = cform.querySelector('button');
+let cfTexts = null, cfFor = null;
+function fillAsk(p) {
+  const t = !p.story && overlays?.contact?.form;
+  cfTexts = t || null; ask.hidden = !t;
   if (!t) return;
-  for (const k of ['name', 'email', 'message']) cform.elements[k].placeholder = L(t[k]) || k;
+  $('#askTitle').textContent = L(t.title) || ''; $('#askText').textContent = L(t.text) || '';
+  for (const k of ['name', 'email', 'message']) cform.elements[k].placeholder = L(t[k]) || '';
   cbtn.textContent = L(t.send) || 'Send';
-  if (!hole.open) { cform.reset(); cform.classList.remove('sent'); cbtn.disabled = false; cnote.textContent = ''; cform.dataset.t = Date.now(); }
+  if (cfFor !== p.slug) { cfFor = p.slug; cform.reset(); cform.classList.remove('sent'); cbtn.disabled = false; cnote.textContent = ''; cform.dataset.t = Date.now(); }
 }
 cform.addEventListener('submit', async e => {
   e.preventDefault();
   const t = cfTexts || {}, d = Object.fromEntries(new FormData(cform));
   const ok = d.name.trim() && d.message.trim() && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email.trim());
-  if (!ok) { cnote.textContent = L(t.fill) || 'Please fill in your name, email and message.'; cform.querySelector(':invalid')?.focus(); if (S.mobile) fitDisc(); return; }
+  if (!ok) { cnote.textContent = L(t.fill) || 'Please fill in your name, email and message.'; cform.querySelector(':invalid')?.focus(); return; }
   cbtn.disabled = true; cnote.textContent = L(t.sending) || 'Sending';
   try {
     const r = await fetch('contact.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...d, lang, page: location.href, t: +cform.dataset.t || 0 }) });
@@ -1446,7 +1450,6 @@ cform.addEventListener('submit', async e => {
     if (!r.ok || !j.ok) throw new Error(j.error || r.status);
     cform.classList.add('sent'); cnote.textContent = L(t.sent) || 'Thanks, your message is on its way.';
   } catch (err) { cbtn.disabled = false; cnote.textContent = L(t.error) || 'Could not send. Email chat@bitz.ge directly.'; }
-  if (S.mobile) fitDisc();
 });
 // phones: shrink the circle's text until the whole block (text, meta, links) fits inside the round shape: (w/2)^2 + (h/2)^2 <= r^2
 function fitDisc() {

@@ -91,13 +91,6 @@ window.bitzLoader = (() => {
 <div id="disc" class="disc" inert aria-hidden="true">
   <div class="discIn">
     <p id="discLead"></p>
-    <form id="cform" class="cf" hidden novalidate>
-      <div class="row"><input name="name" autocomplete="name" required><input name="email" type="email" autocomplete="email" required></div>
-      <textarea name="message" rows="3" required></textarea>
-      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button type="submit"></button>
-      <p class="note" aria-live="polite"></p>
-    </form>
     <p class="meta" id="discMeta"></p>
     <ul class="links" id="discLinks"></ul>
   </div>
@@ -136,6 +129,18 @@ window.bitzLoader = (() => {
     <div class="prc" id="pContent">
       <figure class="in"><img id="pHero" alt=""></figure>
       <div id="pBody"></div>
+      <!-- the contact block at the end of every project: a DOM form (it stays live under the GL planes), the texts come from Contact > Form -->
+      <div id="ask" class="ask" hidden>
+        <h3 id="askTitle"></h3>
+        <p id="askText"></p>
+        <form id="cform" class="cf" novalidate>
+          <div class="row"><input name="name" autocomplete="name" required><input name="email" type="email" autocomplete="email" required></div>
+          <textarea name="message" rows="3" required></textarea>
+          <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit"></button>
+          <p class="note" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </div>
 </section>

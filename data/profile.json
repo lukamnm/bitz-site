@@ -123,6 +123,14 @@
    }
   ],
   "form": {
+   "title": {
+    "en": "Have a project in mind?",
+    "ge": "გაქვს პროექტი?"
+   },
+   "text": {
+    "en": "Tell me what you are building and I will get back to you within a business day.",
+    "ge": "მომწერე, რას აკეთებ, და ერთ სამუშაო დღეში გიპასუხებ."
+   },
    "name": {
     "en": "Name",
     "ge": "სახელი"
