@@ -179,10 +179,10 @@ a{color:inherit;text-decoration:none}
 #pBody > *{flex:none}
 .pr figure{
   margin:0;border-radius:0;overflow:hidden;background:#eee;      /* natural image height, no crop (like the current bitz.ge galleries) */
-  opacity:0;transform:translateY(28px) scale(1.03);
-  transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1.2s cubic-bezier(.2,.7,.2,1);
+  opacity:0;                                                      /* an entering image fades in only: a rise would open a gap above it, the white showing through as a line (Luka) */
+  transition:opacity .9s cubic-bezier(.2,.7,.2,1);
 }
-.pr figure.in{opacity:1;transform:none}
+.pr figure.in{opacity:1}
 .pr figure{position:relative}
 /* desktop: the panel is drawn in WebGL (white card + image and text planes) so the cursor trail touches all of it;
    the DOM stays for layout, scrolling and hit areas but is invisible */

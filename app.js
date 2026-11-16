@@ -313,7 +313,7 @@ precision highp float;
 #include <common>
 #include <dithering_pars_fragment>
 uniform sampler2D uMap, uVid; uniform vec2 uRepeat, uOffset, uAspect, uClipY, uVidRepeat, uVidOffset; uniform float uHasVid;
-uniform float uWhite, uDim, uRadius, uHasMap, uShade, uHover, uWh, uD, uT, uP, uAlpha, uArrow, uMapVid, uVidDec;
+uniform float uWhite, uDim, uRadius, uHasMap, uShade, uHover, uWh, uD, uT, uP, uAlpha, uArrow, uMapVid, uVidDec, uHardY;
 uniform vec4 uPillBox[2];    // hovered chips (two slots so one can fade out while the next fades in): centre xy, half-size zw, plane units
 uniform vec4 uPillDisc[2];   // disc centre xy (follows the pointer), z: radius that covers the chip, w: the chip's corner radius
 uniform vec2 uPillA[2];      // x: hover 0..1, y: 1 on text chips (lens + channel split), 0 on the round link disc
@@ -365,6 +365,7 @@ float arrowMask(vec2 p, float r){           // right arrow glyph, p relative to 
 void main(){
   if (vP.y < uClipY.x || vP.y > uClipY.y) discard;         // panel planes are clipped to the scroll area
   vec2 q = abs(vUv - 0.5) * uAspect - (uAspect * 0.5 - vec2(uRadius));
+  if (uHardY > 0.5) q.y = -1e3;                                           // gallery images: hard top and bottom edges, so two touching images never let the white sheet through (MSAA still smooths the geometry)
   float ed = length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - uRadius;   // signed distance to the rounded edge (world units)
   float cov = 1.0 - smoothstep(-max(fwidth(ed), 1e-5), 0.0, ed);         // one-pixel soft edge (alpha-to-coverage on opaque cards, blending on panel planes)
   if (cov <= 0.0) discard;
@@ -420,7 +421,7 @@ function cardMaterial(transparent = false) {
       uAspect: { value: new THREE.Vector2(1, 1) }, uRadius: { value: 0.1 },
       uWh: { value: 1 }, uD: { value: 0 }, uT: { value: SHEET.SPAN }, uV: { value: 0 }, uP: { value: 1 }, uLeanA: { value: 0 }, uDiag: { value: SHEET.DIAG },
       uHover: { value: 0 }, uDentH: { value: 0 }, uShade: { value: 1 }, uWhite: { value: 0 }, uDim: { value: 0 }, uMapVid: { value: 0 }, uVidDec: { value: 0 },
-      uBulgeA: { value: 0 }, uBulgeH: { value: 0 }, uBulgeOwn: { value: 0 },
+      uBulgeA: { value: 0 }, uBulgeH: { value: 0 }, uBulgeOwn: { value: 0 }, uHardY: { value: 0 },
       uPillBox: { value: [new THREE.Vector4(), new THREE.Vector4()] }, uPillDisc: { value: [new THREE.Vector4(), new THREE.Vector4()] },
       uPillA: { value: [new THREE.Vector2(), new THREE.Vector2()] },
     },
@@ -962,6 +963,7 @@ function buildPanelPlanes() {
   const vidSubs = [];   // per video (in #pBody order): the planes that show it, the original's and its copy's in the loop
   for (const el of prc.querySelectorAll('figure img, figure video')) {
     const p = panelPlane(el, el.closest('figure'), true, 0, 'img');   // square corners, like the reference's inner pages
+    p.mesh.material.uniforms.uHardY.value = 1;                           // and hard top / bottom edges: touching images
     const apply = (tex, size) => { const u = p.mesh.material.uniforms; u.uMap.value = tex; u.uHasMap.value = 1; u.uMapVid.value = tex.isVideoTexture ? 1 : 0; p.img = size; };
     if (el.tagName === 'IMG') {
       new THREE.TextureLoader().load(el.getAttribute('src'), tex => { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); apply(tex, tex.image); });
