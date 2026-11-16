@@ -98,6 +98,7 @@ const S = {
 };
 const cards = []; // { i, x, mesh, tag, p, bb }
 let openCard = null, lenis = null, io = null, vio = null;
+let loopFree = false;   // a freshly opened project scrolls down only: no wrapping backwards into its end (the contact form) until the first pass through the loop
 const held = new Set();                      // cards driven by a timeline (the open one and the two side sheets), not by the strip
 let sides = {};
 const SIDE_SCALE = 0.81, SIDE_DIM = 0.55;    // measured: side sheets are ~81% of the panel, washed white, mid grey against black
@@ -923,9 +924,9 @@ function fill(p) {
     p.gallery.map(g => typeof g === 'string' ? `<figure><img src="${g}" alt="" loading="lazy"></figure>`
       : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video></figure>`).join('');
   fillAsk(p);
-  buildLoop();
+  buildLoop(); loopFree = false;
   pr.scrollTop = 0; panel.scrollTop = 0;
-  if (lenis) lenis.scrollTo(0, { immediate: true });
+  if (lenis) { lenis.scrollTo(0, { immediate: true }); lastScroll = 0; }   // the seam detector starts from the top too
   // gallery images rise in as they enter
   io?.disconnect();
   io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { root: S.mobile ? panel : pr, rootMargin: '0px 0px -8% 0px' });
@@ -1106,20 +1107,28 @@ function syncPills(R, w, u) {
   }
 }
 function clearPills() { for (const p of pills) if (p) gsap.killTweensOf(p); pills[0] = pills[1] = null; pillNow = null; }
-window.__pills = pills; window.__pplanes = () => pplanes; window.__bulge = () => bulge; window.__lenis = () => lenis;
+window.__pills = pills; window.__pplanes = () => pplanes; window.__bulge = () => bulge; window.__lenis = () => lenis; window.__loopFree = () => loopFree;
 
 // panel scroll: Lenis on the gallery column, but it listens on the whole panel, so the wheel works over the text column too (like the reference)
 let bulge = 0, lastScroll = 0;
 const IMG_BULGE = 1;   // measured on the reference mid-scroll: image edges bow exactly as much as the sheet's (the trace's larger value belongs elsewhere)
 function startLenis() {
   if (S.mobile || RM || !window.Lenis) return;
-  lenis = new Lenis({ wrapper: pr, content: prc, eventsTarget: panel, lerp: 0.1, smoothWheel: true, infinite: !!prc.querySelector('.dup') });
+  lenis = new Lenis({ wrapper: pr, content: prc, eventsTarget: panel, lerp: 0.1, smoothWheel: true, infinite: !!prc.querySelector('.dup'),
+    // before the first pass through the loop an upward gesture stops at the top instead of wrapping to the end of the project
+    virtualScroll: ({ deltaY, event }) => {
+      if (loopFree || deltaY >= 0 || lenis.targetScroll + deltaY >= 0) return true;
+      event.preventDefault();
+      if (lenis.targetScroll > 0) lenis.scrollTo(0, { programmatic: false });
+      return false;
+    } });
   lastScroll = 0; let lastProg = 0;
   lenis._raf = (t, dms) => {
     lenis.raf(t * 1000);
     // the sheet's bow follows the scroll speed (reference setScroll: i = tanh(v / 900 px/s), bulge = i|i| x 0.22 x frustum half-height)
     const dt = Math.min(0.05, (dms || 16.7) / 1000), sc = lenis.scroll ?? 0, lim = lenis.limit || 1;   // lenis.scroll is the wrapped value; animatedScroll only wraps once the motion ends
     let dsc = sc - lastScroll; if (Math.abs(dsc) > lim / 2) dsc -= Math.sign(dsc) * lim;   // the loop's seam is not a jump
+    if (!loopFree && ((lastScroll > lim / 2 && sc - lastScroll < -lim / 2) || lenis.animatedScroll >= lim)) loopFree = true;   // the seam passed going down: from here the gallery scrolls either way
     const v = dsc / dt; lastScroll = sc;
     // progress ring: the arc fills over one period; at the seam the full ring fades out as the new one starts (reference "rings")
     if (!spin.classList.contains('on')) {
