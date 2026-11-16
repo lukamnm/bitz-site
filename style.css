@@ -50,7 +50,7 @@ a{color:inherit;text-decoration:none}
 /* ---------- corner nav */
 .nav{
   position:fixed;z-index:20;display:flex;gap:.9vw;align-items:center;
-  font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;   /* reference: .6667vw, 8.5 px at 1280 ... 20 px cap from 3000 wide */
+  font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;   /* reference: .6667vw, 8.5 px at 1280 ... 20 px cap from 3000 wide */
 }
 /* reference insets: 82 px from the sides and 41 px from top/bottom at 1534x703, 102/51 at 1918x880 = 5.33vw / 5.83vh */
 .tl{top:var(--insY);left:var(--insX)}.tr{top:var(--insY);right:var(--insX)}.bl{bottom:var(--insY);left:var(--insX)}.br{bottom:var(--insY);right:var(--insX)}
@@ -78,8 +78,8 @@ a{color:inherit;text-decoration:none}
 .disc.on{pointer-events:none}
 .disc.on .links a{pointer-events:auto}
 .discIn p{font-size:clamp(14px,1.0667vw,32px);line-height:1.4;letter-spacing:-.035em;text-wrap:balance}
-.discIn .meta{font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;letter-spacing:0;color:#fff;opacity:.8}
-.discIn .links{display:flex;flex-wrap:wrap;justify-content:center;gap:.65vw 1.7vw;list-style:none;padding:0;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase}
+.discIn .meta{font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on;letter-spacing:0;color:#fff;opacity:.8}
+.discIn .links{display:flex;flex-wrap:wrap;justify-content:center;gap:.65vw 1.7vw;list-style:none;padding:0;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on}
 .discIn .links a{transition:opacity .3s ease-out;position:relative}
 .discIn .links a::before{content:"";position:absolute;inset:-12px}
 .discIn .links a:hover{opacity:.6}
@@ -92,10 +92,10 @@ a{color:inherit;text-decoration:none}
 .cf ::placeholder{color:rgba(255,255,255,.5);opacity:1}
 .cf textarea{min-height:3.4em;line-height:1.35}
 .cf .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.cf button{align-self:center;margin-top:.3vw;background:#fff;color:#000;border:0;border-radius:999px;padding:.7em 1.8em;font:inherit;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;cursor:pointer;transition:opacity .3s}
+.cf button{align-self:center;margin-top:.3vw;background:#fff;color:#000;border:0;border-radius:999px;padding:.7em 1.8em;font:inherit;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on;cursor:pointer;transition:opacity .3s}
 .cf button:hover{opacity:.7}
 .cf button:disabled{opacity:.5;cursor:default}
-.discIn .cf .note{font-size:clamp(10px,.6667vw,20px);line-height:1.4;letter-spacing:0;text-transform:uppercase;text-align:center;opacity:.8;min-height:1.4em;margin:0}
+.discIn .cf .note{font-size:clamp(10px,.6667vw,20px);line-height:1.4;letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;text-align:center;opacity:.8;min-height:1.4em;margin:0}
 .discIn .cf .note:empty{display:none}
 .cf.sent .row,.cf.sent textarea,.cf.sent button{display:none}
 .disc.on .cf,.disc.on .cf *{pointer-events:auto}
@@ -131,7 +131,7 @@ a{color:inherit;text-decoration:none}
 .storyBar{display:flex;gap:.5vh}
 .storyBar i{flex:1;height:2px;border-radius:2px;background:rgba(0,0,0,.14);overflow:hidden;position:relative}
 .storyBar i::after{content:"";position:absolute;inset:0;background:#111;transform-origin:left;transform:scaleX(var(--p,0))}
-.storyRow{display:flex;align-items:center;gap:1.4vh;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;letter-spacing:0}
+.storyRow{display:flex;align-items:center;gap:1.4vh;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on;letter-spacing:0}
 .storyRow img{width:3.2vh;height:3.2vh;border-radius:50%;object-fit:cover}
 #storyGroup{opacity:.55}
 #shotTitle{margin-left:1vh;font-size:clamp(13px,.9333vw,28px);text-transform:none;letter-spacing:-.02em}
@@ -161,7 +161,7 @@ a{color:inherit;text-decoration:none}
 }
 .pl h1{font-size:clamp(28px,3vw,90px);font-weight:400;letter-spacing:-.05em;line-height:1.15;text-wrap:balance}   /* reference: 3vw, -0.05em */
 .pl p{font-size:clamp(14px,1.0667vw,32px);line-height:1.4;letter-spacing:-.035em;color:var(--ink);max-width:40ch}   /* reference: 1.0667vw */
-.chips{display:flex;flex-wrap:wrap;gap:.52vw;list-style:none;padding:0;font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:.52vw;list-style:none;padding:0;font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;align-items:center}
 .chips li{border:0;background:var(--chip);border-radius:999px;padding:.52vw .9vw;color:var(--ink)}
 .chips li.lnk{padding:0;background:#111}
 .chips li.lnk a{display:grid;place-items:center;width:1.95vw;height:1.95vw;min-width:28px;min-height:28px;color:#fff;font-size:clamp(11px,.78vw,22px);text-decoration:none}
@@ -207,8 +207,10 @@ a{color:inherit;text-decoration:none}
 .sliver.on{opacity:1;pointer-events:auto}
 .pr img,.pr video{display:block;width:100%;height:auto;max-width:100%}
 .pr .txt{padding:1.45vw 0 .5vw;max-width:60ch;font-size:clamp(13px,.9333vw,28px);line-height:1.4;letter-spacing:-.02em;color:var(--ink2)}   /* reference body: .9333vw */
-.pr .txt h3{font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin-bottom:.5vw;font-weight:500}
+.pr .txt h3{font-size:clamp(10px,.6667vw,20px);letter-spacing:0;text-transform:uppercase;font-feature-settings:"case" on;color:var(--ink);margin-bottom:.5vw;font-weight:500}
 .pr .txt p + p{margin-top:.8em}   /* articles: several paragraphs per section */
+.pr .txt h2{font-size:clamp(20px,2vw,56px);line-height:1.15;letter-spacing:-.035em;color:var(--ink);font-weight:500;margin:0 0 .8vw;text-wrap:balance}   /* articles: section headings as the old blog set them (36 over 15 px body) */
+.pr .txt:has(h2){padding-top:2.6vw}
 #close,.xbtn{
   position:absolute;top:1.45vw;right:1.56vw;width:clamp(34px,2.6vw,56px);height:clamp(34px,2.6vw,56px);border-radius:50%;border:0;
   background:#111;color:#fff;cursor:pointer;z-index:2;font-size:20px;line-height:1;display:grid;place-items:center;
@@ -229,7 +231,7 @@ body.lock .nav{pointer-events:none}
 #pre.fade{opacity:0;transition:opacity .85s ease}           /* no animation (fetch failed): plain fade */
 #preLogo{width:min(20vw,170px);aspect-ratio:762/553;transform-origin:0 0;will-change:transform}
 #preLogo.fly{transition:transform .75s cubic-bezier(.65,0,.15,1)}
-#preBar{position:absolute;left:var(--insX);right:var(--insX);bottom:var(--insY);padding-bottom:1.1em;text-align:right;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;transition:opacity .3s ease}   /* the counter: nav type, a hairline that fills left to right */
+#preBar{position:absolute;left:var(--insX);right:var(--insX);bottom:var(--insY);padding-bottom:1.1em;text-align:right;font-size:clamp(10px,.6667vw,20px);text-transform:uppercase;font-feature-settings:"case" on;transition:opacity .3s ease}   /* the counter: nav type, a hairline that fills left to right */
 #preBar b{font-weight:400;font-variant-numeric:tabular-nums}
 #preBar i{position:absolute;left:0;right:0;bottom:0;height:1px;background:rgba(255,255,255,.18)}
 #preBar i::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:0 50%;transform:scaleX(var(--p,0))}
@@ -266,7 +268,7 @@ body.preload .logo img{visibility:hidden}                   /* the header logo a
   #stack > li.srow{display:flex;justify-content:center}
   #stack #shotsNav{position:static;transform:none;display:flex;gap:18px;padding:4px 0 18px}
   #stack .bub{width:58px;height:58px}
-  #stack .bub .lbl{display:block;opacity:.62;transform:translate(-50%,8px);font-size:10px;text-transform:uppercase}
+  #stack .bub .lbl{display:block;opacity:.62;transform:translate(-50%,8px);font-size:10px;text-transform:uppercase;font-feature-settings:"case" on}
   #stack .bub:hover{transform:none}
   #stack .bub:active{transform:scale(.94)}
   /* the opened project (reference: a white sheet 20 / 15 px from the edges, radius 15, 34 px title, images 10 px in and 30 px apart) */
@@ -283,6 +285,8 @@ body.preload .logo img{visibility:hidden}                   /* the header logo a
   .prc,#pBody{gap:30px;padding-top:0}
   .pr .txt{padding:0 15px;font-size:14px;line-height:1.45}
   .pr .txt h3{font-size:10px;margin-bottom:8px}
+  .pr .txt h2{font-size:22px;margin-bottom:10px}
+  .pr .txt:has(h2){padding-top:26px}
   #ring{display:none}
   #close{position:fixed;top:auto;right:35px;bottom:max(30px,calc(env(safe-area-inset-bottom,0px) + 15px));width:40px;height:40px}
   #close .pill{display:none}

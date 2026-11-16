@@ -918,7 +918,7 @@ function fill(p) {
   hero.src = p.cover; hero.alt = t.title + ' cover';
   if (hero.complete) spin.classList.remove('on');
   $('#pBody').innerHTML =
-    t.sections.map(s => `<div class="txt">${s.h ? `<h3>${s.h}</h3>` : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}</div>`).join('') +
+    t.sections.map(s => `<div class="txt">${s.h ? (p.story ? `<h2>${s.h}</h2>` : `<h3>${s.h}</h3>`) : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}</div>`).join('') +
     p.gallery.map(g => typeof g === 'string' ? `<figure><img src="${g}" alt="" loading="lazy"></figure>`
       : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video></figure>`).join('');
   buildLoop();
