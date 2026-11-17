@@ -48,7 +48,11 @@ window.bitzLoader = (() => {
     anim = lottie.loadAnimation({ container: el, renderer: 'svg', loop: false, autoplay: false, animationData: data });
     anim.addEventListener('DOMLoaded', () => {
       if (RM) { anim.goToAndStop(anim.totalFrames - 1, true); resolveWritten(); return; }
-      anim.addEventListener('complete', resolveWritten); anim.goToAndPlay(0, true);
+      // the hand starts writing once the site has drawn its first frame (shader compiles, 200-300 ms on a laptop): a stall
+      // under the first strokes would show as a freeze. Never later than 2 s after the animation is ready.
+      let played = false; const play = () => { if (played) return; played = true; anim.goToAndPlay(0, true); };
+      anim.addEventListener('complete', resolveWritten);
+      if (window.__framed) play(); else { document.addEventListener('bitz:frame', play, { once: true }); setTimeout(play, 2000); }
     });
   }).catch(() => { anim = null; failed = true; resolveWritten(); });
   // the counter never runs ahead of the page's real loading nor of the writing hand, and eases toward the lower of the two
@@ -61,14 +65,30 @@ window.bitzLoader = (() => {
     requestAnimationFrame(tick);
   })();
   const hide = () => { done = true; document.body.classList.remove('preload'); pre.style.display = 'none'; el.remove(); };
+  // zoom: the growing logo is a bitmap of the written frame. A canvas is composited as a texture, so scaling it costs the compositor
+  // nothing; the SVG had to be re-rasterised at the animation's scale the moment it started, which stalled the first frames (40 ms on a
+  // laptop). Drawn at twice the device resolution: clean at rest (an exact 2x2 average), only soft once it is big and already fading.
+  let snap = null;
+  const snapshot = () => new Promise(res => {
+    const svg = el.querySelector('svg'); if (!svg) return res();
+    const r = el.getBoundingClientRect(), k = 2 * Math.min(devicePixelRatio || 1, 2), w = Math.round(r.width * k), h = Math.round(r.height * k);
+    const copy = svg.cloneNode(true); copy.setAttribute('width', w); copy.setAttribute('height', h); copy.removeAttribute('style');
+    const img = new Image(), url = URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(copy)], { type: 'image/svg+xml' }));
+    img.onload = () => { try { const c = document.createElement('canvas'); c.width = w; c.height = h; c.getContext('2d').drawImage(img, 0, 0, w, h); c.style.cssText = 'position:absolute;inset:0;width:100%;height:100%'; snap = c; } catch {} URL.revokeObjectURL(url); res(); };
+    img.onerror = () => { URL.revokeObjectURL(url); res(); };
+    img.src = url;
+  });
   // the logo leaves the loader's sheet before the exit so the black can lift, part or fade behind it while it flies
   const detach = () => { const r = el.getBoundingClientRect(); document.body.appendChild(el); Object.assign(el.style, { position: 'fixed', left: r.left + 'px', top: r.top + 'px', width: r.width + 'px', height: r.height + 'px', zIndex: 101 }); void el.offsetWidth; };   // flush: re-inserted, it needs a settled style before the transform transitions
   const onEnd = (node, fn) => { const h = e => { if (e.target !== node) return; node.removeEventListener('transitionend', h); fn(); }; node.addEventListener('transitionend', h); };   // transitionend bubbles: only this node's own
-  async function exit(go) {
+  async function exit(go, onWritten) {
     real = 1; await written;
+    if (onWritten) onWritten();                                 // app.js starts the card loops now: their decoding stays off the write-on
     if (RM) { show(1); go(); hide(); return; }
+    const snapped = STYLE === 'zoom' && !PHONE ? snapshot() : null;
     await Promise.race([new Promise(r => { const f = () => shown >= 0.995 ? r() : requestAnimationFrame(f); f(); }), wait(1500)]);   // let the counter reach 100
     show(1); await wait(HOLD);
+    if (snapped) await Promise.race([snapped, wait(300)]);
     bar.classList.add('off');
     const img = document.querySelector('#home img');
     if (!anim || !img) { go(); pre.classList.add('fade'); onEnd(pre, hide); return; }   // no animation (fetch failed): plain fade
@@ -78,6 +98,7 @@ window.bitzLoader = (() => {
     detach();
     if (STYLE === 'zoom') {   // through the logo: it grows past the viewer and fades, the black fades with it, the strip arrives from the depth
       document.body.classList.add('logoFade');
+      if (snap) { el.querySelector('svg')?.remove(); el.appendChild(snap); }
       el.classList.add('zoom'); el.style.transform = 'scale(7)';
       pre.classList.add('zoom'); go(); onEnd(el, hide); return;
     }

@@ -45,10 +45,11 @@ const addr = u => (has(u) ? String(u).trim().replace(/^https?:\/\/[^/]+\//, '').
 const ymd = d => String(d || '').slice(0, 10).replace(/-/g, '/');
 
 // ---------------------------------------------------------------- projects
-// a gallery item is an image (a plain path) or a video { video, webm, poster }; the poster defaults to the frame tools/galleryvideo.mjs makes
+const catNames = list => (list || []).map(c => String(c).replace(/&amp;/g, '&').trim()).filter(Boolean);   // names as chosen in the admin (the WordPress import left "&amp;")
+// a gallery item is an image (a plain path) or a video { video, webm, poster, sound }; the poster defaults to the frame tools/galleryvideo.mjs makes
 const vidPoster = v => v ? v.replace(/.(mp4|webm)$/i, '.webp') : null;
 const gal = list => (list || []).map(g => typeof g === 'string' ? rel(g) : g.type === 'video' || g.video || g.webm
-  ? pick({ video: rel(g.video), webm: rel(g.webm), poster: rel(g.poster) || vidPoster(rel(g.video) || rel(g.webm)) }, ['video', 'webm', 'poster']) : rel(g.image)).filter(Boolean);
+  ? { ...pick({ video: rel(g.video), webm: rel(g.webm), poster: rel(g.poster) || vidPoster(rel(g.video) || rel(g.webm)) }, ['video', 'webm', 'poster']), ...(g.sound ? { sound: true } : {}) } : rel(g.image)).filter(Boolean);
 const projects = [];
 for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/projects') : []) {
   const f = `content/projects/${slug}/project.json`; if (!fs.existsSync(f)) continue;
@@ -61,7 +62,7 @@ for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/p
   const credits = (en.credits || []).filter(c => has(c.name)).map((c, k) => ({ role: { en: c.role || '', ge: ka.credits?.[k]?.role || null }, name: c.name, link: has(c.link) ? c.link : null }));
   projects.push({
     slug, order: has(en.order) ? +en.order : 999, title: en.title || slug, featured: en.featured !== false, year: en.year || '', client: en.client || '',
-    cats: en.cats || [], link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: gal(en.gallery), sections: about(en, 'en'), credits,
+    cats: catNames(en.cats), link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: gal(en.gallery), sections: about(en, 'en'), credits,
     home: en.home && (en.home.img || en.home.video) ? pick({ img: rel(en.home.img), video: rel(en.home.video), webm: rel(en.home.webm) }, ['img', 'video', 'webm']) : null,
     seo: seo(en.seo),
     url: { en: addr(en.url) || `portfolio/${slug}/`, ge: ka.title ? addr(ka.url) || `ge/portfolio/${slug}/` : null },
@@ -79,7 +80,7 @@ for (const slug of fs.existsSync('content/blog') ? fs.readdirSync('content/blog'
   const kaOk = !!(ka && (ka.title || ka.body));
   stories.push({
     slug, date: en.date || '', title: { en: en.title || slug, ge: kaOk ? ka.title || null : null }, excerpt: { en: en.excerpt || '', ge: kaOk ? ka.excerpt || null : null },
-    cover: rel(en.cover), categories: en.categories || [], hasGe: kaOk, sections: { en: sections(en.body), ge: kaOk ? sections(ka.body) : null },
+    cover: rel(en.cover), categories: catNames(en.categories), hasGe: kaOk, sections: { en: sections(en.body), ge: kaOk ? sections(ka.body) : null },
     seo: { en: seo(en.seo), ge: kaOk ? seo(ka.seo) : null },
     url: { en: addr(en.url) || `blog/${ymd(en.date)}/${slug}/`, ge: kaOk ? addr(ka.url) || `ge/${ymd(en.date)}/${slug}/` : null },
   });
@@ -99,7 +100,7 @@ for (const file of fs.existsSync('content/shots') ? fs.readdirSync('content/shot
   // bubble: the still + hover loop made from the first clip by tools/bubbles.mjs; a "Bubble image" set in the admin replaces the still
   const b = bubbleFor(firstClip(en)), made = b && fs.existsSync(b.img) && fs.existsSync(b.loop);
   const bubble = pick({ img: rel(en.ring) || (made ? b.img : null), loop: made ? b.loop : null }, ['img', 'loop']);
-  groups.push({ order: has(en.order) ? +en.order : 999, title: { en: en.title || '', ge: ka.title || null }, label: { en: en.label || en.title || '', ge: ka.label || null }, bubble, items });
+  groups.push({ order: has(en.order) ? +en.order : 999, title: { en: en.title || '', ge: ka.title || null }, label: { en: en.label || en.title || '', ge: ka.label || null }, categories: catNames(en.categories), bubble, items });
 }
 groups.sort((a, b) => a.order - b.order);
 write('data/shots.json', { groups: groups.map(({ order, ...g }) => g) });

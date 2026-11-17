@@ -9,6 +9,7 @@
     "en": "3D/VFX",
     "ge": "3D/VFX"
    },
+   "categories": [],
    "bubble": {
     "img": "assets/shots/auto/3d0f9f33be.webp",
     "loop": "assets/shots/auto/3d0f9f33be.mp4"
@@ -81,6 +82,7 @@
     "en": "Branding",
     "ge": "ბრენდინგი"
    },
+   "categories": [],
    "bubble": {
     "img": "assets/shots/auto/b7ce49ddd7.webp",
     "loop": "assets/shots/auto/b7ce49ddd7.mp4"
@@ -108,6 +110,7 @@
     "en": "Product",
     "ge": "პროდუქტი"
    },
+   "categories": [],
    "bubble": {
     "img": "assets/shots/auto/832a4bf5f4.webp",
     "loop": "assets/shots/auto/832a4bf5f4.mp4"
@@ -146,6 +149,7 @@
     "en": "Motion",
     "ge": "ანიმაცია"
    },
+   "categories": [],
    "bubble": {
     "img": "assets/shots/auto/fe38210d33.webp",
     "loop": "assets/shots/auto/fe38210d33.mp4"

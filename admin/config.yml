@@ -54,7 +54,7 @@ collections:
       - { name: order, label: Order, widget: number, value_type: int, default: 50, hint: 'Lower numbers come first.' }
       - { name: year, label: Year, widget: string }
       - { name: client, label: Client, widget: string, required: false }
-      - { name: cats, label: Categories, widget: list, required: false, hint: 'Shown as chips, e.g. Branding, 3D Design, Video.' }
+      - { name: cats, label: Categories, widget: relation, collection: taxonomy, file: categories, value_field: 'projects.*.name', display_fields: ['projects.*.name'], search_fields: ['projects.*.name'], multiple: true, required: false, hint: 'Pick one or more. The list itself is edited under Categories in the sidebar.' }
       - { name: link, label: Live project link, widget: string, required: false, hint: 'Optional. Adds the arrow chip that opens the live site.' }
       - { name: blurb, label: Short description, widget: text, i18n: true }
       - { name: about, label: About the project, widget: text, i18n: true, required: false, hint: 'The one text at the top of the project page. A blank line starts a new paragraph. A link is written [text](https://...) and shows underlined.' }
@@ -76,7 +76,7 @@ collections:
         label_singular: Item
         widget: list
         required: false
-        hint: 'Images and videos in the order they appear on the project page. Videos play muted in a loop; the poster is made automatically on deploy when left empty.'
+        hint: 'Images and videos in the order they appear on the project page. Videos loop silently unless Sound is on; the poster is made automatically on deploy when left empty.'
         types:
           - name: image
             label: Image
@@ -92,6 +92,7 @@ collections:
               - { name: video, label: Video (mp4), widget: file, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects, hint: 'mp4 (H.264) plays everywhere. Keep it under 10 MB.' }
               - { name: webm, label: Video (webm), widget: file, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects, hint: 'Optional smaller copy; an mp4 is made from it on deploy if there is none.' }
               - { name: poster, label: Poster (first frame), widget: image, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects }
+              - { name: sound, label: Sound, widget: boolean, default: false, required: false, hint: 'On: the video still starts silent (browsers allow nothing else) but carries a sound button the visitor can switch on. Off: a silent loop.' }
       - name: home
         label: Home strip card
         widget: object
@@ -134,7 +135,7 @@ collections:
       - { name: title, label: Title, widget: string, i18n: true }
       - { name: date, label: Date, widget: datetime }
       - { name: cover, label: Cover image, widget: image }
-      - { name: categories, label: Categories, widget: list, required: false }
+      - { name: categories, label: Categories, widget: relation, collection: taxonomy, file: categories, value_field: 'blog.*.name', display_fields: ['blog.*.name'], search_fields: ['blog.*.name'], multiple: true, required: false, hint: 'Pick one or more. The list itself is edited under Categories in the sidebar.' }
       - { name: tags, label: Tags, widget: list, required: false }
       - { name: excerpt, label: Excerpt (the short text under the title), widget: text, i18n: true }
       - { name: url, label: Page address, widget: string, i18n: true, required: false, hint: 'Leave empty for an automatic address: blog/yyyy/mm/dd/<name>/ in English, ge/yyyy/mm/dd/<name>/ in Georgian. Existing posts keep their old bitz.ge addresses.' }
@@ -170,6 +171,7 @@ collections:
     fields:
       - { name: title, label: Group name, widget: string, i18n: true }
       - { name: label, label: Short label (shown under the bubble), widget: string, i18n: true }
+      - { name: categories, label: Categories, widget: relation, collection: taxonomy, file: categories, value_field: 'shots.*.name', display_fields: ['shots.*.name'], search_fields: ['shots.*.name'], multiple: true, required: false, hint: 'Pick one or more. The list itself is edited under Categories in the sidebar.' }
       - { name: order, label: Order, widget: number, value_type: int, default: 50 }
       - { name: ring, label: Bubble image (optional), widget: image, required: false, media_folder: /assets/shots, public_folder: /assets/shots, hint: 'Leave empty: the bubble shows a frame of the first clip and plays it on hover, made automatically on publish. Set a square image only to replace that frame.' }
       - name: items
@@ -184,6 +186,20 @@ collections:
           - { name: webm, label: Video (webm), widget: file, required: false }
           - { name: mp4, label: Video (mp4), widget: file, required: false, hint: 'At least one of the two videos. webm is smaller; mp4 plays everywhere.' }
           - { name: sound, label: Has sound, widget: boolean, default: true }
+
+  # ------------------------------------------------------------------ the category lists (what the dropdowns above offer)
+  - name: taxonomy
+    label: Categories
+    description: The categories the Projects, Blog and Shots dropdowns offer. Add, rename or remove them here; a renamed category has to be picked again on the entries that used it.
+    files:
+      - name: categories
+        label: Categories
+        file: content/taxonomy/categories.json
+        format: json
+        fields:
+          - { name: projects, label: Project categories, label_singular: Category, widget: list, summary: '{{name}}', fields: [{ name: name, label: Name, widget: string }] }
+          - { name: blog, label: Blog categories, label_singular: Category, widget: list, summary: '{{name}}', fields: [{ name: name, label: Name, widget: string }] }
+          - { name: shots, label: Shot categories, label_singular: Category, widget: list, summary: '{{name}}', fields: [{ name: name, label: Name, widget: string }] }
 
   # ------------------------------------------------------------------ the Profile and Contact circles
   - name: pages

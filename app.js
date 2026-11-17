@@ -245,8 +245,8 @@ function dismissPre() {
     if (!S.mobile) intro(window.bitzLoader?.style || 'fly');
     if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
   };
-  if (window.bitzLoader) bitzLoader.exit(go);          // index.html: plays the write-on, waits for it, then hands over
-  else { go(); if (RM) $('#pre').style.display = 'none'; else gsap.to('#pre', { opacity: 0, duration: 0.85, delay: 0.25, ease: 'power2.inOut', onComplete: () => ($('#pre').style.display = 'none') }); }
+  if (window.bitzLoader) bitzLoader.exit(go, startLoops);   // index.html: plays the write-on, waits for it, then hands over
+  else { startLoops(); go(); if (RM) $('#pre').style.display = 'none'; else gsap.to('#pre', { opacity: 0, duration: 0.85, delay: 0.25, ease: 'power2.inOut', onComplete: () => ($('#pre').style.display = 'none') }); }
 }
 setTimeout(dismissPre, 4000);
 
@@ -431,7 +431,7 @@ function cardMaterial(transparent = false) {
 // ---------------------------------------------------------------- card textures: cover + title + category + arrow baked into one canvas,
 // so the label is part of the card and bends with it (the reference draws its titles in GL on the same surface)
 function bake(c) {
-  const cw = 1600, ch = Math.round(cw * S.H / S.W);
+  const cw = clamp(Math.round(S.W / pxToWorld() * Math.min(devicePixelRatio || 1, 1.75) * 1.5), 800, 1600), ch = Math.round(cw * S.H / S.W);   // 1.5x the card's screen size, so the zoom into a project stays sharp
   const cv = c.canvas || (c.canvas = document.createElement('canvas'));
   cv.width = cw; cv.height = ch;
   const x = cv.getContext('2d');
@@ -466,11 +466,27 @@ function loadTex(c) {
   total++;
   const home = c.p.home || {}, src = home.img || c.p.cover;
   c.vid = !!home.video && !S.mobile;
-  const img = new Image();
-  img.onload = () => { c.img = img; bake(c); if (c.vid) setVideoCover(c, img); loaded++; progress(); };
-  img.onerror = () => { c.img = null; bake(c); loaded++; progress(); };
-  img.src = src;
+  // the pixels are decoded off the main thread (an ImageBitmap; an <img> drawn onto the canvas would decode again, on the main thread,
+  // at the drawn size), and the bake (a canvas of up to 1600 px, then its upload) is queued one per frame, so the loader's writing hand never
+  // waits on a burst of cards arriving together (that read as small freezes on a laptop)
+  const viaImg = () => { const img = new Image(); img.onload = () => queueBake(c, img); img.onerror = () => queueBake(c, null); img.src = src; };
+  if (!window.createImageBitmap) return viaImg();
+  fetch(src).then(r => { if (!r.ok) throw 0; return r.blob(); }).then(bl => createImageBitmap(bl)).then(bm => queueBake(c, bm)).catch(viaImg);
 }
+const bakeQ = []; let bakeOn = false;
+function queueBake(c, img) {
+  bakeQ.push([c, img]);
+  if (bakeOn) return; bakeOn = true;
+  const step = () => {
+    const next = bakeQ.shift(); if (!next) { bakeOn = false; return; }
+    const [c, img] = next; c.img = img; bake(c); if (img && c.vid) setVideoCover(c, img); loaded++; progress();
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+const pendingLoops = [];                                  // card loops wait for the loader's write-on to finish before they play
+let loopsGo = false;
+function startLoops() { loopsGo = true; pendingLoops.splice(0).forEach(v => v.play().catch(() => {})); }
 // video cards (the live bitz.ge home page plays loops on Marsleaders and E-Space): the poster shows until the first frame is decoded
 function setVideoCover(c, poster) {
   const u = c.mesh.material.uniforms;
@@ -487,7 +503,7 @@ function setVideoCover(c, poster) {
     u.uVid.value = vt; u.uVidDec.value = 1; c.vidW = v.videoWidth; c.vidH = v.videoHeight; setVidCrop(c); pt.dispose();
   }, { once: true });
   c.video = v;
-  v.play().catch(() => {});
+  if (loopsGo) v.play().catch(() => {}); else pendingLoops.push(v);
 }
 function setVidCrop(c) {
   if (!c.vidW) return;
@@ -578,7 +594,7 @@ function initGL() {
   addEventListener('resize', resize);
   bindInput(canvas);
   last = performance.now();
-  requestAnimationFrame(frame);
+  requestAnimationFrame(frame);   // the first frame compiles the shaders (200-300 ms on a laptop): the loader's hand starts writing after it
 }
 
 // world-space layout from the viewport: cards are sized like the reference's (fractions of the frustum at z = 0)
@@ -666,8 +682,10 @@ function placeCards() {
 }
 
 let last = 0;
+let framed = false;
 function frame(now) {
   const dt = Math.min(0.05, (now - last) / 1000 || 0.016); last = now;
+  if (!framed) { framed = true; requestAnimationFrame(() => { window.__framed = true; document.dispatchEvent(new Event('bitz:frame')); }); }   // the loader's hand waits for this
   if (RM) { S.s = S.sT; S.vel = 0; }
   else {
     // the reference's reel is an exponential ease-out (Lenis-style lerp): 26% / 49% / 59% of a card at 155 / 300 / 450 ms = tau 0.5 s;
@@ -896,6 +914,15 @@ const panel = $('#panel'), ghost = $('#ghost'), dimEl = $('#dim'), hero = $('#pH
 const pr = $('#pScroll'), prc = $('#pContent'), spin = $('#ring'), slivers = [$('#prevP'), $('#nextP')];
 const ringArc = spin.querySelector('.arc'), ringGho = spin.querySelector('.gho'), RING_C = 100.53;
 // the gallery column loops (reference): a second copy, one viewport tall, follows the content, so Lenis' infinite range is exactly one period
+// a gallery video marked "sound" in the admin starts silent (browsers allow no other autoplay) and carries this button; one video
+// with sound at a time, and everything is silent again when the project closes. The loop's copies share the original's state.
+const SND_BTN = '<button type="button" class="vsnd" aria-label="Sound" aria-pressed="false"><i class="on">&#9834;</i><i class="off">&#9834;&#824;</i></button>';
+function soundVids() { return [...$('#pBody').querySelectorAll('figure.vid video')]; }
+function syncSound() {
+  const vids = soundVids();
+  for (const box of prc.querySelectorAll('#pBody, .dup')) [...box.querySelectorAll('figure.vid')].forEach((f, k) => f.querySelector('.vsnd')?.setAttribute('aria-pressed', String(!!vids[k] && !vids[k].muted)));
+}
+function muteAll() { soundVids().forEach(v => { v.muted = true; }); syncSound(); }
 function buildLoop() {
   prc.querySelector('.dup')?.remove();
   if (S.mobile) return;
@@ -903,7 +930,7 @@ function buildLoop() {
   const hf = hero.closest('figure').cloneNode(true); hf.querySelector('img').removeAttribute('id'); hf.classList.add('in');
   dup.append(hf, ...[...$('#pBody').children].map(n => { const c = n.cloneNode(true); if (c.tagName === 'FIGURE') c.classList.add('in'); c.querySelectorAll('video').forEach(v => { v.innerHTML = ''; }); return c; }));
   prc.appendChild(dup);
-  sizeLoop();
+  sizeLoop(); syncSound();
 }
 function sizeLoop() {
   const dup = prc.querySelector('.dup'); if (!dup) return;
@@ -931,7 +958,7 @@ function fill(p) {
   $('#pBody').innerHTML =
     t.sections.map((s, k) => `<div class="txt">${s.h ? (p.story ? `<h2>${s.h}</h2>` : `<h3>${s.h}</h3>`) : ''}${(Array.isArray(s.t) ? s.t : [s.t]).map(x => `<p>${x}</p>`).join('')}${k === 0 ? cred : ''}</div>`).join('') +
     p.gallery.map(g => typeof g === 'string' ? `<figure><img src="${g}" alt="" loading="lazy"></figure>`
-      : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video></figure>`).join('');
+      : `<figure class="vid"><video muted loop playsinline preload="none"${g.poster ? ` poster="${g.poster}"` : ''}>${g.video ? `<source src="${g.video}" type="video/mp4">` : ''}${g.webm ? `<source src="${g.webm}" type="video/webm">` : ''}</video>${g.sound ? SND_BTN : ''}</figure>`).join('');
   fillAsk(p);
   buildLoop(); loopFree = false;
   pr.scrollTop = 0; panel.scrollTop = 0;
@@ -1282,7 +1309,7 @@ function closeProject() {
   const i = S.open, D = RM ? 0 : 1;
   slivers.forEach(s => s.classList.remove('on'));
   const done = () => {
-    disposePanelPlanes(); disposeGhosts();
+    disposePanelPlanes(); disposeGhosts(); muteAll();
     panel.classList.remove('on'); panel.style.opacity = ''; ghost.style.opacity = 0;
     document.body.classList.remove('lock'); dimEl.style.pointerEvents = 'none';
     if (openCard) { restoreCard(openCard); openCard = null; }
@@ -1712,12 +1739,22 @@ function storyRects() {
     let cw = innerWidth - 40 - 2 * inset, ch = cw * 1.25;
     if (ch + inset + band > room) { ch = room - inset - band; cw = ch * 0.8; }
     const W = cw + 2 * inset, H = ch + inset + band, x = (innerWidth - W) / 2, y = Math.max(15, (innerHeight - 85 - H) / 2 + 8);
-    return { sheet: { x, y, width: W, height: H }, clip: { x: x + inset, y: y + inset, width: cw, height: ch } };
+    return storyBox(snapRect({ x: x + inset, y: y + inset, width: cw, height: ch }), inset, band);
   }
   const vh = innerHeight, H = STORY.h * vh, inset = STORY.inset * vh, band = STORY.band * vh;
   const vidH = H - inset - band, vidW = vidH * STORY.aspect, W = vidW + 2 * inset;
   const x = (innerWidth - W) / 2, y = (vh - H) / 2;
-  return { sheet: { x, y, width: W, height: H }, clip: { x: x + inset, y: y + inset, width: vidW, height: vidH } };
+  return storyBox(snapRect({ x: x + inset, y: y + inset, width: vidW, height: vidH }), inset, band);
+}
+const storyBox = (clip, inset, band) => ({ clip, sheet: { x: clip.x - inset, y: clip.y - inset, width: clip.width + 2 * inset, height: clip.height + inset + band } });
+// The clip's edges must sit exactly on device pixels: its rounded-corner mask is anti-aliased, and an edge that misses the pixel by a
+// fraction blends the last column with the white behind it into a thin line (seen at 125 % scaling). Layout keeps CSS lengths on a
+// 1/64 px grid, so the snap uses the coarsest step that is whole on both grids (4 px at 1.25, 2 px at 1.5, 0.5 px at 2).
+function snapRect(r) {
+  const k = devicePixelRatio || 1;
+  let g = 1 / k; for (let n = 1; n <= 16; n++) { const c = n / k; if (Math.abs(c * 64 - Math.round(c * 64)) < 1e-6) { g = c; break; } }
+  const s = v => Math.round(v / g) * g, x = s(r.x), y = s(r.y);
+  return { x, y, width: s(r.x + r.width) - x, height: s(r.y + r.height) - y };
 }
 function storyGL() {
   if (story.sheet || S.mobile) return;
@@ -1838,6 +1875,16 @@ function closeStory() {
 }
 $('#shotPrev').addEventListener('click', () => showShot(story.g, story.i - 1));
 $('#shotNext').addEventListener('click', () => showShot(story.g, story.i + 1));
+prc.addEventListener('click', e => {                    // the sound button of a gallery video (original or its copy in the loop)
+  const btn = e.target.closest('.vsnd'); if (!btn) return;
+  e.preventDefault(); e.stopPropagation();
+  const fig = btn.closest('figure'), k = [...fig.closest('#pBody, .dup').querySelectorAll('figure.vid')].indexOf(fig), vids = soundVids(), v = vids[k];
+  if (!v) return;
+  const on = v.muted;                                    // switching this one on silences the others
+  vids.forEach(o => { o.muted = o !== v || !on; });
+  if (on && v.paused) v.play().catch(() => {});
+  syncSound();
+});
 $('#shotMute').addEventListener('click', e => { story.muted = !story.muted; vid.muted = story.muted; e.currentTarget.setAttribute('aria-pressed', String(story.muted)); });
 $('#storyClose').addEventListener('click', closeStory);
 applyLang();

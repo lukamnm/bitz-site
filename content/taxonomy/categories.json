@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "name": "3D Design"
+    },
+    {
+      "name": "Branding"
+    },
+    {
+      "name": "Graphic Design"
+    },
+    {
+      "name": "Motion Graphic"
+    },
+    {
+      "name": "Web Design"
+    },
+    {
+      "name": "UI/UX"
+    }
+  ],
+  "blog": [
+    {
+      "name": "3D & Product Design"
+    },
+    {
+      "name": "Branding"
+    },
+    {
+      "name": "Design Process"
+    },
+    {
+      "name": "Motion Design"
+    },
+    {
+      "name": "UI/UX"
+    }
+  ],
+  "shots": [
+    {
+      "name": "3D and Visualization"
+    },
+    {
+      "name": "Brand Identity"
+    },
+    {
+      "name": "Digital Product"
+    },
+    {
+      "name": "Motion and Animation"
+    }
+  ]
+}
