@@ -15,6 +15,11 @@
     "about": "Exobiopharma came to Bitz for a visual identity that could carry a biopharmaceutical brand from the lab bench to the pharmacy shelf. The brief asked for a system that reads as scientific and trustworthy without slipping into the sterile, interchangeable look so much of the pharma category defaults to.\n\nThe identity is built around a bold, all-caps wordmark set in Poppins Bold, paired with a palette that moves between clinical blue and higher-energy accent tones. Poppins Regular carries the longer scientific and regulatory copy. Logo construction, packaging and the app icon were worked through together, so the brand holds up at shelf scale and on a screen.",
     "credits": [],
     "cover": "/assets/img/exobiopharma.webp",
+    "coverVideo": {
+      "video": "",
+      "webm": "/assets/video/projects/exobiopharma.webm",
+      "sound": false
+    },
     "gallery": [
       {
         "type": "video",
