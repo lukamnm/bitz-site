@@ -70,7 +70,17 @@ collections:
           - { name: role, label: Role, widget: string, i18n: true }
           - { name: name, label: Name, widget: string, i18n: duplicate }
           - { name: link, label: Link, widget: string, required: false, i18n: duplicate }
-      - { name: cover, label: Cover (first image of the project page), widget: image }
+      - { name: cover, label: Cover (first image of the project page; the still of the cover video when there is one), widget: image }
+      - name: coverVideo
+        label: Cover video
+        widget: object
+        required: false
+        collapsed: true
+        hint: 'Optional: a video loop at the top of the project page instead of the cover image. The cover image is then its first frame while it loads. Same rules as a gallery video.'
+        fields:
+          - { name: video, label: Video (mp4), widget: file, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects, hint: 'mp4 (H.264) plays everywhere. Keep it under 10 MB.' }
+          - { name: webm, label: Video (webm), widget: file, required: false, media_folder: /assets/video/projects, public_folder: /assets/video/projects, hint: 'Optional smaller copy; an mp4 is made from it on deploy if there is none.' }
+          - { name: sound, label: Sound, widget: boolean, default: false, required: false, hint: 'On: the video still starts silent (browsers allow nothing else) but carries a sound button the visitor can switch on. Off: a silent loop.' }
       - name: gallery
         label: Gallery
         label_singular: Item
@@ -98,11 +108,11 @@ collections:
         widget: object
         required: false
         collapsed: true
-        hint: 'What the card on the home strip shows. Without it the cover is used.'
+        hint: 'What the card on the home strip shows: an image, a video loop, or both (the image is then the still while the video loads). Without it the cover is used. The card is landscape 7:4 (1750 x 1000 is plenty); other shapes are cropped to it.'
         fields:
           - { name: img, label: Card image (also the video poster), widget: image, required: false, media_folder: /assets/home, public_folder: /assets/home }
-          - { name: video, label: Card video loop (mp4), widget: file, required: false, media_folder: /assets/home, public_folder: /assets/home }
-          - { name: webm, label: Card video loop (webm), widget: file, required: false, media_folder: /assets/home, public_folder: /assets/home }
+          - { name: video, label: Card video loop (mp4), widget: file, required: false, media_folder: /assets/home, public_folder: /assets/home, hint: 'mp4 (H.264) plays everywhere. Keep it under 10 MB.' }
+          - { name: webm, label: Card video loop (webm), widget: file, required: false, media_folder: /assets/home, public_folder: /assets/home, hint: 'Optional smaller copy; an mp4 is made from it on deploy if there is none.' }
       - name: seo
         label: Search and sharing
         widget: object

@@ -1,6 +1,8 @@
-// galleryvideo.mjs - finishes the project gallery videos (content/projects/*/project.json, gallery items of type "video"):
-//   - a poster <video name>.webp next to the file when the item has none (a representative frame, like the shot bubbles)
-//   - an mp4 made from the webm when an item only has a webm (Safari and older phones do not play every webm)
+// galleryvideo.mjs - finishes the project videos (content/projects/*/project.json: gallery items of type "video", the cover video
+// and the home strip card's loop):
+//   - a poster <video name>.webp next to the file when a gallery item has none (a representative frame, like the shot bubbles);
+//     the cover video's poster is the cover image, the card's its card image (or the cover)
+//   - an mp4 made from the webm when only a webm was uploaded (Safari and older phones do not play every webm)
 //   node tools/galleryvideo.mjs           make what is missing
 //   node tools/galleryvideo.mjs --check   exit 1 if anything is missing (the deploy workflow then installs ffmpeg and runs it)
 //   node tools/galleryvideo.mjs --slim    also re-encode mp4s over 6 MB to a web size (max 1600 wide, H.264 crf 24, silent), once per file
@@ -32,13 +34,18 @@ function jobs() {
   for (const slug of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
     const f = path.join(dir, slug, 'project.json'); if (!fs.existsSync(f)) continue;
     const j = JSON.parse(fs.readFileSync(f, 'utf8'));
-    for (const g of j.en?.gallery || []) {
-      if (typeof g !== 'object' || !(g.type === 'video' || g.video || g.webm)) continue;
+    // every video of the project: gallery items (with a poster), the cover video and the card loop ("at" finds the same object in a
+    // freshly read file, so a made mp4 can be written back into it)
+    const vids = (j.en?.gallery || []).map((g, k) => ({ g, at: x => x.en.gallery[k], poster: true }));
+    if (j.en?.coverVideo) vids.push({ g: j.en.coverVideo, at: x => x.en.coverVideo });
+    if (j.en?.home) vids.push({ g: j.en.home, at: x => x.en.home });
+    for (const { g, at, poster: wantPoster } of vids) {
+      if (!g || typeof g !== 'object' || !(g.video || g.webm)) continue;
       const src = [g.video, g.webm].find(p => p && fs.existsSync(abs(p))); if (!src) continue;
       const poster = g.poster || posterOf(g.video || g.webm);
-      const item = { slug, file: f, g, src, poster };
-      if (!fs.existsSync(abs(poster))) out.push({ ...item, kind: 'poster' });
-      if (!g.video && g.webm) { const mp4 = g.webm.replace(/\.webm$/i, '.mp4'); if (!fs.existsSync(abs(mp4))) out.push({ ...item, kind: 'mp4', mp4 }); else if (g.video !== mp4) out.push({ ...item, kind: 'link', mp4 }); }
+      const item = { slug, file: f, g, at, src, poster };
+      if (wantPoster && !fs.existsSync(abs(poster))) out.push({ ...item, kind: 'poster' });
+      if (!g.video && g.webm) { const mp4 = g.webm.replace(/\.webm$/i, '.mp4'); out.push({ ...item, kind: fs.existsSync(abs(mp4)) ? 'link' : 'mp4', mp4 }); }
       if (process.argv.includes('--slim') && g.video && fs.existsSync(abs(g.video)) && mb(abs(g.video)) > SLIM_MB && !slimmed.has(path.basename(g.video))) out.push({ ...item, kind: 'slim' });
     }
   }
@@ -79,7 +86,7 @@ function main() {
     }
     if (t.kind === 'link') {   // write the new mp4 into the project file so the admin shows it too
       const j = JSON.parse(fs.readFileSync(t.file, 'utf8'));
-      for (const g of j.en.gallery) if (g && g.webm === t.g.webm && !g.video) g.video = t.mp4;
+      const g = t.at(j); if (g && !g.video) g.video = t.mp4;
       fs.writeFileSync(t.file, JSON.stringify(j, null, 2) + '\n');
     }
   }

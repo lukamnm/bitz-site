@@ -465,7 +465,7 @@ function bake(c) {
 function loadTex(c) {
   total++;
   const home = c.p.home || {}, src = home.img || c.p.cover;
-  c.vid = !!home.video && !S.mobile;
+  c.vid = !!(home.video || home.webm) && !S.mobile;
   // the pixels are decoded off the main thread (an ImageBitmap; an <img> drawn onto the canvas would decode again, on the main thread,
   // at the drawn size), and the bake (a canvas of up to 1600 px, then its upload) is queued one per frame, so the loader's writing hand never
   // waits on a burst of cards arriving together (that read as small freezes on a laptop)
@@ -917,17 +917,19 @@ const ringArc = spin.querySelector('.arc'), ringGho = spin.querySelector('.gho')
 // a gallery video marked "sound" in the admin starts silent (browsers allow no other autoplay) and carries this button; one video
 // with sound at a time, and everything is silent again when the project closes. The loop's copies share the original's state.
 const SND_BTN = '<button type="button" class="vsnd" aria-label="Sound" aria-pressed="false"><i class="on">&#9834;</i><i class="off">&#9834;&#824;</i></button>';
-function soundVids() { return [...$('#pBody').querySelectorAll('figure.vid video')]; }
+const origFigs = () => [...prc.querySelectorAll('figure.vid')].filter(f => !f.closest('.dup'));   // the originals in order: the cover video first, then the gallery
+function soundVids() { return origFigs().map(f => f.querySelector('video')); }
 function syncSound() {
-  const vids = soundVids();
-  for (const box of prc.querySelectorAll('#pBody, .dup')) [...box.querySelectorAll('figure.vid')].forEach((f, k) => f.querySelector('.vsnd')?.setAttribute('aria-pressed', String(!!vids[k] && !vids[k].muted)));
+  const vids = soundVids(), dup = prc.querySelector('.dup');
+  for (const figs of [origFigs(), dup ? [...dup.querySelectorAll('figure.vid')] : []])
+    figs.forEach((f, k) => f.querySelector('.vsnd')?.setAttribute('aria-pressed', String(!!vids[k] && !vids[k].muted)));
 }
 function muteAll() { soundVids().forEach(v => { v.muted = true; }); syncSound(); }
 function buildLoop() {
   prc.querySelector('.dup')?.remove();
   if (S.mobile) return;
   const dup = document.createElement('div'); dup.className = 'dup';
-  const hf = hero.closest('figure').cloneNode(true); hf.querySelector('img').removeAttribute('id'); hf.classList.add('in');
+  const hf = hero.closest('figure').cloneNode(true); hf.querySelector('img').removeAttribute('id'); hf.classList.add('in'); hf.querySelectorAll('video').forEach(v => { v.innerHTML = ''; });
   dup.append(hf, ...[...$('#pBody').children].map(n => { const c = n.cloneNode(true); if (c.tagName === 'FIGURE') c.classList.add('in'); c.querySelectorAll('video').forEach(v => { v.innerHTML = ''; }); return c; }));
   prc.appendChild(dup);
   sizeLoop(); syncSound();
@@ -953,6 +955,12 @@ function fill(p) {
   hero.onload = () => spin.classList.remove('on');
   hero.src = p.cover; hero.alt = t.title + ' cover';
   if (hero.complete) spin.classList.remove('on');
+  const hf = hero.closest('figure'), cv = p.coverVideo;   // a cover video replaces the image in the figure; the image (still loaded) is its poster
+  hf.querySelectorAll('video, .vsnd').forEach(n => n.remove());
+  hf.classList.toggle('vid', !!cv); hero.style.display = cv ? 'none' : '';
+  if (cv) hf.insertAdjacentHTML('beforeend', `<video muted loop playsinline preload="none" poster="${p.cover}">${cv.video ? `<source src="${cv.video}" type="video/mp4">` : ''}${cv.webm ? `<source src="${cv.webm}" type="video/webm">` : ''}</video>${cv.sound ? SND_BTN : ''}`);
+  // the figure takes the video's shape once known (the cover image may be cut differently): its loop copy too, so the seam stays exact
+  if (cv) hf.querySelector('video').addEventListener('loadedmetadata', e => { const v = e.target, ar = v.videoWidth + ' / ' + v.videoHeight; v.style.aspectRatio = ar; const d = prc.querySelector('.dup > figure:first-child video'); if (d) d.style.aspectRatio = ar; }, { once: true });
   // the collaborators (role + name, the name a link where there is one) sit at the end of the About block
   const cred = (p.credits || []).length ? `<ul class="cred">${p.credits.map(c => `<li><span>${(lang === 'ge' && c.role.ge) || c.role.en}</span>${c.link ? `<a href="${c.link}" target="_blank" rel="noopener">${c.name}</a>` : `<b>${c.name}</b>`}</li>`).join('')}</ul>` : '';
   $('#pBody').innerHTML =
@@ -969,7 +977,7 @@ function fill(p) {
   $('#pBody').querySelectorAll('figure').forEach(f => (RM ? f.classList.add('in') : io.observe(f)));
   vio?.disconnect();
   vio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) en.target.play().catch(() => {}); else en.target.pause(); }), { root: S.mobile ? panel : pr, rootMargin: '40% 0px' });
-  $('#pBody').querySelectorAll('video').forEach(v => vio.observe(v));
+  prc.querySelectorAll('video').forEach(v => { if (!v.closest('.dup')) vio.observe(v); });
   if (panel.classList.contains('on')) buildPanelPlanes();      // needs the panel laid out; openProject builds after it sizes the panel
 }
 
@@ -1000,8 +1008,8 @@ function buildPanelPlanes() {
       new THREE.TextureLoader().load(el.getAttribute('src'), tex => { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); apply(tex, tex.image); });
       continue;
     }
-    const i = [...el.closest('#pBody, .dup').querySelectorAll('video')].indexOf(el);
-    if (el.closest('.dup')) { vidSubs[i]?.push(apply); continue; }
+    const inDup = !!el.closest('.dup'), i = [...prc.querySelectorAll('video')].filter(v => !!v.closest('.dup') === inDup).indexOf(el);
+    if (inDup) { vidSubs[i]?.push(apply); continue; }
     const subs = vidSubs[i] = [apply], vsize = () => ({ width: el.videoWidth, height: el.videoHeight });
     if (el.__vt) { subs.forEach(f => f(el.__vt, vsize())); continue; }            // rebuilt (resize) while already playing
     const poster = el.getAttribute('poster');
@@ -1879,7 +1887,7 @@ $('#shotNext').addEventListener('click', () => showShot(story.g, story.i + 1));
 prc.addEventListener('click', e => {                    // the sound button of a gallery video (original or its copy in the loop)
   const btn = e.target.closest('.vsnd'); if (!btn) return;
   e.preventDefault(); e.stopPropagation();
-  const fig = btn.closest('figure'), k = [...fig.closest('#pBody, .dup').querySelectorAll('figure.vid')].indexOf(fig), vids = soundVids(), v = vids[k];
+  const fig = btn.closest('figure'), dup = fig.closest('.dup'), k = (dup ? [...dup.querySelectorAll('figure.vid')] : origFigs()).indexOf(fig), vids = soundVids(), v = vids[k];
   if (!v) return;
   const on = v.muted;                                    // switching this one on silences the others
   vids.forEach(o => { o.muted = o !== v || !on; });

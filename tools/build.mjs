@@ -50,6 +50,7 @@ const catNames = list => (list || []).map(c => String(c).replace(/&amp;/g, '&').
 const vidPoster = v => v ? v.replace(/.(mp4|webm)$/i, '.webp') : null;
 const gal = list => (list || []).map(g => typeof g === 'string' ? rel(g) : g.type === 'video' || g.video || g.webm
   ? { ...pick({ video: rel(g.video), webm: rel(g.webm), poster: rel(g.poster) || vidPoster(rel(g.video) || rel(g.webm)) }, ['video', 'webm', 'poster']), ...(g.sound ? { sound: true } : {}) } : rel(g.image)).filter(Boolean);
+const coverVid = v => v && (v.video || v.webm) ? { coverVideo: { ...pick({ video: rel(v.video), webm: rel(v.webm) }, ['video', 'webm']), ...(v.sound ? { sound: true } : {}) } } : {};
 const projects = [];
 for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/projects') : []) {
   const f = `content/projects/${slug}/project.json`; if (!fs.existsSync(f)) continue;
@@ -62,8 +63,8 @@ for (const slug of fs.existsSync('content/projects') ? fs.readdirSync('content/p
   const credits = (en.credits || []).filter(c => has(c.name)).map((c, k) => ({ role: { en: c.role || '', ge: ka.credits?.[k]?.role || null }, name: c.name, link: has(c.link) ? c.link : null }));
   projects.push({
     slug, order: has(en.order) ? +en.order : 999, title: en.title || slug, featured: en.featured !== false, year: en.year || '', client: en.client || '',
-    cats: catNames(en.cats), link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), gallery: gal(en.gallery), sections: about(en, 'en'), credits,
-    home: en.home && (en.home.img || en.home.video) ? pick({ img: rel(en.home.img), video: rel(en.home.video), webm: rel(en.home.webm) }, ['img', 'video', 'webm']) : null,
+    cats: catNames(en.cats), link: en.link || null, blurb: en.blurb || '', cover: rel(en.cover), ...coverVid(en.coverVideo), gallery: gal(en.gallery), sections: about(en, 'en'), credits,
+    home: en.home && (en.home.img || en.home.video || en.home.webm) ? pick({ img: rel(en.home.img), video: rel(en.home.video), webm: rel(en.home.webm) }, ['img', 'video', 'webm']) : null,
     seo: seo(en.seo),
     url: { en: addr(en.url) || `portfolio/${slug}/`, ge: ka.title ? addr(ka.url) || `ge/portfolio/${slug}/` : null },
     i18n: { ge: { title: ka.title || null, blurb: ka.blurb || null, sections: kaSec.length ? kaSec : null, seo: seo(ka.seo) } },
