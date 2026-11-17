@@ -1,131 +1,129 @@
 {
- "en": {
-  "title": "Exobiopharma",
-  "featured": true,
-  "order": 0,
-  "year": "2026",
-  "client": "Exobiopharma",
-  "cats": [
-   "Branding",
-   "3D Design",
-   "Motion Graphic"
-  ],
-  "blurb": "A visual identity that carries a biopharmaceutical brand from the lab bench to the shelf - wordmark, palette and type system built to stay scientific without going sterile.",
-  "about": "Exobiopharma came to Bitz for a visual identity that could carry a biopharmaceutical brand from the lab bench to the pharmacy shelf. The brief asked for a system that reads as scientific and trustworthy without slipping into the sterile, interchangeable look so much of the pharma category defaults to.\n\nThe identity is built around a bold, all-caps wordmark set in Poppins Bold, paired with a palette that moves between clinical blue and higher-energy accent tones. Poppins Regular carries the longer scientific and regulatory copy. Logo construction, packaging and the app icon were worked through together, so the brand holds up at shelf scale and on a screen.",
-  "cover": "/assets/img/exobiopharma.webp",
-  "gallery": [
-   {
-    "type": "video",
-    "webm": "/assets/video/projects/exobiopharma-video-loop.webm",
-    "video": "/assets/video/projects/exobiopharma-video-loop.mp4"
-   },
-   {
-    "type": "video",
-    "webm": "/assets/video/projects/exobiopharma-logo-grid-animation.webm",
-    "video": "/assets/video/projects/exobiopharma-logo-grid-animation.mp4"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-1.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-2.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-3.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-4.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-5.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-6.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-7.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-8.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-9.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-10.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-11.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-12.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-13.webp"
-   },
-   {
-    "type": "image",
-    "image": "/assets/img/exobiopharma-14.webp"
-   }
-  ],
-  "home": {
-   "img": "/assets/home/exobiopharma.webp"
-  },
-  "seo": {
-   "title": "Exobiopharma - Biopharma Brand Identity | Bitz Portfolio",
-   "description": "Brand identity for Exobiopharma - logo, color system and typography for a biopharmaceutical company.",
-   "image": "https://bitz.ge/wp-content/uploads/2026/08/logo-usage.webp"
-  }
- },
- "ka": {
-  "title": "Exobiopharma",
-  "blurb": "Exobiopharma-ს ისეთი ვიზუალური იდენტობა სჭირდებოდა, რომელიც ბიოფარმაცევტულ ბრენდს ლაბორატორიიდან აფთიაქის თარომდე გაჰყვებოდა. ბრიფის მთავარი მოთხოვნა იყო სისტემა, რომელიც მეცნიერულად და სანდოდ აღიქმება, მაგრამ არ იხარშება იმ სტერილურ და ერთმანეთისგან განურჩეველ ვიზუალურ ენაში, რომელსაც ფარმაცევტული კატეგორიის დიდი ნაწილი მისდევს. ლოგოტიპი, პალიტრა და ტიპოგრაფიული სისტემა, საკმარისად თავდაჯერებულია იმისთვის, რომ გადატვირთულ და მკაცრად რეგულირებულ ბაზარზე საკუთარი ადგილი დაიმკვიდროს.",
-  "sections": [
-   {
-    "h": "პროექტის მიმოხილვა",
-    "t": "იდენტობა ავაგეთ თამამ ლოგოტიპზე, რომელიც Poppins Bold-ით, მთლიანად მთავრული ასოებითაა აწყობილი. მას თან ახლავს პალიტრა, რომელიც კლინიკურ ლურჯსა და უფრო ენერგიულ აქცენტურ ტონებს შორის მოძრაობს. ბალანსი, რომელიც ერთდროულად ამბობს „მეცნიერებას“ და „თავდაჯერებულობას“. ყველა შეხების წერტილი, ლოგოს კონსტრუქციიდან შეფუთვამდე და აპლიკაციის ხატულამდე ისეა გააზრებული, რომ თანაბრად კარგად იმუშაოს როგორც აფთიაქის თაროზე, ისე ეკრანზე."
-   },
-   {
-    "h": "დიზაინ სისტემა",
-    "t": "ლოგოს არქიტექტურის, ფერებისა და ტიპოგრაფიის დეტალური მიმოხილვა. ელემენტები, რომლებიც ბრენდის იდენტობას აყალიბებს"
-   },
-   {
-    "h": "EXOBIOPHARMA",
-    "t": "Poppins Bold, მთავრული ასოებით, თან ერთვის ყველა სათაურს და თავად ლოგოტიპსაც. პირდაპირი და კლინიკურად ზუსტი. Poppins Regular კი ძირითად ტექსტს ემსახურება და სამეცნიერო თუ მარეგულირებელი ტექსტის სიგრძე-სიგანესაც ნებისმიერ ზომაზე ადვილად წასაკითხს ხდის."
-   },
-   {
-    "h": "დიზაინს მიღმა",
-    "t": "Exobiopharma-ზე მუშაობა ნიშნავდა, რომ მეცნიერებაზე დაფუძნებული ბრენდისთვის ისეთი სახე შეგვექმნა, რომლის ნდობაც შესაძლებელია. საკმარისად მკაფიო აფთიაქის თაროსთვის და საკმარისად სანდო კლინიკური გარემოსთვის. გაქვთ შეკითხვები ან გსურთ მეტის გაგება?"
-   }
-  ],
-  "seo": {
-   "title": "Exobiopharma - ბიოფარმის ბრენდის იდენტობა | Bitz პორტფოლიო",
-   "description": "Exobiopharma-ს ბრენდის იდენტობა - ლოგო, ფერთა სისტემა და ტიპოგრაფია ბიოფარმაცევტული კომპანიისთვის."
-  }
- },
- "_wp": {
   "en": {
-   "id": 4304,
-   "link": "https://bitz.ge/portfolio/exobiopharma/",
-   "modified": "2026-09-04T11:10:21"
+    "title": "Exobiopharma",
+    "featured": true,
+    "order": 0,
+    "year": "2026",
+    "client": "Exobiopharma",
+    "cats": [
+      "Branding",
+      "3D Design",
+      "Motion Graphic"
+    ],
+    "link": "",
+    "blurb": "A visual identity that carries a biopharmaceutical brand from the lab bench to the shelf - wordmark, palette and type system built to stay scientific without going sterile.",
+    "about": "Exobiopharma came to Bitz for a visual identity that could carry a biopharmaceutical brand from the lab bench to the pharmacy shelf. The brief asked for a system that reads as scientific and trustworthy without slipping into the sterile, interchangeable look so much of the pharma category defaults to.\n\nThe identity is built around a bold, all-caps wordmark set in Poppins Bold, paired with a palette that moves between clinical blue and higher-energy accent tones. Poppins Regular carries the longer scientific and regulatory copy. Logo construction, packaging and the app icon were worked through together, so the brand holds up at shelf scale and on a screen.",
+    "credits": [],
+    "cover": "/assets/img/exobiopharma.webp",
+    "gallery": [
+      {
+        "type": "video",
+        "video": "/assets/video/projects/exobiopharma-video-loop.mp4",
+        "webm": "/assets/video/projects/exobiopharma-video-loop.webm",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/exobiopharma-logo-grid-animation.mp4",
+        "webm": "/assets/video/projects/exobiopharma-logo-grid-animation.webm",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-1.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-2.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-3.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-4.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-5.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-6.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-7.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-8.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-9.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-10.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-11.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-12.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-13.webp"
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/exobiopharma-14.webp"
+      }
+    ],
+    "home": {
+      "img": "",
+      "video": "",
+      "webm": "/assets/home/exobiopharma.webm"
+    },
+    "seo": {
+      "title": "Exobiopharma - Biopharma Brand Identity | Bitz Portfolio",
+      "description": "Brand identity for Exobiopharma - logo, color system and typography for a biopharmaceutical company.",
+      "image": "https://bitz.ge/wp-content/uploads/2026/08/logo-usage.webp"
+    }
   },
-  "ge": {
-   "id": 3950,
-   "link": "https://bitz.ge/ge/portfolio/exobiopharma/",
-   "modified": "2026-09-04T07:11:03"
+  "ka": {
+    "title": "Exobiopharma",
+    "blurb": "Exobiopharma-ს ისეთი ვიზუალური იდენტობა სჭირდებოდა, რომელიც ბიოფარმაცევტულ ბრენდს ლაბორატორიიდან აფთიაქის თარომდე გაჰყვებოდა. ბრიფის მთავარი მოთხოვნა იყო სისტემა, რომელიც მეცნიერულად და სანდოდ აღიქმება, მაგრამ არ იხარშება იმ სტერილურ და ერთმანეთისგან განურჩეველ ვიზუალურ ენაში, რომელსაც ფარმაცევტული კატეგორიის დიდი ნაწილი მისდევს. ლოგოტიპი, პალიტრა და ტიპოგრაფიული სისტემა, საკმარისად თავდაჯერებულია იმისთვის, რომ გადატვირთულ და მკაცრად რეგულირებულ ბაზარზე საკუთარი ადგილი დაიმკვიდროს.",
+    "about": "",
+    "credits": [],
+    "seo": {
+      "title": "Exobiopharma - ბიოფარმის ბრენდის იდენტობა | Bitz პორტფოლიო",
+      "description": "Exobiopharma-ს ბრენდის იდენტობა - ლოგო, ფერთა სისტემა და ტიპოგრაფია ბიოფარმაცევტული კომპანიისთვის."
+    },
+    "sections": [
+      {
+        "h": "პროექტის მიმოხილვა",
+        "t": "იდენტობა ავაგეთ თამამ ლოგოტიპზე, რომელიც Poppins Bold-ით, მთლიანად მთავრული ასოებითაა აწყობილი. მას თან ახლავს პალიტრა, რომელიც კლინიკურ ლურჯსა და უფრო ენერგიულ აქცენტურ ტონებს შორის მოძრაობს. ბალანსი, რომელიც ერთდროულად ამბობს „მეცნიერებას“ და „თავდაჯერებულობას“. ყველა შეხების წერტილი, ლოგოს კონსტრუქციიდან შეფუთვამდე და აპლიკაციის ხატულამდე ისეა გააზრებული, რომ თანაბრად კარგად იმუშაოს როგორც აფთიაქის თაროზე, ისე ეკრანზე."
+      },
+      {
+        "h": "დიზაინ სისტემა",
+        "t": "ლოგოს არქიტექტურის, ფერებისა და ტიპოგრაფიის დეტალური მიმოხილვა. ელემენტები, რომლებიც ბრენდის იდენტობას აყალიბებს"
+      },
+      {
+        "h": "EXOBIOPHARMA",
+        "t": "Poppins Bold, მთავრული ასოებით, თან ერთვის ყველა სათაურს და თავად ლოგოტიპსაც. პირდაპირი და კლინიკურად ზუსტი. Poppins Regular კი ძირითად ტექსტს ემსახურება და სამეცნიერო თუ მარეგულირებელი ტექსტის სიგრძე-სიგანესაც ნებისმიერ ზომაზე ადვილად წასაკითხს ხდის."
+      },
+      {
+        "h": "დიზაინს მიღმა",
+        "t": "Exobiopharma-ზე მუშაობა ნიშნავდა, რომ მეცნიერებაზე დაფუძნებული ბრენდისთვის ისეთი სახე შეგვექმნა, რომლის ნდობაც შესაძლებელია. საკმარისად მკაფიო აფთიაქის თაროსთვის და საკმარისად სანდო კლინიკური გარემოსთვის. გაქვთ შეკითხვები ან გსურთ მეტის გაგება?"
+      }
+    ]
   }
- }
 }
