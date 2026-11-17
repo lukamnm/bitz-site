@@ -14,7 +14,7 @@
     "blurb": "A visual identity that carries a biopharmaceutical brand from the lab bench to the shelf - wordmark, palette and type system built to stay scientific without going sterile.",
     "about": "Exobiopharma came to Bitz for a visual identity that could carry a biopharmaceutical brand from the lab bench to the pharmacy shelf. The brief asked for a system that reads as scientific and trustworthy without slipping into the sterile, interchangeable look so much of the pharma category defaults to.\n\nThe identity is built around a bold, all-caps wordmark set in Poppins Bold, paired with a palette that moves between clinical blue and higher-energy accent tones. Poppins Regular carries the longer scientific and regulatory copy. Logo construction, packaging and the app icon were worked through together, so the brand holds up at shelf scale and on a screen.",
     "credits": [],
-    "cover": "/assets/img/exobiopharma.webp",
+    "cover": "/assets/img/exobiopharmaa-cover.webp",
     "coverVideo": {
       "video": "/assets/video/projects/exobiopharmaa.mp4",
       "webm": "",
@@ -23,73 +23,46 @@
     "gallery": [
       {
         "type": "video",
-        "video": "/assets/video/projects/exobiopharma-video-loop.mp4",
-        "webm": "/assets/video/projects/exobiopharma-video-loop.webm",
-        "poster": "",
-        "sound": false
-      },
-      {
-        "type": "video",
-        "video": "/assets/video/projects/exobiopharma-logo-grid-animation.mp4",
-        "webm": "/assets/video/projects/exobiopharma-logo-grid-animation.webm",
+        "video": "/assets/video/projects/exobiopharma-logo-grid.mp4",
+        "webm": "",
         "poster": "",
         "sound": false
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-1.webp"
+        "image": "/assets/img/exobiopharma-logo-colors.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-2.webp"
+        "image": "/assets/img/exobiopharma-logo-guidelines.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-3.webp"
+        "image": "/assets/img/exobiopharma-outdor-banner.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-4.webp"
+        "image": "/assets/img/exobiopharma-color-pallete.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-5.webp"
+        "image": "/assets/img/exobiopharma-app-icon.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-6.webp"
+        "image": "/assets/img/exobiopharma-typographt.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-7.webp"
+        "image": "/assets/img/exobiopharma-badge.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-8.webp"
+        "image": "/assets/img/exobiopharma-post-template.webp"
       },
       {
         "type": "image",
-        "image": "/assets/img/exobiopharma-9.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/exobiopharma-10.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/exobiopharma-11.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/exobiopharma-12.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/exobiopharma-13.webp"
-      },
-      {
-        "type": "image",
-        "image": "/assets/img/exobiopharma-14.webp"
+        "image": "/assets/img/exobiopharma-outdoor-promo.webp"
       }
     ],
     "home": {
