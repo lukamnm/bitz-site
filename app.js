@@ -1263,7 +1263,7 @@ async function openProject(i, fromRect) {
   if (S.mobile) {                                   // phones: the card itself lifts out and grows into the sheet (reference)
     const el = stackEl(i); if (el) el.style.visibility = 'hidden';
     const g = liftCard(el, fromRect || el?.getBoundingClientRect());
-    panel.classList.add('on'); setRect(panel, T); panel.style.opacity = 0; panel.scrollTop = 0;
+    panel.classList.add('on'); setRect(panel, T); panel.style.opacity = 0; panel.scrollTop = 0; pr.scrollTop = 0;   // reset once shown (see the desktop branch)
     const parts = [$('#pTitle'), $('#pBlurb'), $('#pChips'), ...$('#pContent').children].filter(Boolean).slice(0, 5);
     gsap.set(fades, { opacity: 1 }); gsap.set(parts, { opacity: 0, y: 18 });
     dimEl.style.pointerEvents = 'auto';
@@ -1286,7 +1286,8 @@ async function openProject(i, fromRect) {
   const c = cards[i]; openCard = c;
   if (S.hover >= 0) setHover(-1, $('#gl'));
   const r = worldRect(T);
-  panel.classList.add('on'); setRect(panel, T); panel.style.opacity = 0; gsap.set(fades, { opacity: 1, x: 0 });   // the GL planes do their own entrance
+  panel.classList.add('on'); setRect(panel, T); panel.style.opacity = 0; gsap.set(fades, { opacity: 1, x: 0 });
+  pr.scrollTop = 0; panel.scrollTop = 0;             // now that the panel is shown: a reset while it was hidden is ignored, and the browser would bring back the last position (Luka: a reopened project must start at the top)   // the GL planes do their own entrance
   sizeLoop();                                        // the panel has its size now
   buildPanelPlanes();
   startLenis();
