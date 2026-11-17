@@ -21,15 +21,18 @@ function stage(outDir) {
     fs.cpSync(src, path.join(outDir, name), { recursive: true, filter: p => !skip(p) });
   }
   const hashOf = rel => { const f = path.join(outDir, rel); return fs.existsSync(f) ? crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8) : null; };
-  const stamp = (file, re) => {
+  const stamp = (file, re, base = '') => {   // base: the folder the matched references are relative to
     const f = path.join(outDir, file); if (!fs.existsSync(f)) return;
     let s = fs.readFileSync(f, 'utf8'), n = 0;
-    s = s.replace(re, (m, rel) => { const h = hashOf(rel); if (!h) return m; n++; return m.replace(rel, `${rel}?v=${h}`); });
+    s = s.replace(re, (m, rel) => { const h = hashOf(path.posix.join(base, rel)); if (!h) return m; n++; return m.replace(rel, `${rel}?v=${h}`); });
     fs.writeFileSync(f, s); console.log(`stamped ${n} references in ${file}`);
   };
   stamp('app.js', /(?<=['"(])((?:\.\/)?(?:assets\/vendor\/[\w.-]+\.js|data\/[\w-]+\.json))(?=['")?])/g);
   stamp('style.css', /(?<=url\()((?:assets\/fonts\/[\w.-]+\.woff2))(?=\))/g);
   stamp('index.html', /(?<=["'])((?:\.\/)?(?:app\.js|style\.css|assets\/img\/logo\.svg|assets\/vendor\/[\w.-]+\.js|assets\/loader\/[\w.-]+\.json))(?=["'])/g);   // + the loader animation   // app.js last: its hash includes the stamped data paths
+  // the admin's own scripts (the preview of a draft): the browser and the edge cache scripts for four hours, so they are stamped too
+  stamp('admin/preview.js', /(?<=from '\.\/)(content\.js)(?=')/g, 'admin');
+  stamp('admin/index.html', /(?<=src=")(preview\.js)(?=")/g, 'admin');
   // a real page per address (same stamped index.html, each with its own head and readable text), sitemap, robots, 404, .htaccess
   execFileSync(process.execPath, [path.join(__dirname, 'pages.mjs'), outDir], { cwd: SITE, stdio: 'inherit' });
   return outDir;
