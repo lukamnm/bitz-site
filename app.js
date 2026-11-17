@@ -12,7 +12,7 @@ if (PREVIEW) {
   addEventListener('message', e => { const m = e.data; if (m && m.type === 'bitz:draft' && (e.source === window.opener || e.source === window.parent)) { previewDraft = m; previewHandlers.forEach(f => f(m)); } });
   (window.opener || (window.parent !== window ? window.parent : null))?.postMessage({ type: 'bitz:preview-ready' }, '*');
 }
-const firstDraft = PREVIEW ? new Promise(res => { if (previewDraft) return res(previewDraft); previewHandlers.push(res); setTimeout(() => res(null), 20000); }) : null;
+const firstDraft = PREVIEW ? new Promise(res => { if (previewDraft) return res(previewDraft); previewHandlers.push(res); setTimeout(() => res(null), 4000); }) : null;   // no draft within 4 s: the page as published, drafts still apply later
 
 const data = await (await fetch('data/projects.json')).json();
 let overlays = await fetch('data/profile.json').then(r => r.json()).catch(() => null);   // Profile / Contact hole content (both languages)

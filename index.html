@@ -36,6 +36,7 @@ window.bitzLoader = (() => {
   const pre = document.getElementById('pre'), el = document.getElementById('preLogo'), bar = document.getElementById('preBar'), num = bar.querySelector('b'), line = bar.querySelector('i');
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('rm');
   const PHONE = matchMedia('(max-width: 767px)').matches;
+  const PREVIEW = new URLSearchParams(location.search).has('preview');   // the admin's preview of a draft: no loader, straight to the page
   // how the loader hands over to the site (desktop): fly = the logo flies to the header over the black, then the black lifts and the strip slides in;
   // lift = the black rises like a curtain while the logo flies, the strip comes up with the curtain's edge; split = the black parts top and bottom
   // from the middle while the logo flies; zoom = the view passes through the growing logo and the strip comes from the depth, the header logo fades in
@@ -47,7 +48,7 @@ window.bitzLoader = (() => {
   fetch('assets/loader/bitz-loader.json').then(r => r.json()).then(data => {
     anim = lottie.loadAnimation({ container: el, renderer: 'svg', loop: false, autoplay: false, animationData: data });
     anim.addEventListener('DOMLoaded', () => {
-      if (RM) { anim.goToAndStop(anim.totalFrames - 1, true); resolveWritten(); return; }
+      if (RM || PREVIEW) { anim.goToAndStop(anim.totalFrames - 1, true); resolveWritten(); return; }
       // the hand starts writing once the site has drawn its first frame (shader compiles, 200-300 ms on a laptop): a stall
       // under the first strokes would show as a freeze. Never later than 2 s after the animation is ready.
       let played = false; const play = () => { if (played) return; played = true; anim.goToAndPlay(0, true); };
@@ -84,7 +85,7 @@ window.bitzLoader = (() => {
   async function exit(go, onWritten) {
     real = 1; await written;
     if (onWritten) onWritten();                                 // app.js starts the card loops now: their decoding stays off the write-on
-    if (RM) { show(1); go(); hide(); return; }
+    if (RM || PREVIEW) { show(1); go(); hide(); return; }
     const snapped = STYLE === 'zoom' ? snapshot() : null;
     await Promise.race([new Promise(r => { const f = () => shown >= 0.995 ? r() : requestAnimationFrame(f); f(); }), wait(1500)]);   // let the counter reach 100
     show(1); await wait(HOLD);
