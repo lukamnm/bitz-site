@@ -27,8 +27,8 @@
 <script>
 // the loader: Luka's After Effects write-on of the logo (assets/loader/bitz-loader.json) plays once while the counter at the bottom climbs,
 // holds at 100 % until the page is ready, then hands over. Desktop (Luka's pick, 2026-11-17): "zoom", the view passes through the growing logo,
-// the black fades and the strip arrives from the depth; the other styles stay selectable with ?loader= for comparison. Phone: the logo flies onto
-// the header logo (FLIP) while the black lifts (Luka liked that one).
+// the black fades and the strip arrives from the depth; the other styles stay selectable with ?loader= for comparison. Phones: the same zoom,
+// the stack arriving from the depth (?loader=fly: the older hand-over, the logo flying onto the header logo while the black lifts).
 // app.js reports loading with bitzLoader.progress(0..1) and calls bitzLoader.exit(go) when everything is ready.
 window.bitzLoader = (() => {
   const LOGO = { x: 106, y: 52, w: 600, h: 444, W: 762, H: 553 };   // where the logo sits inside the animation frame
@@ -40,7 +40,7 @@ window.bitzLoader = (() => {
   // lift = the black rises like a curtain while the logo flies, the strip comes up with the curtain's edge; split = the black parts top and bottom
   // from the middle while the logo flies; zoom = the view passes through the growing logo and the strip comes from the depth, the header logo fades in
   const STYLES = ['fly', 'lift', 'split', 'zoom'], DEFAULT_STYLE = 'zoom', q = new URLSearchParams(location.search).get('loader');
-  const STYLE = PHONE ? 'fly' : STYLES.includes(q) ? q : DEFAULT_STYLE;
+  const STYLE = PHONE ? (q === 'fly' ? 'fly' : 'zoom') : STYLES.includes(q) ? q : DEFAULT_STYLE;   // phones: zoom too (Luka, 2026-11-17); ?loader=fly keeps the old one
   const wait = ms => new Promise(r => setTimeout(r, ms));
   let anim = null, failed = false, wrote = false, resolveWritten, real = PHONE ? 1 : 0, shown = 0, done = false;   // the phone has no asset count: its counter follows the hand
   const written = new Promise(r => { resolveWritten = () => { wrote = true; r(); }; setTimeout(resolveWritten, MAX_WAIT); });   // the write-on always finishes first (or we stop waiting)
@@ -85,7 +85,7 @@ window.bitzLoader = (() => {
     real = 1; await written;
     if (onWritten) onWritten();                                 // app.js starts the card loops now: their decoding stays off the write-on
     if (RM) { show(1); go(); hide(); return; }
-    const snapped = STYLE === 'zoom' && !PHONE ? snapshot() : null;
+    const snapped = STYLE === 'zoom' ? snapshot() : null;
     await Promise.race([new Promise(r => { const f = () => shown >= 0.995 ? r() : requestAnimationFrame(f); f(); }), wait(1500)]);   // let the counter reach 100
     show(1); await wait(HOLD);
     if (snapped) await Promise.race([snapped, wait(300)]);

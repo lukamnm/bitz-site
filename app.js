@@ -268,6 +268,7 @@ function dismissPre() {
   if (preDone) return; preDone = true;
   const go = () => {                                   // the loader's logo flies to the header: the black lifts with it and the strip slides in
     if (!S.mobile) intro(window.bitzLoader?.style || 'fly');
+    else if (!RM && window.bitzLoader?.style === 'zoom') gsap.from('#stack', { scale: 0.82, autoAlpha: 0, duration: 1.5, ease: 'expo.out' });   // phones: the stack arrives from the depth as the logo passes
     if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
     else if (route0.shots != null) setTimeout(() => openStory(route0.shots), RM ? 0 : 1400);        // the admin's preview of a shot group
   };
