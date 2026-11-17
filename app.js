@@ -9,7 +9,10 @@ const MQ = matchMedia('(max-width: 767px)');
 const PREVIEW = new URLSearchParams(location.search).has('preview');
 const previewHandlers = []; let previewDraft = null;
 if (PREVIEW) {
-  addEventListener('message', e => { const m = e.data; if (m && m.type === 'bitz:draft' && (e.source === window.opener || e.source === window.parent)) { previewDraft = m; previewHandlers.forEach(f => f(m)); } });
+  // the draft comes from the window that opened this one, or from any window above it: the admin's script runs in its top window
+  // while it frames the site inside its own preview frame, so the sender is the top, not the direct parent
+  const fromAdmin = s => { if (s && s === window.opener) return true; for (let w = window; w !== w.parent; ) { w = w.parent; if (s === w) return true; } return false; };
+  addEventListener('message', e => { const m = e.data; if (m && m.type === 'bitz:draft' && fromAdmin(e.source)) { previewDraft = m; previewHandlers.forEach(f => f(m)); } });
   (window.opener || (window.parent !== window ? window.parent : null))?.postMessage({ type: 'bitz:preview-ready' }, '*');
 }
 const firstDraft = PREVIEW ? new Promise(res => { if (previewDraft) return res(previewDraft); previewHandlers.push(res); setTimeout(() => res(null), 4000); }) : null;   // no draft within 4 s: the page as published, drafts still apply later
