@@ -8,11 +8,21 @@
 // usage: node tools/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { bubbleFor, firstClip } from './bubbles.mjs';
 import { project, story, shotGroup, overlay, seo } from '../admin/content.mjs';
 
 const read = f => JSON.parse(fs.readFileSync(f, 'utf8'));
-const write = (f, v) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(v, null, 1) + '\n'); };
+// every media address gets a version stamp (?v=<hash of the file>): the host's CDN caches a file by its address for hours, so a file
+// replaced under the same name (a new cover uploaded with the old name) would otherwise keep showing the old one (Luka, 2026-11-17)
+const stamps = new Map();
+const stamp = v => {
+  if (typeof v !== 'string' || !/^assets\/[^?#]+$/.test(v) || !fs.existsSync(v)) return v;
+  if (!stamps.has(v)) stamps.set(v, createHash('sha1').update(fs.readFileSync(v)).digest('hex').slice(0, 8));
+  return v + '?v=' + stamps.get(v);
+};
+const stamped = v => (Array.isArray(v) ? v.map(stamped) : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, stamped(x)])) : stamp(v));
+const write = (f, v) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(stamped(v), null, 1) + '\n'); };
 
 // ---------------------------------------------------------------- projects
 const projects = [];

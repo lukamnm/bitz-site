@@ -12,32 +12,24 @@
   ],
   "link": null,
   "blurb": "A visual identity that carries a biopharmaceutical brand from the lab bench to the shelf - wordmark, palette and type system built to stay scientific without going sterile.",
-  "cover": "assets/img/exobiopharma.webp",
+  "cover": "assets/img/exobiopharmaa-cover.webp?v=c8250fcc",
+  "coverVideo": {
+   "video": "assets/video/projects/exobiopharmaa.mp4?v=6611180f"
+  },
   "gallery": [
    {
-    "video": "assets/video/projects/exobiopharma-video-loop.mp4",
-    "webm": "assets/video/projects/exobiopharma-video-loop.webm",
-    "poster": "assets/video/projects/exobiopharma-video-loop.webp"
+    "video": "assets/video/projects/exobiopharma-logo-grid.mp4?v=2352d1ac",
+    "poster": "assets/video/projects/exobiopharma-logo-grid.webp?v=825cb5f7"
    },
-   {
-    "video": "assets/video/projects/exobiopharma-logo-grid-animation.mp4",
-    "webm": "assets/video/projects/exobiopharma-logo-grid-animation.webm",
-    "poster": "assets/video/projects/exobiopharma-logo-grid-animation.webp"
-   },
-   "assets/img/exobiopharma-1.webp",
-   "assets/img/exobiopharma-2.webp",
-   "assets/img/exobiopharma-3.webp",
-   "assets/img/exobiopharma-4.webp",
-   "assets/img/exobiopharma-5.webp",
-   "assets/img/exobiopharma-6.webp",
-   "assets/img/exobiopharma-7.webp",
-   "assets/img/exobiopharma-8.webp",
-   "assets/img/exobiopharma-9.webp",
-   "assets/img/exobiopharma-10.webp",
-   "assets/img/exobiopharma-11.webp",
-   "assets/img/exobiopharma-12.webp",
-   "assets/img/exobiopharma-13.webp",
-   "assets/img/exobiopharma-14.webp"
+   "assets/img/exobiopharma-logo-colors.webp?v=f7022b49",
+   "assets/img/exobiopharma-logo-guidelines.webp?v=36e2ee8e",
+   "assets/img/exobiopharma-outdor-banner.webp?v=e318f320",
+   "assets/img/exobiopharma-color-pallete.webp?v=4042477b",
+   "assets/img/exobiopharma-app-icon.webp?v=61c73d7a",
+   "assets/img/exobiopharma-typographt.webp?v=d526ce15",
+   "assets/img/exobiopharma-badge.webp?v=e79f8437",
+   "assets/img/exobiopharma-post-template.webp?v=5f09b5d8",
+   "assets/img/exobiopharma-outdoor-promo.webp?v=14137cf1"
   ],
   "sections": [
    {
@@ -51,8 +43,7 @@
   ],
   "credits": [],
   "home": {
-   "video": "assets/home/exobiopharma.mp4",
-   "webm": "assets/home/exobiopharma.webm"
+   "video": "assets/home/exobiopharmaa.mp4?v=6611180f"
   },
   "seo": {
    "title": "Exobiopharma - Biopharma Brand Identity | Bitz Portfolio",
@@ -105,50 +96,50 @@
   ],
   "link": "https://marsleaders.netlify.app/",
   "blurb": "Identity, NFT artwork direction and website for Marsleaders - a virtual world where political figures compete, with a mark that is solid and authoritative yet playful and planetary.",
-  "cover": "assets/img/marsleaders.webp",
+  "cover": "assets/img/marsleaders.webp?v=e10889ca",
   "gallery": [
    {
-    "video": "assets/video/projects/marsleaders-marsleaders-unrevealed.mp4",
-    "poster": "assets/video/projects/marsleaders-marsleaders-unrevealed.webp"
+    "video": "assets/video/projects/marsleaders-marsleaders-unrevealed.mp4?v=5a80fe3f",
+    "poster": "assets/video/projects/marsleaders-marsleaders-unrevealed.webp?v=72ec6b1d"
    },
-   "assets/img/marsleaders-1.webp",
-   "assets/img/marsleaders-2.webp",
-   "assets/img/marsleaders-3.webp",
-   "assets/img/marsleaders-4.webp",
-   "assets/img/marsleaders-5.webp",
+   "assets/img/marsleaders-1.webp?v=cabb18b6",
+   "assets/img/marsleaders-2.webp?v=e10889ca",
+   "assets/img/marsleaders-3.webp?v=ef8e4915",
+   "assets/img/marsleaders-4.webp?v=3a5afea2",
+   "assets/img/marsleaders-5.webp?v=79fd0630",
    {
-    "video": "assets/video/projects/marsleaders-marsleaders-main-logo-grid.mp4",
-    "poster": "assets/video/projects/marsleaders-marsleaders-main-logo-grid.webp"
+    "video": "assets/video/projects/marsleaders-marsleaders-main-logo-grid.mp4?v=84a59b86",
+    "poster": "assets/video/projects/marsleaders-marsleaders-main-logo-grid.webp?v=e34b2ffc"
    },
-   "assets/img/marsleaders-6.webp",
+   "assets/img/marsleaders-6.webp?v=a4cb2777",
    {
-    "video": "assets/video/projects/marsleaders-marsleaders-color-palete.mp4",
-    "poster": "assets/video/projects/marsleaders-marsleaders-color-palete.webp"
+    "video": "assets/video/projects/marsleaders-marsleaders-color-palete.mp4?v=33e25152",
+    "poster": "assets/video/projects/marsleaders-marsleaders-color-palete.webp?v=0a3a4196"
    },
-   "assets/img/marsleaders-7.webp",
-   "assets/img/marsleaders-8.webp",
-   "assets/img/marsleaders-9.webp",
-   "assets/img/marsleaders-10.webp",
-   "assets/img/marsleaders-11.webp",
-   "assets/img/marsleaders-12.webp",
-   "assets/img/marsleaders-13.webp",
-   "assets/img/marsleaders-14.webp",
-   "assets/img/marsleaders-15.webp",
-   "assets/img/marsleaders-16.webp",
-   "assets/img/marsleaders-17.webp",
-   "assets/img/marsleaders-18.webp",
-   "assets/img/marsleaders-19.webp",
-   "assets/img/marsleaders-20.webp",
-   "assets/img/marsleaders-21.webp",
-   "assets/img/marsleaders-22.webp",
-   "assets/img/marsleaders-23.webp",
-   "assets/img/marsleaders-24.webp",
-   "assets/img/marsleaders-25.webp",
-   "assets/img/marsleaders-26.webp",
-   "assets/img/marsleaders-27.webp",
+   "assets/img/marsleaders-7.webp?v=ba958454",
+   "assets/img/marsleaders-8.webp?v=6dd2f999",
+   "assets/img/marsleaders-9.webp?v=c9030c3c",
+   "assets/img/marsleaders-10.webp?v=c363ec57",
+   "assets/img/marsleaders-11.webp?v=d748ce9c",
+   "assets/img/marsleaders-12.webp?v=6a59cf16",
+   "assets/img/marsleaders-13.webp?v=b7388648",
+   "assets/img/marsleaders-14.webp?v=6c055a6e",
+   "assets/img/marsleaders-15.webp?v=a59ae13a",
+   "assets/img/marsleaders-16.webp?v=2124619b",
+   "assets/img/marsleaders-17.webp?v=ec0d39e0",
+   "assets/img/marsleaders-18.webp?v=67cb5db4",
+   "assets/img/marsleaders-19.webp?v=6756cf2e",
+   "assets/img/marsleaders-20.webp?v=8f3d7485",
+   "assets/img/marsleaders-21.webp?v=8c80199a",
+   "assets/img/marsleaders-22.webp?v=989c7023",
+   "assets/img/marsleaders-23.webp?v=543fea20",
+   "assets/img/marsleaders-24.webp?v=ba51efb1",
+   "assets/img/marsleaders-25.webp?v=a3881d91",
+   "assets/img/marsleaders-26.webp?v=ed87dd53",
+   "assets/img/marsleaders-27.webp?v=c60f0af7",
    {
-    "video": "assets/video/projects/marsleaders-web-showcase.mp4",
-    "poster": "assets/video/projects/marsleaders-web-showcase.webp"
+    "video": "assets/video/projects/marsleaders-web-showcase.mp4?v=4b53715b",
+    "poster": "assets/video/projects/marsleaders-web-showcase.webp?v=8a0b4f66"
    }
   ],
   "sections": [
@@ -172,9 +163,9 @@
    }
   ],
   "home": {
-   "img": "assets/home/marsleaders.webp",
-   "video": "assets/home/marsleaders.mp4",
-   "webm": "assets/home/marsleaders.webm"
+   "img": "assets/home/marsleaders.webp?v=602acd5f",
+   "video": "assets/home/marsleaders.mp4?v=538ec307",
+   "webm": "assets/home/marsleaders.webm?v=76df998e"
   },
   "seo": {
    "title": "Marsleaders Branding Project | Bitz Portfolio",
@@ -236,40 +227,40 @@
   ],
   "link": "https://www.behance.net/gallery/216700333/BRACE",
   "blurb": "Complete branding for BRACE, an EV charging brand - identity, 3D, motion and print that give form to energy, movement and cleaner roads ahead.",
-  "cover": "assets/img/brace.webp",
+  "cover": "assets/img/brace.webp?v=de4b66bd",
   "gallery": [
    {
-    "video": "assets/video/projects/brace-brace.mp4",
-    "poster": "assets/video/projects/brace-brace.webp"
+    "video": "assets/video/projects/brace-brace.mp4?v=0116c7b0",
+    "poster": "assets/video/projects/brace-brace.webp?v=2c631599"
    },
-   "assets/img/brace-1.webp",
-   "assets/img/brace-2.webp",
-   "assets/img/brace-3.webp",
+   "assets/img/brace-1.webp?v=e3e2bcb8",
+   "assets/img/brace-2.webp?v=dea9b5a6",
+   "assets/img/brace-3.webp?v=04f4131a",
    {
-    "video": "assets/video/projects/brace-logo-video.mp4",
-    "poster": "assets/video/projects/brace-logo-video.webp"
+    "video": "assets/video/projects/brace-logo-video.mp4?v=04215025",
+    "poster": "assets/video/projects/brace-logo-video.webp?v=46803652"
    },
-   "assets/img/brace-4.webp",
-   "assets/img/brace-5.webp",
-   "assets/img/brace-6.webp",
-   "assets/img/brace-7.webp",
-   "assets/img/brace-8.webp",
-   "assets/img/brace-9.webp",
-   "assets/img/brace-10.webp",
+   "assets/img/brace-4.webp?v=dda49dcb",
+   "assets/img/brace-5.webp?v=74ab487a",
+   "assets/img/brace-6.webp?v=8a6795d1",
+   "assets/img/brace-7.webp?v=3a30f164",
+   "assets/img/brace-8.webp?v=f8e1019c",
+   "assets/img/brace-9.webp?v=1bc53ed7",
+   "assets/img/brace-10.webp?v=d9e84389",
    {
-    "video": "assets/video/projects/brace-hoodie.mp4",
-    "poster": "assets/video/projects/brace-hoodie.webp"
+    "video": "assets/video/projects/brace-hoodie.mp4?v=56767fe8",
+    "poster": "assets/video/projects/brace-hoodie.webp?v=6f35972f"
    },
-   "assets/img/brace-11.webp",
-   "assets/img/brace-12.webp",
-   "assets/img/brace-13.webp",
-   "assets/img/brace-14.webp",
+   "assets/img/brace-11.webp?v=907b90e1",
+   "assets/img/brace-12.webp?v=acfac054",
+   "assets/img/brace-13.webp?v=a5c748e9",
+   "assets/img/brace-14.webp?v=d3bc8dc6",
    {
-    "video": "assets/video/projects/brace-brace-car-2.mp4",
-    "poster": "assets/video/projects/brace-brace-car-2.webp"
+    "video": "assets/video/projects/brace-brace-car-2.mp4?v=f6c387c1",
+    "poster": "assets/video/projects/brace-brace-car-2.webp?v=c68be803"
    },
-   "assets/img/brace-15.webp",
-   "assets/img/brace-16.webp"
+   "assets/img/brace-15.webp?v=65a2f7c2",
+   "assets/img/brace-16.webp?v=effaea2c"
   ],
   "sections": [
    {
@@ -308,7 +299,7 @@
    }
   ],
   "home": {
-   "img": "assets/home/brace.webp"
+   "img": "assets/home/brace.webp?v=e715ded9"
   },
   "seo": {
    "title": "BRACE - EV Charger Branding & 3D Design | Bitz Portfolio",
@@ -361,12 +352,12 @@
   ],
   "link": "https://credobank.ge/products/%e1%83%99%e1%83%9a%e1%83%94%e1%83%91%e1%83%90%e1%83%93%e1%83%98-smart-%e1%83%90%e1%83%9c%e1%83%90%e1%83%91%e1%83%90%e1%83%a0%e1%83%98/",
   "blurb": "UI/UX for Credo Bank's Decreasing SMART Deposit calculator - a 3-step flow for desktop and mobile that lets users customise and see their result instantly.",
-  "cover": "assets/img/kredo-banki.webp",
+  "cover": "assets/img/kredo-banki.webp?v=fa6df584",
   "gallery": [
-   "assets/img/kredo-banki-1.webp",
-   "assets/img/kredo-banki-2.webp",
-   "assets/img/kredo-banki-3.webp",
-   "assets/img/kredo-banki-4.webp"
+   "assets/img/kredo-banki-1.webp?v=3172b315",
+   "assets/img/kredo-banki-2.webp?v=253b308a",
+   "assets/img/kredo-banki-3.webp?v=064f574f",
+   "assets/img/kredo-banki-4.webp?v=52792109"
   ],
   "sections": [
    {
@@ -380,7 +371,7 @@
   ],
   "credits": [],
   "home": {
-   "img": "assets/home/kredo-banki.jpg"
+   "img": "assets/home/kredo-banki.jpg?v=fdaf63ae"
   },
   "seo": {
    "title": "Credo Bank - UI/UX Design | Bitz Portfolio",
@@ -429,20 +420,20 @@
   ],
   "link": "https://videohive.net/item/glitch-transitions/32520300",
   "blurb": "Ten static designs turned into animated Glitch Transitions for RoyalPixels - video effect templates for After Effects and Premiere Pro.",
-  "cover": "assets/img/royalpixels.webp",
+  "cover": "assets/img/royalpixels.webp?v=ef60b3c8",
   "gallery": [
-   "assets/img/royalpixels-1.webp",
-   "assets/img/royalpixels-2.webp",
-   "assets/img/royalpixels-3.webp",
-   "assets/img/royalpixels-4.webp",
-   "assets/img/royalpixels-5.webp",
-   "assets/img/royalpixels-6.webp",
-   "assets/img/royalpixels-7.webp",
-   "assets/img/royalpixels-8.webp",
-   "assets/img/royalpixels-9.webp",
-   "assets/img/royalpixels-10.webp",
-   "assets/img/royalpixels-11.webp",
-   "assets/img/royalpixels-12.webp"
+   "assets/img/royalpixels-1.webp?v=547e103e",
+   "assets/img/royalpixels-2.webp?v=100db091",
+   "assets/img/royalpixels-3.webp?v=df97f8f4",
+   "assets/img/royalpixels-4.webp?v=a469eb23",
+   "assets/img/royalpixels-5.webp?v=c629bfe5",
+   "assets/img/royalpixels-6.webp?v=beaced6a",
+   "assets/img/royalpixels-7.webp?v=d92f1ae4",
+   "assets/img/royalpixels-8.webp?v=65e6ce61",
+   "assets/img/royalpixels-9.webp?v=f5dae464",
+   "assets/img/royalpixels-10.webp?v=287b8833",
+   "assets/img/royalpixels-11.webp?v=4b96238c",
+   "assets/img/royalpixels-12.webp?v=31a22f23"
   ],
   "sections": [
    {
@@ -455,7 +446,7 @@
   ],
   "credits": [],
   "home": {
-   "img": "assets/home/royalpixels.jpg"
+   "img": "assets/home/royalpixels.jpg?v=58c418c3"
   },
   "seo": {
    "title": "RoyalPixels - Motion Graphics Transitions | Bitz Portfolio",
@@ -508,20 +499,20 @@
   ],
   "link": "https://www.facebook.com/postero.georgia",
   "blurb": "Posters, photography and logo for Postero, alongside Otar Jishkariani's Anbantkeba series - all three Georgian scripts across 36 compositions.",
-  "cover": "assets/img/anbanthqeba.webp",
+  "cover": "assets/img/anbanthqeba.webp?v=a6b9248c",
   "gallery": [
-   "assets/img/anbanthqeba-1.webp",
-   "assets/img/anbanthqeba-2.webp",
-   "assets/img/anbanthqeba-3.webp",
-   "assets/img/anbanthqeba-4.webp",
-   "assets/img/anbanthqeba-5.webp",
-   "assets/img/anbanthqeba-6.webp",
-   "assets/img/anbanthqeba-7.webp",
-   "assets/img/anbanthqeba-8.webp",
-   "assets/img/anbanthqeba-9.webp",
-   "assets/img/anbanthqeba-10.webp",
-   "assets/img/anbanthqeba-11.webp",
-   "assets/img/anbanthqeba-12.webp"
+   "assets/img/anbanthqeba-1.webp?v=a6b9248c",
+   "assets/img/anbanthqeba-2.webp?v=7c0ce564",
+   "assets/img/anbanthqeba-3.webp?v=7bd3ecbd",
+   "assets/img/anbanthqeba-4.webp?v=94add5a5",
+   "assets/img/anbanthqeba-5.webp?v=2a65c01a",
+   "assets/img/anbanthqeba-6.webp?v=81e3727e",
+   "assets/img/anbanthqeba-7.webp?v=4a31eab1",
+   "assets/img/anbanthqeba-8.webp?v=980ea960",
+   "assets/img/anbanthqeba-9.webp?v=5ba00745",
+   "assets/img/anbanthqeba-10.webp?v=eb98a741",
+   "assets/img/anbanthqeba-11.webp?v=bfcc1935",
+   "assets/img/anbanthqeba-12.webp?v=f985305f"
   ],
   "sections": [
    {
@@ -544,7 +535,7 @@
    }
   ],
   "home": {
-   "img": "assets/home/anbanthqeba.jpg"
+   "img": "assets/home/anbanthqeba.jpg?v=9b0062c2"
   },
   "seo": {
    "title": "ANBANTKEBA - Graphic Design Series | Bitz Portfolio",
@@ -593,24 +584,24 @@
   ],
   "link": "https://www.facebook.com/espace.ge/",
   "blurb": "Powering electric mobility - explainer videos, web design and visuals promoting E-Space's charging network and app for retail and corporate clients.",
-  "cover": "assets/img/e-space.webp",
+  "cover": "assets/img/e-space.webp?v=62097802",
   "gallery": [
    {
-    "video": "assets/video/projects/e-space-espace-fhd-en.mp4",
-    "webm": "assets/video/projects/e-space-espace-fhd-en.webm",
-    "poster": "assets/video/projects/e-space-espace-fhd-en.webp"
+    "video": "assets/video/projects/e-space-espace-fhd-en.mp4?v=0cb001b8",
+    "webm": "assets/video/projects/e-space-espace-fhd-en.webm?v=ac181844",
+    "poster": "assets/video/projects/e-space-espace-fhd-en.webp?v=b124880a"
    },
-   "assets/img/e-space-1.webp",
-   "assets/img/e-space-2.webp",
-   "assets/img/e-space-3.webp",
+   "assets/img/e-space-1.webp?v=13e5b0c9",
+   "assets/img/e-space-2.webp?v=4b240ab2",
+   "assets/img/e-space-3.webp?v=ea662ad5",
    {
-    "video": "assets/video/projects/e-space-espace-cor-fhd-en.mp4",
-    "webm": "assets/video/projects/e-space-espace-cor-fhd-en.webm",
-    "poster": "assets/video/projects/e-space-espace-cor-fhd-en.webp"
+    "video": "assets/video/projects/e-space-espace-cor-fhd-en.mp4?v=8ea463fd",
+    "webm": "assets/video/projects/e-space-espace-cor-fhd-en.webm?v=22753c5b",
+    "poster": "assets/video/projects/e-space-espace-cor-fhd-en.webp?v=0cd6644f"
    },
-   "assets/img/e-space-4.webp",
-   "assets/img/e-space-5.webp",
-   "assets/img/e-space-6.webp"
+   "assets/img/e-space-4.webp?v=1edd744d",
+   "assets/img/e-space-5.webp?v=ae8f46df",
+   "assets/img/e-space-6.webp?v=82701e85"
   ],
   "sections": [
    {
@@ -623,9 +614,9 @@
   ],
   "credits": [],
   "home": {
-   "img": "assets/home/e-space.png",
-   "video": "assets/home/e-space.mp4",
-   "webm": "assets/home/e-space.webm"
+   "img": "assets/home/e-space.png?v=81c387f5",
+   "video": "assets/home/e-space.mp4?v=1e044c23",
+   "webm": "assets/home/e-space.webm?v=74e65dae"
   },
   "seo": {
    "title": "E-Space - Motion Graphics & Video Animation | Bitz Portfolio",
