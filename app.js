@@ -4,16 +4,41 @@ const $ = (s, r = document) => r.querySelector(s);
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const RM = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('rm'); // ?rm=1 = instant (dev + a11y)
 const MQ = matchMedia('(max-width: 767px)');
+// the admin's preview (admin/preview.js): opened with ?preview, the site tells the window that framed or opened it that it is ready and
+// shows the draft that comes back by postMessage - the first one before the strip is built, later ones in place, without reloading
+const PREVIEW = new URLSearchParams(location.search).has('preview');
+const previewHandlers = []; let previewDraft = null;
+if (PREVIEW) {
+  addEventListener('message', e => { const m = e.data; if (m && m.type === 'bitz:draft' && (e.source === window.opener || e.source === window.parent)) { previewDraft = m; previewHandlers.forEach(f => f(m)); } });
+  (window.opener || (window.parent !== window ? window.parent : null))?.postMessage({ type: 'bitz:preview-ready' }, '*');
+}
+const firstDraft = PREVIEW ? new Promise(res => { if (previewDraft) return res(previewDraft); previewHandlers.push(res); setTimeout(() => res(null), 20000); }) : null;
 
 const data = await (await fetch('data/projects.json')).json();
-const overlays = await fetch('data/profile.json').then(r => r.json()).catch(() => null);   // Profile / Contact hole content (both languages)
+let overlays = await fetch('data/profile.json').then(r => r.json()).catch(() => null);   // Profile / Contact hole content (both languages)
 const shotsData = await fetch('data/shots.json').then(r => r.json()).catch(() => ({ groups: [] }));
 // stories ride the same strip and panel as projects: each one becomes a card (cover + title) whose panel shows the article
-const stories = (await fetch('data/stories.json').then(r => r.json()).catch(() => [])).map(s => ({
+const storyCard = s => ({
   slug: s.slug, story: true, featured: true, title: s.title.en, blurb: s.excerpt.en, year: s.date.slice(0, 10), client: null, cats: s.categories,
   cover: s.cover, gallery: [], sections: s.sections.en, home: { img: s.cover }, seo: s.seo?.en, seoAll: s.seo, url: s.url,
   i18n: { ge: s.hasGe ? { title: s.title.ge, blurb: s.excerpt.ge, sections: s.sections.ge, seo: s.seo?.ge } : null },
-}));
+});
+const stories = (await fetch('data/stories.json').then(r => r.json()).catch(() => [])).map(storyCard);
+// a draft from the admin replaces its entry (or joins the data) and names the route that shows it
+function mergeDraft(m) {
+  const { kind, item } = m;
+  if (kind === 'project') { const i = data.findIndex(p => p.slug === item.slug); if (i >= 0) data[i] = item; else data.push(item); return { kind: 'project', p: item, lang: 'en' }; }
+  if (kind === 'story') { const c = storyCard(item), i = stories.findIndex(s => s.slug === item.slug); if (i >= 0) stories[i] = c; else stories.unshift(c); return { kind: 'post', p: c, lang: 'en' }; }
+  if (kind === 'shots') {
+    const g = shotsData.groups; item.key = m.slug;
+    let i = g.findIndex(x => x.key === m.slug); if (i < 0) i = g.findIndex(x => x.title.en === item.title.en);
+    if (i >= 0) g[i] = item; else { g.push(item); i = g.length - 1; }
+    return { kind: 'home', lang: 'en', shots: i };
+  }
+  if (kind === 'profile' || kind === 'contact') { overlays = overlays || {}; overlays[kind] = item; return { kind: kind === 'profile' ? 'about' : 'contact', lang: 'en' }; }
+  return null;
+}
+const draft0 = firstDraft && await firstDraft;
 const site = await fetch('data/site.json').then(r => r.json()).catch(() => null);   // search texts of home, blog list, Profile, Contact
 try { await Promise.all([document.fonts.load('500 40px Moncero'), document.fonts.load('400 20px Moncero')]); } catch {}   // labels are baked into textures
 let mode = 'featured';
@@ -37,7 +62,7 @@ function parseRoute(path) {
   if (rest === 'contact/') return { kind: 'contact', lang: L };
   return { kind: 'home', lang: L, unknown: rest !== '' };
 }
-const route0 = parseRoute(here());
+const route0 = (draft0 && mergeDraft(draft0)) || parseRoute(here());
 const pre = () => (lang === 'ge' ? 'ge/' : '');
 function urlFor(r) {
   if (r.kind === 'project' || r.kind === 'post') return (lang === 'ge' && r.p.url.ge) || r.p.url.en;
@@ -54,7 +79,7 @@ function headFor(r) {
 }
 let routing = false;                        // true while the app follows an address (back / forward), so it does not write one back
 function syncUrl(push = true) {
-  if (routing) return;
+  if (routing || PREVIEW) return;
   const r = currentRoute(), u = urlFor(r);
   if (u !== here()) history[push ? 'pushState' : 'replaceState'](null, '', BASE_PATH + u);
   setHead(r);
@@ -244,6 +269,7 @@ function dismissPre() {
   const go = () => {                                   // the loader's logo flies to the header: the black lifts with it and the strip slides in
     if (!S.mobile) intro(window.bitzLoader?.style || 'fly');
     if (!['home', 'blog'].includes(route0.kind)) setTimeout(() => follow(route0), RM ? 0 : 1000);   // open what the address names once the strip has landed
+    else if (route0.shots != null) setTimeout(() => openStory(route0.shots), RM ? 0 : 1400);        // the admin's preview of a shot group
   };
   if (window.bitzLoader) bitzLoader.exit(go, startLoops);   // index.html: plays the write-on, waits for it, then hands over
   else { startLoops(); go(); if (RM) $('#pre').style.display = 'none'; else gsap.to('#pre', { opacity: 0, duration: 0.85, delay: 0.25, ease: 'power2.inOut', onComplete: () => ($('#pre').style.display = 'none') }); }
@@ -1721,13 +1747,12 @@ function markSeen(gi) {
   m[g.title.en] = shotSig(g); try { localStorage.setItem(SEEN_KEY, JSON.stringify(m)); } catch {}
   document.querySelector(`.bub[data-g="${gi}"]`)?.classList.add('seen');
 }
-{
+function buildShotNav() {
   const nav = $('#shotsNav'), seen = seenMap();
   nav.innerHTML = shotsData.groups.map((g, i) => `<button type="button" class="bub${seen[g.title.en] === shotSig(g) ? ' seen' : ''}" data-g="${i}">`
     + `<svg class="rim" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48.5" pathLength="100"/></svg>`
     + `<span class="face">${g.bubble?.img ? `<img src="${g.bubble.img}" alt="">` : ''}${g.bubble?.loop ? `<video muted loop playsinline preload="none" data-src="${g.bubble.loop}"></video>` : ''}</span>`
     + `<span class="lbl" data-shot-label="${i}">${g.label.en}</span></button>`).join('');
-  nav.addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null || hole.open || swapping) return; openStory(+b.dataset.g, b); });
   for (const b of nav.querySelectorAll('.bub')) {
     const v = b.querySelector('video'); if (!v) continue;
     b.addEventListener('pointerenter', e => {
@@ -1740,6 +1765,8 @@ function markSeen(gi) {
   // the rims draw in one after another once the page is up
   if (!RM) gsap.fromTo('.bub .rim circle', { strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 1.1, ease: 'power3.inOut', stagger: 0.12, delay: 0.6 });
 }
+buildShotNav();
+$('#shotsNav').addEventListener('click', e => { const b = e.target.closest('.bub'); if (!b || S.open !== null || hole.open || swapping) return; openStory(+b.dataset.g, b); });
 function shotLabels() { for (const el of document.querySelectorAll('[data-shot-label]')) el.textContent = L(shotsData.groups[+el.dataset.shotLabel].label); }
 // the sheet's target rect in CSS px, centred; the clip rect inside it
 function storyRects() {
@@ -1906,3 +1933,12 @@ if (S.mobile) buildStack(); else initGL();
 if (route0.kind === 'project' || route0.kind === 'post') { const i = items().indexOf(route0.p); if (i >= 0 && !S.mobile) S.s = S.sT = i * S.pitch; }
 if (!route0.unknown) setHead(route0);
 MQ.addEventListener('change', () => location.reload());
+if (PREVIEW) {                                            // the admin's draft changed: show it in place, a moment after the last change
+  let t = 0, last = null;
+  previewHandlers.push(m => { last = m; clearTimeout(t); t = setTimeout(() => {
+    const r = mergeDraft(last); if (!r) return;
+    if (r.kind === 'project' || r.kind === 'post') { if (S.open !== null && items()[S.open]?.slug === r.p.slug) { fill(r.p); setHead(r); } else follow(r); }
+    else if (r.kind === 'about' || r.kind === 'contact') { const what = r.kind === 'about' ? 'profile' : 'contact'; if (hole.open && hole.what === what) fillDisc(what); else follow(r); }
+    else if (r.shots != null) { buildShotNav(); shotLabels(); if (story.open) showShot(r.shots, 0); else openStory(r.shots); }
+  }, 500); });
+}
