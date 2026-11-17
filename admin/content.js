@@ -1,4 +1,4 @@
-// content.mjs - the content transforms: a content file (edited in the admin, both locales as "en" and "ka") becomes the entry the site
+// content.js - the content transforms: a content file (edited in the admin, both locales as "en" and "ka") becomes the entry the site
 // reads (data/*.json). Shared by tools/build.mjs (the deploy) and admin/preview.js (the admin's preview of an unsaved draft), so a
 // preview shows exactly what the deploy will build. No file system here: the callers read the files and decide what exists.
 // Media paths are stored site-absolute ("/assets/...") for the admin; the site lives in a sub-folder for now, so they become relative.

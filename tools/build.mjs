@@ -4,13 +4,13 @@
 //   content/shots/*.json                 -> data/shots.json     (groups ordered by "order")
 //   content/pages/profile.json, contact.json -> data/profile.json
 // The content files keep the two locales as top-level keys: "en" (default) and "ka" (Georgian); the app calls Georgian "ge".
-// The transforms live in admin/content.mjs, shared with the admin's preview, so a draft previews exactly as it will build.
+// The transforms live in admin/content.js, shared with the admin's preview, so a draft previews exactly as it will build.
 // usage: node tools/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { bubbleFor, firstClip } from './bubbles.mjs';
-import { project, story, shotGroup, overlay, seo } from '../admin/content.mjs';
+import { project, story, shotGroup, overlay, seo } from '../admin/content.js';
 
 const read = f => JSON.parse(fs.readFileSync(f, 'utf8'));
 // every media address gets a version stamp (?v=<hash of the file>): the host's CDN caches a file by its address for hours, so a file

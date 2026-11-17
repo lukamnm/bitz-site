@@ -3,9 +3,9 @@
 //   - a "Preview" button at the bottom right of the admin opens the site in a new tab for the desktop view
 // Both are the site itself opened with ?preview: it reports "ready" to the window that framed or opened it and gets the draft back by
 // postMessage, again on every change, without reloading (app.js, "preview"). The draft is turned into the site's data format by the
-// same admin/content.mjs the deploy uses, so what you see is what will build. Files picked but not yet uploaded are blob: addresses,
+// same admin/content.js the deploy uses, so what you see is what will build. Files picked but not yet uploaded are blob: addresses,
 // which the site can show because it runs on this same origin.
-import * as C from './content.mjs';
+import * as C from './content.js';
 
 const SITE = new URL('../', import.meta.url).href, PREVIEW_URL = SITE + '?preview=1';
 const toJS = x => (x && typeof x.toJS === 'function' ? x.toJS() : x);
