@@ -25,7 +25,66 @@
       "webm": "",
       "sound": false
     },
-    "gallery": [],
+    "gallery": [
+      {
+        "type": "image",
+        "image": "/assets/img/marsleaders-logos.jpg"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/marsleaders-main-logo-grid.mp4",
+        "webm": "",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/logos.jpg"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/marsleaders-color-palete.mp4",
+        "webm": "",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/typography.jpg"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/01-cards-carousel.mp4",
+        "webm": "",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "image",
+        "image": "/assets/img/rare-nfts.jpg"
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/05-discord-emojis.mp4",
+        "webm": "",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/02-traits-swap.mp4",
+        "webm": "",
+        "poster": "",
+        "sound": false
+      },
+      {
+        "type": "video",
+        "video": "/assets/video/projects/03-social-posts.mp4",
+        "webm": "",
+        "poster": "",
+        "sound": false
+      }
+    ],
     "home": {
       "img": "/assets/home/marsleaders.webp",
       "video": "/assets/home/marsleaders.mp4",
